@@ -6,31 +6,24 @@ const Navigation = () => {
   return (
     <div className="navigation-container navbar">
       <div className="logo">
-        <Link className="text-shadow" to="/">
-          HekaTek{" "}
-        </Link>
+        <a className="text-shadow" href="#hero">
+          {" "}
+          HekaTek
+        </a>
       </div>
       <div className="nav-links">
-        <a className="nav-link">
-          <Link className="text-shadow" to="/">
-            Home
-          </Link>
+        <a className="nav-link text-shadow" href="#hero">
+          Home
         </a>
-        <a className="nav-link">
-          <Link className="text-shadow" to="/#projects">
-            Projects
-          </Link>
+        <a className="nav-link text-shadow" href="#projects">
+          Projects
         </a>
 
-        <a className="nav-link">
-          <Link className="text-shadow" to="/#about">
-            About
-          </Link>
+        <a className="nav-link text-shadow" href="#about">
+          About
         </a>
-        <a className="nav-link">
-          <Link className="text-shadow" to="/#contact">
-            Contact
-          </Link>
+        <a className="nav-link text-shadow" href="#contact">
+          Contact
         </a>
       </div>
     </div>
