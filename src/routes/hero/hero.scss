@@ -1,10 +1,26 @@
 .hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero-row {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 100px;
   width: 100%;
   height: 100vh;
+  z-index: 3;
+}
+
+.space-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 // Hero left side
@@ -26,6 +42,9 @@
     img {
       width: 100%;
       height: auto;
+    }
+    .space-container {
+      z-index: 1;
     }
   }
 }
