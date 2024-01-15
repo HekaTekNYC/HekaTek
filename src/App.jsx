@@ -1,6 +1,22 @@
 import React from "react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from "./routes/home/Home"
+import Projects from "./routes/projects/Projects"
+import About from "./routes/about/About"
+import Contact from "./routes/contact/Contact"
+import Navigation from "./components/navigation/Navigation"
 
 const App = () => {
-  return <div>Boobs</div>
+  return (
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </Router>
+  )
 }
 export default App
