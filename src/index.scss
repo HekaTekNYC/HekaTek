@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  // font-family: 'DM Sans', sans-serif;
-  // color: #3c403f;
+  font-family: "Inter", "Inter Tight", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  background-color: black;
 }
 
 body::-webkit-scrollbar {

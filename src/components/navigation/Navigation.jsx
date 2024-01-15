@@ -4,21 +4,33 @@ import "./navigation.scss"
 
 const Navigation = () => {
   return (
-    <div className="navigation-container">
-      <div className="logo">HekaTek</div>
+    <div className="navigation-container navbar">
+      <div className="logo">
+        <Link className="text-shadow" to="/">
+          HekaTek{" "}
+        </Link>
+      </div>
       <div className="nav-links">
         <a className="nav-link">
-          <Link to="/">Home</Link>
+          <Link className="text-shadow" to="/">
+            Home
+          </Link>
         </a>
         <a className="nav-link">
-          <Link to="/#projects">Projects</Link>
+          <Link className="text-shadow" to="/#projects">
+            Projects
+          </Link>
         </a>
 
         <a className="nav-link">
-          <Link to="/#about">About</Link>
+          <Link className="text-shadow" to="/#about">
+            About
+          </Link>
         </a>
         <a className="nav-link">
-          <Link to="/#contact">Contact</Link>
+          <Link className="text-shadow" to="/#contact">
+            Contact
+          </Link>
         </a>
       </div>
     </div>
