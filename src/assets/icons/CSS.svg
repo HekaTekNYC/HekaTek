@@ -1,5 +1,32 @@
 
-            <svg viewBox="0 0 128 128">
-            <path fill="#34006b" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#4f00a3" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
-            </svg>
-          
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="64" height="64" viewBox="0 0 64 64" id="svg3476" version="1.1" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="w3_css-icon.svg">
+  <defs id="defs3478">
+    <linearGradient id="color3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2374ff"/>
+      <stop offset="100%" stop-color="#ff56cc"/>
+    </linearGradient>
+    <linearGradient id="color4" x1="0" x2="1" y1="0" y2="1">
+     <stop offset="0%" stop-color="#2374ff"/>
+      <stop offset="60%" stop-color="#d483ff"/>
+      <stop offset="100%" stop-color="#ff56cc"/>
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="4.8766667" inkscape:cx="27.142857" inkscape:cy="28.571429" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1" units="px" />
+  <metadata id="metadata3481">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-193.633,-739.48031)">
+    <polygon style="fill:url(#color3)" points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 " id="polygon2989" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+    <polygon style="fill:url(#color4)" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 " id="polygon2991" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+    <polygon style="fill:#ebebeb" points="256,268.217 150.31,268.217 154.38,313.627 256,313.627 " id="polygon2993" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+    <polygon style="fill:#ebebeb" points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 " id="polygon2995" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+    <polygon style="fill:#ebebeb" points="156.409,336.333 162.771,407.634 255.791,433.457 256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 " id="polygon2997" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+    <polygon style="fill:#ffffff" points="311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 " id="polygon3005" transform="matrix(0.15557406,0,0,0.15557392,185.82204,723.82646)" />
+  </g>
+</svg>

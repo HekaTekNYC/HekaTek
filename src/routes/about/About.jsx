@@ -25,7 +25,7 @@ const About = () => {
           digital presence? Feel free to get in touch with us below.
         </div>
       </div>
-      <div className="about-services">
+      {/* <div className="about-services">
         <TechIcon iconColor="#05829b" iconText="React">
           <FaReact />
         </TechIcon>
@@ -51,7 +51,7 @@ const About = () => {
         <TechIcon iconColor="#c65394" iconText="Express">
           <FaSass />
         </TechIcon>
-      </div>
+      </div> */}
     </div>
   )
 }

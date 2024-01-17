@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0;
 }
 
 .hero-row {
@@ -42,9 +43,6 @@
     img {
       width: 350px;
       height: auto;
-    }
-    .space-container {
-      z-index: 1;
     }
   }
 }
@@ -95,9 +93,9 @@
 // Media Queries
 
 @media screen and (max-width: 1200px) {
-  .hero-container {
-    padding: 0 60px;
-  }
+  // .hero-container {
+  //   padding: 0 60px;
+  // }
 
   .hekatek-header {
     line-height: 1.2;
