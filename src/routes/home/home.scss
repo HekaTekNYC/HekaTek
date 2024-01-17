@@ -20,16 +20,14 @@
 }
 
 .about-section {
-  // height: 100vh;
-  // border-radius: 700px;
-  width: auto;
-  height: 700px;
-  flex-shrink: 0;
+  height: 900px;
+
   background: radial-gradient(
-    35% 35% at 45% 45%,
-    #590ed96e 0%,
-    rgba(50, 15, 133, 0) 100%
-  );
+      ellipse at 100% 50%,
+      rgba(17, 7, 31, 0) 12%,
+      rgba(17, 7, 31, 1) 85%
+    ),
+    url("/src/assets/images/space-background-rev.webp");
 }
 .contact-section {
   height: 100vh;
