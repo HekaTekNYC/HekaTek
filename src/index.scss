@@ -1,3 +1,6 @@
+@import '~bootstrap/scss/bootstrap';
+
+
 body {
   margin: 0;
   font-family: "Inter", "Inter Tight", "Quicksand", sans-serif;
@@ -45,4 +48,55 @@ menu,
 ol,
 ul {
   padding-left: 0;
+}
+.form-floating > label {
+  color: #0000006f;
+
+}
+
+form input,
+form textarea {
+  width: 100%;
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #05dbf3f7;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #cccccc50;
+  border-radius: 10px;
+  background: transparent;
+  background: rgba(225, 225, 236, 0.225);
+  box-shadow: 0 8px 32px 0 rgba(64, 31, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.form-container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    311deg,
+    rgb(37, 22, 71) 20%,
+    rgba(0, 0, 0, 1) 5%,
+    rgb(56, 19, 120) 52%,
+    rgb(54, 33, 108) 60%,
+    rgba(17, 7, 31, 1) 88%
+  );
+  box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn-primary {
+  background: #a65fd6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

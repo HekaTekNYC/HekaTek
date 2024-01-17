@@ -1,6 +1,6 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const path = require("path")
-const webpack = require("webpack")
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "development",
@@ -31,7 +31,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader", options: { sourceMap: true } },
+          { loader: "sass-loader", options: { sourceMap: true } },
+        ],
       },
     ],
   },
@@ -52,4 +56,4 @@ module.exports = {
     hot: true,
     open: true,
   },
-}
+};
