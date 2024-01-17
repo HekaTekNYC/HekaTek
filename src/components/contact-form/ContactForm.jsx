@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
-import { Modal, Button, Form } from "react-bootstrap"
+import { Modal, Button, Form, } from "react-bootstrap"
+import FloatingLabel from "react-bootstrap/FloatingLabel"; 
 import "./ContactForm.scss"
 
 const ContactForm = () => {
@@ -12,7 +13,8 @@ const ContactForm = () => {
     e.preventDefault()
 
     // Validate form fields
-    const name = form.current.from_name.value
+    const firstName = form.current.from_first_name.value
+    const lastName = form.current.from_last_name.value
     const email = form.current.from_email.value
     const message = form.current.message.value
 
@@ -52,33 +54,51 @@ const ContactForm = () => {
 
         <Form ref={form} onSubmit={sendEmail}>
           <Form.Group className="mb-3">
+          <FloatingLabel controlId="floatingInput" label="Full Name">
             <Form.Control
               type="text"
-              placeholder="Name"
+              placeholder="Full Name"
               name="from_name"
-              required
+              required  
+              autoFocus
             />
+            </FloatingLabel>
+          </Form.Group>
+          {/* THE LAST NAME NEEDS TO BE SET UP IN EMAIL JS BEFORE I CAN ADD IT TO THE FORM. I WILL DO IT LATER */}
+          <Form.Group className="mb-3">
+          <FloatingLabel controlId="floatingInput" label="Last Name">
+            <Form.Control
+              type="text"
+              placeholder="Last Name"
+              name="from_last_name"
+              autoFocus
+              />
+            </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3">
+          <FloatingLabel controlId="floatingInput" label="Email">
             <Form.Control
               type="email"
               placeholder="Email"
               name="from_email"
-              required
+              autoFocus
             />
+            </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3">
+          {/* <Form.Label>Message</Form.Label> */}
+          {/* <FloatingLabel controlId="floatingInput" label="message"> */}
             <Form.Control
               as="textarea"
               placeholder="Message"
               name="message"
-              required
               rows={4}
             />
+            {/* </FloatingLabel> */}
           </Form.Group>
-          <input type="hidden" name="message" />
+          {/* <input type="hidden" name="message" />
           <input type="hidden" name="from_name" />
-          <input type="hidden" name="from_email" />
+          <input type="hidden" name="from_email" /> */}
           <Button variant="primary" type="submit">
             Submit
           </Button>
@@ -100,7 +120,7 @@ const ContactForm = () => {
       <Modal show={errorModal} onHide={() => setErrorModal(false)}>
         <Modal.Body>
           <p>
-            Please fi in all required fields correctly before submitting the
+            Please fill in all required fields before submitting the
             form.
           </p>
         </Modal.Body>
