@@ -9,18 +9,27 @@
       rgba(0, 0, 0, 0.09707633053221287) 85%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/src/images/space-background.webp");
+    url("/src/assets/images/space-background.webp");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 
 .projects-section {
-  height: 100vh;
+  height: auto;
 }
 
 .about-section {
-  height: 100vh;
+  // height: 100vh;
+  // border-radius: 700px;
+  width: auto;
+  height: 700px;
+  flex-shrink: 0;
+  background: radial-gradient(
+    35% 35% at 45% 45%,
+    #590ed96e 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
 }
 .contact-section {
   height: 100vh;
