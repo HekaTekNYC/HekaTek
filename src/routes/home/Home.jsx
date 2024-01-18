@@ -2,7 +2,7 @@ import React from "react"
 import Hero from "../hero/Hero"
 import Projects from "../projects/Projects"
 import About from "../about/About"
-import ContactForm from "../../components/contact-form/ContactForm"
+import Contact from "../contact/Contact"
 
 import "./home.scss"
 
@@ -20,7 +20,7 @@ const Home = () => {
         <About />
       </div>
       <div className="contact-section" id="contact">
-        <ContactForm />
+        <Contact />
       </div>
     </>
   )
