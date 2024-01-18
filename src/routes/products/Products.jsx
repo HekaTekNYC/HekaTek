@@ -11,14 +11,17 @@ import Express from "../../assets/icons/express.svg"
 import Typescript from "../../assets/icons/typescript.svg"
 import Angular from "../../assets/icons/angular.svg"
 import dangoDB from "../../assets/images/dangoDB.png"
-import "./projects.scss"
+import ProductRight from "../../components/product-right/Product-right.jsx"
+import "./products.scss"
+import { plantHaus } from "../../data/ProductData.jsx"
 
-const Projects = () => {
+const Products = () => {
   return (
     <>
       <div className="projects-container">
         <div className="projects-header">Our Work</div>
-        {/* Project one */}
+
+        <ProductRight {...plantHaus} />
         <div className="project-row">
           <div className="project-left">
             <div className="project-left-text">
@@ -201,14 +204,11 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="icons">
-        <img src={Angular} alt="Angular logo" />
-      </div>
     </>
   )
 }
 
-export default Projects
+export default Products
 
 // so we will have one row with two columns inside
 //the left side will be the image and the right side will be the description

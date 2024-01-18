@@ -1,6 +1,6 @@
 import React from "react"
 import Hero from "../hero/Hero"
-import Projects from "../projects/Projects"
+import Products from "../products/Products"
 import About from "../about/About"
 import Contact from "../contact/Contact"
 
@@ -13,8 +13,8 @@ const Home = () => {
         <Hero />
       </div>
 
-      <div className="projects-section" id="projects">
-        <Projects />
+      <div className="product-section" id="product">
+        <Products />
       </div>
       <div className="about-section " id="about">
         <About />

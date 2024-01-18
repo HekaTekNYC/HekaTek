@@ -11,8 +11,8 @@ const Contact = () => {
 }
 
 export default Contact
-{
-  /* <div className="contact-container">
+
+/* <div className="contact-container">
 <div className="grid">
   <Grid />
 </div>
@@ -20,4 +20,3 @@ export default Contact
   <ContactForm />
 </div>
 </div> */
-}
