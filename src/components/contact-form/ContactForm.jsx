@@ -13,12 +13,12 @@ const ContactForm = () => {
     e.preventDefault()
 
     // Validate form fields
-    const firstName = form.current.from_first_name.value
+    const firstName = form.current.from_name.value
     const lastName = form.current.from_last_name.value
     const email = form.current.from_email.value
     const message = form.current.message.value
 
-    if (!name || !email || !message || !isValidEmail(email)) {
+    if (!firstName || !lastName || !email || !message || !isValidEmail(email)) {
       setErrorModal(true)
       return
     }
@@ -26,7 +26,7 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_sxi7pdp",
-        "template_rbn6s28",
+        "template_333qtvl",
         form.current,
         "3M9sCaTmKUO1g2SRA"
       )
@@ -48,18 +48,13 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="contact-container">
+    <div className="contact-container grid-container">
       <div className="form-container">
         <h6>Contact Us</h6>
 
         <Form ref={form} onSubmit={sendEmail}>
           <Row>
-            <Form.Group
-              size="sm"
-              as={Col}
-              controlId="formGridFirstName"
-              className=""
-            >
+            <Form.Group size="sm" as={Col} controlId="formGridFirstName">
               <FloatingLabel
                 controlId="floatingInput"
                 label="First Name"
@@ -68,7 +63,6 @@ const ContactForm = () => {
                 <Form.Control
                   type="text"
                   required
-                  autoFocus
                   name="from_name"
                   placeholder="First Name"
                 />
@@ -84,7 +78,6 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Last Name"
                   name="from_last_name"
-                  autoFocus
                 />
               </FloatingLabel>
             </Form.Group>
@@ -95,12 +88,10 @@ const ContactForm = () => {
                 type="email"
                 placeholder="Email"
                 name="from_email"
-                autoFocus
               />
             </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3">
-            {/* <Form.Label>Message</Form.Label> */}
             <FloatingLabel controlId="floatingInput" label="Message">
               <Form.Control
                 as="textarea"
