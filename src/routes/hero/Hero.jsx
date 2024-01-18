@@ -81,6 +81,11 @@ const Hero = () => {
                 {showText}
                 <span className="cursor">|</span>
               </span>
+
+              <div className="mission-statement typewriter-effect">
+                {showText}s
+              </div>
+
             </div>
           </div>
         </div>
