@@ -13,12 +13,12 @@ const ContactForm = () => {
     e.preventDefault()
 
     // Validate form fields
-    const firstName = form.current.from_first_name.value
+    const firstName = form.current.from_name.value
     const lastName = form.current.from_last_name.value
     const email = form.current.from_email.value
     const message = form.current.message.value
 
-    if (!name || !email || !message || !isValidEmail(email)) {
+    if (!firstName || !lastName || !email || !message || !isValidEmail(email)) {
       setErrorModal(true)
       return
     }
@@ -26,7 +26,7 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_sxi7pdp",
-        "template_rbn6s28",
+        "template_333qtvl",
         form.current,
         "3M9sCaTmKUO1g2SRA"
       )
@@ -92,7 +92,6 @@ const ContactForm = () => {
             </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3">
-            {/* <Form.Label>Message</Form.Label> */}
             <FloatingLabel controlId="floatingInput" label="Message">
               <Form.Control
                 as="textarea"
