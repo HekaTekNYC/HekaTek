@@ -296,7 +296,7 @@
   width: 40%;
   padding-left: 60px;
   font-size: 1.5rem;
-  margin-right: 100px;
+  margin-right: 60px;
   order: 2;
 
   .project-right-text-rev {
@@ -329,6 +329,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 15px;
+    width: 100%;
 
     .project-icon-rev {
       background: rgba(236, 234, 234, 0.1);

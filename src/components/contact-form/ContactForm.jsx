@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
-import { Modal, Button, Form, } from "react-bootstrap"
-import FloatingLabel from "react-bootstrap/FloatingLabel"; 
+import { Modal, Button, Form, Row, Col } from "react-bootstrap"
+import FloatingLabel from "react-bootstrap/FloatingLabel"
 import "./ContactForm.scss"
 
 const ContactForm = () => {
@@ -53,55 +53,68 @@ const ContactForm = () => {
         <h6>Contact Us</h6>
 
         <Form ref={form} onSubmit={sendEmail}>
+          <Row>
+            <Form.Group
+              size="sm"
+              as={Col}
+              controlId="formGridFirstName"
+              className=""
+            >
+              <FloatingLabel
+                controlId="floatingInput"
+                label="First Name"
+                className="mb-3 mb-3 "
+              >
+                <Form.Control
+                  type="text"
+                  required
+                  autoFocus
+                  name="from_name"
+                  placeholder="First Name"
+                />
+              </FloatingLabel>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridLastName">
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Last Name"
+                className="mb-3 mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Last Name"
+                  name="from_last_name"
+                  autoFocus
+                />
+              </FloatingLabel>
+            </Form.Group>
+          </Row>
           <Form.Group className="mb-3">
-          <FloatingLabel controlId="floatingInput" label="Full Name">
-            <Form.Control
-              type="text"
-              placeholder="Full Name"
-              name="from_name"
-              required  
-              autoFocus
-            />
-            </FloatingLabel>
-          </Form.Group>
-          {/* THE LAST NAME NEEDS TO BE SET UP IN EMAIL JS BEFORE I CAN ADD IT TO THE FORM. I WILL DO IT LATER */}
-          <Form.Group className="mb-3">
-          <FloatingLabel controlId="floatingInput" label="Last Name">
-            <Form.Control
-              type="text"
-              placeholder="Last Name"
-              name="from_last_name"
-              autoFocus
+            <FloatingLabel controlId="floatingInput" label="Email">
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                name="from_email"
+                autoFocus
               />
             </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3">
-          <FloatingLabel controlId="floatingInput" label="Email">
-            <Form.Control
-              type="email"
-              placeholder="Email"
-              name="from_email"
-              autoFocus
-            />
+            {/* <Form.Label>Message</Form.Label> */}
+            <FloatingLabel controlId="floatingInput" label="Message">
+              <Form.Control
+                as="textarea"
+                placeholder="Message"
+                name="message"
+                rows={4}
+                style={{ height: "120px" }}
+              />
             </FloatingLabel>
           </Form.Group>
-          <Form.Group className="mb-3">
-          {/* <Form.Label>Message</Form.Label> */}
-          {/* <FloatingLabel controlId="floatingInput" label="message"> */}
-            <Form.Control
-              as="textarea"
-              placeholder="Message"
-              name="message"
-              rows={4}
-            />
-            {/* </FloatingLabel> */}
-          </Form.Group>
-          {/* <input type="hidden" name="message" />
-          <input type="hidden" name="from_name" />
-          <input type="hidden" name="from_email" /> */}
-          <Button variant="primary" type="submit">
+
+          <button className="contact-btn" type="submit">
             Submit
-          </Button>
+          </button>
         </Form>
       </div>
       <Modal show={openModal} onHide={() => setOpenModal(false)}>
@@ -119,10 +132,7 @@ const ContactForm = () => {
       </Modal>
       <Modal show={errorModal} onHide={() => setErrorModal(false)}>
         <Modal.Body>
-          <p>
-            Please fill in all required fields before submitting the
-            form.
-          </p>
+          <p>Please fill in all required fields before submitting the form.</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setErrorModal(false)}>
