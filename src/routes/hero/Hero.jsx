@@ -53,7 +53,7 @@ const Hero = () => {
                 <br /> Web Development
               </span>
               <div className="mission-statement typewriter-effect">
-                {/* {showText} */}
+                {showText}s
               </div>
             </div>
           </div>

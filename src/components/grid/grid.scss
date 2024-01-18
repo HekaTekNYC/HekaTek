@@ -1,0 +1,18 @@
+.grid-container {
+  background-color: #000;
+  background-image: repeating-linear-gradient(
+      to right,
+      rgb(119, 92, 255) 0,
+      rgb(119, 92, 255) 1px,
+      transparent 1px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgb(79, 21, 253) 0,
+      rgb(79, 21, 253) 1px,
+      transparent 1px,
+      transparent 100px
+    );
+  background-position: 100px 0, 0 0;
+}

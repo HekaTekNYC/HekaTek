@@ -1,0 +1,14 @@
+.grid-background {
+  /*Grid cell sizes */
+  background-size: 120px 120px;
+
+  /* Color */
+  background-image: linear-gradient(to right, gray 1px, transparent 1px),
+    linear-gradient(to bottom, gray 1px, transparent 1px);
+
+  // linear-gradient(to bottom, white, transparent); // Add this line
+
+  /* Ensure the fade-out gradient is on top */
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0, 0 0, 0 100%;
+}
