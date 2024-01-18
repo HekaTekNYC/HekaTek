@@ -64,36 +64,49 @@ form textarea {
   border-radius: 5px;
 }
 
+// .form-container {
+//   width: 600px;
+//   margin: auto;
+//   padding: 30px;
+//   text-align: center;
+//   border: 1px solid #cccccc50;
+//   border-radius: 10px;
+//   background: transparent;
+//   background: rgba(225, 225, 236, 0.225);
+//   box-shadow: 0 8px 32px 0 rgba(64, 31, 135, 0.37);
+//   backdrop-filter: blur(4px);
+//   -webkit-backdrop-filter: blur(4px);
+//   border-radius: 10px;
+// }
 .form-container {
-  width: 600px;
-  margin: auto;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:  800px;
+  height: 600px;
+  padding: 60px;
   text-align: center;
-  border: 1px solid #cccccc50;
-  border-radius: 10px;
-  background: transparent;
-  background: rgba(225, 225, 236, 0.225);
-  box-shadow: 0 8px 32px 0 rgba(64, 31, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-}
-.form-container {
+  
+  border: none;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     311deg,
-    rgb(37, 22, 71) 20%,
-    rgba(0, 0, 0, 1) 5%,
+    rgba(138, 83, 220, 0.704) 5%,
+    rgba(37, 22, 71, 0.68) 20%,
     rgb(56, 19, 120) 52%,
     rgb(54, 33, 108) 60%,
-    rgba(17, 7, 31, 1) 88%
+    rgba(69, 25, 126, 0.63) 88%
   );
-  box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
+  box-shadow: rgba(44, 24, 80, 0.533) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); 
+    border-radius: 8px;
 }
 
 .btn-primary {
-  background: #a65fd6;
+  font-weight: 600;
+  background-color: #250c48;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
