@@ -7,7 +7,7 @@ import { Bloom, EffectComposer } from "@react-three/postprocessing"
 import { useEffect, useRef } from "react"
 import * as THREE from "three"
 
-const COUNT = 200
+const COUNT = 120
 const XY_BOUNDS = 40
 const Z_BOUNDS = 20
 const MAX_SPEED_FACTOR = 2

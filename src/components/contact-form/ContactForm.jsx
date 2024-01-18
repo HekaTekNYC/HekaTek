@@ -48,18 +48,13 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="contact-container">
+    <div className="contact-container grid-container">
       <div className="form-container">
         <h6>Contact Us</h6>
 
         <Form ref={form} onSubmit={sendEmail}>
           <Row>
-            <Form.Group
-              size="sm"
-              as={Col}
-              controlId="formGridFirstName"
-              className=""
-            >
+            <Form.Group size="sm" as={Col} controlId="formGridFirstName">
               <FloatingLabel
                 controlId="floatingInput"
                 label="First Name"
@@ -68,7 +63,6 @@ const ContactForm = () => {
                 <Form.Control
                   type="text"
                   required
-                  autoFocus
                   name="from_name"
                   placeholder="First Name"
                 />
@@ -84,7 +78,6 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Last Name"
                   name="from_last_name"
-                  autoFocus
                 />
               </FloatingLabel>
             </Form.Group>
@@ -95,7 +88,6 @@ const ContactForm = () => {
                 type="email"
                 placeholder="Email"
                 name="from_email"
-                autoFocus
               />
             </FloatingLabel>
           </Form.Group>
