@@ -14,6 +14,7 @@
     "@emailjs/browser": "^3.12.1",
     "@react-spring/three": "^9.7.3",
     "@react-spring/web": "^9.7.3",
+    "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^9.93.1",
     "@react-three/fiber": "^8.15.14",
     "@react-three/postprocessing": "^2.15.12",

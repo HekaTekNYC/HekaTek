@@ -1,8 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap";
 
 body {
   margin: 0;
-  font-family: "Inter", "Inter Tight", "Quicksand", sans-serif;
+  font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat",
+    "Lato" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
