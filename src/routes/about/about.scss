@@ -1,7 +1,9 @@
 .about-container {
+  overflow-x: hidden;
+  width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 0 100px;
   background: rgb(17, 7, 31);
@@ -14,25 +16,26 @@
     rgba(17, 7, 31, 1) 100%
   );
 }
+.about-header {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+}
 
 .about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  z-index: 3;
+  margin-bottom: 50px;
+  will-change: transform, opacity; //optimizes animation
+}
 
-  .about-header {
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
-  }
-
-  .about-info {
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-  }
+.about-info {
+  color: #fff;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 // .about-services {
@@ -65,6 +68,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
+    .about-header {
+      font-size: 4rem;
+    }
+    .about-info {
+      font-size: 1.2rem;
+      padding: 0 15px;
+    }
 
     .about-text {
       width: 100%;
