@@ -1,12 +1,14 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
-const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require("path")
+const webpack = require("webpack")
 
 module.exports = {
   mode: "development",
   entry: "./src/index.jsx",
   output: {
     filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -15,6 +17,10 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/",
+            },
           },
         ],
       },
@@ -37,10 +43,17 @@ module.exports = {
           { loader: "sass-loader", options: { sourceMap: true } },
         ],
       },
+      {
+        test: /\.json$/,
+        type: "json",
+      },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
+    alias: {
+      three: path.resolve("./node_modules/three"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -48,12 +61,14 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
-
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
     },
     hot: true,
     open: true,
+    client: {
+      overlay: false,
+    },
   },
-};
+}
