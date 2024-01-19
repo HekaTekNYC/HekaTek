@@ -1,11 +1,11 @@
-import { Canvas } from "@react-three/fiber"
-import React from "react"
+import { Canvas, useFrame } from "@react-three/fiber"
+import React, { useState } from "react"
 
-import { useFrame } from "@react-three/fiber"
 import { Bloom, EffectComposer } from "@react-three/postprocessing"
 
 import { useEffect, useRef } from "react"
 import * as THREE from "three"
+import { Perf } from "r3f-perf"
 
 const COUNT = 120
 const XY_BOUNDS = 40
@@ -18,11 +18,10 @@ const CHROMATIC_ABERRATION_OFFSET = 0.0
 const MyStars = () => {
   const meshRef = useRef()
   const effectsRef = useRef()
-
+  const t = new THREE.Object3D()
   useEffect(() => {
-    if (!meshRef.current) return
+    if (!meshRef.current) return t
 
-    const t = new THREE.Object3D()
     let j = 0
     for (let i = 0; i < COUNT * 3; i += 3) {
       t.position.x = generatePos()
@@ -83,21 +82,26 @@ const MyStars = () => {
         <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
       </instancedMesh>
       <EffectComposer>
-        <Bloom luminanceThreshold={0.5} mipmapBlur />
+        {/* <Bloom luminanceThreshold={0.5} mipmapBlur /> */}
       </EffectComposer>
     </>
   )
 }
 
 const SpaceOverlay = () => {
+  const [dpr, setDpr] = useState(1.5)
+
   return (
     <Canvas
+      dpr={dpr}
       camera={{
         fov: 100,
         near: 0.1,
         far: 200,
       }}
+      // frameloop="demand"
     >
+      <Perf />
       <MyStars />
     </Canvas>
   )

@@ -31,7 +31,7 @@ const SparkleSky = () => {
 
 const SparklesOverlay = () => {
   return (
-    <Canvas>
+    <Canvas frameloop="demand">
       <mesh>
         <SparkleSky />
       </mesh>
