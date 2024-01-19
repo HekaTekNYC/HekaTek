@@ -1,72 +1,94 @@
 import React from "react"
-
+import { useSpring, animated, useInView } from "@react-spring/web"
 import SpaceOverlay from "../../components/stars/Stars"
 import "./about.scss"
 import Projects from "../projects/Projects"
 
 const About = () => {
+  const [ref, inView] = useInView({ threshold: 0.33 }) // Trigger when first 1/3 of screen is visible
+  const [ref2, inView2] = useInView({ threshold: 0.66 }) // Trigger when 2/3 of screen is visible
+  const [ref3, inView3] = useInView({ threshold: 1 }) // Trigger when the last 1/3 is visible on screen
+  const [ref4, inView4] = useInView({ threshold: 0.5 }) // Trigger when 50% is visible
+
+  // const text1 = useSpring({
+  //   opacity: inView ? 1 : 0,
+  //   transform: inView ? "translate3d(0,0px,0)" : "translate3d(0,40px,0)",
+  //   config: { duration: 1000 },
+  // })
+  // const text2 = useSpring({
+  //   opacity: inView2 ? 1 : 0,
+  //   transform: inView2 ? "translate3d(0,0px,0)" : "translate3d(0,40px,0)",
+  //   config: { duration: 1000 },
+  // })
+  const text1 = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translate3d(0,0px,0)" : "translate3d(-100%,0,0)",
+    config: { duration: 1000 },
+  })
+  const text2 = useSpring({
+    opacity: inView2 ? 1 : 0,
+    transform: inView2 ? "translate3d(0,0px,0)" : "translate3d(100%,0,0)",
+    config: { duration: 1000 },
+  })
+  const text3 = useSpring({
+    opacity: inView3 ? 1 : 0,
+    transform: inView3 ? "translate3d(0,0px,0)" : "translate3d(-100%,0,0)",
+    config: { duration: 1000 },
+  })
+  // const text1 = useSpring({
+  //   opacity: inView ? 1 : 0,
+  //   transform: inView ? "translate3d(0,0px,0)" : "translate3d(-100%,0,0)",
+  //   config: { duration: 1000 },
+  // })
+  // const text2 = useSpring({
+  //   opacity: inView2 ? 1 : 0,
+  //   transform: inView2 ? "translate3d(0,0px,0)" : "translate3d(100%,0,0)",
+  //   config: { duration: 1000 },
+  // })
+
+  // const text3 = useSpring({
+  //   opacity: inView3 ? 1 : 0,
+  //   transform: inView3 ? "translate3d(0,0px,0)" : "translate3d(0,40px,0)",
+  //   config: { duration: 1000 },
+  // })
+  const text4 = useSpring({
+    opacity: inView4 ? 1 : 0,
+    transform: inView4 ? "translate3d(0,0px,0)" : "translate3d(0,40px,0)",
+    config: { duration: 1000 },
+  })
+
   return (
     <div className="about-container">
-      <div className="about-text">
-        <h1 className="about-header">About HekaTek</h1>
-        <div className="about-info">
-          {/* Two software developers love design but hate coming up with on our own
-          love puzzles and problem solving / working out complex issues - love
-          to learn and teach others - we love tackling complex challenges - we
-          love the newest tech and learning together javascript, react
-          responsive designs and innovative cool shit - interfaces -other tech
-          shit woodworking, gaming, plants, algos  */}
-          {/* Two software developers who came together with a shared love of
-          collaborating in the open source developer community.     
-          We are always on the hunt for our next (Project) and
-          newest tech.
-          tackling complex
-          challenges
-          In our spare time youll find us practice some algos, gaming or learning a new
-          skill. 
-          working with clients to enhance their digital presence.  
+      <div className="about-header">
+        <animated.div ref={ref} style={text1}>
+          <h1 className="about-header-text">About HekaTek</h1>
+        </animated.div>
+      </div>
 
-          driven by the art of building digital spaces that not only meet but also anticipate the needs of your audience. 
-          
-          
-          
-          Two software developers who came together with a passion for problem solving and love of front
-          
-          Whether we're diving into an existing codebase or
-          crafting something from scratch, our focus is on developing dynamic,
-          responsive, and user-friendly websites. 
-          With a love of creating digital environments that resonate with your audience's needs. 
-          Keen to explore how we can enhance your digital presence? Feel
-          free to get in touch with us below.
-
-      
-
-          # Two Devs, One Mission: Solving Problems, Crafting Solutions 🚀
-          **creating a project from scratch**  */}
+      <div className="about-info">
+        <animated.div ref={ref2} style={text1} className="about-text">
           We are two software developers whose passions lie in unraveling
           complex challenges and transforming them into opportunities. Whether
           it's revitalizing an existing codebase or innovating from the ground
           up, we provide dynamic, responsive, and intuitively user-friendly
-          applications. Driven by the art of building digital spaces that not
-          only meet but also anticipate the needs of your audience. When we're
-          not coding, you'll find us sharpening our skills with algorithm
-          challenges, diving into gaming adventures, or picking up a new hobby.
+          applications.
+        </animated.div>
+        <animated.div ref={ref3} style={text2} className="about-text">
+          Driven by the art of building digital spaces that not only meet, but
+          anticipate the needs of your audience. When we're not coding, you'll
+          find us sharpening our skills with algorithm challenges, diving into
+          gaming adventures, or picking up a new hobby.
+        </animated.div>
+        <animated.div ref={ref4} style={text3} className="about-text">
           It's this continuous pursuit of knowledge that keeps our work fresh
           and exciting. Interested in elevating your online presence? Get in
           touch below. When we're not coding, you'll find us sharpening our
           skills with algorithm challenges, diving into gaming adventures, or
           picking up a new expertise. It's this continuous pursuit of knowledge
           that keeps our work fresh and exciting.
-          {/* Whether we're
-          diving into an existing codebase or crafting something from scratch,
-          our focus is on developing dynamic, responsive, and user-friendly
-          websites. We don't just build websites; we create digital environments
-          that resonate with your audience's needs. We are passionate about
-          crafting responsive designs, user-friendly interfaces, and innovative
-          solutions, catering to a diverse range of needs – from small startups
-          to large enterprises. */}
-        </div>
+        </animated.div>
       </div>
+
       <div className="about-services">
         <div className="star-overlay">
           <SpaceOverlay />

@@ -9,7 +9,7 @@ const SparkleSky = () => {
         count={300}
         size={3}
         fade
-        speed={0.1}
+        speed={0.19}
         opacity={1}
         scale={10}
         color="#3ddbff"
