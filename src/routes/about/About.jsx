@@ -2,7 +2,7 @@ import React from "react"
 import { useSpring, animated, useInView } from "@react-spring/web"
 import SpaceOverlay from "../../components/stars/Stars"
 import "./about.scss"
-import Projects from "../projects/Projects"
+// import Projects from "../projects/Projects"
 
 const About = () => {
   const [ref, inView] = useInView({ threshold: 0.33 }) // Trigger when first 1/3 of screen is visible

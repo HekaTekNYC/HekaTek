@@ -1,0 +1,330 @@
+.product-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  padding-bottom: 30px;
+  transition: ease all 0.5s;
+}
+
+//   .product-info-3 {
+//     font-size: 1rem;
+//     margin-bottom: 20px;
+//   }
+
+.product-btn {
+  font-family: Quicksand;
+  background-color: #250c48;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.product-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40%;
+  font-size: 1.5rem;
+  margin-right: 100px;
+  transition: ease all 0.5s;
+
+  // Left hand text and icon section
+  .product-left-text {
+    text-align: end;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    width: 100%;
+
+    .product-name {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .product-short {
+      font-size: 1.3rem;
+    }
+  }
+
+  // Left side Icon row
+  .product-tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 15px;
+
+    .product-icon {
+      background: rgba(236, 234, 234, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(51, 9, 140, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(119, 113, 113, 0.122);
+      width: 70px;
+      margin: 5px;
+      padding: 8px;
+      border-radius: 40px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Right side with product card
+.product-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  transition: ease all 0.5s;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 800px;
+  height: 320px;
+  padding: 20px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    57deg,
+    rgba(0, 0, 0, 1) 5%,
+    rgb(37, 22, 71) 20%,
+    rgb(56, 19, 120) 52%,
+    rgb(54, 33, 108) 60%,
+    rgba(17, 7, 31, 1) 88%
+  );
+  box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: ease all 0.5s;
+}
+
+// Glassmorphism container with image
+.product-image-glass {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 400px;
+  background: rgba(181, 160, 249, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(64, 31, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 25px;
+  border-radius: 15px;
+  z-index: 10;
+  transition: ease all 0.5s;
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+
+    img {
+      display: block;
+      border-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+      z-index: 6;
+    }
+  }
+}
+
+//Right side text with button
+.product-card-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .spacer {
+    width: 50%;
+  }
+  .product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-right: 20px;
+
+    .product-info {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .product-row {
+    padding: 0 60px;
+  }
+
+  .product-left {
+    margin-right: 60px;
+
+    .product-tech-row {
+      justify-content: center;
+    }
+  }
+
+  .product-card {
+    width: 600px;
+    height: auto;
+
+    .product-image-glass {
+      width: 350px;
+    }
+
+    .product-card-text {
+      align-items: center;
+      justify-content: start;
+      height: 300px;
+
+      .spacer {
+        width: 60%;
+      }
+      .product-text {
+        height: 200px;
+        width: 40%;
+        padding-right: 0;
+
+        .product-info {
+          text-align: start;
+        }
+      }
+
+      .product-btn {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  // Product Section Normal
+
+  .product-row {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 80px;
+  }
+  .product-left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 20px;
+    height: 200px;
+
+    .product-left-text {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  .product-right {
+    width: 100%;
+    justify-content: center;
+
+    .product-card {
+      width: 700px;
+
+      .product-image-glass {
+        width: 350px;
+        top: 30px;
+        left: -60px;
+      }
+
+      .spacer {
+        width: 50%;
+      }
+
+      .product-card-text {
+        width: 100%;
+
+        .product-text {
+          align-items: center;
+
+          .product-info {
+            text-align: center;
+            font-size: 1.2rem;
+          }
+          .product-info-3 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .products-container {
+    .product-row {
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 800px;
+    }
+    // Regular Product Details
+    .product-right {
+      .product-card {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .product-image-glass {
+        position: static;
+      }
+
+      .product-card-text {
+        height: auto;
+        justify-content: center;
+        .spacer {
+          display: none;
+        }
+        .product-text {
+          height: auto;
+          padding: 20px 0 0;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+  .products-container {
+    .product-row {
+      .product-left {
+        height: auto;
+      }
+    }
+  }
+}

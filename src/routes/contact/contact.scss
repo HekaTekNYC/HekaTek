@@ -1,14 +1,70 @@
 .grid-background {
-  /*Grid cell sizes */
-  background-size: 120px 120px;
+  /* Grid cell sizes */
+  background-size: 80px 80px;
 
-  /* Color */
-  background-image: linear-gradient(to right, gray 1px, transparent 1px),
-    linear-gradient(to bottom, gray 1px, transparent 1px);
+  /* Grid color */
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.481) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.466) 1px, transparent 1px);
 
-  // linear-gradient(to bottom, white, transparent); // Add this line
+  /* Set the grid to repeat */
+  background-repeat: repeat;
 
-  /* Ensure the fade-out gradient is on top */
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0, 0 0, 0 100%;
+  /* Set position to relative */
+  position: relative;
 }
+
+.grid-background:before {
+  /* Create a fading effect overlay */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* Define a gradient for fading effect */
+  background-image: linear-gradient(to bottom, transparent, rgb(19, 4, 50));
+
+  /* Set z-index to ensure it's above the grid but below the content */
+  z-index: 2;
+}
+
+// .grid-background {
+//   /* Grid cell sizes */
+//   background-size: 60px 60px;
+
+//   /* Color */
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(128, 128, 128, 0.637) 1px,
+//       transparent 1px
+//     ),
+//     linear-gradient(to bottom, rgba(128, 128, 128, 0.507) 1px, transparent 1px);
+
+//   /* Set position to relative */
+//   position: relative;
+// }
+
+// .grid-background:before {
+//   /* Create an overlay effect */
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+
+//   /* Define a noticeable gradient overlay for testing */
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(255, 0, 0, 0.5),
+//     transparent
+//   );
+
+//   /* Set z-index to ensure it's above the grid but below the content */
+//   z-index: 2;
+// }

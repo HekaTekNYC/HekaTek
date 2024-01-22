@@ -1,26 +1,62 @@
 import React from "react"
-import Deno from "../../assets/icons/deno.svg"
-import J from "../../assets/icons/javascriptColor.svg"
-import ReactIcon from "../../assets/icons/icons8-react-native.svg"
-import Node1 from "../../assets/icons/node1js.svg"
-import Firebase from "../../assets/icons/firebase.svg"
-import Sass from "../../assets/icons/sass.svg"
-import CSS from "../../assets/icons/css.svg"
-import MongoDB from "../../assets/icons/mongodb.svg"
-import Express from "../../assets/icons/express.svg"
-import Typescript from "../../assets/icons/typescript.svg"
-import Angular from "../../assets/icons/angular.svg"
-import dangoDB from "../../assets/images/dangoDB.png"
-import TechIcon from "../../components/tech-icon/Tech-icon"
-import "./projects.scss"
 
-const Projects = () => {
+import ProductRight from "../../components/product-right/Product-right.jsx"
+import ProductLeft from "../../components/product-left/Product-left.jsx"
+import {
+  plantHaus,
+  interviewIQ,
+  dangoDB,
+  ad3lie,
+} from "../../data/ProductData.jsx"
+import "./products.scss"
+
+const Products = () => {
+  console.log("dangoDB a link", dangoDB.aLink)
+  console.log("a link type of", typeof dangoDB.aLink)
   return (
     <>
-      <div className="projects-container">
-        <div className="projects-header">Our Work</div>
-        {/* Project one */}
-        <div className="project-row">
+      <div className="products-container">
+        <div className="products-header">Our Work</div>
+        <ProductRight
+          name={plantHaus.name}
+          desc={plantHaus.desc}
+          icons={plantHaus.icons}
+          img={plantHaus.img}
+          info={plantHaus.info}
+          btn={plantHaus.btn}
+          a={plantHaus.aLink}
+        />
+
+        <ProductLeft
+          name={interviewIQ.name}
+          desc={interviewIQ.desc}
+          icons={interviewIQ.icons}
+          img={interviewIQ.img}
+          info={interviewIQ.info}
+          btn={interviewIQ.btn}
+          a={interviewIQ.aLink}
+        />
+        <ProductRight
+          name={dangoDB.name}
+          desc={dangoDB.desc}
+          icons={dangoDB.icons}
+          img={dangoDB.img}
+          info={dangoDB.info}
+          btn={dangoDB.btn}
+          a={dangoDB.aLink}
+        />
+
+        <ProductLeft
+          name={ad3lie.name}
+          desc={ad3lie.desc}
+          icons={ad3lie.icons}
+          img={ad3lie.img}
+          info={ad3lie.info}
+          btn={ad3lie.btn}
+          a={ad3lie.aLink}
+        />
+
+        {/* <div className="project-row">
           <div className="project-left">
             <div className="project-left-text">
               <div className="project-name">Plant Haus</div>
@@ -71,10 +107,10 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Project two */}
-        <div className="project-row-rev">
+        {/* <div className="project-row-rev">
           <div className="project-left-rev">
             <div className="project-card-rev">
               <div className="project-image-glass-rev">
@@ -130,10 +166,10 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Project Three */}
-        <div className="project-row">
+        {/* <div className="project-row">
           <div className="project-left">
             <div className="project-left-text">
               <div className="project-name">dangoDB</div>
@@ -163,10 +199,10 @@ const Projects = () => {
                 <img src={Node1} alt="Node logo" />
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* Project Three */}
-          <div className="project-right">
+        {/* Project Three */}
+        {/* <div className="project-right">
             <div className="project-card">
               <div className="project-image-glass">
                 <div className="project-image">
@@ -201,10 +237,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
+      </div> */}
+        {/* <div className="icons"></div> */}
       </div>
-      <div className="icons"></div>
     </>
   )
 }
 
-export default Projects
+export default Products
