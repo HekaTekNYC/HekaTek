@@ -10,8 +10,8 @@ import { Perf } from "r3f-perf"
 const COUNT = 200
 const XY_BOUNDS = 40
 const Z_BOUNDS = 20
-const MAX_SPEED_FACTOR = 2
-const MAX_SCALE_FACTOR = 50
+// const MAX_SPEED_FACTOR = 1
+// const MAX_SCALE_FACTOR = 4
 
 const CHROMATIC_ABERRATION_OFFSET = 0.0
 
@@ -36,14 +36,19 @@ const MyStars = () => {
   const tempPos = new THREE.Vector3()
   const tempObject = new THREE.Object3D()
   const tempColor = new THREE.Color()
+
   useFrame((state, delta) => {
     if (!meshRef.current) return
     const speed = 0.018
 
+    // const velocity =
+    //   1 / Math.pow(state.clock.elapsedTime + 1, state.clock.elapsedTime + 1)
+
     for (let i = 0; i < COUNT; i++) {
       meshRef.current.getMatrixAt(i, temp)
 
-      tempObject.scale.set(1, 1, Math.max(1, 1, 1))
+      // update scale
+      tempObject.scale.set(1, 1, Math.max(1, 1, 1.5))
 
       tempPos.setFromMatrixPosition(temp)
       if (tempPos.z > Z_BOUNDS / 2) {
@@ -78,11 +83,11 @@ const MyStars = () => {
         args={[undefined, undefined, COUNT]}
         matrixAutoUpdate
       >
-        <sphereGeometry args={[0.0125]} />
+        <sphereGeometry args={[0.012]} />
         <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
       </instancedMesh>
       <EffectComposer>
-        {/* <Bloom luminanceThreshold={0.5} mipmapBlur /> */}
+        {/* <Bloom luminanceThreshold={0.2} mipmapBlur /> */}
       </EffectComposer>
     </>
   )
