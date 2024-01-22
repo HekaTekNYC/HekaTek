@@ -1,12 +1,11 @@
 import React from "react"
 import "./tech-icon.scss"
 
-const TechIcon = ({ children, iconColor, iconText }) => {
+const TechIcon = ({ svgPath, altText, className }) => {
+  const iconClassName = className ? className : "icon-svg"
   return (
-    <div className="icon-container" style={{ color: iconColor }}>
-      <div className="icon-svg">{children}</div>
-
-      <div className="icon-text">{iconText}</div>
+    <div className="tech-icon">
+      <img src={svgPath} alt={altText} className={iconClassName} />
     </div>
   )
 }

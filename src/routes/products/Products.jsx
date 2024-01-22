@@ -11,9 +11,9 @@ import Express from "../../assets/icons/express.svg"
 import Typescript from "../../assets/icons/typescript.svg"
 import Angular from "../../assets/icons/angular.svg"
 import dangoDB from "../../assets/images/dangoDB.png"
-import ProductRight from "../../components/product-right/Product-right.jsx"
-import "./products.scss"
-import { plantHaus } from "../../data/ProductData.jsx"
+
+import TechIcon from "../../components/tech-icon/Tech-icon"
+import "./projects.scss"
 
 const Products = () => {
   return (
@@ -21,7 +21,6 @@ const Products = () => {
       <div className="projects-container">
         <div className="projects-header">Our Work</div>
 
-        <ProductRight {...plantHaus} />
         <div className="project-row">
           <div className="project-left">
             <div className="project-left-text">
@@ -74,6 +73,7 @@ const Products = () => {
             </div>
           </div>
         </div>
+
         {/* Project two */}
         <div className="project-row-rev">
           <div className="project-left-rev">
@@ -111,9 +111,8 @@ const Products = () => {
               </div>
             </div>
             <div className="project-tech-row-rev">
-              <div className="project-icon-rev">
-                <img src={CSS} alt="CSS logo" className="css-logo" />
-              </div>
+              <TechIcon svgPath={CSS} altText={"CSS Logo"} />
+              <div className="project-icon-rev"></div>
               <div className="project-icon-rev">
                 <img src={ReactIcon} alt="React logo" />
               </div>
@@ -204,12 +203,9 @@ const Products = () => {
           </div>
         </div>
       </div>
+      <div className="icons"></div>
     </>
   )
 }
 
-export default Products
-
-// so we will have one row with two columns inside
-//the left side will be the image and the right side will be the description
-//we will have a title and a description
+export default Projects
