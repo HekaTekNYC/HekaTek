@@ -1,4 +1,6 @@
 import React from "react"
+import TechIcon from "../tech-icon/Tech-icon"
+import "./product-left.scss"
 
 const ProductLeft = ({ name, desc, icons, img, info, btn }) => {
   return (
@@ -28,10 +30,8 @@ const ProductLeft = ({ name, desc, icons, img, info, btn }) => {
           <div className="product-desc-rev">{desc}</div>
         </div>
         <div className="product-tech-row-rev">
-          {Object.values(icons).map((icon, index) => (
-            <div key={index} className="product-icon">
-              <img src={icon.src} alt={icon.alt} />
-            </div>
+          {icons.map((icon, index) => (
+            <TechIcon key={index} svgPath={icon.src} altText={icon.alt} />
           ))}
         </div>
       </div>
