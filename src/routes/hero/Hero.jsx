@@ -15,30 +15,30 @@ const Hero = () => {
     config: { duration: 300000 },
   })
 
-  const text = "Web Developers with a passion for bringing your vision to life."
+  // const text = "Web Developers with a passion for bringing your vision to life."
 
-  const [showText, setShowText] = useState("")
-  const [index, setIndex] = useState(0)
+  // const [showText, setShowText] = useState("")
+  // const [index, setIndex] = useState(0)
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (index < text.length) {
-        setShowText((prevText) => prevText + text[index])
-        setIndex((prevIndex) => prevIndex + 1)
-      } else {
-        clearInterval(intervalId)
-      }
-    }, 50)
-    return () => clearInterval(intervalId) // Cleanup on unmount
-  }, [text, index])
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     if (index < text.length) {
+  //       setShowText((prevText) => prevText + text[index])
+  //       setIndex((prevIndex) => prevIndex + 1)
+  //     } else {
+  //       clearInterval(intervalId)
+  //     }
+  //   }, 50)
+  //   return () => clearInterval(intervalId) // Cleanup on unmount
+  // }, [text, index])
 
   return (
     <div>
       <div className="hero-container">
-        {/* <div className="space-container">
+        <div className="space-container">
           <SpaceOverlay />
         </div>
-        <div className="sparkles-container">
+        {/* <div className="sparkles-container">
           <SparklesOverlay />
         </div> */}
         <div className="hero-row">
@@ -54,14 +54,14 @@ const Hero = () => {
           <div className="hero-right-container">
             <div className="mission-statement-container">
               <span className="hekatek-header">
-                <div className="half-intro">Hey, We're</div>
-                <div className="drei3d">
-                  <ThreeDeeText />
-                </div>
+                <div className="half-intro">Hey, We're HEKATEK</div>
+
+                {/* <div className="drei3d"><ThreeDeeText />  </div> */}
               </span>
               <span className="animated-text">
-                {showText}
-                <span className="cursor">|</span>
+                Web Developers with a passion for bringing your vision to life.
+                {/* {showText}
+                <span className="cursor">|</span> */}
               </span>
 
               <div className="mission-statement typewriter-effect">
