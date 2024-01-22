@@ -1,20 +1,19 @@
-.icon-container {
-  width: 110px;
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  border: 2px solid rgb(98, 0, 255);
-  box-shadow: rgba(98, 0, 255, 0.17) 0px -23px 25px 0px inset,
-    rgba(98, 0, 255, 0.15) 0px -36px 30px 0px inset,
-    rgb(98, 0, 255, 0.1) 0px -79px 40px 0px inset, 0 6px 22px 0 rgb(98, 0, 255);
+.tech-icon {
+  background: rgba(236, 234, 234, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(51, 9, 140, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(119, 113, 113, 0.122);
+  width: 70px;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 40px;
 
-  border-radius: 15px;
-  margin: 20px;
-  padding: 10px;
+  img {
+    height: 100%;
+  }
 }
-
 .icon-svg {
   display: flex;
   align-items: center;
@@ -22,10 +21,15 @@
   width: 100%;
   height: 100%;
   font-size: 3.8rem;
+  padding: 6px;
 }
 
-.icon-text {
-  font-family: Inter Tight;
-  color: #fff;
-  font-weight: 600;
+.css-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  padding: 6px;
 }

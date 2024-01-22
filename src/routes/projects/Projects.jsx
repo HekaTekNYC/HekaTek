@@ -11,6 +11,7 @@ import Express from "../../assets/icons/express.svg"
 import Typescript from "../../assets/icons/typescript.svg"
 import Angular from "../../assets/icons/angular.svg"
 import dangoDB from "../../assets/images/dangoDB.png"
+import TechIcon from "../../components/tech-icon/Tech-icon"
 import "./projects.scss"
 
 const Projects = () => {
@@ -71,6 +72,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         {/* Project two */}
         <div className="project-row-rev">
           <div className="project-left-rev">
@@ -108,9 +110,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="project-tech-row-rev">
-              <div className="project-icon-rev">
-                <img src={CSS} alt="CSS logo" className="css-logo" />
-              </div>
+              <TechIcon svgPath={CSS} altText={"CSS Logo"} />
+              <div className="project-icon-rev"></div>
               <div className="project-icon-rev">
                 <img src={ReactIcon} alt="React logo" />
               </div>
@@ -201,15 +202,9 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="icons">
-        <img src={Angular} alt="Angular logo" />
-      </div>
+      <div className="icons"></div>
     </>
   )
 }
 
 export default Projects
-
-// so we will have one row with two columns inside
-//the left side will be the image and the right side will be the description
-//we will have a title and a description
