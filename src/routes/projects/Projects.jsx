@@ -11,6 +11,7 @@ import Express from "../../assets/icons/express.svg"
 import Typescript from "../../assets/icons/typescript.svg"
 import Angular from "../../assets/icons/angular.svg"
 import dangoDB from "../../assets/images/dangoDB.png"
+import TechIcon from "../../components/tech-icon/Tech-icon"
 import "./projects.scss"
 
 const Projects = () => {
@@ -202,7 +203,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="icons">
-        <img src={Angular} alt="Angular logo" />
+        <TechIcon svgPath={CSS} altText={"CSS Logo"} />
       </div>
     </>
   )
