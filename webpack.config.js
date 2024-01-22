@@ -43,10 +43,17 @@ module.exports = {
           { loader: "sass-loader", options: { sourceMap: true } },
         ],
       },
+      {
+        test: /\.json$/,
+        type: "json",
+      },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
+    alias: {
+      three: path.resolve("./node_modules/three"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -60,5 +67,8 @@ module.exports = {
     },
     hot: true,
     open: true,
+    client: {
+      overlay: false,
+    },
   },
 }
