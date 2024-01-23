@@ -40,9 +40,10 @@ export const plantHaus = {
     src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
     alt: "Plant Haus Preview",
   },
-  info: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis cupiditate totam architecto corrupti neque. Temporibus neque voluptas obcaecati odio voluptatum.",
-  btn: "View Full",
+  info: "A robust ecommerce platform dedicated to indoor plants. Seamlessly integrating OAuth login with React and Firebase, it offers a comprehensive and secure shopping experience for plant enthusiasts.",
+  btn: "View More",
   aLink: "https://planthaus.netlify.app/",
+  isCurrentWork: false,
 }
 
 export const interviewIQ = {
@@ -79,8 +80,9 @@ export const interviewIQ = {
     alt: "InterviewIQ Preview",
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
-  btn: "View Images",
-  aLink: "https://github.com/oslabs-beta/dangoDB",
+  btn: "View More",
+  aLink: "",
+  isCurrentWork: true,
 }
 
 export const dangoDB = {
@@ -114,8 +116,9 @@ export const dangoDB = {
     alt: "Dango Preview",
   },
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
-  btn: "View Full",
+  btn: "View More",
   aLink: "https://github.com/oslabs-beta/dangoDB",
+  isCurrentWork: false,
 }
 
 export const ad3lie = {
@@ -143,7 +146,8 @@ export const ad3lie = {
     src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
     alt: "Ad3lie Preview",
   },
-  info: "Elevate your React projects with elegance. An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
-  btn: "View Full",
-  aLink: "https://github.com/oslabs-beta/dangoDB",
+  info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
+  btn: "View More",
+  aLink: "https://github.com/oslabs-beta/ad3lie",
+  isCurrentWork: false,
 }
