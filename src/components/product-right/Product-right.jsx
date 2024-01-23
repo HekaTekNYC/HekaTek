@@ -3,13 +3,25 @@ import TechIcon from "../tech-icon/Tech-icon"
 
 import "./product-right.scss"
 
-const ProductRight = ({ name, desc, icons, img, info, btn, aLink }) => {
+const ProductRight = ({
+  name,
+  desc,
+  icons,
+  img,
+  info,
+  btn,
+  aLink,
+  isCurrentWork,
+}) => {
   return (
     <>
       <div className="product-row">
         <div className="product-left">
           <div className="product-left-text">
-            <div className="product-name">{name}</div>
+            <div className="product-name">
+              {name}{" "}
+              {isCurrentWork && <span className="current">CURRENT WORK</span>}
+            </div>
             <div className="product-desc">{desc}</div>
           </div>
           <div className="product-tech-row">

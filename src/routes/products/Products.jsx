@@ -24,7 +24,8 @@ const Products = () => {
           img={plantHaus.img}
           info={plantHaus.info}
           btn={plantHaus.btn}
-          a={plantHaus.aLink}
+          aLink={plantHaus.aLink}
+          isCurrentWork={plantHaus.isCurrentWork}
         />
 
         <ProductLeft
@@ -34,7 +35,8 @@ const Products = () => {
           img={interviewIQ.img}
           info={interviewIQ.info}
           btn={interviewIQ.btn}
-          a={interviewIQ.aLink}
+          aLink={interviewIQ.aLink}
+          isCurrentWork={interviewIQ.isCurrentWork}
         />
         <ProductRight
           name={dangoDB.name}
@@ -43,7 +45,8 @@ const Products = () => {
           img={dangoDB.img}
           info={dangoDB.info}
           btn={dangoDB.btn}
-          a={dangoDB.aLink}
+          aLink={dangoDB.aLink}
+          isCurrentWork={dangoDB.isCurrentWork}
         />
 
         <ProductLeft
@@ -53,7 +56,8 @@ const Products = () => {
           img={ad3lie.img}
           info={ad3lie.info}
           btn={ad3lie.btn}
-          a={ad3lie.aLink}
+          aLink={ad3lie.aLink}
+          isCurrentWork={ad3lie.isCurrentWork}
         />
 
         {/* <div className="project-row">
