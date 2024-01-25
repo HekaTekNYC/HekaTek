@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useRef, useState, useEffect, Suspense } from "react"
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { OrbitControls, useCubeTexture } from "@react-three/drei"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
-import firebaseIcon from "../../assets/icons_png/test3.png"
+import firebaseIcon from "../../assets/images/arrggg.png"
 
 import { useControls } from "leva"
 import "./tech-services.scss"
@@ -52,6 +52,10 @@ const TechStack = ({
 }
 
 const Planet = () => {
+  const fuckinTexture = useCubeTexture(
+    ["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
+    { path: "assets/textures/" }
+  )
   const planetRef = useRef()
   const texture = useLoader(
     TextureLoader,
@@ -66,7 +70,7 @@ const Planet = () => {
 
       <mesh ref={planetRef}>
         <sphereGeometry args={[0.8, 64, 64]} />
-        <meshPhysicalMaterial map={texture} />
+        <meshBasicMaterial map={texture} />
       </mesh>
     </>
   )
@@ -76,20 +80,21 @@ const TechServices = () => {
   return (
     <>
       <Canvas>
-        {/* <ambientLight args={["ffffff", 1]} /> */}
-        <ambientLight args={[0xffffff, 0.5]} />
-        <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} />
-        <directionalLight position={[6, 0, 2]} intensity={1.5} />
+        {/* <ambientLight args={[0xffffff, 0.5]} /> */}
+        {/* <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} /> */}
+        <directionalLight position={[0, 1, 10]} />
         <Planet />
-        {icons.map((icon, index) => (
-          <TechStack
-            key={index}
-            position={[0, 0, 0]}
-            orbitalSpeed={0.5}
-            iconSrc={icon.src}
-            orbitalOffset={icon.orbitalOffset}
-          />
-        ))}
+        <Suspense fallback={null}>
+          {icons.map((icon, index) => (
+            <TechStack
+              key={index}
+              position={[0, 0, 0]}
+              orbitalSpeed={0.5}
+              iconSrc={icon.src}
+              orbitalOffset={icon.orbitalOffset}
+            />
+          ))}
+        </Suspense>
         {/* <TechStack
           position={[0, 0, -2]}
           orbitalSpeed={0.5}

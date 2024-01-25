@@ -55,24 +55,20 @@ const Hero = () => {
           <div className="hero-right-container">
             <div className="mission-statement-container">
               <div className="hekatek-header">
-                <div className="half-intro">
-                  Hey, We're{" "}
-                  <span className="drei3d">
-                    <ThreeDeeText />
-                  </span>
+                <div className="half-intro">Hey, we're </div>
+                <div className="drei3d">
+                  <ThreeDeeText text={`HekaTek`} />
                 </div>
 
                 {/* <div className="drei3d"><ThreeDeeText />  </div> */}
-              </div>
-              <span className="animated-text">
-                Web Developers with a passion for bringing your vision to life.
-                {/* {showText}
-                <span className="cursor">|</span> */}
-              </span>
 
-              {/* <div className="mission-statement typewriter-effect">
-                {showText}s
-              </div> */}
+                <div className="animated-text">
+                  Web Developers with a passion <br /> for bringing your vision
+                  to life.
+                  {/* {showText}
+                <span className="cursor">|</span> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>
