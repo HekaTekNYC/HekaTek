@@ -8,13 +8,16 @@ import {
   dangoDB,
   ad3lie,
 } from "../../data/ProductData.jsx"
+import ThreeDeeText from "../../components/3d-text/3d-text.jsx"
 import "./products.scss"
 
 const Products = () => {
   return (
     <>
       <div className="products-container">
-        <div className="products-header">Our Work</div>
+        <div className="products-header">
+          <ThreeDeeText text={`Our Work`} />
+        </div>
         <ProductRight
           name={plantHaus.name}
           desc={plantHaus.desc}

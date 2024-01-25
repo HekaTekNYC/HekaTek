@@ -2,6 +2,7 @@ import React from "react"
 import { useSpring, animated, useInView } from "@react-spring/web"
 import SpaceOverlay from "../../components/stars/Stars"
 import TechServices from "../../components/tech-services/Tech-services"
+import ThreeDeeText from "../../components/3d-text/3d-text"
 import "./about.scss"
 
 const About = () => {
@@ -31,7 +32,9 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <div className="about-header">About Us</div>
+      <div className="about-header">
+        <ThreeDeeText text={`About Us`} />
+      </div>
       <div className="about-row">
         <div className="about-info">
           <animated.div ref={ref} style={text1} className="about-text">
