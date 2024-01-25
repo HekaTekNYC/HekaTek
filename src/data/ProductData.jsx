@@ -8,8 +8,10 @@ import CSSLogo from "../assets/icons/CSSLogo.svg"
 import MongoDB from "../assets/icons/mongodb.svg"
 import Express from "../assets/icons/express.svg"
 import Typescript from "../assets/icons/typescript.svg"
-
 import dangoDBI from "../assets/images/dangoDB.png"
+import D3 from "../assets/icons/d3js-icon.svg"
+import Tailwind from "../assets/icons/tailwindcss.svg"
+import Electron from "../assets/icons/electronjs.svg"
 
 export const plantHaus = {
   name: "Plant Haus",
@@ -40,7 +42,7 @@ export const plantHaus = {
     src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
     alt: "Plant Haus Preview",
   },
-  info: "A robust ecommerce platform dedicated to indoor plants. Seamlessly integrating OAuth login with React and Firebase, it offers a comprehensive and secure shopping experience for plant enthusiasts.",
+  info: "A dynamic ecommerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This platform combines OAuth authentication with React and Firebase, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
   btn: "View More",
   aLink: "https://planthaus.netlify.app/",
   isCurrentWork: false,
@@ -125,22 +127,22 @@ export const ad3lie = {
   name: "Ad3lie",
   desc: "Data visualizations utilizing the power of D3.js",
   icons: [
-    // {
-    //   src: Tailwind,
-    //   alt: "Tailwind Logo",
-    // },
+    {
+      src: Tailwind,
+      alt: "Tailwind Logo",
+    },
     {
       src: ReactIcon,
       alt: "React Logo",
     },
-    // {
-    //   src: D3Logo,
-    //   alt: "D3 Logo",
-    // },
-    // {
-    //   src: Electron,
-    //   alt: "Electron Logo",
-    // },
+    {
+      src: D3,
+      alt: "D3 Logo",
+    },
+    {
+      src: Electron,
+      alt: "Electron Logo",
+    },
   ],
   img: {
     src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",

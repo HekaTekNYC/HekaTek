@@ -16,7 +16,8 @@
   z-index: 3;
 }
 
-.space-container {
+.space-container,
+.sparkles-container {
   position: absolute;
   width: 100%;
   height: 112vh;
@@ -36,20 +37,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    // width: 550px;
+    width: auto;
     height: auto;
     z-index: 20;
     margin-top: 100px;
 
     img {
-      width: 750px;
+      width: 950px;
       height: auto;
     }
   }
 }
 
 // Hero right side
-
 .hero-right-container {
   display: flex;
   align-items: center;
@@ -67,23 +68,19 @@
 
   .hekatek-header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    // z-index: 3;
 
     .half-intro {
       white-space: nowrap;
       font-size: 3.5rem;
       font-weight: 800;
-    }
 
-    // .drei3d {
-    //   display: flex;
-    //   justify-content: center;
-    //   width: 100%;
-    //   height: 100px;
-    //   z-index: 5;
-    // }
+      // .drei3d {
+      //   width: 500px;
+      //   height: 100px;
+      //   z-index: 5;
+      // }
+    }
   }
 
   .animated-text {

@@ -4,7 +4,8 @@ import SparklesOverlay from "../../components/sparkles/Sparkles"
 import ThreeDeeText from "../../components/3d-text/3d-text"
 import Cosmo from "../../assets/images/cosmo.png"
 import SpaceOverlay from "../../components/stars/Stars"
-import { OrbitControls } from "@react-three/drei"
+import HeaderText from "../../components/headers/HeaderText"
+// import { OrbitControls } from "@react-three/drei"
 import "./hero.scss"
 
 const Hero = () => {
@@ -35,10 +36,10 @@ const Hero = () => {
   return (
     <div>
       <div className="hero-container">
-        <div className="space-container">
+        {/* <div className="space-container">
           <SpaceOverlay />
         </div>
-        {/* <div className="sparkles-container">
+        <div className="sparkles-container">
           <SparklesOverlay />
         </div> */}
         <div className="hero-row">
@@ -53,11 +54,16 @@ const Hero = () => {
           </div>
           <div className="hero-right-container">
             <div className="mission-statement-container">
-              <span className="hekatek-header">
-                <div className="half-intro">Hey, We're HEKATEK</div>
+              <div className="hekatek-header">
+                <div className="half-intro">
+                  Hey, We're{" "}
+                  <span className="drei3d">
+                    <ThreeDeeText />
+                  </span>
+                </div>
 
                 {/* <div className="drei3d"><ThreeDeeText />  </div> */}
-              </span>
+              </div>
               <span className="animated-text">
                 Web Developers with a passion for bringing your vision to life.
                 {/* {showText}

@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require("path")
 const webpack = require("webpack")
-
+const CopyPlugin = require("copy-webpack-plugin")
 module.exports = {
   mode: "development",
   entry: "./src/index.jsx",
@@ -60,6 +60,15 @@ module.exports = {
       template: "./public/index.html",
     }),
     new webpack.HotModuleReplacementPlugin(),
+
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "src/assets",
+          to: "assets",
+        },
+      ],
+    }),
   ],
   devServer: {
     static: {

@@ -11,8 +11,6 @@ import {
 import "./products.scss"
 
 const Products = () => {
-  console.log("dangoDB a link", dangoDB.aLink)
-  console.log("a link type of", typeof dangoDB.aLink)
   return (
     <>
       <div className="products-container">

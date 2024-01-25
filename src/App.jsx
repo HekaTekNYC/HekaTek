@@ -9,7 +9,7 @@ import Navigation from "./components/navigation/Navigation"
 const App = () => {
   return (
     <Router>
-      <Navigation />
+      {/* <Navigation /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
