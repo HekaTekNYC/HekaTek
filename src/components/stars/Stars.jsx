@@ -7,13 +7,11 @@ import { useEffect, useRef } from "react"
 import * as THREE from "three"
 import { Perf } from "r3f-perf"
 
-const COUNT = 120
+const COUNT = 150
 const XY_BOUNDS = 40
 const Z_BOUNDS = 20
 // const MAX_SPEED_FACTOR = 1
 // const MAX_SCALE_FACTOR = 4
-
-const CHROMATIC_ABERRATION_OFFSET = 0.0
 
 const MyStars = () => {
   const meshRef = useRef()
@@ -48,8 +46,8 @@ const MyStars = () => {
       meshRef.current.getMatrixAt(i, temp)
 
       // update scale
-      tempObject.scale.set(1, 1, Math.max(1, 1, 1.5))
-
+      tempObject.scale.set(1, 1, Math.max(1, 1, 0.1))
+      // tempObject.scale.set(1, 1, 0.75)
       tempPos.setFromMatrixPosition(temp)
       if (tempPos.z > Z_BOUNDS / 2) {
         tempPos.z = -Z_BOUNDS / 2
@@ -83,7 +81,7 @@ const MyStars = () => {
         args={[undefined, undefined, COUNT]}
         matrixAutoUpdate
       >
-        <sphereGeometry args={[0.012]} />
+        <sphereGeometry args={[0.01]} />
         <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
       </instancedMesh>
       <EffectComposer>
@@ -106,7 +104,7 @@ const SpaceOverlay = () => {
       }}
       // frameloop="demand"
     >
-      <Perf />
+      {/* <Perf /> */}
       <MyStars />
     </Canvas>
   )

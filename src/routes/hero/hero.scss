@@ -30,25 +30,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   padding-left: 60px;
   z-index: 20;
 
   .hero-image {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: auto;
     height: auto;
     z-index: 40;
-    top: 225px;
-    left: 250px;
-    margin-top: 100px;
 
     img {
-      width: 750px;
+      width: 650px;
       height: auto;
     }
   }
@@ -58,9 +53,9 @@
 .hero-right-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 70%;
-  padding: 0 60px 200px 0;
+  // justify-content: center;
+  width: 60%;
+  padding-right: 60px;
 }
 
 .mission-statement-container {
@@ -75,28 +70,40 @@
     display: flex;
     flex-direction: column;
 
-    .half-intro {
+    .header {
       display: flex;
-      justify-content: flex-start;
-      white-space: nowrap;
-      font-size: 5.3rem;
-      font-weight: 800;
+      flex-direction: row;
+      .half-intro {
+        display: flex;
+        justify-content: flex-start;
+        white-space: nowrap;
+        font-size: 4.3rem;
+        font-weight: 800;
+      }
+
+      .header-color {
+        color: #9666ff;
+        font-size: 4.3rem;
+        font-weight: 800;
+      }
     }
-    .drei3d {
-      display: flex;
-      justify-content: center;
-    }
+
+    // .drei3d {
+    //   display: flex;
+    //   justify-content: center;
+    // }
   }
 
   .animated-text {
     display: flex;
-    justify-content: flex-end;
+
     font-family: Montserrat;
     font-size: 2em;
     font-weight: 600;
     white-space: pre-wrap; /* Preserve spaces and line breaks */
     margin-right: 10px;
     padding-top: 30px;
+    width: 100%;
   }
 
   // .cursor {
@@ -161,6 +168,9 @@
   .mission-statement {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 600px) {

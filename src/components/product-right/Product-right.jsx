@@ -20,7 +20,9 @@ const ProductRight = ({
           <div className="product-left-text">
             <div className="product-name">
               {name}{" "}
-              {isCurrentWork && <span className="current">CURRENT WORK</span>}
+              {isCurrentWork && (
+                <span className="current">WORK IN PROGRESS</span>
+              )}
             </div>
             <div className="product-desc">{desc}</div>
           </div>
@@ -34,7 +36,9 @@ const ProductRight = ({
           <div className="product-card">
             <div className="product-image-glass">
               <div className="product-image">
-                <img src={img.src} alt={img.alt} />
+                <a href={aLink} target="_blank">
+                  <img src={img.src} alt={img.alt} />
+                </a>
               </div>
             </div>
             <div className="product-card-text">

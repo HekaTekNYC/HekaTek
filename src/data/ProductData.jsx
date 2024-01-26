@@ -12,6 +12,8 @@ import dangoDBI from "../assets/images/dangoDB.png"
 import D3 from "../assets/icons/d3js-icon.svg"
 import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
+import Ad3lie from "../assets/images/Ad3lie.png"
+import IIQ from "../assets/images/IIQ.png"
 
 export const plantHaus = {
   name: "Plant Haus",
@@ -78,12 +80,12 @@ export const interviewIQ = {
     },
   ],
   img: {
-    src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
+    src: IIQ,
     alt: "InterviewIQ Preview",
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
-  btn: "View More",
-  aLink: "",
+  btn: "Coming Soon",
+
   isCurrentWork: true,
 }
 
@@ -145,7 +147,7 @@ export const ad3lie = {
     },
   ],
   img: {
-    src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
+    src: Ad3lie,
     alt: "Ad3lie Preview",
   },
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
