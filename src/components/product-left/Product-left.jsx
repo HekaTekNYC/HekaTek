@@ -18,7 +18,9 @@ const ProductLeft = ({
         <div className="product-card-rev">
           <div className="product-image-glass-rev">
             <div className="product-image-rev">
-              <img src={img.src} alt={img.alt} />
+              <a href={aLink} target="_blank">
+                <img src={img.src} alt={img.alt} />
+              </a>
             </div>
           </div>
           <div className="product-card-text-rev">
@@ -36,7 +38,7 @@ const ProductLeft = ({
         <div className="product-right-text-rev">
           <div className="product-name-rev">
             {name}
-            {isCurrentWork && <span className="current">CURRENT WORK</span>}
+            {isCurrentWork && <span className="current">WORK IN PROGRESS</span>}
           </div>
           <div className="product-desc-rev">{desc}</div>
         </div>

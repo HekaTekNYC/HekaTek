@@ -6,16 +6,17 @@ const SparkleSky = () => {
   return (
     <>
       <Sparkles
-        count={300}
+        count={200}
         size={3}
         fade
         speed={0.19}
-        opacity={1}
+        // opacity={1}
+        opacity={0.5}
         scale={10}
         color="#3ddbff"
         noise={3}
       />
-      <Stars
+      {/* <Stars
         radius={100}
         depth={50}
         count={5000}
@@ -24,7 +25,7 @@ const SparkleSky = () => {
         fade
         speed={1}
         color="#ff3dd5"
-      />
+      /> */}
     </>
   )
 }
