@@ -25,6 +25,10 @@ function TextShiz({ text }) {
     ["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
     { path: "assets/textures/" }
   )
+  const newTexture = useCubeTexture(
+    ["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
+    { path: "assets/textures1/" }
+  )
 
   const ref = useRef()
   // const speed = 0.09 // Adjust as needed
@@ -55,7 +59,13 @@ function TextShiz({ text }) {
           letterSpacing={-0.2}
         >
           {text}
-          <meshNormalMaterial metalness={0.9} roughness={0.1} />
+          <meshBasicMaterial
+            metalness={0.9}
+            roughness={0.1}
+            // color={"mint"}
+            // envMap={newTexture}
+            envMap={fuckinTexture}
+          />
         </Text3D>
       </Center>
 
