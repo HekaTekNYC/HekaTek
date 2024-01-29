@@ -4,14 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(17, 7, 31, 1) 50%
-  );
-  transition: ease all 0.5s;
-  z-index: 5;
+
+  // background: rgb(0, 0, 0);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(0, 0, 0, 1) 10%,
+  //   rgba(17, 7, 31, 1) 50%
+  // );
+  // transition: ease all 0.5s;
+  // z-index: 5;
 
   .products-header {
     text-align: center;

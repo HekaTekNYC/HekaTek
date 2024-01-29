@@ -38,8 +38,8 @@ const Hero = () => {
       <div className="hero-container">
         {/* <div className="space-container">
           <SpaceOverlay />
-        </div>
-        <div className="sparkles-container">
+        </div> */}
+        {/* <div className="sparkles-container">
           <SparklesOverlay />
         </div> */}
         <div className="hero-row">

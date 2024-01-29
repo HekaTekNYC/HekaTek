@@ -24,14 +24,15 @@ const About = () => {
           and exciting. Interested in elevating your online presence? Get in
           touch below.
         </div>
-
         <div className="about-services">
           <div className="tech-overlay">
             <TechServices />
           </div>
 
-          <div className="sparkle-overlay">
-            <Sparkles />
+          <div className="about-glass">
+            <div className="sparkle-overlay">
+              <Sparkles />
+            </div>
           </div>
         </div>
       </div>
