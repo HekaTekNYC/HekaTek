@@ -12,15 +12,18 @@ const Home = () => {
       <div className="hero-section" id="hero">
         <Hero />
       </div>
-
-      <div className="product-section" id="product">
-        <Products />
-      </div>
-      <div className="about-section " id="about">
-        <About />
-      </div>
-      <div className="contact-section" id="contact">
-        <Contact />
+      <div className="bg">
+        <div className="glass-bg">
+          <div className="product-section" id="product">
+            <Products />
+          </div>
+          <div className="about-section " id="about">
+            <About />
+          </div>
+          <div className="contact-section" id="contact">
+            <Contact />
+          </div>
+        </div>
       </div>
     </>
   )
