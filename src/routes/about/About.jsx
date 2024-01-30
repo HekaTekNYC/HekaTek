@@ -29,10 +29,8 @@ const About = () => {
             <TechServices />
           </div>
 
-          <div className="about-glass">
-            <div className="sparkle-overlay">
-              <Sparkles />
-            </div>
+          <div className="sparkle-overlay">
+            <Sparkles />
           </div>
         </div>
       </div>

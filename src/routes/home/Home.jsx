@@ -14,19 +14,17 @@ const Home = () => {
         <Hero />
       </div>
       <div className="bg">
-        <div className="glass-bg">
-          <div className="product-overlay">
-            <div className="product-section" id="product">
-              <Products />
-            </div>
-          </div>
-          <div className="about-section " id="about">
-            <About />
-          </div>
+        <div className="product-section" id="product">
+          <div className="product-overlay"></div>
+          <Products />
+        </div>
 
-          <div className="contact-section" id="contact">
-            <Contact />
-          </div>
+        <div className="about-section " id="about">
+          <About />
+        </div>
+
+        <div className="contact-section" id="contact">
+          <Contact />
         </div>
       </div>
     </>

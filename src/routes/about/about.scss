@@ -5,23 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // position: relative;
   padding: 0 100px;
-  // background: rgba(8, 8, 8, 0.5);
-  // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  // backdrop-filter: blur(4px);
-  // -webkit-backdrop-filter: blur(4px);
-  // border-radius: 10px;
-  // border: 1px solid rgba(255, 255, 255, 0.18);
-  // background: rgb(17, 7, 31);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(17, 7, 31, 1) 0%,
-  //   rgba(17, 7, 31, 0.09707633053221287) 15%,
-  //   rgba(17, 7, 31, 0) 50%,
-  //   rgba(17, 7, 31, 0.09707633053221287) 85%,
-  //   rgba(17, 7, 31, 1) 100%
-  // );
 }
 
 .about-row {
@@ -45,25 +29,10 @@
     }
   }
 
-  // .about-services::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: -1;
-  //   background: radial-gradient(
-  //     circle,
-  //     rgba(0, 0, 0, 1) 70%,
-  //     rgba(17, 7, 31, 0) 88%
-  //   );
-  // }
   .about-services {
     position: relative;
     width: 60%;
     height: 600px;
-    // z-index: 8;
     order: 2;
 
     .tech-overlay,

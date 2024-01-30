@@ -19,23 +19,37 @@
   height: auto;
   transition: ease all 0.5s;
   z-index: 5;
+
+  .product-overlay {
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 40;
+    height: 225px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .about-section {
   height: auto;
-
-  // background: radial-gradient(
-  //     ellipse at 100% 50%,
-  //     rgba(17, 7, 31, 0) 12%,
-  //     rgba(17, 7, 31, 1) 85%
-  //   ),
-  //   url("/src/assets/images/space-background-rev.webp");
 }
 
 .contact-section {
   height: 100vh;
+  // .contact-left {
+  //   width: 50%;
+  //   height: 100%;
+  //   //   background-image: url("../../assets/images/space-background-rev.webp");
+  //   //   background-size: cover;
+  //   z-index: 1;
+  // }
 
-  // background-image: url("https://i.ibb.co/X7BPqry/ultra-detailed-nebula-abstract-wallpaper-4.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  // .contact-right {
+  //   width: 50%;
+  // }
 }
