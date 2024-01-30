@@ -32,7 +32,7 @@
       .current {
         font-family: Quicksand;
         font-size: 1rem;
-        color: #5d19d1;
+        color: #5d19d19b;
         padding: 0 8px;
         line-height: 0.9;
         font-weight: 700;
@@ -92,15 +92,25 @@
   min-width: 730px;
   height: 320px;
   padding: 20px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    57deg,
-    rgba(0, 0, 0, 1) 5%,
-    rgb(37, 22, 71) 20%,
-    rgb(56, 19, 120) 52%,
-    rgb(54, 33, 108) 60%,
-    rgba(17, 7, 31, 1) 88%
-  );
+  background: rgba(95, 99, 173, 0.55);
+  // background: rgba(107, 83, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  // background-image: url("https://i.ibb.co/TW9MZgG/card-space.png");
+  // background-image: url("https://i.ibb.co/ZWg4WQq/card-bk.png");
+
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  // background: linear-gradient(
+  //   57deg,
+  //   rgba(0, 0, 0, 1) 5%,
+  //   rgb(37, 22, 71) 20%,
+  //   rgb(56, 19, 120) 52%,
+  //   rgb(54, 33, 108) 60%,
+  //   rgba(17, 7, 31, 1) 88%
+  // );
   box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transition: ease all 0.5s;
@@ -112,12 +122,12 @@
   top: -40px;
   left: -40px;
   width: 400px;
-  background: rgba(181, 160, 249, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(64, 31, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(153, 153, 201, 0.391);
+  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
-  padding: 25px;
+  padding: 15px;
   border-radius: 15px;
   z-index: 10;
   transition: ease all 0.5s;
@@ -159,9 +169,9 @@
     }
     .product-btn {
       font-family: Quicksand;
-      background-color: #250c48;
+      background-color: #19192192;
+      box-shadow: rgba(22, 21, 21, 0.35) 0px 5px 15px;
       color: #fff;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 6px;
       border: none;
       font-size: 1rem;
