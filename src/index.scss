@@ -10,67 +10,17 @@ body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
-
-  // background: url("./assets/images/hekatek_bkrnd.jpg") no-repeat center center
-  //   fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
   color: #fff;
-
   height: 100%;
 }
 
 .bg {
-  // background-image: linear-gradient(
-  //   111.4deg,
-  //   rgba(7, 7, 9, 1) 6.5%,
-  //   rgba(27, 24, 113, 1) 93.2%
-  // );
-  // background-image: url("https://i.ibb.co/TH0CT2F/stock-photo-abstract-flying-dragons-on-a-dark-blue-background-technological-background-for-design-on.jpg");
-  // background-image: url("https://i.ibb.co/qMFFPD6/stock-photo-night-sky-with-stars-as-background-universe-1913626822.jpg");
-  // background-image: url(" https://i.ibb.co/nmMTNPk/abstract-background-night-sky-with-clouds-stars-3d-rendering.png");
-  // background-image: url("https://i.ibb.co/Q93BLHV/space-blue.png");
-  // background-image: url("https://i.ibb.co/hRwcJFD/aldebaran-s-qt-RF-Rx-CAo0-unsplash.jpg");
-
-  // background-image: url("https://i.ibb.co/Q93BLHV/space-blue.png");
-  // background-image: url("https://i.ibb.co/k8S2qnY/beauty.jpg");
   background-image: url("https://i.ibb.co/0q30bQD/bkgd2-blue-flip.png");
-  // background-image: url("https://i.ibb.co/kJYMQZR/bkgd2-blue.png");
-  // background-image: url("https://i.ibb.co/424NFZ7/bkgd2-flip.png");
-  // background-image: url("https://i.ibb.co/GWHRWF8/bkgd2.jpg");
-  // background-image: url("https://i.ibb.co/X7BPqry/ultra-detailed-nebula-abstract-wallpaper-4.jpg");
-  // background-image: url("https://i.ibb.co/X8PYVWX/img.jpg");
-  // background-image: url("https://i.ibb.csso/fNqm1Mq/shutterstock-2202340765.jpg");
-  // background-image: url("https://i.ibb.co/G21t8KZ/new-b.png");
-
-  /* Full height */
   height: 100%;
-  // background: #000;
-  // background-repeat: no-repeat;
   background-size: cover;
-  // background: rgb(114, 114, 131);
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(114, 114, 131, 1) 0%,
-  //   rgba(0, 0, 0, 1) 100%
-  // );
-  // z-index: 1;
 }
 
 .glass-bg {
-  // background: rgba(8, 8, 8, 0.5);
-
-  // backdrop-filter: blur(4px);
-  // -webkit-backdrop-filter: blur(4px);
-
-  // background: rgb(114, 114, 131);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(114, 114, 131, 0) 0%,
-  //   rgba(0, 0, 0, 0.6741071428571428) 100%
-  // );
   background: rgb(114, 114, 131);
   background: linear-gradient(
     180deg,
@@ -88,20 +38,6 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
 }
-// body {
-//   margin: 0;
-//   font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat",
-//     "Lato" sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   overflow-y: scroll;
-//   scrollbar-width: none; /* Firefox */
-//   -ms-overflow-style: none; /* IE and Edge */
-
-//   background-image: url("./assets/images/hekatek_bkrnd.jpg");
-//   background-size: cover;
-//   color: #fff;
-// }
 
 body::-webkit-scrollbar {
   display: none;
@@ -146,7 +82,7 @@ ul {
 
 .form-select:focus,
 .form-control:focus {
-  border-color: rgba(230, 228, 233, 0.728);
+  border-color: #b5b1ffba;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(157, 155, 160, 0.748);
   color: #fff;
@@ -163,37 +99,38 @@ ul {
 }
 
 .form-control:not(active) {
-  background-color: rgba(181, 160, 249, 0.4) !important;
-  border-color: rgba(243, 240, 247, 0.349);
+  background-color: rgba(205, 205, 205, 0.155) !important;
+  border-color: rgba(102, 102, 103, 0.349);
   color: #ffffff !important;
 }
 
-.form-container {
+.contact-form-container {
+  position: relative;
   width: 600px;
   margin: auto;
-  padding: 30px;
+  padding: 50px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(157, 157, 157, 0.148);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  // background: rgb(0, 0, 0);
-  // background: linear-gradient(
-  //   110deg,
-  //   rgba(0, 0, 0, 1) 0%,
-  //   rgb(37, 22, 71) 25%,
-  //   rgb(56, 19, 120) 32%,
-  //   rgb(95, 56, 136) 52%,
-  //   rgb(37, 22, 71) 80%,
+  z-index: 1;
 
-  //   rgba(17, 7, 31, 1) 100%
-  // );
-  // box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
-  //   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  // .mercury {
+  //   position: absolute;
+  //   top: -100px;
+  //   right: -70px;
+  //   width: 200px;
+  //   height: 200px;
+  //   background-image: url("https://i.ibb.co/Yy7x2sH/mercury.png");
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   z-index: 1;
+  // }
 
   h6 {
     font-size: 24px;
@@ -203,10 +140,9 @@ ul {
 
 .contact-btn {
   font-family: Inter;
-  // font-family: Quicksand;
-  background-color: rgba(37, 22, 71, 0.407);
+  background-color: rgba(205, 205, 205, 0.157);
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.586);
   border-radius: 6px;
   border: none;
   font-size: 1rem;

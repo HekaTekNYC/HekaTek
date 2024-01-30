@@ -1,9 +1,23 @@
 .contact-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
+// .plane-icon {
+//   position: relative;
+//   width: auto;
+//   height: 100%;
+//   .email-icon {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 100px;
+//     height: 100px;
+//   }
+// }
 
 .modal {
   display: none;
@@ -12,10 +26,11 @@
   left: 0;
   width: 450px;
   height: 650px;
-  background: rgba(209, 205, 205, 0.6);
+  background: rgba(239, 238, 238, 0.6);
   z-index: 1050;
   justify-content: center;
   align-items: center;
+  // color: #332d62;
 }
 
 .modal.open {

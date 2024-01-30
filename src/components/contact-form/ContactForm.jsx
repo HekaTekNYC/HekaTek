@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { Modal, Button, Form, Row, Col } from "react-bootstrap"
 import FloatingLabel from "react-bootstrap/FloatingLabel"
+import emailIcon from "../../assets/icons/plane.svg"
 import "./ContactForm.scss"
 
 const ContactForm = () => {
@@ -48,8 +49,23 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="contact-container grid-container">
-      <div className="form-container">
+    <div className="contact-container">
+      <div className="contact-form-container">
+        <img
+          src={emailIcon}
+          alt="Email"
+          className="email-icon"
+          style={{
+            position: "absolute",
+            top: "86%",
+            left: "88%",
+            transform: "translate(-50%, -50%) rotate(-10deg)",
+            width: "125px",
+            height: "125px",
+          }}
+        />
+
+        <div className="mercury"></div>
         <h6>Contact Us</h6>
 
         <Form ref={form} onSubmit={sendEmail}>
