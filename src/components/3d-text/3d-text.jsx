@@ -1,6 +1,11 @@
 import React, { useRef, Suspense } from "react"
-import { Text3D, OrbitControls, Center } from "@react-three/drei"
-import { Canvas, useThree } from "@react-three/fiber"
+import {
+  Text3D,
+  OrbitControls,
+  Center,
+  useCubeTexture,
+} from "@react-three/drei"
+import { Canvas, useThree, useFrame } from "@react-three/fiber"
 
 import { TextureLoader } from "three/src/loaders/TextureLoader"
 
@@ -12,17 +17,22 @@ import "./3d-text.scss"
 
 function TextShiz() {
   const ref = useRef()
-  const { width: w, height: h } = useThree((state) => state.viewport)
-  // const texture = useLoader(TextureLoader, )
+  const { gl, camera } = useThree()
 
-  // const sunTexture = useLoader(CubeTextureLoader, [
-  //   "/assets/textures/px.png",
-  //   "/assets/textures/nx.png",
-  //   "/assets/textures/py.png",
-  //   "/assets/textures/ny.png",
-  //   "/assets/textures/pz.png",
-  //   "/assets/textures/nz.png",
-  // ])
+  // const { width: w, height: h } = useThree((state) => state.viewport)
+  // const texture = useLoader(TextureLoader, "/assets/rockt.png")
+  // const texture = new TextureLoader().load('/assets/textures/myTexture.png');
+
+  const newTexture = useCubeTexture(
+    ["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
+    { path: "/assets/textures/" }
+  )
+
+  useFrame((state, delta) => {
+    state.camera.position.x = 0.2 * Math.sin(state.clock.elapsedTime)
+    state.camera.position.y = -0.9 * Math.sin(state.clock.elapsedTime)
+    // state.camera.position.z = 9 * Math.sin(state.clock.elapsedTime)
+  })
 
   return (
     <>
@@ -30,23 +40,26 @@ function TextShiz() {
         {/* <Float speed={1} floatIntensity={0.02}> */}
 
         <Text3D
-          position={[0, 5, 0]}
+          // position={[-1, 5, 10]}
           ref={ref}
-          size={3}
+          size={4.4}
           maxWidth={1}
           font={Fontz}
           height={1}
           lineHeight={0.9}
-          letterSpacing={-0.2}
+          letterSpacing={0}
         >
           {`HekaTek`}
           <meshBasicMaterial
             metalness={0.9}
             roughness={0.1}
-            color={"#9a63ff"}
-
-            //  map={texture}
+            // color={"#F79489"}
+            color={"#F8AFA6"}
+            // color={"##5AC69F"}
+            envMap={newTexture}
+            // map={texture}
           />
+          {/* <meshNormalMaterial metalness={0.9} roughness={0.1} /> */}
         </Text3D>
       </Center>
 
@@ -58,12 +71,21 @@ function TextShiz() {
 export default function ThreeDeeText() {
   return (
     <div className="scene" style={{ width: "500px", height: "100px" }}>
-      <Canvas camera={{ position: [0, 0, 10], fov: 30 }}>
-        {/* <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={0.5} /> */}
+      <Canvas camera={{ position: [0, -1, 10], fov: 28 }}>
+        {/* <ambientLight intensity={0.5} position={[0, 0, 2]} /> */}
+        <ambientLight intensity={2} position={[0, 0, 10]} />
+        <spotLight
+          position={[0, 0, 10]}
+          intensity={2}
+          angle={0.1}
+          penumbra={1}
+          castShadow
+        />
+        <directionalLight position={[0, 10, 50]} intensity={1} />
+        <pointLight position={[0, 0, 2]} intensity={0.5} />
         <TextShiz />
-        <axesHelper args={[5]} />
-        <gridHelper />
+        {/* <axesHelper args={[5]} />
+        <gridHelper /> */}
       </Canvas>
     </div>
   )

@@ -6,7 +6,7 @@ const SparkleSky = () => {
   return (
     <>
       <Sparkles
-        count={200}
+        count={100}
         size={3}
         fade
         speed={0.19}
@@ -32,7 +32,7 @@ const SparkleSky = () => {
 
 const SparklesOverlay = () => {
   return (
-    <Canvas frameloop="demand">
+    <Canvas frameloop="always">
       <mesh>
         <SparkleSky />
       </mesh>
