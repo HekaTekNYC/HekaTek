@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0;
+  padding: 0 200px 0 100px;
 }
 
 .hero-row {
@@ -30,46 +30,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
-  padding-left: 60px;
+  width: 40%;
   z-index: 20;
 
   .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin-top: 50px;
     z-index: 40;
 
     img {
-      width: 450px;
-      height: auto;
+      width: 550px;
     }
   }
 }
 
 // Hero right side
-.hero-right-container {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  width: 70%;
-  // padding-right: 60px;
-}
 
-.mission-statement-container {
-  height: 100%;
+.hero-right-container {
+  position: relative;
   display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: flex-start;
   z-index: 50;
 
   .header {
-    position: absolute;
-    top: 30%;
-    left: 27%;
     display: flex;
     flex-direction: row;
 
@@ -95,43 +83,68 @@
     font-weight: 600;
     line-height: 1.4;
     font-style: italic;
-    margin: 60px 10px 0 0;
-    padding-top: 10px;
-    width: 85%;
+    padding: 10px 20px 0 100px;
     color: #dad7f1;
   }
 }
 
 // Media Queries
 @media screen and (max-width: 1400px) {
-}
-
-@media screen and (max-width: 1200px) {
-  .hekatek-header {
-    line-height: 1.2;
-    margin-bottom: 30px;
-    font-size: 2rem;
-  }
-
-  .hekatek-word {
-    font-weight: 500;
-    font-size: 2.1rem;
-  }
-  .mission-statement {
-    font-size: 2rem;
-    line-height: 1;
-  }
-}
-
-@media screen and (max-width: 992px) {
   .hero-left-container {
     display: none;
   }
 
   .hero-right-container {
-    text-align: center;
+    justify-content: center;
     width: 100%;
+    padding: 0 100px;
+
+    .header {
+      .half-intro {
+        font-size: 2.8rem;
+      }
+    }
+
+    .animated-text {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  .hero-right-container {
+    padding: 0;
+    .header {
+      flex-direction: column;
+      align-items: center;
+
+      .half-intro {
+        padding: 0 0 0 400px;
+      }
+    }
+
+    .animated-text {
+      text-align: center;
+      width: 100%;
+      padding: 40px 200px 0;
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  // .hero-left-container {
+  //   display: none;
+  // }
+
+  // .hero-right-container {
+  //   text-align: center;
+  //   width: 100%;
+  // }
 
   .mission-statement {
     font-size: 1.5rem;

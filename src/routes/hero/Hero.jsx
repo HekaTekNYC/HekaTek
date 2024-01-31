@@ -19,12 +19,12 @@ const Hero = () => {
   return (
     <div>
       <div className="hero-container">
-        <div className="space-container">
+        {/* <div className="space-container">
           <SpaceOverlay />
         </div>
         <div className="sparkles-container">
           <SparklesOverlay />
-        </div>
+        </div> */}
         <div className="hero-row">
           <div className="hero-left-container">
             <div className="hero-image">
@@ -35,19 +35,17 @@ const Hero = () => {
               </animated.div>
             </div>
           </div>
-          <div className="hero-right-container">
-            <div className="mission-statement-container">
-              <div className="header">
-                <div className="three-d">
-                  <ThreeDeeText />
-                </div>
-                <div className="half-intro">Web Development </div>
-              </div>
 
-              <div className="animated-text">
-                Freelancers with a passion for &nbsp;&nbsp;&nbsp;bringing your
-                vision to life.
+          <div className="hero-right-container">
+            <div className="header">
+              <div className="three-d">
+                <ThreeDeeText />
               </div>
+              <div className="half-intro">Web Development </div>
+            </div>
+
+            <div className="animated-text">
+              Freelancers with a passion for bringing your vision to life.
             </div>
           </div>
         </div>
