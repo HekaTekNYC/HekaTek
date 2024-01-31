@@ -74,6 +74,9 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist"),
     },
+    headers: {
+      "Cache-Control": "no-store", // This disables caching
+    },
     hot: true,
     open: true,
     client: {

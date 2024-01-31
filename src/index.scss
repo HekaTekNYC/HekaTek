@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Lato",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,6 +13,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   color: #fff;
   height: 100%;
+  background: #000;
 }
 
 .bg {

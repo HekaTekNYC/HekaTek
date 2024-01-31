@@ -1,9 +1,9 @@
 import React from "react"
-// import { useSpring, animated, useInView, useScroll } from "@react-spring/web"
+
 import Sparkles from "../../components/sparkles/Sparkles"
 import SpaceOverlay from "../../components/stars/Stars"
 import TechServices from "../../components/tech-services/Tech-services"
-import ThreeDeeText from "../../components/3d-text/3d-text"
+
 import "./about.scss"
 
 const About = () => {
@@ -39,27 +39,3 @@ const About = () => {
 }
 
 export default About
-
-// const [ref, inView] = useInView({ threshold: 0.33, once: true })
-// const [ref2, inView2] = useInView({ threshold: 0.66, once: true })
-// const [ref3, inView3] = useInView({ threshold: 1, once: true })
-
-// const text1 = useSpring({
-//   opacity: inView ? 1 : 0,
-//   // transform: inView ? "translate3d(0,0px,0)" : "translate3d(-100%,0,0)",
-//   config: { duration: 1000 },
-//   reset: true,
-// })
-// const text2 = useSpring({
-//   opacity: inView2 ? 1 : 0,
-//   // transform: inView2 ? "translate3d(0,0px,0)" : "translate3d(100%,0,0)",
-//   config: { duration: 1000 },
-//   reset: true,
-// })
-
-// const text3 = useSpring({
-//   opacity: inView3 ? 1 : 0,
-//   // transform: inView ? "translate3d(0,0px,0)" : "translate3d(-100%,0,0)",
-//   config: { duration: 1000 },
-//   reset: true,
-// })

@@ -16,32 +16,15 @@ const Hero = () => {
     config: { duration: 300000 },
   })
 
-  // const text = "Web Developers with a passion for bringing your vision to life."
-
-  // const [showText, setShowText] = useState("")
-  // const [index, setIndex] = useState(0)
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     if (index < text.length) {
-  //       setShowText((prevText) => prevText + text[index])
-  //       setIndex((prevIndex) => prevIndex + 1)
-  //     } else {
-  //       clearInterval(intervalId)
-  //     }
-  //   }, 50)
-  //   return () => clearInterval(intervalId) // Cleanup on unmount
-  // }, [text, index])
-
   return (
     <div>
       <div className="hero-container">
-        {/* <div className="space-container">
+        <div className="space-container">
           <SpaceOverlay />
-        </div> */}
-        {/* <div className="sparkles-container">
+        </div>
+        <div className="sparkles-container">
           <SparklesOverlay />
-        </div> */}
+        </div>
         <div className="hero-row">
           <div className="hero-left-container">
             <div className="hero-image">
@@ -54,18 +37,16 @@ const Hero = () => {
           </div>
           <div className="hero-right-container">
             <div className="mission-statement-container">
-              <div className="hekatek-header">
-                <div className="header">
-                  <div className="header-color">
-                    {/* <ThreeDeeText /> */} HekaTek
-                  </div>
-                  <div className="half-intro">Web Development </div>
+              <div className="header">
+                <div className="three-d">
+                  <ThreeDeeText />
                 </div>
+                <div className="half-intro">Web Development </div>
+              </div>
 
-                <div className="animated-text">
-                  Freelancers with a passion <br /> for bringing your vision to
-                  life.
-                </div>
+              <div className="animated-text">
+                Freelancers with a passion for &nbsp;&nbsp;&nbsp;bringing your
+                vision to life.
               </div>
             </div>
           </div>

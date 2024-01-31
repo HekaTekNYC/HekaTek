@@ -165,10 +165,6 @@ const Planet = ({ icons }) => {
         // distance={distance}
         decay={2}
         color={"#00fbff"}
-        // color={"#ffa600"}
-        // color={"#ff5900"}
-        // color={"#ff0051"}
-        // color={"#b700ff"}
         intensity={1.2}
         position={[1, 1, 1]}
       />
