@@ -9,6 +9,8 @@ import {
   ad3lie,
 } from "../../data/ProductData.jsx"
 
+import Spacepink from "../../assets/images/pink_space2.png"
+
 import "./products.scss"
 
 const Products = () => {
@@ -26,28 +28,33 @@ const Products = () => {
           aLink={plantHaus.aLink}
           isCurrentWork={plantHaus.isCurrentWork}
         />
-
-        <ProductLeft
-          name={interviewIQ.name}
-          desc={interviewIQ.desc}
-          icons={interviewIQ.icons}
-          img={interviewIQ.img}
-          info={interviewIQ.info}
-          btn={interviewIQ.btn}
-          aLink={interviewIQ.aLink}
-          isCurrentWork={interviewIQ.isCurrentWork}
-        />
-        <ProductRight
-          name={dangoDB.name}
-          desc={dangoDB.desc}
-          icons={dangoDB.icons}
-          img={dangoDB.img}
-          info={dangoDB.info}
-          btn={dangoDB.btn}
-          aLink={dangoDB.aLink}
-          isCurrentWork={dangoDB.isCurrentWork}
-        />
-
+        <div className="space-relative">
+          <div className="space3-layer">
+            <img src={Spacepink} alt={"space"} className="fuck3" />
+          </div>
+          <div className="product-layer">
+            <ProductLeft
+              name={interviewIQ.name}
+              desc={interviewIQ.desc}
+              icons={interviewIQ.icons}
+              img={interviewIQ.img}
+              info={interviewIQ.info}
+              btn={interviewIQ.btn}
+              aLink={interviewIQ.aLink}
+              isCurrentWork={interviewIQ.isCurrentWork}
+            />
+            <ProductRight
+              name={dangoDB.name}
+              desc={dangoDB.desc}
+              icons={dangoDB.icons}
+              img={dangoDB.img}
+              info={dangoDB.info}
+              btn={dangoDB.btn}
+              aLink={dangoDB.aLink}
+              isCurrentWork={dangoDB.isCurrentWork}
+            />
+          </div>
+        </div>
         <ProductLeft
           name={ad3lie.name}
           desc={ad3lie.desc}

@@ -160,7 +160,7 @@ const Planet = ({ icons }) => {
           groundColor={groundColor}
           intensity={lightIntensity}
         /> */}
-      <ambientLight intensity={2} color={"ffffff"} />
+      <ambientLight intensity={2} color={"0xffffff"} />
       <pointLight
         // distance={distance}
         decay={2}

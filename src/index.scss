@@ -12,25 +12,54 @@ body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   color: #fff;
-  height: 100%;
-  background: #000;
+  // height: 100%;
+  background-color: #000;
 }
 
 .bg {
-  background-image: url("https://i.ibb.co/0q30bQD/bkgd2-blue-flip.png");
-  height: 100%;
+  /* The background image */
+  // background-image: url("./assets/images/pink_space.webp");
+  // background-image: url("./assets/images/space_bussy.webp");
+  background-image: url("./assets/images/space.webp");
+
+  /* Set a specified height, or the minimum height for the background image */
+  min-height: 500px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
   background-size: cover;
 }
 
-.glass-bg {
-  background: rgb(114, 114, 131);
-  background: linear-gradient(
-    180deg,
-    rgba(114, 114, 131, 0) 0%,
-    rgba(0, 0, 0, 0.5228466386554622) 100%
-  );
+.another-overlay {
+  background-color: #000000c7;
+  height: 100%;
   z-index: 2;
 }
+.content {
+  position: absolute;
+  margin-top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+// .glass-bg {
+//   background: rgb(114, 114, 131);
+//   background: linear-gradient(
+//     180deg,
+//     rgba(114, 114, 131, 0) 0%,
+//     rgba(0, 0, 0, 0.5228466386554622) 100%
+//   );
+//   z-index: 2;
+// }
 
 .product-overlay {
   background: rgb(17, 7, 31);
@@ -114,25 +143,14 @@ ul {
   color: #fff;
   text-align: center;
   border-radius: 10px;
-  background: rgba(157, 157, 157, 0.148);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: rgba(95, 99, 173, 0.457);
+  // background: rgba(107, 83, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border-radius: 10px;
+  box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   z-index: 1;
-
-  // .mercury {
-  //   position: absolute;
-  //   top: -100px;
-  //   right: -70px;
-  //   width: 200px;
-  //   height: 200px;
-  //   background-image: url("https://i.ibb.co/Yy7x2sH/mercury.png");
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   z-index: 1;
-  // }
 
   h6 {
     font-size: 24px;
@@ -142,9 +160,10 @@ ul {
 
 .contact-btn {
   font-family: Inter;
-  background-color: rgba(205, 205, 205, 0.157);
+  background-color: rgba(35, 36, 39, 0.958);
+
   color: #fff;
-  box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.586);
+  box-shadow: 0 5px 10px 0 rgba(92, 87, 94, 0.586);
   border-radius: 6px;
   border: none;
   font-size: 1rem;

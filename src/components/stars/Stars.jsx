@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react"
 import * as THREE from "three"
 import { Perf } from "r3f-perf"
 
-const COUNT = 150
+const COUNT = 300
 const XY_BOUNDS = 40
 const Z_BOUNDS = 20
 // const MAX_SPEED_FACTOR = 1
