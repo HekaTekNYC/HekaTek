@@ -1,56 +1,42 @@
 .contact-container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
-// .plane-icon {
-//   position: relative;
-//   width: auto;
-//   height: 100%;
-//   .email-icon {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     width: 100px;
-//     height: 100px;
-//   }
+
+// .modal {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 450px;
+//   height: 650px;
+//   background: rgba(239, 238, 238, 0.6);
+//   z-index: 1050;
+//   justify-content: center;
+//   align-items: center;
+//   // color: #332d62;
 // }
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 450px;
-  height: 650px;
-  background: rgba(239, 238, 238, 0.6);
-  z-index: 1050;
-  justify-content: center;
-  align-items: center;
-  // color: #332d62;
-}
+// .modal.open {
+//   display: flex;
+// }
 
-.modal.open {
-  display: flex;
-}
+// .modal-content {
+//   background: #fff;
+//   padding: 240px;
+//   border-radius: 10px;
+//   // text-align: center;
+//   // position: relative; /* Add this line */
+//   // z-index: 2; /* Add this line */
+// }
 
-.modal-content {
-  background: #fff;
-  padding: 240px;
-  border-radius: 10px;
-  // text-align: center;
-  // position: relative; /* Add this line */
-  // z-index: 2; /* Add this line */
-}
-
-.modal button {
-  background: #680bd2;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+// .modal button {
+//   background: #680bd2;
+//   color: #fff;
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
