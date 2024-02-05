@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState, useRef } from "react";
 
 const MyModal = ({ isOpen, onClose, text, hasCloseBtn = true }) => {

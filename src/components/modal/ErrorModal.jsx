@@ -1,28 +1,17 @@
-import React, {  useState } from "react"
-import { Modal, Button } from "react-bootstrap"
+import React from "react";
+import { Modal, Button } from "react-bootstrap";
 
-const ErrorModal = (props) => {
-
-    return (
-        <>
-
-    <Modal  
-    {...props} 
-          centered
-          backdrop="static" 
-          keyboard={false}>
-    <Modal.Body>
-      Please fill in all required fields before submitting the form.
-    </Modal.Body>
-    <Modal.Footer>
-      <Button variant="secondary" onClick={props.onHide}>
-        Close
-      </Button>
-    </Modal.Footer>
+const ErrorModal = ({ show, text = "An error occurred", onHide }) => {
+  return (
+    <Modal show={show} onHide={onHide} centered backdrop="static" keyboard={false}>
+      <Modal.Body>{text}</Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={onHide}>
+          Close
+        </Button>
+      </Modal.Footer>
     </Modal>
-    </>
-    
-    )
-    }
-    
-    export default ErrorModal
+  );
+};
+
+export default ErrorModal;

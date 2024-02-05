@@ -3,6 +3,7 @@ import {
   Text3D,
   OrbitControls,
   Center,
+  Float,
   useCubeTexture,
 } from "@react-three/drei"
 import { Canvas, useThree, useFrame } from "@react-three/fiber"
@@ -29,15 +30,15 @@ function TextShiz() {
   )
 
   useFrame((state, delta) => {
-    state.camera.position.x = 0.2 * Math.sin(state.clock.elapsedTime)
-    state.camera.position.y = -0.9 * Math.sin(state.clock.elapsedTime)
+    state.camera.position.x = 0.1 * Math.sin(state.clock.elapsedTime)
+    // state.camera.position.y = -0.9 * Math.sin(state.clock.elapsedTime)
     // state.camera.position.z = 9 * Math.sin(state.clock.elapsedTime)
   })
 
   return (
     <>
       <Center scale={[0.9, 1, 1]}>
-        {/* <Float speed={1} floatIntensity={0.02}> */}
+     {/* <Float speed={0.5} floatIntensity={0.01}>  */}
 
         <Text3D
           // position={[-1, 5, 10]}
@@ -54,13 +55,15 @@ function TextShiz() {
             metalness={0.9}
             roughness={0.1}
             // color={"#F79489"}
-            color={"#F8AFA6"}
+            // color={"#F8AFA6"}
+            color={"#c8ebff"}
             // color={"##5AC69F"}
             envMap={newTexture}
             // map={texture}
           />
           {/* <meshNormalMaterial metalness={0.9} roughness={0.1} /> */}
         </Text3D>
+        {/* </Float> */}
       </Center>
 
       <OrbitControls />

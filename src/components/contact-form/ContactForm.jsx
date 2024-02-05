@@ -1,68 +1,57 @@
-import React, { useRef, useState } from "react"
-import emailjs from "@emailjs/browser"
-import { Modal, Button, Form, Row, Col } from "react-bootstrap"
-import FloatingLabel from "react-bootstrap/FloatingLabel"
-// import emailIcon from "../../assets/icons/plane.svg"
-import MyModal from '../modal/Modal'
-import ErrorModal from '../modal/ErrorModal'
-import "./ContactForm.scss"
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { Modal, Button, Form, Row, Col } from "react-bootstrap";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import "./ContactForm.scss";
 
 const ContactForm = () => {
-  const form = useRef()
-  const [openModal, setOpenModal] = useState(false)
-  const [errorModal, setErrorModal] = useState(false)
-
+  const form = useRef();
+  const [showModal, setShowModal] = useState(false); // Unified modal state
+  const [modalContent, setModalContent] = useState({ title: '', message: '' }); // Modal content state
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    // Validate form fields
-    const firstName = form.current.from_name.value
-    const lastName = form.current.from_last_name.value
-    const email = form.current.from_email.value
-    const message = form.current.message.value
+    const firstName = form.current.from_name.value;
+    const lastName = form.current.from_last_name.value;
+    const email = form.current.from_email.value;
+    const message = form.current.message.value;
+    console.log('Setting modal content:', { title: 'Error', message: 'Please ensure all fields are filled out correctly.' });
 
     if (!firstName || !lastName || !email || !message || !isValidEmail(email)) {
-     
-      setErrorModal(true)
-      return
+      setModalContent({ title: 'Error', message: 'Please ensure all fields are filled out correctly.' });
+      setShowModal(true);
+      return;
     }
 
-    emailjs
-      .sendForm(
-        "service_z5mt0wl",
-        "template_333qtvl",
-        form.current,
-        "3M9sCaTmKUO1g2SRA"
-      )
+    emailjs.sendForm("service_k3llmpr", "template_333qtvl", form.current, "3M9sCaTmKUO1g2SRA")
       .then(
         (result) => {
-          console.log("Email sent successfully:", result)
-          setOpenModal(true)
-        
-          form.current.reset()
+          setModalContent({ title: 'Success', message: 'Your message has been successfully sent!' });
+          setShowModal(true);
+          form.current.reset();
         },
         (error) => {
-          console.error("Email send error:", error)
+          setModalContent({ title: 'Error', message: 'Failed to send your message. Please try again later.' });
+          setShowModal(true);
         }
-      )
-  }
+      );
+  };
 
   const isValidEmail = (email) => {
-    // Basic email validation, you can enhance it further
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return regex.test(email)
-  }
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   return (
     <div className="contact-container">
-      <div className="contact-form-container">
-        <h6>Contact Us</h6>
+       <div className="contact-form-container">
+         <h6>Contact Us</h6>
 
-        <Form ref={form} onSubmit={sendEmail}>
-          <Row>
-            <Form.Group size="sm" as={Col} controlId="formGridFirstName">
-              <FloatingLabel
+         <Form ref={form} onSubmit={sendEmail}>
+           <Row>
+             <Form.Group size="sm" as={Col} controlId="formGridFirstName">
+               <FloatingLabel
                 controlId="floatingInput"
                 label="First Name"
                 className="mb-3 mb-3 "
@@ -109,24 +98,26 @@ const ContactForm = () => {
               />
             </FloatingLabel>
           </Form.Group>
-
-          <button className="contact-btn" type="submit">
+          <Button className="contact-btn" type="submit">
             Submit
-          </button>
+          </Button>
         </Form>
       </div>
-
-      <MyModal
-        show={openModal}
-        onHide={() => setOpenModal(false)}
-      />  
-       
-      <ErrorModal
-        show={errorModal}
-        onHide={() => setErrorModal(false)}
-      />    
-    </div>
-  )
+      {showModal && (
+        <div className="modal-background" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h4>{modalContent.title}</h4>
+            <p>{modalContent.message || "Default message"}</p>
+            <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
+          </div>
+        </div>
+      )}
+{      console.log('Component re-rendering', modalContent)
 }
+    </div>
+  );
+};
 
-export default ContactForm
+export default ContactForm;
+
+
