@@ -29,8 +29,8 @@ function TextShiz() {
   )
 
   useFrame((state, delta) => {
-    state.camera.position.x = 0.2 * Math.sin(state.clock.elapsedTime)
-    state.camera.position.y = -0.9 * Math.sin(state.clock.elapsedTime)
+    state.camera.position.x = 0.04 * Math.sin(state.clock.elapsedTime)
+    // state.camera.position.y = -0.9 * Math.sin(state.clock.elapsedTime)
     // state.camera.position.z = 9 * Math.sin(state.clock.elapsedTime)
   })
 
@@ -54,7 +54,9 @@ function TextShiz() {
             metalness={0.9}
             roughness={0.1}
             // color={"#F79489"}
-            color={"#F8AFA6"}
+            // color={"#F8AFA6"}
+            color={"#bdc7ff"}
+            // color={"#6ee4ff"}
             // color={"##5AC69F"}
             envMap={newTexture}
             // map={texture}
