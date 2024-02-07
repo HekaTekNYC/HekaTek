@@ -19,7 +19,9 @@ const Home = () => {
     <>
       <div>
         <div className="hero-section" id="hero">
-          <Hero />
+  
+            <Hero />
+     
         </div>
         <div className="bg">
           <div className="another-overlay">

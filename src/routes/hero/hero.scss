@@ -1,9 +1,23 @@
 .hero-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  height: 100vh;
   width: 100%;
-  padding: 0 200px 0 100px;
+  overflow: hidden;
+  background-color: #262745;
+  z-index: 1;
+
+
+  .galaxy-curve {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-image: url("https://i.ibb.co/7GzjbBz/galaxy3.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
 }
 
 .hero-row {
@@ -12,80 +26,106 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  z-index: 3;
+  height: 100%;
+  padding: 0 60px;
+  z-index: 5;
+  color: #bdc7ff;
 }
 
-.space-container,
-.sparkles-container {
-  position: absolute;
-  width: 100%;
-  height: 112vh;
-  z-index: 10;
-}
+// .space-container,
+// .sparkles-container {
+//   position: absolute;
+//   width: 100%;
+//   height: 112vh;
+//   z-index: 10;
+// }
 
-// Hero left side
+
+// // Hero left side
 
 .hero-left-container {
+  // position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 40%;
-  z-index: 20;
-
-  .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
-    z-index: 40;
-
-    img {
-      width: 550px;
-    }
-  }
-}
-
-// Hero right side
-
-.hero-right-container {
-  position: relative;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+  width: 45%;
+  padding-left: 100px;
   z-index: 50;
 
   .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    .three-d {
+    .hekatek-3d {
+    
     }
-
-    .half-intro {
-      font-family: Montserrat;
+  
+    .header-text {
       display: flex;
-      justify-content: flex-start;
-      white-space: nowrap;
-      font-size: 3rem;
-      font-weight: 800;
-      font-style: italic;
-      padding: 60px 0px 0 5px;
+      font-family: Montserrat;
+      font-size: 3.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #ffffff;
     }
   }
+  
+}
 
-  .animated-text {
+// // Hero right side
+
+.hero-right-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  z-index: 6;
+
+  .hero-image {
+    position: absolute;
     display: flex;
-    font-family: Montserrat;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.4;
-    font-style: italic;
-    padding: 10px 20px 0 100px;
-    color: #dad7f1;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    // height: 100%;
+    width: auto;
+    height: auto;
+    margin-top: 400px;
+    z-index: 7;
+.cosmo {
+  padding: 80px 10px 300px 10px;
+
+    img {
+      width: 550px;
+     
+    }
   }
+  }
+}
+
+// Space Bacgkround image
+
+.space-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .space-background {
+    position: relative;
+    top: 150px;
+    left: 400px;
+    width: 1000px;
+    height: 675px;
+    background-image: url("https://i.ibb.co/19CJ8Nx/space-background.png");
+    border-radius: 8px;
+    z-index: 2;
+  }
+}
+
+.wave {
+  
 }
 
 // Media Queries
