@@ -1,56 +1,44 @@
-.contact-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-// .plane-icon {
-//   position: relative;
-//   width: auto;
-//   height: 100%;
-//   .email-icon {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     width: 100px;
-//     height: 100px;
-//   }
-// }
-
-.modal {
-  display: none;
+.modal-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 450px;
-  height: 650px;
-  background: rgba(239, 238, 238, 0.6);
-  z-index: 1050;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
-  // color: #332d62;
-}
-
-.modal.open {
-  display: flex;
+  z-index: 1050; /* Ensure it's above other content */
 }
 
 .modal-content {
-  background: #fff;
-  padding: 240px;
+  background: rgba(141, 216, 36, 0.378) !important;
+  box-shadow: 0 8px 32px 0 rgba(5, 5, 242, 0.57);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-  // text-align: center;
-  // position: relative; /* Add this line */
-  // z-index: 2; /* Add this line */
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 200px; 
 }
 
-.modal button {
-  background: #680bd2;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.modal-close-btn {
+  float: right;
   cursor: pointer;
-}
+  font-family: Inter;
+  background-color: rgba(148, 224, 56, 0.492);
+  color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(203, 127, 233, 0.586);
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  margin: 5px 0;
+  cursor: pointer;
+  }
+
