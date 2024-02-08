@@ -30,7 +30,7 @@ const Products = () => {
         />
         <div className="space-relative">
           <div className="space3-layer">
-            <img src={Spacepink} alt={"space"} className="fuck3" />
+            <img src={Spacepink} alt={"space"} className="space-3" />
           </div>
           <div className="product-layer">
             <ProductLeft

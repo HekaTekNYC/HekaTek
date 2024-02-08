@@ -19,7 +19,7 @@ const Home = () => {
     <>
       <div>
         <div className="sparkles-container">
-          <Sparkles count={1000} />
+          <Sparkles count={800} />
         </div>
         <div className="hero-section" id="hero">
           <Hero />
@@ -32,12 +32,10 @@ const Home = () => {
         <div className="product-section" id="our-work">
           <Products />
         </div>
-        <div className="services-section">
-          <Services />
-        </div>
+        <div className="services-section">{/* <Services /> */}</div>
         <div className="about-section " id="about">
           <div className="space-layer">
-            <img src={Space} alt={"space"} className="fuck" />
+            <img src={Space} alt={"space"} className="pink-space" />
           </div>
           <div className="about-layer">
             <About />
@@ -45,7 +43,7 @@ const Home = () => {
         </div>
 
         <div className="contact-section" id="contact">
-          <Contact />
+          {/* <Contact /> */}
         </div>
       </div>
     </>
