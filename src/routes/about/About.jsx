@@ -27,7 +27,7 @@ const About = () => {
           </div>
 
           <div className="sparkle-overlay">
-            <Sparkles sparklesCount={500} />
+            <Sparkles count={200} />
           </div>
         </div>
       </div>
