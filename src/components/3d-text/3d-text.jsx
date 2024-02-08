@@ -71,15 +71,13 @@ function TextShiz() {
         </Text3D>
         {/* </Float> */}
       </Center>
-
-      <OrbitControls />
     </>
   )
 }
 
 export default function ThreeDeeText() {
   return (
-    <div className="scene" style={{ width: "500px", height: "100px" }}>
+    <div className="scene">
       <Canvas camera={{ position: [0, 0, 10], fov: 28 }}>
         {/* <ambientLight intensity={0.5} position={[0, 0, 2]} /> */}
         <ambientLight intensity={2} position={[0, 0, 10]} />

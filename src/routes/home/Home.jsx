@@ -39,23 +39,19 @@ const Home = () => {
           </div>
           <div className="content"></div>
 
-          <div className="product-section" id="product">
-            <Products />
+          <div className="product-section" id="our-work">
+            {/* <Products /> */}
           </div>
-          <div className="services-section">
-            <Services />
-          </div>
+          <div className="services-section">{/* <Services /> */}</div>
           <div className="about-section " id="about">
             <div className="space-layer">
-              <img src={Space} alt={"space"} className="fuck" />
+              {/* <img src={Space} alt={"space"} className="fuck" /> */}
             </div>
-            <div className="about-layer">
-              <About />
-            </div>
+            <div className="about-layer">{/* <About /> */}</div>
           </div>
 
           <div className="contact-section" id="contact">
-            <Contact />
+            {/* <Contact /> */}
           </div>
         </div>
         {/* </div> */}

@@ -14,7 +14,7 @@ const Sphere = ({ icons }) => {
   const texture = useLoader(TextureLoader, PlanetSpace)
 
   useFrame(() => {
-    planetRef.current.rotation.y += 0.004
+    planetRef.current.rotation.y += 0.002
   })
 
   return (
@@ -56,7 +56,7 @@ const PlanetSphere = () => {
         <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} />
         <directionalLight position={[0, 1, 10]} />
         <Sphere />
-        <OrbitControls />
+        {/* <OrbitControls /> */}
         {/* <axesHelper args={[5]} />
         <gridHelper /> */}
       </Canvas>

@@ -17,7 +17,7 @@ const Products = () => {
   return (
     <>
       <div className="products-container">
-        <div className="products-header">Our Work</div>
+        <div className="products-header">OUR WORK</div>
         <ProductRight
           name={plantHaus.name}
           desc={plantHaus.desc}

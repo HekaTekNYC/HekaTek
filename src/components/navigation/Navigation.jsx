@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./navigation.scss"
 
 const Navigation = () => {
   return (
-    <div className="navigation-container navbar">
+    <div className="navigation-container">
       <div className="logo">
         <a className="text-shadow" href="#hero">
           {" "}
@@ -15,8 +14,8 @@ const Navigation = () => {
         <a className="nav-link text-shadow" href="#hero">
           Home
         </a>
-        <a className="nav-link text-shadow" href="#projects">
-          Projects
+        <a className="nav-link text-shadow" href="#our-work">
+          Our Work
         </a>
 
         <a className="nav-link text-shadow" href="#about">

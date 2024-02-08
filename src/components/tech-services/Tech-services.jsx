@@ -196,7 +196,7 @@ const TechServices = () => {
       <Canvas
         linear
         flat
-        camera={{ fov: 65, near: 0.1, far: 1000, position: [0, 0, 6] }}
+        camera={{ fov: 50, near: 0.1, far: 1000, position: [0, 0, 6] }}
       >
         {/* <pointLight intensity={intensity} /> */}
         <ambientLight args={[0.5]} />

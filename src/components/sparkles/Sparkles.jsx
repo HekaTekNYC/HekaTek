@@ -7,12 +7,11 @@ const SparkleSky = ({ sparklesCount }) => {
     <>
       <Sparkles
         count={sparklesCount}
-        size={2}
+        size={3}
         fade
         speed={0.02}
-        // opacity={1}
-        opacity={0.5}
-        scale={10}
+        opacity={1}
+        scale={15}
         color="#adc7e5"
         noise={3}
       />
