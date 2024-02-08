@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react"
+
 import emailjs from "@emailjs/browser"
+
 import { Form, Row, Col } from "react-bootstrap"
 import FloatingLabel from "react-bootstrap/FloatingLabel"
 
@@ -7,8 +9,8 @@ import "./contact-form.scss"
 
 const ContactForm = () => {
   const form = useRef()
-  const [showModal, setShowModal] = useState(false) // Unified modal state
-  const [modalContent, setModalContent] = useState({ title: "", message: "" }) // Modal content state
+  const [showModal, setShowModal] = useState(false)
+  const [modalContent, setModalContent] = useState({ title: "", message: "" })
 
   const sendEmail = (e) => {
     e.preventDefault()

@@ -109,56 +109,10 @@ const Planet = ({ icons }) => {
     planetRef.current.rotation.y += 0.001
   })
 
-  // const {
-  //   spotIntensity,
-  //   spotColor,
-  //   pointIntensity,
-  //   pointColor,
-  //   lightIntensity,
-  //   ambientIntensity,
-  //   color,
-  //   distance,
-  //   angle,
-  //   penumbra,
-  //   decay,
-  //   position,
-  //   skyColor,
-  //   groundColor,
-  // } = useControls({
-  //   spotIntensity: { value: 1, min: 0, max: 2 },
-  //   spotColor: "#ffffff",
-  //   pointIntensity: { value: 1, min: 0, max: 2 },
-  //   pointColor: "#ffffff",
-  //   lightIntensity: { value: 2, min: 0, max: 6 },
-  //   ambientIntensity: { value: 0.5, min: 0, max: 6 },
-  //   color: "#ffffff",
-  //   distance: { value: 100, min: 0, max: 200 },
-  //   angle: { value: Math.PI / 4, min: 0, max: Math.PI / 2 },
-  //   penumbra: { value: 0, min: 0, max: 1 },
-  //   decay: { value: 2, min: 0, max: 2 },
-  //   position: { value: [0, 0, 0], min: -10, max: 10 },
-  //   skyColor: "lightPurple",
-  //   groundColor: "0xffffff",
-  // })
   return (
     <>
-      {/* <ambientLight intensity={ambientIntensity} color={color} />
-      <pointLight
-        distance={distance}
-        decay={decay}
-        color={pointColor}
-        intensity={lightIntensity}
-        position={position}
-      />
-      <directionalLight intensity={lightIntensity} color={spotColor} /> */}
-      {/* <hemisphereLight
-          skyColor={skyColor}
-          groundColor={groundColor}
-          intensity={lightIntensity}
-        /> */}
       <ambientLight intensity={2} color={"0xffffff"} />
       <pointLight
-        // distance={distance}
         decay={2}
         color={"#00fbff"}
         intensity={1.2}
@@ -168,13 +122,7 @@ const Planet = ({ icons }) => {
 
       <mesh ref={planetRef} renderOrder={-1}>
         <sphereGeometry args={[1.2, 64, 64]} />
-        <meshStandardMaterial
-          map={texture}
-          metalness={0.5}
-          roughness={0.6}
-          // alphMap={"0xffffff"}
-          // emmissiveMap={"#0xffffff"}
-        />
+        <meshStandardMaterial map={texture} metalness={0.5} roughness={0.6} />
         {icons.map((icon, index) => (
           <TechStack
             key={index}
@@ -198,7 +146,6 @@ const TechServices = () => {
         flat
         camera={{ fov: 50, near: 0.1, far: 1000, position: [0, 0, 6] }}
       >
-        {/* <pointLight intensity={intensity} /> */}
         <ambientLight args={[0.5]} />
         <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} />
         <directionalLight position={[0, 1, 10]} />

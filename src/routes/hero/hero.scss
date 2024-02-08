@@ -45,18 +45,13 @@
   color: #222951;
 }
 
-// // Hero left side
-
 .hero-left-container {
-  // position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 45%;
   padding-left: 100px;
-
   margin-bottom: 100px;
-
   z-index: 50;
 
   .header {
@@ -74,8 +69,6 @@
     }
   }
 }
-
-// // Hero right side
 
 .hero-right-container {
   position: relative;
@@ -99,9 +92,6 @@
     -moz-transition: all 900ms linear;
     -webkit-transition: all 900ms linear;
   }
-}
-
-.wave {
 }
 
 // Media Queries
