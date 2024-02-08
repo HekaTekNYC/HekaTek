@@ -12,26 +12,21 @@
 }
 
 .modal-content {
-  background: rgba(141, 216, 36, 0.378) !important;
-  box-shadow: 0 8px 32px 0 rgba(5, 5, 242, 0.57);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: center;
   padding: 10px;
   border-radius: 5px;
   width: 50%;
-  max-width: 200px; 
+  max-width: 200px;
 }
 
 .modal-close-btn {
   float: right;
   cursor: pointer;
   font-family: Inter;
-  background-color: rgba(148, 224, 56, 0.492);
   color: #fff;
-  box-shadow: 0 5px 10px 0 rgba(203, 127, 233, 0.586);
   border-radius: 6px;
   border: none;
   font-size: 1rem;
@@ -40,5 +35,4 @@
   height: 40px;
   margin: 5px 0;
   cursor: pointer;
-  }
-
+}

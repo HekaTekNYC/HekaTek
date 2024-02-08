@@ -5,6 +5,7 @@ import "./services.scss"
 const Services = () => {
   return (
     <div className="services-container">
+      <div className="services-header">OUR SERVICES</div>
       <div className="services-row">
         <div className="service-item">
           <div className="service-header">CODE OPTIMIZATION</div>

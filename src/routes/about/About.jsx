@@ -11,18 +11,15 @@ const About = () => {
     <div className="about-container">
       <div className="about-row">
         <div className="about-info">
-          <div className="about-header">About Us</div>
-          We are two software developers whose passions lie in unraveling
-          complex challenges and transforming them into opportunities. Whether
-          it's revitalizing an existing codebase or innovating from the ground
-          up, we provide dynamic, responsive, and intuitively user-friendly
-          applications. Driven by the art of building digital spaces that not
-          only meet but anticipate the needs of your audience. When we're not
-          coding, you'll find us sharpening our skills with algorithm
-          challenges, diving into gaming adventures, or picking up a new hobby.
-          It's this continuous pursuit of knowledge that keeps our work fresh
-          and exciting. Interested in elevating your online presence? Get in
-          touch below.
+          <div className="about-header">ABOUT US</div>
+          We're a duo of software developers who find joy in decluttering
+          digital messes, turning complexity into simplicity. Our code is clean,
+          our interfaces seamless, and our applications are so intuitive, they
+          practically read your mind. Off the clock, you'll find us digging into
+          algorithms, getting lost in games or cultivating the art of indoor
+          plant whispering (they say the secret is in the coding lullabies).
+          Ready to give your online presence a sprinkle of our HekaTek magic?
+          Hit us up below.
         </div>
         <div className="about-services">
           <div className="tech-overlay">
@@ -30,7 +27,7 @@ const About = () => {
           </div>
 
           <div className="sparkle-overlay">
-            {/* <Sparkles sparklesCount={500} /> */}
+            <Sparkles sparklesCount={500} />
           </div>
         </div>
       </div>

@@ -21,11 +21,11 @@
     order: 1;
 
     .about-header {
+      font-family: Inter;
       text-align: center;
-      font-size: 5rem;
+      font-size: 4.2rem;
       font-weight: 600;
-      margin-bottom: 80px;
-      color: #fff;
+      margin-bottom: 30px;
     }
   }
 
@@ -78,6 +78,22 @@
     .about-services {
       width: 100%;
       order: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    padding: 0 30px;
+
+    .about-row {
+      padding: 0;
+      .about-info {
+        font-size: 1rem;
+      }
     }
   }
 }

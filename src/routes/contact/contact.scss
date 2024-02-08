@@ -1,7 +1,16 @@
 .contact-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+
+  .contact-form-layer {
+    display: flex;
+    align-items: center;
+    // margin-left: 20px;
+    z-index: 2;
+  }
 }
 
 .nebula-container {
@@ -34,14 +43,6 @@
 }
 .desaturated-image {
   filter: grayscale(20%);
-}
-
-.contact-form-layer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 20px;
-  z-index: 2;
 }
 
 // @keyframes spin {

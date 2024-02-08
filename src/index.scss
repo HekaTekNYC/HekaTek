@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Lato",
-    sans-serif;
+  font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Nanum Gothic",
+    "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
@@ -141,17 +141,33 @@ ul {
 
 .contact-form-container {
   width: 600px;
-  height: 100%;
-  margin: auto;
+  height: 480px;
+  // margin: auto;
   padding: 50px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
-  background: #262745;
+
+  background: radial-gradient(
+    circle at 0% 120%,
+    #26274590,
+    #262846b9,
+    #28294ab8,
+    #2a2b50c6,
+    #2d2d58bf,
+    #303060c4,
+    #333369c6,
+    #363671cf,
+    #3a3879c5,
+    #3c3a7fdf,
+    #3e3c83e0,
+    #3e3c85e3
+  );
   box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
+
   z-index: 40;
 
   h6 {
@@ -171,48 +187,16 @@ ul {
   font-weight: 600;
   width: 150px;
   height: 40px;
-  margin: 5px 0;
+  margin: 15px 0 5px;
   cursor: pointer;
   z-index: 20;
   transition: all 200ms ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: #19192192;
     box-shadow: rgba(25, 27, 70, 0.728) 0px 3px 5px;
     color: #ffffff;
   }
 }
-
-// .modal {
-//   display: none;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 450px;
-//   height: 650px;
-//   background: rgba(239, 238, 238, 0.6);
-//   z-index: 1050;
-//   justify-content: center;
-//   align-items: center;
-//   // color: #332d62;
-// }
-
-// .modal.open {
-//   display: flex;
-// }
-
-// .modal-dialog {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-// }
-
-// .modal-content {
-//   background: #fff;
-//   padding: 240px;
-//   border-radius: 10px;
-//   // text-align: center;
-//   // position: relative; /* Add this line */
-//   // z-index: 2; /* Add this line */
-// }

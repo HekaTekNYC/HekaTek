@@ -30,9 +30,10 @@
 
 .nav-links {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: auto;
-  justify-content: space-between;
+  white-space: nowrap;
 
   a {
     color: #fff;
@@ -50,7 +51,25 @@
     cursor: pointer;
     color: #fff;
     text-shadow: 0 0 2px #ffffffc8, 0 0 5px #ffffffc8, 0 0 10px #ffffffc8,
-      0 0 20px #b876ffb9, 0 0 40px #7b00ff, 0 0 80px #7b00ff,
-      5px 5px 90px #7b00ff, 5px 5px 100px #7b00ff, 5px 5px 150px #7b00ff;
+      0 0 20px #768fffb9, 0 0 40px #5234ff, 0 0 80px #5234ff,
+      5px 5px 90px #5234ff, 5px 5px 100px #5234ff, 5px 5px 150px #5234ff;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .navigation-container {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-container {
+    justify-content: center;
+
+    .logo {
+      display: none;
+    }
   }
 }
