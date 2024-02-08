@@ -9,16 +9,17 @@ const SparkleSky = ({ count }) => {
         count={count}
         size={3}
         fade
-        speed={0.02}
+        speed={0.03}
         opacity={1}
         scale={15}
-        color="#adc7e5"
+        // color="#dbc593"
+        color="#ffccf6"
         noise={3}
       />
       <Stars
-        radius={200}
+        radius={100}
         depth={60}
-        count={5000}
+        count={500}
         factor={4}
         saturation={1}
         fade

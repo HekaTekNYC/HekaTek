@@ -17,13 +17,12 @@ const Home = () => {
     <>
       <div>
         <div className="sparkles-container">
-          <Sparkles count={800} />
+          <Sparkles count={100} />
         </div>
+
         <div className="hero-section" id="hero">
           <Hero />
         </div>
-
-        <div className="space-container">{/* <SpaceOverlay /> */}</div>
 
         <div className="product-section" id="our-work">
           <Products />
