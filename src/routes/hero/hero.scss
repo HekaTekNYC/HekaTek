@@ -1,113 +1,110 @@
 .hero-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  height: 100vh;
   width: 100%;
-  padding: 0 200px 0 100px;
+  overflow: hidden;
+  z-index: 1;
+
+  .galaxy-container {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 120vh;
+    z-index: 2;
+    transition: all 900ms linear;
+    -o-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+
+    .galaxy {
+      position: absolute;
+      mask-image: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(255, 255, 255, 1) 6%,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      width: 100%;
+      z-index: 2;
+    }
+  }
 }
 
 .hero-row {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  z-index: 3;
+  height: 100%;
+  padding: 0 60px;
+  z-index: 5;
+  color: #222951;
 }
 
-.space-container,
-.sparkles-container {
-  position: absolute;
-  width: 100%;
-  height: 112vh;
-  z-index: 10;
-}
-
-// Hero left side
+// // Hero left side
 
 .hero-left-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 40%;
-  z-index: 20;
-
-  .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
-    z-index: 40;
-
-    img {
-      width: 550px;
-    }
-  }
-}
-
-// Hero right side
-
-.hero-right-container {
-  position: relative;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+  width: 45%;
+  padding-left: 100px;
+  margin-bottom: 100px;
   z-index: 50;
 
   .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    .three-d {
-    }
-
-    .half-intro {
-      font-family: Montserrat;
+    .header-text {
       display: flex;
-      justify-content: flex-start;
-      white-space: nowrap;
+      font-family: Montserrat;
       font-size: 3rem;
-      font-weight: 800;
-      font-style: italic;
-      padding: 60px 0px 0 5px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #dcdcdc;
+      padding-top: 20px;
     }
   }
+}
 
-  .animated-text {
+// // Hero right side
+
+.hero-right-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  z-index: 6;
+
+  .hero-image {
+    position: absolute;
     display: flex;
-    font-family: Montserrat;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.4;
-    font-style: italic;
-    padding: 10px 20px 0 100px;
-    color: #dad7f1;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin: 200px 0 0 100px;
+    z-index: 7;
   }
 }
 
 // Media Queries
 @media screen and (max-width: 1400px) {
   .hero-left-container {
-    display: none;
-  }
-
-  .hero-right-container {
     justify-content: center;
     width: 100%;
-    padding: 0 100px;
-
-    .header {
-      .half-intro {
-        font-size: 2.8rem;
+  }
+  .hero-right-container {
+    .hero-image {
+      margin: 100px 0 0 80px;
+      img {
+        width: 300px;
       }
-    }
-
-    .animated-text {
-      flex-direction: row;
-      justify-content: center;
     }
   }
 }
@@ -116,42 +113,38 @@
   .hero-container {
     padding: 0 40px;
   }
-  .hero-right-container {
-    padding: 0;
-    .header {
-      flex-direction: column;
-      align-items: center;
-
-      .half-intro {
-        padding: 0 0 0 400px;
-      }
-    }
-
-    .animated-text {
-      text-align: center;
-      width: 100%;
-      padding: 40px 200px 0;
-      font-size: 2.3rem;
-    }
-  }
 }
 
 @media screen and (max-width: 992px) {
-  // .hero-left-container {
-  //   display: none;
-  // }
+  .hero-container {
+    .galaxy-container {
+      top: 100px;
+      left: 20px;
+      width: 90%;
+      z-index: 2;
 
-  // .hero-right-container {
-  //   text-align: center;
-  //   width: 100%;
-  // }
-
-  .mission-statement {
-    font-size: 1.5rem;
+      .galaxy {
+        position: absolute;
+        mask-image: radial-gradient(
+          ellipse at center,
+          rgba(255, 255, 255, 1) 1%,
+          rgba(255, 255, 255, 1) 20%,
+          rgba(255, 255, 255, 0) 95%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        width: 100%;
+        z-index: 2;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
+  .hero-container {
+    .galaxy-container {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

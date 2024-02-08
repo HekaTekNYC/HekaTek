@@ -1,5 +1,64 @@
-.email-icon {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nebula-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  .nebula-overlay {
+    position: relative;
+    background: #000000;
+    // z-index: ;
+  }
+
+  .nebula-layer {
+    position: relative;
+    left: 300px;
+    //   background-image: url("https://i.ibb.co/0qNwqv4/Adobe-Stock-559904425-Preview.png");
+    filter: grayscale(20%);
+
+    background-size: cover;
+    background-position: center;
+    animation: spin 160s linear infinite, breathe 6s ease-in-out infinite;
+    z-index: 1;
+  }
+  //   img {
+  //     width: 50%;
+  //     height: 50%;
+  //   }
+}
+.desaturated-image {
+  filter: grayscale(20%);
+}
+
+.contact-form-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+// @keyframes spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }

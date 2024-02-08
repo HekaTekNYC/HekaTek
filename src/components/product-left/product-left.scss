@@ -31,13 +31,29 @@
   min-width: 730px;
   height: 320px;
   padding: 20px;
-  background: #262745;
-  // background: rgba(107, 83, 255, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.37);
+  z-index: 10;
+
+  background: radial-gradient(
+    circle at 0% 120%,
+    #262745,
+    #262846,
+    #28294a,
+    #2a2b50,
+    #2d2d58,
+    #303060,
+    #333369,
+    #363671,
+    #3a3879,
+    #3c3a7f,
+    #3e3c83,
+    #3f3c85
+  );
+
+  box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  box-shadow: rgba(81, 3, 215, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
   transition: ease all 0.5s;
 }
 
@@ -47,13 +63,12 @@
   right: -40px;
   width: 400px;
   background: #2627457f;
-  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(66, 71, 107, 0.418);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
   padding: 15px;
-  border-radius: 15px;
-  z-index: 10;
+  z-index: 9;
   transition: ease all 0.5s;
 
   .product-image-rev {
@@ -66,7 +81,7 @@
       border-radius: 10px;
       width: 100%;
       object-fit: cover;
-      z-index: 6;
+      z-index: 10;
     }
   }
 }
@@ -96,7 +111,6 @@
     .product-btn-rev {
       font-family: Quicksand;
       background-color: #19192192;
-
       box-shadow: rgba(22, 21, 21, 0.35) 0px 5px 15px;
       color: #ffffff;
       border-radius: 6px;
@@ -135,7 +149,7 @@
       .current {
         font-family: Quicksand;
         font-size: 1rem;
-        color: #5d19d1;
+        color: #d1198bc9;
         padding: 0 8px;
         line-height: 0.9;
         font-weight: 700;

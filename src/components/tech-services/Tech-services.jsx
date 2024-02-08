@@ -4,8 +4,7 @@ import { OrbitControls } from "@react-three/drei"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
 import { PointLight } from "@react-three/fiber"
 import { useControls } from "leva"
-import Metal from "../../assets/images/metal.png"
-import "./tech-services.scss"
+import SpaceAbout from "../../assets/images/Celestial.png"
 
 const icons = [
   {
@@ -104,10 +103,7 @@ const TechStack = ({
 
 const Planet = ({ icons }) => {
   const planetRef = useRef()
-  const texture = useLoader(
-    TextureLoader,
-    "https://i.ibb.co/hcN2qXk/star-nc8wkw.jpg"
-  )
+  const texture = useLoader(TextureLoader, SpaceAbout)
 
   useFrame(() => {
     planetRef.current.rotation.y += 0.001
@@ -207,9 +203,6 @@ const TechServices = () => {
         <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} />
         <directionalLight position={[0, 1, 10]} />
         <Planet icons={icons} />
-        {/* <OrbitControls /> */}
-        {/* <axesHelper args={[5]} />
-        <gridHelper /> */}
       </Canvas>
     </>
   )

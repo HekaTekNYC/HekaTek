@@ -34,14 +34,14 @@ const Products = () => {
           </div>
           <div className="product-layer">
             <ProductLeft
-              name={interviewIQ.name}
-              desc={interviewIQ.desc}
-              icons={interviewIQ.icons}
-              img={interviewIQ.img}
-              info={interviewIQ.info}
-              btn={interviewIQ.btn}
-              aLink={interviewIQ.aLink}
-              isCurrentWork={interviewIQ.isCurrentWork}
+              name={ad3lie.name}
+              desc={ad3lie.desc}
+              icons={ad3lie.icons}
+              img={ad3lie.img}
+              info={ad3lie.info}
+              btn={ad3lie.btn}
+              aLink={ad3lie.aLink}
+              isCurrentWork={ad3lie.isCurrentWork}
             />
             <ProductRight
               name={dangoDB.name}
@@ -56,14 +56,14 @@ const Products = () => {
           </div>
         </div>
         <ProductLeft
-          name={ad3lie.name}
-          desc={ad3lie.desc}
-          icons={ad3lie.icons}
-          img={ad3lie.img}
-          info={ad3lie.info}
-          btn={ad3lie.btn}
-          aLink={ad3lie.aLink}
-          isCurrentWork={ad3lie.isCurrentWork}
+          name={interviewIQ.name}
+          desc={interviewIQ.desc}
+          icons={interviewIQ.icons}
+          img={interviewIQ.img}
+          info={interviewIQ.info}
+          btn={interviewIQ.btn}
+          aLink={interviewIQ.aLink}
+          isCurrentWork={interviewIQ.isCurrentWork}
         />
       </div>
     </>

@@ -15,151 +15,25 @@ dosis but its rounded
 Questrial - but just for header? could be bulky
 Antonio for header - tall
 
+<Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
 
+      <Sparkles
+  /** Number of particles (default: 100) */
+  count?: number
+  /** Speed of particles (default: 1) */
+  speed?: number | Float32Array
+  /** Opacity of particles (default: 1) */
+  opacity?: number | Float32Array
+  /** Color of particles (default: 100) */
+  color?: THREE.ColorRepresentation | Float32Array
+  /** Size of particles (default: randomized between 0 and 1) */
+  size?: number | Float32Array
+  /** The space the particles occupy (default: 1) */
+  scale?: number | [number, number, number] | THREE.Vector3
+  /** Movement factor (default: 1) */
+  noise?: number | [number, number, number] | THREE.Vector3 | Float32Array
+/>
 
-.projects-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(17, 7, 31, 1) 50%
-  );
-
-  .projects-header {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-
-  .project-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 50%;
-    font-size: 1.5rem;
-    margin-right: 20px;
-    transition: width 0.3s ease; /* Add a transition for smooth animation */
-    cursor: pointer;
-
-    &:hover {
-      width: 60%; /* Expand the project container on hover */
-    }
-
-    .project-content {
-      text-align: end;
-      font-size: 1.5rem;
-      margin-right: 20px;
-      width: 100%;
-
-      .project-header {
-        font-size: 1.75rem;
-        font-weight: 500;
-      }
-
-      .project-short {
-        font-size: 1.3rem;
-      }
-    }
-
-    .project-tech-row {
-      display: flex;
-      flex-direction: row;
-
-      .project-icon {
-        width: 70px;
-        margin: 5px;
-
-        img {
-          height: 100%;
-        }
-      }
-    }
-  }
-
-  .project-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 0; /* Initially hidden */
-    overflow: hidden;
-    transition: width 0.3s ease; /* Add a transition for smooth expansion */
-  }
-}
-
-.project-card {
-  background: rgba(128, 60, 204, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(15.5px);
-  -webkit-backdrop-filter: blur(15.5px);
-  border-radius: 10px;
-  height: 300px;
-}
-
-
-import React from "react";
-import { OrbitControls } from "@react-three/drei";
-import { a, useSprings, useTrail } from "@react-spring/three";
-import J from "../../assets/icons/javascriptColor.svg";
-import ReactIcon from "../../assets/icons/icons8-react-native.svg";
-import Node1 from "../../assets/icons/node1js.svg";
-import "./projects.scss";
-
-const Projects = () => {
-  return (
-    <>
-      <div className="projects-container">
-        <div className="projects-header">Our Work</div>
-        <div className="project-row">
-          <div className="project">
-            <div className="project-content">
-              <div className="project-name">Plant Haus</div>
-              <div className="project-short">
-                Full stack E-commerce plant shop.
-              </div>
-            </div>
-            <div className="project-tech-row">
-              <div className="project-icon">
-                <img src={ReactIcon} alt="React logo" />
-              </div>
-              <div className="project-icon">
-                <img src={J} alt="Javascript logo" />
-              </div>
-              <div className="project-icon">
-                <img src={ReactIcon} alt="React logo" />
-              </div>
-              <div className="project-icon">
-                <img src={Node1} alt="Node logo" />
-              </div>
-            </div>
-          </div>
-          <div className="project-description">
-            <div className="project-card">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
-              accusantium. Ut officiis saepe nemo suscipit, ducimus recusandae
-              impedit quaerat sint. Temp shit place holder
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="icons"></div>
-    </>
-  );
-};
-
-export default Projects;
 
 
   // Bringing Your Business into the Digital Age

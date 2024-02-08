@@ -1,11 +1,10 @@
-import React, { useEffect, useState, Suspense } from "react"
-import { useSpring, animated } from "@react-spring/web"
-import SparklesOverlay from "../../components/sparkles/Sparkles"
+import React from "react"
+import { useSpring } from "@react-spring/web"
 import ThreeDeeText from "../../components/3d-text/3d-text"
-import Cosmo from "../../assets/images/cosmo.png"
-import SpaceOverlay from "../../components/stars/Stars"
-import HeaderText from "../../components/headers/HeaderText"
-// import { OrbitControls } from "@react-three/drei"
+
+import PlanetSphere from "../../components/planet/Planet"
+import SpaceCrag from "../../assets/images/space-crag3.svg"
+
 import "./hero.scss"
 
 const Hero = () => {
@@ -19,33 +18,25 @@ const Hero = () => {
   return (
     <div>
       <div className="hero-container">
-        <div className="space-container">
-          <SpaceOverlay />
+        <div className="galaxy-container">
+          <img src={SpaceCrag} alt="galaxy" className="galaxy" />
         </div>
-        <div className="sparkles-container">
-          <SparklesOverlay />
-        </div>
+
         <div className="hero-row">
           <div className="hero-left-container">
-            <div className="hero-image">
-              <animated.div
-                style={{ transform: rotate.to((r) => `rotate(${r}deg)`) }}
-              >
-                <img src={Cosmo} alt="cosmo" />
-              </animated.div>
+            <div className="header">
+              <div className="hekatek-3d">
+                <ThreeDeeText />
+              </div>
+              <div className="header-text">
+                FREELANCERS WITH A PASSION FOR BRINGING YOUR VISION TO LIFE.
+              </div>
             </div>
           </div>
 
           <div className="hero-right-container">
-            <div className="header">
-              <div className="three-d">
-                <ThreeDeeText />
-              </div>
-              <div className="half-intro">Web Development </div>
-            </div>
-
-            <div className="animated-text">
-              Freelancers with a passion for bringing your vision to life.
+            <div className="hero-image">
+              <PlanetSphere />
             </div>
           </div>
         </div>
