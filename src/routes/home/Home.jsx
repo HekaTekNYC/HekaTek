@@ -20,6 +20,13 @@ const Home = () => {
   return (
     <>
       <div>
+
+        <div className="hero-section" id="hero">
+  
+            <Hero />
+     
+        </div>
+
         <div className="bg">
           <div className="space-container">{/* <SpaceOverlay /> */}</div>
 
