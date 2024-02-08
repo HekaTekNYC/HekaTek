@@ -30,7 +30,7 @@ const About = () => {
           </div>
 
           <div className="sparkle-overlay">
-            <Sparkles />
+            {/* <Sparkles sparklesCount={500} /> */}
           </div>
         </div>
       </div>

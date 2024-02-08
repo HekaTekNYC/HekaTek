@@ -1,7 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber"
 import React, { useState } from "react"
 
-import { Bloom, EffectComposer } from "@react-three/postprocessing"
+import { EffectComposer } from "@react-three/postprocessing"
 
 import { useEffect, useRef } from "react"
 import * as THREE from "three"
@@ -37,7 +37,7 @@ const MyStars = () => {
 
   useFrame((state, delta) => {
     if (!meshRef.current) return
-    const speed = 0.018
+    const speed = 0.013
 
     // const velocity =
     //   1 / Math.pow(state.clock.elapsedTime + 1, state.clock.elapsedTime + 1)
@@ -46,7 +46,7 @@ const MyStars = () => {
       meshRef.current.getMatrixAt(i, temp)
 
       // update scale
-      tempObject.scale.set(1, 1, Math.max(1, 1, 0.1))
+      tempObject.scale.set(1, 1, Math.max(0.5, 0.5, 0.1))
       // tempObject.scale.set(1, 1, 0.75)
       tempPos.setFromMatrixPosition(temp)
       if (tempPos.z > Z_BOUNDS / 2) {
@@ -82,7 +82,7 @@ const MyStars = () => {
         matrixAutoUpdate
       >
         <sphereGeometry args={[0.01]} />
-        <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
+        <meshBasicMaterial color={[1, 1, 1]} toneMapped={false} />
       </instancedMesh>
       <EffectComposer>
         {/* <Bloom luminanceThreshold={0.2} mipmapBlur /> */}
