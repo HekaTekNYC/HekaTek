@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 700px;
+  min-height: 700px;
+  max-height: 100vh;
   width: 100%;
   padding: 0 60px;
+  margin-top: 60px;
 
   .services-header {
     font-family: Inter;
@@ -17,10 +19,12 @@
 
 .services-row {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 350px;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 350px; // minimum height
+  max-height: 50vh;
   width: 100%;
 
   .service-item {
@@ -28,9 +32,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 350px;
-    height: 100%;
-    padding: 40px 30px;
+    flex: 0 0 calc(25% - 30px);
+    margin: 0 15px;
+    padding: 40px 20px 20px;
+    height: auto;
+    // height: 325px;
     border-radius: 15px;
     background: radial-gradient(
       circle at center,
@@ -57,14 +63,99 @@
       font-weight: 600;
       text-align: center;
       margin-bottom: 9px;
-      font-size: 1.4rem;
-
+      font-size: 1.2rem;
       margin-bottom: 30px;
-      color: #e4e4e4;
+      color: #ffffff;
     }
     .service-text {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       text-align: center;
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1400px) {
+  .services-container {
+    padding: 0 40px;
+    .services-header {
+      margin: 15px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .services-container {
+    min-height: 1000px;
+  }
+  .services-row {
+    .service-item {
+      flex: 0 0 calc(40% - 40px);
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services-row {
+    .service-item {
+      flex: 0 0 calc(40% - 20px);
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    min-height: 750px;
+    padding: 0 20px;
+    margin-top: 40px;
+
+    .services-header {
+      font-size: 3.2rem;
+    }
+  }
+
+  .services-row {
+    .service-item {
+      flex: 1 0 300px;
+      margin: 15px 0;
+      justify-content: center;
+      padding: 20px;
+      margin: 15px;
+      height: 250px;
+      .service-header {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services-container {
+    min-height: 1200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-container {
+    min-height: 1000px;
+  }
+  .services-row {
+    .service-item {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services-container {
+    min-height: 1200px;
+  }
+  .services-row {
+    .service-item {
+      height: auto;
     }
   }
 }

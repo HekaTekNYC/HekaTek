@@ -32,7 +32,9 @@ const Home = () => {
         <div className="product-section" id="our-work">
           <Products />
         </div>
-        <div className="services-section">{/* <Services /> */}</div>
+        <div className="services-section">
+          <Services />
+        </div>
         <div className="about-section " id="about">
           <div className="space-layer">
             <img src={Space} alt={"space"} className="pink-space" />
@@ -43,7 +45,7 @@ const Home = () => {
         </div>
 
         <div className="contact-section" id="contact">
-          {/* <Contact /> */}
+          <Contact />
         </div>
       </div>
     </>

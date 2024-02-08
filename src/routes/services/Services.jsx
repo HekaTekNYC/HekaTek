@@ -16,12 +16,11 @@ const Services = () => {
           </div>
         </div>
         <div className="service-item">
-          <div className="service-header">WEBSITE DEVELOPMENT</div>
+          <div className="service-header">WEB DEVELOPMENT</div>
           <div className="service-text">
-            We offer custom website development services tailored to meet your
-            unique business needs, leveraging our expertise in various
-            frameworks and TypeScript to create responsive a user-friendly
-            websites.
+            We offer custom development services tailored to meet your unique
+            needs, leveraging our expertise in various frameworks and JavaScript
+            to create responsive websites.
           </div>
         </div>
         <div className="service-item">

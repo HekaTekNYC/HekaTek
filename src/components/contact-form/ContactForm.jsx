@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
-import { Modal, Button, Form, Row, Col } from "react-bootstrap"
+import { Form, Row, Col } from "react-bootstrap"
 import FloatingLabel from "react-bootstrap/FloatingLabel"
-import "./ContactForm.scss"
+
+import "./contact-form.scss"
 
 const ContactForm = () => {
   const form = useRef()
@@ -62,72 +63,85 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="contact-form-container">
-      <h6>Contact Us</h6>
+    <>
+      <div className="contact-form-container">
+        <h6>Contact Us</h6>
 
-      <Form ref={form} onSubmit={sendEmail}>
-        <Row>
-          <Form.Group size="sm" as={Col} controlId="formGridFirstName">
-            <FloatingLabel
-              controlId="floatingInput"
-              label="First Name"
-              className="mb-3 mb-3 "
-            >
+        <Form ref={form} onSubmit={sendEmail}>
+          <Row>
+            <Form.Group size="sm" as={Col} controlId="formGridFirstName">
+              <FloatingLabel
+                controlId="floatingInput"
+                label="First Name"
+                className="mb-3 mb-3 "
+              >
+                <Form.Control
+                  type="text"
+                  required
+                  name="from_name"
+                  placeholder="First Name"
+                />
+              </FloatingLabel>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridLastName">
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Last Name"
+                className="mb-3 mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Last Name"
+                  name="from_last_name"
+                />
+              </FloatingLabel>
+            </Form.Group>
+          </Row>
+          <Form.Group className="mb-3">
+            <FloatingLabel controlId="floatingInput" label="Email">
               <Form.Control
-                type="text"
-                required
-                name="from_name"
-                placeholder="First Name"
+                type="email"
+                placeholder="Email"
+                name="from_email"
               />
             </FloatingLabel>
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridLastName">
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Last Name"
-              className="mb-3 mb-3"
-            >
+          <Form.Group className="mb-3">
+            <FloatingLabel controlId="floatingInput" label="Message">
               <Form.Control
-                type="text"
-                placeholder="Last Name"
-                name="from_last_name"
+                as="textarea"
+                placeholder="Message"
+                name="message"
+                rows={4}
+                style={{ height: "120px" }}
               />
             </FloatingLabel>
           </Form.Group>
-        </Row>
-        <Form.Group className="mb-3">
-          <FloatingLabel controlId="floatingInput" label="Email">
-            <Form.Control type="email" placeholder="Email" name="from_email" />
-          </FloatingLabel>
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <FloatingLabel controlId="floatingInput" label="Message">
-            <Form.Control
-              as="textarea"
-              placeholder="Message"
-              name="message"
-              rows={4}
-              style={{ height: "120px" }}
-            />
-          </FloatingLabel>
-        </Form.Group>
-        <button className="contact-btn" type="submit">
-          Submit
-        </button>
-      </Form>
-
+          <button className="contact-btn" type="submit">
+            Submit
+          </button>
+        </Form>
+      </div>
       {showModal && (
         <div className="modal-background" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h4>{modalContent.title}</h4>
             <p>{modalContent.message || "Default message"}</p>
-            <Button variant="secondary" onClick={() => setShowModal(false)}>
+            <button
+              className="contact-btn"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              onClick={() => setShowModal(false)}
+            >
               Close
-            </Button>
+            </button>
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
 
