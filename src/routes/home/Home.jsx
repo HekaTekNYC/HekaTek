@@ -4,7 +4,6 @@ import Products from "../products/Products"
 import About from "../about/About"
 import Contact from "../contact/Contact"
 import Sparkles from "../../components/sparkles/Sparkles"
-import SpaceOverlay from "../../components/stars/Stars"
 import Services from "../services/Services"
 
 import Space from "../../assets/images/space_buddy2.png"
@@ -20,9 +19,7 @@ const Home = () => {
         <div className="sparkles-container">
           <Sparkles count={100} />
         </div>
-        {/* <div className="space-container">
-          <SpaceOverlay />
-        </div> */}
+
         <div className="hero-section" id="hero">
           <Hero />
         </div>
