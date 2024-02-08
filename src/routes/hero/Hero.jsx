@@ -2,8 +2,10 @@ import React from "react"
 import { useSpring } from "@react-spring/web"
 import ThreeDeeText from "../../components/3d-text/3d-text"
 
+
 import PlanetSphere from "../../components/planet/Planet"
 import SpaceCrag from "../../assets/images/space-crag3.svg"
+
 
 import "./hero.scss"
 
@@ -18,6 +20,7 @@ const Hero = () => {
   return (
     <div>
       <div className="hero-container">
+
         <div className="galaxy-container">
           <img src={SpaceCrag} alt="galaxy" className="galaxy" />
         </div>
@@ -26,7 +29,9 @@ const Hero = () => {
           <div className="hero-left-container">
             <div className="header">
               <div className="hekatek-3d">
+
                 <ThreeDeeText />
+
               </div>
               <div className="header-text">
                 FREELANCERS WITH A PASSION FOR BRINGING YOUR VISION TO LIFE.
@@ -36,13 +41,31 @@ const Hero = () => {
 
           <div className="hero-right-container">
             <div className="hero-image">
+
               <PlanetSphere />
             </div>
           </div>
+
         </div>
       </div>
+      {/* <div className="space-container">
+        <div className="space-background"></div>
+      </div> */}
+      {/* <div className="wave">
+        <img src={Wave} alt="wave"/>
+      </div> */}
+   
     </div>
   )
 }
 
 export default Hero
+
+
+  
+        {/* <div className="space-container">
+          <SpaceOverlay />
+        </div>
+        <div className="sparkles-container">
+          <SparklesOverlay />
+        </div> */}
