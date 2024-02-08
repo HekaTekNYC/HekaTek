@@ -1,0 +1,10 @@
+.scene {
+  width: 500px;
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .scene {
+    width: 500px;
+  }
+}

@@ -1,0 +1,49 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .contact-form-layer {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+}
+
+.nebula-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  .nebula-overlay {
+    position: relative;
+    background: #000000;
+  }
+
+  .nebula-layer {
+    position: relative;
+    left: 300px;
+    filter: grayscale(20%);
+
+    background-size: cover;
+    background-position: center;
+    animation: spin 160s linear infinite, breathe 6s ease-in-out infinite;
+    z-index: 1;
+  }
+}
+.desaturated-image {
+  filter: grayscale(20%);
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
