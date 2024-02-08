@@ -22,8 +22,6 @@ const SparkleSky = ({ count }) => {
         factor={4}
         saturation={1}
         fade
-        // speed={1}
-        // colors={["#FF1212", "#ffffff"]}
       />
     </>
   )
