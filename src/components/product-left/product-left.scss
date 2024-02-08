@@ -147,12 +147,13 @@
       font-weight: 600;
 
       .current {
-        font-family: Quicksand;
+        font-family: Montserrat;
         font-size: 1rem;
-        color: #b14ca7;
+        color: #4c7cff;
+
         padding: 0 8px;
         line-height: 0.9;
-        font-weight: 700;
+        font-weight: 600;
       }
     }
 
@@ -250,7 +251,7 @@
             }
           }
           .spacer {
-            width: 50%;
+            width: 40%;
           }
         }
       }
@@ -262,17 +263,19 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin-right: 0;
+      margin-left: 0;
       padding-bottom: 20px;
       height: 200px;
 
       .product-right-text-rev {
         width: auto;
         text-align: center;
+        margin-top: 40px;
       }
 
       .product-tech-row-rev {
         justify-content: center;
+        margin-bottom: 40px;
       }
     }
   }
@@ -281,7 +284,7 @@
 @media screen and (max-width: 992px) {
   .product-row-rev {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 800px;
 
     .product-right-rev {
@@ -289,6 +292,9 @@
       margin: 0;
     }
     .product-left-rev {
+      display: flex;
+      justify-content: center;
+
       .product-card-rev {
         position: static;
         display: flex;
@@ -297,6 +303,7 @@
         align-items: center;
         height: auto;
         padding: 40px 20px;
+        width: auto;
 
         .product-image-glass-rev {
           position: static;
@@ -332,9 +339,34 @@
 
 @media screen and (max-width: 600px) {
   .product-row-rev {
-    margin: 0;
+    height: auto;
+    padding: 0;
+    margin-bottom: 4%;
+
+    .product-left-rev {
+      .product-card-rev {
+        padding: 20px;
+        width: 90%;
+
+        .product-image-glass-rev {
+          width: 300px;
+        }
+        .product-card-text-rev {
+          .product-text-rev {
+            width: 100%;
+            .product-info-rev {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
     .product-right-rev {
       height: auto;
+      .product-right-text-rev {
+        margin-bottom: 40px;
+      }
 
       .product-tech-row-rev {
         display: none;

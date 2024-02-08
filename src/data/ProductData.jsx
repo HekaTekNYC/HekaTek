@@ -44,7 +44,7 @@ export const plantHaus = {
     src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
     alt: "Plant Haus Preview",
   },
-  info: "A dynamic ecommerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This platform combines OAuth authentication with React and Firebase, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
+  info: "A dynamic e-commerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This app combines OAuth authentication with React, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
   btn: "View More",
   aLink: "https://planthaus.netlify.app/",
   isCurrentWork: false,
