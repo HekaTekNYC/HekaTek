@@ -78,6 +78,10 @@
     .about-services {
       width: 100%;
       order: 1;
+
+      .tech-overlay {
+        margin: 0;
+      }
     }
   }
 }

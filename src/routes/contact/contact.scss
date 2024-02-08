@@ -8,7 +8,6 @@
   .contact-form-layer {
     display: flex;
     align-items: center;
-    // margin-left: 20px;
     z-index: 2;
   }
 }
@@ -22,7 +21,6 @@
   .nebula-overlay {
     position: relative;
     background: #000000;
-    // z-index: ;
   }
 
   .nebula-layer {
@@ -36,23 +34,10 @@
     animation: spin 160s linear infinite, breathe 6s ease-in-out infinite;
     z-index: 1;
   }
-  //   img {
-  //     width: 50%;
-  //     height: 50%;
-  //   }
 }
 .desaturated-image {
   filter: grayscale(20%);
 }
-
-// @keyframes spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
 
 @keyframes breathe {
   0%,

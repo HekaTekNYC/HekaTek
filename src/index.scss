@@ -111,14 +111,13 @@ ul {
 }
 
 .contact-form-container {
+  position: relative;
   width: 600px;
   height: 480px;
-  // margin: auto;
   padding: 50px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
-
   background: radial-gradient(
     circle at 0% 120%,
     #26274590,
@@ -138,7 +137,6 @@ ul {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-
   z-index: 40;
 
   h6 {
@@ -169,5 +167,15 @@ ul {
     background-color: #19192192;
     box-shadow: rgba(25, 27, 70, 0.728) 0px 3px 5px;
     color: #ffffff;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .contact-form-container {
+    width: auto;
+    margin: 0 20px;
+    padding: 40px 20px;
   }
 }
