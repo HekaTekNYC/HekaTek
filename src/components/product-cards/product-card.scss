@@ -1,0 +1,157 @@
+
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px; 
+  height: 875px;
+  padding: 30px;
+  // background: #2627457f;
+  border: 1px solid rgba(60, 84, 96, 0.4);
+
+  background: #04202f6a;
+  box-shadow: 0 8px 32px 0 rgba(158, 158, 213, 0.153);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+}
+
+// Product intro container
+
+.product-intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Andika', sans-serif; //my fav lowercase and upper
+
+  
+  .product-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    .current {
+      font-family: Quicksand;
+      font-size: 1rem;
+      color: #F05D5E;
+      padding: 0 8px;
+      line-height: 0.9;
+      font-weight: 700;
+    }
+  }
+  .product-short-desc {
+    // font-family: 'Roboto', sans-serif; //my fav lowercase and upper
+    font-family: 'Andika', sans-serif; //my fav lowercase and upper
+
+    font-size: 1.3rem;
+  }
+}
+
+// Product image container
+.product-image-container {
+  padding: 30px 0 40px;
+    img {
+      width: 700px;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+}
+
+// Product Info container
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // font-family: 'Andika', sans-serif; //my fav lowercase and upper
+  // font-family: 'Arya', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+    // font-family: 'Exo 2', sans-serif;
+    // font-family: 'Fahkwang', sans-serif;
+    // font-family: 'Inter', sans-serif;
+    // font-family: 'Livvic', sans-serif;
+    // font-family: 'Mallanna', sans-serif;
+    // font-family: 'Mulish', sans-serif;
+    // font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+    // font-family: 'Noto Sans Ugaritic', sans-serif;
+    // font-family: 'Nunito', sans-serif;
+    // font-family: 'Overlock SC', sans-serif;
+    // font-family: 'Syne', sans-serif;
+    // font-family: 'Tenor Sans', sans-serif;
+    // font-family: 'Truculenta', sans-serif;
+    // font-family: 'Work Sans', sans-serif;
+    font-size: larger;
+
+  .product-tech-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .product-full-desc {
+    padding: 20px 25px 30px;
+    text-align: center;
+
+  }
+
+
+  .product-btn {
+    background-color: #04202f6a;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    // text-align: center;
+    // font-family: Quicksand;
+    // background-color: #04202f6a;
+    // border: 1px solid rgba(60, 84, 96, 0.4);
+    // box-shadow: rgba(1, 40, 69, 0.834) 0px 5px 15px;
+    // color: #fff;
+    // border-radius: 10px;
+ 
+    // font-size: 1rem;
+    // font-weight: 600;
+    // width: 150px;
+    // height: 40px;
+    // margin: 5px 0;
+    // cursor: pointer;
+
+    &:before {
+      background-color: initial;
+      background-image: linear-gradient(#565555af 0, rgba(255, 255, 255, 0) 100%);
+      border-radius: 8px;
+      content: "";
+      height: 75%;
+      left: -1%;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      transition: all .3s;
+      width: 100%;
+    }
+    &:hover {
+      box-shadow: rgba(255, 255, 255, 0.259) 0 3px 15px inset, rgba(0, 0, 0, 0.266) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+      transform: scale(1.05);
+    }
+  }
+
+}
+

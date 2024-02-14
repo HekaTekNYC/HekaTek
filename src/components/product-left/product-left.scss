@@ -33,29 +33,60 @@
   padding: 20px;
   z-index: 10;
 
-  background: radial-gradient(
-    circle at 0% 120%,
-    #262745,
-    #262846,
-    #28294a,
-    #2a2b50,
-    #2d2d58,
-    #303060,
-    #333369,
-    #363671,
-    #3a3879,
-    #3c3a7f,
-    #3e3c83,
-    #3f3c85
-  );
 
-  box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  // background-color: #4d4855;
+  // background-image: linear-gradient(147deg, #2f12eca7 0%, #000000 74%);
+  // background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
 
-  transition: ease all 0.5s;
+    // background-color: #a07293;
+    // background-image: radial-gradient( circle farthest-corner at 4.3% 83.7%,  rgba(173, 0, 170, 0.494) 0%, rgba(15,51,92,1) 90% );
+
+    // background-image: radial-gradient( circle farthest-corner at  4.3% 83.7%,  rgba(191, 18, 244, 0.553) 0%, rgb(3, 40, 75) 90% );
+
+//   background-color: #a4508b;
+// background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+
+//   background-color: #0abcf9;
+// background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+//   background-color: #50d8d7;
+// background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+
+  // background-color: #ffffff;
+  // background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+  // background-color: #fce055;
+  // background-image: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
+//    background-color: #182b3a;
+// background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+//   background-color: #0cbaba;
+// background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+//   background-color: #03e5b7;
+// background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
 }
+  // background: radial-gradient(
+  //   circle at 0% 120%,
+  //   #262745,
+  //   #262846,
+  //   #28294a,
+  //   #2a2b50,
+  //   #2d2d58,
+  //   #303060,
+  //   #333369,
+  //   #363671,
+  //   #3a3879,
+  //   #3c3a7f,
+  //   #3e3c83,
+  //   #3f3c85
+  // );
+
+  // box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
+  //   rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  // backdrop-filter: blur(2.5px);
+  // -webkit-backdrop-filter: blur(2.5px);
+
+  // transition: ease all 0.5s;
+// }
+// }
 
 .product-image-glass-rev {
   position: absolute;

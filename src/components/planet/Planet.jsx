@@ -2,9 +2,8 @@ import React, { useRef } from "react"
 
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
-
-import PlanetSpace from "../../assets/images/planet_space.png"
-
+import PlanetSpace from "../../assets/images/22222.jpeg"
+import { OrbitControls } from "@react-three/drei"
 const Sphere = () => {
   const planetRef = useRef()
   const texture = useLoader(TextureLoader, PlanetSpace)
@@ -38,12 +37,13 @@ const PlanetSphere = () => {
       <Canvas
         linear
         flat
-        camera={{ fov: 35, near: 0.1, far: 1000, position: [0, 0, 6] }}
+        camera={{ fov: 35, near: 0.1, far: 1000, position: [0, 0, 8] }}
       >
-        <ambientLight args={[0.5]} />
-        <pointLight args={[0xffffff, 0.5]} position={[2, 3, 4]} />
-        <directionalLight position={[0, 1, 10]} />
+        <ambientLight args={[2]} />
+        <pointLight args={[0xffffff, 2]} position={[2, 3, 4]} />
+        <directionalLight position={[0, 0, 0]} />
         <Sphere />
+        {/* <OrbitControls /> */}
       </Canvas>
     </>
   )

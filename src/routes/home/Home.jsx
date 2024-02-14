@@ -17,17 +17,16 @@ const Home = () => {
     <>
       <div>
         <div className="sparkles-container">
-          <Sparkles count={100} />
+          <Sparkles count={800} />
         </div>
-
+     
         <div className="hero-section" id="hero">
           <Hero />
         </div>
-
         <div className="product-section" id="our-work">
           <Products />
         </div>
-        <div className="services-section">
+        <div className="services-section" id="services">
           <Services />
         </div>
         <div className="about-section " id="about">
