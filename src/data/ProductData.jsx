@@ -1,47 +1,65 @@
-import Deno from "../assets/icons/deno.svg"
-import J from "../assets/icons/javascriptColor.svg"
-import ReactIcon from "../assets/icons/icons8-react-native.svg"
-import Node1 from "../assets/icons/node1js.svg"
+import dangoDBI from "../assets/images/dangoDB.png"
+// import Deno from "../assets/icons/deno.svg"
+import DangoDeno from "../assets/icons/DangoDeno.svg"
+import DangoSass from "../assets/icons/DangoSass.svg"
 import Firebase from "../assets/icons/firebase.svg"
+import IQJS from "../assets/icons/IQJS.svg"
+import AReact from "../assets/icons/AReact.svg"
+import DangoReact from "../assets/icons/DangoReact.svg"
+import DangoNode from "../assets/icons/DangoNode.svg"
+import IQNode from "../assets/icons/IQNode.svg"
+import J from "../assets/icons/javascriptColor.svg"
+import PHJS from "../assets/icons/PHJS.svg"
+import PHNode1 from "../assets/icons/PHNode.svg"
+import PHSass from "../assets/icons/PHSass.svg"
+import PHReactIcon from "../assets/icons/PHReactIcon.svg"
+import PHFirebase from "../assets/icons/PHFirebase.svg"
+import Node1 from "../assets/icons/node1js.svg"
+import ReactIcon from "../assets/icons/icons8-react-native.svg"
+import IQReact from "../assets/icons/IQReact.svg"
 import Sass from "../assets/icons/sass.svg"
 import CSSLogo from "../assets/icons/CSSLogo.svg"
+import IQCSS from "../assets/icons/IQCSS.svg"
 import MongoDB from "../assets/icons/mongodb.svg"
+import IQMongoDB from "../assets/icons/IQMongo.svg"
 import Express from "../assets/icons/express.svg"
 import Typescript from "../assets/icons/typescript.svg"
-import dangoDBI from "../assets/images/dangoDB.png"
 import D3 from "../assets/icons/d3js-icon.svg"
+import AD3 from "../assets/icons/AD.svg"
+import ATailwind from "../assets/icons/ATailwind.svg"
 import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
+import AElectron from "../assets/icons/AElectron.svg"
 import Ad3lie from "../assets/images/Ad3lie.png"
 import IIQ from "../assets/images/IIQ.png"
-
+import Topy from '../assets/images/Topy.png'
 export const plantHaus = {
   name: "Plant Haus",
-  desc: "Full stack E-commerce plant shop.",
+  desc: "Full Stack E-commerce Plant Shop.",
   icons: [
     {
-      src: Sass,
+      src: PHSass,
       alt: "Sass logo",
     },
     {
-      src: ReactIcon,
+      src: PHReactIcon,
       alt: "React logo",
     },
     {
-      src: J,
+      src: PHJS,
       alt: "Javascript logo",
     },
     {
-      src: Firebase,
+      src: PHFirebase,
       alt: "Firebase logo",
     },
     {
-      src: Node1,
+      src: PHNode1,
       alt: "Node logo",
     },
   ],
   img: {
-    src: "https://i.ibb.co/KXfxRCT/Screenshot-2024-01-14-at-8-04-58-PM.png",
+    src: "./assets/images/PlantHaus.png",
     alt: "Plant Haus Preview",
   },
   info: "A dynamic e-commerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This app combines OAuth authentication with React, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
@@ -52,26 +70,26 @@ export const plantHaus = {
 
 export const interviewIQ = {
   name: "InteviewIQ",
-  desc: "Full stack flashcard application.",
+  desc: "Full Stack Flashcard Application",
   icons: [
     {
-      src: CSSLogo,
+      src: IQCSS,
       alt: "CSS logo",
     },
     {
-      src: ReactIcon,
+      src: IQReact,
       alt: "React logo",
     },
     {
-      src: J,
+      src: IQJS,
       alt: "Javascript logo",
     },
     {
-      src: Node1,
+      src: IQNode,
       alt: "Node logo",
     },
     {
-      src: MongoDB,
+      src: IQMongoDB,
       alt: "Mongodb logo",
     },
     {
@@ -91,10 +109,10 @@ export const interviewIQ = {
 
 export const dangoDB = {
   name: "dangoDb",
-  desc: "Object Document Mapper (ODM) built for Deno.",
+  desc: "Object Document Mapper (ODM) Built for Deno",
   icons: [
     {
-      src: Deno,
+      src: DangoDeno,
       alt: "Deno Logo",
     },
     {
@@ -102,16 +120,16 @@ export const dangoDB = {
       alt: "Typescript Logo",
     },
     {
-      src: Sass,
+      src: DangoSass,
       alt: "Sass Logo",
     },
 
     {
-      src: ReactIcon,
+      src: DangoReact,
       alt: "React Logo",
     },
     {
-      src: Node1,
+      src: DangoNode,
       alt: "Node Logo",
     },
   ],
@@ -127,27 +145,27 @@ export const dangoDB = {
 
 export const ad3lie = {
   name: "Ad3lie",
-  desc: "Data visualizations utilizing the power of D3.js",
+  desc: "Data Visualizations Utilizing the Power of D3.js",
   icons: [
     {
-      src: Tailwind,
+      src: ATailwind,
       alt: "Tailwind Logo",
     },
     {
-      src: ReactIcon,
+      src: AReact,
       alt: "React Logo",
     },
     {
-      src: D3,
+      src: AD3,
       alt: "D3 Logo",
     },
     {
-      src: Electron,
+      src: AElectron,
       alt: "Electron Logo",
     },
   ],
   img: {
-    src: Ad3lie,
+    src: Topy,
     alt: "Ad3lie Preview",
   },
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",

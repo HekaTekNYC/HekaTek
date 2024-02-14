@@ -1,73 +1,99 @@
-import React from "react"
-
-import ProductRight from "../../components/product-right/Product-right.jsx"
-import ProductLeft from "../../components/product-left/Product-left.jsx"
-import {
-  plantHaus,
-  interviewIQ,
-  dangoDB,
-  ad3lie,
-} from "../../data/ProductData.jsx"
-
-import Spacepink from "../../assets/images/pink_space2.png"
-
-import "./products.scss"
+import React, { useEffect, useState, useRef } from "react";
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import ProductCard from "../../components/product-cards/ProductCard";
+import { plantHaus, interviewIQ, dangoDB, ad3lie } from "../../data/ProductData";
+import "./products.scss";
 
 const Products = () => {
-  return (
-    <>
-      <div className="products-container">
-        <div className="products-header">OUR WORK</div>
-        <ProductRight
-          name={plantHaus.name}
-          desc={plantHaus.desc}
-          icons={plantHaus.icons}
-          img={plantHaus.img}
-          info={plantHaus.info}
-          btn={plantHaus.btn}
-          aLink={plantHaus.aLink}
-          isCurrentWork={plantHaus.isCurrentWork}
-        />
-        <div className="space-relative">
-          <div className="space3-layer">
-            <img src={Spacepink} alt={"space"} className="space-3" />
-          </div>
-          <div className="product-layer">
-            <ProductLeft
-              name={ad3lie.name}
-              desc={ad3lie.desc}
-              icons={ad3lie.icons}
-              img={ad3lie.img}
-              info={ad3lie.info}
-              btn={ad3lie.btn}
-              aLink={ad3lie.aLink}
-              isCurrentWork={ad3lie.isCurrentWork}
-            />
-            <ProductRight
-              name={dangoDB.name}
-              desc={dangoDB.desc}
-              icons={dangoDB.icons}
-              img={dangoDB.img}
-              info={dangoDB.info}
-              btn={dangoDB.btn}
-              aLink={dangoDB.aLink}
-              isCurrentWork={dangoDB.isCurrentWork}
-            />
-          </div>
-        </div>
-        <ProductLeft
-          name={interviewIQ.name}
-          desc={interviewIQ.desc}
-          icons={interviewIQ.icons}
-          img={interviewIQ.img}
-          info={interviewIQ.info}
-          btn={interviewIQ.btn}
-          aLink={interviewIQ.aLink}
-          isCurrentWork={interviewIQ.isCurrentWork}
-        />
-      </div>
-    </>
-  )
-}
+  const [showHeader, setShowHeader] = useState(false);
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const parallaxRef = useRef(null);
 
-export default Products
+  useEffect(() => {
+    const handleScroll = () => {
+      const parallaxOffsetTop = parallaxRef.current.getBoundingClientRect().top;
+      const headerOffsetTop = document.querySelector('.products-section-header').getBoundingClientRect().top;
+
+      if (parallaxOffsetTop <= 0) {
+        setShowHeader(true);
+        setIsHeaderFixed(headerOffsetTop <= 0);
+      } else {
+        setShowHeader(false);
+        setIsHeaderFixed(false);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="products-container">
+      <div className={`products-section-header ${showHeader ? 'show-header' : ''} ${isHeaderFixed ? 'fixed-header' : ''}`}>OUR WORK</div>
+      <div className="parallax-container" ref={parallaxRef}>
+        <Parallax pages={4} className={'parallax-remove-scrollbar'}>
+          {[plantHaus, ad3lie, dangoDB, interviewIQ].map((product, index) => (
+            <ParallaxLayer key={index} offset={index} speed={0.01} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '50px'}}>
+              <ProductCard
+                name={product.name}
+                desc={product.desc}
+                icons={product.icons}
+                img={product.img}
+                info={product.info}
+                btn={product.btn}
+                aLink={product.aLink}
+                isCurrentWork={product.isCurrentWork}
+              />
+            </ParallaxLayer>
+          ))}
+        </Parallax>
+      </div>
+    </div>
+  );
+};
+
+export default Products;
+
+
+// import React, { useEffect } from "react";
+// import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+// import ProductCard from "../../components/product-cards/ProductCard";
+// import { plantHaus, interviewIQ, dangoDB, ad3lie } from "../../data/ProductData";
+// import "./products.scss";
+
+// const Products = () => {
+
+
+//   const alignCenter = { display: 'flex', alignItems: 'center' }
+  
+//   return (
+//     <div className="products-container">
+//       <div className="products-section-header">OUR WORK</div>
+//       <div className="parallax-container">
+//           <Parallax pages={4}  className={'parallax-remove-scrollbar' } >
+//             {[plantHaus, ad3lie, dangoDB, interviewIQ].map((product, index) => (
+//               <ParallaxLayer key={index} offset={index} speed={0.01}  style={{ ...alignCenter, justifyContent: 'center', marginTop: '50px'}}>
+                
+//                 <ProductCard
+//                   name={product.name}
+//                   desc={product.desc}
+//                   icons={product.icons}
+//                   img={product.img}
+//                   info={product.info}
+//                   btn={product.btn}
+//                   aLink={product.aLink}
+//                   isCurrentWork={product.isCurrentWork}
+//                 />
+//               </ParallaxLayer>
+//             ))}
+//           </Parallax>
+//         </div>
+
+//     </div>
+//   );
+// };
+
+// export default Products;

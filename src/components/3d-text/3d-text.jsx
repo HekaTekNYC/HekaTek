@@ -35,7 +35,11 @@ function TextShiz() {
           <meshBasicMaterial
             metalness={0.9}
             roughness={0.1}
-            color={"#c8ebff"}
+            color={"#D8BFD8"}
+            // color={"#ffa500"}
+            // color={"#cca619"}
+            // color={"#ffddc4"}
+            // color={"#FF5733"}
             envMap={newTexture}
           />
         </Text3D>
