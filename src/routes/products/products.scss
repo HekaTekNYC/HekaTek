@@ -5,11 +5,82 @@
   align-items: center;
   height: 100vh;
 
-
-
   .products-section-header {
-    display: hidden;
-    font-family: 'Andika', sans-serif;
+    position: sticky;
+    margin-top: 80px;
+    top: 10px; /* Adjust this value based on your navbar height */
+    font-family: 'Orbitron', sans-serif;
+    color: #fff; /* Set text color to white */
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 8px rgba(233, 241, 233, 0.965); /* Space glow effect, can be adjusted or removed as needed */
+    z-index: 2;
+    transition: transform 0.3s ease; /* Removed color transition since color is now static */
+}
+
+.products-section-header:hover {
+    transform: translateY(5px); /* Lift effect on hover */
+    /* Removed color change on hover since color is now static */
+}
+
+.products-section-header::after {
+    /* If this pseudo-element is not needed, it can be removed */
+    content: attr(data-text); /* Show original text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff; /* Text color is already white, so this may not be needed */
+    z-index: -1;
+}
+
+// FOR WHATEVER REASON THIS CSS HOLD THE TEXT PERFECT IN PLACE UP AND DOWN. 
+  //NOT A HUGE FAN OF HOW IT LOOKS BUT NEED TO FIGURE OUT WHY IT WORKS?!
+  // .products-section-header {
+  //   position: sticky;
+  //   margin-top: 40px;
+  //   top: 10px; /* Adjust this value based on your navbar height */
+  //   font-family: 'Orbitron', sans-serif; 
+  //   color: transparent;
+  //   text-align: center;
+  //   font-size: 2.5rem;
+  //   padding: 20px;
+  //   border-radius: 10px;
+  //   text-shadow: 0 0 8px rgba(233, 241, 233, 0.965); /* Space glow effect */
+  //   z-index: 2;
+  //   transition: transform 0.3s ease, color 0.3s ease; /* Transition for hover effects */
+  // }
+  
+  // .products-section-header:hover {
+  //   transform: translateY(5px); /* Lift effect on hover */
+  //   color: #fff; /* Change text color on hover */
+  // }
+  
+  // .products-section-header::after {
+  //   content: attr(data-text); /* Show original text */
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   color: #fff; /* Set the color of the original text */
+  //   z-index: -1;
+  // }
+  
+
+  // .products-section-header {
+  //   // display: sticky;
+  //   margin-top: 10px;
+  //   z-index: 2;
+  //   font-family: 'Andika', sans-serif;
+  //   color: #fff;
+  //   text-align: center;
+  //   font-size: 2.5rem;
+  //   // background-color: #333;
+  //   padding: 20px;
+  //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  //   z-index: 2;
+  //   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
     // font-family: 'Arya', sans-serif;
     // font-family: 'DM Sans', sans-serif;
     // font-family: 'Exo 2', sans-serif;
@@ -30,13 +101,13 @@
     // font-family: 'Mulish', sans-serif;
     // font-family: 'Mulish', sans-serif;
     // font-family: 'Mulish', sans-serif;
-    color: rgb(249, 247, 249);
-    // font-weight: 700;
-    text-align: center;
-    font-size: 4.2rem;
-    // font-weight: 600;
-    z-index: 1;
-  }
+  //   color: rgb(249, 247, 249);
+  //   // font-weight: 700;
+  //   text-align: center;
+  //   font-size: 4.2rem;
+  //   // font-weight: 600;
+  //   z-index: 1;
+  // }
 
   .parallax-container {
     display: flex;
