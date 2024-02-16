@@ -1,5 +1,5 @@
-
 .product-card-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,17 @@
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
+  z-index: 1;
 }
+
+// .product-card-bkrnd {
+//   position: absolute;
+//   width: 800px; 
+//   height: 875px;
+//   background: #000;
+//   border-radius: 10px;
+//   z-index: -1;
+// }
 
 // Product intro container
 
@@ -24,15 +34,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Andika', sans-serif; //my fav lowercase and upper
+  // font-family: 'Andika', sans-serif; //my fav lowercase and upper
 
   
   .product-name {
-    font-size: 1.75rem;
-    font-weight: 600;
+      font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+      font-size: 2rem;
+
 
     .current {
-      font-family: Quicksand;
+      font-family: 'Calluna Sans Reg';
       font-size: 1rem;
       color: #F05D5E;
       padding: 0 8px;
@@ -41,10 +52,8 @@
     }
   }
   .product-short-desc {
-    // font-family: 'Roboto', sans-serif; //my fav lowercase and upper
-    font-family: 'Andika', sans-serif; //my fav lowercase and upper
-
-    font-size: 1.3rem;
+    font-family: 'Calluna Sans Reg', sans-serif;   
+    font-size: 1.6rem;
   }
 }
 
@@ -57,7 +66,6 @@
       border-radius: 10px;
       overflow: hidden;
     }
-
 }
 
 // Product Info container
@@ -66,24 +74,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // font-family: 'Andika', sans-serif; //my fav lowercase and upper
-  // font-family: 'Arya', sans-serif;
   font-family: 'DM Sans', sans-serif;
-    // font-family: 'Exo 2', sans-serif;
-    // font-family: 'Fahkwang', sans-serif;
-    // font-family: 'Inter', sans-serif;
-    // font-family: 'Livvic', sans-serif;
-    // font-family: 'Mallanna', sans-serif;
-    // font-family: 'Mulish', sans-serif;
-    // font-family: 'Noto Sans Pahawh Hmong', sans-serif;
-    // font-family: 'Noto Sans Ugaritic', sans-serif;
-    // font-family: 'Nunito', sans-serif;
-    // font-family: 'Overlock SC', sans-serif;
-    // font-family: 'Syne', sans-serif;
-    // font-family: 'Tenor Sans', sans-serif;
-    // font-family: 'Truculenta', sans-serif;
-    // font-family: 'Work Sans', sans-serif;
-    font-size: larger;
+  font-size: 1.2rem;
 
   .product-tech-row {
     display: flex;
@@ -124,7 +116,7 @@
     // background-color: #04202f6a;
     // border: 1px solid rgba(60, 84, 96, 0.4);
     // box-shadow: rgba(1, 40, 69, 0.834) 0px 5px 15px;
-    // color: #fff;
+    // color: #f45c99c8;
     // border-radius: 10px;
  
     // font-size: 1rem;

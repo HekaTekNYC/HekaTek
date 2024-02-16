@@ -35,7 +35,7 @@ import IIQ from "../assets/images/IIQ.png"
 import Topy from '../assets/images/Topy.png'
 export const plantHaus = {
   name: "Plant Haus",
-  desc: "Full Stack E-commerce Plant Shop.",
+  desc: "Full Stack E-commerce Plant Shop",
   icons: [
     {
       src: PHSass,

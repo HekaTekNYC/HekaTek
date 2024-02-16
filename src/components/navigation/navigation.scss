@@ -14,6 +14,7 @@
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  z-index: 100;
 }
 
 .logo {

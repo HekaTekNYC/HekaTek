@@ -8,32 +8,17 @@
   .products-section-header {
     position: sticky;
     margin-top: 80px;
-    top: 10px; /* Adjust this value based on your navbar height */
-    font-family: 'Orbitron', sans-serif;
-    color: #fff; /* Set text color to white */
+    top: 10px; 
+    color: #fff; 
     text-align: center;
-    font-size: 2.5rem;
     padding: 20px;
     border-radius: 10px;
     text-shadow: 0 0 8px rgba(233, 241, 233, 0.965); /* Space glow effect, can be adjusted or removed as needed */
     z-index: 2;
-    transition: transform 0.3s ease; /* Removed color transition since color is now static */
+    transition: transform 0.3s ease;
 }
 
-.products-section-header:hover {
-    transform: translateY(5px); /* Lift effect on hover */
-    /* Removed color change on hover since color is now static */
-}
 
-.products-section-header::after {
-    /* If this pseudo-element is not needed, it can be removed */
-    content: attr(data-text); /* Show original text */
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff; /* Text color is already white, so this may not be needed */
-    z-index: -1;
-}
 
 // FOR WHATEVER REASON THIS CSS HOLD THE TEXT PERFECT IN PLACE UP AND DOWN. 
   //NOT A HUGE FAN OF HOW IT LOOKS BUT NEED TO FIGURE OUT WHY IT WORKS?!
@@ -101,7 +86,7 @@
     // font-family: 'Mulish', sans-serif;
     // font-family: 'Mulish', sans-serif;
     // font-family: 'Mulish', sans-serif;
-  //   color: rgb(249, 247, 249);
+    // color: #025e21a6;
   //   // font-weight: 700;
   //   text-align: center;
   //   font-size: 4.2rem;

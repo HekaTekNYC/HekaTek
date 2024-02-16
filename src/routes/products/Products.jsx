@@ -24,11 +24,11 @@ const Products = () => {
 
   return (
     <div className="products-container">
-      <div className={`products-section-header ${showHeader ? 'show-header fixed-header' : ''}`}>OUR WORK</div>
+      <h2 className={`products-section-header ${showHeader ? 'show-header fixed-header' : ''}`}>OUR WORK</h2>
       <div className="parallax-container" ref={parallaxRef}>
         <Parallax pages={4} className={'parallax-remove-scrollbar'}>
           {[plantHaus, ad3lie, dangoDB, interviewIQ].map((product, index) => (
-            <ParallaxLayer key={index} offset={index} speed={0.5}>
+            <ParallaxLayer key={index} offset={index } speed={0.25}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
                 <ProductCard
                   name={product.name}

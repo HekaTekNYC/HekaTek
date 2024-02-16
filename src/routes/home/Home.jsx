@@ -7,6 +7,7 @@ import Sparkles from "../../components/sparkles/Sparkles"
 import Services from "../services/Services"
 
 import Space from "../../assets/images/space_buddy2.png"
+// import Space from "../../assets/images/pink_space2.png"
 
 import "./home.scss"
 

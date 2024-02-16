@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="hero-left-container">
             <div className="header">
               <div className="hekatek-3d">
-                HekaTek / HEKATEK
+                HekaTek
                 {/* <ThreeDeeText /> */}
               </div>
               <div className="header-text">

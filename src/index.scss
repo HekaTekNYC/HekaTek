@@ -1,6 +1,60 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap";
+// @import '../src/assets/fonts/aileron'
+
+
+@font-face {
+  font-family: 'Aileron Black';
+  src: url('../src/assets/fonts/aileron/Aileron-Black.otf') format('opentype');
+  // font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url('../src/assets/fonts/aileron/Aileron-Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aileron Heavy';
+  src: url('../src/assets/fonts/aileron/Aileron-Heavy.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aileron Semi-Bold';
+  src: url('../src/assets/fonts/aileron/Aileron-SemiBold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Anek';
+  src: url('../src/assets/fonts/anek/fonts/AnekDevanagari/variable/AnekDevanagari.ttf') format('opentype');
+  // font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calluna Reg';
+  src: url('../src/assets/fonts/Calluna_Regular/Calluna_Regular.otf') format('opentype');
+  // font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calluna Sans Reg';
+  src: url('../src/assets/fonts/calluna-sans/CallunaSans-Regular.otf') format('opentype');
+  // font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calluna Sans Bold';
+  src: url('../src/assets/fonts/calluna-sans/CallunaSans-Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Add more @font-face rules for other styles as needed */
 
 body {
   margin: 0;
@@ -34,8 +88,9 @@ body {
   'Syne', sans-serif,
   'Tenor Sans', sans-serif,
   'Truculenta', sans-serif,
-  'Work Sans', sans-serif;
-
+  'Work Sans', sans-serif,
+  'Montserrat', sans-serif,
+  'Nanum Gothic', sans-serif;
   // font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Nanum Gothic",
   //   "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -61,6 +116,10 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+h2 {
+  font-family: 'Calluna Sans Bold', sans-serif;
+  font-size: 4.3rem;
 }
 
 a {

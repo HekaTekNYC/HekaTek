@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
-import PlanetSpace from "../../assets/images/22222.jpeg"
+import PlanetSpace from "../../assets/images/hero_planet.jpeg"
 import { OrbitControls } from "@react-three/drei"
 const Sphere = () => {
   const planetRef = useRef()

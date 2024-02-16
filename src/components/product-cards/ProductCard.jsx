@@ -14,7 +14,7 @@ const ProductCard = ({
   isCurrentWork
 }) => {
   return (
-    <div className="product-card-container">
+    <div className="product-card-container product-card-bkrnd">
       <div className="product-intro-container">
             <div className="product-name">
               {name}{" "}
