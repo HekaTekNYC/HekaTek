@@ -5,10 +5,8 @@
   justify-content: center;
   align-items: center;
   width: 800px; 
-  height: 875px;
+  height: auto;
   padding: 30px;
-  // margin-top: 80px;
-  // background: #2627457f;
   border: 1px solid rgba(60, 84, 96, 0.4);
   background: #04202f6a;
   box-shadow: 0 8px 32px 0 rgba(158, 158, 213, 0.153);
@@ -34,9 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // font-family: 'Andika', sans-serif; //my fav lowercase and upper
 
-  
   .product-name {
       font-family: 'Noto Sans Pahawh Hmong', sans-serif;
       font-size: 2rem;
@@ -111,20 +107,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    // text-align: center;
-    // font-family: Quicksand;
-    // background-color: #04202f6a;
-    // border: 1px solid rgba(60, 84, 96, 0.4);
-    // box-shadow: rgba(1, 40, 69, 0.834) 0px 5px 15px;
-    // color: #f45c99c8;
-    // border-radius: 10px;
- 
-    // font-size: 1rem;
-    // font-weight: 600;
-    // width: 150px;
-    // height: 40px;
-    // margin: 5px 0;
-    // cursor: pointer;
+
 
     &:before {
       background-color: initial;
