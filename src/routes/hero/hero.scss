@@ -3,34 +3,8 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  // z-index: 1;
   padding: 100px;
 
-
-  .cloud-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // z-index: 3; // Adjust the z-index so that it sits above the galaxy image but below the text content
-    pointer-events: none; // Allows clicks to pass through to elements underneath
-    z-index: 10;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      animation: breathe 10s infinite ease-in-out;
-    }
-  }
-//   @keyframes breathe {
-//   0%, 100% {
-//     transform: scale(1);
-//   }
-//   50% {
-//     transform: scale(2.10);
-//   }
-// }
 
   .galaxy-container {
     position: absolute;
@@ -71,7 +45,6 @@
   width: 100%;
   height: 100%;
   z-index: 5;
-
   color: #222951;
 }
 
@@ -80,8 +53,6 @@
   flex-direction: row;
   align-items: center;
   width: 50%;
-  padding-right: 50px;
-  padding-left: 100px;
   margin-bottom: 200px;
   z-index: 50;
 
@@ -89,61 +60,36 @@
     display: flex;
     flex-direction: column;
     color: white;
+
     .hekatek-3d {
-      // font-family: 'Alegreya Sans SC', sans-serif;
-          // font-family: 'Andika', sans-serif; //my fav lowercase and upper
-    // font-family: 'Arya', sans-serif;
-    // font-family: 'DM Sans', sans-serif;
-    // font-family: 'Exo 2', sans-serif;
-    // font-family: 'Fahkwang', sans-serif;
-    font-family: 'Inter', sans-serif;
-    // font-family: 'Livvic', sans-serif;
-    // font-family: 'Mallanna', sans-serif;
-    // font-family: 'Mulish', sans-serif;
-    // font-family: 'Noto Sans Pahawh Hmong', sans-serif;
-    // font-family: 'Noto Sans Ugaritic', sans-serif;
-    // font-family: 'Nunito', sans-serif;
-    // font-family: 'Overlock SC', sans-serif;
-    // font-family: 'Syne', sans-serif;
-    // font-family: 'Tenor Sans', sans-serif;
-    // font-family: 'Truculenta', sans-serif;
-    // font-family: 'Work Sans', sans-serif;
+      font-family:   'Anek Odia', sans-serif;
       font-size: 7rem;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 1;
       color: #dcdcdc;
       padding-top: 20px;
     }
 
     .header-text {
       display: flex;
-      // font-family: "monserrat", sans-serif;
-      // font-family: "Roboto", sans-serif;
-      font-family: "Roboto", sans-serif;
+      font-family: 'Aileron Semi-Bold', sans-serif;
       font-size: 3rem;
-      // font-weight: 400;
       line-height: 1.3;
-      color: #dcdcdc;
-      padding-top: 20px;
-      
+      color: #dcdcdc;      
     }
   }
 }
 .hero-right-container {
   display: flex;
+  position: relative;
   justify-content: center; // Centers children horizontally
   align-items: center; // Centers children vertically
   height: 100%; // Sets the height to be the full viewport height
-  
+  width: 50%;
+  left: 220px;
+  bottom: 150px;
 
 
-// .hero-right-container {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 50%;
-//   z-index: 6;
 
   .hero-image {
     position: absolute;
@@ -165,19 +111,25 @@
 
 // Media Queries
 @media screen and (max-width: 1400px) {
-  .hero-left-container {
-    justify-content: center;
+  .hero-container {
+    padding: 0 100px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
   .hero-container {
-    padding: 0 60px;
+    padding: 0 80px;
 
     .hero-right-container {
+      .galaxy-container {
+        top: 200px;
+        width: 1000px;
+   
       .hero-image {
-        margin: 200px 0 0 200px;
+        margin: 0 0 0 200px;
       }
+    }
     }
   }
 }
@@ -191,23 +143,22 @@
     }
 
     .hero-left-container {
-      width: 400px;
+      width: 100%;
+      text-align: center;
     }
 
     .hero-right-container {
-      .hero-image {
-        margin: 200px 0 0 0;
-      }
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  // .hero-container {
-  //   .hero-right-container {
-  //     display: none;
-  //   }
-  // }
+  .hero-container {
+    padding: 0 40px;
+
+  
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -220,6 +171,9 @@
       margin-bottom: 50px;
 
       .header {
+        .hekatek-3d {
+          font-size: 5rem;
+        }
         .header-text {
           font-size: 2rem;
         }

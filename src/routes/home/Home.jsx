@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <div>
         <div className="sparkles-container">
-          <Sparkles count={800} />
+          <Sparkles count={350} />
         </div>
      
         <div className="hero-section" id="hero">
