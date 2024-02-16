@@ -36,10 +36,12 @@ const ProductCard = ({
             ))}
           </div>
           <div className="product-full-desc" >{info}</div>
-          {/* <a href={aLink} target="_blank">
-              <button className="product-btn">{btn}</button>
-            </a> */}
-            <Button />
+  
+            <Button  link={aLink}  text={btn} />
+            
+
+              {/* <button className="product-btn">{btn}</button> */}
+
 
       </div>
     </div>

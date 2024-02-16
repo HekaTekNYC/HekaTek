@@ -9,6 +9,8 @@
 	justify-content: center;
 	align-items: center;
 	overflow:hidden;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+	// font-weight: 600;   
 
 }
  .tech-btn a {
@@ -47,7 +49,7 @@
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	background: linear-gradient(to left, rgba(203, 198, 198, 0.15), transparent);
 	transform: skewX(45deg) translate(0);
 	transition: 0.5s;
 	filter: blur(0px);
@@ -62,10 +64,10 @@
 	position: absolute;
 	left: 50%;
 	transform: translatex(-50%);
-	bottom: -4px;
+	bottom: -5px;
 	width: 30px;
-	height: 8px;
-	// background: #f00;
+	height: 10px;
+	background: #f00;
 	border-radius: 10px;
 	transition: 0.5s;
 	transition-delay: 0.5;
@@ -80,15 +82,23 @@
 // 	transform: skewX(-10deg) translate(-5);
 // }
 
-.tech-btn:hover::before {
-	border-top: 100px solid rgba(21, 137, 6, 0.335);
+ .tech-btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 60%;
+	width: 50%;
+	border-radius: 90px;
+	
+}
+
+// .tech-btn:hover::before {
+	// // border-top: 100px solid rgba(21, 137, 6, 0.335);
 	// border-top: 100px solid rgba(255, 255, 255, 0.15);
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 60px;
-	width: 220px;
-	// transform: translateX(-50%) rotate(-0.5turn);
-	z-index: 1;
+	// border-left: 25px solid transparent;
+	// border-right: 25px solid transparent;
+	// height: 60px;
+	// width: 220px;
+	// // transform: translateX(-50%) rotate(-0.5turn);
+	// z-index: 1;
 // content: "";
 //     position: absolute;
 //     top: 50%;
@@ -96,35 +106,36 @@
 //     width: calc(190px + 45px); /* Width + double the border-left/right width */
 //     height: calc(60px + 100px); /* Height + border-top width to maintain the effect */
 //     background: transparent;
-//     border-top: 100px solid rgba(80, 80, 80, 0.209);
+//     border-top: 100px solid rgba(236, 233, 233, 0.209);
 //     border-left: 20px solid transparent;
 //     border-right: 20px solid transparent;
 //     transform: translate(-50%, -50%);
 //     z-index: -1; /* Sit below the button text */
-}
+// }
+
 
 
 // Top Light
-//  .tech-btn::after {
-// 	content: "";
-// 	position: absolute;
-// 	left: 50%;
-// 	transform: translatex(-50%);
-// 	top: -4px;
-// 	width: 30px;
-// 	height: 8px;
-//     color: #04202f;
-// 	background: #f00;
-// 	border-radius: 10px;
-// 	transition: 0.5s;
-// 	transition-delay: 0.5;
-// }
-//  .tech-btn:hover::after /*lightup button*/ {
-// 	top: 0;
-// 	height: 100%;
-// 	width: 80%;
-// 	border-radius: 30px;
-// }
+ .tech-btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+    color: #04202f;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+ .tech-btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 100%;
+	width: 80%;
+	border-radius: 30px;
+}
 
 //  .tech-btn::before,
 //  .tech-btn::after {
@@ -140,7 +151,7 @@
 // }
  .tech-btn::before,
  .tech-btn::after {
-	background:  #ffffff75 ;
+	background:  rgb(202, 204, 227);
 	box-shadow: 0 0 5px  #ffffff75, 0 0 15px  #ffffff75, 0 0 30px  #ffffff75,
 		0 0 60px  #ffffff75;
 }

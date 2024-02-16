@@ -5,25 +5,17 @@
   justify-content: center;
   align-items: center;
   width: 800px; 
-  height: auto;
+  height: 900px;
   padding: 30px;
+  margin: 60px; 
   border: 1px solid rgba(60, 84, 96, 0.4);
   background: #04202f6a;
-  box-shadow: 0 8px 32px 0 rgba(158, 158, 213, 0.153);
+  box-shadow: 1px 5px 41px 5px rgb(202, 204, 227);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
   z-index: 1;
 }
-
-// .product-card-bkrnd {
-//   position: absolute;
-//   width: 800px; 
-//   height: 875px;
-//   background: #000;
-//   border-radius: 10px;
-//   z-index: -1;
-// }
 
 // Product intro container
 
@@ -37,7 +29,6 @@
       font-family: 'Noto Sans Pahawh Hmong', sans-serif;
       font-size: 2rem;
 
-
     .current {
       font-family: 'Calluna Sans Reg';
       font-size: 1rem;
@@ -47,6 +38,7 @@
       font-weight: 700;
     }
   }
+
   .product-short-desc {
     font-family: 'Calluna Sans Reg', sans-serif;   
     font-size: 1.6rem;
@@ -56,6 +48,7 @@
 // Product image container
 .product-image-container {
   padding: 30px 0 40px;
+
     img {
       width: 700px;
       height: 400px;
@@ -65,7 +58,6 @@
 }
 
 // Product Info container
-
 .product-info-container {
   display: flex;
   flex-direction: column;
@@ -88,45 +80,46 @@
   }
 
 
-  .product-btn {
-    background-color: #04202f6a;
-    border: 0;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
+}
 
-    font-size: 18px;
-    font-weight: 600;
-    outline: 0;
-    padding: 16px 21px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+@media screen and (max-width: 1200px) {
+  
+ 
+}
 
 
-    &:before {
-      background-color: initial;
-      background-image: linear-gradient(#565555af 0, rgba(255, 255, 255, 0) 100%);
-      border-radius: 8px;
-      content: "";
-      height: 75%;
-      left: -1%;
-      opacity: .5;
-      position: absolute;
-      top: 0;
-      transition: all .3s;
-      width: 100%;
-    }
-    &:hover {
-      box-shadow: rgba(255, 255, 255, 0.259) 0 3px 15px inset, rgba(0, 0, 0, 0.266) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-      transform: scale(1.05);
+/* Tablet Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  
+}
+
+@media screen and (max-width: 992px) {
+  .product-card-container {
+    width: 700px; 
+    height: 900px;
+    padding: 30px;
+    margin:  0;
+    
+  .product-image-container {
+    // padding: 30px 0 40px;
+    .img {
+      width: 650px;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
     }
   }
+  }
+}
+
+@media screen and (max-width: 779px) {
 
 }
 
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
