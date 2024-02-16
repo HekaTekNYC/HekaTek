@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 600px;
-  max-height: 100vh;
+  height: 800px;
   width: 100%;
   padding: 0 60px;
-  margin-top: 60px;
+  margin-top: 460px;
+  z-index: 1;
 
-  .services-header {
-    font-family: Inter;
+  .section-header {
+    margin-bottom: 60px;
+    padding-top: 20px;
     text-align: center;
-    font-size: 4.2rem;
-    font-weight: 600;
-    margin-bottom: 30px;
+    
   }
+
 }
 
 .services-row {
@@ -23,93 +23,97 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  min-height: 350px; // minimum height
-  max-height: 50vh;
+  // height: 450px; 
+  height: 100%; 
+  // max-height: 50vh;
   width: 100%;
+  padding-top: 25px;
 
-  .service-item {
+
+  .service-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    font-family: 'Calluna Sans Reg', sans-serif;   
     flex: 0 0 calc(25% - 30px);
     margin: 0 15px;
-    padding: 40px 20px 20px;
-    height: auto;
-    // height: 325px;
-    border-radius: 15px;
-    background: radial-gradient(
-      circle at center,
-      #3f3c85,
-      #3e3c83,
-      #3c3a7f,
-      #3a3879,
-      #363671,
-      #333369,
-      #303060,
-      #2d2d58,
-      #2a2b50,
-      #28294a,
-      #262846,
-      #262745
-    );
-    box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 25px;  
+    max-height: 400px;
+    width: 300px;
+  background: radial-gradient(666px at 0.4% 48%,rgb(4, 32, 47) 30%, rgb(40, 44, 72) 45%, rgb(202, 204, 227) 85%, rgb(89, 89, 99) 99.5%);
+    box-shadow: 0 8px 32px 0 rgba(158, 158, 213, 0.153);
     backdrop-filter: blur(2.5px);
     -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    // z-index: 2;
+
 
     .service-header {
-      font-family: Montserrat;
+      font-family: 'Calluna Sans Bold', sans-serif;   
       font-weight: 600;
       text-align: center;
-      margin-bottom: 9px;
       font-size: 1.2rem;
-      margin-bottom: 30px;
+      margin: 20px 0 6px;
       color: #ffffff;
+      padding-bottom: 10px;
+  
+      // font-weight: 700;
     }
+    
     .service-text {
       font-size: 1.1rem;
       text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      
     }
   }
 }
+
+
+
 
 // Media Queries
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1260px) {
   .services-container {
-    padding: 0 40px;
-    .services-header {
-      margin: 15px 0;
-    }
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .services-container {
-    min-height: 1000px;
+    // min-height: auto;\
+    height: 100vh;
+    padding: 0;
   }
   .services-row {
-    .service-item {
+ 
+    .service-card {
+      height: 350px;
       flex: 0 0 calc(40% - 40px);
       margin: 15px;
+   
     }
   }
 }
 
 @media screen and (max-width: 992px) {
+
+  .services-container {
+    // min-height: 1000px;
+    padding: 0 60px;
+    height: 100vh;
+  
+  }
   .services-row {
-    .service-item {
-      flex: 0 0 calc(40% - 20px);
-      margin: 15px;
+
+    .service-card {
+      flex: 1 0 300px;
+      height: auto;
     }
   }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 779px) {
   .services-container {
-    min-height: 750px;
-    padding: 0 20px;
+    height: 1400px;
+    padding: 0 30px;
     margin-top: 40px;
 
     .services-header {
@@ -118,13 +122,9 @@
   }
 
   .services-row {
-    .service-item {
-      flex: 1 0 300px;
-      margin: 15px 0;
-      justify-content: center;
-      padding: 20px;
-      margin: 15px;
-      height: 250px;
+    .service-card {
+      flex: 1 0 350px;
+      background: radial-gradient(666px at 0.4% 48%,rgb(4, 32, 47) 40%, rgb(40, 44, 72) 60%, rgba(163, 168, 217, 0.588)  76%);
       .service-header {
         margin-bottom: 15px;
       }
@@ -132,19 +132,14 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .services-container {
-    min-height: 1200px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .services-container {
-    min-height: 1000px;
+    // min-height: 1000px;
   }
   .services-row {
-    .service-item {
-      height: auto;
+    .service-card {
+      // height: auto;
+      background: radial-gradient(666px at 0.4% 48%,rgb(4, 32, 47) 30%, rgb(40, 44, 72) 60%, rgba(163, 168, 217, 0.588)  66%);
     }
   }
 }
@@ -154,8 +149,12 @@
     min-height: 1200px;
   }
   .services-row {
-    .service-item {
-      height: auto;
+    .service-card {
+      background: radial-gradient(666px at 0.4% 48%,rgb(4, 32, 47) 30%, rgb(40, 44, 72) 50%, rgba(163, 168, 217, 0.588)  66%);
     }
   }
 }
+
+
+
+

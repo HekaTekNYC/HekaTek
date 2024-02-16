@@ -1,0 +1,154 @@
+ .tech-btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow:hidden;
+
+}
+ .tech-btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(50px);
+}
+ .tech-btn:hover a {
+	letter-spacing: 3px;
+    font-weight: 600;
+    color: #04202f;
+}
+ .tech-btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+ .tech-btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+
+// Bottom Light
+ .tech-btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -4px;
+	width: 30px;
+	height: 8px;
+	// background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+//  .tech-btn:hover::before /*lightup button*/ {
+// 	bottom: 0;
+// 	height: 100%;
+// 	width: 80%;
+// 	border-radius: 30px;
+// 	background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.15) 50%, transparent), linear-gradient(70deg, transparent, rgba(255, 255, 255, 0.15) 50%, transparent);
+//     transition: 0.5s;
+// 	transform: skewX(-10deg) translate(-5);
+// }
+
+.tech-btn:hover::before {
+	border-top: 100px solid rgba(21, 137, 6, 0.335);
+	// border-top: 100px solid rgba(255, 255, 255, 0.15);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 60px;
+	width: 220px;
+	// transform: translateX(-50%) rotate(-0.5turn);
+	z-index: 1;
+// content: "";
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: calc(190px + 45px); /* Width + double the border-left/right width */
+//     height: calc(60px + 100px); /* Height + border-top width to maintain the effect */
+//     background: transparent;
+//     border-top: 100px solid rgba(80, 80, 80, 0.209);
+//     border-left: 20px solid transparent;
+//     border-right: 20px solid transparent;
+//     transform: translate(-50%, -50%);
+//     z-index: -1; /* Sit below the button text */
+}
+
+
+// Top Light
+//  .tech-btn::after {
+// 	content: "";
+// 	position: absolute;
+// 	left: 50%;
+// 	transform: translatex(-50%);
+// 	top: -4px;
+// 	width: 30px;
+// 	height: 8px;
+//     color: #04202f;
+// 	background: #f00;
+// 	border-radius: 10px;
+// 	transition: 0.5s;
+// 	transition-delay: 0.5;
+// }
+//  .tech-btn:hover::after /*lightup button*/ {
+// 	top: 0;
+// 	height: 100%;
+// 	width: 80%;
+// 	border-radius: 30px;
+// }
+
+//  .tech-btn::before,
+//  .tech-btn::after {
+// 	background: #1db7b5;
+// 	box-shadow: 0 0 5px #1db7b5, 0 0 15px #1db7b5, 0 0 30px #1db7b5,
+// 		0 0 60px #1db7b5;
+// }
+//  .tech-btn::before,
+//  .tech-btn::after {
+// 	background:  #ffffffa6 ;
+// 	box-shadow: 0 0 5px  #ffffffa6, 0 0 15px  #ffffffa6, 0 0 30px  #ffffffa6,
+// 		0 0 60px  #ffffffa6;
+// }
+ .tech-btn::before,
+ .tech-btn::after {
+	background:  #ffffff75 ;
+	box-shadow: 0 0 5px  #ffffff75, 0 0 15px  #ffffff75, 0 0 30px  #ffffff75,
+		0 0 60px  #ffffff75;
+}
+
+// .tech-btn::before,
+// .tech-btn::after {
+// 	background: #1eff45;
+// 	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+// 		0 0 60px #1eff45;
+// }
+

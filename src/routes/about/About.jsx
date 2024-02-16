@@ -19,7 +19,7 @@ const About = () => {
           algorithms, getting lost in games or cultivating the art of indoor
           plant whispering (they say the secret is in the coding lullabies).
           Ready to give your online presence a sprinkle of our HekaTek magic?
-          Hit us up below.
+          Hit us up/contact us below.
         </div>
         <div className="about-services">
           <div className="tech-overlay">

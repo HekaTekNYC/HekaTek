@@ -33,42 +33,53 @@ const MyStars = () => {
   const tempObject = new THREE.Object3D()
   const tempColor = new THREE.Color()
 
+  // useFrame((state, delta) => {
+  //   if (!meshRef.current) return
+  //   const speed = 0.013
+
+  //   for (let i = 0; i < COUNT; i++) {
+  //     meshRef.current.getMatrixAt(i, temp)
+
+  //     tempObject.scale.set(1, 1, Math.max(0.5, 0.5, 0.1))
+  //     tempPos.setFromMatrixPosition(temp)
+  //     if (tempPos.z > Z_BOUNDS / 2) {
+  //       tempPos.z = -Z_BOUNDS / 2
+  //     } else {
+  //       tempPos.z += speed
+  //     }
+
+  //     tempObject.position.set(tempPos.x, tempPos.y, tempPos.z)
+
+  //     tempObject.updateMatrix()
+  //     meshRef.current.setMatrixAt(i, tempObject.matrix)
+
+  //     if (tempPos.z > 0) {
+  //       tempColor.r = tempColor.g = tempColor.b = 1
+  //     } else {
+  //       tempColor.r =
+  //         tempColor.g =
+  //         tempColor.b =
+  //           1 - tempPos.z / (-Z_BOUNDS / 2)
+  //     }
+
+  //     meshRef.current.setColorAt(i, tempColor)
+  //   }
+  //   meshRef.current.instanceMatrix.needsUpdate = true
+
+  //   if (meshRef.current.instanceColor)
+  //     meshRef.current.instanceColor.needsUpdate = true
+  // })
   useFrame((state, delta) => {
-    if (!meshRef.current) return
-    const speed = 0.013
+    if (!meshRef.current) return;
+    meshRef.current.rotation.x -= delta / 10;
+    meshRef.current.rotation.y -= delta / 10;
+  });
+  
 
-    for (let i = 0; i < COUNT; i++) {
-      meshRef.current.getMatrixAt(i, temp)
-
-      tempObject.scale.set(1, 1, Math.max(0.5, 0.5, 0.1))
-      tempPos.setFromMatrixPosition(temp)
-      if (tempPos.z > Z_BOUNDS / 2) {
-        tempPos.z = -Z_BOUNDS / 2
-      } else {
-        tempPos.z += speed
-      }
-
-      tempObject.position.set(tempPos.x, tempPos.y, tempPos.z)
-
-      tempObject.updateMatrix()
-      meshRef.current.setMatrixAt(i, tempObject.matrix)
-
-      if (tempPos.z > 0) {
-        tempColor.r = tempColor.g = tempColor.b = 1
-      } else {
-        tempColor.r =
-          tempColor.g =
-          tempColor.b =
-            1 - tempPos.z / (-Z_BOUNDS / 2)
-      }
-
-      meshRef.current.setColorAt(i, tempColor)
-    }
-    meshRef.current.instanceMatrix.needsUpdate = true
-
-    if (meshRef.current.instanceColor)
-      meshRef.current.instanceColor.needsUpdate = true
-  })
+  // useFrame((state, delta) => {
+  //   ref.current.rotation.x -= delta / 10;
+  //   ref.current.rotation.y -= delta / 10;
+  // })
 
   return (
     <>

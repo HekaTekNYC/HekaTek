@@ -7,6 +7,7 @@ import Sparkles from "../../components/sparkles/Sparkles"
 import Services from "../services/Services"
 
 import Space from "../../assets/images/space_buddy2.png"
+// import Space from "../../assets/images/pink_space2.png"
 
 import "./home.scss"
 
@@ -17,17 +18,16 @@ const Home = () => {
     <>
       <div>
         <div className="sparkles-container">
-          <Sparkles count={100} />
+          <Sparkles count={350} />
         </div>
-
+     
         <div className="hero-section" id="hero">
           <Hero />
         </div>
-
         <div className="product-section" id="our-work">
           <Products />
         </div>
-        <div className="services-section">
+        <div className="services-section" id="services">
           <Services />
         </div>
         <div className="about-section " id="about">

@@ -1,11 +1,15 @@
 .product-row {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 500px;
+  justify-content: space-between;
+  container: border-box;
+  // width: 100%;
+  height: 100vh;
   padding: 0 60px 30px;
   transition: ease all 0.5s;
+  overflow-y: visable;
 }
 
 .product-left {
@@ -15,7 +19,8 @@
   justify-content: center;
   width: 40%;
   font-size: 1.5rem;
-  margin-right: 100px;
+  margin: 0;
+  padding: 0;
   transition: ease all 0.5s;
 
   // Left hand text and icon section
@@ -79,52 +84,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 60%;
-  height: auto;
+  // width: 60%;
+  // height: auto;
   transition: ease all 0.5s;
-}
-
-.product-card {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  width: 800px;
-  max-width: 800px;
-  min-width: 730px;
-  height: 320px;
-  padding: 20px;
-  z-index: 10;
-
-  background: radial-gradient(
-    circle at 120% -20%,
-    #262745,
-    #262846,
-    #28294a,
-    #2a2b50,
-    #2d2d58,
-    #303060,
-    #333369,
-    #363671,
-    #3a3879,
-    #3c3a7f,
-    #3e3c83,
-    #3f3c85
-  );
-  box-shadow: rgba(67, 73, 126, 0.37) 0px 10px 25px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  overflow-y: visable;
 }
 
 // Glassmorphism container with image
 .product-image-glass {
-  position: absolute;
-  top: -40px;
-  left: -40px;
-  width: 400px;
+  position: relative;
+  z-index:1;
+  // top: -40px;
+  right: 0px;
+  // width: 400px;
   background: #2627457f;
   box-shadow: 0 8px 32px 0 rgba(66, 71, 107, 0.418);
   backdrop-filter: blur(2.5px);
@@ -136,13 +108,16 @@
 
   .product-image {
     width: 100%;
-    height: auto;
     border-radius: 3px;
+    height: 80vh;
+    // background: #2627457f;
 
     img {
-      display: block;
+      display: flex;
+      flex-direction: row;
       border-radius: 10px;
-      width: 100%;
+      width: 500px;
+      height: 600px;
       object-fit: cover;
       z-index: 10;
     }
@@ -155,19 +130,25 @@
   flex-direction: row;
   align-items: center;
 
-  .spacer {
-    width: 50%;
-  }
+  // .spacer {
+  //   width: 100%;
+  // }
   .product-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
     padding: 0 5px;
 
     .product-info {
+      flex-direction: row;
       font-size: 1.1rem;
       margin-bottom: 20px;
+      position: absolute; /* Position the info container absolutely */
+      bottom: 20px; /* Adjust as needed */
+      left: 50%; /* Adjust as needed */
+      transform: translateX(-50%); /* Center the container horizontally */
+      z-index: 2; /* Ensure it's above the image */
     }
     .product-btn {
       font-family: Quicksand;
@@ -241,6 +222,8 @@
   // Product Section Normal
 
   .product-row {
+    position: relative; 
+    z-index: 1;
     flex-direction: column;
     justify-content: space-between;
     height: 500px;
@@ -257,12 +240,21 @@
     height: 200px;
 
     .product-left-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
       width: auto;
       text-align: center;
       margin-top: 40px;
     }
     .product-tech-row {
-      margin-bottom: 40px;
+      position: absolute; /* Position the icons absolutely */
+  top: calc(100% + 10px); /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translateX(-50%); /* Center the icons horizontally */
+  z-index: 2; /* Ensure it's above the image */
     }
   }
 
