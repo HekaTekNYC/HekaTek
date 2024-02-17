@@ -32,7 +32,7 @@ import Electron from "../assets/icons/electronjs.svg"
 import AElectron from "../assets/icons/AElectron.svg"
 import Ad3lie from "../assets/images/Ad3lie.png"
 import IIQ from "../assets/images/IIQ.png"
-import Topy from '../assets/images/Topy.png'
+import Topy from '../assets/images/topy.png'
 export const plantHaus = {
   name: "Plant Haus",
   desc: "Full Stack E-commerce Plant Shop",
