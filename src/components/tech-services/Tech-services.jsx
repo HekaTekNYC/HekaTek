@@ -121,7 +121,7 @@ const Planet = ({ icons }) => {
       <directionalLight intensity={2} />
 
       <mesh ref={planetRef} renderOrder={-1}>
-        <sphereGeometry args={[1, 64, 64]} />
+        <sphereGeometry args={[1.2, 64, 64]} />
         <meshStandardMaterial map={texture} metalness={0.5} roughness={0.6} />
         {icons.map((icon, index) => (
           <TechStack

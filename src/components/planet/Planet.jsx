@@ -1,65 +1,74 @@
-import React, { useRef, useState, useEffect } from "react"
-import { Canvas, useFrame, useLoader } from "@react-three/fiber"
-import { TextureLoader } from "three/src/loaders/TextureLoader"
-import PlanetSpace from "../../assets/images/hero_planet.jpeg"
-import { OrbitControls } from "@react-three/drei"
+import React, { useRef, useEffect } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { TextureLoader } from "three/src/loaders/TextureLoader";
+import PlanetSpace from "../../assets/images/planet_wrap.jpeg";
+import { OrbitControls } from "@react-three/drei";
+import { useThree } from '@react-three/fiber';
 
-const Sphere = ({ scaleFactor }) => {
-  const planetRef = useRef()
-  const texture = useLoader(TextureLoader, PlanetSpace)
+const Sphere = () => {
+  const planetRef = useRef();
+  const texture = useLoader(TextureLoader, PlanetSpace);
+  const { camera } = useThree(); 
+
+  const scalePlanet = () => {
+    const width = window.innerWidth;
+    let scaleFactor;
+  
+    if (width >= 1200) {
+      scaleFactor = 1;
+    } else if (width >= 992) {
+      scaleFactor = 0.9;
+    } else if (width >= 768) {
+      scaleFactor = 0.8;
+    } else {
+      scaleFactor = 0.6;
+    }
+  
+    planetRef.current.scale.set(scaleFactor, scaleFactor, scaleFactor);
+  };
+  
 
   useFrame(() => {
-    planetRef.current.rotation.y += 0.002
-  })
+    planetRef.current.rotation.y += 0.002;
+  });
+
+  useEffect(() => {
+    scalePlanet();
+    window.addEventListener("resize", scalePlanet);
+    return () => {
+      window.removeEventListener("resize", scalePlanet);
+    };
+  }, []); // Empty dependency array to run once on mount
 
   return (
     <>
-      <ambientLight intensity={2} color={"0xffffff"} />
-      <pointLight decay={2} color={"#0xffffff"} intensity={2} position={[0, 2, 2]} />
+      <ambientLight intensity={2} color="#ffffff" />
+      <pointLight decay={2} color="#ffffff" intensity={2} position={[0, 2, 2]} />
       <directionalLight intensity={2} />
 
-      <mesh ref={planetRef} renderOrder={-1} scale={[scaleFactor, scaleFactor, scaleFactor]}>
+      <mesh ref={planetRef}>
         <sphereGeometry args={[1.2, 64, 64]} />
         <meshStandardMaterial map={texture} metalness={0.5} roughness={0.6} />
       </mesh>
     </>
-  )
-}
+  );
+};
 
 const PlanetSphere = () => {
-  const [scaleFactor, setScaleFactor] = useState(1)
-
-  useEffect(() => {
-    const updateScaleFactor = () => {
-      const width = window.innerWidth
-
-      if (width >= 1200) {
-        setScaleFactor(1) // Default scale
-      } else if (width >= 992) {
-        setScaleFactor(0.9) // Adjust scale for 992px to 1200px
-      } else if (width >= 768) {
-        setScaleFactor(0.8) // Adjust scale for 768px to 992px
-      } else {
-        setScaleFactor(0.6) // Adjust scale for below 768px
-      }
-    }
-
-    updateScaleFactor() // Call the function initially
-    window.addEventListener("resize", updateScaleFactor) // Add event listener for window resize
-    return () => {
-      window.removeEventListener("resize", updateScaleFactor) // Remove event listener on component unmount
-    }
-  }, [])
-
   return (
-    <Canvas linear flat camera={{ fov: 35, near: 0.1, far: 1000, position: [0, 0, 8] }}>
-      <ambientLight args={[2]} />
-      <pointLight args={[0xffffff, 2]} position={[2, 3, 4]} />
-      <directionalLight position={[0, 0, 0]} />
-      <Sphere scaleFactor={scaleFactor} />
-      {/* <OrbitControls /> */}
-    </Canvas>
-  )
-}
+    <>
+      <Canvas
+        linear
+        flat
+        camera={{ fov: 35, near: 0.1, far: 1000, position: [0, 0, 8] }}
+      >
+        <ambientLight args={[2]} />
+        <pointLight args={[0xffffff, 2]} position={[2, 3, 4]} />
+        <directionalLight position={[0, 0, 0]} />
+        <Sphere />
+      </Canvas>
+    </>
+  );
+};
 
-export default PlanetSphere
+export default PlanetSphere;
