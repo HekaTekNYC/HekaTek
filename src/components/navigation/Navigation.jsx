@@ -1,93 +1,75 @@
-import React from "react"
-import "./navigation.scss"
+import React, { useState, useEffect } from "react"; // Import useEffect
+import "./navigation.scss";
+import HamburgerIcon from '../../assets/icons/hamburger.svg';
 
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Use useEffect to log the state change
+  useEffect(() => {
+    console.log("Menu open state: ", isMenuOpen);
+  }, [isMenuOpen]); // Dependency array ensures this runs only when isMenuOpen changes
+ 
   return (
     <div className="navigation-container">
       <div className="logo">
-        <a className="text-shadow" href="#hero">
-          {" "}
-          HekaTek
-        </a>
+        <a href="#hero">HekaTek</a>
       </div>
-      <div className="nav-links">
-        <a className="nav-link text-shadow" href="#hero">
-          Home
-        </a>
-        <a className="nav-link text-shadow" href="#our-work">
-          Our Work
-        </a>
-        <a className="nav-link text-shadow" href="#services">
-          Services
-        </a>
 
-        <a className="nav-link text-shadow" href="#about">
-          About
-        </a>
-        <a className="nav-link text-shadow" href="#contact">
-          Contact
-        </a>
+      <div className="hamburger" onClick={toggleMenu}>
+        <img src={HamburgerIcon} alt="Menu" />
+      </div>
+
+      <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <a className="nav-link" href="#hero">Home</a>
+        <a className="nav-link" href="#our-work">Our Work</a>
+        <a className="nav-link" href="#services">Services</a>
+        <a className="nav-link" href="#about">About</a>
+        <a className="nav-link" href="#contact">Contact</a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
 
 
-// import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-// import './navigation.scss';
+
 
 // const Navigation = () => {
-//   const [activeSection, setActiveSection] = useState('');
-  
-//   useEffect(() => {
-//     const sections = ['hero', 'our-work', 'about', 'contact'];
-//     const observers = sections.map((id) => {
-//       const el = document.getElementById(id);
-//       const observer = new IntersectionObserver((entries) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting) {
-//             setActiveSection(id);
-//           }
-//         });
-//       }, { threshold: 0.5 }); // Adjust threshold as needed
-
-//       if (el) observer.observe(el);
-//       return observer;
-//     });
-
-//     return () => {
-//       observers.forEach((observer) => observer.disconnect());
-//     };
-//   }, []);
-
 //   return (
 //     <div className="navigation-container">
 //       <div className="logo">
-//         <Link className={activeSection === 'hero' ? 'active text-shadow' : 'text-shadow'} to="/hero id='#hero'>
+//         <a className="text-shadow" href="#hero">
+//           {" "}
 //           HekaTek
-//         </Link>
+//         </a>
 //       </div>
 //       <div className="nav-links">
-     
-//         <Link className={activeSection === 'our-work' ? 'nav-link active text-shadow' : 'nav-link text-shadow'} to="/our-work">
+//         <a className="nav-link text-shadow" href="#hero">
+//           Home
+//         </a>
+//         <a className="nav-link text-shadow" href="#our-work">
 //           Our Work
-//         </Link>
-//         <Link className={activeSection === 'our-work' ? 'nav-link active text-shadow' : 'nav-link text-shadow'} to="/services">
+//         </a>
+//         <a className="nav-link text-shadow" href="#services">
 //           Services
-//         </Link>
-//         <Link className={activeSection === 'about' ? 'nav-link active text-shadow' : 'nav-link text-shadow'} to="/about">
+//         </a>
+
+//         <a className="nav-link text-shadow" href="#about">
 //           About
-//         </Link>
-//         <Link className={activeSection === 'contact' ? 'nav-link active text-shadow' : 'nav-link text-shadow'} to="/contact">
+//         </a>
+//         <a className="nav-link text-shadow" href="#contact">
 //           Contact
-//         </Link>
+//         </a>
 //       </div>
 //     </div>
-//   );
-// };
+//   )
+// }
 
-// export default Navigation;
+// export default Navigation
 

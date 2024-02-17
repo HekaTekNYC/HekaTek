@@ -15,7 +15,8 @@ const ProductCard = ({
 }) => {
   return (
     <div className="product-card-container">
-      <div className="product-card">
+      <div className="product-card ">
+        <div className="product-card-shadow"></div>
       <div className="product-intro-container">
             <div className="product-name">
               {name}{" "}
