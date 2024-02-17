@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-
+import Button from "../button/Button"
 import emailjs from "@emailjs/browser"
 
 import { Form, Row, Col } from "react-bootstrap"
@@ -119,9 +119,11 @@ const ContactForm = () => {
               />
             </FloatingLabel>
           </Form.Group>
-          <button className="contact-btn" type="submit">
+      <div className="contact-form-btn">
+      <button className="contact-btn" type="submit">
             Submit
           </button>
+          </div>
         </Form>
       </div>
       {showModal && (
@@ -129,6 +131,7 @@ const ContactForm = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h4>{modalContent.title}</h4>
             <p>{modalContent.message || "Default message"}</p>
+
             <button
               className="contact-btn"
               style={{

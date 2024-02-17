@@ -67,7 +67,7 @@ import Navigation from "./components/navigation/Navigation"
 const App = () => {
   return (
     <Router>
-      <Navigation />
+      {/* <Navigation /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-work" element={<Products />} />

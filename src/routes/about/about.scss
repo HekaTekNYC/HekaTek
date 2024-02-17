@@ -20,7 +20,7 @@
     font-size: 1.4rem;
     text-align: center;
     width: 40%;
-    order: 1;
+    order: 1; 
 
     .about-header {
       font-family: 'Calluna Sans Reg', sans-serif;   
@@ -28,6 +28,9 @@
       font-size: 4.2rem;
       font-weight: 600;
       margin-bottom: 30px;
+      text-shadow: 0 0 4px rgba(249, 249, 249, 0.965);
+    z-index: 2;
+    transition: transform 0.3s ease;
     }
   }
 
@@ -54,9 +57,25 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .about-container {
+    padding: 0 60px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  .about-row {
+    .about-info {
+      width: 50%;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .about-container {
-    height: 1000px;
+    height: 1100px;
     padding: 0;
   }
   .about-row {
@@ -89,31 +108,40 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about-services {
-
-    // width: 60%;
-    height: 900px;
-    order: 2;
-
-    .tech-overlay,
-    .sparkle-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+  .about-container {
+    height: 400px;
+  }
+  
+   .about-row {
+      .about-info {
+        font-size: 1.2rem;
+      }
     }
 
- 
+
+    .about-services {
+      display: none;
+   }
 }
-}
+
 @media screen and (max-width: 600px) {
   .about-container {
     padding: 0 30px;
+    height: 600px;
 
     .about-row {
       padding: 0;
       .about-info {
-        font-size: 1rem;
+        font-size: 1.07rem;
+        padding: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-container {
+    padding: 0 30px;
+    height: auto;
   }
 }

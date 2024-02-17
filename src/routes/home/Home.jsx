@@ -26,9 +26,9 @@ const Home = () => {
         </div>
         <div className="product-section" id="our-work">
           <Products />
-        </div>
+  </div>
         <div className="services-section" id="services">
-          <Services />
+          <Services /> 
         </div>
         <div className="about-section " id="about">
           <div className="space-layer">
@@ -39,9 +39,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="contact-section" id="contact">
+         <div className="contact-section" id="contact">
           <Contact />
-        </div>
+        </div> 
       </div>
     </>
   )

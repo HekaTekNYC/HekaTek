@@ -14,7 +14,8 @@ const ProductCard = ({
   isCurrentWork
 }) => {
   return (
-    <div className="product-card-container product-card-bkrnd">
+    <div className="product-card-container">
+      <div className="product-card">
       <div className="product-intro-container">
             <div className="product-name">
               {name}{" "}
@@ -32,15 +33,14 @@ const ProductCard = ({
       <div className="product-info-container">
           <div className="product-tech-row">
             {icons.map((icon, index) => (
+              <div className="product-tech-icon">
               <TechIcon key={index} svgPath={icon.src} altText={icon.alt} />
+              </div>
             ))}
           </div>
           <div className="product-full-desc" >{info}</div>
-          {/* <a href={aLink} target="_blank">
-              <button className="product-btn">{btn}</button>
-            </a> */}
-            <Button />
-
+            <Button  link={aLink}  text={btn} />
+         </div>
       </div>
     </div>
   );

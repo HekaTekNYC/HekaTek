@@ -1,6 +1,5 @@
 import React from "react"
 import ServiceIcon from  "../../components/service-icon/Service-icon"
-import TechIcon2 from "../../components/tech-icon/tech-icon-service";
 import "./services.scss"
 
 const servicesData = [
@@ -37,7 +36,6 @@ const Services = () => {
       <div className="services-row">
         {servicesData.map((service, index) => (
             <div className="service-card"  key={index}>
-              {/* <TechIcon2 svgPath={service.svgPath} /> */}
               <ServiceIcon svgPath={service.svgPath} />
               <div className="service-header">{service.name}</div>
               <div className="service-text">{service.description}</div>

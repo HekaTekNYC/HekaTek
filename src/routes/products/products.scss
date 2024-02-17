@@ -3,37 +3,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   padding: 0 100px;
 
 
-  .products-section-header {
-    position: sticky;
+
+h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-top: 80px;
     top: 10px; 
     color: #fff; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    text-shadow: 0 0 8px rgba(233, 241, 233, 0.965); /* Space glow effect, can be adjusted or removed as needed */
+    text-shadow: 0 0 4px rgba(233, 241, 233, 0.965);
     z-index: 2;
     transition: transform 0.3s ease;
   }
 
-
-  .parallax-container {
+  .product-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px 20px;
-    height: 100%;
+    align-items: center;
+    padding: 20px;
+    height: auto;
     width: 100%;
-    max-width: 1200px;
   }
-}
-
-.parallax-remove-scrollbar::-webkit-scrollbar {
-    display: none;
 }
 
 
@@ -42,21 +41,22 @@
 @media screen and (max-width: 1200px) {
   .products-container {
     padding: 0 80px;
-
-    // .parallax-container {
-    //   padding: 40px 10px;
-    // }
+ 
   }
 }
+
+
+
+/* Tablet Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+}
+
 
 @media screen and (max-width: 992px) {
   .products-container {
     padding: 0 60px;
-    .space-relative {
-      .space-3 {
-        top: 0px;
-      }
-    }
+
   }
 }
 
@@ -66,9 +66,19 @@
 
 @media screen and (max-width: 600px) {
   .products-container {
-    margin: 0 40px;
-    .products-header {
-      font-size: 3.2rem;
+    margin: 0;
+    padding: 0 20px;
+    h2 {
+      font-size: 3.3rem;
     }
   }
 }
+@media screen and (max-width: 430px) {
+  .products-container {
+  h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+
