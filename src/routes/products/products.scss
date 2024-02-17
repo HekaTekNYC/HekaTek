@@ -1,65 +1,84 @@
 .products-container {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: auto;
+  padding: 0 100px;
 
-  .products-header {
-    font-family: Inter;
+
+
+h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    top: 10px; 
+    color: #fff; 
     text-align: center;
-    font-size: 4.2rem;
-    font-weight: 600;
-    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 4px rgba(233, 241, 233, 0.965);
+    z-index: 2;
+    transition: transform 0.3s ease;
   }
 
-  .space-relative {
-    position: relative;
-
-    .space-3 {
-      position: absolute;
-      top: 300px;
-      left: -200px;
-      mask-image: radial-gradient(
-        ellipse at center,
-        rgba(255, 255, 255, 1) 1%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(255, 255, 255, 0) 75%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      height: 400px;
-      width: auto;
-      z-index: 2;
-      transform: rotate(220deg);
-      transform-origin: center;
-    }
-
-    .product-layer {
-      z-index: 5;
-      position: relative;
-    }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    width: 100%;
   }
 }
 
+
+
 // Media Queries
+@media screen and (max-width: 1200px) {
+  .products-container {
+    padding: 0 80px;
+ 
+  }
+}
+
+
+
+/* Tablet Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+}
+
 
 @media screen and (max-width: 992px) {
   .products-container {
-    .space-relative {
-      .space-3 {
-        top: 0px;
-      }
-    }
+    padding: 0 60px;
+
   }
 }
 
 @media screen and (max-width: 768px) {
+  
 }
 
 @media screen and (max-width: 600px) {
   .products-container {
-    .products-header {
-      font-size: 3.2rem;
+    margin: 0;
+    padding: 0 20px;
+    h2 {
+      font-size: 3.3rem;
     }
   }
 }
+@media screen and (max-width: 430px) {
+  .products-container {
+  h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+
