@@ -181,3 +181,20 @@
     }
   }
 }
+@media screen and (max-width: 420px) {
+  .hero-container {
+    // padding: 0 30px;
+    height: 400px;
+
+
+      .header {
+        .hekatek-3d {
+          font-size: 3.8rem;
+        }
+        .header-text {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+}

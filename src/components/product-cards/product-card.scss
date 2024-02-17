@@ -1,20 +1,24 @@
 .product-card-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 800px; 
-  height: 900px;
-  padding: 30px;
+  height: auto;
+  padding: 40px 30px;
   margin: 60px; 
   border: 1px solid rgba(60, 84, 96, 0.4);
   background: #04202f6a;
-  box-shadow: 1px 5px 41px 5px rgb(202, 204, 227);
+  // box-shadow: 1px 5px 41px 5px rgb(202, 204, 227);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
+  // color: rgb(202, 204, 227);
   z-index: 1;
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 // Product intro container
@@ -22,8 +26,8 @@
 .product-intro-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   .product-name {
       font-family: 'Noto Sans Pahawh Hmong', sans-serif;
@@ -42,18 +46,19 @@
   .product-short-desc {
     font-family: 'Calluna Sans Reg', sans-serif;   
     font-size: 1.6rem;
+    text-align: center;
   }
 }
 
 // Product image container
 .product-image-container {
-  padding: 30px 0 40px;
-
+  width: 640px;
+  height: 360px;
+  margin: 40px 0;
     img {
-      width: 700px;
-      height: 400px;
+      height: 100%;
+      width: 100%;
       border-radius: 10px;
-      overflow: hidden;
     }
 }
 
@@ -64,6 +69,7 @@
   align-items: center;
   font-family: 'DM Sans', sans-serif;
   font-size: 1.2rem;
+
 
   .product-tech-row {
     display: flex;
@@ -83,43 +89,119 @@
 }
 
 @media screen and (max-width: 1200px) {
-  
+  .product-card-container {
+    width: 750px; 
+    padding: 30px;
+    margin:  50px 0;
  
+  }
 }
 
 
-/* Tablet Portrait*/
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
-  
+
+@media only screen and (min-device-width: 912px) and (max-device-height: 1480px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
 }
+
+
 
 @media screen and (max-width: 992px) {
   .product-card-container {
-    width: 700px; 
-    height: 900px;
-    padding: 30px;
-    margin:  0;
-    
-  .product-image-container {
-    // padding: 30px 0 40px;
-    .img {
-      width: 650px;
-      height: 350px;
-      border-radius: 10px;
-      overflow: hidden;
+    width: 690px; 
+  
+    .product-image-container {
+      width: 600px;
+      height: 338px;
+  
     }
-  }
   }
 }
 
-@media screen and (max-width: 779px) {
+/* Tablet Portrait*/
+@media only screen and (min-device-width: 820px) and (max-device-height: 1380px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .product-card-container {
+    width: 600px;
+
+    .product-image-container {
+      width: 500px;
+      height: 281px;
+    }
+    
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .product-card-container {
+    width: 575px; 
+    padding: 30px;
+    margin:  50px 0;
+    .product-name {
+      font-size: 1.8rem;
+    }
+    .product-short-desc {
+      font-size: 1.4rem;
+    }
+    .product-image-container {
+      width: 500px;
+      height: 281px;
+      margin: 20px 0;
+  
+    }
+  }
 
 }
 
 @media screen and (max-width: 600px) {
-
+  .product-card-container {
+    width: 475px; 
+    padding: 30px;
+    margin:  50px 0;
+    .product-name {
+      font-size: 1.6rem;
+    }
+    
+    .product-short-desc {
+      font-size: 1.2rem;
+    }
+    .product-image-container {
+      width: 390px;
+      height: 219px;
+      margin: 20px 0;
+    }
+    .product-full-desc {
+      font-size: 1rem;
+    }
+  }
+  
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
+  .product-card-container {
+    width: 330px; 
+    padding: 30px 25px;
 
+
+    .product-name {
+      font-size: 1.2rem;
+    }
+    .product-short-desc {
+      font-size: 1rem;
+    }
+    .product-image-container {
+      width: 280px;
+      height: 158px;
+    }
+    .product-full-desc {
+      padding: 10px 0;
+      font-size: 0.87rem;;
+    }
+    
+    .product-tech-row {
+    .product-tech-icon:nth-child(n+5) {
+      display: none;
+    }
+  }
+  }
 }

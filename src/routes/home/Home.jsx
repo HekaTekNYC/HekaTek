@@ -27,21 +27,21 @@ const Home = () => {
         <div className="product-section" id="our-work">
           <Products />
   </div>
-        {/* <div className="services-section" id="services">
+        <div className="services-section" id="services">
           <Services /> 
-        </div> */}
-        {/* <div className="about-section " id="about">
+        </div>
+        <div className="about-section " id="about">
           <div className="space-layer">
             <img src={Space} alt={"space"} className="pink-space" />
           </div>
           <div className="about-layer">
             <About />
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="contact-section" id="contact">
+         <div className="contact-section" id="contact">
           <Contact />
-        </div> */}
+        </div> 
       </div>
     </>
   )

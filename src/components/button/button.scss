@@ -10,7 +10,7 @@
 	align-items: center;
 	overflow:hidden;
     font-family: 'Noto Sans Pahawh Hmong', sans-serif;
-	// font-weight: 600;   
+	
 
 }
  .tech-btn a {
@@ -40,7 +40,7 @@
  .tech-btn:hover a {
 	letter-spacing: 3px;
     font-weight: 600;
-    color: #04202f;
+    color: #04202f !important;
 }
  .tech-btn a::before {
 	content: "";
@@ -90,31 +90,6 @@
 	
 }
 
-// .tech-btn:hover::before {
-	// // border-top: 100px solid rgba(21, 137, 6, 0.335);
-	// border-top: 100px solid rgba(255, 255, 255, 0.15);
-	// border-left: 25px solid transparent;
-	// border-right: 25px solid transparent;
-	// height: 60px;
-	// width: 220px;
-	// // transform: translateX(-50%) rotate(-0.5turn);
-	// z-index: 1;
-// content: "";
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     width: calc(190px + 45px); /* Width + double the border-left/right width */
-//     height: calc(60px + 100px); /* Height + border-top width to maintain the effect */
-//     background: transparent;
-//     border-top: 100px solid rgba(236, 233, 233, 0.209);
-//     border-left: 20px solid transparent;
-//     border-right: 20px solid transparent;
-//     transform: translate(-50%, -50%);
-//     z-index: -1; /* Sit below the button text */
-// }
-
-
-
 // Top Light
  .tech-btn::after {
 	content: "";
@@ -137,18 +112,6 @@
 	border-radius: 30px;
 }
 
-//  .tech-btn::before,
-//  .tech-btn::after {
-// 	background: #1db7b5;
-// 	box-shadow: 0 0 5px #1db7b5, 0 0 15px #1db7b5, 0 0 30px #1db7b5,
-// 		0 0 60px #1db7b5;
-// }
-//  .tech-btn::before,
-//  .tech-btn::after {
-// 	background:  #ffffffa6 ;
-// 	box-shadow: 0 0 5px  #ffffffa6, 0 0 15px  #ffffffa6, 0 0 30px  #ffffffa6,
-// 		0 0 60px  #ffffffa6;
-// }
  .tech-btn::before,
  .tech-btn::after {
 	background:  rgb(202, 204, 227);
@@ -156,10 +119,39 @@
 		0 0 60px  #ffffff75;
 }
 
-// .tech-btn::before,
-// .tech-btn::after {
-// 	background: #1eff45;
-// 	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
-// 		0 0 60px #1eff45;
-// }
 
+
+@media screen and (max-width: 768px) {
+	.tech-btn {
+		width: 210px;
+		height: 42px;
+		margin: 0;
+		font-size: 1.1rem;
+
+	
+	}
+  
+  }
+
+@media screen and (max-width: 600px) {
+	.tech-btn {
+		width: 190px;
+		height: 40px;
+		margin: 0;
+		// font-size: 1rem;
+
+	
+	}
+  
+  }
+@media screen and (max-width: 468px) {
+	.tech-btn {
+		width: 170px;
+		height: 38px;
+		margin-top: 10px;
+		font-size: 0.87rem;
+
+	
+	}
+  
+  }
