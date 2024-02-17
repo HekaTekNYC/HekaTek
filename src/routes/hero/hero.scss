@@ -6,37 +6,9 @@
   padding: 100px;
 
 
-  .galaxy-container {
-    position: absolute;
-    top: 0;
-    right: 500px;
-    width: 1400px;
-    height: 120vh;
- 
-    transform: rotate(155deg) scaleY(-1) translate(-490px, 300px ) scale(0.90);
-    transition: all 900ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -webkit-transition: all 500ms linear;
-    z-index: 2;
-
-    .galaxy {
-      position: absolute;
-      mask-image: radial-gradient(
-        ellipse at center,
-        rgba(255, 255, 255, 1) 1%,
-        rgba(255, 255, 255, 1) 6%,
-        rgba(255, 255, 255, 0) 85%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      height: auto;
-      width: 100%;
-      z-index: 2;
   
-      // transform: rotate(180deg);
-    }
   }
-}
+// }
 
 .hero-row {
   display: flex;
@@ -82,13 +54,41 @@
 .hero-right-container {
   display: flex;
   position: relative;
-  justify-content: center; // Centers children horizontally
-  align-items: center; // Centers children vertically
-  height: 100%; // Sets the height to be the full viewport height
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 100%;
   left: 220px;
   bottom: 150px;
+  .galaxy-container {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    // right: 500px;
+    width: 1400px;
+    height: 120vh;
+ 
+    transform: rotate(155deg) scaleY(-1) translate(-490px, 300px ) scale(0.90);
+    transition: all 900ms linear;
+    -o-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    z-index: 2;
 
+    .galaxy {
+      position: absolute;
+      mask-image: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(255, 255, 255, 1) 6%,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      height: auto;
+      width: 100%;
+      z-index: 2;  
+      // transform: rotate(180deg);
+    }
 
 
   .hero-image {
@@ -108,6 +108,7 @@
 
   }
 }
+}
 
 // Media Queries
 @media screen and (max-width: 1400px) {
@@ -117,47 +118,132 @@
 
 }
 
-@media screen and (max-width: 1200px) {
-  .hero-container {
-    padding: 0 80px;
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .hero-left-container {
 
-    .hero-right-container {
-      .galaxy-container {
-        top: 200px;
-        width: 1000px;
-   
-      .hero-image {
-        margin: 0 0 0 200px;
+      .header {
+      .hekatek-3d {
+        font-size: 5.6rem;
+      }
+      .header-text {
+        font-size: 2.1rem;
       }
     }
-    }
   }
-}
-
-@media screen and (max-width: 992px) {
-  .hero-container {
-    padding: 0 60px;
-
-    .galaxy-container {
-      display: none;
-    }
-
-    .hero-left-container {
-      width: 100%;
-      text-align: center;
-    }
-
     .hero-right-container {
-      display: none;
+      width: 100px;
+      transform: rotate(-15deg); 
+
+      .galaxy-container {
+        width: 1500px;
+        height: 900px;
+       
+    }
+    }
+}
+@media screen and (max-width: 992px) {
+  .hero-left-container {
+      .header {
+      .hekatek-3d {
+        font-size: 4.6rem;
+      }
+      .header-text {
+        font-size: 1.4rem;
+      }
     }
   }
+    .hero-right-container {
+      width: 50%;
+      transform: rotate(-20deg); 
+
+      .galaxy-container {
+        top: 100px;
+        right: 150px;
+        width: 1300px;
+        height: 900px;
+       
+    }
+    .hero-image {
+      top: -80px;
+      left: 10px;
+    }
+    }
 }
+@media only screen 
+  and (max-device-width: 932px) /* Maximum width of iPhone 14 Max Pro in landscape */
+  and (orientation: landscape) /* Ensure landscape orientation */
+  and (-webkit-max-device-pixel-ratio: 3) /* Optional: Ensure high pixel density */
+{
+  .hero-container {
+  }
+
+  .hero-left-container {
+    .header {
+      .hekatek-3d {
+        font-size: 2.6rem;
+      }
+      .header-text {
+        font-size: 1.3rem;
+      }
+  }
+  }
+  .hero-right-container {
+    // height: 500px;
+    width: 100px;
+    height: 400px;
+    .galaxy-container {
+     
+      .galaxy {
+        height: 400px;
+        width: 600px;
+        top: 20px;
+        z-index: 2;
+        left: 100px;      
+      }
+      .hero-image {
+        margin: 0;
+        left: 79px;
+        top: -16px;
+     
+      }
+  }
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
-  .hero-container {
-    padding: 0 40px;
-
-  
+  .hero-left-container {
+    .header {
+    .hekatek-3d {
+      font-size: 4.6rem;
+    }
+    .header-text {
+      font-size: 1.7rem;
+    }
+  }
+}
+  .hero-right-container {
+    width: 50%;
+    transform: rotate(-20deg); 
+    height: 200px;
+    .galaxy-container {      
+      height: 800px;
+      width: 1150px;
+      top: -200px;
+      right: 300px;
+      
+     
+  }
+  .hero-image {
+    margin: 0;
+    left: -107px;
+    bottom: 170px;
+  }
   }
 }
 
@@ -166,36 +252,67 @@
     padding: 0 30px;
 
     .hero-left-container {
-      width: 100%;
-      padding-left: 0;
+      width: 50%;
+      // padding-left: 0;
       margin-bottom: 50px;
 
       .header {
         .hekatek-3d {
-          font-size: 5rem;
-        }
-        .header-text {
           font-size: 2rem;
         }
+        .header-text {
+          font-size: 1rem;
+        }
+      }
+      .hero-right-container {
+        width: 50%;
+        height: 100px;
+        transform: rotate(-15deg); 
+  
+        .galaxy-container {
+          width: 1000px;
+          height: 900px;
+          top: 300px;
+          right: 450px;
+         
+      }
       }
     }
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .hero-container {
-    // padding: 0 30px;
     height: 400px;
 
-
+  .hero-left-container {
+    width: 50%;
+    z-index: 50;
       .header {
         .hekatek-3d {
-          font-size: 3.8rem;
+          font-size: 2.5rem;
         }
         .header-text {
-          font-size: 1.4rem;
+          font-size: 0.87rem;
         }
       }
     }
-
+    .hero-right-container {
+      width: auto;
+      height: 800px;
+      .galaxy-container {
+        width: 400px;
+        top: 220px;
+        right: 400px;
+      .hero-image {
+        height: 250px;
+        width: 250px;
+        margin: 0;
+        bottom: 50px;
+        left: 50px;
+        
+      }
+    }
+    }
+  }
 }

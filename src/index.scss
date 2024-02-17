@@ -89,10 +89,10 @@ body {
   'Tenor Sans', sans-serif,
   'Truculenta', sans-serif,
   'Work Sans', sans-serif,
+  "Lato", sans-serif,
   'Montserrat', sans-serif,
   'Nanum Gothic', sans-serif;
   // font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Nanum Gothic",
-  //   "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
@@ -100,7 +100,7 @@ body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   color: #fff;
-  background-color: #000;
+  background-color: #080808;
 }
 
 body::-webkit-scrollbar {
@@ -209,7 +209,7 @@ ul {
   color: #fff;
   text-align: center;
   border: 1px solid rgba(60, 84, 96, 0.4);
-  background: #04202f6a;
+  background: #04202f88;
   // box-shadow: 1px 5px 41px 5px rgb(202, 204, 227);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
@@ -227,13 +227,13 @@ ul {
 }
 
 .contact-btn {
-  font-family: Quicksand;
-  background-color: #69696a92;
+  font-family: Calluna Sans Reg;
+  background-color: #38383992;
   box-shadow: rgba(227, 226, 226, 0.268) 0px 5px 15px;
   color: #ffffff;
   border-radius: 6px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   width: 150px;
   height: 40px;

@@ -107,9 +107,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .about-container {
-    height: 400px;
+    height: auto;
   }
   
    .about-row {
@@ -120,14 +120,14 @@
 
 
     .about-services {
-      display: none;
+      margin-bottom: 150px;
    }
 }
 
 @media screen and (max-width: 600px) {
   .about-container {
     padding: 0 30px;
-    height: 600px;
+    height: auto;
 
     .about-row {
       padding: 0;
