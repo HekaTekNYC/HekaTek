@@ -29,7 +29,7 @@ const Hero = () => {
 
           <div className="hero-right-container">
             <div className="galaxy-container">
-              <img src="https://i.ibb.co/tqnsT0M/Hero.jpg" alt="galaxy" className="galaxy" />
+              <img src="https://i.ibb.co/tqnsT0M/Hero.jpg" alt="galaxy" className="galaxy" loading="lazy" decoding="async"/>
               <div className="hero-image">
                 <PlanetSphere />
               </div>

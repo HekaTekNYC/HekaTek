@@ -6,7 +6,7 @@ const TechIcon = ({ svgPath, altText, className }) => {
   return (
     
     <div className="tech-icon">
-      <img src={svgPath} alt={altText} className={iconClassName} />
+      <img src={svgPath} alt={altText} className={iconClassName} loading="lazy" decoding="async"/>
     </div>
   )
 }

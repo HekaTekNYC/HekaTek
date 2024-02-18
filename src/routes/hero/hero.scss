@@ -3,12 +3,9 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding: 100px;
-
-
-  
+  padding: 100px;  
   }
-// }
+
 
 .hero-row {
   display: flex;
@@ -51,6 +48,7 @@
     }
   }
 }
+
 .hero-right-container {
   display: flex;
   position: relative;
@@ -60,14 +58,13 @@
   width: 100%;
   left: 220px;
   bottom: 150px;
+
   .galaxy-container {
     position: absolute;
     top: 0;
     right: 0px;
-    // right: 500px;
     width: 1400px;
     height: 120vh;
- 
     transform: rotate(155deg) scaleY(-1) translate(-490px, 300px ) scale(0.90);
     transition: all 900ms linear;
     -o-transition: all 500ms linear;
@@ -87,38 +84,70 @@
       height: auto;
       width: 100%;
       z-index: 2;  
-      // transform: rotate(180deg);
+
     }
 
 
-  .hero-image {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: 450px;
-    margin: 0;
-    margin: 170px 0 200px 400px;
-    z-index: 7;
-    transition: all 900ms linear;
-    -o-transition: all 900ms linear;
-    -moz-transition: all 900ms linear;
-    -webkit-transition: all 900ms linear;
+    .hero-image {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      width: 450px;
+      margin: 0;
+      margin: 170px 0 200px 400px;
+      z-index: 7;
+      transition: all 900ms linear;
+      -o-transition: all 900ms linear;
+      -moz-transition: all 900ms linear;
+      -webkit-transition: all 900ms linear;
 
+    }
   }
-}
 }
 
 // Media Queries
-@media screen and (max-width: 1400px) {
+// For wide-screen monitors 
+@media only screen and (min-width: 1600px) {
   .hero-container {
-    padding: 0 100px;
+
   }
 
+  .hero-row {
+
+  }
+
+  .hero-left-container {
+
+  }
+  .hero-right-container {
+
+  }
 }
 
-/* Portrait and Landscape */
+    @media only screen 
+    and (min-device-width: 1280px) //Minimum width of a MacBook
+    and (max-device-width: 1440px) // Maximum width of a MacBook 
+    and (-webkit-min-device-pixel-ratio: 2) { //For devices with Retina displays 
+      .hero-container {
+
+      }
+
+    .hero-row {
+
+    }
+
+    .hero-left-container {
+
+    }
+
+    .hero-right-container {
+
+    }
+      
+}
+//  Portrait and Landscape 
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 

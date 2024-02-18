@@ -28,7 +28,7 @@ const ProductCard = ({
       </div>
       <div className="product-image-container"> 
         <a href={aLink} target="_blank">
-          <img src={img.src} alt={img.alt} />
+          <img src={img.src} alt={img.alt} loading="lazy" decoding="async"/>
         </a>
       </div>
       <div className="product-info-container">
