@@ -21,7 +21,7 @@ const Navigation = () => {
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
-        <img src={HamburgerIcon} alt="Menu" />
+        <img src={HamburgerIcon} alt="Menu" loading="lazy" decoding="async"/>
       </div>
 
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
@@ -39,37 +39,4 @@ export default Navigation;
 
 
 
-
-// const Navigation = () => {
-//   return (
-//     <div className="navigation-container">
-//       <div className="logo">
-//         <a className="text-shadow" href="#hero">
-//           {" "}
-//           HekaTek
-//         </a>
-//       </div>
-//       <div className="nav-links">
-//         <a className="nav-link text-shadow" href="#hero">
-//           Home
-//         </a>
-//         <a className="nav-link text-shadow" href="#our-work">
-//           Our Work
-//         </a>
-//         <a className="nav-link text-shadow" href="#services">
-//           Services
-//         </a>
-
-//         <a className="nav-link text-shadow" href="#about">
-//           About
-//         </a>
-//         <a className="nav-link text-shadow" href="#contact">
-//           Contact
-//         </a>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Navigation
 

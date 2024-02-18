@@ -16,7 +16,7 @@ const ProductLeft = ({
     <div className="product-row">
       <div className="product-image-glass">
         <a href={aLink} target="_blank">
-          <img src={img.src} alt={img.alt} />
+          <img src={img.src} alt={img.alt} loading="lazy"decoding="async"/>
         </a>
         <div className="product-content">
           <div className="product-left-text">

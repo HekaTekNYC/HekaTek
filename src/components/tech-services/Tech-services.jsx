@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
@@ -101,27 +101,46 @@ const TechStack = ({
   )
 }
 
+
 const Planet = ({ icons }) => {
-  const planetRef = useRef()
-  const texture = useLoader(TextureLoader, SpaceAbout)
+  const planetRef = useRef();
+  const texture = useLoader(TextureLoader, SpaceAbout);
+  const [planetSize, setPlanetSize] = useState([1.2, 64, 64]); // Default size
+
+  useEffect(() => {
+    function handleResize() {
+      // Check if the screen width is less than or equal to 768 pixels
+      if (window.innerWidth <= 768) {
+        // Set planet size to half the original size for mobile
+        setPlanetSize([0.6, 64, 64]);
+      } else {
+        // Set planet size back to the original size for larger screens
+        setPlanetSize([1.2, 64, 64]);
+      }
+    }
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Call the handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty array ensures the effect runs only on mount and unmount
 
   useFrame(() => {
-    planetRef.current.rotation.y += 0.001
-  })
+    planetRef.current.rotation.y += 0.001;
+  });
 
   return (
     <>
       <ambientLight intensity={2} color={"0xffffff"} />
-      <pointLight
-        decay={2}
-        color={"#00fbff"}
-        intensity={1.2}
-        position={[1, 1, 1]}
-      />
+      <pointLight decay={2} color={"#00fbff"} intensity={1.2} position={[1, 1, 1]} />
       <directionalLight intensity={2} />
 
       <mesh ref={planetRef} renderOrder={-1}>
-        <sphereGeometry args={[1.2, 64, 64]} />
+        <sphereGeometry args={planetSize} />
         <meshStandardMaterial map={texture} metalness={0.5} roughness={0.6} />
         {icons.map((icon, index) => (
           <TechStack
@@ -135,8 +154,8 @@ const Planet = ({ icons }) => {
         ))}
       </mesh>
     </>
-  )
-}
+  );
+};
 
 const TechServices = () => {
   return (

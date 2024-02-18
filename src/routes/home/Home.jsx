@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div className="about-section " id="about">
           <div className="space-layer">
-            <img src={Space} alt={"space"} className="pink-space" />
+            <img src={Space} alt={"space"} className="pink-space" loading="lazy" decoding="async"/>
           </div>
           <div className="about-layer">
             <About />
