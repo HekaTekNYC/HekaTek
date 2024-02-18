@@ -10,8 +10,6 @@
 	align-items: center;
 	overflow:hidden;
     font-family: 'Noto Sans Pahawh Hmong', sans-serif;
-	
-
 }
  .tech-btn a {
 	position: absolute;
@@ -138,20 +136,15 @@
 		width: 190px;
 		height: 40px;
 		margin: 0;
-		// font-size: 1rem;
-
-	
 	}
   
   }
+
 @media screen and (max-width: 468px) {
 	.tech-btn {
 		width: 170px;
 		height: 38px;
 		margin-top: 10px;
-		font-size: 0.87rem;
-
-	
+		font-size: 0.87rem;	
 	}
-  
   }

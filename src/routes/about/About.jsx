@@ -1,7 +1,6 @@
 import React from "react"
 
 import Sparkles from "../../components/sparkles/Sparkles"
-import SpaceOverlay from "../../components/stars/Stars"
 import TechServices from "../../components/tech-services/Tech-services"
 
 import "./about.scss"

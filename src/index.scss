@@ -1,50 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
-@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap";
-// @import '../src/assets/fonts/aileron'
 
-
-@font-face {
-  font-family: 'Aileron Black';
-  src: url('../src/assets/fonts/aileron/Aileron-Black.otf') format('opentype');
-  // font-weight: 900; /* Black */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aileron Bold';
-  src: url('../src/assets/fonts/aileron/Aileron-Bold.otf') format('opentype');
-  font-weight: 700; /* Bold */
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Aileron Heavy';
-  src: url('../src/assets/fonts/aileron/Aileron-Heavy.otf') format('opentype');
-  font-weight: 700; /* Bold */
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Aileron Semi-Bold';
-  src: url('../src/assets/fonts/aileron/Aileron-SemiBold.otf') format('opentype');
-  font-weight: 700; /* Bold */
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Anek';
-  src: url('../src/assets/fonts/anek/fonts/AnekDevanagari/variable/AnekDevanagari.ttf') format('opentype');
-  // font-weight: 700; /* Bold */
-  font-style: normal;
-}
 @font-face {
   font-family: 'Calluna Reg';
   src: url('../src/assets/fonts/Calluna_Regular/Calluna_Regular.otf') format('opentype');
-  // font-weight: 700; /* Bold */
   font-style: normal;
 }
 @font-face {
   font-family: 'Calluna Sans Reg';
   src: url('../src/assets/fonts/calluna-sans/CallunaSans-Regular.otf') format('opentype');
-  // font-weight: 700; /* Bold */
   font-style: normal;
 }
 @font-face {
@@ -53,52 +17,25 @@
   font-weight: 700; /* Bold */
   font-style: normal;
 }
+@font-face {
+  font-family: 'Anek Odia';
+  src: url('../src/assets/fonts/anek/fonts/AnekOdia/variable/AnekOdia.ttf') format('opentype');
+  font-style: normal;
+}
 
-/* Add more @font-face rules for other styles as needed */
 
 body {
   margin: 0;
   padding: 0;
   // box-sizing: border-box;
   font-family: 
-  'Alegreya Sans SC', sans-serif,
-  'Anek Bangla', sans-serif,
-  "Anek Devanagari", sans-serif,
-  'Anek Gujarati', sans-serif,
-  'Anek Gurmukhi', sans-serif,
-  'Anek Kannada', sans-serif,
-  "Anek Latin", sans-serif,
-  "Anek Malayalam", sans-serif,
-  "Anek Odia", sans-serif,
-  "Anek Tamil", sans-serif,
-  'Anek Telugu', sans-serif,
-  'Andika', sans-serif,
-  'Arya', sans-serif,
-  "DM Sans", sans-serif,
-  'Exo 2', sans-serif,
-  'Fahkwang', sans-serif,
-  "Inter", "Inter Tight", 
-  'Livvic', sans-serif,
-  'Mallanna', sans-serif,
-  'Mulish', sans-serif,
-  'Noto Sans Pahawh Hmong', sans-serif,
-  'Noto Sans Ugaritic', sans-serif,
-  'Nunito', sans-serif,
-  'Overlock SC', sans-serif,
-  'Syne', sans-serif,
-  'Tenor Sans', sans-serif,
-  'Truculenta', sans-serif,
-  'Work Sans', sans-serif,
-  "Lato", sans-serif,
-  'Montserrat', sans-serif,
-  'Nanum Gothic', sans-serif;
-  // font-family: "Inter", "Inter Tight", "Quicksand", "Montserrat", "Nanum Gothic",
+  "DM Sans",'Noto Sans Pahawh Hmong', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
   overflow-x: hidden;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
   color: #fff;
   background-color: #080808;
 }
@@ -144,7 +81,6 @@ ul {
   padding-left: 0;
 }
 
-// Background stars
 .sparkles-container {
   position: fixed;
   width: 100vw;
@@ -159,7 +95,6 @@ ul {
 }
 
 // Product
-
 .product-overlay {
   background: rgb(17, 7, 31);
   background: linear-gradient(
@@ -170,7 +105,6 @@ ul {
 }
 
 // Contact Form
-
 .form-select:focus,
 .form-control:focus {
   border-color: #b5b1ffba;
@@ -199,7 +133,6 @@ ul {
 }
 
 .contact-form-container {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,7 +143,6 @@ ul {
   text-align: center;
   border: 1px solid rgba(60, 84, 96, 0.4);
   background: #04202f88;
-  // box-shadow: 1px 5px 41px 5px rgb(202, 204, 227);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
@@ -227,7 +159,7 @@ ul {
 }
 
 .contact-btn {
-  font-family: Calluna Sans Reg;
+  font-family: 'Calluna Sans Reg';
   background-color: #38383992;
   box-shadow: rgba(227, 226, 226, 0.268) 0px 5px 15px;
   color: #ffffff;
