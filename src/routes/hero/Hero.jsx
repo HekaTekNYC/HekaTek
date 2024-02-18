@@ -1,6 +1,5 @@
 import React from "react"
 import { useSpring } from "@react-spring/web"
-import ThreeDeeText from "../../components/3d-text/3d-text"
 
 import PlanetSphere from "../../components/planet/Planet"
 import SpaceCrag from "../../assets/images/space-crag3.svg"
