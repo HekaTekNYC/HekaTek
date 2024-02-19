@@ -1,11 +1,9 @@
 .hero-container {
-
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding: 100px;  
-  }
-
+  padding: 0 100px;
+}
 
 .hero-row {
   display: flex;
@@ -21,7 +19,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin-bottom: 200px;
   z-index: 50;
 
@@ -31,7 +29,7 @@
     color: white;
 
     .hekatek-3d {
-      font-family:  'Anek Odia', sans-serif;
+      font-family: "Anek Odia", sans-serif;
       font-size: 7rem;
       font-weight: 700;
       line-height: 1;
@@ -41,10 +39,10 @@
 
     .header-text {
       display: flex;
-      font-family: 'Aileron Semi-Bold', sans-serif;
+      font-family: "Aileron Semi-Bold", sans-serif;
       font-size: 3rem;
       line-height: 1.3;
-      color: #dcdcdc;      
+      color: #dcdcdc;
     }
   }
 }
@@ -54,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; 
+  height: 100%;
   width: 100%;
   left: 220px;
   bottom: 150px;
@@ -62,10 +60,10 @@
   .galaxy-container {
     position: absolute;
     top: 0;
-    right: 0px;
-    width: 1400px;
-    height: 120vh;
-    transform: rotate(155deg) scaleY(-1) translate(-490px, 300px ) scale(0.90);
+    right: -200px;
+    width: 900px;
+    height: 100vh;
+    transform: rotate(155deg) scaleY(-1) translate(-490px, 300px) scale(0.9);
     transition: all 900ms linear;
     -o-transition: all 500ms linear;
     -moz-transition: all 500ms linear;
@@ -83,10 +81,8 @@
       );
       height: auto;
       width: 100%;
-      z-index: 2;  
-
+      z-index: 2;
     }
-
 
     .hero-image {
       position: absolute;
@@ -102,59 +98,22 @@
       -o-transition: all 900ms linear;
       -moz-transition: all 900ms linear;
       -webkit-transition: all 900ms linear;
-
     }
   }
 }
 
 // Media Queries
 
-@media only screen and (min-width: 1600px) {
-  .hero-container {
+@media only screen and (max-width: 1400px) {
+}
 
-  }
+@media only screen and (max-width: 1200px) {
+}
 
-  .hero-row {
-
-  }
-
+// iPad pro Landscape
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) {
   .hero-left-container {
-
-  }
-  .hero-right-container {
-
-  }
-}
-
-    @media only screen 
-    and (min-device-width: 1280px) //Minimum width of a MacBook
-    and (max-device-width: 1440px) // Maximum width of a MacBook 
-    and (-webkit-min-device-pixel-ratio: 2) { //For devices with Retina displays 
-      .hero-container {
-
-      }
-
-    .hero-row {
-
-    }
-
-    .hero-left-container {
-
-    }
-
-    .hero-right-container {
-
-    }
-      
-}
-//  Portrait and Landscape 
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .hero-left-container {
-
-      .header {
+    .header {
       .hekatek-3d {
         font-size: 5.6rem;
       }
@@ -163,21 +122,20 @@
       }
     }
   }
-    .hero-right-container {
-      width: 100px;
-      transform: rotate(-15deg); 
+  .hero-right-container {
+    width: 100px;
+    transform: rotate(-15deg);
 
-      .galaxy-container {
-        width: 1500px;
-        height: 900px;
-       
+    .galaxy-container {
+      width: 1500px;
+      height: 900px;
     }
-    }
+  }
 }
 
 @media screen and (max-width: 992px) {
   .hero-left-container {
-      .header {
+    .header {
       .hekatek-3d {
         font-size: 4.6rem;
       }
@@ -186,29 +144,24 @@
       }
     }
   }
-    .hero-right-container {
-      width: 50%;
-      transform: rotate(-20deg); 
+  .hero-right-container {
+    width: 50%;
+    transform: rotate(-20deg);
 
-      .galaxy-container {
-        top: 100px;
-        right: 150px;
-        width: 1300px;
-        height: 900px;
-       
+    .galaxy-container {
+      top: 100px;
+      right: 150px;
+      width: 1300px;
+      height: 900px;
     }
     .hero-image {
       top: -80px;
       left: 10px;
     }
-    }
+  }
 }
 
-@media only screen 
-  and (max-device-width: 932px) /* Maximum width of iPhone 14 Max Pro in landscape */
-  and (orientation: landscape) /* Ensure landscape orientation */
-  and (-webkit-max-device-pixel-ratio: 3) /* Optional: Ensure high pixel density */
-{
+@media only screen and (max-device-width: 932px) /* Maximum width of iPhone 14 Max Pro in landscape */ and (orientation: landscape) /* Ensure landscape orientation */ and (-webkit-max-device-pixel-ratio: 3) /* Optional: Ensure high pixel density */ {
   .hero-container {
   }
 
@@ -220,61 +173,55 @@
       .header-text {
         font-size: 1.3rem;
       }
-  }
+    }
   }
   .hero-right-container {
     // height: 500px;
     width: 100px;
     height: 400px;
     .galaxy-container {
-     
       .galaxy {
         height: 400px;
         width: 600px;
         top: 20px;
         z-index: 2;
-        left: 100px;      
+        left: 100px;
       }
       .hero-image {
         margin: 0;
         left: 79px;
         top: -16px;
-     
       }
-  }
+    }
   }
 }
-
-
 
 @media screen and (max-width: 768px) {
   .hero-left-container {
     .header {
-    .hekatek-3d {
-      font-size: 4.6rem;
-    }
-    .header-text {
-      font-size: 1.7rem;
+      .hekatek-3d {
+        font-size: 4.6rem;
+      }
+      .header-text {
+        font-size: 1.7rem;
+      }
     }
   }
-}
   .hero-right-container {
     width: 50%;
-    transform: rotate(-20deg); 
+    transform: rotate(-20deg);
     height: 200px;
-    .galaxy-container {      
+    .galaxy-container {
       height: 800px;
       width: 1150px;
       top: -200px;
       right: 300px;
-      
-     
-  }
-  .hero-image {
-    margin: 0;
-    left: -107px;
-    bottom: 170px;
-  }
+    }
+    .hero-image {
+      margin: 0;
+      left: -107px;
+      bottom: 170px;
+    }
   }
 }
 
@@ -298,15 +245,14 @@
       .hero-right-container {
         width: 50%;
         height: 100px;
-        transform: rotate(-15deg); 
-  
+        transform: rotate(-15deg);
+
         .galaxy-container {
           width: 1000px;
           height: 900px;
           top: 300px;
           right: 450px;
-         
-      }
+        }
       }
     }
   }
@@ -316,9 +262,9 @@
   .hero-container {
     height: 400px;
 
-  .hero-left-container {
-    width: 50%;
-    z-index: 50;
+    .hero-left-container {
+      width: 50%;
+      z-index: 50;
       .header {
         .hekatek-3d {
           font-size: 2.5rem;
@@ -335,15 +281,14 @@
         width: 400px;
         top: 220px;
         right: 400px;
-      .hero-image {
-        height: 250px;
-        width: 250px;
-        margin: 0;
-        bottom: 50px;
-        left: 50px;
-        
+        .hero-image {
+          height: 250px;
+          width: 250px;
+          margin: 0;
+          bottom: 50px;
+          left: 50px;
+        }
       }
-    }
     }
   }
 }
