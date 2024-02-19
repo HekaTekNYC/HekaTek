@@ -1,8 +1,6 @@
 import React from "react"
-import { useSpring } from "@react-spring/web"
 
 import PlanetSphere from "../../components/planet/Planet"
-
 import Spacepink from "../../assets/images/pink_space2.png"
 
 import "./hero.scss"
@@ -23,13 +21,13 @@ const Hero = () => {
 
           <div className="hero-right-container">
             <div className="galaxy-container">
-              {/* <img
+              <img
                 src="https://i.ibb.co/tqnsT0M/Hero.jpg"
                 alt="galaxy"
                 className="galaxy"
                 loading="lazy"
                 decoding="async"
-              /> */}
+              />
               <div className="hero-image">
                 <PlanetSphere />
               </div>

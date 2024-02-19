@@ -1,14 +1,13 @@
 import React, { useRef, useEffect } from "react"
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { TextureLoader } from "three/src/loaders/TextureLoader"
-// import PlanetSpace from "../../assets/images/planet_wrap.jpeg";
-import PlanetSpace from "../../assets/images/hero_planet.webp"
-import { useTexture } from "@react-three/drei"
+import PlanetSpace from "../../assets/images/planet_wrap.jpeg"
+// import PlanetSpace from "../../assets/images/hero_planet.webp"
 
 const Sphere = () => {
   const planetRef = useRef()
-  const texture = useTexture(TextureLoader, PlanetSpace)
-  useTexture.preload("../../assets/images/hero_planet.webp")
+  const texture = useLoader(TextureLoader, PlanetSpace)
+
   const scalePlanet = () => {
     const width = window.innerWidth
     let scaleFactor
