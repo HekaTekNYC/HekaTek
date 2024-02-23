@@ -8,9 +8,9 @@ import "./about.scss"
 const About = () => {
   return (
     <div className="about-container">
+      <div className="about-section-header">ABOUT US</div>
       <div className="about-row">
         <div className="about-info">
-          <div className="about-header">ABOUT US</div>
           We're a duo of software developers who find joy in decluttering
           digital messes, turning complexity into simplicity. Our code is clean,
           our interfaces seamless, and our applications are so intuitive, they
@@ -19,15 +19,6 @@ const About = () => {
           plant whispering (they say the secret is in the coding lullabies).
           Ready to give your online presence a sprinkle of our HekaTek magic?
           Hit us up/contact us below.
-        </div>
-        <div className="about-services">
-          <div className="tech-overlay">
-            <TechServices />
-          </div>
-
-          <div className="sparkle-overlay">
-            <Sparkles count={200} />
-          </div>
         </div>
       </div>
     </div>

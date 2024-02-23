@@ -1,5 +1,5 @@
 import React from "react"
-import ServiceIcon from  "../../components/service-icon/Service-icon"
+import ServiceIcon from "../../components/service-icon/Service-icon"
 import "./services.scss"
 
 const servicesData = [
@@ -27,28 +27,23 @@ const servicesData = [
     description:
       "Our range of digital services is custom-fit to your specific needs, ensuring quality and creativity from start to finish, with a keen eye on every detail.",
   },
-];
+]
 
 const Services = () => {
   return (
     <div className="services-container">
-      <h2 className="section-header">OUR SERVICES</h2>
+      <h2 className="section-section-header">OUR SERVICES</h2>
       <div className="services-row">
         {servicesData.map((service, index) => (
-            <div className="service-card"  key={index}>
-              <ServiceIcon svgPath={service.svgPath} />
-              <div className="service-header">{service.name}</div>
-              <div className="service-text">{service.description}</div>
-            </div>
+          <div className="service-card" key={index}>
+            <ServiceIcon svgPath={service.svgPath} />
+            <div className="service-header">{service.name}</div>
+            <div className="service-text">{service.description}</div>
+          </div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Services;
-
-
-
-
-
+export default Services
