@@ -9,7 +9,7 @@
   height: 70px;
   padding: 20px 100px;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.591);
+  background: rgba(255, 255, 255, 0.934);
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -17,16 +17,15 @@
 }
 
 .logo {
-  // font-family: Lato;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
   width: 100px;
   height: auto;
 
-  a {
-    color: #f9f9f9;
-  }
+  // a {
+  //   color: #f9f9f9;
+  // }
 }
 
 .nav-links {
@@ -37,7 +36,7 @@
   white-space: nowrap;
 
   a {
-    color: #fff;
+    // color: #fff;
     // font-family: Lato;
     padding: 10px;
     font-size: 1.2rem;
@@ -47,49 +46,47 @@
   }
 }
 .hamburger {
-  display: none; 
+  display: none;
 }
 
-.text-shadow {
-  z-index: 40;
-  transition: text-shadow 0.3s;
+// .text-shadow {
+//   z-index: 40;
+//   transition: text-shadow 0.3s;
 
-  &:hover {
-    cursor: pointer;
-    color: #fff;
-    text-shadow: 0 0 2px #ffffffc8, 0 0 5px #ffffffc8, 0 0 10px #ffffffc8,
-      0 0 20px #768fffb9, 0 0 40px #5234ff, 0 0 80px #5234ff,
-      5px 5px 90px #5234ff, 5px 5px 100px #5234ff, 5px 5px 150px #5234ff;
-  }
-}
+//   &:hover {
+//     cursor: pointer;
+//     color: #fff;
+//     text-shadow: 0 0 2px #ffffffc8, 0 0 5px #ffffffc8, 0 0 10px #ffffffc8,
+//       0 0 20px #768fffb9, 0 0 40px #5234ff, 0 0 80px #5234ff,
+//       5px 5px 90px #5234ff, 5px 5px 100px #5234ff, 5px 5px 150px #5234ff;
+//   }
+// }
 // Media Queries
 @media screen and (max-width: 992px) {
-
-  
-  }
+}
 @media screen and (max-width: 768px) {
   .navigation-container {
     justify-content: flex-start;
-    padding: 20px; 
+    padding: 20px;
     .logo {
       display: none;
     }
   }
 
   .hamburger {
-    display: block; 
-    margin-right: auto; 
+    display: block;
+    margin-right: auto;
   }
 
   .nav-links {
-    display: none; 
+    display: none;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.85);
-    
+
     a {
       text-align: center;
       width: 100%;
@@ -98,9 +95,6 @@
   }
 
   .nav-links.open {
-    display: flex; 
+    display: flex;
   }
 }
-
-
-
