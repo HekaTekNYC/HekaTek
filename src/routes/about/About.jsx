@@ -1,8 +1,5 @@
 import React from "react"
 
-import Sparkles from "../../components/sparkles/Sparkles"
-import TechServices from "../../components/tech-services/Tech-services"
-
 import "./about.scss"
 
 const About = () => {

@@ -1,13 +1,12 @@
 import React from "react"
-
 import "./hero.scss"
 
 const Hero = () => {
   return (
     <div>
       <div className="hero-container">
-        <div className="hero-hekatek-intro">HekaTek</div>
-        <div className="header-text">
+        <h1 className="hero-hekatek">HekaTek</h1>
+        <div className="hero-text">
           FREELANCERS WITH A PASSION FOR BRINGING YOUR VISION TO LIFE.
         </div>
       </div>
