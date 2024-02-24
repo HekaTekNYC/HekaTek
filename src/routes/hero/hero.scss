@@ -1,50 +1,87 @@
 .hero-container {
   display: flex;
-  min-height: 1200px;
-  // background-image: ("../../assets/images/Desktop_Dot_Grid.png");
-  background-color: #ffffff; // White background
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 900px;
+  background-color: #ffffff; 
   background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
   background-size: 20px 20px;
-
-  // Additional styles for your hero section
   padding: 50px;
   text-align: center;
+  position: relative;
 }
 
-.hero-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-
-  .hero-hekatek {
-  }
-  .hero-text {
+.hero-blob-1 {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  z-index: 0;
+ 
+  img {
+    display: block;
+    max-width: 100%;
   }
 }
+
+.hero-blob-2 {
+  position: absolute;
+  top: 140px;
+  left: 370px;
+  transform: rotateY(180deg);
+  z-index: 0;
+ 
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+.glassmorphic-blob {
+  position: absolute;
+  width: 500px; // Adjust the size as needed
+  height: 300px; // Adjust the size as needed
+  background-color: rgba(255, 255, 255, 0.2); // Semi-transparent white
+  backdrop-filter: blur(10px); // Blur effect for the glassmorphism
+  border-radius: 30%; // Circular shape, adjust for different blob shapes
+  // z-index: ; // Ensures it's above the background blobs but below the text
+
+  // Optional: Adjust positioning as needed
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-hekatek  {
+
+     position: relative;
+
+
+}
+
+
+
+.hero-text {
+position: relative;
+font-size: 2cap;
+}
+  
+
 
 // Media Queries
 
-@media screen and (min-width: 600px) {
-}
 
-@media only screen and (max-width: 1400px) {
-}
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
-@media only screen and (max-width: 1200px) {
-}
 
-// iPad pro Landscape
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) {
-}
+@media (min-width: 550px) {}
 
-@media screen and (max-width: 992px) {
-}
+/* Larger than tablet */
+@media (min-width: 750px) {}
 
-@media only screen and (max-device-width: 932px) /* Maximum width of iPhone 14 Max Pro in landscape */ and (orientation: landscape) /* Ensure landscape orientation */ and (-webkit-max-device-pixel-ratio: 3) /* Optional: Ensure high pixel density */ {
-}
+/* Larger than desktop */
+@media (min-width: 1000px) {}
 
-@media screen and (max-width: 768px) {
-}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

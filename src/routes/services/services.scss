@@ -1,7 +1,14 @@
 .services-container {
-  .section-section-header {
-  }
+  background-image: url('../../assets/images/Desktop_Dot_Grid.png');
+  min-height: 900px;
 }
+  .services-section-header {
+    h1 {
+    font-size: 6rem;
+    color: rgba(20, 26, 75, 0.208);
+  }
+
+  }
 
 .services-row {
   .service-card {

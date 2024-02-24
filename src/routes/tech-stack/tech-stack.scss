@@ -1,0 +1,45 @@
+.scroll-container {
+  width: 80%;
+  max-height: 50vh;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.scrolling-row {
+  display: flex;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #a58fe9 #e37682;
+  margin-bottom: 20px; // Space between rows
+
+  &:nth-child(odd) .scrolling-icons {
+    animation: scroll-left 20s linear infinite;
+  }
+
+  &:nth-child(even) .scrolling-icons {
+    animation: scroll-right 20s linear infinite;
+  }
+}
+
+.scrolling-icons {
+  display: flex;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
