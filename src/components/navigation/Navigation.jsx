@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react" // Import useEffect
-import "./navigation.scss"
+import React, { useState, useEffect } from "react" 
 import HamburgerIcon from "../../assets/icons/hamburger.svg"
+import "./navigation.scss"
+
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,33 +10,42 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Use useEffect to log the state change
   useEffect(() => {
     console.log("Menu open state: ", isMenuOpen)
-  }, [isMenuOpen]) // Dependency array ensures this runs only when isMenuOpen changes
+  }, [isMenuOpen]) 
 
   return (
     <div className="navigation-container">
-      <div className="logo">
-        <a href="#hero">HekaTek</a>
-      </div>
-
+      <a href="#hero" className="logo">HEKATEK</a>
       <div className="hamburger" onClick={toggleMenu}>
-        <img src={HamburgerIcon} alt="Menu" loading="lazy" decoding="async" />
+        {/* <img src={HamburgerIcon} alt="Menu" loading="lazy" decoding="async" /> */}
+        <svg
+ 
+ viewBox="0 0 45 45"
+ 
+>
+ <g
+   stroke="#38373c"
+   strokeWidth="1"
+   strokeLinecap="round"
+   strokeLinejoin="round"
+ >
+   <path id="top-line" d="M10,10 L35,10 Z"></path>
+   <path id="middle-line" d="M10,20 L35,20 Z"></path>
+   <path id="bottom-line" d="M10,30 L35,30 Z"></path>
+ </g>
+</svg>
       </div>
 
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <a className="nav-link" href="#hero">
-          Home
-        </a>
         <a className="nav-link" href="#our-work">
-          Our Work
+         OUR WORK
         </a>
         <a className="nav-link" href="#about">
-          About
+        ABOUT
         </a>
         <a className="nav-link" href="#contact">
-          Contact
+       CONTACT
         </a>
       </div>
     </div>

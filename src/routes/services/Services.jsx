@@ -32,7 +32,10 @@ const servicesData = [
 const Services = () => {
   return (
     <div className="services-container">
-      <h2 className="section-section-header">OUR SERVICES</h2>
+      <div className="services-section-header">
+        <h1>SERVICES</h1>
+        {/* <img src="../../assets/images/Services.png" /> */}
+      </div>
       <div className="services-row">
         {servicesData.map((service, index) => (
           <div className="service-card" key={index}>
