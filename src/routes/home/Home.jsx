@@ -17,7 +17,7 @@ const Home = () => {
 
         <div className="services-section" id="services">
 
-          {/* <Services /> */}
+          <Services />
         </div>
         <div className="tech-stack-section" >
           <TechStack />

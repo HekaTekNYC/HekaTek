@@ -15,8 +15,8 @@ const ProductCard = ({
   isCurrentWork
 }) => {
   return (
-    <div class="product-card-wrapper">
-    <div class="dark-overlay"></div> 
+    // <div className="product-card-wrapper">
+    // <div className="dark-overlay"></div> 
     <div className="product-card-container">  
       <div className="product-img-container"> 
         <div className="product-img-overlay"></div>
@@ -30,7 +30,7 @@ const ProductCard = ({
       </div>
 
     </div>
-    </div>
+    // </div>
    
   );
 };
