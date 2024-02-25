@@ -1,84 +1,55 @@
 .products-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: auto;
-  padding: 0 100px;
-
-
+  width: 100%;
+  padding: 60px 30px;
 
 h2  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 80px;
-    top: 10px; 
-    color: #fff; 
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    text-shadow: 0 0 4px rgba(233, 241, 233, 0.965);
-    z-index: 2;
-    transition: transform 0.3s ease;
+  position: relative;
+  top: 10px;
+  left: -25px;
+  line-height: 6.2rem;
+  z-index: -1
   }
 
   .product-container {
+    position: relative;
+    top: -73px;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: auto;
-    width: 100%;
   }
 }
 
 
+/* Mobile first queries */
 
-// Media Queries
-@media screen and (max-width: 1200px) {
-  .products-container {
-    padding: 0 80px;
- 
-  }
-}
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
+/* Larger than tablet */
+@media (min-width: 550px) {}
 
-
-/* Tablet Portrait*/
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+/* Larger than tablet portrait */
+@media (min-width: 768px) {
 
 }
 
-
-@media screen and (max-width: 992px) {
-  .products-container {
-    padding: 0 60px;
-
-  }
-}
-
-@media screen and (max-width: 768px) {
-  
-}
-
-@media screen and (max-width: 600px) {
-  .products-container {
-    margin: 0;
-    padding: 0 20px;
-    h2 {
-      font-size: 3.3rem;
-    }
-  }
-}
-@media screen and (max-width: 430px) {
-  .products-container {
+/* Larger than tablet portrait */
+@media (min-width: 820px) {
   h2 {
-      font-size: 2rem;
-    }
+    line-height: 9rem;
   }
 }
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
 
 

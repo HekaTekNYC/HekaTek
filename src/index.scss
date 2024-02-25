@@ -43,13 +43,20 @@ h6 {
 h1 {
   font-family: "Bebas Neue", sans-serif;
   margin-top: 10px 0;
-  font-size: 8rem;
+  font-size: 10rem;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
    color:transparent;
 }
 
 h2 {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px 0;
+  font-size: 8rem;
+   color:#E0E3ED;
+}
+
+h3 {
   font-family: "Be Vietnam Pro", sans-serif;
   margin-top: 10px 0;
   font-size: 2.75rem;
@@ -57,12 +64,13 @@ h2 {
 
 }
 
-h3 {
+h4 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 2.25rem;
 }
 
-h4 {
+h5 {
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1.65rem;
 }
 
@@ -94,6 +102,62 @@ ol,
 ul {
   padding-left: 0;
 }
+.form-floating > input:focus + label:after {
+  color: #fff !important;
+}
+
+.contact-btn {
+  font-family: "Gothic A1", sans-serif;
+  background-color: #18181892;
+  box-shadow: rgba(23, 23, 23, 0.365) 0px 3px 15px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+    width: 150px;
+  height: 40px;
+  margin: 15px 0 5px;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 200ms ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #8c8c8e92;
+    box-shadow: rgba(227, 226, 226, 0.268) 0px 4px 8px;
+    color: #ffffff;
+  }
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet portrait */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 12rem;
+  }
+}
+
+/* Larger than tablet portrait */
+@media (min-width: 820px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
 
 // .sparkles-container {
 //   position: fixed;
@@ -168,30 +232,7 @@ ul {
 //   }
 // }
 
-// .contact-btn {
-//   font-family: "Calluna Sans Reg";
-//   background-color: #38383992;
-//   box-shadow: rgba(227, 226, 226, 0.268) 0px 5px 15px;
-//   color: #ffffff;
-//   border-radius: 6px;
-//   border: none;
-//   font-size: 1.1rem;
-//   font-weight: 600;
-//   width: 150px;
-//   height: 40px;
-//   margin: 15px 0 5px;
-//   cursor: pointer;
-//   z-index: 20;
-//   transition: all 200ms ease-in-out;
 
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     background-color: #8c8c8e92;
-//     box-shadow: rgba(227, 226, 226, 0.268) 0px 4px 8px;
-//     color: #ffffff;
-//   }
-// }
 
 // // Media Queries
 // @media screen and (max-width: 768px) {

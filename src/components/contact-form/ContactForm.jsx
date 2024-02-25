@@ -121,7 +121,7 @@ const ContactForm = () => {
           </Form.Group>
       <div className="contact-form-btn">
       <button className="contact-btn" type="submit">
-            Submit
+            SUBMIT
           </button>
           </div>
         </Form>
