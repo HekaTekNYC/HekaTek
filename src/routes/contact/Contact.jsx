@@ -1,11 +1,17 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
+import BlueWave from '../../assets/images/blue-wave.png'
+import TechGrid from '../../assets/images/tech-grid.png'
+import HexGrid from '../../assets/images/trans-tech.png'
 import "./contact.scss"
 
 const Contact = () => {
   return (
     <>
       <div className="contact-container">
+        <div className="blue-wave-container">
+        <img src={HexGrid} alt={'Blue Wave Img'} />
+        </div>
             <h2>About</h2>
          <div className="glass-card">
           <div className="about-text">

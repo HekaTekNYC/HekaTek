@@ -19,7 +19,7 @@ const Home = () => {
           {/* <Services /> */}
         </div>
         <div className="tech-stack-section" >
-          {/* <TechStack /> */}
+          <TechStack />
         </div>
         <div className="product-section" id="our-work">
           <Products />
