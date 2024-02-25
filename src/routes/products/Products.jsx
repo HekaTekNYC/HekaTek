@@ -1,7 +1,7 @@
 import React from "react"
 
 import ProductCard from "../../components/product-cards/ProductCard"
-import { plantHaus, interviewIQ } from "../../data/ProductData"
+import { plantHaus} from "../../data/ProductData"
 import "./products.scss"
 
 const Products = () => {
@@ -9,7 +9,7 @@ const Products = () => {
     <div className="products-container">
       <h2>OUR WORK</h2>
       <div className="product-container">
-        {[plantHaus, interviewIQ].map((product, index) => (
+        {[plantHaus].map((product, index) => (
           <ProductCard
             key={index}
             name={product.name}

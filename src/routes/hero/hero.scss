@@ -3,13 +3,14 @@
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
-  min-height: 900px;
+  height: 100vh;
+  // min-height: 800px;
   background-color: #ffffff; 
   background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
   background-size: 20px 20px;
   padding: 50px;
   text-align: center;
-  position: relative;
+  // position: relative;
 }
 
 .hero-blob-1 {
@@ -51,17 +52,15 @@
   transform: translate(-50%, -50%);
 }
 .hero-hekatek  {
-
-     position: relative;
-
-
+  position: relative;
+  font-size: 8rem;
 }
 
 
 
 .hero-text {
 position: relative;
-font-size: 2cap;
+font-size: 2rem;
 }
   
 

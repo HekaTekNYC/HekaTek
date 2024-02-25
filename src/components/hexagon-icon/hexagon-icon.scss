@@ -9,11 +9,30 @@
   
 .hexagon {
     position: relative;
-    width: 44%;
+    width: 46%;
     height: 76%;
     margin: auto;
     color: white;
-    background: linear-gradient(-180deg, white, #fda3b2);
+    border-radius: 8px;
+    // background: linear-gradient(-180deg, white, #fda3b2);
+    // background: linear-gradient(-180deg, white, #4A8DFE);
+    // background: linear-gradient(-180deg, white, #7859FF);
+    // background: linear-gradient(-180deg, white, #8C45FF);
+    // background: linear-gradient(-180deg, white, #9B36FE);
+    // background: linear-gradient(-180deg, white, #CA4CE3);
+    // background: linear-gradient(-180deg, white, #DB57D8);
+    // background: linear-gradient(-180deg, white, #F37BAA);
+    // background: linear-gradient(-180deg, white, #F47FAA);
+    // background: linear-gradient(-180deg, white, #F68492);
+    // background: linear-gradient(-180deg, white, #02a1b3);
+    // background: linear-gradient(-180deg, rgb(9, 34, 87), #777790);
+    // background: linear-gradient(-160deg, rgba(17, 28, 54, 0.945), #c0c0c7);
+    // background: linear-gradient(135deg, #32abcc 0%, #f5b5d2c9 50%, #0058e6 100%);
+    // background: linear-gradient(135deg, #600c9d 10%, #7485ac 25%, #1c058e 90%);
+    // background: linear-gradient(135deg, rgba(27, 3, 183, 0.697) 10%, rgba(255, 255, 255, 0.386) 50%, rgba(18, 12, 55, 0.444) 90%);
+
+    // background: linear-gradient(135deg, rgba(255, 255, 255, 0.505) 10%, rgba(159, 163, 174, 0.931) 50%, rgba(18, 12, 55, 0.9) 90%);
+    background: linear-gradient(-190deg, #adadb2db 10%, #3c4767b5 50%, #1d1264 100%);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -23,11 +42,7 @@
         z-index: 1;
         margin: auto;
         height: 50px;
-        // font-size: 50px;
-        // color: transparent;
-        // background: linear-gradient(45deg, #a58fe9, #e37682);
-        // background-clip: text;
-        // -webkit-background-clip: text;
+
     }
 
     &:before, &:after {
@@ -39,6 +54,7 @@
     border-radius: 0;
     transition: 0.5s;
     transform-origin: center;
+    border-radius: 8px;
     }
 
     &:before {
