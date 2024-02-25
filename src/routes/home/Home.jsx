@@ -16,19 +16,20 @@ const Home = () => {
         </div>
 
         <div className="services-section" id="services">
+
           {/* <Services /> */}
         </div>
         <div className="tech-stack-section" >
           <TechStack />
+
         </div>
+        <div className="tech-stack-section">{/* <TechStack /> */}</div>
         <div className="product-section" id="our-work">
           <Products />
         </div>
         <div className="contact-section" id="contact">
           <Contact />
-          
         </div>
- 
       </div>
     </>
   )
