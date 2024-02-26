@@ -67,7 +67,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="contact-form-container">
-        <h6>Contact Us</h6>
+        {/* <h6>Contact Us</h6> */}
 
         <Form ref={form} onSubmit={sendEmail}>
           <Row>
@@ -119,10 +119,10 @@ const ContactForm = () => {
               />
             </FloatingLabel>
           </Form.Group>
-      <div className="contact-form-btn">
-      <button className="contact-btn" type="submit">
-            SUBMIT
-          </button>
+          <div className="contact-form-btn">
+            <button className="contact-btn" type="submit">
+              SUBMIT
+            </button>
           </div>
         </Form>
       </div>

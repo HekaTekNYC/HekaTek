@@ -1,8 +1,6 @@
 .services-container {
   height: auto;
   width: 100%;
-  padding: 60px 30px;
-  margin: 40px 0;
 }
 
 h2 {
@@ -22,7 +20,7 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 20px 30px;
+  padding: 0 25px 30px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.12);
   border-radius: 16px;
@@ -35,14 +33,16 @@ h2 {
 
 .service-info {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  text-align: center;
 
   .service-icon {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     margin-bottom: 15px;
   }
 
@@ -60,12 +60,8 @@ h2 {
 
 /* Larger than tablet */
 @media (min-width: 768px) {
-  .services-container {
-    padding: 0 60px;
-
-    .services-card {
-      padding: 0 30px 30px;
-    }
+  .services-card {
+    padding: 0 30px 30px;
   }
 }
 
@@ -75,9 +71,6 @@ h2 {
     flex-direction: row;
     align-items: start;
     gap: 20px;
-
-    .service-info {
-    }
   }
 }
 

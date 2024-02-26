@@ -59,7 +59,7 @@ export const plantHaus = {
     },
   ],
   img: {
-    src: "./assets/images/PlantHaus.png",
+    src: "./assets/images/planthausSQ.png",
     alt: "Plant Haus Preview",
   },
   info: "A dynamic e-commerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This app combines OAuth authentication with React, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
@@ -68,44 +68,44 @@ export const plantHaus = {
   isCurrentWork: false,
 }
 
-// export const interviewIQ = {
-//   name: "InteviewIQ",
-//   desc: "Full Stack Flashcard Application",
-//   icons: [
-//     {
-//       src: IQCSS,
-//       alt: "CSS logo",
-//     },
-//     {
-//       src: IQReact,
-//       alt: "React logo",
-//     },
-//     {
-//       src: IQJS,
-//       alt: "Javascript logo",
-//     },
-//     {
-//       src: IQNode,
-//       alt: "Node logo",
-//     },
-//     {
-//       src: IQMongoDB,
-//       alt: "Mongodb logo",
-//     },
-//     {
-//       src: Express,
-//       alt: "Express logo",
-//     },
-//   ],
-//   img: {
-//     src: IIQ,
-//     alt: "InterviewIQ Preview",
-//   },
-//   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
-//   btn: "Coming Soon",
+export const interviewIQ = {
+  name: "InteviewIQ",
+  desc: "Full Stack Flashcard Application",
+  icons: [
+    {
+      src: IQCSS,
+      alt: "CSS logo",
+    },
+    {
+      src: IQReact,
+      alt: "React logo",
+    },
+    {
+      src: IQJS,
+      alt: "Javascript logo",
+    },
+    {
+      src: IQNode,
+      alt: "Node logo",
+    },
+    {
+      src: IQMongoDB,
+      alt: "Mongodb logo",
+    },
+    {
+      src: Express,
+      alt: "Express logo",
+    },
+  ],
+  img: {
+    src: IIQ,
+    alt: "InterviewIQ Preview",
+  },
+  info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
+  btn: "Coming Soon",
 
-//   isCurrentWork: true,
-// }
+  isCurrentWork: true,
+}
 
 // export const dangoDB = {
 //   name: "dangoDb",

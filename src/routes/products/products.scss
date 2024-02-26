@@ -3,14 +3,13 @@
   flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 60px 30px;
 
-h2  {
-  position: relative;
-  top: 10px;
-  left: -25px;
-  line-height: 6.2rem;
-  z-index: -1
+  h2 {
+    position: relative;
+    top: 10px;
+    left: -25px;
+    line-height: 6.2rem;
+    z-index: -1;
   }
 
   .product-container {
@@ -24,18 +23,18 @@ h2  {
   }
 }
 
-
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+}
 
 /* Larger than tablet */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+}
 
 /* Larger than tablet portrait */
 @media (min-width: 768px) {
-
 }
 
 /* Larger than tablet portrait */
@@ -46,10 +45,9 @@ h2  {
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
-
-
+@media (min-width: 1200px) {
+}

@@ -1,12 +1,10 @@
 .contact-container {
   display: flex;
   position: relative;
-  flex-direction: column; 
-
-  // height: 100%;
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding: 0 30px;
+  margin-top: 400px;
 
   h2 {
     position: relative;
@@ -14,74 +12,110 @@
     left: -25px;
     line-height: 6.2rem;
     z-index: -1;
+  }
+  .blue-wave-container {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    max-width: 800px;
+    //to align it to the top you set it to zero and to align it to the right you also set that to zero
+    //this is for the blue wave and other image placement settings
+    // top: -370px;
+    // bottom: 0;
+    // right: -120px;
+    // transform: rotate(360deg);
+    //below is for the tech image:
+    bottom: 770px;
+    right: -90px;
+    transform: rotate(190deg);
 
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
-    .blue-wave-container {
-      position: absolute;
-      z-index: -1;
-      width: 70%;
-      max-width: 800px;
-      //to align it to the top you set it to zero and to align it to the right you also set that to zero
-      //this is for the blue wave and other image placement settings
-      // top: -370px;
-      // bottom: 0;
-      // right: -120px; 
-      // transform: rotate(360deg);
-      //below is for the tech image:
-      bottom: 770px;
-      right: -90px; 
-      transform: rotate(190deg);
-
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    }
-    
-
+  }
 }
 
 .glass-card {
   position: relative;
   top: -30px;
   left: 0;
-
   border-radius: 10px;
-
   padding: 30px;
-  background: rgba(128, 136, 149, 0.2);
+  background: #c4c2c218;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.102);
   box-shadow: rgba(227, 226, 226, 0.268) 0px 4px 8px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(154, 150, 150, 0.201);
-  z-index: -1;
+  z-index: 1;
+  overflow: hidden;
+  --borderWidth: 3px;
+
+  // &:after {
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+
+  //   position: absolute;
+  //   top: calc(-1 * var(--borderWidth));
+  //   left: calc(-1 * var(--borderWidth));
+  //   height: calc(100% + var(--borderWidth) * 2);
+  //   width: calc(100% + var(--borderWidth) * 2);
+  //   background: linear-gradient(
+  //     60deg,
+  //     #f79533,
+  //     #f37055,
+  //     #ef4e7b,
+  //     #a166ab,
+  //     #5073b8,
+  //     #1098ad,
+  //     #07b39b,
+  //     #6fba82
+  //   );
+  //   border-radius: 16px; // Match the border-radius of .glass-card
+  //   z-index: -2; // Might need adjustment based on your layout
+  //   animation: animatedgradient 3s ease alternate infinite;
+  //   background-size: 300% 300%;
+  // }
+
   .about-text {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 40px;
+    text-align: justify;
+    // justify-content: center;
+    // align-content: center;
+    // padding-bottom: 40px;
 
     p {
       font-size: 1rem;
     }
-
-//when we go up in size on teh screen we will need 50% on width
-  } 
+  }
 }
-  
-  .contact-info-right {
-
-
-
-  .contact-info-right {
+.contact-header {
+  h2 {
+    position: relative;
+    top: -200px;
+    z-index: -1;
   }
 }
 
+.contact-info-right {
+  padding-top: 30px;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* Mobile first queries */
 
 /* Larger than mobile */
@@ -126,13 +160,61 @@
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  // .contact-container {
+  //   .glass-card {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //   }
+  //   .about-text {
+  //     p {
+  //       font-size: 1.2rem;
+  //       text-align: justify;
+  //     }
+  //     .contact-info-right {
+  //     }
+  //   }
+  // }
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+  .contact-container {
+    .glass-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .about-text {
+      width: 50%;
+
+      p {
+        font-size: 1.2rem;
+      }
+      .contact-info-right {
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .contact-container {
-    // height: 90vh;
-  }
+  // .contact-container {
+  //   .glass-card {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-evenly;
+  //     align-items: center;
+  //   }
+  //   .about-text {
+  //     // width: 50%;
+  //     p {
+  //       font-size: 1.2rem;
+  //       text-align: justify;
+  //     }
+  //     .contact-info-right {
+  //     }
+  //   }
+  // }
 }
+// }

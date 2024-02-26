@@ -10,18 +10,16 @@ import "./home.scss"
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="background-dots">
         <div className="hero-section" id="hero">
           <Hero />
         </div>
 
         <div className="services-section" id="services">
-
           <Services />
         </div>
-        <div className="tech-stack-section" >
+        <div className="tech-stack-section">
           <TechStack />
-
         </div>
         <div className="tech-stack-section">{/* <TechStack /> */}</div>
         <div className="product-section" id="our-work">
