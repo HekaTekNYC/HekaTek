@@ -1,5 +1,4 @@
 .tech-stack-container {
-  width: 80%;
   max-height: 50vh;
   overflow: hidden;
   margin: 20px auto;
@@ -7,12 +6,12 @@
 
 .scrolling-row {
   display: flex;
-  overflow-x: auto; 
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: #a58fe9 #e37682;
   margin-bottom: 20px; // Space between rows
-
+  scrollbar-width: none;
   &:nth-child(odd) .scrolling-icons {
     animation: scroll-left 20s linear infinite;
   }

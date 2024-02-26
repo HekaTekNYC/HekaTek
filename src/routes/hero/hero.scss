@@ -1,14 +1,13 @@
 .hero-container {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   // min-height: 800px;
-  background-color: #ffffff; 
-  background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
-  background-size: 20px 20px;
-  padding: 50px;
+  // background-color: #ffffff;
+  // background-size: 20px 20px;
+  // padding: 50px;
   text-align: center;
   // position: relative;
 }
@@ -18,7 +17,7 @@
   top: 140px;
   left: 50px;
   z-index: 0;
- 
+
   img {
     display: block;
     max-width: 100%;
@@ -31,7 +30,7 @@
   left: 370px;
   transform: rotateY(180deg);
   z-index: 0;
- 
+
   img {
     display: block;
     max-width: 100%;
@@ -51,36 +50,52 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.hero-hekatek  {
+.hero-hekatek {
   position: relative;
+  line-height: 0.9;
   font-size: 8rem;
 }
 
-
-
 .hero-text {
-position: relative;
-font-size: 2rem;
+  position: relative;
+  font-size: 1.6rem;
 }
-  
-
 
 // Media Queries
 
-
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+}
 
-
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 820px) {
+  .hero-hekatek {
+    font-size: 10rem;
+  }
+  .hero-text {
+    width: 70%;
+  }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .hero-hekatek {
+    font-size: 15rem;
+    line-height: 0.9;
+    margin: 0;
+  }
+  .hero-text {
+    font-size: 2.4rem;
+    width: 80%;
+  }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}

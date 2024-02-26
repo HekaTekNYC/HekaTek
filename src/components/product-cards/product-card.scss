@@ -117,7 +117,6 @@
 // }
 // -----------------------
 
-
 // .product-card-wrapper {
 //   position: relative;
 //   // Ensure this wrapper is as large as the area you want to darken on hover
@@ -152,12 +151,11 @@
 //   &:hover {
 //     transition: transform 0.5s ease, z-index 0s;
 //     // transition: max-height 0.5s ease-in-out;
-//     transform: scale(1.5); 
+//     transform: scale(1.5);
 //     height: 600px;
 //     cursor: pointer;
 //     z-index: 100;
-    
-    
+
 //     .product-info {
 //         .short-desc {
 //           display: none;
@@ -167,7 +165,7 @@
 //         }
 //         z-index: 101;
 //     }
-    
+
 //   }
 // }
 
@@ -190,9 +188,6 @@
 //   }
 // }
 
-
-
-
 // .inverted-border {
 //   position: relative;
 //   height: 100%;
@@ -210,7 +205,7 @@
 //     width: 50px;
 //     border-bottom-right-radius: 50%;
 //     box-shadow: 0 20px 0 0 #fff;
-    
+
 //   }
 // }
 
@@ -244,8 +239,6 @@
 //   }
 
 // }
-
-
 
 // /* Mobile first queries */
 
@@ -284,37 +277,30 @@
 // /* Larger than Desktop HD */
 // @media (min-width: 1200px) {}
 
-
-
-
-
 .product-card-container {
-  // display: block;
   position: relative;
   height: 310px;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 3px -3px 15px;
-  margin: 40px 0px;
   z-index: 1;
   transition: all 0.5s ease;
+  margin: 10px 0;
 
   &:hover {
     height: 500px;
     cursor: pointer;
 
     .product-info {
-        .short-desc {
-          display: none;
-        }
-        .long-desc{
-      
-          display: block;
-          height: auto;
-  
-      
-        }
+      display: block;
+      height: 50%;
+      .short-desc {
+        display: none;
+      }
+      .long-desc {
+        display: block;
+      }
     }
   }
 }
@@ -328,8 +314,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(213, 209, 255, 0.29);
-    z-index:3;
+    background-color: rgba(243, 242, 255, 0.29);
+    z-index: 3;
     border-radius: 20px;
   }
 
@@ -337,9 +323,6 @@
     border-radius: 20px;
   }
 }
-
-
-
 
 .inverted-border {
   position: relative;
@@ -351,14 +334,13 @@
 
   &:before {
     content: "";
-    position:absolute;
-    top:-40px;
-    right:0;
-    height:40px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 40px;
     width: 50px;
     border-bottom-right-radius: 50%;
     box-shadow: 0 20px 0 0 #fff;
-    
   }
 }
 
@@ -371,7 +353,8 @@
   height: auto;
   width: 100%;
   padding: 20px;
-  box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px,  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px,
+    rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.5s ease;
   z-index: 5;
 
@@ -383,26 +366,22 @@
     font-size: 1.5rem;
   }
 
-  .short-desc, .long-desc {
+  .short-desc,
+  .long-desc {
     font-size: 1rem;
   }
 
-  .long-desc{
-    clear: both;
-    height: 0px;
-    overflow: hidden;
-    transition: height .4s ease;
+  .long-desc {
+    display: none;
+    position: absolute;
+    transition: display 0.4s ease;
   }
-
 }
-
-
 
 /* Mobile first queries */
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
   .product-card-container {
     max-height: 400px;
   }
@@ -418,7 +397,7 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
   .product-card-container {
-   height: 600px;
+    height: 600px;
   }
 }
 
@@ -426,12 +405,13 @@
 @media (min-width: 820px) {
   .product-card-container {
     height: 600px;
-   }
+  }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
+@media (min-width: 1200px) {
+}

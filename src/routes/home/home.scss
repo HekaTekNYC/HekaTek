@@ -1,27 +1,71 @@
-// .home {
+.background-dots {
+  // background-image: url("../../assets/images/DotGridBkgrd.png") !important;
+  // background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+  // background-size: cover;
+  // background-position: center;
+  // height: 100%;
+  // width: auto;
+}
 
-//   background-image: url('../../assets/images/DotGridBkgrd.png') !important;
-// }
-
-.hero-section {
+.hero-section,
+.product-section,
+.tech-stack-section,
+.services-section,
+.contact-section {
   height: auto;
+  padding: 0 30px;
+}
+
+.product-section,
+.tech-stack-section,
+.services-section,
+.contact-section {
+  margin: 60px 0;
 }
 
 .product-section {
-  height: auto;
-
 }
 
 .tech-stack-section {
-  height: auto;
 }
 
 .services-section {
-  height: auto;
 }
 
-
-
 .contact-section {
-  height: auto;
+}
+
+// Media queries
+
+/* Larger than tablet portrait */
+@media (min-width: 768px) {
+  .hero-section,
+  .product-section,
+  .tech-stack-section,
+  .services-section,
+  .contact-section {
+    padding: 0 60px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .hero-section,
+  .product-section,
+  .tech-stack-section,
+  .services-section,
+  .contact-section {
+    padding: 0 80px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .hero-section,
+  .product-section,
+  .tech-stack-section,
+  .services-section,
+  .contact-section {
+    padding: 0 100px;
+  }
 }
