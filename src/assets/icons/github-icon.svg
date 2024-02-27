@@ -6,8 +6,8 @@
   <!-- Use the color2 linear gradient instead of the original colors -->
   <defs>
     <linearGradient id="color2" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="60%" stop-color="#2374ff"/>
-      <stop offset="100%" stop-color=" #5000e4"/>
+      <stop offset="60%" stop-color="#efced5"/>
+      <stop offset="100%" stop-color=" #ffaaaa"/>
     </linearGradient>
   </defs>
 

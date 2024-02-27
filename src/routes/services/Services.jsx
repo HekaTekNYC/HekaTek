@@ -5,27 +5,27 @@ import "./services.scss"
 const servicesData = [
   {
     name: "WEB DEVELOPMENT",
-    svgPath: "../../assets/icons/website.svg",
+    svgPath: "../../assets/icons/webdev.svg",
     description:
       "We offer custom development services tailored to meet your unique needs, leveraging our expertise in various frameworks and JavaScript to create responsive websites.",
   },
   {
-    name: "CODE OPTIMIZATION",
-    svgPath: "../../assets/icons/solutions.svg",
-    description:
-      "We review and refine existing codebases, enhancing their efficiency and readability. We focus on optimizing performance and ensuring best practices are followed.",
-  },
-  {
     name: "DEBUGGING",
-    svgPath: "../../assets/icons/bug.svg",
+    svgPath: "../../assets/icons/bugz.svg",
     description:
       "Our passion lies in tackling complex challenges and solving problems. Let's find some bugs and get them out of there!",
   },
   {
     name: "DIGITAL SOLUTIONS",
-    svgPath: "../../assets/icons/solutions.svg",
+    svgPath: "../../assets/icons/gearhead.svg",
     description:
       "Our range of digital services is custom-fit to your specific needs, ensuring quality and creativity from start to finish, with a keen eye on every detail.",
+  },
+  {
+    name: "CODE OPTIMIZATION",
+    svgPath: "../../assets/icons/optimize.svg",
+    description:
+      "We review and refine existing codebases, enhancing their efficiency and readability. We focus on optimizing performance and ensuring best practices are followed.",
   },
 ]
 

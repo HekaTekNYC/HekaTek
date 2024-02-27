@@ -1,10 +1,15 @@
-import React from "react";
-import "./hero.scss";
+import React from "react"
+import Blob from "../../assets/images/sunset-blob.svg"
+
+import "./hero.scss"
 
 const Hero = () => {
   return (
-    <div className="hero-container"> 
-    
+    <div className="hero-container">
+      <div className="blob">
+        {/* <img src={require("../assets/blob.gif")} alt="loading..." /> */}
+        <img src={Blob} alt="blob" />
+      </div>
       {/* <div className="hero-blob-1">
         <img src="../../assets/images/Blob.png" />
       </div>
@@ -15,13 +20,13 @@ const Hero = () => {
         <img src="../../assets/images/BlobBackground.png" />
       </div> */}
       {/* <h1 className="hero-hekatek transparent-text">HekaTek</h1>  */}
-      <h1 className="hero-hekatek">HekaTek</h1> 
+      <h1 className="hero-hekatek">HekaTek</h1>
       <div className="hero-text">
         FREELANCERS WITH A PASSION FOR BRINGING YOUR VISION TO LIFE.
-        </div> 
-        </div> 
+      </div>
+    </div>
     // </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

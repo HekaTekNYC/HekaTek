@@ -41,13 +41,17 @@ h2 {
   text-align: center;
 
   .service-icon {
-    height: 70px;
-    width: 70px;
+    img {
+      height: 70px;
+      width: 70px;
+    }
+
     margin-bottom: 15px;
   }
 
   .service-header {
-    color: #5c5e6c;
+    color: #333334;
+    font-weight: 600;
   }
 
   .service-text {

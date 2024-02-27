@@ -2,6 +2,7 @@ import React from "react"
 import TechIcon from "../tech-icon/Tech-icon"
 import Button from "../button/Button"
 import "./product-card.scss"
+import { useState } from "react"
 
 const ProductCard = ({
   name,
@@ -15,7 +16,7 @@ const ProductCard = ({
 }) => {
   return (
     // <div className="product-card-wrapper">
-    // <div className="dark-overlay"></div>
+    //   <div className="dark-overlay"></div>
     <div className="product-card-container">
       <div className="product-img-container">
         <div className="product-img-overlay"></div>

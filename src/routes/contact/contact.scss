@@ -1,10 +1,10 @@
 .contact-container {
   display: flex;
-  position: relative;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  min-height: auto;
   width: 100%;
-  margin-top: 400px;
+  // margin-top: 400px;
 
   h2 {
     position: relative;
@@ -93,13 +93,6 @@
     }
   }
 }
-.contact-header {
-  h2 {
-    position: relative;
-    top: -200px;
-    z-index: -1;
-  }
-}
 
 .contact-info-right {
   padding-top: 30px;
@@ -133,8 +126,7 @@
 
     .about-text {
       flex: 1;
-      padding-top: 25px;
-      padding-right: 30px;
+      padding: 25px 30px 0 0;
       justify-content: center;
       align-items: center;
 

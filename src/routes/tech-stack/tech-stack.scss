@@ -1,28 +1,81 @@
 .tech-stack-container {
   max-height: 50vh;
-  overflow: hidden;
-  margin: 20px auto;
+  overflow-y: hidden;
+  position: relative;
 }
 
-.scrolling-row {
+.row-container {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: #a58fe9 #e37682;
-  margin-bottom: 20px; // Space between rows
   scrollbar-width: none;
-  &:nth-child(odd) .scrolling-icons {
-    animation: scroll-left 20s linear infinite;
-  }
+  height: 143px;
+}
 
-  &:nth-child(even) .scrolling-icons {
-    animation: scroll-right 20s linear infinite;
-  }
+.row-container::before,
+.row-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Adjust the width based on your preference */
+  z-index: 2;
+}
+// .row-container::before {
+//   left: -4px;
+//   background: linear-gradient(to right, #ffffff 0%, transparent 50%);
+// }
+
+// .row-container::after {
+//   right: -4px;
+//   background: linear-gradient(to left, #ffffffc8 0%, transparent 50%);
+// }
+.row-1,
+.row-2 {
+  display: flex;
 }
 
 .scrolling-icons {
   display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.row-1 .scrolling-icons {
+  animation: scroll-left 60s linear infinite;
+}
+
+.row-2 .scrolling-icons {
+  animation: scroll-right 60s linear infinite;
+}
+
+.scrolling-icons::before,
+.scrolling-icons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Width of the fade effect */
+  pointer-events: none;
+}
+
+.scrolling-icons::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.scrolling-icons::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 @keyframes scroll-left {
@@ -30,13 +83,13 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll-right {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   to {
     transform: translateX(0);
