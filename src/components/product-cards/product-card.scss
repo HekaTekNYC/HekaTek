@@ -117,190 +117,53 @@
 // }
 // -----------------------
 
-// .product-card-wrapper {
-//   position: relative;
-//   // Ensure this wrapper is as large as the area you want to darken on hover
+.product-card-wrapper {
+  position: relative;
+  // Ensure this wrapper is as large as the area you want to darken on hover
 
-//   &:hover .dark-overlay {
-//     display: block; // Show the overlay on hover
-//   }
-// }
+  &:hover .dark-overlay {
+    display: block; // Show the overlay on hover
+  }
+}
 
-// .dark-overlay {
-//   display: none; // Hide the overlay by default
-//   position: fixed; // or 'absolute' depending on your layout
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: rgba(71, 70, 70, 0.891);
-//   z-index: 2; // Adjust as needed to ensure it's above the content you want to darken but below the expanded card
-// }
-
-// .product-card-container {
-//   position: relative;
-//   height: 310px;
-//   width: 100%;
-//   overflow: hidden;
-//   border-radius: 20px;
-//   box-shadow: rgba(0, 0, 0, 0.35) 3px -3px 15px;
-//   margin: 40px 0px;
-//   z-index: 3;
-//   transition: all 0.5s ease;
-
-//   &:hover {
-//     transition: transform 0.5s ease, z-index 0s;
-//     // transition: max-height 0.5s ease-in-out;
-//     transform: scale(1.5);
-//     height: 600px;
-//     cursor: pointer;
-//     z-index: 100;
-
-//     .product-info {
-//         .short-desc {
-//           display: none;
-//         }
-//         .long-desc{
-//           display: block;
-//         }
-//         z-index: 101;
-//     }
-
-//   }
-// }
-
-// .product-img-container {
-//   width: 100%;
-//   height: 100%;
-//   z-index: 3;
-
-//   .product-img-overlay {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(213, 209, 255, 0.29);
-//     z-index:3;
-//     border-radius: 20px;
-//   }
-
-//   img {
-//     border-radius: 20px;
-//   }
-// }
-
-// .inverted-border {
-//   position: relative;
-//   height: 100%;
-//   width: 100%;
-//   border-radius: 20px 0 20px 20px;
-//   background-color: #fff;
-//   box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px;
-
-//   &:before {
-//     content: "";
-//     position:absolute;
-//     top:-40px;
-//     right:0;
-//     height:40px;
-//     width: 50px;
-//     border-bottom-right-radius: 50%;
-//     box-shadow: 0 20px 0 0 #fff;
-
-//   }
-// }
-
-// .product-info {
-//   position: absolute;
-//   bottom: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   height: auto;
-//   width: 100%;
-//   padding: 20px;
-//   box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px,  rgba(0, 0, 0, 0.35) 0px 5px 15px;
-//   transition: all 0.5s ease;
-//   z-index: 5;
-
-//   p {
-//     margin: 0;
-//   }
-
-//   .product-name {
-//     font-size: 1.5rem;
-//   }
-
-//   .short-desc, .long-desc {
-//     font-size: 1rem;
-//   }
-
-//   .long-desc{
-//     display: none;
-//   }
-
-// }
-
-// /* Mobile first queries */
-
-// /* Larger than mobile */
-// @media (min-width: 400px) {
-
-//   .product-card-container {
-//     max-height: 400px;
-//   }
-// }
-
-// /* Larger than tablet */
-// @media (min-width: 550px) {
-//   .product-card-container {
-//     height: 400px;
-//   }
-// }
-
-// /* Larger than tablet */
-// @media (min-width: 750px) {
-//   .product-card-container {
-//    height: 600px;
-//   }
-// }
-
-// /* Larger than tablet */
-// @media (min-width: 820px) {
-//   .product-card-container {
-//     height: 600px;
-//    }
-// }
-
-// /* Larger than desktop */
-// @media (min-width: 1000px) {}
-
-// /* Larger than Desktop HD */
-// @media (min-width: 1200px) {}
+.dark-overlay {
+  display: none; // Hide the overlay by default
+  position: fixed; // or 'absolute' depending on your layout
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(71, 70, 70, 0.891);
+  z-index: 2; // Adjust as needed to ensure it's above the content you want to darken but below the expanded card
+}
 
 .product-card-container {
   position: relative;
   height: 310px;
   width: 100%;
-  // overflow: hidden;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 3px -3px 15px;
-  z-index: 1;
+  margin: 40px 0px;
+  z-index: 3;
   transition: all 0.5s ease;
-  margin: 10px 0;
 
   &:hover {
-    height: 500px;
+    transition: transform 0.5s ease, z-index 0s;
+    // transition: max-height 0.5s ease-in-out;
+    transform: scale(1.5);
+    height: 600px;
     cursor: pointer;
+    z-index: 100;
 
     .product-info {
-      display: block;
-      height: 50%;
       .short-desc {
         display: none;
       }
       .long-desc {
         display: block;
       }
+      z-index: 101;
     }
   }
 }
@@ -308,13 +171,13 @@
 .product-img-container {
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
 
   .product-img-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(243, 242, 255, 0.29);
+    background-color: rgba(213, 209, 255, 0.29);
     z-index: 3;
     border-radius: 20px;
   }
@@ -373,8 +236,6 @@
 
   .long-desc {
     display: none;
-    position: absolute;
-    transition: display 0.4s ease;
   }
 }
 
@@ -415,3 +276,235 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
 }
+
+// .product-card-container {
+//   position: relative;
+//   height: 310px;
+//   width: 100%;
+//   // overflow: hidden;
+//   border-radius: 20px;
+//   box-shadow: rgba(0, 0, 0, 0.35) 3px -3px 15px;
+//   z-index: 1;
+//   transition: all 0.5s ease;
+//   margin: 10px 0;
+
+//   &:hover {
+//     height: 500px;
+//     cursor: pointer;
+
+//     .product-info {
+//       display: block;
+//       height: 50%;
+//       .short-desc {
+//         display: none;
+//       }
+//       .long-desc {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+
+// .product-img-container {
+//   width: 100%;
+//   height: 100%;
+//   z-index: 2;
+
+//   .product-img-overlay {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(243, 242, 255, 0.29);
+//     z-index: 3;
+//     border-radius: 20px;
+//   }
+
+//   img {
+//     border-radius: 20px;
+//   }
+// }
+
+// .inverted-border {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 20px 0 20px 20px;
+//   background-color: #fff;
+//   box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: -40px;
+//     right: 0;
+//     height: 40px;
+//     width: 50px;
+//     border-bottom-right-radius: 50%;
+//     box-shadow: 0 20px 0 0 #fff;
+//   }
+// }
+
+// .product-info {
+//   position: absolute;
+//   bottom: 0;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   height: auto;
+//   width: 100%;
+//   padding: 20px;
+//   box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px,
+//     rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//   transition: all 0.5s ease;
+//   z-index: 5;
+
+//   p {
+//     margin: 0;
+//   }
+
+//   .product-name {
+//     font-size: 1.5rem;
+//   }
+
+//   .short-desc,
+//   .long-desc {
+//     font-size: 1rem;
+//   }
+
+//   .long-desc {
+//     display: none;
+//     position: absolute;
+//     transition: display 0.4s ease;
+//   }
+// }
+
+// .product-card-container {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   height: 310px;
+//   // max-height: 630px;
+//   box-shadow: rgba(0, 0, 0, 0.35) 3px -3px 15px;
+//   border-radius: 20px;
+//   margin: 40 0;
+//   z-index: 1;
+
+//   &:hover {
+//     // height: auto;
+
+//     .product-info {
+//       flex: 2;
+//       .short-desc {
+//         display: none;
+//       }
+//       .long-desc {
+//         display: block;
+//         margin-bottom: 40px;
+//       }
+//     }
+//   }
+// }
+// .product-img-container {
+//   flex: 1;
+//   // width: 100%;
+//   // height: 100%;
+//   z-index: 2;
+
+//   // .product-img-overlay {
+//   //   position: absolute;
+//   //   width: 100%;
+//   //   height: 100%;
+//   //   background-color: rgba(21, 12, 131, 0.29);
+//   //   z-index: 2;
+//   //   border-radius: 20px;
+//   // }
+
+//   img {
+//     border-radius: 20px;
+//   }
+// }
+
+// .inverted-border {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 20px 0 20px 20px;
+//   background-color: #b3a8ff;
+//   box-shadow: rgba(185, 167, 254, 0.1) 0px -4px 12px;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: -40px;
+//     right: 0;
+//     height: 40px;
+//     width: 50px;
+//     border-bottom-right-radius: 50%;
+//     box-shadow: 0 20px 0 0 #b3a8ff;
+//   }
+// }
+
+// .product-info {
+//   flex: 1;
+//   position: relative;
+//   top: -90px;
+//   background-color: #b3a8ff;
+//   padding: 20px;
+//   z-index: 4;
+
+//   .short-desc,
+//   .long-desc {
+//     font-size: 1rem;
+//   }
+
+//   .long-desc {
+//     // position: relative;
+//     display: none;
+//   }
+// }
+
+// /* Mobile first queries */
+
+// /* Larger than mobile */
+// @media (min-width: 400px) {
+//   .product-card-container {
+//     max-height: 400px;
+//   }
+// }
+
+// /* Mobile first queries */
+
+// /* Larger than mobile */
+// @media (min-width: 400px) {
+//   .product-card-container {
+//     max-height: 400px;
+//   }
+// }
+// /* Larger than tablet */
+// @media (min-width: 550px) {
+//   .product-card-container {
+//     height: 400px;
+//   }
+// }
+
+// /* Larger than tablet */
+// @media (min-width: 768px) {
+//   .product-card-container {
+//     height: 600px;
+//   }
+// }
+
+// /* Larger than tablet */
+// @media (min-width: 820px) {
+//   .product-card-container {
+//     height: 600px;
+//   }
+// }
+
+// /* Larger than desktop */
+// @media (min-width: 1000px) {
+// }
+
+// /* Larger than Desktop HD */
+// @media (min-width: 1200px) {
+// }
