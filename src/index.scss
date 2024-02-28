@@ -1,5 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
-
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+  --gradient: linear-gradient(
+    90deg,
+    #ee6452cf,
+    rgba(128, 0, 128, 0.564),
+    #ee645292
+  );
+}
 body {
   // background-image: url("./assets/images/Desktop_Dot_Grid.png");
   // background-size: cover;
@@ -14,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #424242;
-  background-color: #fff;
+  background-color: #ffffffed;
 }
 
 html {
@@ -49,8 +58,24 @@ h1 {
   margin-top: 10px 0;
   font-size: 10rem;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  color: transparent;
+  // -webkit-text-stroke-color: black;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
 h2 {
@@ -69,13 +94,13 @@ h3 {
 
 h4 {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.2rem;
 }
 
 h5 {
   font-family: "Gothic A1", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 00;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 p {

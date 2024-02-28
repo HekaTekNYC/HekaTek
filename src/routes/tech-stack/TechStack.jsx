@@ -18,7 +18,7 @@ import Redux from "../../assets/icons/Redux-48.svg"
 import Sass from "../../assets/icons/sass.svg"
 import Node from "../../assets/icons/node1js.svg"
 import MongoIcon from "../../assets/icons/mongodb.svg"
-import Webpack from "../../assets/icons/webpack-144.svg"
+import Webpack from "../../assets/icons/webpack.svg"
 import Postgresql from "../../assets/icons/postgresql.svg"
 import HTML5Icon from "../../assets/icons/html5.svg"
 import RORIcon from "../../assets/icons/Ruby-on-Rails.svg"
@@ -74,16 +74,18 @@ const TechStack = () => {
 
   return (
     <div className="tech-stack-container">
-      <div className="row-container row-1">
+      {/* <div className="tech-row"> */}
+      <div className="tech-row-container row-1">
         <div className="scrolling-row">
           <div className="scrolling-icons">{renderIcons(firstRowIcons)}</div>
         </div>
       </div>
-      <div className="row-container row-2">
+      <div className="tech-row-container row-2">
         <div className="scrolling-row">
           <div className="scrolling-icons">{renderIcons(secondRowIcons)}</div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   )
 }

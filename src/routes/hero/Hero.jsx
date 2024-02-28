@@ -1,25 +1,24 @@
 import React from "react"
-import Blob from "../../assets/images/sunset-blob.svg"
+import Blob from "../../assets/images/sunset-blob2.svg"
+import Blob1 from "../../assets/images/sunset-blob2.svg"
+import Glass1 from "../../assets/images/glass-blob.svg"
+import Glass2 from "../../assets/images/glass-blob.svg"
 
 import "./hero.scss"
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="blob">
-        {/* <img src={require("../assets/blob.gif")} alt="loading..." /> */}
+      <div className="blob1">
         <img src={Blob} alt="blob" />
       </div>
-      {/* <div className="hero-blob-1">
-        <img src="../../assets/images/Blob.png" />
-      </div>
-      <div className="hero-blob-2">
-        <img src="../../assets/images/Blob.png" />
-      </div>
-      <div className="glassmorphic-blob">
-        <img src="../../assets/images/BlobBackground.png" />
-      </div> */}
-      {/* <h1 className="hero-hekatek transparent-text">HekaTek</h1>  */}
+      {/* <div className="blob2">
+        <img src={Blob1} alt="blob" />
+      </div>{" "} */}
+      {/* <div className="glass1">
+        <img src={Glass1} alt="blob" />
+      </div>{" "} */}
+
       <h1 className="hero-hekatek">HekaTek</h1>
       <div className="hero-text">
         FREELANCERS WITH A PASSION FOR BRINGING YOUR VISION TO LIFE.
