@@ -13,18 +13,73 @@
   // position: relative;
 }
 
-.blob {
+.blob1 {
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  right: 450px;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  animation: rotateAnimation 40s infinite linear;
+
+  img {
+    height: 950px;
+    width: 950px;
+  }
+}
+
+.blob2 {
   z-index: 2;
   position: absolute;
   top: 100px;
-  right: 170px;
-  -webkit-filter: blur(40px);
-  filter: blur(40px);
-  animation: rotateAnimation 15s ease-in-out infinite alternate;
+  left: 130px;
+  -webkit-filter: blur(60px);
+  filter: blur(60px);
+  animation: rotateAnimation 40s infinite linear;
 
   img {
-    height: 800px;
-    width: 800px;
+    height: 650px;
+    width: 650px;
+  }
+}
+
+.glass1 {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  // animation: rotateAnimation 15s ease-in-out infinite linear;
+
+  img {
+    height: 950px;
+    width: 950px;
+  }
+}
+
+.glass2 {
+  z-index: 2;
+  position: absolute;
+  bottom: -200px;
+  right: 50px;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  // animation: rotateAnimation 230s ease-in-out infinite alternate,
+  // MoveUpDown 20s linear infinite;
+  img {
+    height: 550px;
+    width: 550px;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -200px;
+  }
+  50% {
+    bottom: 600px;
   }
 }
 
@@ -34,48 +89,10 @@
   }
 
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
-.hero-blob-1 {
-  position: absolute;
-  top: 140px;
-  left: 50px;
-  z-index: 0;
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-}
-
-.hero-blob-2 {
-  position: absolute;
-  top: 140px;
-  left: 370px;
-  transform: rotateY(180deg);
-  z-index: 0;
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-}
-.glassmorphic-blob {
-  position: absolute;
-  width: 500px; // Adjust the size as needed
-  height: 300px; // Adjust the size as needed
-  background-color: rgba(255, 255, 255, 0.2); // Semi-transparent white
-  backdrop-filter: blur(10px); // Blur effect for the glassmorphism
-  border-radius: 30%; // Circular shape, adjust for different blob shapes
-  // z-index: ; // Ensures it's above the background blobs but below the text
-
-  // Optional: Adjust positioning as needed
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .hero-hekatek {
   position: relative;
   line-height: 0.9;

@@ -8,6 +8,7 @@ const HexagonIcon = ({ icon }) => {
       <div className="turning-wrapper">
         <div className="hexagon-wrapper">
           <div className="hexagon">
+            <div className="icon-wrapper"></div>
             <img src={icon.src} alt={icon.alt} />
           </div>
         </div>
