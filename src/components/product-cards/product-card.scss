@@ -2,19 +2,27 @@
   position: relative;
   display: block;
   height: auto;
-  width: 600px;
+  width: auto;
   border-radius: 16px;
   overflow: hidden;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: #d0cdde 0px 13px 27px -5px,
+    rgb(208, 205, 222, 0.3) 0px 8px 16px -8px;
 
   &:hover {
+    .card-overlay {
+      max-height: 1000px;
+    }
+
     .product-info {
       padding: 20px 20px 0;
     }
-    .card-overlay {
-      max-height: 1000px;
+    .image-overlay1,
+    .image-overlay2,
+    .image-overlay3,
+    .image-overlay4 {
+      display: none;
     }
   }
 }
@@ -29,22 +37,52 @@
   display: block;
 }
 
-.image-overlay {
+.image-overlay2,
+.image-overlay3 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  // background-color: #b4b4d24e;
-  background-color: #dbcbd841;
-  background-image: linear-gradient(316deg, #dbcbd857 0%, #2e365756 64%);
+  background-color: #b4b4d24e;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    150deg,
+    rgba(104, 104, 112, 0.2) 0%,
+    rgba(155, 158, 189, 0.3) 25%,
+    rgba(208, 209, 227, 0.611) 50%,
+    rgba(155, 158, 189, 0.3) 75%,
+    rgba(104, 104, 112, 0.2) 100%
+  );
+  transition: all 0.5s ease-in-out;
+}
+.image-overlay1,
+.image-overlay4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b4b4d24e;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    30deg,
+    rgba(104, 104, 112, 0.2) 0%,
+    rgba(155, 158, 189, 0.3) 25%,
+    rgba(208, 209, 227, 0.611) 50%,
+    rgba(155, 158, 189, 0.3) 75%,
+    rgba(104, 104, 112, 0.2) 100%
+  );
+  transition: all 0.5s ease-in-out;
 }
 
 .inverted-border {
   position: relative;
   height: 100%;
   width: 100%;
-  border-radius: 20px 0 20px 20px;
+  border-radius: 30px 0 30px 30px;
   background-color: #fff;
   // box-shadow: rgba(167, 178, 254, 0.389) 0px -4px 12px;
 
@@ -71,22 +109,27 @@
   justify-content: flex-end;
   padding: 0 20px;
   background-color: #fff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease;
+  // transition: all 0.2s ease-in-out;
   max-height: 200px;
   overflow: hidden;
   position: relative;
 }
 
-.product-name,
 .short-desc {
-  opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  padding-bottom: 4px;
+  color: #f0929b;
+  font-weight: 500;
 }
 
 .long-desc {
-  padding-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 8px;
   margin: 0;
   display: block;
+}
+.button {
+  padding-bottom: 20px;
 }
 
 /* Mobile first queries */
