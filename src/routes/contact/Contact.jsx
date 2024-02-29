@@ -1,5 +1,6 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
+import Blob1 from "../../assets/images/sunset-blob2.svg"
 import BlueWave from "../../assets/images/blue-wave.png"
 import TechGrid from "../../assets/images/tech-grid.png"
 import HexGrid from "../../assets/images/trans-tech.png"
@@ -12,6 +13,9 @@ const Contact = () => {
       <div className="contact-container">
         {/* <div className="blue-wave-container">
         <img src={HexGrid1} alt={'Blue Wave Img'} />
+        </div> */}
+        {/* <div className="blob1">
+          <img src={Blob1} alt="blob image" />
         </div> */}
         <div className="about-header">
           <h2>Contact</h2>

@@ -37,6 +37,22 @@
   }
 }
 
+.blob1 {
+  position: absolute;
+  right: 100px;
+  height: 920px;
+  width: 920px;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  animation: rotateAnimation 40s infinite linear;
+  z-index: 2;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .glass-card {
   position: relative;
   top: -15px;
@@ -44,6 +60,7 @@
   border-radius: 10px;
   padding: 30px;
   background: #c4c2c218;
+
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.102);
   box-shadow: rgba(227, 226, 226, 0.268) 0px 4px 8px;

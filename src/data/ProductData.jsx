@@ -29,9 +29,9 @@ import ATailwind from "../assets/icons/ATailwind.svg"
 import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
 import AElectron from "../assets/icons/AElectron.svg"
-import dangoDBP from "../assets/images/dangoDB.png"
-import Ad3lie from "../assets/images/ad3lie.png"
-import IIQ from "../assets/images/InterviewIQ.png"
+import dangoDBP from "../assets/images/dangoCode.png"
+import Ad3lie from "../assets/images/ad3lie-screenshot.png"
+import IIQ from "../assets/images/IIQCode.png"
 import PHmp4 from "../assets/videos/planthaus.mp4"
 import DDmp4 from "../assets/videos/dangoDB.mp4"
 import ADmp4 from "../assets/videos/ad3lie.mp4"
@@ -63,7 +63,7 @@ export const plantHaus = {
     },
   ],
   img: {
-    src: "./assets/images/planthaus.png",
+    src: "./assets/images/PHcode.png",
     alt: "Plant Haus Preview",
   },
   info: "A dynamic e-commerce platform specializing in indoor plants, offering secure and user-friendly shopping. This app combines OAuth authentication with React, ensuring a seamless experience for plant lovers to explore and purchase.",
@@ -71,6 +71,7 @@ export const plantHaus = {
   aLink: "https://planthaus.netlify.app/",
   video: PHmp4,
   isCurrentWork: false,
+  preview: "Preview",
 }
 
 export const interviewIQ = {
@@ -111,6 +112,7 @@ export const interviewIQ = {
   btn: "Coming Soon",
 
   isCurrentWork: true,
+  preview: "Preview",
 }
 
 export const dangoDB = {
@@ -149,6 +151,7 @@ export const dangoDB = {
   video: DDmp4,
   aLink: "https://github.com/oslabs-beta/dangoDB",
   isCurrentWork: false,
+  preview: "Preview",
 }
 
 export const ad3lie = {
@@ -182,4 +185,5 @@ export const ad3lie = {
   video: ADmp4,
   aLink: "https://github.com/oslabs-beta/ad3lie",
   isCurrentWork: false,
+  preview: "Preview",
 }
