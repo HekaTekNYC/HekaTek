@@ -8,19 +8,22 @@ const Products = () => {
   return (
     <div className="products-container">
       <h2>OUR WORK</h2>
-      <div className="product-container">
-        {[plantHaus, interviewIQ, dangoDB, ad3lie].map((product, index) => (
-          <ProductCard
-            key={index}
-            name={product.name}
-            desc={product.desc}
-            icons={product.icons}
-            img={product.img}
-            info={product.info}
-            btn={product.btn}
-            aLink={product.aLink}
-            isCurrentWork={product.isCurrentWork}
-          />
+      <div className="product-row">
+        {[plantHaus, interviewIQ, dangoDB, ad3lie].map((product) => (
+          <div className="product-container" key={product.id}>
+            <ProductCard
+              name={product.name}
+              desc={product.desc}
+              icons={product.icons}
+              img={product.img}
+              info={product.info}
+              btn={product.btn}
+              aLink={product.aLink}
+              id={product.id}
+              video={product.video}
+              isCurrentWork={product.isCurrentWork}
+            />
+          </div>
         ))}
       </div>
     </div>

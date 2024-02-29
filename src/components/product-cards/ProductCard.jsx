@@ -12,17 +12,17 @@ const ProductCard = ({
   btn,
   aLink,
   isCurrentWork,
+  video,
   id,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
   const descriptionRef = useRef(null)
   const [maxHeight, setMaxHeight] = useState("0px")
 
-  // Use useEffect to update maxHeight based on the description content size
   useEffect(() => {
     console.log(`[Card] useEffect - description updated for title: ${name}`)
     if (descriptionRef.current) {
-      const newMaxHeight = `${descriptionRef.current.scrollHeight}px`
+      const newMaxHeight = `${descriptionRef.current.scrollHeight + 150}px`
       console.log(`[Card] New maxHeight for ${name}: ${newMaxHeight}`)
       setMaxHeight(newMaxHeight)
     }
@@ -31,29 +31,38 @@ const ProductCard = ({
   console.log(`[Card] Rendered - ${name}, isHovered: ${isHovered}`)
 
   return (
-    // <div className="product-card-wrapper">
-    //   <div className="dark-overlay"></div>
     <div
       className="product-card-container"
       key={id}
       onMouseEnter={() => {
-        console.log(`[Card] Mouse Enter - ${name}`)
         setIsHovered(true)
       }}
       onMouseLeave={() => {
-        console.log(`[Card] Mouse Leave - ${name}`)
         setIsHovered(false)
       }}
     >
       <div className="image-container">
+        <div className={`image-overlay${id}`}></div>
         <img
           src={img.src}
           alt={img.alt}
           className="product-img"
           loading="lazy"
           decoding="async"
+          style={{ display: isHovered && video ? "none" : "block" }}
         />
-        <div className="image-overlay"></div>
+        {video && (
+          <video
+            width="100%"
+            height="100%"
+            autoPlay
+            loop
+            muted
+            style={{ display: isHovered ? "block" : "none" }}
+          >
+            <source src={video} type="video/mp4" />
+          </video>
+        )}
       </div>
 
       <div className="product-info inverted-border">
@@ -68,6 +77,9 @@ const ProductCard = ({
         <p className="long-desc" ref={descriptionRef}>
           {info}
         </p>
+        <div className="button">
+          <Button link={aLink} text={btn}></Button>
+        </div>
       </div>
     </div>
     // </div>

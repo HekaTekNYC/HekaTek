@@ -28,13 +28,8 @@
       height: 50px;
       width: 50px;
       border-radius: 40px;
-      background: rgb(255, 241, 189);
-      // background: linear-gradient(
-      //   131deg,
-      //   rgba(255, 241, 189, 0.9051995798319328) 0%,
-      //   rgba(250, 66, 121, 0.8239670868347339) 60%,
-      //   #9065df 100%
-      // );
+      background: rgb(189, 210, 255);
+
       // background: linear-gradient(
       //   131deg,
       //   rgba(255, 241, 189, 0.9051995798319328) 0%,
@@ -42,11 +37,26 @@
       //   #9065df 100%
       // );
 
+      // background: linear-gradient(
+      //   131deg,
+      //   rgba(98, 1, 255, 0.905) 0%,
+      //   #f6d592e5 10%,
+      //   #a24ae5 100%
+      // );
+      // background: linear-gradient(
+      //   131deg,
+      //   #1f1f68 30%,
+      //   #90a1e5cb 80%,
+      //   // #a13af0 100%
+      // );s
       background: linear-gradient(
         131deg,
-        rgba(255, 241, 189, 0.601) 0%,
-        rgba(255, 150, 181, 0.616) 60%
+        #fcf9ce 10%,
+        #f86b95cb 60%,
+        #2301ffe7 100%
       );
+
+      // background: linear-gradient(131deg, #31ffe0d3 60%);
       -webkit-filter: blur(10px);
       filter: blur(10px);
       animation: rotateAnimation 15s ease-in-out infinite alternate;

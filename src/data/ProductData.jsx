@@ -1,4 +1,3 @@
-import dangoDBI from "../assets/images/dangoDB.png"
 // import Deno from "../assets/icons/deno.svg"
 import DangoDeno from "../assets/icons/DangoDeno.svg"
 import DangoSass from "../assets/icons/DangoSass.svg"
@@ -30,11 +29,15 @@ import ATailwind from "../assets/icons/ATailwind.svg"
 import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
 import AElectron from "../assets/icons/AElectron.svg"
-// import Ad3lie from "../assets/images/Ad3lie.png"
-import Ad3lie from "../assets/images/ad3.png"
+import dangoDBP from "../assets/images/dangoDB.png"
+import Ad3lie from "../assets/images/ad3lie.png"
 import IIQ from "../assets/images/InterviewIQ.png"
+import PHmp4 from "../assets/videos/planthaus.mp4"
+import DDmp4 from "../assets/videos/dangoDB.mp4"
+import ADmp4 from "../assets/videos/ad3lie.mp4"
 
 export const plantHaus = {
+  id: 1,
   name: "Plant Haus",
   desc: "Full Stack E-commerce Plant Shop",
   icons: [
@@ -66,10 +69,12 @@ export const plantHaus = {
   info: "A dynamic e-commerce platform specializing in indoor plants, offering secure and user-friendly shopping. This app combines OAuth authentication with React, ensuring a seamless experience for plant lovers to explore and purchase.",
   btn: "View More",
   aLink: "https://planthaus.netlify.app/",
+  video: PHmp4,
   isCurrentWork: false,
 }
 
 export const interviewIQ = {
+  id: 2,
   name: "InteviewIQ",
   desc: "Full Stack Flashcard Application",
   icons: [
@@ -109,6 +114,7 @@ export const interviewIQ = {
 }
 
 export const dangoDB = {
+  id: 3,
   name: "dangoDb",
   desc: "Object Document Mapper (ODM) Built for Deno",
   icons: [
@@ -135,16 +141,18 @@ export const dangoDB = {
     },
   ],
   img: {
-    src: dangoDBI,
+    src: dangoDBP,
     alt: "Dango Preview",
   },
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
   btn: "View More",
+  video: DDmp4,
   aLink: "https://github.com/oslabs-beta/dangoDB",
   isCurrentWork: false,
 }
 
 export const ad3lie = {
+  id: 4,
   name: "Ad3lie",
   desc: "Data Visualizations Utilizing the Power of D3.js",
   icons: [
@@ -171,6 +179,7 @@ export const ad3lie = {
   },
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
   btn: "View More",
+  video: ADmp4,
   aLink: "https://github.com/oslabs-beta/ad3lie",
   isCurrentWork: false,
 }
