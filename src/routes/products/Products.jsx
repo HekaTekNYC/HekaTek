@@ -22,6 +22,7 @@ const Products = () => {
               id={product.id}
               video={product.video}
               isCurrentWork={product.isCurrentWork}
+              preview={product.preview}
             />
           </div>
         ))}
