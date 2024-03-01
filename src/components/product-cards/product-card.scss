@@ -19,43 +19,55 @@
       padding: 20px 20px 0;
     }
     .image-overlay {
+      opacity: 0;
+    }
+
+    .product-img {
       display: none;
     }
   }
 }
 
+h4 {
+  letter-spacing: 1px;
+  color: #414040;
+}
 .image-container {
   position: relative;
-}
 
-.product-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background: rgba(218, 219, 250, 0.41);
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  // background-color: #b4b4d24e;
-  height: 100%;
-  width: 100%;
-  background: rgba(201, 196, 227, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.5s ease-in-out;
 
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: all 1s ease-in-out;
-
-  h2 {
-    font-size: 6rem;
-    color: rgb(226, 226, 240);
+    h1 {
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 6rem;
+      text-align: center;
+      margin-top: -20px;
+      -webkit-text-stroke-color: transparent;
+      color: transparent;
+    }
+  }
+  .product-img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -86,30 +98,38 @@
 
 .card-overlay {
   position: absolute;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+
+  align-items: center;
   padding: 0 20px;
   background-color: #fff;
   transition: all 0.5s ease;
   // transition: all 0.2s ease-in-out;
-  max-height: 200px;
+  max-height: 400px;
   overflow: hidden;
   position: relative;
+  letter-spacing: 2px;
 }
 
 .short-desc {
   padding-bottom: 4px;
-  color: #f0929b;
+  // color: #5e5d5d;
+  color: #f18a94;
   font-weight: 500;
 }
 
 .long-desc {
   transition: all 0.2s ease-in-out;
   padding-bottom: 8px;
-  margin: 0;
+  margin-right: 10px;
   display: block;
 }
-.button {
+
+.product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 20px;
 }
 

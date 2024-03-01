@@ -102,3 +102,20 @@
     z-index: 1;
   }
 }
+
+@media (min-width: 1024px) and (max-height: 1366px) {
+  .background-dots {
+    --d: 1px;
+
+    background: radial-gradient(
+        circle at var(--d) var(--d),
+        #bcbcbc calc(var(--d) - 1px),
+        #0000 var(--d)
+      )
+      0 0 / 30px 30px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+}

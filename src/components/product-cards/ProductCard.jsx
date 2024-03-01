@@ -14,9 +14,11 @@ const ProductCard = ({
   isCurrentWork,
   video,
   id,
+  playbackRate = 3.0,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
   const descriptionRef = useRef(null)
+  const videoRef = useRef(null)
   const [maxHeight, setMaxHeight] = useState("0px")
 
   useEffect(() => {
@@ -28,6 +30,11 @@ const ProductCard = ({
     }
   }, [info, name]) // Depend on description and title to recalculate if it changes
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = playbackRate // Set the playback rate on the video element
+    }
+  }, [playbackRate])
   console.log(`[Card] Rendered - ${name}, isHovered: ${isHovered}`)
 
   return (
@@ -43,7 +50,16 @@ const ProductCard = ({
     >
       <div className="image-container">
         <div className="image-overlay">
-          <h2>PREVIEW</h2>
+          <h1
+            style={{
+              backgroundImage: `url(${img.src})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            PREVIEW
+          </h1>
         </div>
         <img
           src={img.src}
@@ -51,10 +67,11 @@ const ProductCard = ({
           className="product-img"
           loading="lazy"
           decoding="async"
-          style={{ display: isHovered && video ? "none" : "block" }}
+          style={{ opacity: isHovered && video ? "0" : "1" }}
         />
         {video && (
           <video
+            ref={videoRef}
             width="100%"
             height="100%"
             autoPlay
@@ -79,7 +96,7 @@ const ProductCard = ({
         <p className="long-desc" ref={descriptionRef}>
           {info}
         </p>
-        <div className="button">
+        <div className="product-button">
           <Button link={aLink} text={btn}></Button>
         </div>
       </div>

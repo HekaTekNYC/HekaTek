@@ -86,6 +86,11 @@
     padding: 15px;
     // color: rgb(49, 49, 50);
     color: rgba(0, 0, 0, 0.802);
+
+    &:hover {
+      color: #f18a94;
+      font-weight: 600;
+    }
   }
   .gradient-blur {
     position: relative;

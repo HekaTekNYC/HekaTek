@@ -30,8 +30,10 @@ import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
 import AElectron from "../assets/icons/AElectron.svg"
 import dangoDBP from "../assets/images/dangoCode.png"
-import Ad3lie from "../assets/images/ad3lie-screenshot.png"
+import Ad3lie from "../assets/images/ad3liecode.png"
 import IIQ from "../assets/images/IIQCode.png"
+
+import IIQmp4 from "../assets/images/IIQ.mp4"
 import PHmp4 from "../assets/videos/planthaus.mp4"
 import DDmp4 from "../assets/videos/dangoDB.mp4"
 import ADmp4 from "../assets/videos/ad3lie.mp4"
@@ -110,7 +112,7 @@ export const interviewIQ = {
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
   btn: "Coming Soon",
-
+  video: IIQmp4,
   isCurrentWork: true,
   preview: "Preview",
 }
@@ -118,7 +120,7 @@ export const interviewIQ = {
 export const dangoDB = {
   id: 3,
   name: "dangoDb",
-  desc: "Object Document Mapper (ODM) Built for Deno",
+  desc: "Deno Object Document Mapper (ODM)",
   icons: [
     {
       src: DangoDeno,
@@ -157,7 +159,7 @@ export const dangoDB = {
 export const ad3lie = {
   id: 4,
   name: "Ad3lie",
-  desc: "Data Visualizations Utilizing the Power of D3.js",
+  desc: "D3.js Data Visualizations",
   icons: [
     {
       src: ATailwind,

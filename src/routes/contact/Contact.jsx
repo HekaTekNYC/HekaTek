@@ -1,6 +1,6 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
-import Blob1 from "../../assets/images/sunset-blob2.svg"
+import Blob1 from "../../assets/images/sunset-blob.svg"
 import BlueWave from "../../assets/images/blue-wave.png"
 import TechGrid from "../../assets/images/tech-grid.png"
 import HexGrid from "../../assets/images/trans-tech.png"
@@ -11,16 +11,13 @@ const Contact = () => {
   return (
     <>
       <div className="contact-container">
-        {/* <div className="blue-wave-container">
-        <img src={HexGrid1} alt={'Blue Wave Img'} />
-        </div> */}
-        {/* <div className="blob1">
+        <div className="contact-blob">
           <img src={Blob1} alt="blob image" />
-        </div> */}
+        </div>
         <div className="about-header">
           <h2>Contact</h2>
         </div>
-        <div className="glass-card gradient-border">
+        <div className="glass-card">
           <div className="about-text">
             <p>
               We're a duo of software developers who find joy in decluttering
