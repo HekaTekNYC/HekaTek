@@ -79,20 +79,26 @@ h3 {
 }
 
 h4 {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
 }
 
 h5 {
-  font-family: "Red Hat Display", sans-serif;
+  // font-family: "Red Hat Display", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
 }
 
 p {
+  font-family: "Gothic A1", sans-serif;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.6;
+  letter-spacing: 0.25px;
+
+  // font-family: "Red Hat Display", sans-serif;
+
   // margin-bottom: 1.25rem;
 }
 
@@ -134,15 +140,26 @@ ul {
 
 .contact-btn {
   font-family: "Gothic A1", sans-serif;
-  background-color: #18181892;
-  box-shadow: rgba(23, 23, 23, 0.365) 0px 3px 15px;
-  color: #ffffff;
-  border-radius: 10px;
-  border: none;
-  font-size: 1.1rem;
-  width: 150px;
-  height: 40px;
-  margin: 15px 0 5px;
+  font-weight: 400;
+  font-size: 0.92rem; /* Slightly smaller font-size */
+  letter-spacing: 0.05em; /* Increased letter-spacing */
+  white-space: nowrap;
+  background: rgba(92, 95, 98, 0.159);
+  box-shadow: rgba(0, 0, 0, 0.183) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.122) 0px 2px 4px -1px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  // background-color: #18181892;
+  // box-shadow: rgba(23, 23, 23, 0.365) 0px 3px 15px;
+  // color: #ffffff;
+  // border-radius: 10px;
+  // border: none;
+  // font-size: 1.1rem;
+  // width: 150px;
+  // height: 40px;
+  // margin: 15px 0 5px;
   cursor: pointer;
   z-index: 20;
   transition: all 200ms ease-in-out;
@@ -180,7 +197,7 @@ ul {
     height: 38px;
     width: 120px;
     font-size: 0.92rem;
-    font-weight: 600;
+    // font-weight: 600;
   }
 }
 @media (min-width: 400px) {
@@ -190,6 +207,7 @@ ul {
 @media (min-width: 550px) {
   h1 {
     font-size: 10rem;
+    line-height: 0.8;
   }
 }
 
@@ -202,14 +220,28 @@ ul {
 
 /* Larger than tablet portrait */
 @media (min-width: 820px) {
+  h1 {
+    line-height: 0.9;
+  }
+
+  h2 {
+    font-size: 10rem;
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  h1 {
+    font-size: 16rem;
+    line-height: 0.9;
+  }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+  h2 {
+    font-size: 12rem;
+  }
 }
 @media only screen and (min-width: 1366px) {
   .form-floating input,

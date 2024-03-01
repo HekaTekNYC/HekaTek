@@ -40,7 +40,15 @@ const Services = () => {
           <div key={index} className="service-info">
             <div className="service-icon">
               {" "}
-              <img src={service.svgPath} alt={service.alt} />
+              {/* <div className="circle-container"> */}
+              <img
+                src={service.svgPath}
+                alt={service.alt}
+                width="20%"
+                height="20%"
+              />
+              {/* <img src={service.svgPath} alt={service.alt} /> */}
+              {/* </div> */}
             </div>
             <h5 className="service-header">{service.name}</h5>
             <div className="service-text">{service.description}</div>

@@ -10,7 +10,17 @@ h2 {
   line-height: 6.2rem;
   z-index: 10;
 }
-
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 .services-card {
   position: relative;
   top: -30px;
@@ -72,6 +82,8 @@ h2 {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .services-cotnainer {
+  }
   .services-card {
     flex-direction: row;
     align-items: start;

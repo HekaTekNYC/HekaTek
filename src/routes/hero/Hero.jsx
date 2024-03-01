@@ -7,10 +7,12 @@ import "./hero.scss"
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="blob">{/* <img src={Blob} alt="blob image" /> */}</div>
+      <div className="blob">
+        <img src={Blob} alt="blob image" />
+      </div>
       <div className="glass1">
         <img src={Glass1} alt="blob" />
-      </div>
+      </div>{" "}
       <div className="hero-header">
         <h1 className="hero-hekatek">HekaTek</h1>
         <div className="hero-text">
