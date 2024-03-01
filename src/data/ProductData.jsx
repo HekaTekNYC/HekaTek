@@ -1,4 +1,3 @@
-import dangoDBI from "../assets/images/dangoDB.png"
 // import Deno from "../assets/icons/deno.svg"
 import DangoDeno from "../assets/icons/DangoDeno.svg"
 import DangoSass from "../assets/icons/DangoSass.svg"
@@ -30,10 +29,17 @@ import ATailwind from "../assets/icons/ATailwind.svg"
 import Tailwind from "../assets/icons/tailwindcss.svg"
 import Electron from "../assets/icons/electronjs.svg"
 import AElectron from "../assets/icons/AElectron.svg"
-import Ad3lie from "../assets/images/Ad3lie.png"
-import IIQ from "../assets/images/IIQ.png"
-import Topy from '../assets/images/topy.png'
+import dangoDBP from "../assets/images/dangoCode.png"
+import Ad3lie from "../assets/images/ad3liecode.png"
+import IIQ from "../assets/images/IIQCode.png"
+
+import IIQmp4 from "../assets/images/IIQ.mp4"
+import PHmp4 from "../assets/videos/planthaus.mp4"
+import DDmp4 from "../assets/videos/dangoDB.mp4"
+import ADmp4 from "../assets/videos/ad3lie.mp4"
+
 export const plantHaus = {
+  id: 1,
   name: "Plant Haus",
   desc: "Full Stack E-commerce Plant Shop",
   icons: [
@@ -59,16 +65,19 @@ export const plantHaus = {
     },
   ],
   img: {
-    src: "./assets/images/PlantHaus.png",
+    src: "./assets/images/PHcode.png",
     alt: "Plant Haus Preview",
   },
-  info: "A dynamic e-commerce platform specializing in indoor plants, offering a secure and user-friendly shopping experience. This app combines OAuth authentication with React, ensuring a seamless experience for plant enthusiasts to explore and purchase.",
+  info: "A dynamic e-commerce platform specializing in indoor plants, offering secure and user-friendly shopping. This app combines OAuth authentication with React, ensuring a seamless experience for plant lovers to explore and purchase.",
   btn: "View More",
   aLink: "https://planthaus.netlify.app/",
+  video: PHmp4,
   isCurrentWork: false,
+  preview: "Preview",
 }
 
 export const interviewIQ = {
+  id: 2,
   name: "InteviewIQ",
   desc: "Full Stack Flashcard Application",
   icons: [
@@ -103,13 +112,15 @@ export const interviewIQ = {
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login.",
   btn: "Coming Soon",
-
+  video: IIQmp4,
   isCurrentWork: true,
+  preview: "Preview",
 }
 
 export const dangoDB = {
+  id: 3,
   name: "dangoDb",
-  desc: "Object Document Mapper (ODM) Built for Deno",
+  desc: "Deno Object Document Mapper (ODM)",
   icons: [
     {
       src: DangoDeno,
@@ -134,18 +145,21 @@ export const dangoDB = {
     },
   ],
   img: {
-    src: dangoDBI,
+    src: dangoDBP,
     alt: "Dango Preview",
   },
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
   btn: "View More",
+  video: DDmp4,
   aLink: "https://github.com/oslabs-beta/dangoDB",
   isCurrentWork: false,
+  preview: "Preview",
 }
 
 export const ad3lie = {
+  id: 4,
   name: "Ad3lie",
-  desc: "Data Visualizations Utilizing the Power of D3.js",
+  desc: "D3.js Data Visualizations",
   icons: [
     {
       src: ATailwind,
@@ -165,11 +179,13 @@ export const ad3lie = {
     },
   ],
   img: {
-    src: Topy,
+    src: Ad3lie,
     alt: "Ad3lie Preview",
   },
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
   btn: "View More",
+  video: ADmp4,
   aLink: "https://github.com/oslabs-beta/ad3lie",
   isCurrentWork: false,
+  preview: "Preview",
 }

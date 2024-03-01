@@ -1,0 +1,118 @@
+.tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  margin: 60px 0;
+  // overflow-y: hidden;
+  position: relative;
+}
+
+.tech-row-container {
+  overflow: hidden;
+  // overflow-y: hidden;
+  // -webkit-overflow-scrolling: touch;
+  // scrollbar-width: none;
+  // height: 143px;
+
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 50px;
+  //   z-index: 2;
+  // }
+}
+
+// .row-1,
+// .row-2 {
+//   display: flex;
+// }
+
+.scrolling-icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  // &::before {
+  //   left: 0;
+  //   background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 1) 0%,
+  //     rgba(255, 255, 255, 0) 100%
+  //   );
+  // }
+  // &::after {
+  //   right: 0;
+  //   background: linear-gradient(
+  //     to left,
+  //     rgba(255, 255, 255, 1) 0%,
+  //     rgba(255, 255, 255, 0) 100%
+  //   );
+  // }
+
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 50px;
+  //   pointer-events: none;
+  // }
+}
+
+.row-1 .scrolling-icons {
+  animation: scroll-left 60s linear infinite;
+}
+
+.row-2 .scrolling-icons {
+  animation: scroll-right 60s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile first queries */
+
+/* Larger than tablet */
+@media (min-width: 768px) {
+  .tech-stack-container {
+    height: 40vh;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 820px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1024px) {
+  .tech-stack-container {
+    height: 30vh;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .tech-stack-container {
+    height: 40vh;
+  }
+}

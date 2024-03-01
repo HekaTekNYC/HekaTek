@@ -1,41 +1,102 @@
-import React, { useState, useEffect } from "react" // Import useEffect
+import React, { useState, useEffect, useRef } from "react"
 import "./navigation.scss"
-import HamburgerIcon from "../../assets/icons/hamburger.svg"
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const navRef = useRef(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Use useEffect to log the state change
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [navRef])
+
   useEffect(() => {
     console.log("Menu open state: ", isMenuOpen)
-  }, [isMenuOpen]) // Dependency array ensures this runs only when isMenuOpen changes
+  }, [isMenuOpen])
 
   return (
-    <div className="navigation-container">
-      <div className="logo">
-        <a href="#hero">HekaTek</a>
-      </div>
+    <div
+      className={`navigation-container ${
+        isMenuOpen ? "no-shadow" : "nav-shadow"
+      }`}
+      ref={navRef}
+    >
+      <a href="#hero" className="logo">
+        HEKATEK
+      </a>
+      <div
+        className={`hamburger ${isMenuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <svg viewBox="0 0 45 45">
+          <g
+            stroke="#38373c"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path
+              className={`line top-line ${isMenuOpen ? "inactive" : ""}`}
+              d="M10,10 L35,10"
+            ></path>
+            <path
+              className={`line middle-line ${isMenuOpen ? "inactive" : ""}`}
+              d="M10,20 L35,20"
+            ></path>
+            <path
+              className={`line bottom-line ${isMenuOpen ? "inactive" : ""}`}
+              d="M10,30 L35,30"
+            ></path>
 
-      <div className="hamburger" onClick={toggleMenu}>
-        <img src={HamburgerIcon} alt="Menu" loading="lazy" decoding="async" />
+            {isMenuOpen && (
+              <>
+                <path className="line top-x" d="M7,10 L33,30"></path>
+                <path className="line bottom-x" d="M7,30 L33,10"></path>
+              </>
+            )}
+          </g>
+        </svg>
       </div>
 
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <a className="nav-link" href="#hero">
-          Home
+        <a
+          className={`${isMenuOpen ? "gradient-blur" : ""}`}
+          href="#services"
+          onClick={closeMenu}
+        >
+          SERVICES
         </a>
-        <a className="nav-link" href="#our-work">
-          Our Work
+
+        <a
+          className={`${isMenuOpen ? "gradient-blur" : ""}`}
+          href="#our-work"
+          onClick={closeMenu}
+        >
+          OUR WORK
         </a>
-        <a className="nav-link" href="#about">
-          About
-        </a>
-        <a className="nav-link" href="#contact">
-          Contact
+
+        <a
+          className={`${isMenuOpen ? "gradient-blur" : ""}`}
+          href="#contact"
+          onClick={closeMenu}
+        >
+          CONTACT
         </a>
       </div>
     </div>

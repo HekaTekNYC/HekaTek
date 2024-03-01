@@ -1,0 +1,297 @@
+.turning-wrapper {
+  transform: rotate(30deg);
+
+  .hexagon-wrapper {
+    margin: auto;
+    display: flex;
+    text-align: initial;
+    width: 110px;
+    height: 110px;
+  }
+
+  .hexagon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46%;
+    height: 76%;
+    margin: auto;
+
+    border-radius: 8px;
+
+    .icon-wrapper {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 40px;
+      background: rgb(189, 210, 255);
+
+      // background: linear-gradient(
+      //   131deg,
+      //   rgba(255, 241, 189, 0.9051995798319328) 0%,
+      //   #ff96b5cb 20%,
+      //   #9065df 100%
+      // );
+
+      // background: linear-gradient(
+      //   131deg,
+      //   rgba(98, 1, 255, 0.905) 0%,
+      //   #f6d592e5 10%,
+      //   #a24ae5 100%
+      // );
+      background: linear-gradient(131deg, #eaa0c4 30%, #74499fcb 80%);
+      // background: linear-gradient(
+      //   131deg,
+      //   #fcf9ce 10%,
+      //   #f86b95cb 60%,
+      //   #2301ffe7 100%
+      // );
+
+      // background: linear-gradient(131deg, #31ffe0d3 60%);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      animation: rotateAnimation 15s ease-in-out infinite alternate;
+      z-index: 10;
+    }
+
+    //   #cacbe0,
+    //   rgb(149, 152, 194),
+    //   rgb(134, 138, 202)
+    // );
+
+    // #a3a7fd,
+    // rgb(91, 98, 200),
+    // rgb(24, 12, 158)
+    //   rgb(29, 24, 83)
+    // background: linear-gradient(
+    //   -180deg,
+    //   #a3a7fd,
+    //   rgb(191, 170, 255),
+    //   rgb(91, 98, 200)
+    // );
+    // background: linear-gradient(
+    //   -180deg,
+    //   #ffaaaa,
+    //   #fec8e8,
+    //   #c85b74 rgb(255, 170, 170),
+    //   #fec8e8,
+    //   rgb(200, 91, 116)
+    // );
+
+    // background: linear-gradient(
+    //   -180deg,
+
+    //   #5c6273,
+    //   #5353a2,
+    //   #302f3c
+    // );
+    // background: linear-gradient(
+    //   -180deg,
+
+    //   #5353a2,
+    //   #636364,
+    //   #29292b
+    // );
+    // background: linear-gradient(
+    //   -180deg,
+
+    //   #bebed6,
+    //   #8b8ba8,
+    //   #b2b2c9
+    // );
+    background: linear-gradient(
+      -180deg,
+
+      #e5e5f4,
+      #b4b4d2,
+      #e7e7f9
+    );
+    // background: linear-gradient(
+    //   -180deg,
+
+    //   #dadaed,
+    //   #a1a1b6,
+    //   #e7e7f9
+    // );
+    // X-ray vision colors
+
+    // background: linear-gradient(
+    //   -180deg,
+
+    //   #d5d5dd,
+    //   #f8f7f7,
+    //   #f4f4f5
+    // );
+    // background: linear-gradient(-180deg, white, #4a8dfe);
+    // background: linear-gradient(-180deg, white, #7859ff);
+    // background: linear-gradient(-180deg, white, #8C45FF);
+    // background: linear-gradient(-180deg, white, #9B36FE);
+    // background: linear-gradient(-180deg, white, #CA4CE3);
+    // background: linear-gradient(-180deg, white, #DB57D8);
+    // background: linear-gradient(-180deg, white, #F37BAA);
+    // background: linear-gradient(-180deg, white, #f47faa);
+    // background: linear-gradient(-180deg, white, #f68492);
+    // background: linear-gradient(-180deg, white, #02a1b3);
+    // background: linear-gradient(-180deg, rgb(9, 34, 87), #777790);
+    // background: linear-gradient(-150deg, rgb(17, 28, 54), #c0c0c7);
+    // background: linear-gradient(
+    //   150deg,
+    //   #32abcc 0%,
+    //   #f5b5d2c9 50%,
+    //   #0058e6 100%
+    // );
+    // background: linear-gradient(135deg, #600c9d 10%, #7485ac 25%, #1c058e 90%);
+    // background: linear-gradient(
+    //   135deg,
+    //   rgba(132, 3, 183, 0.339) 10%,
+    //   rgba(3, 216, 223, 0.132) 50%,
+    //   rgba(101, 6, 127, 0.563) 90%
+    // );
+
+    // background: linear-gradient(
+    //   60deg,
+    //   rgba(255, 255, 255, 0.505) 10%,
+    //   rgba(159, 163, 174, 0.931) 50%,
+    //   rgba(18, 12, 55, 0.9) 90%
+    // );
+    // background: linear-gradient(
+    //   -190deg,
+    //   #adadb2db 10%,
+    //   #3c4767b5 50%,
+    //   #1d1264 100%
+    // );
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+
+    img {
+      z-index: 20;
+      margin: auto;
+      height: 35px;
+      transform: rotate(-30deg);
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      background: inherit;
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+      transition: 0.5s;
+      transform-origin: center;
+      border-radius: 8px;
+    }
+
+    &:before {
+      transform: rotateZ(60deg);
+    }
+
+    &:after {
+      transform: rotateZ(-60deg);
+    }
+
+    &:hover {
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      &:before {
+        border-radius: 50px;
+        transition: 0.5s;
+      }
+
+      &:after {
+        border-radius: 50px;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  img {
+    height: 45px;
+  }
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+/* Larger than tablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 768px) {
+  .turning-wrapper {
+    .hexagon-wrapper {
+      width: 140px;
+      height: 140px;
+    }
+
+    .hexagon {
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 820px) {
+  .turning-wrapper {
+    .hexagon-wrapper {
+      width: 140px;
+      height: 140px;
+    }
+
+    .hexagon {
+      img {
+        height: 45px;
+      }
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .turning-wrapper {
+    .hexagon-wrapper {
+      width: 140px;
+      height: 140px;
+    }
+
+    .hexagon {
+      img {
+        height: 40px;
+      }
+    }
+  }
+}

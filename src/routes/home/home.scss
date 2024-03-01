@@ -1,75 +1,121 @@
-.hero-section {
+.background-dots {
+  --d: 1px;
+
+  background: radial-gradient(
+      circle at var(--d) var(--d),
+      #a3a1a1 calc(var(--d) - 1px),
+      #0000 var(--d)
+    )
+    0 0 / 20px 20px;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-section,
+.product-section,
+.services-section,
+.contact-section {
   height: auto;
+  padding: 0 20px;
+  z-index: 3;
+  // color: #a3a1a1 ;
+}
+
+.product-section,
+.tech-stack-section,
+.services-section,
+.contact-section {
+  margin: 60px 0;
+  z-index: 3;
 }
 
 .product-section {
-  height: auto;
-  z-index: 5;
+}
 
-  // .product-overlay {
-  //   position: relative;
-  //   background: rgb(0, 0, 0);
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba(0, 0, 0, 1) 20%,
-  //     rgba(0, 0, 0, 0) 100%
-  //   );
-  //   z-index: 40;
-  //   height: 225px;
-  //   top: -1px;
-  //   left: 0;
-  // }
+.tech-stack-section {
 }
 
 .services-section {
-  height: auto;
-}
-
-.about-section {
-  height: auto;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-
-  .pink-space {
-    position: absolute;
-    top: 90px;
-    right: 70px;
-    mask-image: radial-gradient(
-      ellipse at center,
-      rgba(255, 255, 255, 1) 1%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 75%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    height: 600px;
-    width: auto;
-    z-index: 2;
-  }
-  .about-layer {
-    z-index: 5;
-    position: relative;
-  }
 }
 
 .contact-section {
-  height: auto;
-  width: 100%;
 }
 
-// Media Queries
+// Media queries
 
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 768px) {
-  .pink-space {
-    display: none;
+/* Larger than tablet portrait */
+@media (min-width: 768px) {
+  .hero-section,
+  .product-section,
+  .services-section,
+  .contact-section {
+    padding: 0 60px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .pink-space {
-    display: none;
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .hero-section,
+  .product-section,
+  .services-section,
+  .contact-section {
+    padding: 0 80px;
   }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .hero-section,
+  .product-section,
+  .services-section,
+  .contact-section {
+    padding: 0 100px;
+  }
+}
+
+/* Mobile first queries */
+
+/* Larger than tablet */
+@media (min-width: 768px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 820px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1024px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .background-dots {
+    --d: 1px;
+
+    background: radial-gradient(
+        circle at var(--d) var(--d),
+        #bcbcbc calc(var(--d) - 1px),
+        #0000 var(--d)
+      )
+      0 0 / 30px 30px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 1366px) {
+  .background-dots {
+    --d: 1px;
+
+    background: radial-gradient(
+        circle at var(--d) var(--d),
+        #bcbcbc calc(var(--d) - 1px),
+        #0000 var(--d)
+      )
+      0 0 / 30px 30px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
 }
