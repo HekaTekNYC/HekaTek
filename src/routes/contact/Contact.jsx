@@ -1,10 +1,8 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
+
 import Blob1 from "../../assets/images/sunset-blob.svg"
-import BlueWave from "../../assets/images/blue-wave.png"
-import TechGrid from "../../assets/images/tech-grid.png"
-import HexGrid from "../../assets/images/trans-tech.png"
-import HexGrid1 from "../../assets/images/hexagonal-trans-pattern.png"
+
 import "./contact.scss"
 
 const Contact = () => {
