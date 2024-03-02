@@ -1,0 +1,9 @@
+.lamp-anim {
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  z-index: 2;
+  max-width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}

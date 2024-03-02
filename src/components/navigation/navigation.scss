@@ -92,52 +92,24 @@
       font-weight: 600;
     }
   }
-  .gradient-blur {
-    position: relative;
-    transition: background-position 0.5s;
-    z-index: -1;
+  // .gradient-blur {
+  //   position: relative;
+  //   transition: background-position 0.5s;
+  //   z-index: -1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(50% + 2px);
-      right: 50px;
-      width: 40%;
-      height: 20%;
-      border-radius: 28px;
-      transform: translate(-50%, -50%);
-
-      background: linear-gradient(135deg, #d89c84 0%, #e488dd 100%);
-      // background: linear-gradient(
-      //   135deg,
-      //   #4114f78b 0%,
-      //   #e488dcca 60%,
-      //   #ffca9e 100%
-      // );
-      // background: linear-gradient(
-      //   135deg,
-      //   #9065df 0%,
-      //   #fec8e8 30%,
-      //   rgba(241, 173, 144, 0.725) 100%
-      // );
-      // background: linear-gradient(135deg, #b9eee8dd 0%, #a8c5ffef 100%);
-      // background: linear-gradient(
-      //   90deg,
-      //   rgba(89, 225, 229, 0.937) 0%,
-      //   #6d9dee 100%
-      // );
-
-      // #ffca9e
-      // #fec8e8
-      // #9065df
-      // background: linear-gradient(135deg, #d55fcdef 0%, #e1581eb9 100%);
-      // background: linear-gradient(135deg, #d55fcdef 0%, #e1581eb9 100%);
-      // background: linear-gradient(135deg, #ca63e6 0%, #8f94f0 100%);
-      // background: linear-gradient(135deg, #b713fd 0%, #030eeda3 100%);
-      filter: blur(10px);
-      z-index: -1;
-    }
-  }
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: calc(50% + 2px);
+  //     right: 50px;
+  //     width: 40%;
+  //     height: 20%;
+  //     border-radius: 28px;
+  //     transform: translate(-50%, -50%);
+  //     background: linear-gradient(135deg, #d89c84 0%, #e488dd 100%);
+  //     filter: blur(10px);
+  //     z-index: -1;
+  //   }
 
   &.open {
     display: flex;
@@ -149,11 +121,16 @@
 
     a {
       font-size: 1.2rem;
+
+      &:hover {
+        color: #f18a94;
+      }
     }
   }
-  .nav-link:hover {
-    background-position: 100% 0;
-  }
+}
+
+.nav-link:hover {
+  background-position: 100% 0;
 }
 
 // Media Queries
