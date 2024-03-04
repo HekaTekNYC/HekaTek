@@ -6,12 +6,10 @@ import "./product-card.scss"
 const ProductCard = ({
   name,
   desc,
-  icons,
   img,
   info,
   btn,
   aLink,
-  isCurrentWork,
   video,
   id,
   playbackRate = 3.0,
@@ -36,7 +34,13 @@ const ProductCard = ({
     }
   }, [playbackRate])
   console.log(`[Card] Rendered - ${name}, isHovered: ${isHovered}`)
+  const handleTouchStart = () => {
+    setIsHovered(true)
+  }
 
+  const handleTouchEnd = () => {
+    setIsHovered(false)
+  }
   return (
     <div
       className="product-card-container"
@@ -47,6 +51,9 @@ const ProductCard = ({
       onMouseLeave={() => {
         setIsHovered(false)
       }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchEnd}
     >
       <div className="image-container">
         <div className="image-overlay">
