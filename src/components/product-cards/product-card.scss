@@ -10,31 +10,39 @@
   box-shadow: #d0cdde 0px 13px 27px -5px,
     rgb(208, 205, 222, 0.3) 0px 8px 16px -8px;
 
-  &:hover {
-    .card-overlay {
-      max-height: 1000px;
-    }
+  // &:hover {
+  //   .card-overlay {
+  //     max-height: 1000px;
+  //   }
 
-    .product-info {
-      padding: 20px 20px 0;
-    }
-    .image-overlay {
-      opacity: 0;
-    }
+  //   .product-info {
+  //     padding: 20px 20px 0;
+  //   }
+  //   .image-overlay {
+  //     opacity: 0;
+  //   }
 
-    .product-img {
-      display: none;
-    }
-  }
+  //   .product-img {
+  //     display: none;
+  //   }
+  // }
 }
 
 h4 {
   letter-spacing: 1px;
   color: #414040;
+  font-weight: 500;
+}
+h5 {
+  // letter-spacing: 1px;
+  // color: #414040;
+  font-weight: 600;
 }
 .image-container {
   position: relative;
 
+
+  // this goes into hover h
   .image-overlay {
     position: absolute;
     top: 0;
@@ -64,6 +72,7 @@ h4 {
       color: transparent;
     }
   }
+
   .product-img {
     width: 100%;
     height: auto;
@@ -100,7 +109,6 @@ h4 {
   position: absolute;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   padding: 0 20px;
   background-color: #fff;
@@ -110,27 +118,52 @@ h4 {
   overflow: hidden;
   position: relative;
   letter-spacing: 2px;
+
+  .short-desc {
+    padding-bottom: 4px;
+    // color: #5e5d5d;
+    color: #f18a94;
+    font-weight: 500;
+  }
+  
+  .long-desc {
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 8px;
+    margin-right: 10px;
+    display: block;
+  }
+  
+  .product-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
 }
 
-.short-desc {
-  padding-bottom: 4px;
-  // color: #5e5d5d;
-  color: #f18a94;
-  font-weight: 500;
-}
 
-.long-desc {
-  transition: all 0.2s ease-in-out;
-  padding-bottom: 8px;
-  margin-right: 10px;
-  display: block;
-}
+@media (hover: hover) {
+  .product-card-container {
 
-.product-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
+  
+    &:hover {
+      .card-overlay {
+        max-height: 1000px;
+      }
+  
+      .product-info {
+        padding: 20px 20px 0;
+      }
+      .image-overlay {
+        opacity: 0;
+      }
+  
+      .product-img {
+        display: none;
+      }
+    }
+  }
 }
 
 // /* Mobile first queries */

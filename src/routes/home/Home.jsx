@@ -14,6 +14,7 @@ const Home = () => {
       <div className="background-dots">
         <div className="hero-section" id="hero">
           <Hero />
+       
           <div className="hero-gradient"></div>
         </div>
 
