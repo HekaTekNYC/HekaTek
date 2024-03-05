@@ -58,41 +58,39 @@ h2 {
     justify-content: center;
     width: 100px;
     height: 100px;
+
+
     .service-shape {
       position: absolute;
-      top: -2px;
-      left: 30px;
-      // background: rgba(124, 118, 197, 0.874);
-      // box-shadow: 0 8px 32px 0 rgba(135, 31, 130, 0.37);
-      background: rgba(134, 127, 210, 0.641);
-      // background: rgba(134, 127, 210, 0.641);
-      // background: rgba(125, 118, 197, 0.641);
-      box-shadow: 0 8px 32px 0 rgba(135, 31, 130, 0.199);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      top: 0px;
+      left: 25px;
+      background: rgb(168, 168, 232);
+      box-shadow: rgb(208, 208, 238) 0px 0px 10px 5px inset;
+      // background: rgb(212, 161, 237);
+      // box-shadow: rgb(250, 221, 255) 0px 0px 10px 5px inset;
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
       border-radius: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      height: 60px;
-      width: 60px;
+      border: 1px solid rgb(208, 208, 238);
+      // border: 1px solid rgb(240, 212, 255);
+      height: 65px;
+      width: 65px;
       // margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      -webkit-filter: blur(5px);
-      filter: blur(5px);
+      -webkit-filter: blur(1.5px);
+      filter: blur(1.5px);
       z-index: 2;
     }
     .service-icon {
       position: absolute;
-      // background: rgba(209, 133, 236, 0.493);
-      background: rgba(254, 172, 147, 0.493);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      // background: rgba(255, 169, 168, 0.162);
-      // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      background: rgba(219, 219, 241, 0.079);
+      // background: #eac9ff4a;
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
       border-radius: 50px;
-      // border: 1px solid rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       margin-bottom: 15px;
       padding: 5px;
       height: 65px;
