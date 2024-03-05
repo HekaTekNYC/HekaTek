@@ -30,21 +30,33 @@ const ProductCard = ({
     if (videoRef.current) {
       videoRef.current.playbackRate = playbackRate; // Set the playback rate on the video element
     }
-  }, [playbackRate, isPlaying]);
 
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-    if (videoRef.current) {
-      if (!isPlaying) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  };
+  }, [playbackRate])
+  console.log(`[Card] Rendered - ${name}, isHovered: ${isHovered}`)
+  const handleTouchStart = () => {
+    setIsHovered(true)
+  }
 
+
+  const handleTouchEnd = () => {
+    setIsHovered(false)
+  }
   return (
-    <div className="product-card-container" key={id} onClick={togglePlay}>
+
+    <div
+      className="product-card-container"
+      key={id}
+      onMouseEnter={() => {
+        setIsHovered(true)
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false)
+      }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchEnd}
+    >
+
       <div className="image-container">
         {!isPlaying && (
           <div className="image-overlay">
