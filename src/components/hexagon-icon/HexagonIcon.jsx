@@ -15,6 +15,8 @@ const HexagonIcon = ({ icon }) => {
               title="tech stack icons on hexagon shapes"
               loading="lazy"
               decoding="async"
+              height='45px'
+              width='45px'
             />
           </div>
         </div>

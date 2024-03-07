@@ -3,7 +3,7 @@
 
   background: radial-gradient(
       circle at var(--d) var(--d),
-      #dbdada calc(var(--d) - 1px),
+      #c7c7c7 calc(var(--d) - 1px),
       #0000 var(--d)
     )
     0 0 / 20px 20px;
@@ -17,18 +17,6 @@
   margin: 0;
   padding: 0;
   height: 100vh;
-
-  /* background-image: linear-gradient(
-    to right,
-    rgba(204, 204, 255, 0.9),
-    rgba(177, 156, 217, 0.9),
-    rgba(204, 204, 255, 0.9),
-    rgba(255, 192, 203, 0.9),
-    rgba(255, 222, 173, 0.9),
-    rgba(255, 192, 203, 0.9),
-    rgba(204, 204, 255, 0.9)
-  );
-  */
 
   background-image: linear-gradient(
     to right,
@@ -107,7 +95,7 @@
 
     background: radial-gradient(
         circle at var(--d) var(--d),
-        #dbdada calc(var(--d) - 1px),
+        #c7c7c7 calc(var(--d) - 1px),
         #0000 var(--d)
       )
       0 0 / 30px 30px;
