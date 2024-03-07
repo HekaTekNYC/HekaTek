@@ -26,9 +26,7 @@ const Navigation = () => {
     }
   }, [navRef])
 
-  useEffect(() => {
-    console.log("Menu open state: ", isMenuOpen)
-  }, [isMenuOpen])
+  useEffect(() => {}, [isMenuOpen])
 
   return (
     <div
@@ -37,7 +35,7 @@ const Navigation = () => {
       }`}
       ref={navRef}
     >
-      <a href="#hero" className="logo">
+      <a href="#home" className="logo">
         HEKATEK
       </a>
       <div
@@ -74,28 +72,16 @@ const Navigation = () => {
         </svg>
       </div>
 
-      <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <a
-          className={`${isMenuOpen ? "gradient-blur" : ""}`}
-          href="#services"
-          onClick={closeMenu}
-        >
+      <div className={`nav-links ${isMenuOpen ? "dropdown" : ""}`}>
+        <a href="#services" onClick={closeMenu}>
           SERVICES
         </a>
 
-        <a
-          className={`${isMenuOpen ? "gradient-blur" : ""}`}
-          href="#our-work"
-          onClick={closeMenu}
-        >
+        <a href="#our-work" onClick={closeMenu}>
           OUR WORK
         </a>
 
-        <a
-          className={`${isMenuOpen ? "gradient-blur" : ""}`}
-          href="#contact"
-          onClick={closeMenu}
-        >
+        <a href="#contact" onClick={closeMenu}>
           CONTACT
         </a>
       </div>

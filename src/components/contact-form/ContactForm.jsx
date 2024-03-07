@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react"
-import Button from "../button/Button"
 import emailjs from "@emailjs/browser"
 
 import { Form, Row, Col } from "react-bootstrap"
@@ -67,13 +66,11 @@ const ContactForm = () => {
   return (
     <>
       <div className="contact-form-container">
-        {/* <h6>Contact Us</h6> */}
-
         <Form ref={form} onSubmit={sendEmail}>
           <Row>
             <Form.Group size="sm" as={Col} controlId="formGridFirstName">
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="formGridFirstName"
                 label="First Name"
                 className="mb-3 mb-3 "
               >
@@ -87,7 +84,7 @@ const ContactForm = () => {
             </Form.Group>
             <Form.Group as={Col} controlId="formGridLastName">
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="formGridLastName"
                 label="Last Name"
                 className="mb-3 mb-3"
               >

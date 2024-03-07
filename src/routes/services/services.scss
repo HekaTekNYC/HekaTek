@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-h2 {
+h3 {
   position: relative;
   top: 10px;
   left: -25px;
@@ -38,7 +38,7 @@ h2 {
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
   border: 1px solid #8baeff5e;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(83, 95, 170, 0.598) 0px 3px 8px;
   z-index: 11;
 }
 
@@ -51,58 +51,49 @@ h2 {
   padding-top: 30px;
   text-align: center;
 
-  .iconz {
+  .service-icons {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
     height: 100px;
+
     .service-shape {
       position: absolute;
-      top: -2px;
-      left: 30px;
-      // background: rgba(124, 118, 197, 0.874);
-      // box-shadow: 0 8px 32px 0 rgba(135, 31, 130, 0.37);
-      background: rgba(134, 127, 210, 0.641);
-      // background: rgba(134, 127, 210, 0.641);
-      // background: rgba(125, 118, 197, 0.641);
-      box-shadow: 0 8px 32px 0 rgba(135, 31, 130, 0.199);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      height: 60px;
-      width: 60px;
-      // margin-bottom: 40px;
+      top: 14px;
+      left: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      -webkit-filter: blur(5px);
-      filter: blur(5px);
+      height: 70px;
+      width: 70px;
+      background:  #fb9f9eec;
+      box-shadow:#d96767d1 0px 0px 10px 5px inset;
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      border-radius: 50px;
+      border: 1px solid rgb(180, 46, 66);
+      -webkit-filter: blur(1.8px);
+      filter: blur(1.8px);
       z-index: 2;
     }
+   
     .service-icon {
       position: absolute;
-      // background: rgba(209, 133, 236, 0.493);
-      background: rgba(254, 172, 147, 0.493);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      // background: rgba(255, 169, 168, 0.162);
-      // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 50px;
-      // border: 1px solid rgba(255, 255, 255, 0.18);
-      margin-bottom: 15px;
-      padding: 5px;
-      height: 65px;
-      width: 65px;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 70px;
+      width: 70px;
+      background: rgba(253, 253, 253, 0.233);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border-radius: 50px;
       z-index: 4;
+      
       img {
-        height: 75%;
+        height: 65%;
         width: auto;
       }
     }
@@ -111,15 +102,16 @@ h2 {
   .service-header {
     color: #4d4d4e;
     font-weight: 600;
+    text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
   }
 
   .service-text {
-    text-align: left;
-    margin-top: 8px;
+    text-align: center;
+    margin: 8px 8px 0;
   }
 }
 
-/* Mobile first queries */
+/* Media queries */
 
 /* Larger than tablet */
 @media (min-width: 768px) {

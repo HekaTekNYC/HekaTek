@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- <meta charset="UTF-8" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8"> <!-- Specify the correct charset -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffffed">
+  <meta name="description" content="Freelance web development services for small businesses">
+  <meta http-equiv="Cache-control" content="public">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Gothic+A1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Other head elements -->
-    <title>HekaTek</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      ;(function () {
-        emailjs.init("3M9sCaTmKUO1g2SRA")
-      })()
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
-      crossorigin
-    ></script>
+  <!-- <link rel="preload" href="/public/" as="font" crossorigin /> -->
+<!-- 
+  <link rel="preload" href="/fonts/BebasNeue.woff" as="font" crossorigin />
+  <link rel="preload" href="/fonts/BeVietnamPro-Regular.woff" as="font" crossorigin />
+  <link rel="preload" href="/fonts/GothicA1-Regular.woff" as="font" crossorigin />
+  <link rel="preload" href="/fonts/GothicA1-Bold.woff" as="font" crossorigin />
+  <link rel="preload" href="/fonts/GothicA1-ExtraBold.woff" as="font" crossorigin /> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-      crossorigin
-    ></script>
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin
-    ></script>
-    <script src="dist/bundle.js"></script>
-  </body>
+  <!-- Google Fonts Preload -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap" as="style" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap" as="style" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400&display=swap" as="style"crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" as="style" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap" as="style" crossorigin>
+
+  <!-- Google Fonts Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://www.hekateknyc.com/">
+
+  <title>HekaTek Freelance Website and Software Development</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- External Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    ;(function () {
+      emailjs.init("3M9sCaTmKUO1g2SRA")
+    })()
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
 </html>

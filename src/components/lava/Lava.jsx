@@ -1,9 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import $ from "jquery"
 
 import "./lava.scss"
 
 const Lava = () => {
+  const canvasRef = useRef(null)
+
   useEffect(() => {
     const lavaAnimation = (function () {
       "use strict"
@@ -69,7 +71,7 @@ const Lava = () => {
         return new s(this.x + t.x, this.y + t.y)
       }
       var h = function (t) {
-        var i = 0.1,
+        var i = 0.3,
           h = 1.5
         ;(this.vel = new s(
           (Math.random() > 0.5 ? 1 : -1) * (0.2 + 0.25 * Math.random()),
@@ -241,12 +243,34 @@ const Lava = () => {
           a = i.screen.init("lamp-anim", null, !0),
           o = a.ctx
 
-        // a.resize(), (t = new e(a.width, a.height, 6, "#fcf9ce", "#ff8a8ace"))
-        a.resize(), (t = new e(a.width, a.height, 6, "#fff", "#fff"))
-        // a.resize(), (t = new e(a.width, a.height, 6, "#dbdada", "#e0e0e0"))
+        a.resize(), (t = new e(a.width, a.height, 5, "#EEFAFC", "#EDF8FC"))
       }
       return { run: n }
     })()
+
+    const resizeCanvas = () => {
+      const canvas = canvasRef.current
+      const context = canvas.getContext("2d")
+      canvas.width = canvas.offsetWidth
+      canvas.height = canvas.offsetHeight
+      context.clearRect(0, 0, canvas.width, canvas.height)
+      lavaAnimation.run()
+    }
+
+    const canvas = canvasRef.current
+    const context = canvas.getContext("2d")
+    const resizeHandler = () => {
+      resizeCanvas()
+    }
+    window.addEventListener("resize", resizeHandler)
+
+    if (canvas) {
+      const animation = lavaAnimation.run()
+      return () => {
+        animation.cancelAnimationFrame()
+        window.removeEventListener("resize", resizeHandler)
+      }
+    }
 
     if (document.getElementById("lamp-anim")) {
       lavaAnimation.run()
@@ -255,14 +279,8 @@ const Lava = () => {
       $(".js-works-d-list").addClass("is-loaded")
     }, 150)
   }, [])
-  return (
-    <canvas
-      id="lamp-anim"
-      className="lamp-anim "
-      width="1200px"
-      height="900px"
-    ></canvas>
-  )
+
+  return <canvas id="lamp-anim" className="lamp-anim " ref={canvasRef}></canvas>
 }
 
 export default Lava
