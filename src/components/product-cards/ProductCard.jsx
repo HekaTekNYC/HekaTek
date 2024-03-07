@@ -13,6 +13,8 @@ const ProductCard = ({ name, desc, img, info, btn, aLink, id }) => {
           loading="lazy"
           decoding="async"
           title={img.title}
+          width="100%"
+          height="auto"
         />
       </div>
 

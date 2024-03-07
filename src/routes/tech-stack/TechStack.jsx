@@ -57,6 +57,7 @@ const TechStack = () => {
           key={`icon-${index}`}
           loading="lazy"
           decoding="async"
+         
         />
       ))}
       {icons.map((icon, index) => (
@@ -64,7 +65,7 @@ const TechStack = () => {
           icon={icon}
           key={`icon-dup-${index}`}
           loading="lazy"
-          decoding="async"
+          decoding="async"         
         />
       ))}
     </>

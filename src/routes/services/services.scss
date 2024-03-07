@@ -38,7 +38,7 @@ h3 {
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
   border: 1px solid #8baeff5e;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(83, 95, 170, 0.598) 0px 3px 8px;
   z-index: 11;
 }
 
@@ -61,43 +61,39 @@ h3 {
 
     .service-shape {
       position: absolute;
-      top: 0px;
-      left: 30px;
-      background: rgb(187, 187, 219);
-      box-shadow: rgb(208, 208, 238) 0px 0px 10px 5px inset;
+      top: 14px;
+      left: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      background:  #fb9f9eec;
+      box-shadow:#d96767d1 0px 0px 10px 5px inset;
       backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(1px);
       border-radius: 50px;
-      border: 1px solid rgb(208, 208, 238);
-      height: 67px;
-      width: 67px;
+      border: 1px solid rgb(180, 46, 66);
+      -webkit-filter: blur(1.8px);
+      filter: blur(1.8px);
+      z-index: 2;
+    }
+   
+    .service-icon {
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
-      -webkit-filter: blur(1.5px);
-      filter: blur(1.5px);
-      -webkit-filter: blur(1.5px);
-      filter: blur(1.5px);
-      z-index: 2;
-    }
-    .service-icon {
-      position: absolute;
-      background: rgba(189, 189, 244, 0.291);
+      height: 70px;
+      width: 70px;
+      background: rgba(253, 253, 253, 0.233);
       backdrop-filter: blur(9px);
       -webkit-backdrop-filter: blur(9px);
       border-radius: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      margin-bottom: 15px;
-      padding: 5px;
-      height: 65px;
-      width: 65px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       z-index: 4;
+      
       img {
-        height: 75%;
+        height: 65%;
         width: auto;
       }
     }
@@ -106,6 +102,7 @@ h3 {
   .service-header {
     color: #4d4d4e;
     font-weight: 600;
+    text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
   }
 
   .service-text {

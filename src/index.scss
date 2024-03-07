@@ -1,12 +1,47 @@
 @import "~bootstrap/scss/bootstrap";
-/* Bootstrap v5.3.3 (https://getbootstrap.com/) */
-/*!
- * Bootstrap v5.3.3 (https://getbootstrap.com/)
- * Copyright 2011-2024 The Bootstrap Authors
- * Copyright 2011-2024 The Bootstrap Company
- * Copyright 2022-2024 The Bootstrap Company
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
+
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/BebasNeue-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/BeVietnamPro-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/GothicA1-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/GothicA1-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/GothicA1-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
 
 body {
   margin: 0;
@@ -47,7 +82,7 @@ h6 {
 }
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   margin-top: 10px 0;
   font-size: 6rem;
   line-height: 1.2;
@@ -61,34 +96,33 @@ h2 {
 }
 
 h3 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   margin-top: 10px 0;
   font-size: 8rem;
   color: rgb(226, 226, 240);
 }
 
 h4 {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro";
   margin-top: 10px 0;
   font-size: 2.75rem;
   line-height: 1.2;
 }
 
 h5 {
-  font-family: "Gothic A1", sans-serif;
+  // font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
 }
 
 h6 {
-  font-family: "Gothic A1", sans-serif;
+  // font-family: "Gothic A1", sans-serif;
   font-size: 1.1rem;
-  font-weight: 700;
   font-weight: 700;
   margin: 0;
 }
 
 p {
-  font-family: "Gothic A1", sans-serif;
+  // font-family: "Gothic A1", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.25px;
@@ -168,9 +202,9 @@ ul {
 /* Contact Form */
 .form-select:focus,
 .form-control:focus {
-  border-color: #b5b1ffba;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-    0 0 8px rgba(157, 155, 160, 0.748);
+  border-color: #9fc7f6ba;
+  box-shadow:  inset 0 1px 1px rgba(9, 1, 84, 0.075) ,
+    0 0 8px rgba(2, 2, 106, 0.606);
   color: #fff;
 }
 
@@ -182,7 +216,7 @@ ul {
 }
 .form-floating > textarea + label:after {
   background: transparent !important;
-  font-family: "Calluna Sans Reg";
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .form-control:not(active) {

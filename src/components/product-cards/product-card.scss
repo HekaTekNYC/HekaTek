@@ -12,21 +12,18 @@
   box-shadow: #d0cdde 0px 9px 10px -5px;
 }
 
-h4 {
-  letter-spacing: 1px;
-  color: #414040;
-}
 .content-container {
   position: relative;
 }
 
 .image-container {
   position: relative;
-
+  width: auto;
   .product-img {
     width: 100%;
     height: auto;
     box-shadow: 4px 8px 8px hsla(204, 98%, 52%, 0.395);
+    object-fit: cover;
   }
 }
 
@@ -60,11 +57,18 @@ h4 {
   padding: 20px;
   border-radius: 0 0 20px 20px;
 }
+
 .header-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.product-name {
+  text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
+  letter-spacing: 1px;
+  color: #414040;
 }
 
 .short-desc {
