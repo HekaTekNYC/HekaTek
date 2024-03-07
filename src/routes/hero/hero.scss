@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   width: 100%;
   z-index: 1;
@@ -45,10 +45,6 @@
 /* Larger than desktop */
 @media (min-width: 820px) {
   .hero-container {
-    .blob {
-      top: 80px;
-    }
-
     .hero-text {
       font-size: 1.8rem;
       width: 80%;
@@ -65,19 +61,7 @@
 }
 
 @media (min-width: 1024px) and (max-height: 1366px) {
-  .hero-container {
-    .blob {
-      top: -80px;
-      height: 900px;
-      width: 900px;
-    }
 
-    .glass1 {
-      top: 200px;
-      height: 400px;
-      width: 750px;
-    }
-  }
 }
 @media (min-width: 1200px) {
 }

@@ -260,7 +260,7 @@ const Lava = () => {
       id="lamp-anim"
       className="lamp-anim "
       width="1200px"
-      height="900px"
+      height="1000px"
     ></canvas>
   )
 }

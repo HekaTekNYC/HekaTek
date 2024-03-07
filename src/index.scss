@@ -14,7 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #424242;
+
   background-color: #ffffffed;
+  overflow-x: hidden;
 }
 
 html {
@@ -80,7 +82,7 @@ h5 {
   // font-family: "Red Hat Display", sans-serif;
   font-family: "Gothic A1", sans-serif;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
 }
 
