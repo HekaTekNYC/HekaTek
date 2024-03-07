@@ -2,33 +2,23 @@
   "name": "hekatek",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "exports": "./modern.js",
+  "main": "./legacy.cjs",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
-    "@react-spring/parallax": "^9.7.3",
-    "@react-spring/three": "^9.7.3",
-    "@react-spring/web": "^9.7.3",
-    "@react-three/cannon": "^6.6.0",
-    "@react-three/drei": "^9.93.1",
-    "@react-three/fiber": "^8.15.14",
-    "@react-three/postprocessing": "^2.15.12",
-    "@types/three": "^0.160.0",
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
-    "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.21.2",
-    "three": "^0.160.0"
+    "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -39,16 +29,13 @@
     "css-loader": "^6.9.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
-    "leva": "^0.9.35",
     "mini-css-extract-plugin": "^2.7.7",
     "sass": "^1.69.7",
     "sass-loader": "^14.0.0",
     "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "peerDependencies": {
-    "react-spring": "^8.x"
   }
 }

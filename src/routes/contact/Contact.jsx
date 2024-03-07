@@ -1,8 +1,6 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
-
 import Blob1 from "../../assets/images/sunset-blob.svg"
-
 import "./contact.scss"
 
 const Contact = () => {
@@ -10,11 +8,15 @@ const Contact = () => {
     <>
       <div className="contact-container">
         <div className="contact-blob">
-          <img src={Blob1} alt="blob image" />
+          <img
+            src={Blob1}
+            alt="blob image"
+            loading="lazy"
+            decoding="async"
+            title="blob shape that sits behind the contact container"
+          />
         </div>
-        <div className="about-header">
-          <h2>Contact</h2>
-        </div>
+        <h3>Contact</h3>
         <div className="glass-card">
           <div className="about-text">
             <p>

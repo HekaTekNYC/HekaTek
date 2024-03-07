@@ -1,15 +1,15 @@
 import React from "react"
 import "./button.scss"
 
-const Button = ({ text, link, type }) => {
+const Button = ({ text, href, type }) => {
   const buttonProps = {}
 
   if (type) {
     buttonProps.type = type
   }
 
-  if (link) {
-    buttonProps.href = link
+  if (href) {
+    buttonProps.href = href
   }
   return (
     <div className="button-33">

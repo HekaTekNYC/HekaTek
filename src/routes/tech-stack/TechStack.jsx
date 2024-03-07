@@ -1,9 +1,8 @@
 import React from "react"
 import HexagonIcon from "../../components/hexagon-icon/HexagonIcon"
-import CSSLogo from "../../assets/icons/CSSLogo.svg"
+import CSSLogo from "../../assets/icons/css-96.svg"
 import Express from "../../assets/icons/express.svg"
 import AngularLogo from "../../assets/icons/Angular.svg"
-import D3 from "../../assets/icons/d3js-icon.svg"
 import Firebase from "../../assets/icons/firebase.svg"
 import Github from "../../assets/icons/github-icon.svg"
 import Mongo from "../../assets/icons/mongodb.svg"
@@ -17,7 +16,6 @@ import Bootstrap from "../../assets/icons/Bootstrap-128.svg"
 import Redux from "../../assets/icons/Redux-48.svg"
 import Sass from "../../assets/icons/sass.svg"
 import Node from "../../assets/icons/node1js.svg"
-import MongoIcon from "../../assets/icons/mongodb.svg"
 import Webpack from "../../assets/icons/webpack.svg"
 import Postgresql from "../../assets/icons/postgresql.svg"
 import HTML5Icon from "../../assets/icons/html5.svg"
@@ -74,7 +72,6 @@ const TechStack = () => {
 
   return (
     <div className="tech-stack-container">
-      {/* <div className="tech-row"> */}
       <div className="tech-row-container row-1">
         <div className="scrolling-row">
           <div className="scrolling-icons">{renderIcons(firstRowIcons)}</div>
@@ -85,7 +82,6 @@ const TechStack = () => {
           <div className="scrolling-icons">{renderIcons(secondRowIcons)}</div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   )
 }

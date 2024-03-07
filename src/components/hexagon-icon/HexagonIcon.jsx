@@ -1,5 +1,5 @@
 import React from "react"
-import Sass from "../../assets/icons/sass.svg"
+
 import "./hexagon-icon.scss"
 
 const HexagonIcon = ({ icon }) => {
@@ -9,7 +9,13 @@ const HexagonIcon = ({ icon }) => {
         <div className="hexagon-wrapper">
           <div className="hexagon">
             <div className="icon-wrapper"></div>
-            <img src={icon.src} alt={icon.alt} />
+            <img
+              src={icon.src}
+              alt={icon.alt}
+              title="tech stack icons on hexagon shapes"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>
