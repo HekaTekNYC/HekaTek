@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: auto;
   height: 1000px;
+  height: 1000px;
   width: 100%;
   z-index: 2;
 
@@ -47,7 +48,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
   --borderWidth: 3px;
-  z-index: 6;
+  z-index: 2;
 
   .about-text {
     display: flex;
@@ -94,6 +95,7 @@
 @media (min-width: 1000px) {
   .contact-container {
     height: 800px;
+    height: 800px;
     h2 {
       position: relative;
       top: 20px;
@@ -104,6 +106,9 @@
 
     .contact-blob {
       right: -100px;
+      top: 0px;
+      height: 720px;
+      width: 720px;
       top: 0px;
       height: 720px;
       width: 720px;
