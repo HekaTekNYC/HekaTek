@@ -1,11 +1,11 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
 import ProductCard from "../../components/product-cards/ProductCard"
 import { plantHaus, interviewIQ, dangoDB, ad3lie } from "../../data/ProductData"
 import "./products.scss"
 
 const Products = () => {
-  const [playingVideoId, setPlayingVideoId] = useState(null);
+  const [playingVideoId, setPlayingVideoId] = useState(null)
   // const [activeCard, setActiveCard] = useState(null);
 
   // const handlePlayToggle = (id) => {
@@ -14,13 +14,13 @@ const Products = () => {
   // };
 
   const handlePlayToggle = (id) => {
-     console.log('Toggle Play:', id);
+    console.log("Toggle Play:", id)
     setPlayingVideoId((prevId) => {
-    const newId = prevId === id ? null : id;
- console.log('New Playing Video ID:', newId);
-  return newId;
- });
- };
+      const newId = prevId === id ? null : id
+      console.log("New Playing Video ID:", newId)
+      return newId
+    })
+  }
 
   // // Checking if the current card is active
   // const handleCardTouch = (id) => {
@@ -31,7 +31,6 @@ const Products = () => {
   //     return newId;
   //   });
   // };
-
 
   // If the card is not active, stop the video and set the active card to null
   // const handleCardTouchEnd = () => {
@@ -45,24 +44,13 @@ const Products = () => {
   //   }
   // };
 
-
   return (
     <div className="products-container">
-      <h2>OUR WORK</h2>
+      <h3>OUR WORK</h3>
       <div className="product-row">
         {[plantHaus, interviewIQ, dangoDB, ad3lie].map((product) => (
           <div className="product-container" key={product.id}>
-            <ProductCard
-              {...product}
-        
-              onPlayToggle={() => handlePlayToggle(product.id)}
-              isPlaying={playingVideoId === product.id}
-
-              // isTouched={activeCard === product.id}
-              // onTouchStart={() => handleCardTouch(product.id)}
-              // onTouchCancel={() => handleCardTouchEnd()} 
-              />
-              
+            <ProductCard {...product} />
           </div>
         ))}
       </div>
@@ -71,7 +59,6 @@ const Products = () => {
 }
 
 export default Products
-
 
 // const ProductCard = ({ product, isActive, onSelect }) => {
 //   const handleTouch = () => {

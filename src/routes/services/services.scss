@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-h2 {
+h3 {
   position: relative;
   top: 10px;
   left: -25px;
@@ -51,7 +51,7 @@ h2 {
   padding-top: 30px;
   text-align: center;
 
-  .iconz {
+  .service-icons {
     position: relative;
     display: flex;
     align-items: center;
@@ -59,37 +59,34 @@ h2 {
     width: 100px;
     height: 100px;
 
-
     .service-shape {
       position: absolute;
       top: 0px;
-      left: 25px;
-      background: rgb(168, 168, 232);
+      left: 30px;
+      background: rgb(187, 187, 219);
       box-shadow: rgb(208, 208, 238) 0px 0px 10px 5px inset;
-      // background: rgb(212, 161, 237);
-      // box-shadow: rgb(250, 221, 255) 0px 0px 10px 5px inset;
       backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(1px);
       border-radius: 50px;
       border: 1px solid rgb(208, 208, 238);
-      // border: 1px solid rgb(240, 212, 255);
-      height: 65px;
-      width: 65px;
-      // margin-bottom: 40px;
+      height: 67px;
+      width: 67px;
       display: flex;
       align-items: center;
       justify-content: center;
+      -webkit-filter: blur(1.5px);
+      filter: blur(1.5px);
       -webkit-filter: blur(1.5px);
       filter: blur(1.5px);
       z-index: 2;
     }
     .service-icon {
       position: absolute;
-      background: rgba(219, 219, 241, 0.079);
-      // background: #eac9ff4a;
+      background: rgba(189, 189, 244, 0.291);
       backdrop-filter: blur(9px);
       -webkit-backdrop-filter: blur(9px);
       border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border: 1px solid rgba(255, 255, 255, 0.18);
       margin-bottom: 15px;
       padding: 5px;
@@ -112,12 +109,12 @@ h2 {
   }
 
   .service-text {
-    text-align: left;
-    margin-top: 8px;
+    text-align: center;
+    margin: 8px 8px 0;
   }
 }
 
-/* Mobile first queries */
+/* Media queries */
 
 /* Larger than tablet */
 @media (min-width: 768px) {

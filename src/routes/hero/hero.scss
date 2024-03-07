@@ -4,10 +4,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  height: 100vh;
   text-align: center;
   width: 100%;
   z-index: 1;
 }
+
 .lava-container {
   position: absolute;
   z-index: -1;
@@ -20,27 +22,18 @@
   justify-content: center;
   padding: 0 20px;
   z-index: 4;
+
   h1 {
     text-shadow: 3px 4px 7px #282727;
   }
-  // color: #e39ab0
-  .hero-hekatek {
-  }
 
   .hero-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 90%;
   }
 }
 
-// background-image: linear-gradient(
-//   to right,
-//   #fad27d 0%,
-//   #f58d9d 40%,
-//   #ca4ce3 85%,
-//   #7759ff 90%,
-//   #4a8cfe 100%
-// );
+/* Media queries */
 
 /* Larger than desktop */
 @media (min-width: 820px) {
@@ -51,6 +44,7 @@
     }
   }
 }
+
 @media (min-width: 1024px) {
   .hero-container {
     .hero-text {
@@ -58,10 +52,4 @@
       width: 70%;
     }
   }
-}
-
-@media (min-width: 1024px) and (max-height: 1366px) {
-
-}
-@media (min-width: 1200px) {
 }

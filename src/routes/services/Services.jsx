@@ -36,29 +36,29 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className="services-section-header">
-        <h2>SERVICES</h2>
+        <h3>SERVICES</h3>
       </div>
       <div className="services-card">
         {servicesData.map((service, index) => (
           <div key={index} className="service-info">
-            <div className="iconz">
+            <div className="service-icons">
               <div className="service-shape"> </div>
               <div className="service-icon">
                 {" "}
-                {/* <div className="circle-container"> */}
                 <img
                   src={service.svgPath}
-                  alt={service.alt}
+                  alt="service icons"
                   width="20%"
                   height="20%"
+                  loading="lazy"
+                  decoding="async"
+                  title="services section icons featuring web development, bug fixes and optimization"
                 />
-                {/* <img src={service.svgPath} alt={service.alt} /> */}
-                {/* </div> */}
               </div>
             </div>
 
-            <h5 className="service-header">{service.name}</h5>
-            <div className="service-text">{service.description}</div>
+            <h6 className="service-header">{service.name}</h6>
+            <p className="service-text">{service.description}</p>
           </div>
         ))}
       </div>

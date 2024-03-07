@@ -2,18 +2,24 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require("path")
 const webpack = require("webpack")
 const CopyPlugin = require("copy-webpack-plugin")
+// const TerserPlugin = require("terser-webpack-plugin")
+
+const mode =
+  process.env.NODE_ENV === "production" ? "production" : "development"
+
 module.exports = {
-  mode: "development",
-  entry: "./src/index.jsx",
+  mode: mode,
+  entry: path.resolve(__dirname, "./src/index.jsx"),
   output: {
-    filename: "bundle.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
+
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|jpg|gif|woff|woff2|eot|ttf|svg|ico|mp4)$/,
+        test: /\.(png|jpe?g|jpg|webp|gif|woff|woff2|eot|ttf|svg|ico|mp4)$/,
         use: [
           {
             loader: "file-loader",
@@ -75,12 +81,13 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     headers: {
-      "Cache-Control": "no-store", // This disables caching
+      "Cache-Control": "no-store",
     },
     hot: true,
     open: true,
     client: {
       overlay: false,
     },
+    historyApiFallback: true,
   },
 }
