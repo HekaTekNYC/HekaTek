@@ -73,7 +73,7 @@ h3 {
       backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(1px);
       border-radius: 50px;
-      border: 1px solid rgb(180, 46, 66);
+      border: 1px solid rgb(60, 26, 31);
       -webkit-filter: blur(1.8px);
       filter: blur(1.8px);
       z-index: 2;
@@ -92,10 +92,10 @@ h3 {
       border-radius: 50px;
       z-index: 4;
       
-      img {
-        height: 65%;
-        width: auto;
-      }
+      // img {
+      //   height: 65%;
+      //   width: auto;
+      // }
     }
   }
 
