@@ -13,7 +13,7 @@ module.exports = {
   mode: mode,
   entry: path.resolve(__dirname, "./src/index.jsx"),
   output: {
-    filename: "[name].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
@@ -59,9 +59,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
-    alias: {
-      three: path.resolve("./node_modules/three"),
-    },
+
   },
   plugins: [
     new HtmlWebpackPlugin({
