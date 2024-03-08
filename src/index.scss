@@ -1,46 +1,44 @@
 @import "~bootstrap/scss/bootstrap";
+// @import url('../src/assets/fonts/BebasNeue-Regular.woff');
 
 
+// @font-face {
+//   font-family: 'Gothic Regular';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: 
+//   url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/BebasNeue-Regular.woff') format('woff');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Be Vietnam Pro';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('./assets/fonts/BeVietnamPro-Regular.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Be Vietnam Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/BeVietnamPro-Regular.woff') format('woff');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Gothic A1';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
 
-@font-face {
-  font-family: 'Gothic A1';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/GothicA1-Regular.woff') format('woff');
-  font-display: swap;
-}
+// }
 
-@font-face {
-  font-family: 'Gothic A1';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./assets/fonts/GothicA1-Bold.woff') format('woff');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Gothic A1';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('./assets/fonts/GothicA1-Bold.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Gothic A1';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./assets/fonts/GothicA1-ExtraBold.woff') format('woff');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Gothic A1';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('./assets/fonts/GothicA1-ExtraBold.ttf') format('truetype');
+
+// }
 
 
 body {
