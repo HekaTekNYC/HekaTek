@@ -44,8 +44,8 @@ const Services = () => {
                 <img
                   src={service.svgPath}
                   alt="service icons"
-                  width="70px"
-                  height="70px"
+                  // width="70px"
+                  // height="70px"
                   loading="lazy"
                   decoding="async"
                   title="services section icons featuring web development, bug fixes and optimization"
