@@ -74,12 +74,14 @@ const Lava = () => {
         var i = 0.3,
           h = 1.5
         ;(this.vel = new s(
-          (Math.random() > 0.5 ? 1 : -1) * (0.2 + 0.25 * Math.random()),
-          (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random())
+          (Math.random() > 0.5 ? 1 : -1) * (0.1 + 0.125 * Math.random()),
+          (Math.random() > 0.5 ? 1 : -1) * (0.1 + 0.5 * Math.random())
         )),
           (this.pos = new s(
-            0.2 * t.width + Math.random() * t.width * 0.6,
-            0.2 * t.height + Math.random() * t.height * 0.6
+            Math.random() * t.width,
+            Math.random() * t.height
+            // 0.2 * t.width + Math.random() * t.width * 0.6,
+            // 0.2 * t.height + Math.random() * t.height * 0.6
           )),
           (this.size = t.wh / 15 + (Math.random() * (h - i) + i) * (t.wh / 15)),
           (this.width = t.width),
