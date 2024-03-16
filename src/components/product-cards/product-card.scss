@@ -8,8 +8,8 @@
   text-decoration: none;
   background-color: #ffffff;
   transition: all 0.5s ease-in-out;
-  filter: drop-shadow(1px 2px 4px hsl(220, 32%, 68%));
-  box-shadow: #d0cdde 0px 9px 10px -5px;
+  filter: drop-shadow(1px 2px 2px hsla(220, 33%, 68%, 0.407));
+  box-shadow: #d0cddea4 0px 13px 20px -5px;
 }
 
 .content-container {
@@ -39,7 +39,7 @@
   width: 100%;
   border-radius: 30px 0 30px 30px;
   background-color: #fff;
-  filter: drop-shadow(1px 2px 6px hsl(220, 54%, 84%));
+  // filter: drop-shadow(1px 2px 6px hsl(220, 54%, 84%));
 
   &:before {
     content: "";
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 1000px) {
   .product-card-container {
-    filter: drop-shadow(1px 2px 4px hsl(220, 32%, 68%));
-    box-shadow: #d0cdde 0px 13px 27px -5px;
+    filter: drop-shadow(1px 2px 2px hsla(220, 33%, 68%, 0.407));
+    box-shadow: #d0cddea4 0px 13px 20px -5px;
   }
 }

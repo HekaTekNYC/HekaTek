@@ -9,15 +9,18 @@ const HexagonIcon = ({ icon }) => {
         <div className="hexagon-wrapper">
           <div className="hexagon">
             <div className="icon-wrapper"></div>
-            <img
-              src={icon.src}
-              alt={icon.alt}
-              title="tech stack icons on hexagon shapes"
-              loading="lazy"
-              decoding="async"
-              height='45px'
-              width='45px'
-            />
+            <div className="img-logo">
+              <img
+                src={icon.src}
+                alt={icon.alt}
+                title="tech stack icons on hexagon shapes"
+                loading="lazy"
+                decoding="async"
+                height="45px"
+                width="45px"
+              />
+              <div className="icon-name">{icon.name}</div>
+            </div>
           </div>
         </div>
       </div>

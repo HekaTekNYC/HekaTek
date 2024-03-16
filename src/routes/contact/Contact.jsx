@@ -7,15 +7,18 @@ const Contact = () => {
   return (
     <>
       <div className="contact-container">
-        <div className="contact-blob">
-          <img
-            src={Blob1}
-            alt="blob image"
-            loading="lazy"
-            decoding="async"
-            title="blob shape that sits behind the contact container"
-          />
+        <div className="blob-container">
+          <div className="contact-blob">
+            <img
+              src={Blob1}
+              alt="blob image"
+              loading="lazy"
+              decoding="async"
+              title="blob shape that sits behind the contact container"
+            />
+          </div>
         </div>
+
         <h3>Contact</h3>
         <div className="glass-card">
           <div className="about-text">
