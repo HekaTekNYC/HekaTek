@@ -1,12 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 // @import url('../src/assets/fonts/BebasNeue-Regular.woff');
 
-
 // @font-face {
 //   font-family: 'Gothic Regular';
 //   font-style: normal;
 //   font-weight: 400;
-//   src: 
+//   src:
 //   url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
 // }
 
@@ -40,7 +39,6 @@
 
 // }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -49,6 +47,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #37373c;
   background-color: #ffffffed;
+  max-width: 100%;
   overflow-x: hidden;
 
   &::-webkit-scrollbar {
@@ -84,7 +83,8 @@ h1 {
   margin-top: 10px 0;
   font-size: 6rem;
   line-height: 1.2;
-  color: #282727;
+  // color: #282727;
+  color: #111111;
 }
 
 h2 {
@@ -163,7 +163,7 @@ ul {
 .contact-btn {
   font-family: "Gothic A1", sans-serif;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   white-space: nowrap;
   background: #7a8399;
   font-weight: 600;
@@ -201,7 +201,7 @@ ul {
 .form-select:focus,
 .form-control:focus {
   border-color: #9fc7f6ba;
-  box-shadow:  inset 0 1px 1px rgba(9, 1, 84, 0.075) ,
+  box-shadow: inset 0 1px 1px rgba(9, 1, 84, 0.075),
     0 0 8px rgba(2, 2, 106, 0.606);
   color: #fff;
 }

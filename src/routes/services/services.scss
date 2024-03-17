@@ -31,14 +31,12 @@ h3 {
   justify-content: center;
   width: 100%;
   padding: 0 25px 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(205, 206, 250, 0.092);
+  box-shadow: rgba(83, 95, 170, 0.428) 0px 3px 8px;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
-  border: 1px solid #8baeff5e;
-  box-shadow: rgba(83, 95, 170, 0.598) 0px 3px 8px;
+  border: 1px solid #8baeff43;
   z-index: 11;
 }
 
@@ -68,10 +66,12 @@ h3 {
       justify-content: center;
       height: 70px;
       width: 70px;
+
       background:  #d37bd4ec;
-      // background:  #fb9f9eec;
+     
       box-shadow:#738eefd1 0px 0px 10px 5px inset;
-      // box-shadow:#d96767d1 0px 0px 10px 5px inset;
+      
+
       backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(1px);
       border-radius: 50px;
@@ -80,7 +80,7 @@ h3 {
       filter: blur(1.8px);
       z-index: 2;
     }
-   
+
     .service-icon {
       position: absolute;
       display: flex;
@@ -93,7 +93,7 @@ h3 {
       -webkit-backdrop-filter: blur(9px);
       border-radius: 50px;
       z-index: 4;
-      
+
       img {
         height: 65%;
         width: auto;

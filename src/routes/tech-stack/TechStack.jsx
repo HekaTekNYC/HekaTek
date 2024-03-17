@@ -24,29 +24,29 @@ import "./tech-stack.scss"
 
 const TechStack = () => {
   const firstRowIcons = [
-    { src: Typescript, alt: "Typescript Logo" },
-    { src: Deno, alt: "Deno Logo" },
-    { src: Electron, alt: "Electron Logo" },
-    { src: JSIcon, alt: "JavaScript Logo" },
-    { src: ReactIcon, alt: "React Logo" },
-    { src: Tailwind, alt: "Tailwind Logo" },
-    { src: Redux, alt: "Redux Logo" },
-    { src: Sass, alt: "Sass Logo" },
-    { src: RORIcon, alt: "Ruby on Rails Logo" },
-    { src: HTML5Icon, alt: "HTML5 Logo" },
+    { src: Typescript, alt: "Typescript Logo", name: "Typescript" },
+    { src: Deno, alt: "Deno Logo", name: "Deno" },
+    { src: Electron, alt: "Electron Logo", name: "Electron" },
+    { src: JSIcon, alt: "JavaScript Logo", name: "JavaScript" },
+    { src: ReactIcon, alt: "React Logo", name: "React" },
+    { src: Tailwind, alt: "Tailwind Logo", name: "Tailwind" },
+    { src: Redux, alt: "Redux Logo", name: "Redux" },
+    { src: Sass, alt: "Sass Logo", name: "Sass" },
+    { src: RORIcon, alt: "Ruby on Rails Logo", name: "RoR" },
+    { src: HTML5Icon, alt: "HTML5 Logo", name: "HTML5" },
   ]
 
   const secondRowIcons = [
-    { src: Mongo, alt: "Mongo Logo" },
-    { src: Github, alt: "Github Logo" },
-    { src: Firebase, alt: "Firebase Logo" },
-    { src: AngularLogo, alt: "Angular Logo" },
-    { src: Express, alt: "Express Logo" },
-    { src: CSSLogo, alt: "CSS Logo" },
-    { src: Bootstrap, alt: "Bootstrap Logo" },
-    { src: Node, alt: "Node Logo" },
-    { src: Webpack, alt: "Webpack Logo" },
-    { src: Postgresql, alt: "Postgresql Logo" },
+    { src: Mongo, alt: "Mongo Logo", name: "MongoDB" },
+    { src: Github, alt: "Github Logo", name: "Github" },
+    { src: Firebase, alt: "Firebase Logo", name: "Firebase" },
+    { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
+    { src: Express, alt: "Express Logo", name: "Express" },
+    { src: CSSLogo, alt: "CSS Logo", name: "CSS3" },
+    { src: Bootstrap, alt: "Bootstrap Logo", name: "Bootstrap" },
+    { src: Node, alt: "Node Logo", name: "Node.js" },
+    { src: Webpack, alt: "Webpack Logo", name: "Webpack" },
+    { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
   ]
 
   const renderIcons = (icons) => (
@@ -57,7 +57,6 @@ const TechStack = () => {
           key={`icon-${index}`}
           loading="lazy"
           decoding="async"
-         
         />
       ))}
       {icons.map((icon, index) => (
@@ -65,7 +64,7 @@ const TechStack = () => {
           icon={icon}
           key={`icon-dup-${index}`}
           loading="lazy"
-          decoding="async"         
+          decoding="async"
         />
       ))}
     </>
