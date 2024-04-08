@@ -1,45 +1,45 @@
-.background-dots {
-  --d: 0.09rem;
+// .background-dots {
+//   --d: 0.09rem;
 
-  background: radial-gradient(
-      circle at var(--d) var(--d),
-      #c7c7c7 calc(var(--d) - 1px),
-      #0000 var(--d)
-    )
-    0 0 / 20px 20px;
-  height: 100%;
-  z-index: -2;
-}
+//   background: radial-gradient(
+//       circle at var(--d) var(--d),
+//       #c7c7c7 calc(var(--d) - 1px),
+//       #0000 var(--d)
+//     )
+//     0 0 / 20px 20px;
+//   height: 100%;
+//   z-index: -2;
+// }
 
-.hero-section {
-  position: relative;
-  top: -70px;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+// .hero-section {
+//   position: relative;
+//   top: -70px;
+//   margin: 0;
+//   padding: 0;
+//   height: 100vh;
 
-  background-image: linear-gradient(
-    to right,
-    rgba(204, 204, 255, 0.9),
-    rgba(177, 156, 217, 0.9),
-    rgba(255, 192, 203, 0.9),
-    rgba(255, 222, 173, 0.9)
-  );
-  mask-image: gradient(
-    linear,
-    left 70%,
-    left bottom,
-    from(rgba(0, 0, 0, 1)),
-    to(rgba(0, 0, 0, 0))
-  );
-  -webkit-mask-image: -webkit-gradient(
-    linear,
-    left 70%,
-    left bottom,
-    from(rgba(0, 0, 0, 1)),
-    to(rgba(0, 0, 0, 0))
-  );
-}
+//   background-image: linear-gradient(
+//     to right,
+//     rgba(204, 204, 255, 0.9),
+//     rgba(177, 156, 217, 0.9),
+//     rgba(255, 192, 203, 0.9),
+//     rgba(255, 222, 173, 0.9)
+//   );
+//   mask-image: gradient(
+//     linear,
+//     left 70%,
+//     left bottom,
+//     from(rgba(0, 0, 0, 1)),
+//     to(rgba(0, 0, 0, 0))
+//   );
+//   -webkit-mask-image: -webkit-gradient(
+//     linear,
+//     left 70%,
+//     left bottom,
+//     from(rgba(0, 0, 0, 1)),
+//     to(rgba(0, 0, 0, 0))
+//   );
+// }
 
 .product-section,
 .services-section,
@@ -90,16 +90,16 @@
 }
 
 @media (min-width: 1024px) and (max-height: 1366px) {
-  .background-dots {
-    --d: 0.1rem;
+  // .background-dots {
+  //   --d: 0.1rem;
 
-    background: radial-gradient(
-        circle at var(--d) var(--d),
-        #c7c7c7 calc(var(--d) - 1px),
-        #0000 var(--d)
-      )
-      0 0 / 30px 30px;
-    height: 100%;
-    z-index: 1;
-  }
+  //   background: radial-gradient(
+  //       circle at var(--d) var(--d),
+  //       #c7c7c7 calc(var(--d) - 1px),
+  //       #0000 var(--d)
+  //     )
+  //     0 0 / 30px 30px;
+  //   height: 100%;
+  //   z-index: 1;
+  // }
 }
