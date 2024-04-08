@@ -11,11 +11,14 @@ const Button = ({ text, href, type }) => {
   if (href) {
     buttonProps.href = href
   }
+
   return (
     <div className="button-33">
+      {" "}
       <a {...buttonProps} target="_blank">
+        {" "}
         {text}
-      </a>
+      </a>{" "}
     </div>
   )
 }
