@@ -132,8 +132,10 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-  img {
-    height: 45px;
+  .hexagon {
+    img {
+      height: 45px;
+    }
   }
 }
 

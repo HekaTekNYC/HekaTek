@@ -1,24 +1,14 @@
 import React from "react"
 import "./button.scss"
 
-const Button = ({ text, href, type }) => {
-  const buttonProps = {}
-
-  if (type) {
-    buttonProps.type = type
-  }
-
-  if (href) {
-    buttonProps.href = href
-  }
+const Button = ({ text, href, btnType }) => {
+  const buttonClass = `btn-${btnType === "solid" ? "solid" : "outline"} `
 
   return (
-    <div className="button-33">
-      {" "}
-      <a {...buttonProps} target="_blank">
-        {" "}
+    <div className={buttonClass}>
+      <a href={href} target="_blank">
         {text}
-      </a>{" "}
+      </a>
     </div>
   )
 }
