@@ -45,7 +45,7 @@ body {
   font-family: "Gothic A1", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #37373c;
+  color: #444d82;
   background-color: #ffffffed;
   max-width: 100%;
   overflow-x: hidden;
@@ -98,7 +98,10 @@ h3 {
   font-family: "Bebas Neue";
   margin-top: 10px 0;
   font-size: 8rem;
-  color: rgb(226, 226, 240);
+  font-weight: 700;
+  line-height: 6.2rem;
+  // color: #c6ccfc;
+  color: #e1e5ff;
 }
 
 h4 {
@@ -111,6 +114,7 @@ h4 {
 h5 {
   // font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
+  font-weight: 700;
 }
 
 h6 {

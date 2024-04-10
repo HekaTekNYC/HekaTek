@@ -14,7 +14,7 @@ const Hero = () => {
             // top: 0,
             // left: 0,
 
-            backgroundImage: `url(${HeroBkrnd})`,
+            // backgroundImage: `url(${HeroBkrnd})`,
             backgroundSize: "cover",
             // filter: "blur(50px)",
             zIndex: -1,
