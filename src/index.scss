@@ -1,5 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
+// @import '../assets/font/Satoshi/WEB/css/satoshi.css';
+// @import '/assets/fonts/Satoshi/WEB/css/satoshi.css';
+// @import '../assets/fonts/Satoshi/WEB/css/satoshi.css';
 // @import url('../src/assets/fonts/BebasNeue-Regular.woff');
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('../src/assets/fonts/Satoshi/Satoshi-Light.woff2') format('woff2'),
+       url('../src/assets/fonts/Satoshi/Satoshi-Light.woff') format('woff'),
+       url('../src/assets/fonts/Satoshi/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../src/assets/fonts/Satoshi/Satoshi-Regular.woff2') format('woff2'),
+       url('../src/assets/fonts/Satoshi/Satoshi-Regular.woff') format('woff'),
+       url('../src/assets/fonts/Satoshi/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 
 // @font-face {
 //   font-family: 'Gothic Regular';
@@ -62,11 +85,11 @@ html {
     display: none;
   }
 }
-
+// * { border: 1px solid red; }
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 h1,

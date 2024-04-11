@@ -1,6 +1,10 @@
 .services-container {
-  height: auto;
-  width: 100%;
+  // height: auto;
+  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 // h3 {
@@ -10,22 +14,30 @@
 //   line-height: 6.2rem;
 //   z-index: 10;
 // }
-.circle-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 2rem;
+h6 {
+  font-size: 1.375rem;
+  line-height: 50px;
+  margin-bottom: 12px;
+  font-family: 'Satoshi-Regular';
+}
+p{
+  line-height: 28px;
+  font-size: 1rem; //i think maybe on a larger screen we would adjust the size to 18px?? I don't know lets talk about it when we are together.
 }
 
 .service-card {
+  flex: 1 1 calc(50% - 40px); /* Adjusted to allow cards to grow and shrink */
+  min-height: 255px; /*this is how i was able to make all the cards the same*/
   background: rgba(205, 206, 250, 0.2);
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 32px;
   text-align: center;
-  width: 250px; // Adjust to your preference
+  height: auto;
+  width: 355px; 
   transition: all 0.3s ease;
+  margin: 32px auto; //the auto made it center itself...fucking finally!
+
 
   &:hover {
     transform: translateY(-10px);
@@ -34,12 +46,11 @@
 }
 
 .service-icon-container {
-  // The icon container styles
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
   text-align: center;
+  padding:32px;
 
   .service-icons {
     position: relative;
@@ -48,29 +59,7 @@
     justify-content: center;
     width: 100px;
     height: 100px;
-
-    .service-shape {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 70px;
-      width: 70px;
-
-      background: #d37bd4ec;
-
-      box-shadow: #738eefd1 0px 0px 10px 5px inset;
-
-      backdrop-filter: blur(1px);
-      -webkit-backdrop-filter: blur(1px);
-      border-radius: 50px;
-      border: 1px solid rgb(60, 26, 31);
-      -webkit-filter: blur(1.8px);
-      filter: blur(1.8px);
-      z-index: 2;
-    }
+    padding: 32px;
 
     .service-icon {
       position: absolute;
@@ -88,145 +77,31 @@
 }
 
 .service-header {
-  // ... other styles remain the same
-     color: #4d4d4e;
+    color: #444D82;
     font-weight: 600;
+    font-size: 24px;
+    // line-height: 100px;
     text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
+    margin: 12px;
 }
 
 .service-text {
-  // ... other styles remain the same
       text-align: center;
     margin: 8px 8px 0;
 }
 
-// Include media queries for responsiveness
-@media (min-width: 768px) {
-  // Adjust the layout for larger screens
-  .services-cards-container {
-    justify-content: center;
-  }
-  // Other responsive adjustments as needed
-}
-
-// h3 {
-//   position: relative;
-//   top: 10px;
-//   left: -25px;
-//   line-height: 6.2rem;
-//   z-index: 10;
-// }
-// .circle-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 90px;
-//   height: 90px;
-//   border-radius: 50%;
-//   background-color: rgba(255, 255, 255, 0.2);
-//   backdrop-filter: blur(10px);
-//   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
-// }
-// .services-card {
-//   position: relative;
-//   top: -30px;
-//   left: 0;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100%;
-//   padding: 0 25px 30px;
-//   background: rgba(205, 206, 250, 0.092);
-//   box-shadow: rgba(83, 95, 170, 0.428) 0px 3px 8px;
-//   border-radius: 16px;
-//   backdrop-filter: blur(3.1px);
-//   -webkit-backdrop-filter: blur(3.1px);
-//   border: 1px solid #8baeff43;
-//   z-index: 11;
-// }
-
-// .service-info {
-//   display: flex;
-//   flex: 1;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   padding-top: 30px;
-//   text-align: center;
-
-//   .service-icons {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 100px;
-//     height: 100px;
-
-//     .service-shape {
-//       position: absolute;
-//       top: 14px;
-//       left: 14px;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       height: 70px;
-//       width: 70px;
-
-//       background:  #d37bd4ec;
-     
-//       box-shadow:#738eefd1 0px 0px 10px 5px inset;
-      
-
-//       backdrop-filter: blur(1px);
-//       -webkit-backdrop-filter: blur(1px);
-//       border-radius: 50px;
-//       border: 1px solid rgb(60, 26, 31);
-//       -webkit-filter: blur(1.8px);
-//       filter: blur(1.8px);
-//       z-index: 2;
-//     }
-
-//     .service-icon {
-//       position: absolute;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       height: 70px;
-//       width: 70px;
-//       background: rgba(253, 253, 253, 0.233);
-//       backdrop-filter: blur(9px);
-//       -webkit-backdrop-filter: blur(9px);
-//       border-radius: 50px;
-//       z-index: 4;
-
-//       img {
-//         height: 65%;
-//         width: auto;
-//       }
-//     }
-//   }
-
-//   .service-header {
-//     color: #4d4d4e;
-//     font-weight: 600;
-//     text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
-//   }
-
-//   .service-text {
-//     text-align: center;
-//     margin: 8px 8px 0;
-//   }
-// }
-
 /* Media queries */
-
-/* Larger than tablet */
 @media (min-width: 768px) {
-  .services-card {
-    padding: 0 30px 30px;
+  .service-card {
+      flex: 1 1 calc(50% - 40px); /* Adjusted to allow cards to grow and shrink */
+
   }
+  // .services-cards-container {
+  //   justify-content: center;
+  // }
 }
+
+
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
