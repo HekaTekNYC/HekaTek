@@ -13,11 +13,13 @@ const About = () => {
         <img src={AboutBkrd} alt="" />
       </div>
       <div className="about-img-container">
+
         <div className="about-img-lg">
           <img src={AboutLg} height={"450px"} alt="placeholder image" />
         </div>
         <div className="about-img-sm">
           <img src={AboutSm} height={"250px"} alt="placeholder image" />
+
         </div>
       </div>
       <div className="about-info-container">

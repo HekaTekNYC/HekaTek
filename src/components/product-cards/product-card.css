@@ -1,0 +1,95 @@
+.product-card-container {
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(1px 2px 2px hsla(220, 33%, 68%, 0.407));
+  box-shadow: rgba(208, 205, 222, 0.6431372549) 0px 13px 20px -5px;
+}
+
+.content-container {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: auto;
+}
+.image-container .product-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 8px 8px hsla(204, 98%, 52%, 0.395);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.layered.box {
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075), 0 2px 2px hsla(0, 0%, 0%, 0.075), 0 4px 4px hsla(0, 0%, 0%, 0.075), 0 8px 8px hsla(0, 0%, 0%, 0.075), 0 16px 16px hsla(0, 0%, 0%, 0.075);
+}
+
+.inverted-border {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px 0 30px 30px;
+  background-color: #fff;
+}
+.inverted-border:before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  height: 80px;
+  width: 60px;
+  border-bottom-right-radius: 40%;
+  box-shadow: 0 30px 0 0 #ffffff;
+}
+
+.product-info {
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-name {
+  text-shadow: 1px 1px 0px rgba(138, 136, 136, 0.301);
+  letter-spacing: 1px;
+  color: #414040;
+}
+
+.short-desc {
+  padding-bottom: 4px;
+  color: #f18a94;
+  font-weight: 500;
+}
+
+.long-desc {
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media queries */
+@media screen and (min-width: 1000px) {
+  .product-card-container {
+    filter: drop-shadow(1px 2px 2px hsla(220, 33%, 68%, 0.407));
+    box-shadow: rgba(208, 205, 222, 0.6431372549) 0px 13px 20px -5px;
+  }
+}/*# sourceMappingURL=product-card.css.map */
