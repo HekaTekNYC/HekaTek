@@ -1,25 +1,24 @@
 .about-container {
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 100%;
   padding-top: 40px;
   margin-bottom: 20px;
 }
 
+.about-bkrnd-img {
+  position: absolute;
+  right: -300px;
+  top: 0px;
+  height: 400px;
+  width: 550px;
+  z-index: 1;
+}
+
 .about-img-container {
-  .about-bkrnd-img {
-    position: absolute;
-    right: -300px;
-    bottom: 250px;
-    height: 400px;
-    width: 550px;
-    z-index: 1;
-  }
-  .about-images {
-    display: none;
-  }
+  display: none;
 }
 
 .about-info-container {
@@ -39,31 +38,74 @@
 
 /* Larger than tablet */
 @media (min-width: 768px) {
-  .about-img-container {
-    .about-bkrnd-img {
-      position: absolute;
-      right: -100px;
-      bottom: 200px;
-      height: 350px;
-      width: 550px;
-      z-index: 1;
-    }
-  }
 }
 
 /* Larger than desktop */
-@media (min-width: 820px) {
+@media (min-width: 992px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-bkrnd-img {
+    left: -100px;
+    top: -100px;
+    height: 650px;
+    width: 850px;
+  }
+
   .about-img-container {
-    .about-bkrnd-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+
+    .about-img-sm {
       position: absolute;
-      right: -100px;
-      bottom: 100px;
-      height: 350px;
-      width: 550px;
-      z-index: 1;
+      bottom: -50px;
+      right: 20px;
+      z-index: 4;
+    }
+  }
+
+  .about-info-container {
+    width: 50%;
+    .about-indent {
+      margin-left: 100px;
     }
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  .about-img-container {
+    .about-img-sm {
+      right: 40px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-bkrnd-img {
+    position: absolute;
+    left: 0px;
+    top: -150px;
+    height: 650px;
+    width: 850px;
+    z-index: -1;
+  }
+  .about-img-container {
+    .about-img-sm {
+      right: 60px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .about-img-container {
+    .about-img-sm {
+      right: 100px;
+    }
+  }
 }
