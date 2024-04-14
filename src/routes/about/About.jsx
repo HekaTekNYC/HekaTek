@@ -8,7 +8,7 @@ import "./about.scss"
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="about-img-container">
         <div className="about-bkrnd-img">
           <img src={AboutBkrd} alt="" />
@@ -23,7 +23,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-info-container">
-        <h3 className="about-header">About Us</h3>
+        <h3 className="about-header">About HekaTek</h3>
         <h5 className="about-subheader">
           We're a duo of software developers who find joy in decluttering
           digital messes, turning complexity into simplicity.

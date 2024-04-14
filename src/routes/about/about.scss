@@ -11,8 +11,9 @@
 .about-img-container {
   .about-bkrnd-img {
     position: absolute;
+    transform: rotate(180deg);
     right: -300px;
-    bottom: 250px;
+    bottom: 150px;
     height: 400px;
     width: 550px;
     z-index: 1;
