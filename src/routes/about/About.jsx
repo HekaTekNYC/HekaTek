@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "../../components/button/Button"
 
-import AboutBkrd from "../../assets/images/about-blur.png"
+import AboutBkrd from "../../assets/images/wheel.png"
 import AboutLg from "../../assets/images/placeholderLg.png"
 import AboutSm from "../../assets/images/placeholderSm.png"
 import "./about.scss"
@@ -9,8 +9,10 @@ import "./about.scss"
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-bkrnd-img">
-        <img src={AboutBkrd} alt="" />
+      <div className="about-blob-container">
+        <div className="about-bkrnd-img">
+          <img src={AboutBkrd} alt="" />
+        </div>
       </div>
       <div className="about-img-container">
         <div className="about-img-lg">

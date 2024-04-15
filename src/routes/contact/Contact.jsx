@@ -1,6 +1,7 @@
 import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
 import Blob1 from "../../assets/images/sunset-blob.svg"
+import ProductCard from "../../components/product-cards/ProductCard"
 import "./contact.scss"
 
 const Contact = () => {

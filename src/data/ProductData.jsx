@@ -1,13 +1,14 @@
 import dangoDBP from "../assets/images/dangoCode.webp"
 import Ad3lie from "../assets/images/ad3liecode.webp"
 import IIQcover from "../assets/images/InterviewIQ.webp"
-import PHcover from "../assets/images/PlantHaus.webp"
+import PHcover from "../assets/images/phtest.png"
 import RiversEdge from "../assets/images/rivers-edge.webp"
 import AISum from "../assets/images/ai-sumz.webp"
 
 export const plantHaus = {
   id: 1,
   name: "Plant Haus",
+  deg: 20,
   desc: "Full Stack E-commerce Plant Shop",
 
   img: {
@@ -23,6 +24,7 @@ export const plantHaus = {
 export const aiSumz = {
   id: 2,
   name: "AI Summarizer",
+  deg: 180,
   desc: "Instantly condense articles into concise summaries with our AI-powered tool. Built with React and Redux for a seamless reading experience.",
 
   img: {
@@ -37,7 +39,9 @@ export const aiSumz = {
 }
 export const riversEdge = {
   id: 3,
+
   name: "Rivers Edge",
+  deg: 60,
   desc: "A React-Powered Gourmet Restaurant Site",
 
   img: {
@@ -54,6 +58,7 @@ export const riversEdge = {
 export const interviewIQ = {
   id: 4,
   name: "InteviewIQ",
+  deg: 320,
   desc: "Full Stack Flashcard Application",
 
   img: {
@@ -70,6 +75,7 @@ export const interviewIQ = {
 export const dangoDB = {
   id: 5,
   name: "dangoDb",
+  deg: 180,
   desc: "Deno Object Document Mapper (ODM)",
   img: {
     src: dangoDBP,
@@ -85,6 +91,7 @@ export const dangoDB = {
 export const ad3lie = {
   id: 6,
   name: "Ad3lie",
+  deg: 90,
   desc: "D3.js Data Visualizations",
 
   img: {
