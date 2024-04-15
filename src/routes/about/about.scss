@@ -1,28 +1,32 @@
 .about-container {
-  position: relative;
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
   padding-top: 40px;
   margin-bottom: 20px;
-  z-index: 2;
-}
 
+  .max-content {
+    max-width: 1900px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
 .about-blob-container {
   position: relative;
   height: 0;
   width: 0;
-  z-index: -1;
+  z-index: 1;
 
   .about-bkrnd-img {
     position: absolute;
-    left: 100px;
-    top: 200px;
+    left: 250px;
+    top: 250px;
     height: auto;
-    width: 300px;
-    filter: blur(90px);
-    z-index: -1;
+    width: 200px;
+    filter: blur(70px);
+    z-index: 1;
     img {
       height: 100%;
       width: 100%;
@@ -51,6 +55,16 @@
 
 /* Larger than tablet */
 @media (min-width: 768px) {
+  .about-blob-container {
+    .about-bkrnd-img {
+      position: absolute;
+      left: 550px;
+      top: 250px;
+      height: auto;
+      width: 200px;
+      z-index: 1;
+    }
+  }
 }
 
 /* Larger than desktop */
@@ -59,12 +73,14 @@
     flex-direction: row;
     align-items: center;
   }
-
-  .about-bkrnd-img {
-    left: -100px;
-    top: -100px;
-    height: 650px;
-    width: 850px;
+  .about-blob-container {
+    .about-bkrnd-img {
+      left: 40px;
+      top: -200px;
+      width: 400px;
+      filter: blur(80px);
+      opacity: 0.8;
+    }
   }
 
   .about-img-container {
@@ -93,6 +109,15 @@
 }
 
 @media (min-width: 1200px) {
+  .about-blob-container {
+    .about-bkrnd-img {
+      left: 40px;
+      top: -200px;
+      width: 400px;
+      filter: blur(90px);
+      opacity: 0.7;
+    }
+  }
   .about-img-container {
     .about-img-sm {
       right: 40px;
@@ -101,13 +126,14 @@
 }
 
 @media (min-width: 1400px) {
-  .about-bkrnd-img {
-    position: absolute;
-    left: 0px;
-    top: -150px;
-    height: 650px;
-    width: 850px;
-    z-index: -1;
+  .about-blob-container {
+    .about-bkrnd-img {
+      left: 100px;
+      top: -200px;
+      width: 400px;
+      filter: blur(90px);
+      opacity: 0.8;
+    }
   }
   .about-img-container {
     .about-img-sm {
@@ -116,6 +142,15 @@
   }
 }
 @media (min-width: 1600px) {
+  .about-blob-container {
+    .about-bkrnd-img {
+      left: 200px;
+      top: -200px;
+      width: 400px;
+      filter: blur(90px);
+      opacity: 0.8;
+    }
+  }
   .about-img-container {
     .about-img-sm {
       right: 100px;

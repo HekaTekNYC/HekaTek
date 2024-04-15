@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <>
       {/* <div className="background-dots"> */}
-      <div className="hero-section hero-overlay" id="home">
+
+      <div className="hero-section " id="home">
         <Hero />
       </div>
       <div className="about-section" id="about">
@@ -29,6 +30,7 @@ const Home = () => {
       <div className="contact-section" id="contact">
         <Contact />
       </div>
+
       {/* </div> */}
     </>
   )
