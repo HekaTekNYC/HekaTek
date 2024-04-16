@@ -8,13 +8,15 @@ import "./about.scss"
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div className="max-content">
+    <>
+      <div className="about-container">
+        {/* <div className="max-content"> */}
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
             <img src={AboutBkrd} alt="" />
           </div>
         </div>
+
         <div className="about-img-container">
           <div className="about-img-lg">
             <img src={AboutLg} height={"450px"} alt="placeholder image" />
@@ -46,7 +48,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </>
   )
 }
 

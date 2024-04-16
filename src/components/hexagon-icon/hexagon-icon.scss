@@ -158,11 +158,6 @@
 /* Larger than tablet */
 @media (min-width: 820px) {
   .turning-wrapper {
-    .hexagon-wrapper {
-      width: 140px;
-      height: 140px;
-    }
-
     .hexagon {
       img {
         height: 45px;
@@ -174,11 +169,6 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .turning-wrapper {
-    .hexagon-wrapper {
-      width: 140px;
-      height: 140px;
-    }
-
     .hexagon {
       img {
         height: 40px;
