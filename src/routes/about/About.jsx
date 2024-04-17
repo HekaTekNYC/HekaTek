@@ -8,13 +8,15 @@ import "./about.scss"
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div className="max-content">
+    <>
+      <div className="about-container">
+        {/* <div className="max-content"> */}
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
             {/* <img src={AboutBkrd} alt="" /> */}
           </div>
         </div>
+
         <div className="about-img-container">
           <div className="about-img-lg">
             <img src={AboutLg} height={"450px"} alt="placeholder image" />
@@ -24,14 +26,14 @@ const About = () => {
           </div>
         </div>
         <div className="about-info-container">
-          <h3 className="about-header">
+          <h2 className="about-header">
             About <br /> HekaTek
-          </h3>
+          </h2>
           <div className="about-indent">
-            <h5 className="about-subheader">
+            <h4 className="about-subheader">
               We're a duo of software developers who find joy in decluttering
               digital messes, turning complexity into simplicity.
-            </h5>
+            </h4>
             <p className="about-p">
               Our code is clean, our interfaces seamless, and our applications
               are so intuitive, they practically read your mind. Off the clock,
@@ -46,7 +48,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </>
   )
 }
 

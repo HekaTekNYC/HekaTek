@@ -1,12 +1,12 @@
 import dangoDBP from "../assets/images/dangoCode.webp"
 import Ad3lie from "../assets/images/ad3liecode.webp"
 import IIQcover from "../assets/images/InterviewIQ.webp"
-import PHcover from "../assets/images/phtest.png"
+import PHcover from "../assets/images/ph.webp"
 import RiversEdge from "../assets/images/rivers-edge.webp"
 import AISum from "../assets/images/ai-sumz.webp"
 
 export const plantHaus = {
-  id: 1,
+  id: 0,
   name: "Plant Haus",
   deg: 20,
   desc: "Full Stack E-commerce Plant Shop",
@@ -41,7 +41,7 @@ export const riversEdge = {
   id: 3,
 
   name: "Rivers Edge",
-  deg: 60,
+  deg: 300,
   desc: "A React-Powered Gourmet Restaurant Site",
 
   img: {
@@ -91,7 +91,7 @@ export const dangoDB = {
 export const ad3lie = {
   id: 6,
   name: "Ad3lie",
-  deg: 90,
+  deg: 0,
   desc: "D3.js Data Visualizations",
 
   img: {

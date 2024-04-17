@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <h3>Contact</h3>
+        <h2>Contact</h2>
         <div className="glass-card">
           <div className="about-text">
             <p>
