@@ -19,9 +19,9 @@ const Products = () => {
         {[plantHaus, aiSumz, riversEdge, interviewIQ, dangoDB, ad3lie].map(
           (product) => (
             <div className="product-container" key={product.id}>
-              {/* <ProductCard
-              {...product}
-              /> */}
+              <ProductCard
+                {...product}
+              />
             </div>
           )
         )}
