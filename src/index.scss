@@ -63,6 +63,9 @@ html {
   }
 }
 
+// * {
+//   border: 1px solid red;
+// }
 *,
 *::before,
 *::after {
@@ -121,6 +124,7 @@ h6 {
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
+
 }
 
 p {

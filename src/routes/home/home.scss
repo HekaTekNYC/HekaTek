@@ -46,10 +46,15 @@
 .services-section,
 .contact-section {
   height: auto;
-
   padding: 0 20px;
 
   // z-index: 3;
+}
+
+.services-section {
+    background: #F4F7FF;
+    padding: 20px 0;
+    
 }
 .about-section,
 .product-section,
@@ -81,7 +86,7 @@
   .product-section,
   .services-section,
   .contact-section {
-    padding: 0 80px;
+    // padding: 0 80px;
   }
 }
 
