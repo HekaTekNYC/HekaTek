@@ -12,18 +12,18 @@ const Home = () => {
     <>
       {/* <div className="background-dots"> */}
 
-      {/* <div className="hero-section " id="home">
+      <div className="hero-section " id="home">
         <Hero />
       </div>
       <div className="about-section" id="about">
         <About />
-      </div> */}
-      {/* <div className="services-section" id="services">
+      </div>
+      <div className="services-section" id="services">
         <Services />
       </div>
       <div className="tech-stack-section">
         <TechStack />
-      </div> */}
+      </div>
       <div className="product-section" id="our-work">
         <Products />
       </div>

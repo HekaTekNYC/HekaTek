@@ -43,10 +43,10 @@ const Hero = () => {
         </div>
         <header className="hero-header">
           <h1>HekaTek</h1>
-          <h2 className="hero-text">
+          <h4 className="hero-text">
             Freelance software developers with a passion for bringing your
             visions to life.
-          </h2>
+          </h4>
           <Button
             href="mailto:hekateknyc@gmail.com"
             text={"Schedule a Meeting"}
