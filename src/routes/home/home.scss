@@ -44,7 +44,9 @@
 .about-section,
 .product-section,
 .services-section,
-.contact-section {
+.contact-section,
+.why-us-section,
+.pricing-section {
   height: auto;
   padding: 0 20px;
 
@@ -58,7 +60,10 @@
 }
 .about-section,
 .product-section,
-.tech-stack-section {
+.tech-stack-section,
+.why-us-section,
+.pricing-section 
+ {
   margin: 60px 0;
   // z-index: 3;
 }

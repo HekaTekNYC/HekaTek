@@ -4,7 +4,7 @@ import './pricing-plans.scss'
 const PricingPlans = () => {
     return (
         <div>
-            <div className="pricing-container">
+            <div className="pricing-section">
                 <div className="pricing-header">
                     <div className="pricing-text">
                         <h2>Pricing Plans</h2>
