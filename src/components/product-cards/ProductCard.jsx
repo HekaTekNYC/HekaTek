@@ -3,7 +3,7 @@ import ProductBlur from "../../assets/images/product-clr.png"
 
 import "./product-card.scss"
 
-const ProductCard = ({ img, id, deg }) => {
+const ProductCard = ({ img, id, deg, scale }) => {
   return (
     <div className="product-card-container" key={id}>
       <div className="product-card-bkrnd">
@@ -11,7 +11,7 @@ const ProductCard = ({ img, id, deg }) => {
           <img
             src={ProductBlur}
             alt="pastel abstract wheel"
-            style={{ transform: `rotate(${deg}deg)` }}
+            style={{ transform: `rotate(${deg}deg) scale${scale}` }}
           />
         </div>
       </div>
