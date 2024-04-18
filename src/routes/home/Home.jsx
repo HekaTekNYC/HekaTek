@@ -5,6 +5,7 @@ import Products from "../products/Products"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import WhyUs from '../why-us/WhyUs'
+import PricingPlans from '../pricing-plans/PricingPlans'
 import "./home.scss"
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
 
       <div>
         <WhyUs />
+      </div>
+      <div>
+        <PricingPlans />
       </div>
       <div className="product-section" id="our-work">
         <Products />

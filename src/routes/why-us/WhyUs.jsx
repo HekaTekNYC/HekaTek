@@ -25,18 +25,17 @@ const WhyUs = () => {
     return (
         <div className="why-us-container">
             <div className="tech-stack-container">
-                <div className="tech-icons">
-                    <div className="tech-scroll-up row-1">{renderIcons(firstRowIcons)}</div>
-                    <div className="tech-scroll-down row-2">{renderIcons(secondRowIcons)}</div>
-                    <div className="tech-scroll-up row-3">{renderIcons(thirdRowIcons)}</div>
-                    <div className="tech-scroll-down row-4">{renderIcons(fourthRowIcons)}</div>
+                <div className="tech-icons-container">
+                    <div className="tech-row-1">{renderIcons(firstRowIcons)}</div>
+                    <div className="tech-row-2">{renderIcons(secondRowIcons)}</div>
+                    <div className="tech-row-3">{renderIcons(thirdRowIcons)}</div>
+                    <div className="tech-row-4">{renderIcons(fourthRowIcons)}</div>
                 </div>
-
             </div>
             <div className="why-info-container">
-                <h3 className="why-header">
+                <h2 className="why-header">
                     why <br /> HekaTek
-                </h3>
+                </h2>
 
                 <h5 className="why-subheader">
                     We're a duo of software developers who find joy in decluttering

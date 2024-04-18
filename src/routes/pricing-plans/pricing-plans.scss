@@ -1,0 +1,56 @@
+.pricing-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    margin: 30px; //i know this isn't correct 
+}
+
+.pricing-text, .pricing-header {
+    text-align: center;
+}
+ .pricing-text p {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+.pricing-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+
+.pricing-card {
+    background: rgba(233, 230, 230, 0.188); 
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px; 
+    height: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pricing-sub-title, .pricing-lump-title, .pricing-ecomm-title {
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+    .pricing-sub-title p {
+        color: #9a37b6;
+    }
+    .pricing-lump-title p {
+        color: #7A8CFF;
+    }
+    .pricing-ecomm-title p {
+        color: #FF7D79;
+    }
+    .pricing-sub-amount ,  .pricing-sub-design-amount,  .pricing-sub-design-text, .pricing-lump-title, .pricing-lump-amount, pricing-ecomm-title, .pricing-ecomm-amount  {
+        align-self: flex-start;
+        margin: 8px 0;
+        font-weight: bold;
+
+
+    }
+
+}
+}
