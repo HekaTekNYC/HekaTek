@@ -47,6 +47,9 @@
 .contact-section,
 .why-us-section,
 .pricing-section {
+.contact-section {
+  display: flex;
+  justify-content: center;
   height: auto;
   padding: 0 20px;
 
@@ -74,6 +77,15 @@
 }
 
 /* Media queries */
+/* Larger than tablet portrait */
+@media (min-width: 576px) {
+  .about-section,
+  .product-section,
+  .services-section,
+  .contact-section {
+    padding: 0 40px;
+  }
+}
 
 /* Larger than tablet portrait */
 @media (min-width: 768px) {
