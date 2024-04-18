@@ -31,7 +31,7 @@ export const secondRowIcons = [
     { src: Redux, alt: "Redux Logo", name: "Redux" },
     { src: Sass, alt: "Sass Logo", name: "Sass" },
     { src: HTML5Icon, alt: "HTML5 Logo", name: "HTML5" },
-    { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
+    // { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
 ]
 export const thirdRowIcons = [
     { src: CSSLogo, alt: "CSS Logo", name: "CSS3" },
@@ -43,6 +43,6 @@ export const fourthRowIcons = [
     { src: Mongo, alt: "Mongo Logo", name: "MDB" },
     { src: Github, alt: "Github Logo", name: "Github" },
     { src: Firebase, alt: "Firebase Logo", name: "Firebase" },
-    { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
+    // { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
     { src: Express, alt: "Express Logo", name: "Express" },
 ]

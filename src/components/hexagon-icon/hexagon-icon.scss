@@ -2,12 +2,12 @@
   transform: rotate(-60deg);
 
   .hexagon-wrapper {
-    // margin: auto;
+    margin: auto;
     display: flex;
     text-align: initial;
     width: 110px;
     height: 110px;
-      transform: rotate(60deg);
+    transform: rotate(60deg);
   }
 
   .hexagon {
@@ -27,7 +27,7 @@
       #e7e7f9     
     );
     transition: 0.5s;
-
+// this is the code that will make the colors larger or smaller
     .icon-wrapper {
       position: absolute;
       display: flex;
@@ -38,7 +38,7 @@
       border-radius: 40px;
       background: linear-gradient(
         131deg,
-        
+
          #b34eeeba 10%,
          #fb8da0 60%,
          #fb456f8d 100%
@@ -46,7 +46,7 @@
 
       -webkit-filter: blur(10px);
       filter: blur(10px);
-      animation: rotateAnimation 15s ease-in-out infinite alternate;
+      // animation: rotateAnimation 15s ease-in-out infinite alternate;
       z-index: 10;
     }
 
@@ -56,7 +56,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      transform: rotate(-30deg);
+      // transform: rotate(0deg);
       width: 100%;
       z-index: 20;
 
@@ -74,7 +74,7 @@
         font-size: 0.7rem;
         font-weight: 700;
         text-align: center;
-        color: #f4f0f4;
+        color: #ffffff;
         z-index: 20;
       }
     }
@@ -119,15 +119,15 @@
   }
 }
 
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
+// @keyframes rotateAnimation {
+//   0% {
+//     transform: rotate(0deg);
+//   }
 
-  100% {
-    transform: rotate(180deg);
-  }
-}
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
 
 /* Media queries */
 @media (min-width: 400px) {
@@ -154,6 +154,65 @@
   }
 }
 
+@media (min-width: 992px) {
+  .turning-wrapper {
+    .hexagon-wrapper {
+      width: 110px; /* Reduced from 140px */
+      height: 100px; /* Reduced from 140px */
+      margin: 0 -10px;
+    }
+.hexagon {
+    width: 44%;
+    height: 78%;
+    // margin: 30px;
+
+    .icon-wrapper {
+      height: 30px;
+      width: 30px; 
+      //this changes the height and width of the colors inside
+    }
+
+    .img-logo { 
+      width: 100%;
+    
+      img {  
+        height: 36px;    
+        
+      }
+
+      .icon-name {
+        height: auto;
+        width: 100%;
+        margin-top: 1px;
+        font-size: 0.6rem;
+        font-weight: 700; 
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.38);
+      }
+    }
+  }
+}
+}
+@media (min-width: 1200px) {
+  .turning-wrapper {
+    .hexagon-wrapper {
+      width: 140px; /* Reduced from 140px */
+      height: 140px; /* Reduced from 140px */
+    }
+
+    .hexagon {
+      .img-logo{
+      img {
+        height: 50px; /* Adjust if necessary */
+      }
+      .icon-name {
+         font-size: 0.9rem;
+         margin-right: 3px;
+         margin-top: 2px;
+      }
+      }
+    }
+  }
+}
 
 
 

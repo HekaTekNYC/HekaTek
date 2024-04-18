@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className="services-section-header">
-        <h3>SERVICES</h3>
+        <h2>SERVICES</h2>
       </div>
       <div className="services-section-p">
         <p>
@@ -52,7 +52,7 @@ const Services = () => {
                 className="service-icon"
               />
             </div>
-            <h6 className="service-header">{service.name}</h6>
+            <h4 className="service-header">{service.name}</h4>
             <p className="service-text">{service.description}</p>
           </div>
         ))}
