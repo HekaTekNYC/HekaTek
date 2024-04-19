@@ -10,7 +10,6 @@ const About = () => {
   return (
     <>
       <div className="about-container">
-        {/* <div className="max-content"> */}
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
             {/* <img src={AboutBkrd} alt="" /> */}
@@ -48,7 +47,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </>
   )
 }

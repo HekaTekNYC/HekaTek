@@ -49,25 +49,22 @@
   justify-content: center;
   height: auto;
   padding: 0 20px;
-
-  // z-index: 3;
 }
 
 .services-section {
-    background: #F4F7FF;
-    padding: 20px 0;
-    
+  background: #f4f7ff;
+  padding: 20px 0;
+  margin: 0 0 60px;
 }
+
 .about-section,
 .product-section,
 .tech-stack-section {
   margin: 60px 0;
-  // z-index: 3;
 }
 
-.services-section {
-  margin: 0 0 60px;
-  // z-index: 3;
+.contact-section {
+  margin-top: 60px;
 }
 
 /* Media queries */
@@ -124,4 +121,26 @@
   //   height: 100%;
   //   z-index: 1;
   // }
+}
+
+/* Media queries */
+
+/* Small (≥576px) */
+@media (min-width: 576px) {
+}
+
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+}
+
+/* Large (≥992px) */
+@media (min-width: 992px) {
+}
+
+/* Extra large (≥1200px) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (≥1400px) */
+@media (min-width: 1400px) {
 }
