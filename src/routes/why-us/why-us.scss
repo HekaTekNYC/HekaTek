@@ -1,9 +1,10 @@
-.why-us-section {
+.why-us-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; // i was playing in inspector and these two were not being recognized so i commented them out. Wanted to run it by you
     width: 100%;
+    max-width: 1600px;
 }
 
 .tech-stack-container {
@@ -62,3 +63,24 @@
 @media (min-width: 1600px) {
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

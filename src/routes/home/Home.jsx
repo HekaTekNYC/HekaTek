@@ -22,10 +22,10 @@ const Home = () => {
         <Services />
       </div>
 
-      <div>
+      <div className="why-us-section">
         <WhyUs />
       </div>
-      <div>
+      <div className="pricing-section">
         <PricingPlans />
       </div>
       <div className="product-section" id="our-work">

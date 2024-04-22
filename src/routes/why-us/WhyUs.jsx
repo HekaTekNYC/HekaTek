@@ -23,7 +23,7 @@ const WhyUs = () => {
         </>
     )
     return (
-        <div className="why-us-section">
+        <div className="why-us-container">
             <div className="tech-stack-container">
                 <div className="tech-icons-container">
                     <div className="tech-row-1">{renderIcons(firstRowIcons)}</div>

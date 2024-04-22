@@ -45,15 +45,12 @@
 .product-section,
 .services-section,
 .contact-section,
-.why-us-section,
-.pricing-section {
-.contact-section {
+.pricing-section,
+.why-us-section {
   display: flex;
   justify-content: center;
   height: auto;
   padding: 0 20px;
-
-  // z-index: 3;
 }
 
 .services-section {
@@ -64,16 +61,14 @@
 .about-section,
 .product-section,
 .tech-stack-section,
-.why-us-section,
-.pricing-section 
- {
+.services-section,
+.pricing-section,
+.why-us-section {
   margin: 60px 0;
-  // z-index: 3;
 }
 
 .services-section {
   margin: 0 0 60px;
-  // z-index: 3;
 }
 
 /* Media queries */
@@ -131,3 +126,12 @@
   //   z-index: 1;
   // }
 }
+
+
+
+
+
+
+
+
+
