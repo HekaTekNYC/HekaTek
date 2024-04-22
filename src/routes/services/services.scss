@@ -79,15 +79,6 @@
 }
 
 
-
-// p{
-//   line-height: 28px;
-//   font-size: 1rem; //i think maybe on a larger screen we would adjust the size to 18px?? I don't know lets talk about it when we are together.
-//   // font-family: 'Satoshi-Regular';
-//   // margin-bottom: 32px;
-
-// }
-
 /* Media queries */
 @media (min-width: 768px) {
   .services-cards-container{
@@ -115,25 +106,6 @@
   
 }
 }
-
-/* Media queries */
-// @media (min-width: 768px) {
-//   .service-card {
-//       flex: 1 1 calc(50% - 40px); /* Adjusted to allow cards to grow and shrink */
-//   }
-//   .services-cards-container {
-//     justify-content: center;
-//   }
-// }
-
-/* Larger than desktop */
-// @media (min-width: 1000px) {
-//   .services-card {
-//     flex-direction: row;
-//     align-items: start;
-//     gap: 20px;
-//   }
-// }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {

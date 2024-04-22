@@ -195,12 +195,15 @@
 @media (min-width: 1200px) {
   .turning-wrapper {
     .hexagon-wrapper {
-      width: 140px; /* Reduced from 140px */
-      height: 140px; /* Reduced from 140px */
+      width: 120px; /* Reduced from 140px */
+      height: 120px; /* Reduced from 140px */
     }
 
     .hexagon {
-      .img-logo{
+      width: 49%;
+      height: 76%;
+      
+    .img-logo{
       img {
         height: 50px; /* Adjust if necessary */
       }

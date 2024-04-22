@@ -11,7 +11,7 @@ import "./home.scss"
 const Home = () => {
   return (
     <>
-      {/* <div className="background-dots"> */}
+ 
       <div className="hero-section hero-overlay" id="home">
         <Hero />
       </div>
@@ -24,17 +24,16 @@ const Home = () => {
       <div className="product-section" id="our-work">
         <Products />
       </div>
-      <div>
+      <div className="why-us-section" id="why-us">
         <WhyUs />
-      </div>
-      {/* <div>
+      </div>  
+ <div className="pricing-section" id="pricing">
         <PricingPlans />
-      </div> */}
-
+      </div>
       <div className="contact-section" id="contact">
         <Contact />
       </div>
-      {/* </div> */}
+
     </>
   )
 }
