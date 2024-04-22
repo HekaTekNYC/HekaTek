@@ -13,11 +13,10 @@ const Contact = () => {
             Get In <br /> Touch
           </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel alias
-            voluptatibus asperiores optio, assumenda nisi! Provident quae vel,
-            ipsum, laboriosam et soluta unde illum dolore, ratione in
-            consequuntur? Voluptatum aut nesciunt expedita culpa est asperiores
-            quasi totam quas assumenda eligendi.
+            Building a website can be a daunting task, but it doesn't have to
+            be. We're here to take the stress out of the equation and craft a
+            site you'll love. Ready to get started? Drop us a message and let's
+            chat!
           </p>
         </div>
         <div className="contact-us-form-container">

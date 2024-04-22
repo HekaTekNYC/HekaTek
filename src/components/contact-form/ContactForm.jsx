@@ -106,7 +106,7 @@ const ContactForm = () => {
     <>
       <div className="contact-form-container">
         <form ref={form} onSubmit={sendEmail} className="form">
-          <h3 className="contact-form-header">Write Your Message</h3>
+          <h3 className="contact-form-header">Contact Us</h3>
           <div className="form-group contact-name">
             <div className="first-name">
               <label
