@@ -156,105 +156,63 @@ ul {
   padding-left: 0;
 }
 
-.form-floating > input:focus + label:after {
-  color: #fff !important;
-  text-align: center;
-}
+// .form-floating > input:focus + label:after {
+//   color: #fff !important;
+//   text-align: center;
+// }
 
-.form-control.textarea {
-  height: 120px;
-  padding-top: calc((120px - 1em) / 2);
-  padding-bottom: calc((120px - 1em) / 2);
-}
+// .form-control.textarea {
+//   height: 120px;
+//   padding-top: calc((120px - 1em) / 2);
+//   padding-bottom: calc((120px - 1em) / 2);
+// }
 
-.contact-btn {
-  font-family: "Gothic A1", sans-serif;
-  color: white;
-  font-size: 1.1rem;
-  white-space: nowrap;
-  background: #7a8399;
-  font-weight: 600;
-  box-shadow: 0 -2px 7px 0 rgb(195, 195, 220) inset,
-    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 20px;
-  text-decoration: none;
-  width: auto;
-  height: 40px;
-  margin: 2px 8px 2px 0;
-  transition: all 200ms ease-in-out;
+// /* Contact Form */
+// .form-select:focus,
+// .form-control:focus {
+//   border-color: #9fc7f6ba;
+//   box-shadow: inset 0 1px 1px rgba(9, 1, 84, 0.075),
+//     0 0 8px rgba(2, 2, 106, 0.606);
+//   color: #fff;
+// }
 
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 -8px 10px 0 rgb(195, 195, 220) inset;
-  }
+// .form-floating > input + label:after {
+//   background: transparent !important;
+// }
+// .form-floating > input:focus + label:after {
+//   color: #fff !important;
+// }
+// .form-floating > textarea + label:after {
+//   background: transparent !important;
+//   font-family: "Bebas Neue", sans-serif;
+// }
 
-  a {
-    transition: all 200ms ease-in-out;
-    color: #fff !important;
-  }
-}
-
-/* Contact Form */
-.form-select:focus,
-.form-control:focus {
-  border-color: #9fc7f6ba;
-  box-shadow: inset 0 1px 1px rgba(9, 1, 84, 0.075),
-    0 0 8px rgba(2, 2, 106, 0.606);
-  color: #fff;
-}
-
-.form-floating > input + label:after {
-  background: transparent !important;
-}
-.form-floating > input:focus + label:after {
-  color: #fff !important;
-}
-.form-floating > textarea + label:after {
-  background: transparent !important;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.form-control:not(active) {
-  background-color: rgba(255, 252, 252, 0.633) !important;
-  border-color: rgba(102, 102, 103, 0.349);
-  color: #ffffff !important;
-}
+// .form-control:not(active) {
+//   background-color: rgba(255, 252, 252, 0.633) !important;
+//   border-color: rgba(102, 102, 103, 0.349);
+//   color: #ffffff !important;
+// }
 
 /* Media queries */
 
 /* Larger than mobile */
-@media (min-width: 350px) {
-  .form-floating > .form-control,
-  .form-floating > .form-control-plaintext,
-  .form-floating > .form-select {
-    height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-    min-height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-    line-height: 1.25;
-  }
+// @media (min-width: 350px) {
+//   .form-floating > .form-control,
+//   .form-floating > .form-control-plaintext,
+//   .form-floating > .form-select {
+//     height: calc(2.9rem + calc(var(--bs-border-width) * 2));
+//     min-height: calc(2.9rem + calc(var(--bs-border-width) * 2));
+//     line-height: 1.25;
+//   }
 
-  .form-control.textarea {
-    padding-bottom: 0.8rem;
-  }
-  .form-floating > label {
-    font-size: 0.86rem;
-    padding-bottom: 10px;
-  }
-  .contact-btn {
-    height: 38px;
-    width: 120px;
-    font-size: 1rem;
-  }
-}
+//   .form-control.textarea {
+//     padding-bottom: 0.8rem;
+//   }
+//   .form-floating > label {
+//     font-size: 0.86rem;
+//     padding-bottom: 10px;
+//   }
+// }
 
 /* Larger than tablet */
 @media (min-width: 550px) {
@@ -310,15 +268,12 @@ ul {
   //   line-height: 3rem;
   // }
 }
-@media only screen and (min-width: 1366px) {
-  .form-floating input,
-  .form-floating select {
-    height: 2vh !important;
-  }
-  .form-floating > label {
-    font-size: 0.88rem;
-  }
-  .contact-btn {
-    height: 40px;
-  }
-}
+// @media only screen and (min-width: 1366px) {
+//   .form-floating input,
+//   .form-floating select {
+//     height: 2vh !important;
+//   }
+//   .form-floating > label {
+//     font-size: 0.88rem;
+//   }
+// }

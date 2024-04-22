@@ -4,8 +4,8 @@ import About from "../about/About"
 import Products from "../products/Products"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
-import WhyUs from '../why-us/WhyUs'
-import PricingPlans from '../pricing-plans/PricingPlans'
+import WhyUs from "../why-us/WhyUs"
+import PricingPlans from "../pricing-plans/PricingPlans"
 import "./home.scss"
 
 const Home = () => {
@@ -21,16 +21,16 @@ const Home = () => {
       <div className="services-section" id="services">
         <Services />
       </div>
-
-      <div>
-        <WhyUs />
-      </div>
-      <div>
-        <PricingPlans />
-      </div>
       <div className="product-section" id="our-work">
         <Products />
       </div>
+      <div>
+        <WhyUs />
+      </div>
+      {/* <div>
+        <PricingPlans />
+      </div> */}
+
       <div className="contact-section" id="contact">
         <Contact />
       </div>
