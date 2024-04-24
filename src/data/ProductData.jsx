@@ -1,15 +1,21 @@
 import dangoDBP from "../assets/images/dangoCode.webp"
 import Ad3lie from "../assets/images/ad3liecode.webp"
 import IIQcover from "../assets/images/InterviewIQ.webp"
-import PHcover from "../assets/images/PlantHaus.webp"
+import PHcover from "../assets/images/ph.webp"
 import RiversEdge from "../assets/images/rivers-edge.webp"
 import AISum from "../assets/images/ai-sumz.webp"
+import Blob1 from "../assets/images/blue-blob.svg"
+import Blob2 from "../assets/images/peach-blob.svg"
+import Blob3 from "../assets/images/pink-blob.svg"
+import Blob4 from "../assets/images/purple-blob.svg"
 
 export const plantHaus = {
   id: 1,
   name: "Plant Haus",
+  deg: 0,
+  scale: "X(-1)",
   desc: "Full Stack E-commerce Plant Shop",
-
+  blob: Blob1,
   img: {
     src: PHcover,
     alt: "Plant Haus Preview",
@@ -23,7 +29,10 @@ export const plantHaus = {
 export const aiSumz = {
   id: 2,
   name: "AI Summarizer",
-  desc: "Instantly condense articles into concise summaries with our AI-powered tool. Built with React and Redux for a seamless reading experience.",
+  deg: 180,
+  scale: "X(-1)",
+  desc: "AI Powered Article Summarizer",
+  blob: Blob2,
 
   img: {
     src: AISum,
@@ -32,13 +41,17 @@ export const aiSumz = {
   info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
   btn: "View Live",
   aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
-  isCurrentWork: false,
+
   preview: "Preview",
 }
 export const riversEdge = {
   id: 3,
+
   name: "Rivers Edge",
+  deg: 0,
+  scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
+  blob: Blob3,
 
   img: {
     src: RiversEdge,
@@ -47,14 +60,17 @@ export const riversEdge = {
   info: "A sleek website built using React, Redux, React DOM, and Vite showcases a curated selection of dishes and drinks. Dive into a seamless interactive experience that elevates the journey through the gourmet menu.",
   btn: "View Live",
   aLink: "https://65f6147cc26572fd14aa231b--merry-pixie-7241fa.netlify.app/",
-  isCurrentWork: false,
+
   preview: "Preview",
 }
 
 export const interviewIQ = {
   id: 4,
   name: "InteviewIQ",
+  deg: 180,
+  scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
+  blob: Blob1,
 
   img: {
     src: IIQcover,
@@ -62,15 +78,16 @@ export const interviewIQ = {
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login. Users have ability to create, save and edit their own cards as well as accessing the basic cards.",
   btn: "Coming Soon",
-
-  isCurrentWork: true,
   preview: "Coming Soon",
 }
 
 export const dangoDB = {
   id: 5,
   name: "dangoDb",
+  deg: 180,
+  scale: "Y(-1)",
   desc: "Deno Object Document Mapper (ODM)",
+  blob: Blob1,
   img: {
     src: dangoDBP,
     alt: "Dango Preview",
@@ -78,15 +95,16 @@ export const dangoDB = {
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
   btn: "View GitHub",
   aLink: "https://github.com/oslabs-beta/dangoDB",
-  isCurrentWork: false,
   preview: "Preview Github",
 }
 
 export const ad3lie = {
   id: 6,
   name: "Ad3lie",
+  deg: 0,
+  scale: "Y(1)",
   desc: "D3.js Data Visualizations",
-
+  blob: Blob4,
   img: {
     src: Ad3lie,
     alt: "Ad3lie Github",
@@ -94,6 +112,5 @@ export const ad3lie = {
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
   btn: "View Github",
   aLink: "https://github.com/oslabs-beta/ad3lie",
-  isCurrentWork: false,
   preview: "Preview",
 }

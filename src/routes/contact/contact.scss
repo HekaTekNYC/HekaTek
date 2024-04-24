@@ -1,141 +1,108 @@
-.contact-container {
-  position: relative;
+.contact-us-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: auto;
-  height: 1000px;
-  height: 1000px;
   width: 100%;
-  z-index: 2;
+  max-width: 1400px;
+  height: auto;
+}
 
-  h3 {
-    position: relative;
-    top: 30px;
-    left: -25px;
-    line-height: 6.2rem;
+.contact-us-form-container {
+  position: relative;
+  .contact-us-blob {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 400px;
+    height: auto;
+    opacity: 1;
+    filter: blur(80px);
     z-index: -1;
   }
 }
 
-.blob-container {
-  position: relative;
-  z-index: 1;
+.contact-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .contact-blob {
-    position: absolute;
-    top: 200px;
-    right: 50px;
-    height: 420px;
-    width: 420px;
-    -webkit-filter: blur(60px);
-    filter: blur(60px);
-    z-index: 1;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
+  p {
+    margin-bottom: 40px;
   }
-}
-
-.glass-card {
-  position: relative;
-  top: -15px;
-  left: 0;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(205, 206, 250, 0.092);
-  border-radius: 16px;
-  backdrop-filter: blur(3.1px);
-  -webkit-backdrop-filter: blur(3.1px);
-  border: 1px solid #8baeff43;
-  box-shadow: rgba(83, 95, 170, 0.428) 0px 3px 8px;
-  overflow: hidden;
-  z-index: 2;
-
-  .about-text {
-    display: flex;
-    text-align: justify;
-  }
-}
-
-.contact-info-right {
-  padding-top: 30px;
 }
 
 /* Media queries */
 
-/* Larger than tablet portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .contact-blob {
-    top: 200px;
-    right: -200px;
-    bottom: 0;
-    height: 620px;
-    width: 620px;
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .contact-us-form-container {
+    .contact-us-blob {
+      top: 50px;
+      right: 100px;
+      width: 450px;
+      height: auto;
+      filter: blur(80px);
+    }
   }
+}
 
-  .glass-card {
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+  .contact-us-container {
+    display: flex;
     flex-direction: row;
-
-    .about-text {
-      flex: 1;
-      padding: 25px 30px 0 0;
-      justify-content: center;
-      align-items: center;
-
-      p {
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-    }
-    .contact-info-right {
-      flex: 1;
+    align-items: center;
+  }
+  .contact-us-info {
+    width: 50%;
+    margin-right: 40px;
+  }
+  .contact-us-form-container {
+    width: 50%;
+    margin-left: 15px;
+    .contact-us-blob {
+      top: 50px;
+      right: 0;
+      width: 350px;
+      height: auto;
+      filter: blur(80px);
     }
   }
 }
 
-/* Larger than desktop */
-@media (min-width: 1000px) {
-  .contact-container {
-    height: 800px;
-    height: 800px;
-    h2 {
-      position: relative;
-      top: 20px;
-      left: -65px;
-      line-height: 6.2rem;
-      z-index: 5;
-    }
-
-    .contact-blob {
-      right: -100px;
-      top: 0px;
-      height: 720px;
-      width: 720px;
-      top: 0px;
-      height: 720px;
-      width: 720px;
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .contact-us-form-container {
+    .contact-us-blob {
+      top: -50px;
+      right: 0;
+      width: 500px;
+      height: auto;
+      filter: blur(90px);
     }
   }
 }
 
-/* Larger than Desktop HD */
+/* Extra large (≥1200px) */
 @media (min-width: 1200px) {
-  .contact-container {
-    .glass-card {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
+  .contact-us-form-container {
+    .contact-us-blob {
+      transform: rotate(-30deg);
+      width: 450px;
+      right: 50px;
+      filter: blur(90px);
     }
-    .about-text {
-      width: 50%;
+  }
+}
 
-      p {
-        font-size: 1.2rem;
-      }
+/* Extra extra large (≥1400px) */
+@media (min-width: 1400px) {
+  .contact-us-form-container {
+    .contact-us-blob {
+      transform: rotate(-30deg);
+      width: 550px;
+      right: 50px;
+      filter: blur(90px);
     }
   }
 }

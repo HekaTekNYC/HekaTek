@@ -1,65 +1,48 @@
 import React from "react"
-import HeroBkrnd from "../../assets/images/hero-color.png"
+
+import HeroBkrnd from "../../assets/images/hero-bkrnd.webp"
 import Button from "../../components/button/Button"
 import "./hero.scss"
 
 const Hero = () => {
+  const bannerItems = [
+    { text: "WEBSITE DEVELOPMENT" },
+    { text: "HOSTING" },
+    { text: "RESPONSIVE DESIGN" },
+    { text: "SOFTWARE DEVELOPMENT" },
+    { text: "DEBUGGING" },
+  ]
   return (
     <>
+      <div
+        className="background-image-container"
+        style={{
+          backgroundImage: `url(${HeroBkrnd})`,
+        }}
+      ></div>
       <div className="hero-container">
-        <div
-          className="background-image-container"
-          style={{
-            // position: "absolute",
-            // top: 0,
-            // left: 0,
-
-            // backgroundImage: `url(${HeroBkrnd})`,
-            backgroundSize: "cover",
-            // filter: "blur(50px)",
-            zIndex: -1,
-          }}
-        >
-          <div
-            className="background-image"
-            //   style={{
-            //     // position: "absolute",
-            //     // top: 0,
-            //     // left: 0,
-            //     height: "80%",
-            //     width: "80%",
-            //     backgroundImage: `url(${HeroBkrnd})`,
-            //     // backgroundSize: "cover",
-            //     // filter: "blur(50px)",
-            //     zIndex: -1,
-            //   }}
-          >
-            {/* <img
-              src="../../assets/images/hero-color.png"
-              alt="hero-color"
-              style={{ objectFit: "cover" }}
-            /> */}
-          </div>
-        </div>
         <header className="hero-header">
           <h1>HekaTek</h1>
-          <h2 className="hero-text">
-            Freelance software developers with a passion for bringing your
-            visions to life.
-          </h2>
+          <h4 className="hero-text">
+            Software developers with a passion for bringing your visions to
+            life.
+          </h4>
           <Button
             href="mailto:hekateknyc@gmail.com"
             text={"Schedule a Meeting"}
+            btnType={"solid"}
           ></Button>
         </header>
       </div>
+
       <div className="banner-container">
-        <div className="ellipse"></div>
-        <h4 className="banner-text">WEBSITE DEVELOPMENT</h4>
-        <div className="ellipse"></div>
-        <h4 className="banner-text">WEBSITE HOSTING</h4>
-        <div className="ellipse"></div>
-        {/* <h4 className="banner-text">DEBUGGING</h4> */}
+        {bannerItems.map((item, index) => (
+          <React.Fragment key={index}>
+            <div className={`ellipse ellipse-${index}`}></div>
+            <h4 className={`banner-text banner-${index}`}>{item.text}</h4>
+          </React.Fragment>
+        ))}
+        <div className="ellipse ellipse-6"></div>
       </div>
     </>
   )

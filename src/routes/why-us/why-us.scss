@@ -1,0 +1,86 @@
+.why-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // i was playing in inspector and these two were not being recognized so i commented them out. Wanted to run it by you
+    width: 100%;
+    max-width: 1600px;
+}
+
+.tech-stack-container {
+  display: none;
+}
+
+.why-info-container {
+  width: 100%;
+  
+    .why-subheader {
+        margin: 20px 0;
+    }
+    .why-p {
+        margin-bottom: 20px;
+    }
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Larger than desktop */
+@media (min-width: 992px) {
+  .why-us-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .tech-stack-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 50px 40px;
+      .tech-icons-container {
+        display: flex;
+        flex-direction: row;
+      .tech-row-1, .tech-row-3 {
+         margin: 60px 0px;
+  }
+  .why-info-container {
+    width: 50%;
+    margin-right: 30px;
+  }
+}
+  }
+
+
+}
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 1400px) {
+  
+}
+@media (min-width: 1600px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

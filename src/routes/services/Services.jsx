@@ -1,60 +1,36 @@
 import React from "react"
 
+import { servicesData } from "../../data/ServicesData"
+import ServiceBg from "../../assets/images/services-bkrnd.png"
 import "./services.scss"
-
-const servicesData = [
-  {
-    name: "WEB DEVELOPMENT",
-    svgPath: "../../assets/icons/code1.svg",
-    description:
-      "We offer custom development services tailored to meet your unique needs, leveraging our expertise in various frameworks and JavaScript to create responsive websites.",
-  },
-  {
-    name: "DEBUGGING",
-    svgPath: "../../assets/icons/bug-slash.svg",
-    description:
-      "Our passion lies in tackling complex challenges and solving problems. Let's find some bugs and get them out of there!",
-  },
-  {
-    name: "DIGITAL SOLUTIONS",
-    svgPath: "../../assets/icons/gear2.svg",
-    description:
-      "Our range of digital services is custom-fit to your specific needs, ensuring quality and creativity from start to finish, with a keen eye on every detail.",
-  },
-  {
-    name: "CODE OPTIMIZATION",
-    svgPath: "../../assets/icons/optimize1.svg",
-    description:
-      "We review and refine existing codebases, enhancing their efficiency and readability. We focus on optimizing performance and ensuring best practices are followed.",
-  },
-]
 
 const Services = () => {
   return (
     <div className="services-container">
-      <div className="services-section-header">
-        <h3>SERVICES</h3>
+      <div className="services-background">
+        <img src={ServiceBg} alt="" />
       </div>
-      <div className="services-card">
+      <h2 className="services-header">SERVICES</h2>
+      <p className="services-p">
+        We offer a wide range of digital solutions to help you stand out online.
+        From code optimization to complex problem-solving, our team loves a good
+        challenge. Whatever your website needs, we've got the expertise to
+        deliver.
+      </p>
+      <div className="services-cards-container">
         {servicesData.map((service, index) => (
-          <div key={index} className="service-info">
-            <div className="service-icons">
-              <div className="service-shape"> </div>
-              <div className="service-icon">
-                <img
-                  src={service.svgPath}
-                  alt="service icons"
-                  // width="70px"
-                  // height="70px"
-                  loading="lazy"
-                  decoding="async"
-                  title="services section icons featuring web development, bug fixes and optimization"
-                />
-              </div>
+          <div key={index} className="service-card">
+            <div className="service-icon-container">
+              <img
+                src={service.svgPath}
+                alt={`${service.name} icon`}
+                loading="lazy"
+                decoding="async"
+                className="service-icon"
+              />
             </div>
-
-            <h6 className="service-header">{service.name}</h6>
-            <p className="service-text">{service.description}</p>
+            <h4 className="service-header"> {service.name}</h4>
+            <p className="service-text"> {service.description}</p>
           </div>
         ))}
       </div>
