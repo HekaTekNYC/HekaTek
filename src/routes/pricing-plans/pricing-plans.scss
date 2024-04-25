@@ -87,10 +87,13 @@
       color: #ff7d79;
     }
 
+
     &.lump {
       color: #7285fd;
+
     }
   }
+
 
   .pricing-plan-cost {
     align-self: flex-start;
@@ -102,6 +105,7 @@
     .pricing-plan-cost-sub {
       font-weight: 600;
       font-family: "Gothic A1";
+
       font-size: 1rem;
     }
   }
