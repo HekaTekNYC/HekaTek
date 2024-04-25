@@ -1,18 +1,8 @@
 .pricing-container {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   padding-bottom: 30px;
 }
-
-// .bold-text {
-//   align-self: flex-start;
-//   font-size: 1.5rem;
-//   font-weight: bold;
-//   color: #444d82;
-//   margin-top: 20px;
-//   margin-bottom: 10px;
-// }
 
 .pricing-text {
   margin-bottom: 30px;
@@ -43,7 +33,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
     flex: 1 1 280px;
     max-width: 300px;
@@ -53,7 +42,6 @@
     border-radius: 20px;
     padding: 20px;
     width: 300px;
-    // height: 600px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -89,9 +77,7 @@
 
   .pricing-plan-title {
     align-self: flex-start;
-    font-weight: 500;
     font-size: 1.3rem;
-    font-weight: 600;
 
     &.sub {
       color: #9e3cb9be;
@@ -109,7 +95,6 @@
   .pricing-plan-cost {
     align-self: flex-start;
     font-size: 2rem;
-    font-weight: bold;
     color: #444d82;
     margin: 15px 0 0;
     letter-spacing: 0.04rem;
