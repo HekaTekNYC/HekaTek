@@ -1,17 +1,15 @@
 import React from "react"
 
 import { servicesData } from "../../data/ServicesData"
-import ServiceBg from "../../assets/images/services-bkrnd.png"
+import ServiceBg from "../../assets/images/bkrnd-shape.png"
 import "./services.scss"
 
 const Services = () => {
   return (
     <div className="services-container">
-      {" "}
       <div className="services-background">
-        {" "}
-        <img src={ServiceBg} alt="" />{" "}
-      </div>{" "}
+        <img src={ServiceBg} alt="" />
+      </div>
       <h2 className="services-header">SERVICES</h2>{" "}
       <p className="services-p">
         {" "}

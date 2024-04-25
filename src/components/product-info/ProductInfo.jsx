@@ -9,7 +9,7 @@ const ProductInfo = ({ name, desc, info, aLink, btn }) => {
       <h5 className="product-info-subheader">{desc}</h5>
       <p>{info}</p>
       <div className="product-info-btn">
-        <Button text={btn} href={aLink} btnType={"outline"} />
+        <Button text={btn} href={aLink} btnType={"outline"} width={"short"} />
       </div>
     </div>
   )

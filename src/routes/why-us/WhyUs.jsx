@@ -56,7 +56,12 @@ const WhyUs = () => {
           our HekaTek magic? Hit us up/contact us below.
         </p>
 
-        <Button text={"Schedule A Meeting"} href={""} btnType={"solid"} />
+        <Button
+          text={"Schedule A Meeting"}
+          href={""}
+          btnType={"solid"}
+          width={"short"}
+        />
       </div>
     </div>
   )

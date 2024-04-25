@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "../../components/button/Button"
-import BackgroundShape from "../../assets/images/background-shape.png"
+import BackgroundShape from "../../assets/images/bkrnd-shape.png"
 import PurpleCheck from "../../assets/icons/purple-check.svg"
 import CoralCheck from "../../assets/icons/coral-check.svg"
 import PeriwinkleCheck from "../../assets/icons/periwinkle-check.svg"
@@ -10,6 +10,9 @@ const PricingPlans = () => {
   return (
     <div>
       <div className="pricing-container">
+        <div className="pricing-background">
+          <img src={BackgroundShape} alt="colored gradient shape" />
+        </div>
         <div className="pricing-header">
           <h2>Pricing Plans</h2>
           <p className="pricing-text">
@@ -19,9 +22,6 @@ const PricingPlans = () => {
         </div>
 
         <div className="pricing-cards-container">
-          <div className="background-style">
-            <img src={BackgroundShape} alt="colored gradient shape" />
-          </div>
           {/* Subscription pricing card */}
           <div className="pricing-card">
             <div className="pricing-card-header">
@@ -57,7 +57,7 @@ const PricingPlans = () => {
                     alt="Purple Checkmark"
                     className="checkmark-icon"
                   />
-                  Includes Hosting
+                  Includes hosting
                 </li>
                 <li className="checklist">
                   <img
@@ -65,7 +65,7 @@ const PricingPlans = () => {
                     alt="Purple Checkmark"
                     className="checkmark-icon"
                   />
-                  24/7 Customer Service
+                  24/7 customer service
                 </li>
                 <li className="checklist">
                   <img
@@ -73,7 +73,7 @@ const PricingPlans = () => {
                     alt="Purple Checkmark"
                     className="checkmark-icon"
                   />
-                  Lifetime Updates
+                  Lifetime updates
                 </li>
                 <li className="checklist">
                   <img
@@ -89,6 +89,7 @@ const PricingPlans = () => {
                 <Button
                   href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
+                  width={"full"}
                 ></Button>
               </div>
             </div>
@@ -103,11 +104,8 @@ const PricingPlans = () => {
             />
             <div className="pricing-card-header">
               <p className="pricing-plan-title lump">LUMP SUM</p>
-              <h3 className="pricing-plan-cost">
-                $1800
-                {/* <span className="pricing-plan-cost-sub">/one time fee</span> */}
-              </h3>
-              <p>one time fee</p>
+              <h3 className="pricing-plan-cost">$1800</h3>
+              <p style={{ marginTop: "6px" }}>one time fee</p>
               <div className="pricing-white-line"></div>
               <h3 className="pricing-plan-extra-fee">
                 $25
@@ -132,7 +130,7 @@ const PricingPlans = () => {
                     alt="Periwinkle Checkmark"
                     className="checkmark-icon"
                   />
-                  Custom Designed
+                  Custom design
                 </li>
 
                 <li className="checklist">
@@ -141,7 +139,7 @@ const PricingPlans = () => {
                     alt="Periwinkle Checkmark"
                     className="checkmark-icon"
                   />
-                  For $75 per month, we provide hosting, 24/7support, unlimited
+                  For $75 per month, we provide hosting, 24/7 support, unlimited
                   edits, and updates for life
                 </li>
                 <li className="checklist">
@@ -159,6 +157,7 @@ const PricingPlans = () => {
                   href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
                   btnType={"solid"}
+                  width={"full"}
                 ></Button>
               </div>
             </div>
@@ -166,9 +165,17 @@ const PricingPlans = () => {
           {/* Ecommerce pricing card */}
           <div className="pricing-card">
             <div className="pricing-card-header">
-              <p className="pricing-plan-title ecomm">ECOMM MODEL</p>
-              <h3 className="pricing-plan-extra-fee">INQUIRE BELOW</h3>
+              <p className="pricing-plan-title ecomm">ECOMMERCE</p>
+              <h3 className="pricing-plan-cost">
+                $6000
+                <span className="pricing-plan-cost-sub">/min</span>
+              </h3>
+              <p>
+                starting price{" "}
+                <span className="hidden-text">for basic ecomm</span>
+              </p>
               <div className="pricing-white-line"></div>
+              <h3 className="pricing-plan-extra-fee">INQUIRE BELOW</h3>
             </div>
             <div className="pricing-half">
               <ul className="pricing-checklist-items">
@@ -178,7 +185,7 @@ const PricingPlans = () => {
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  Custom Designed
+                  Custom storefront design
                 </li>
                 <li className="checklist">
                   <img
@@ -186,7 +193,7 @@ const PricingPlans = () => {
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  Custom coded Shopify Integration
+                  Seamless payment integration
                 </li>
                 <li className="checklist">
                   <img
@@ -194,7 +201,15 @@ const PricingPlans = () => {
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  Easy to edit
+                  Custom-built CRM to streamline your business operations
+                </li>
+                <li className="checklist">
+                  <img
+                    src={CoralCheck}
+                    alt="Checkmark"
+                    className="checkmark-icon"
+                  />
+                  Mobile optimized platform
                 </li>
               </ul>
 
@@ -202,6 +217,7 @@ const PricingPlans = () => {
                 <Button
                   href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
+                  width={"full"}
                 ></Button>
               </div>
             </div>

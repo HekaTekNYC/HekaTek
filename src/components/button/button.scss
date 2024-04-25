@@ -4,7 +4,7 @@
   font-weight: 700;
   border-radius: 40px;
   height: 45px;
-  width: 100%;
+
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -36,6 +36,14 @@
   a {
     color: #444d82 !important;
   }
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-short {
+  width: 200px;
 }
 
 /* Media queries */
