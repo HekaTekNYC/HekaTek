@@ -11,15 +11,11 @@ const PricingPlans = () => {
     <div>
       <div className="pricing-container">
         <div className="pricing-header">
-          <div className="pricing-text">
-            <h2>Pricing Plans</h2>
-          </div>
-          <div className="pricing-text">
-            <p>
-              We offer a monthly subscription, lump sum, and e-commerce pricing.
-              Please contact us for price inuqiries on our E-Comm models.
-            </p>
-          </div>
+          <h2>Pricing Plans</h2>
+          <p className="pricing-text">
+            We offer a monthly subscription, lump sum, and e-commerce pricing.
+            Please contact us for price inuqiries on our E-Comm models.
+          </p>
         </div>
 
         <div className="pricing-cards-container">
@@ -28,167 +24,186 @@ const PricingPlans = () => {
           </div>
           {/* Subscription pricing card */}
           <div className="pricing-card">
-            <p className="pricing-sub-title">SUBSCRIPTION</p>
-
-            <h3 className="pricing-sub-amount">
-              $175
-              <span className="pricing-sub-amount-reg">/month</span>
-            </h3>
-            <p>monthly subscription fee</p>
-            <div className="white-line-purple"></div>
-
-            <h3 className="pricing-sub-design-amount">
-              $350
-              <span className="pricing-sub-amount-reg">
-                / One time design fee
-              </span>
-            </h3>
-
-            {/* Subscription Pricing Info Section */}
-            <div className="pricing-checklist-items">
-              <ul>
-                <li>
-                  <img
-                    src={PurpleCheck}
-                    alt="Purple Checkmark"
-                    className="checkmark-icon"
-                  />
-                  5 fully responsive pages.
-                </li>
-                <li>
-                  <img
-                    src={PurpleCheck}
-                    alt="Purple Checkmark"
-                    className="checkmark-icon"
-                  />
-                  Hosting, 24/7 support, unlimited edits, lifetime updates.
-                </li>
-                <li>
-                  <img
-                    src={PurpleCheck}
-                    alt="Purple Checkmark"
-                    className="checkmark-icon"
-                  />
-                  6 month minimum contract.
-                </li>
-              </ul>
+            <div className="pricing-card-header">
+              <p className="pricing-plan-title sub">SUBSCRIPTION</p>
+              <h3 className="pricing-plan-cost">
+                $175
+                <span className="pricing-plan-cost-sub">/mo</span>
+              </h3>
+              <p>monthly subscription fee</p>
+              <div className="pricing-white-line"></div>
+              <h3 className="pricing-plan-extra-fee">
+                $350
+                <span className="pricing-plan-extra-sub">
+                  / one time design fee
+                </span>
+              </h3>
             </div>
 
-            <div className="btn-container">
-              <Button
-                href="mailto:hekateknyc@gmail.com"
-                text={"Get Started"}
-              ></Button>
+            {/* Subscription Pricing Info Section */}
+            <div className="pricing-half">
+              <ul className="pricing-checklist-items">
+                <li className="checklist">
+                  <img
+                    src={PurpleCheck}
+                    alt="Purple Checkmark"
+                    className="checkmark-icon"
+                  />
+                  5 fully responsive pages
+                </li>
+                <li className="checklist">
+                  <img
+                    src={PurpleCheck}
+                    alt="Purple Checkmark"
+                    className="checkmark-icon"
+                  />
+                  Includes Hosting
+                </li>
+                <li className="checklist">
+                  <img
+                    src={PurpleCheck}
+                    alt="Purple Checkmark"
+                    className="checkmark-icon"
+                  />
+                  24/7 Customer Service
+                </li>
+                <li className="checklist">
+                  <img
+                    src={PurpleCheck}
+                    alt="Purple Checkmark"
+                    className="checkmark-icon"
+                  />
+                  Lifetime Updates
+                </li>
+                <li className="checklist">
+                  <img
+                    src={PurpleCheck}
+                    alt="Purple Checkmark"
+                    className="checkmark-icon"
+                  />
+                  6 month minimum contract
+                </li>
+              </ul>
+
+              <div className="pricing-btn-container">
+                <Button
+                  href="mailto:hekateknyc@gmail.com"
+                  text={"Get Started"}
+                ></Button>
+              </div>
             </div>
           </div>
 
           {/* Lump Sum pricing card */}
-          <div className="pricing-card lump-sum-card">
+          <div className="pricing-card">
             <img
               src="../../assets/images/pricing-gem.png"
               alt="Gem Image"
-              className="card-image"
+              className="pricing-card-image"
             />
-            <div className="pricing-lump-title">
-              <p>LUMP SUM</p>
+            <div className="pricing-card-header">
+              <p className="pricing-plan-title lump">LUMP SUM</p>
+              <h3 className="pricing-plan-cost">
+                $1800
+                {/* <span className="pricing-plan-cost-sub">/one time fee</span> */}
+              </h3>
+              <p>one time fee</p>
+              <div className="pricing-white-line"></div>
+              <h3 className="pricing-plan-extra-fee">
+                $25
+                <span className="pricing-plan-extra-sub">
+                  / monthly hosting fee
+                </span>
+              </h3>
             </div>
-            <div className="pricing-lump-amount">
-              <p>$1800</p>
-            </div>
+            <div className="pricing-half">
+              <ul className="pricing-checklist-items">
+                <li className="checklist">
+                  <img
+                    src={PeriwinkleCheck}
+                    alt="Periwinkle Checkmark"
+                    className="checkmark-icon"
+                  />
+                  5 fully responsive pages
+                </li>
+                <li className="checklist">
+                  <img
+                    src={PeriwinkleCheck}
+                    alt="Periwinkle Checkmark"
+                    className="checkmark-icon"
+                  />
+                  Custom Designed
+                </li>
 
-            <div className="pricing-sub-design-amount">
-              <p>$25/month hosting</p>
-              {/* 
-              <p>$25</p>
-              <span className='pricing-design-amount-reg'>/month hosting</span> 
-              */}
-            </div>
-            <div className="white-line-peri"></div>
-            <div className="pricing-checklist-items">
-              <ul>
-                <li>
-                  <img
-                    src={PeriwinkleCheck}
-                    alt="Periwinkle Checkmark"
-                    className="checkmark-icon"
-                  />
-                  5 fully responsive pages.
-                </li>
-                <li>
-                  <img
-                    src={PeriwinkleCheck}
-                    alt="Periwinkle Checkmark"
-                    className="checkmark-icon"
-                  />
-                  12 month minimum commitment.
-                </li>
-                {/* <li><img src={PeriwinkleCheck} alt="Periwinkle Checkmark" className="checkmark-icon" />On cancellation you own and keep your domain, but the code and design retain their proprietary status.</li> */}
-                <li>
+                <li className="checklist">
                   <img
                     src={PeriwinkleCheck}
                     alt="Periwinkle Checkmark"
                     className="checkmark-icon"
                   />
                   For $75 per month, we provide hosting, 24/7support, unlimited
-                  edits, and updates for life.
+                  edits, and updates for life
                 </li>
-                {/* <li><img src={PeriwinkleCheck} alt="Periwinkle Checkmark" className="checkmark-icon" />12 month commitment, after which you may opt for cancellation at any point.</li>
-                            <li><img src={PeriwinkleCheck} alt="Periwinkle Checkmark" className="checkmark-icon" />On cancellation you own and keep your domain, but the code and design retain their proprietary status.</li>
-                            <li><img src={PeriwinkleCheck} alt="Periwinkle Checkmark" className="checkmark-icon" />For just $75 per month, which includes hosting, 24/7support, unlimited edits, and updates for life.</li> */}
+                <li className="checklist">
+                  <img
+                    src={PeriwinkleCheck}
+                    alt="Periwinkle Checkmark"
+                    className="checkmark-icon"
+                  />
+                  12 month minimum commitment
+                </li>
               </ul>
-            </div>
-            <div className="btn-container">
-              <Button
-                href="mailto:hekateknyc@gmail.com"
-                text={"Get Started"}
-              ></Button>
+
+              <div className="pricing-btn-container">
+                <Button
+                  href="mailto:hekateknyc@gmail.com"
+                  text={"Get Started"}
+                  btnType={"solid"}
+                ></Button>
+              </div>
             </div>
           </div>
           {/* Ecommerce pricing card */}
           <div className="pricing-card">
-            <div className="pricing-ecomm-title">
-              <p>ECOMM MODEL</p>
+            <div className="pricing-card-header">
+              <p className="pricing-plan-title ecomm">ECOMM MODEL</p>
+              <h3 className="pricing-plan-extra-fee">INQUIRE BELOW</h3>
+              <div className="pricing-white-line"></div>
             </div>
-            <div className="pricing-ecomm-amount">
-              <p>INQUIRE BELOW</p>
-            </div>
-            <div className="white-line-coral"></div>
-            <div className="pricing-checklist-items">
-              <ul>
-                <li>
+            <div className="pricing-half">
+              <ul className="pricing-checklist-items">
+                <li className="checklist">
                   <img
                     src={CoralCheck}
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  Optional custom-built CRM to streamline your business
-                  operations, starting at $500.
+                  Custom Designed
                 </li>
-                <li>
+                <li className="checklist">
                   <img
                     src={CoralCheck}
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  For just $75 per month, which includes hosting, 24/7support,
-                  unlimited edits, and updates for life.
+                  Custom coded Shopify Integration
                 </li>
-                <li>
+                <li className="checklist">
                   <img
                     src={CoralCheck}
                     alt="Checkmark"
                     className="checkmark-icon"
                   />
-                  Upon cancellation you own your domain and CRM, but the code
-                  and design retain their proprietary status.
+                  Easy to edit
                 </li>
               </ul>
-            </div>
-            <div className="btn-container">
-              <Button
-                href="mailto:hekateknyc@gmail.com"
-                text={"Get Started"}
-              ></Button>
+
+              <div className="pricing-btn-container">
+                <Button
+                  href="mailto:hekateknyc@gmail.com"
+                  text={"Get Started"}
+                ></Button>
+              </div>
             </div>
           </div>
         </div>
