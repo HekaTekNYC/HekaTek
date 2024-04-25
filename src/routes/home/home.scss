@@ -88,7 +88,7 @@
 }
 
 /* Larger than desktop */
-@media (min-width: 932px) {
+@media (min-width: 992px) {
   .about-section,
   .product-section,
   .services-section,
@@ -99,6 +99,10 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {
   .about-section,
   .product-section,
   .services-section,
