@@ -110,7 +110,7 @@ const ContactForm = () => {
           <div className="form-group contact-name">
             <div className="first-name">
               <label
-                for="firt-name"
+                for="first-name"
                 className={firstNameFocused ? "focused" : ""}
               >
                 First Name

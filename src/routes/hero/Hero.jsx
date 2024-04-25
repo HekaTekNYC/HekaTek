@@ -31,6 +31,7 @@ const Hero = () => {
             href="mailto:hekateknyc@gmail.com"
             text={"Schedule a Meeting"}
             btnType={"solid"}
+            width={"short"}
           ></Button>
         </header>
       </div>
