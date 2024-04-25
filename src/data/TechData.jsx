@@ -21,7 +21,8 @@ import HTML5Icon from "../assets/icons/html5.svg"
 
 export const firstRowIcons = [
   { src: Typescript, alt: "Typescript Logo", name: "Typescript" },
-  { src: Electron, alt: "Electron Logo", name: "Electron" },
+  // { src: Electron, alt: "Electron Logo", name: "Electron" },
+  { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
   { src: JSIcon, alt: "JavaScript Logo", name: "JavaScript" },
   { src: ReactIcon, alt: "React Logo", name: "React" },
 ]
@@ -30,7 +31,6 @@ export const secondRowIcons = [
   { src: Redux, alt: "Redux Logo", name: "Redux" },
   { src: Sass, alt: "Sass Logo", name: "Sass" },
   { src: HTML5Icon, alt: "HTML5 Logo", name: "HTML5" },
-  // { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
 ]
 export const thirdRowIcons = [
   { src: CSSLogo, alt: "CSS Logo", name: "CSS3" },
@@ -40,8 +40,8 @@ export const thirdRowIcons = [
 ]
 export const fourthRowIcons = [
   { src: Mongo, alt: "Mongo Logo", name: "MDB" },
-  { src: Github, alt: "Github Logo", name: "Github" },
+  // { src: Github, alt: "Github Logo", name: "Github" },
+  { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
   { src: Firebase, alt: "Firebase Logo", name: "Firebase" },
-  // { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
   { src: Express, alt: "Express Logo", name: "Express" },
 ]
