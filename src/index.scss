@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import url("https://api.fontshare.com/css?f[]=satoshi@500,700&display=swap");
 // @import url('../src/assets/fonts/BebasNeue-Regular.woff');
 
 // @font-face {
@@ -39,6 +40,66 @@
 
 // }
 
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../src/assets/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Regular.woff") format("woff"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Regular.ttf") format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../src/assets/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Medium.woff") format("woff"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Medium.ttf") format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../src/assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff"),
+    url("../src/assets/fonts/Satoshi/Satoshi-Bold.ttf") format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tanker";
+  src: url("../src/assets/fonts/Tanker/Tanker-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/Tanker/Tanker-Regular.woff") format("woff"),
+    url("../src/assets/fonts/Tanker/Tanker-Regular.ttf") format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash-Bold";
+  src: url("../src/assets/fonts/Clash/ClashDisplay-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/Clash/ClashDisplay-Bold.woff") format("woff"),
+    url("../src/assets/fonts/Clash/ClashDisplay-Bold.ttf") format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash-Semibold";
+  src: url("../src/assets/fonts/Clash/ClashDisplay-Semibold.woff2")
+      format("woff2"),
+    url("../src/assets/fonts/Clash/ClashDisplay-Semibold.woff") format("woff"),
+    url("../src/assets/fonts/Clash/ClashDisplay-Semibold.ttf")
+      format("truetype");
+  // font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -58,6 +119,7 @@ body {
 
 html {
   overflow: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -250,7 +312,7 @@ ul {
   }
 
   h2 {
-    font-size: 7.5rem;
+    font-size: 7.3rem;
     line-height: 6rem;
   }
 
@@ -262,13 +324,15 @@ ul {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   h2 {
-    font-size: 7.5rem;
+    font-size: 7.3rem;
     line-height: 6rem;
   }
+
   // h3 {
   //   line-height: 3rem;
   // }
 }
+
 // @media only screen and (min-width: 1366px) {
 //   .form-floating input,
 //   .form-floating select {
