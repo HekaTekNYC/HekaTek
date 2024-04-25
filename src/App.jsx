@@ -9,12 +9,9 @@ import Services from "./routes/services/Services"
 import ContactForm from "./components/contact-form/ContactForm"
 import Navigation from "./components/navigation/Navigation"
 import Footer from "./components/footer/Footer"
-import "./assets/fonts/BeVietnamPro-Regular.ttf"
-import "./assets/fonts/GothicA1-Regular.ttf"
-import "./assets/fonts/GothicA1-Bold.ttf"
-import "./assets/fonts/GothicA1-ExtraBold.ttf"
+
 import "./index.scss"
-import WhyUs from './routes/why-us/WhyUs';
+import WhyUs from "./routes/why-us/WhyUs"
 
 const App = () => {
   return (
