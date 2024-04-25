@@ -90,11 +90,12 @@
     .pricing-lump-amount,
     .pricing-ecomm-amount {
       align-self: flex-start;
+      font-family: "Tanker";
       font-size: 2rem;
       font-weight: bold;
       color: #444d82;
       margin: 20px 0 0;
-      letter-spacing: 0.04rem;
+      // letter-spacing: 0.04rem;
     }
 
     .pricing-sub-amount-reg,
@@ -102,7 +103,7 @@
     .pricing-sub-design-amount-reg {
       align-self: flex-start;
       font-weight: 700;
-      font-family: "Gothic A1";
+      font-family: "Satoshi-Bold";
       font-size: 1rem;
       color: #444d82;
     }
