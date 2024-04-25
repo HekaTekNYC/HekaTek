@@ -1,7 +1,7 @@
 .pricing-container {
   display: flex;
   flex-direction: column;
-
+  // justify-content: center;
   gap: 40px;
 }
 
@@ -16,11 +16,12 @@
 
 .pricing-text,
 .pricing-header {
-  // text-align: center;
+  text-align: center;
   margin-bottom: 30px;
 }
+
 .pricing-text p {
-  margin: 20px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -38,15 +39,20 @@
     width: auto;
     height: 110%;
     z-index: -1;
+
     img {
       width: 100%;
       height: auto;
     }
   }
+
   .pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1 1 280px;
     max-width: 300px;
-    margin: 0 10px;
     height: auto;
     padding: 10px;
     background: rgba(233, 230, 230, 0.188);
@@ -57,74 +63,62 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 
     .pricing-sub-title,
     .pricing-lump-title,
     .pricing-ecomm-title {
       align-self: flex-start;
       font-weight: 500;
+      font-size: 1.3rem;
+      font-weight: 600;
       // margin-bottom: 30px;
     }
 
-    .pricing-sub-title p {
-      color: #b46ff8;
-      font-size: 1.2rem;
+    .pricing-sub-title {
+      color: #9e3cb9be;
     }
-    .pricing-lump-title p {
-      font-size: 1.2rem;
+
+    .pricing-lump-title {
       color: #7285fd;
     }
-    .pricing-ecomm-title p {
-      font-size: 1.2rem;
+
+    .pricing-ecomm-title {
       color: #ff7d79;
     }
+
     .pricing-sub-amount,
     .pricing-lump-amount,
     .pricing-ecomm-amount {
       align-self: flex-start;
-      color: #444d82;
-      // margin-top: 10px;
-    }
-    .pricing-sub-amount p,
-    .pricing-lump-amount p,
-    .pricing-ecomm-amount p {
-      align-self: flex-start;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #444d82;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin: 20px 0 0;
+      letter-spacing: 0.04rem;
     }
+
     .pricing-sub-amount-reg,
     .pricing-lump-amount-reg,
     .pricing-sub-design-amount-reg {
       align-self: flex-start;
-      font-weight: normal;
-      // display: inline;
-      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: "Gothic A1";
+      font-size: 1rem;
       color: #444d82;
     }
+
     .pricing-sub-design-text,
     .pricing-sub-design-amount {
       // margin-top: 16px;
       align-self: flex-start;
+      font-size: 1.2rem;
     }
 
-    .pricing-sub-design-amount p {
+    .pricing-sub-design-amount {
       font-weight: 700;
-      font-size: 1.2rem;
-    }
-    .pricing-sub-design-text p {
-      // font-weight: 700;
-      font-size: 1.2rem;
-    }
-    .pricing-hosting-amount {
     }
   }
+
   .lump-sum-card {
     position: relative;
   }
@@ -136,6 +130,7 @@
     width: 140px;
     height: auto;
   }
+
   .white-line-purple {
     width: 100%;
     height: 1px;
@@ -147,6 +142,7 @@
     );
     margin: 30px 0;
   }
+
   .white-line-peri,
   .white-line-coral {
     width: 100%;
@@ -160,6 +156,7 @@
     margin-top: 60px;
     margin-bottom: 30px;
   }
+
   //  {
   //     width: 100%;
   //     height: 2px;
@@ -170,18 +167,19 @@
     margin-top: auto;
     width: 100%;
   }
+
   .pricing-checklist-items ul li {
     position: relative;
-    padding-left: 2em; // Adjust as needed to make space for the checkmark
+    padding-left: 2em;
     list-style-type: none;
     margin-bottom: 0.5em;
 
     &:before {
       position: absolute;
       left: 0;
-      top: 0.1em; // Adjust this to better align with the top of the text
-      height: 1em; // Adjust size accordingly
-      width: 1em; // Adjust size accordingly
+      top: 0.1em;
+      height: 1em;
+      width: 1em;
     }
   }
 
@@ -208,7 +206,7 @@
   }
 
   .pricing-card {
-    width: 100%; // Full width cards on smaller devices
-    max-width: 600px; // Optional: limit max width on very small devices
+    width: 100%;
+    max-width: 600px;
   }
 }
