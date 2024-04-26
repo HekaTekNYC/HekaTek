@@ -58,8 +58,10 @@
 .why-us-section {
   background: #f4f7ff;
   z-index: -2;
+  overflow: hidden;
 
   h2 {
+    // color: #c7d0fe;
     color: #abb6eb;
     // color: #c7d0ff;
   }

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import {
   firstRowIcons,
   secondRowIcons,
@@ -25,6 +26,9 @@ const WhyUs = () => {
       ))}
     </>
   )
+  // const scrollToSection = (sectionId) => {
+  //   document.getElementById(contact)?.scrollIntoView({ behavior: "smooth" })
+  // }
   return (
     <div className="why-us-container">
       <div className="tech-stack-container">
@@ -40,25 +44,32 @@ const WhyUs = () => {
       </div>
       <div className="why-info-container">
         <h2 className="why-header">
-          why <br /> HekaTek
+          Why <br /> HekaTek
         </h2>
 
         <h5 className="why-subheader">
-          We're a duo of software developers who find joy in decluttering
-          digital messes, turning complexity into simplicity.
+          We view each project as a partnership and go beyond just meeting
+          requirements.
         </h5>
         <p className="why-p">
-          Our code is clean, our interfaces seamless, and our applications are
-          so intuitive, they practically read your mind. Off the clock, you'll
-          find us digging into algorithms, getting lost in games or cultivating
-          the art of indoor plant whispering (they say the secret is in the
-          coding lullabies). Ready to give your online presence a sprinkle of
-          our HekaTek magic? Hit us up/contact us below.
+          Our team invests time to understand your vision and goals, ensuring
+          that every solution is not only effective but also a strategic asset
+          to your business. Trust us to elevate your digital presence. Our
+          proven track record of successful projects and satisfied clients
+          speaks volumes of our ability to deliver exceptional results, no
+          matter the scale or complexity of the project. Our team dedicates time
+          to fully understand your vision and goals, ensuring every solution we
+          deliver not only meets your needs but also becomes a strategic asset
+          to your business. Trust in our ability to elevate your digital
+          presence. With a proven track record of successful projects and
+          satisfied clients, we demonstrate our capacity to achieve exceptional
+          results, regardless of the project's scale or complexity.
         </p>
 
         <Button
           text={"Schedule A Meeting"}
-          href={""}
+          scrollToId={"contact"}
+          onClick={() => scrollToSection("contact")}
           btnType={"solid"}
           width={"short"}
         />

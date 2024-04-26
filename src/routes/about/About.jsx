@@ -2,7 +2,7 @@ import React from "react"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
-import AboutLg from "../../assets/images/placeholderLg.png"
+import AboutLg from "../../assets/images/about-1.png"
 import AboutSm from "../../assets/images/placeholderSm.png"
 import "./about.scss"
 
@@ -18,7 +18,12 @@ const About = () => {
 
         <div className="about-img-container">
           <div className="about-img-lg">
-            <img src={AboutLg} height={"450px"} alt="placeholder image" />
+            <img
+              src={AboutLg}
+              height={"450px"}
+              alt="placeholder image"
+              className="pill-shaped-image"
+            />
           </div>
           <div className="about-img-sm">
             <img src={AboutSm} height={"250px"} alt="placeholder image" />
