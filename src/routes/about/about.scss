@@ -7,6 +7,14 @@
   padding-top: 40px;
   margin-bottom: 20px;
 }
+.pill-shaped-image {
+  width: 350px; /* Set the width of the image */
+  height: 500px; /* Set the height of the image */
+  border-radius: 30%/60%;
+  // clip-path: ellipse(40% 40% at 40% 40%);
+  // overflow: hidden; /* Ensures the image does not spill outside the border */
+  // display: block; /* Optional, for proper display without inline spacing */
+}
 
 .about-blob-container {
   position: relative;

@@ -1,33 +1,30 @@
-// import React from "react"
-// import "./button.scss"
-
-// const Button = ({ text, href, type, btnType, width }) => {
-//   const buttonProps = {}
-//   const buttonClass = `btn-${btnType === "solid" ? "solid" : "outline"}`
-//   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
-//   if (type) {
-//     buttonProps.type = type
-//   }
-//   if (href) {
-//     buttonProps.href = href
-//   }
-
-//   return (
-//     <div className={`${buttonClass} ${btnWidth}`}>
-//       <a {...buttonProps} target="_blank">
-//         {text}
-//       </a>
-//     </div>
-//   )
-// }
-
-// export default Button
-
 import React from "react"
+import { Link } from "react-router-dom" // Importing Link for internal navigation
 import "./button.scss"
-const Button = ({ text, href, type, btnType, width }) => {
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" })
+  }
+}
+
+const Button = ({ text, href, type, scrollToId, btnType, width }) => {
   const buttonClass = `btn-${btnType === "solid" ? "solid" : "outline"}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
+
+  if (scrollToId) {
+    return (
+      <div className={`${buttonClass} ${btnWidth}`}>
+        <Link
+          to={`/#${scrollToId}`}
+          onClick={() => scrollToSection(scrollToId)}
+        >
+          {text}
+        </Link>
+      </div>
+    )
+  }
 
   if (href) {
     return (
@@ -49,5 +46,7 @@ const Button = ({ text, href, type, btnType, width }) => {
     )
   }
 }
+
+// throw new Error("Button requires 'href', 'scrollToId', or 'type=\"submit\"'.")
 
 export default Button
