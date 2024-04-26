@@ -64,7 +64,7 @@ const ContactForm = () => {
 
     if (!firstName || !lastName || !email || !message || !isValidEmail(email)) {
       setModalContent({
-        title: "Error",
+        title: "Oops!",
         message: "Please ensure all fields are filled out correctly.",
       })
       setShowModal(true)
@@ -81,16 +81,23 @@ const ContactForm = () => {
       .then(
         (result) => {
           setModalContent({
-            title: "Success",
-            message: "Your message has been successfully sent!",
+            title: "Message Sent!",
+            message: "We will get back to you within 48 hours.",
           })
           setShowModal(true)
           form.current.reset()
         },
         (error) => {
           setModalContent({
-            title: "Error",
-            message: "Failed to send your message. Please try again later.",
+            title: "Oops!",
+            message: (
+              <span>
+                Contact form failed to submit. Please feel free to email us at{" "}
+                <a className="modal-link" href="mailto:hekateknyc@gmail.com">
+                  hekateknyc@gmail.com.
+                </a>
+              </span>
+            ),
           })
           setShowModal(true)
         }
@@ -110,7 +117,7 @@ const ContactForm = () => {
           <div className="form-group contact-name">
             <div className="first-name">
               <label
-                for="firt-name"
+                for="first-name"
                 className={firstNameFocused ? "focused" : ""}
               >
                 First Name
@@ -164,7 +171,12 @@ const ContactForm = () => {
           </div>
 
           <div className="contact-form-btn">
-            <Button text={"Submit"} btnType={"solid"} type={"submit"} />
+            <Button
+              text={"Submit"}
+              btnType={"solid"}
+              type={"submit"}
+              width={"short"}
+            />
           </div>
         </form>
       </div>
@@ -172,18 +184,19 @@ const ContactForm = () => {
         <div className="modal-background" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h4>{modalContent.title}</h4>
-            <p>{modalContent.message || "Default message"}</p>
-
-            <Button
-              text={Close}
-              btnType={"solid"}
-              // style={{
-              //   display: "block",
-              //   marginLeft: "auto",
-              //   marginRight: "auto",
-              // }}
-              onClick={() => setShowModal(false)}
-            />
+            <p className="modal-message">
+              {modalContent.message || "Default message"}
+            </p>
+            <button
+              className="btn-modal"
+              type={"submit"}
+              onClick={() => {
+                console.log("Close button clicked")
+                setShowModal(false)
+              }}
+            >
+              Close
+            </button>
           </div>
         </div>
       )}

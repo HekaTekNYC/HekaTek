@@ -7,7 +7,7 @@ const ProductCard = ({ img, id, deg, scale }) => {
   return (
     <div className="product-card-container" key={id}>
       <div className="product-card-bkrnd">
-        <div className={`product-clr-bkrnd `}>
+        <div className="product-clr-bkrnd">
           <img
             src={ProductBlur}
             alt="pastel abstract wheel"

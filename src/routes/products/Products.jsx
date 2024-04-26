@@ -19,9 +19,8 @@ const Products = () => {
       <div className="products-header">
         <h2>OUR WORK</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-          excepturi ad est perspiciatis vitae, rerum doloremque quaerat modi
-          magni quia.
+          Here's a look at our recent projects. Each example highlights our
+          approach to solving real-world challenges for our clients.
         </p>
       </div>
       {[plantHaus, aiSumz, riversEdge, interviewIQ, dangoDB, ad3lie].map(
