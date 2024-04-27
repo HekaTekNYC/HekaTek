@@ -43,7 +43,11 @@
 .footer-icons {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
+  a {
+    cursor: pointer;
+  }
   .linkedin-icon,
   .email-icon,
   .github-icon {
@@ -57,6 +61,7 @@
 
     &:hover {
       box-shadow: rgba(165, 162, 255, 0.305) 0px 4px 6px;
+      cursor: pointer;
     }
   }
 

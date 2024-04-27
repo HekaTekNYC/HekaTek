@@ -30,14 +30,35 @@
 }
 
 .pricing-text {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .pricing-cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 40px;
+
+  .sub {
+    &:hover {
+      box-shadow: rgba(180, 111, 248, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
+
+  .lump {
+    &:hover {
+      box-shadow: hsla(232, 97%, 72%, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
+
+  .ecomm {
+    &:hover {
+      box-shadow: rgba(255, 126, 121, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
 
   .pricing-card {
     position: relative;
@@ -55,6 +76,7 @@
     // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
 
     .pricing-card-image {
       position: absolute;
@@ -90,7 +112,7 @@
     font-size: 1.3rem;
 
     &.sub {
-      color: #9e3cb9be;
+      color: #b46ff8;
     }
 
     &.ecomm {
@@ -208,6 +230,12 @@
 
 @media (min-width: 820px) {
   .pricing-container {
+    .pricing-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     .pricing-background {
       bottom: 300px;
       left: 0;
@@ -220,6 +248,7 @@
       }
     }
   }
+
   .pricing-cards-container {
     flex-direction: row;
     align-items: center;
@@ -272,7 +301,17 @@
       }
     }
   }
+
   .pricing-cards-container {
     gap: 40px;
+
+    .pricing-card {
+      .pricing-card-image {
+        top: -30px;
+        right: -25px;
+        width: 130px;
+        height: auto;
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom" // Importing Link for internal navigation
+import { Link } from "react-router-dom"
 import "./button.scss"
 
 const scrollToSection = (id) => {
@@ -9,8 +9,10 @@ const scrollToSection = (id) => {
   }
 }
 
-const Button = ({ text, href, type, scrollToId, btnType, width }) => {
-  const buttonClass = `btn-${btnType === "solid" ? "solid" : "outline"}`
+const Button = ({ text, href, type, scrollToId, btnType, width, active }) => {
+  const buttonClass = `btn-${
+    btnType === "solid" ? "solid" : "outline"
+  } ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
 
   if (scrollToId) {
@@ -46,7 +48,5 @@ const Button = ({ text, href, type, scrollToId, btnType, width }) => {
     )
   }
 }
-
-// throw new Error("Button requires 'href', 'scrollToId', or 'type=\"submit\"'.")
 
 export default Button

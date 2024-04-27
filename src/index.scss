@@ -1,4 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
 @import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
 @import url("https://api.fontshare.com/css?f[]=clash-display@400,500,600,700&display=swap");
 @import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
@@ -29,9 +28,6 @@ html {
   }
 }
 
-// * {
-//   border: 1px solid red;
-// }
 *,
 *::before,
 *::after {
@@ -51,8 +47,6 @@ h1 {
   font-family: "Bebas Neue";
   font-size: 7.5rem;
   line-height: 0.9;
-  // color: #282727;
-  // color: #444d82;
   color: #ffff;
 }
 
@@ -61,8 +55,8 @@ h2 {
   font-size: 7rem;
   font-weight: 700;
   line-height: 5.5rem;
-  // color: #c6ccfc;
-  color: #e1e5ff;
+  color: #d9deff;
+  margin: 0;
 }
 
 h3 {
@@ -76,7 +70,7 @@ h4 {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 500;
   color: #444d82;
 }
 
@@ -87,7 +81,6 @@ h5 {
 }
 
 h6 {
-  // font-family: "Gothic A1", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
@@ -122,64 +115,6 @@ ul {
   padding-left: 0;
 }
 
-// .form-floating > input:focus + label:after {
-//   color: #fff !important;
-//   text-align: center;
-// }
-
-// .form-control.textarea {
-//   height: 120px;
-//   padding-top: calc((120px - 1em) / 2);
-//   padding-bottom: calc((120px - 1em) / 2);
-// }
-
-// /* Contact Form */
-// .form-select:focus,
-// .form-control:focus {
-//   border-color: #9fc7f6ba;
-//   box-shadow: inset 0 1px 1px rgba(9, 1, 84, 0.075),
-//     0 0 8px rgba(2, 2, 106, 0.606);
-//   color: #fff;
-// }
-
-// .form-floating > input + label:after {
-//   background: transparent !important;
-// }
-// .form-floating > input:focus + label:after {
-//   color: #fff !important;
-// }
-// .form-floating > textarea + label:after {
-//   background: transparent !important;
-//   font-family: "Bebas Neue", sans-serif;
-// }
-
-// .form-control:not(active) {
-//   background-color: rgba(255, 252, 252, 0.633) !important;
-//   border-color: rgba(102, 102, 103, 0.349);
-//   color: #ffffff !important;
-// }
-
-/* Media queries */
-
-/* Larger than mobile */
-// @media (min-width: 350px) {
-//   .form-floating > .form-control,
-//   .form-floating > .form-control-plaintext,
-//   .form-floating > .form-select {
-//     height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-//     min-height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-//     line-height: 1.25;
-//   }
-
-//   .form-control.textarea {
-//     padding-bottom: 0.8rem;
-//   }
-//   .form-floating > label {
-//     font-size: 0.86rem;
-//     padding-bottom: 10px;
-//   }
-// }
-
 /* Larger than tablet */
 @media (min-width: 550px) {
   h1 {
@@ -200,11 +135,6 @@ ul {
   h1 {
     line-height: 0.9;
   }
-
-  // h3 {
-  //   font-size: 8rem;
-  //   line-height: 7rem;
-  // }
 }
 
 /* Larger than desktop */
@@ -218,10 +148,6 @@ ul {
     font-size: 7.3rem;
     line-height: 6rem;
   }
-
-  // h3 {
-  //   line-height: 2.9rem;
-  // }
 }
 
 /* Larger than Desktop HD */
@@ -230,18 +156,4 @@ ul {
     font-size: 7.3rem;
     line-height: 6rem;
   }
-
-  // h3 {
-  //   line-height: 3rem;
-  // }
 }
-
-// @media only screen and (min-width: 1366px) {
-//   .form-floating input,
-//   .form-floating select {
-//     height: 2vh !important;
-//   }
-//   .form-floating > label {
-//     font-size: 0.88rem;
-//   }
-// }
