@@ -22,17 +22,18 @@ const Hero = () => {
       ></div>
       <div className="hero-container">
         <header className="hero-header">
-          <h1>HekaTek</h1>
+          <h1>HEkATEk</h1>
           <h4 className="hero-text">
             Software developers with a passion for bringing your visions to
             life.
           </h4>
           <Button
-            href="mailto:hekateknyc@gmail.com"
-            text={"Schedule a Meeting"}
+            text={"Schedule A Meeting"}
+            scrollToId={"contact"}
+            onClick={() => scrollToSection("contact")}
             btnType={"solid"}
             width={"short"}
-          ></Button>
+          />
         </header>
       </div>
 

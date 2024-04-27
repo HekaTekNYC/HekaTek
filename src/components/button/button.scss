@@ -17,6 +17,7 @@
 
   a {
     transition: all 200ms ease-in-out;
+    cursor: pointer;
   }
 }
 
@@ -24,15 +25,29 @@
   background: #444d82;
   color: #fff;
 
+  &:hover {
+    background: #4f5a96;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
   a {
     color: #fff !important;
   }
 }
-
 .btn-outline {
   background-color: transparent;
   color: #444d82;
   border: 1px solid #444d82;
+
+  &:hover {
+    background-color: #444d82;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    a {
+      color: #ffffff !important;
+    }
+  }
 
   a {
     color: #444d82 !important;

@@ -21,9 +21,9 @@ const PricingPlans = () => {
           </p>
         </div>
 
-        <div className="pricing-cards-container">
+        <div className="pricing-cards-container ">
           {/* Subscription pricing card */}
-          <div className="pricing-card">
+          <div className="pricing-card sub">
             <div className="pricing-card-header">
               <p className="pricing-plan-title sub">SUBSCRIPTION</p>
               <h3 className="pricing-plan-cost">
@@ -87,16 +87,18 @@ const PricingPlans = () => {
 
               <div className="pricing-btn-container">
                 <Button
-                  href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
+                  scrollToId={"contact"}
+                  onClick={() => scrollToSection("contact")}
+                  btnType={"outline"}
                   width={"full"}
-                ></Button>
+                />
               </div>
             </div>
           </div>
 
           {/* Lump Sum pricing card */}
-          <div className="pricing-card">
+          <div className="pricing-card lump">
             <img
               src="../../assets/images/pricing-gem.png"
               alt="Gem Image"
@@ -154,16 +156,17 @@ const PricingPlans = () => {
 
               <div className="pricing-btn-container">
                 <Button
-                  href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
-                  btnType={"solid"}
+                  scrollToId={"contact"}
+                  onClick={() => scrollToSection("contact")}
+                  btnType={"outline"}
                   width={"full"}
-                ></Button>
+                />
               </div>
             </div>
           </div>
           {/* Ecommerce pricing card */}
-          <div className="pricing-card">
+          <div className="pricing-card ecomm">
             <div className="pricing-card-header">
               <p className="pricing-plan-title ecomm">ECOMMERCE</p>
               <h3 className="pricing-plan-cost">
@@ -215,10 +218,12 @@ const PricingPlans = () => {
 
               <div className="pricing-btn-container">
                 <Button
-                  href="mailto:hekateknyc@gmail.com"
                   text={"Get Started"}
+                  scrollToId={"contact"}
+                  onClick={() => scrollToSection("contact")}
+                  btnType={"outline"}
                   width={"full"}
-                ></Button>
+                />
               </div>
             </div>
           </div>

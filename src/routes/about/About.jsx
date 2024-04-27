@@ -2,8 +2,8 @@ import React from "react"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
-import AboutLg from "../../assets/images/about-1.png"
-import AboutSm from "../../assets/images/placeholderSm.png"
+import AboutLg from "../../assets/images/2.png"
+import AboutSm from "../../assets/images/code-desk-sm.png"
 import "./about.scss"
 
 const About = () => {
@@ -15,18 +15,12 @@ const About = () => {
             <img src={AboutBkrd} alt="" />
           </div>
         </div>
-
         <div className="about-img-container">
-          <div className="about-img-lg">
-            <img
-              src={AboutLg}
-              height={"450px"}
-              alt="placeholder image"
-              className="pill-shaped-image"
-            />
+          <div className="about-img-back">
+            <img src={AboutLg} alt="placeholder image" />
           </div>
-          <div className="about-img-sm">
-            <img src={AboutSm} height={"250px"} alt="placeholder image" />
+          <div className="about-img-front">
+            <img src={AboutSm} alt="placeholder image" />
           </div>
         </div>
         <div className="about-info-container">
@@ -47,10 +41,10 @@ const About = () => {
               presence a sprinkle of our HekaTek magic? Hit us up/contact us
               below.
             </p>
-
             <Button
               text={"Schedule A Meeting"}
-              href={""}
+              scrollToId={"contact"}
+              onClick={() => scrollToSection("contact")}
               btnType={"solid"}
               width={"short"}
             />

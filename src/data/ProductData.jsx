@@ -24,7 +24,6 @@ export const plantHaus = {
   btn: "View Live",
   aLink: "https://planthaus.netlify.app/",
   isCurrentWork: false,
-  preview: "Preview",
 }
 export const aiSumz = {
   id: 2,
@@ -33,7 +32,6 @@ export const aiSumz = {
   scale: "X(-1)",
   desc: "AI Powered Article Summarizer",
   blob: Blob2,
-
   img: {
     src: AISum,
     alt: "AI Sum Preview",
@@ -41,18 +39,14 @@ export const aiSumz = {
   info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
   btn: "View Live",
   aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
-
-  preview: "Preview",
 }
 export const riversEdge = {
   id: 3,
-
   name: "Rivers Edge",
   deg: 0,
   scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
   blob: Blob3,
-
   img: {
     src: RiversEdge,
     alt: "River's Edge Preview",
@@ -60,8 +54,6 @@ export const riversEdge = {
   info: "A sleek website built using React, Redux, React DOM, and Vite showcases a curated selection of dishes and drinks. Dive into a seamless interactive experience that elevates the journey through the gourmet menu.",
   btn: "View Live",
   aLink: "https://65f6147cc26572fd14aa231b--merry-pixie-7241fa.netlify.app/",
-
-  preview: "Preview",
 }
 
 export const interviewIQ = {
@@ -71,14 +63,12 @@ export const interviewIQ = {
   scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
   blob: Blob1,
-
   img: {
     src: IIQcover,
     alt: "InterviewIQ Preview",
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login. Users have ability to create, save and edit their own cards as well as accessing the basic cards.",
   btn: "Coming Soon",
-  preview: "Coming Soon",
 }
 
 export const dangoDB = {
@@ -95,7 +85,6 @@ export const dangoDB = {
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
   btn: "View GitHub",
   aLink: "https://github.com/oslabs-beta/dangoDB",
-  preview: "Preview Github",
 }
 
 export const ad3lie = {
@@ -112,5 +101,4 @@ export const ad3lie = {
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",
   btn: "View Github",
   aLink: "https://github.com/oslabs-beta/ad3lie",
-  preview: "Preview",
 }

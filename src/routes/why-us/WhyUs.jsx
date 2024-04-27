@@ -47,23 +47,17 @@ const WhyUs = () => {
           Why <br /> HekaTek
         </h2>
 
-        <h5 className="why-subheader">
+        <h4 className="why-subheader">
           We view each project as a partnership and go beyond just meeting
           requirements.
-        </h5>
+        </h4>
         <p className="why-p">
           Our team invests time to understand your vision and goals, ensuring
           that every solution is not only effective but also a strategic asset
           to your business. Trust us to elevate your digital presence. Our
           proven track record of successful projects and satisfied clients
           speaks volumes of our ability to deliver exceptional results, no
-          matter the scale or complexity of the project. Our team dedicates time
-          to fully understand your vision and goals, ensuring every solution we
-          deliver not only meets your needs but also becomes a strategic asset
-          to your business. Trust in our ability to elevate your digital
-          presence. With a proven track record of successful projects and
-          satisfied clients, we demonstrate our capacity to achieve exceptional
-          results, regardless of the project's scale or complexity.
+          matter the scale or complexity of the project.
         </p>
 
         <Button

@@ -30,9 +30,9 @@ const Products = () => {
           product.id % 2 !== 0 ? (
             <>
               <div className={`product-row row1`}>
-                {/* <div className={`prod-blob${product.id}`}>
+                <div className={`prod-blob${product.id}`}>
                   <img src={product.blob} alt="" />
-                </div> */}
+                </div>
                 <div className="product-container" key={product.id}>
                   <ProductCard {...product} />
                 </div>
@@ -44,10 +44,9 @@ const Products = () => {
           ) : (
             <>
               <div className={`product-row-rev row2`}>
-                {/* <div className={`prod-blob${product.id}`}>
-                  {" "}
+                <div className={`prod-blob${product.id}`}>
                   <img src={product.blob} alt="" />
-                </div> */}
+                </div>
                 <div className="product-desc-container" key={product.id}>
                   <ProductInfo {...product} />
                 </div>

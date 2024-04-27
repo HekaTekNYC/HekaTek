@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import { Outlet, Link } from "react-router-dom"
 
 import Burger from "./burger/Burger"
@@ -24,11 +24,37 @@ const Navigation = () => {
     }
   }
 
+  const [hasScrolledPastHero, setHasScrolledPastHero] = useState(false)
+  useEffect(() => {
+    const navbar = document.querySelector(".navigation-container")
+    navbar.classList.add("scrolled-past-hero")
+
+    const handleScroll = () => {
+      const hasScrolled = window.pageYOffset > 0
+      setHasScrolledPastHero(hasScrolled)
+
+      if (hasScrolled) {
+        navbar.classList.add("scrolled-past-hero")
+      } else {
+        navbar.classList.remove("scrolled-past-hero")
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
     <>
-      <nav className="navigation-container">
+      <nav
+        className={`navigation-container ${
+          hasScrolledPastHero ? "glassmorphism" : ""
+        }`}
+      >
         <Link to="/" className="navbar-logo">
-          HEKATEK
+          <h3>HEKATEK</h3>
         </Link>
         <div className="hamburger-icon">
           <Burger toggleMobileNav={toggleMobileNav} />
