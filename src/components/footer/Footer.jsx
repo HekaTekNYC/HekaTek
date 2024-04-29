@@ -1,22 +1,33 @@
 import React from "react"
+
+import GitHubFooter from "../../assets/icons/github.svg"
+import LinkedIn from "../../assets/icons/linked-in.svg"
+import EmailIcon from "../../assets/icons/email.svg"
+
 import "./footer.scss"
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-email">
-            <p>hekateknyc@gmail.com</p>
-          </div>
-          <div className="service-footer-section">
-            <div className="services-footer">Website Development</div>
-            <div className="services-footer">Website Hosting</div>
-            <div className="services-footer">Software Development</div>
-          </div>
-        </div>
+      <footer className="footer-container">
+        <h3 className="footer-logo">HEKATEK</h3>
         <div className="copyright">
           <p>&copy; 2024 HekaTek | All rights reserved.</p>
+        </div>
+        <div className="footer-icons">
+          {/* <div className="linkedin-icon">
+            <img src={LinkedIn} alt="Linkedin icon" />
+          </div> */}
+          <a href="mailto:hekateknyc@gmail.com" className="email-icon">
+            <img src={EmailIcon} alt="Email icon" />
+          </a>
+          <a
+            href="https://github.com/HekaTek-LLC"
+            target="_blank"
+            className="github-icon"
+          >
+            <img src={GitHubFooter} alt="Github icon" />
+          </a>
         </div>
       </footer>
     </>

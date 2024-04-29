@@ -1,51 +1,15 @@
-@import "~bootstrap/scss/bootstrap";
-// @import url('../src/assets/fonts/BebasNeue-Regular.woff');
-
-// @font-face {
-//   font-family: 'Gothic Regular';
-//   font-style: normal;
-//   font-weight: 400;
-//   src:
-//   url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'Be Vietnam Pro';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('./assets/fonts/BeVietnamPro-Regular.ttf') format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'Gothic A1';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
-
-// }
-
-// @font-face {
-//   font-family: 'Gothic A1';
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url('./assets/fonts/GothicA1-Bold.ttf') format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'Gothic A1';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url('./assets/fonts/GothicA1-ExtraBold.ttf') format('truetype');
-
-// }
+@import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
+@import url("https://api.fontshare.com/css?f[]=clash-display@400,500,600,700&display=swap");
+@import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Satoshi", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #37373c;
+  color: #444d82;
   background-color: #ffffffed;
   max-width: 100%;
   overflow-x: hidden;
@@ -58,6 +22,7 @@ body {
 
 html {
   overflow: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -80,47 +45,52 @@ h6 {
 
 h1 {
   font-family: "Bebas Neue";
-  margin-top: 10px 0;
-  font-size: 6rem;
-  line-height: 1.2;
-  // color: #282727;
-  color: #111111;
+  font-size: 7.5rem;
+  line-height: 0.9;
+  color: #ffff;
+  margin: 0;
 }
 
 h2 {
-  font-size: 1.6rem;
-  width: 90%;
-  line-height: 2.2rem;
+  font-family: "Bebas Neue";
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  color: #d9deff;
+  margin: 0;
 }
 
 h3 {
-  font-family: "Bebas Neue";
-  margin-top: 10px 0;
-  font-size: 8rem;
-  color: rgb(226, 226, 240);
+  font-family: "Tanker", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.2rem;
+  color: #444d82;
+  margin: 0;
 }
 
 h4 {
-  font-family: "Be Vietnam Pro";
-  margin-top: 10px 0;
-  font-size: 2.75rem;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
   line-height: 1.2;
+  font-weight: 500;
+  color: #444d82;
+  margin: 0;
 }
 
 h5 {
-  // font-family: "Gothic A1", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 h6 {
-  // font-family: "Gothic A1", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
 }
 
 p {
-  // font-family: "Gothic A1", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.25px;
@@ -149,106 +119,6 @@ ul {
   padding-left: 0;
 }
 
-.form-floating > input:focus + label:after {
-  color: #fff !important;
-  text-align: center;
-}
-
-.form-control.textarea {
-  height: 120px;
-  padding-top: calc((120px - 1em) / 2);
-  padding-bottom: calc((120px - 1em) / 2);
-}
-
-.contact-btn {
-  font-family: "Gothic A1", sans-serif;
-  color: white;
-  font-size: 1.1rem;
-  white-space: nowrap;
-  background: #7a8399;
-  font-weight: 600;
-  box-shadow: 0 -2px 7px 0 rgb(195, 195, 220) inset,
-    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 20px;
-  text-decoration: none;
-  width: auto;
-  height: 40px;
-  margin: 2px 8px 2px 0;
-  transition: all 200ms ease-in-out;
-
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 -8px 10px 0 rgb(195, 195, 220) inset;
-  }
-
-  a {
-    transition: all 200ms ease-in-out;
-    color: #fff !important;
-  }
-}
-
-/* Contact Form */
-.form-select:focus,
-.form-control:focus {
-  border-color: #9fc7f6ba;
-  box-shadow: inset 0 1px 1px rgba(9, 1, 84, 0.075),
-    0 0 8px rgba(2, 2, 106, 0.606);
-  color: #fff;
-}
-
-.form-floating > input + label:after {
-  background: transparent !important;
-}
-.form-floating > input:focus + label:after {
-  color: #fff !important;
-}
-.form-floating > textarea + label:after {
-  background: transparent !important;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.form-control:not(active) {
-  background-color: rgba(255, 252, 252, 0.633) !important;
-  border-color: rgba(102, 102, 103, 0.349);
-  color: #ffffff !important;
-}
-
-/* Media queries */
-
-/* Larger than mobile */
-@media (min-width: 350px) {
-  .form-floating > .form-control,
-  .form-floating > .form-control-plaintext,
-  .form-floating > .form-select {
-    height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-    min-height: calc(2.9rem + calc(var(--bs-border-width) * 2));
-    line-height: 1.25;
-  }
-
-  .form-control.textarea {
-    padding-bottom: 0.8rem;
-  }
-  .form-floating > label {
-    font-size: 0.86rem;
-    padding-bottom: 10px;
-  }
-  .contact-btn {
-    height: 38px;
-    width: 120px;
-    font-size: 1rem;
-  }
-}
-
 /* Larger than tablet */
 @media (min-width: 550px) {
   h1 {
@@ -269,10 +139,6 @@ ul {
   h1 {
     line-height: 0.9;
   }
-
-  h3 {
-    font-size: 10rem;
-  }
 }
 
 /* Larger than desktop */
@@ -283,28 +149,15 @@ ul {
   }
 
   h2 {
-    line-height: 2.9rem;
+    font-size: 7.3rem;
+    line-height: 6rem;
   }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   h2 {
-    line-height: 3rem;
-  }
-  h3 {
-    font-size: 10rem;
-  }
-}
-@media only screen and (min-width: 1366px) {
-  .form-floating input,
-  .form-floating select {
-    height: 2vh !important;
-  }
-  .form-floating > label {
-    font-size: 0.88rem;
-  }
-  .contact-btn {
-    height: 40px;
+    font-size: 7.3rem;
+    line-height: 6rem;
   }
 }

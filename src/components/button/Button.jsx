@@ -1,23 +1,60 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./button.scss"
 
-const Button = ({ text, href, type }) => {
-  const buttonProps = {}
-
-  if (type) {
-    buttonProps.type = type
+const scrollToSection = (id) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" })
   }
+}
 
+const Button = ({ text, href, type, scrollToId, btnType, width, active }) => {
+  const buttonClass = `btn-${
+    btnType === "solid" ? "solid" : "outline"
+  } ${active}`
+  const btnWidth = `btn-${width === "full" ? "full" : "short"}`
+
+  {
+    /* Link Button */
+  }
+  if (scrollToId) {
+    return (
+      <div className={`${buttonClass} ${btnWidth}`}>
+        <Link
+          to={`/#${scrollToId}`}
+          onClick={() => scrollToSection(scrollToId)}
+        >
+          {text}
+        </Link>
+      </div>
+    )
+  }
+  {
+    /* a tag Button */
+  }
   if (href) {
-    buttonProps.href = href
-  }
-  return (
-    <div className="button-33">
-      <a {...buttonProps} target="_blank">
+    return (
+      <div className={`${buttonClass} ${btnWidth}`}>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {text}
+        </a>
+      </div>
+    )
+  } else {
+    {
+      /* type Button */
+    }
+    const buttonType = type || "button"
+    return (
+      <button
+        type={buttonType}
+        className={`${buttonClass} ${btnWidth} btn-over`}
+      >
         {text}
-      </a>
-    </div>
-  )
+      </button>
+    )
+  }
 }
 
 export default Button

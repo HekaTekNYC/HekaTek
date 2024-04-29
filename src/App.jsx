@@ -1,15 +1,15 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Home from "./routes/home/Home"
-import Products from "./routes/products/Products"
-import Services from "./routes/services/Services"
-import ContactForm from "./components/contact-form/ContactForm"
 import Navigation from "./components/navigation/Navigation"
+import Home from "./routes/home/Home"
+import About from "./routes/about/About"
+import Services from "./routes/services/Services"
+import Products from "./routes/products/Products"
+import WhyUs from "./routes/why-us/WhyUs"
+import PricingPlans from "./routes/pricing-plans/PricingPlans"
+import ContactForm from "./components/contact-form/ContactForm"
 import Footer from "./components/footer/Footer"
-import "./assets/fonts/BeVietnamPro-Regular.ttf"
-import "./assets/fonts/GothicA1-Regular.ttf"
-import "./assets/fonts/GothicA1-Bold.ttf"
-import "./assets/fonts/GothicA1-ExtraBold.ttf"
+
 import "./index.scss"
 
 const App = () => {
@@ -17,10 +17,13 @@ const App = () => {
     <Router>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" id="hero-section" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/our-work" element={<Products />} />
-        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/why-us" element={<WhyUs />} />
+        <Route path="/pricing-plans" element={<PricingPlans />} />
+        <Route path="/contact" id="contact" element={<ContactForm />} />
       </Routes>
       <Footer />
     </Router>
