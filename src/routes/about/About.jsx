@@ -3,7 +3,7 @@ import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
 import AboutLg from "../../assets/images/desknew-2.png"
-// import AboutSm from "../../assets/images/deskblob.png"
+
 import "./about.scss"
 
 const About = () => {
@@ -17,11 +17,8 @@ const About = () => {
         </div>
         <div className="about-img-container">
           <div className="about-img-back">
-            <img src={AboutLg} alt="placeholder image" />
+            <img src={AboutLg} alt="woman coding in home office" />
           </div>
-          {/* <div className="about-img-front">
-            <img src={AboutSm} alt="placeholder image" />
-          </div> */}
         </div>
         <div className="about-info-container">
           <h2 className="about-header">
