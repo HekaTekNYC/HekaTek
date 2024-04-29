@@ -1,4 +1,3 @@
-import React from "react"
 import ContactForm from "../../components/contact-form/ContactForm"
 import ContactBlob from "../../assets/images/contact-blob.webp"
 

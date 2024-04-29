@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
+
 import Button from "../button/Button"
 
 import "./contact-form.scss"
@@ -31,6 +32,7 @@ const ContactForm = () => {
         break
     }
   }
+
   const handleBlur = (field) => {
     switch (field) {
       case "firstName":
@@ -117,7 +119,7 @@ const ContactForm = () => {
           <div className="form-group contact-name">
             <div className="first-name">
               <label
-                for="first-name"
+                htmlFor="first-name"
                 className={firstNameFocused ? "focused" : ""}
               >
                 First Name
@@ -132,7 +134,7 @@ const ContactForm = () => {
             </div>
             <div className="last-name">
               <label
-                for="last-name"
+                htmlFor="last-name"
                 className={lastNameFocused ? "focused" : ""}
               >
                 Last Name
@@ -147,7 +149,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="form-group">
-            <label for="email" className={emailFocused ? "focused" : ""}>
+            <label htmlFor="email" className={emailFocused ? "focused" : ""}>
               Email
             </label>
             <input
@@ -159,7 +161,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="form-group">
-            <label for="msg" className={messageFocused ? "focused" : ""}>
+            <label htmlFor="msg" className={messageFocused ? "focused" : ""}>
               Message
             </label>
             <textarea

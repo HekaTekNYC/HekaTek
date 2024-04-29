@@ -185,7 +185,7 @@ const PricingPlans = () => {
                 <li className="checklist">
                   <img
                     src={CoralCheck}
-                    alt="Checkmark"
+                    alt="Coral Checkmark"
                     className="checkmark-icon"
                   />
                   Custom storefront design
@@ -193,7 +193,7 @@ const PricingPlans = () => {
                 <li className="checklist">
                   <img
                     src={CoralCheck}
-                    alt="Checkmark"
+                    alt="Coral Checkmark"
                     className="checkmark-icon"
                   />
                   Seamless payment integration
@@ -201,7 +201,7 @@ const PricingPlans = () => {
                 <li className="checklist">
                   <img
                     src={CoralCheck}
-                    alt="Checkmark"
+                    alt="Coral Checkmark"
                     className="checkmark-icon"
                   />
                   Custom-built CRM to streamline your business operations
@@ -209,7 +209,7 @@ const PricingPlans = () => {
                 <li className="checklist">
                   <img
                     src={CoralCheck}
-                    alt="Checkmark"
+                    alt="Coral Checkmark"
                     className="checkmark-icon"
                   />
                   Mobile optimized platform

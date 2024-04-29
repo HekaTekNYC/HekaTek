@@ -1,17 +1,16 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Navigation from "./components/navigation/Navigation"
 import Home from "./routes/home/Home"
 import About from "./routes/about/About"
-import Products from "./routes/products/Products"
-import PricingPlans from "./routes/pricing-plans/PricingPlans"
 import Services from "./routes/services/Services"
-// import WhyUs from './routes/why-us/WhyUs'
+import Products from "./routes/products/Products"
+import WhyUs from "./routes/why-us/WhyUs"
+import PricingPlans from "./routes/pricing-plans/PricingPlans"
 import ContactForm from "./components/contact-form/ContactForm"
-import Navigation from "./components/navigation/Navigation"
 import Footer from "./components/footer/Footer"
 
 import "./index.scss"
-import WhyUs from "./routes/why-us/WhyUs"
 
 const App = () => {
   return (
