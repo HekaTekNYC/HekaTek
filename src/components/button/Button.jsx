@@ -15,6 +15,9 @@ const Button = ({ text, href, type, scrollToId, btnType, width, active }) => {
   } ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
 
+  {
+    /* Link Button */
+  }
   if (scrollToId) {
     return (
       <div className={`${buttonClass} ${btnWidth}`}>
@@ -27,7 +30,9 @@ const Button = ({ text, href, type, scrollToId, btnType, width, active }) => {
       </div>
     )
   }
-
+  {
+    /* a tag Button */
+  }
   if (href) {
     return (
       <div className={`${buttonClass} ${btnWidth}`}>
@@ -37,6 +42,9 @@ const Button = ({ text, href, type, scrollToId, btnType, width, active }) => {
       </div>
     )
   } else {
+    {
+      /* type Button */
+    }
     const buttonType = type || "button"
     return (
       <button

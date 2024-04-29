@@ -1,7 +1,8 @@
 import React from "react"
+
+import GitHubFooter from "../../assets/icons/github.svg"
 import LinkedIn from "../../assets/icons/linked-in.svg"
 import EmailIcon from "../../assets/icons/email.svg"
-import GitHubFooter from "../../assets/icons/github.svg"
 
 import "./footer.scss"
 
@@ -10,7 +11,6 @@ const Footer = () => {
     <>
       <footer className="footer-container">
         <h3 className="footer-logo">HEKATEK</h3>
-
         <div className="copyright">
           <p>&copy; 2024 HekaTek | All rights reserved.</p>
         </div>

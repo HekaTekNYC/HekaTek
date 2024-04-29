@@ -2,8 +2,8 @@ import React from "react"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
-import AboutLg from "../../assets/images/2.png"
-import AboutSm from "../../assets/images/code-desk-sm.png"
+import AboutLg from "../../assets/images/desknew-2.png"
+// import AboutSm from "../../assets/images/deskblob.png"
 import "./about.scss"
 
 const About = () => {
@@ -19,9 +19,9 @@ const About = () => {
           <div className="about-img-back">
             <img src={AboutLg} alt="placeholder image" />
           </div>
-          <div className="about-img-front">
+          {/* <div className="about-img-front">
             <img src={AboutSm} alt="placeholder image" />
-          </div>
+          </div> */}
         </div>
         <div className="about-info-container">
           <h2 className="about-header">

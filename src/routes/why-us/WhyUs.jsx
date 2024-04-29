@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import {
   firstRowIcons,
   secondRowIcons,
@@ -7,8 +6,8 @@ import {
   fourthRowIcons,
 } from "../../data/TechData"
 import Button from "../../components/button/Button"
-import ExpressIcon from "../../assets/icons/express.svg"
 import HexagonIcon from "../../components/hexagon-icon/HexagonIcon"
+
 import WhyBkrnd from "../../assets/images/why-gradient.png"
 
 import "./why-us.scss"
@@ -26,9 +25,6 @@ const WhyUs = () => {
       ))}
     </>
   )
-  // const scrollToSection = (sectionId) => {
-  //   document.getElementById(contact)?.scrollIntoView({ behavior: "smooth" })
-  // }
   return (
     <div className="why-us-container">
       <div className="tech-stack-container">
@@ -59,7 +55,6 @@ const WhyUs = () => {
           speaks volumes of our ability to deliver exceptional results, no
           matter the scale or complexity of the project.
         </p>
-
         <Button
           text={"Schedule A Meeting"}
           scrollToId={"contact"}

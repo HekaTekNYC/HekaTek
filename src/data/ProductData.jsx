@@ -23,7 +23,6 @@ export const plantHaus = {
   info: "A dynamic e-commerce platform specializing in indoor plants, offering secure and user-friendly shopping. This app combines OAuth authentication with React, ensuring a seamless experience for plant lovers to explore and purchase.",
   btn: "View Live",
   aLink: "https://planthaus.netlify.app/",
-  isCurrentWork: false,
 }
 export const aiSumz = {
   id: 2,

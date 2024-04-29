@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "../button/Button"
+
 import "./product-info.scss"
 
 const ProductInfo = ({ name, desc, info, aLink, btn }) => {

@@ -14,6 +14,15 @@ import {
 import "./products.scss"
 
 const Products = () => {
+  const productList = [
+    plantHaus,
+    aiSumz,
+    riversEdge,
+    interviewIQ,
+    dangoDB,
+    ad3lie,
+  ]
+
   return (
     <div className="products-container">
       <div className="products-header">
@@ -25,38 +34,37 @@ const Products = () => {
           intuitive.
         </p>
       </div>
-      {[plantHaus, aiSumz, riversEdge, interviewIQ, dangoDB, ad3lie].map(
-        (product) =>
-          product.id % 2 !== 0 ? (
+      {productList.map((product) => (
+        <div
+          key={product.id}
+          className={
+            product.id % 2 !== 0 ? "product-row row1" : "product-row-rev row2"
+          }
+        >
+          <div className={`prod-blob${product.id}`}>
+            <img src={product.blob} alt={product.name} />
+          </div>
+          {product.id % 2 !== 0 ? (
             <>
-              <div className={`product-row row1`}>
-                <div className={`prod-blob${product.id}`}>
-                  <img src={product.blob} alt="" />
-                </div>
-                <div className="product-container" key={product.id}>
-                  <ProductCard {...product} />
-                </div>
-                <div className="product-desc-container " key={product.id}>
-                  <ProductInfo {...product} />
-                </div>
+              <div className="product-container">
+                <ProductCard {...product} />
+              </div>
+              <div className="product-desc-container">
+                <ProductInfo {...product} />
               </div>
             </>
           ) : (
             <>
-              <div className={`product-row-rev row2`}>
-                <div className={`prod-blob${product.id}`}>
-                  <img src={product.blob} alt="" />
-                </div>
-                <div className="product-desc-container" key={product.id}>
-                  <ProductInfo {...product} />
-                </div>
-                <div className="product-container" key={product.id}>
-                  <ProductCard {...product} />
-                </div>
+              <div className="product-desc-container">
+                <ProductInfo {...product} />
+              </div>
+              <div className="product-container">
+                <ProductCard {...product} />
               </div>
             </>
-          )
-      )}
+          )}
+        </div>
+      ))}
     </div>
   )
 }

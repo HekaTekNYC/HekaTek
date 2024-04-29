@@ -1,6 +1,8 @@
 import { useContext } from "react"
 import { NavbarContext } from "../../../contexts/Navbar.context"
+
 import Dropdown from "../dropdown/Dropdown"
+
 import "./burger.scss"
 
 const Burger = () => {
