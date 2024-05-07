@@ -60,10 +60,15 @@
       font-weight: 500;
       color: #444d82;
       text-decoration: none;
-      white-space: none;
+      white-space: nowrap;
+      transition: all 0.3s ease;
 
       &:hover {
-        color: #ff7d79;
+text-shadow: 
+         0 0 1px rgba(119, 147, 182, 0.5),   
+        0 0 1px rgba(95, 146, 182, 0.7),  
+        0 0 1px rgba(84, 154, 182, 0.9);   
+ 
       }
     }
   }
