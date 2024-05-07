@@ -65,7 +65,13 @@
     <div id="root"></div>
 
     <!-- External Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- public/index.html -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<!-- Place this inside your public/index.html head tag -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
     <script>
       ;(function () {
         emailjs.init("3M9sCaTmKUO1g2SRA")
@@ -79,6 +85,6 @@
       src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
       crossorigin
     ></script>
-    <script type="dist/bundle.js"></script>
+    <script src="/bundle.js"></script>
   </body>
 </html>
