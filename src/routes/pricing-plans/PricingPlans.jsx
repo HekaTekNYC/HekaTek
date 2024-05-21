@@ -28,14 +28,14 @@ const PricingPlans = () => {
               <p className="pricing-plan-title sub">SUBSCRIPTION</p>
               <h3 className="pricing-plan-cost">
                 $175
-                <span className="pricing-plan-cost-sub">/mo</span>
+                <span className="pricing-plan-cost-sub">/month</span>
               </h3>
               <p>monthly subscription fee</p>
               <div className="pricing-white-line"></div>
               <h3 className="pricing-plan-extra-fee">
                 $350
                 <span className="pricing-plan-extra-sub">
-                  / one time design fee
+                  &nbsp;/ one time design fee
                 </span>
               </h3>
             </div>
@@ -107,12 +107,12 @@ const PricingPlans = () => {
             <div className="pricing-card-header">
               <p className="pricing-plan-title lump">LUMP SUM</p>
               <h3 className="pricing-plan-cost">$1800</h3>
-              <p style={{ marginTop: "6px" }}>one time fee</p>
+              <p style={{marginTop: "6px"}}>one time fee</p>
               <div className="pricing-white-line"></div>
               <h3 className="pricing-plan-extra-fee">
                 $25
                 <span className="pricing-plan-extra-sub">
-                  / monthly hosting fee
+                  &nbsp;/ monthly hosting fee
                 </span>
               </h3>
             </div>
@@ -168,10 +168,10 @@ const PricingPlans = () => {
           {/* Ecommerce pricing card */}
           <div className="pricing-card ecomm">
             <div className="pricing-card-header">
-              <p className="pricing-plan-title ecomm">ECOMMERCE</p>
+              <p className="pricing-plan-title ecomm">E-COMMERCE</p>
               <h3 className="pricing-plan-cost">
                 $6000
-                <span className="pricing-plan-cost-sub">/min</span>
+                <span className="pricing-plan-cost-sub">/minimum</span>
               </h3>
               <p>
                 starting price{" "}
