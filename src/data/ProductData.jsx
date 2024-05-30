@@ -4,6 +4,7 @@ import IIQcover from "../assets/images/InterviewIQ.webp"
 import PHcover from "../assets/images/ph.webp"
 import RiversEdge from "../assets/images/rivers-edge.webp"
 import AISum from "../assets/images/ai-sumz.webp"
+import WWA from "../assets/images/WWA.webp"
 import Blob1 from "../assets/images/blue-blob.svg"
 import Blob2 from "../assets/images/peach-blob.svg"
 import Blob3 from "../assets/images/pink-blob.svg"
@@ -24,13 +25,30 @@ export const plantHaus = {
   btn: "View Live",
   aLink: "https://planthaus.netlify.app/",
 }
-export const aiSumz = {
+
+export const walkAngels = {
   id: 2,
+  name: "Walk with Angels",
+  deg: 180,
+  scale: "X(-1)",
+  desc: "Volunteer Work",
+  blob: Blob2,
+  img: {
+    src: WWA,
+    alt: "WWA Preview",
+  },
+  info: "The United Angels Foundation's Walk With Angels 2024 is the primary fundraiser supporting over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered services to develop and optimize the website, ensuring it is fully functional and responsive for all users.",
+  btn: "View Live",
+  aLink: "https://walk.unitedangels.org/",
+}
+
+export const aiSumz = {
+  id: 3,
   name: "AI Summarizer",
   deg: 180,
   scale: "X(-1)",
   desc: "AI Powered Article Summarizer",
-  blob: Blob2,
+  blob: Blob3,
   img: {
     src: AISum,
     alt: "AI Sum Preview",
@@ -40,12 +58,12 @@ export const aiSumz = {
   aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
 }
 export const riversEdge = {
-  id: 3,
+  id: 4,
   name: "Rivers Edge",
   deg: 0,
   scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
-  blob: Blob3,
+  blob: Blob1,
   img: {
     src: RiversEdge,
     alt: "River's Edge Preview",
@@ -56,7 +74,7 @@ export const riversEdge = {
 }
 
 export const interviewIQ = {
-  id: 4,
+  id: 5,
   name: "InteviewIQ",
   deg: 180,
   scale: "Y(-1)",
@@ -71,12 +89,12 @@ export const interviewIQ = {
 }
 
 export const dangoDB = {
-  id: 5,
+  id: 6,
   name: "dangoDb",
   deg: 180,
   scale: "Y(-1)",
   desc: "Deno Object Document Mapper (ODM)",
-  blob: Blob1,
+  blob: Blob4,
   img: {
     src: dangoDBP,
     alt: "Dango Preview",
@@ -87,12 +105,12 @@ export const dangoDB = {
 }
 
 export const ad3lie = {
-  id: 6,
+  id: 7,
   name: "Ad3lie",
   deg: 0,
   scale: "Y(1)",
   desc: "D3.js Data Visualizations",
-  blob: Blob4,
+  blob: Blob1,
   img: {
     src: Ad3lie,
     alt: "Ad3lie Github",
