@@ -5,6 +5,7 @@ import ProductInfo from "../../components/product-info/ProductInfo"
 
 import {
   plantHaus,
+  walkAngels,
   aiSumz,
   riversEdge,
   interviewIQ,
@@ -16,6 +17,7 @@ import "./products.scss"
 const Products = () => {
   const productList = [
     plantHaus,
+    walkAngels,
     aiSumz,
     riversEdge,
     interviewIQ,
@@ -34,7 +36,7 @@ const Products = () => {
           intuitive.
         </p>
       </div>
-      {productList.map((product) => (
+      {productList.map(product => (
         <div
           key={product.id}
           className={
