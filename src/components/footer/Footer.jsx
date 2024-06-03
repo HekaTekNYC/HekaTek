@@ -18,11 +18,11 @@ const Footer = () => {
           {/* <div className="linkedin-icon">
             <img src={LinkedIn} alt="Linkedin icon" />
           </div> */}
-          <a href="mailto:hekateknyc@gmail.com" className="email-icon">
+          <a href="mailto:hekatek@hekateknyc.com" className="email-icon">
             <img src={EmailIcon} alt="Email icon" />
           </a>
           <a
-            href="https://github.com/HekaTek-LLC"
+            href="https://github.com/HekaTekNYC"
             target="_blank"
             className="github-icon"
           >
