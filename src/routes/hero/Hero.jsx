@@ -1,57 +1,62 @@
-import React, { useState, useEffect } from "react";
-import Modal from '../../components/calendly-modal/Modal'
-import HeroBkrnd from "../../assets/images/hero-bkrnd.webp";
-import Button from "../../components/button/Button";
-import "./hero.scss";
+import React, {useState, useEffect} from "react"
+import Modal from "../../components/calendly-modal/Modal"
+import HeroBkrnd from "../../assets/images/hero-bkrnd.webp"
+import Button from "../../components/button/Button"
+import "./hero.scss"
 
 const Hero = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
     const checkCookies = () => {
-      document.cookie = "testcookie";
+      document.cookie = "testcookie"
       if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true); // Show modal if cookies are disabled
+        setModalOpen(true) // Show modal if cookies are disabled
       }
-    };
+    }
 
-    checkCookies();
-  }, []);
+    checkCookies()
+  }, [])
 
   const handleModalClose = () => {
-    setModalOpen(false);
-  };
+    setModalOpen(false)
+  }
 
   const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc"; // Redirect user to Calendly
-  };
+    window.location.href = "https://calendly.com/hekateknyc" // Redirect user to Calendly
+  }
 
   const bannerItems = [
-    { text: "WEBSITE DEVELOPMENT" },
-    { text: "HOSTING" },
-    { text: "RESPONSIVE DESIGN" },
-    { text: "SOFTWARE DEVELOPMENT" },
-    { text: "DEBUGGING" },
-  ];
+    {text: "WEBSITE DEVELOPMENT"},
+    {text: "HOSTING"},
+    {text: "RESPONSIVE DESIGN"},
+    {text: "SOFTWARE DEVELOPMENT"},
+    {text: "DEBUGGING"},
+  ]
 
-const openCalendlyPopup = () => {
-  Calendly.initPopupWidget({
-    url: 'https://calendly.com/hekateknyc'
-  });
-   return false;
-    }
+  const openCalendlyPopup = () => {
+    Calendly.initPopupWidget({
+      url: "https://calendly.com/hekatek-hekateknyc/30min",
+    })
+    return false
+  }
   return (
     <>
-      <Modal isOpen={isModalOpen} onClose={handleModalClose} onConfirm={handleModalConfirm} />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleModalClose}
+        onConfirm={handleModalConfirm}
+      />
       <div
         className="background-image-container"
-        style={{ backgroundImage: `url(${HeroBkrnd})` }}
+        style={{backgroundImage: `url(${HeroBkrnd})`}}
       ></div>
       <div className="hero-container">
         <header className="hero-header">
           <h1>HEkATEk</h1>
           <h4 className="hero-text">
-            Software developers with a passion for bringing your visions to life.
+            Software developers with a passion for bringing your visions to
+            life.
           </h4>
           <Button
             text={"Schedule A Meeting"}
@@ -72,11 +77,10 @@ const openCalendlyPopup = () => {
         <div className="ellipse ellipse-6"></div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
-
+export default Hero
 
 // import React from "react"
 
