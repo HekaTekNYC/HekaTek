@@ -1,14 +1,18 @@
 .about-container {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .about-blob-container {
   position: relative;
+  // height: 0;
+  // width: 0;
   z-index: -1;
 
   .about-bkrnd-img {
@@ -76,6 +80,13 @@
       width: 400px;
       opacity: 0.8;
     }
+
+    // .about-bkrnd-img {
+    //   left: -100px;
+    //   top: -100px;
+    //   height: 650px;
+    //   width: 850px;
+    // }
   }
 
   .about-img-container {
@@ -87,19 +98,31 @@
     width: 50%;
     z-index: 3;
 
-    .about-img-back {
-      position: absolute;
-      top: -300px;
-      left: 100px;
-      z-index: 5;
-      border-radius: 200px;
-      overflow: hidden;
-
-      img {
-        width: 350px;
-        height: auto;
-      }
+    .about-img-lg {
+      width: 85%;
+      padding-bottom: 40px;
     }
+
+    // .about-img-sm {
+    //   position: absolute;
+    //   bottom: -50px;
+    //   right: 20px;
+    //   z-index: 4;
+    // }
+
+    // .about-img-back {
+    //   position: absolute;
+    //   top: -300px;
+    //   left: 100px;
+    //   z-index: 5;
+    //   border-radius: 200px;
+    //   overflow: hidden;
+
+    //   img {
+    //     width: 350px;
+    //     height: auto;
+    //   }
+    // }
 
     // .about-img-front {
     //   position: absolute;
@@ -118,9 +141,8 @@
 
   .about-info-container {
     width: 50%;
-
     .about-indent {
-      margin-left: 100px;
+      margin-left: 50px;
     }
   }
 }
@@ -157,6 +179,20 @@
       opacity: 0.8;
     }
   }
+
+  //  .about-bkrnd-img {
+  //   position: absolute;
+  //   left: 0px;
+  //   top: -150px;
+  //   height: 650px;
+  //   width: 850px;
+  //   z-index: -1;
+  // }
+  .about-img-container {
+    .about-img-sm {
+      right: 60px;
+    }
+  }
 }
 
 @media (min-width: 1600px) {
@@ -167,6 +203,12 @@
       width: 400px;
       filter: blur(90px);
       opacity: 0.8;
+    }
+  }
+
+  .about-img-container {
+    .about-img-sm {
+      right: 100px;
     }
   }
 }
