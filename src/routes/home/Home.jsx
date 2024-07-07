@@ -14,17 +14,18 @@ const Home = () => {
       <div className="hero-section hero-overlay" id="home">
         <Hero />
       </div>
-      <div className="about-section" id="about">
-        <About />
-      </div>
       <div className="services-section" id="services">
         <Services />
+      </div>
+      <div className="why-us-section" id="why-us">
+        <WhyUs />
       </div>
       <div className="product-section" id="our-work">
         <Products />
       </div>
-      <div className="why-us-section" id="why-us">
-        <WhyUs />
+
+      <div className="about-section" id="about">
+        <About />
       </div>
       <div className="pricing-section" id="pricing">
         <PricingPlans />
