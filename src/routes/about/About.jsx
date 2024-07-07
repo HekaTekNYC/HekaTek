@@ -1,8 +1,6 @@
 import React from "react"
 import Button from "../../components/button/Button"
-
 import AboutBkrd from "../../assets/images/wheel.png"
-import AboutLg from "../../assets/images/desknew-2.png"
 
 import "./about.scss"
 
@@ -26,23 +24,12 @@ const About = () => {
           </div>
         </div>
         <div className="about-img-container">
-          <div className="about-img-lg">
-            <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1719266176/nyc-skyline-sm_pnxwdf.webp"
-              // height={"450px"}
-              alt="placeholder image"
-              style={{borderRadius: "10px"}}
-            />
-          </div>
-          {/* <div className="about-img-sm">
-            <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1719261785/Code-pill_ljjm4v.webp"
-              height={"250px"}
-              alt="placeholder image"
-            />
-          </div> */}
+          <img
+            src="https://res.cloudinary.com/daecnx7ih/image/upload/v1720369109/nyc-10_jmjui0.webp"
+            alt="placeholder image"
+            style={{borderRadius: "10px"}}
+          />
         </div>
-
         <div className="about-info-container">
           <h2 className="about-header">
             About <br /> HekaTek

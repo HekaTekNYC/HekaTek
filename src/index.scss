@@ -80,8 +80,8 @@ h4 {
 
 h5 {
   font-family: "Satoshi", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 900;
   margin: 0;
 }
 
@@ -132,6 +132,10 @@ ul {
 @media (min-width: 768px) {
   h1 {
     font-size: 12rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
   }
 }
 
