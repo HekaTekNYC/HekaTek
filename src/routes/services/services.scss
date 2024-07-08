@@ -92,7 +92,9 @@
   }
 
   .service-header {
-    margin: 5px 0 10px;
+    color: #444d82;
+    font-size: 1.35rem;
+    line-height: 1.2;
   }
 
   .service-text {
@@ -124,7 +126,7 @@
     }
 
     .service-header {
-      margin: 10px 0;
+      margin: 15px 0;
     }
   }
 }
@@ -271,7 +273,7 @@
 
         .service-header {
           margin: 15px 0;
-          // font-size: 1.3rem;
+          font-size: 1.3rem;
         }
 
         .service-text {
@@ -313,6 +315,7 @@
 
         .service-header {
           margin: 15px 0;
+          font-size: 1.3rem;
         }
 
         .service-text {
@@ -361,6 +364,11 @@
           }
         }
 
+        .service-header {
+          margin: 10px 0 10px;
+          font-size: 1rem;
+        }
+
         .service-text {
           font-size: 0.9rem;
         }
@@ -387,6 +395,9 @@
             width: 70px;
             height: 70px;
           }
+        }
+        .service-header {
+          font-size: 1.2rem;
         }
       }
     }
