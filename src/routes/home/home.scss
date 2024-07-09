@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   height: auto;
-  padding: 0 20px;
+  padding: 0 35px;
 }
 
 .services-section,
@@ -15,10 +15,12 @@
   background: #f4f7ff;
   z-index: -2;
   overflow: hidden;
-
   h2 {
-    color: #ced5fc;
+    color: #9ea6df;
   }
+  // h2 {
+  //   color: #ced5fc;
+  // }
 }
 
 .about-section,

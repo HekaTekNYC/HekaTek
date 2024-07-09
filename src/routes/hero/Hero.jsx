@@ -53,10 +53,17 @@ const Hero = () => {
       ></div>
       <div className="hero-container">
         <header className="hero-header">
-          <h1>HEkATEk</h1>
+          <h1>HEKATEk</h1>
+
+          {/* Software developers with a passion for bringing your visions to
+            life. */}
+          <h4 className="hero-subheader">
+            {" "}
+            Web Design & Development tailored for small businesses.{" "}
+          </h4>
           <h4 className="hero-text">
-            Software developers with a passion for bringing your visions to
-            life.
+            No Wordpress, no page builders, just hand-coded websites with
+            exceptional results from $175/month.
           </h4>
           <Button
             text={"Schedule A Meeting"}

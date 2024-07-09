@@ -2,7 +2,6 @@ import React from "react"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
-import AboutLg from "../../assets/images/desknew-2.png"
 
 import "./about.scss"
 
@@ -22,25 +21,16 @@ const About = () => {
       <div className="about-container">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
-            <img src={AboutBkrd} alt="" />
+            <img src={AboutBkrd} alt="blue and pink blurred blob" />
           </div>
         </div>
         <div className="about-img-container">
           <div className="about-img-lg">
             <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1719266176/nyc-skyline-sm_pnxwdf.webp"
-              // height={"450px"}
+              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1720369109/nyc-10_jmjui0.webp"
               alt="placeholder image"
-              style={{borderRadius: "10px"}}
             />
           </div>
-          {/* <div className="about-img-sm">
-            <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1719261785/Code-pill_ljjm4v.webp"
-              height={"250px"}
-              alt="placeholder image"
-            />
-          </div> */}
         </div>
 
         <div className="about-info-container">
@@ -49,17 +39,14 @@ const About = () => {
           </h2>
           <div className="about-indent">
             <h4 className="about-subheader">
-              We're a duo of software developers who find joy in decluttering
-              digital messes, turning complexity into simplicity.
+              Empowering Small Businesses Through Expert Web Development
             </h4>
             <p className="about-p">
-              Our code is clean, our interfaces seamless, and our applications
-              are so intuitive, they practically read your mind. Off the clock,
-              you'll find us digging into algorithms, getting lost in games or
-              cultivating the art of indoor plant whispering (they say the
-              secret is in the coding lullabies). Ready to give your online
-              presence a sprinkle of our HekaTek magic? Schedule a meeting
-              below.
+              With ten years of collective experience, we founded our company to
+              focus on helping small businesses like ours thrive online. As a
+              community-driven, women-owned business, we take pride in
+              supporting fellow small business owners, providing the tools and
+              expertise needed to succeed in the digital world.
             </p>
             <Button
               text={"Schedule A Meeting"}

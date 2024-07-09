@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
+  max-height: 1900px;
   text-align: center;
   width: 100%;
   z-index: 1;
@@ -31,10 +32,17 @@
   padding: 0 20px;
   z-index: 4;
 
+  .hero-subheader {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
   .hero-text {
-    margin-bottom: 20px;
-    width: 90%;
+    margin: 5px 0 15px 0;
+    width: 100%;
     font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }
 
@@ -115,7 +123,23 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .hero-header {
+    .hero-subheader {
+      font-size: 1.5rem;
+    }
+
+    .hero-text {
+      font-size: 1.4rem;
+      width: 60%;
+    }
+  }
+}
 /* Extra large (≥1200px) */
+@media (min-width: 1200px) {
+  // .hero-
+}
+
 @media (min-width: 1200px) {
   .background-image-container {
     filter: blur(120px);
