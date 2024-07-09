@@ -29,12 +29,6 @@ const Products = () => {
     <div className="products-container">
       <div className="products-header">
         <h2>OUR WORK</h2>
-        <p>
-          Here are some examples of how we've transformed ideas into digital
-          masterpieces. Our portfolio is a testament to our skill in crafting
-          solutions that are not only effective but also mesmerizingly
-          intuitive.
-        </p>
       </div>
       {productList.map(product => (
         <div

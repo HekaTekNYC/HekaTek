@@ -81,19 +81,24 @@ const WhyUs = () => {
           <h2 className="why-header">
             Why <br /> HekaTek
           </h2>
-
           <h4 className="why-subheader">
             We view each project as a partnership and go beyond just meeting
             requirements.
           </h4>
+
           <p className="why-p">
-            Our team invests time to understand your vision and goals, ensuring
-            that every solution is not only effective but also a strategic asset
-            to your business. Trust us to elevate your digital presence. Our
-            proven track record of successful projects and satisfied clients
-            speaks volumes of our ability to deliver exceptional results, no
-            matter the scale or complexity of the project.
+            Understanding the reluctance of small businesses to invest heavily
+            upfront in a websites, especially considering the risk of receiving
+            subpar results, is key to our approach. We get being let down by
+            previous experiences and understand the frustration it causes.
+            That's why we've introduced a flexible pricing option starting at
+            $175 per month, ensuring affordability without compromising on
+            quality. We strive to provide a trustworthy solution where
+            businesses can feel confident in getting a website that truly
+            represents their brand, without the financial strain or uncertainty
+            of traditional models.
           </p>
+
           <Button
             text={"Schedule A Meeting"}
             onClick={openCalendlyPopup}

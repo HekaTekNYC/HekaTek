@@ -7,18 +7,20 @@
   display: flex;
   justify-content: center;
   height: auto;
-  padding: 0 30px;
+  padding: 0 35px;
 }
 
-.about-section,
+.services-section,
 .why-us-section {
   background: #f4f7ff;
   z-index: -2;
   overflow: hidden;
-
   h2 {
-    color: #ced5fc;
+    color: #9ea6df;
   }
+  // h2 {
+  //   color: #ced5fc;
+  // }
 }
 
 .about-section,
@@ -47,6 +49,10 @@
   }
 }
 
+/* Larger than tablet portrait */
+@media (min-width: 768px) {
+}
+
 /* Larger than desktop */
 @media (min-width: 992px) {
   .about-section,
@@ -57,6 +63,10 @@
   .contact-section {
     padding: 0 80px;
   }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
 }
 
 /* Larger than Desktop HD */
