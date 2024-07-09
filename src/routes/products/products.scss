@@ -53,6 +53,7 @@
 .prod-blob6,
 .prod-blob7 {
   display: none;
+  opacity: 0.4;
 }
 
 /* Larger than desktop */
@@ -341,6 +342,7 @@
     .prod-blob5 {
       top: 250px;
       right: -350px;
+      filter: blur(90px);
     }
   }
 

@@ -1,26 +1,20 @@
 export const servicesData = [
   {
-    name: "Web Development",
+    name: "Optimized Code",
     svgPath: "../../assets/icons/Document.png",
     description:
-      "We offer custom development services tailored to meet your unique needs, leveraging our expertise in various frameworks and JavaScript to create responsive websites.",
+      "With 96.5% of internet traffic coming from mobile devices, we focus on optimizing your site to perform flawlessly on mobile.",
   },
   {
-    name: "Debugging",
-    svgPath: "../../assets/icons/Shield.png",
-    description:
-      "Our passion lies in tackling complex challenges and solving problems. Let's find some bugs and get them out of there!",
-  },
-  {
-    name: "Digital Solutions",
+    name: "Mobile-First Design",
     svgPath: "../../assets/icons/Setting.png",
     description:
-      "Our range of digital services is custom-fit to your specific needs, ensuring quality and creativity from start to finish, with a keen eye on every detail.",
+      "Our process always begins with a mobile-first approach, followed by modifications for tablet and desktop screens.",
   },
   {
-    name: "Code Optimization",
+    name: "Fully Responsive",
     svgPath: "../../assets/icons/Discovery.png",
     description:
-      "We review and refine existing codebases, enhancing their efficiency and readability. We focus on optimizing performance and ensuring best practices are followed.",
+      "Your website will be fully responsive, seamlessly adjusting on mobile, tablets, and desktops, accessible from any device.",
   },
 ]

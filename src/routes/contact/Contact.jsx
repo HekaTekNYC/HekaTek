@@ -12,10 +12,11 @@ const Contact = () => {
             Get In <br /> Touch
           </h2>
           <p>
-            Building a website can be a daunting task, but it doesn't have to
-            be. We're here to take the stress out of the equation and craft a
-            site you'll love. Ready to get started? Drop us a message and let's
-            chat!
+            Get in touch with us for a no-hassle, 100% free consultation. You
+            don't need to have your video camera on — our goal is to make you
+            comfortable. We can meet to discuss your pain points and address any
+            questions you may have. Reach out today and let us help you find the
+            best solutions for your business.
           </p>
         </div>
         <div className="contact-us-form-container">
