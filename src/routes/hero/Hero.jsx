@@ -49,7 +49,7 @@ const Hero = () => {
       />
       <div
         className="background-image-container"
-        style={{backgroundImage: `url(${HeroBkrnd})`}}
+        // style={{backgroundImage: `url(${HeroBkrnd})`}}
       ></div>
       <div className="hero-container">
         <header className="hero-header">

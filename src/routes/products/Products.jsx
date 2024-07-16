@@ -38,7 +38,7 @@ const Products = () => {
           }
         >
           <div className={`prod-blob${product.id}`}>
-            <img src={product.blob} alt={product.name} />
+            {/* <img src={product.blob} alt={product.name} /> */}
           </div>
           {product.id % 2 !== 0 ? (
             <>

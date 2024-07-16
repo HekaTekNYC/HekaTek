@@ -1,5 +1,5 @@
 import ContactForm from "../../components/contact-form/ContactForm"
-import ContactBlob from "../../assets/images/contact-blob.webp"
+import ContactBlob from "../../assets/images/contact-blob.svg"
 
 import "./contact.scss"
 

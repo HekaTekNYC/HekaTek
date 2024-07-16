@@ -3,20 +3,22 @@
   display: flex;
   flex-direction: column;
   padding: 60px 0 100px;
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1300px;
+  // margin: 0 auto;
 }
 
 .pricing-background {
   position: absolute;
-  bottom: 500px;
+  bottom: 570px;
   left: 0;
   right: 0;
   height: auto;
   width: 100%;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
-  opacity: 0.4;
-  filter: blur(110px);
+  opacity: 0.8;
+  filter: blur(160px);
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -36,8 +38,9 @@
 .pricing-cards-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  width: 100%;
 
   .sub {
     &:hover {
@@ -66,12 +69,13 @@
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     padding: 15px;
     background: rgba(233, 230, 230, 0.188);
     border-radius: 20px;
     padding: 20px;
+    margin: 20px 0;
     backdrop-filter: blur(10px);
     box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -184,7 +188,7 @@
 @media (min-width: 500px) {
   .pricing-cards-container {
     .pricing-card {
-      flex: 1 1 280px;
+      // flex: 1 1 280px;
       max-width: 400px;
       height: auto;
       padding: 15px;
@@ -203,14 +207,10 @@
   .pricing-background {
     position: absolute;
     bottom: 500px;
-    left: 0;
-    right: 0;
     height: auto;
+    opacity: 0.7;
     width: 100%;
-    transform: rotate(90deg) translateX(-50%);
-    transform-origin: center center;
-    opacity: 0.8;
-    filter: blur(110px);
+    filter: blur(160px);
   }
 
   .pricing-card {
@@ -229,6 +229,7 @@
 
 @media (min-width: 820px) {
   .pricing-container {
+    width: 100%;
     .pricing-header {
       display: flex;
       flex-direction: column;
@@ -238,35 +239,38 @@
     .pricing-background {
       bottom: 300px;
       left: 0;
-      opacity: 0.6;
-      filter: blur(100px);
-      transform: rotate(0deg) scaleX(-1);
+      opacity: 0.8;
+      filter: blur(130px);
+      transform: rotate(20deg) scaleX(-1);
 
       img {
         width: 1000px;
       }
     }
-  }
 
-  .pricing-cards-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-
-    .pricing-card {
+    .pricing-cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
-      height: 600px;
-      max-width: 100%;
 
-      .hidden-text {
-        display: none;
-      }
+      .pricing-card {
+        width: 100%;
+        height: 600px;
+        width: 100%;
+        margin: 0 5px;
+        max-width: 100%;
 
-      .pricing-card-image {
-        top: -20px;
-        right: -18px;
-        width: 90px;
-        height: auto;
+        .hidden-text {
+          display: none;
+        }
+
+        .pricing-card-image {
+          top: -20px;
+          right: -18px;
+          width: 90px;
+          height: auto;
+        }
       }
     }
   }
@@ -275,10 +279,7 @@
 /* Large (≥992px) */
 @media (min-width: 992px) {
   .pricing-cards-container {
-    gap: 20px;
-
     .pricing-card {
-      width: 100%;
       height: 600px;
       max-width: 400px;
     }
@@ -289,27 +290,30 @@
 @media (min-width: 1200px) {
   .pricing-container {
     .pricing-background {
-      bottom: 300px;
+      bottom: 200px;
       left: 0;
-      opacity: 0.8;
-      filter: blur(120px);
+      opacity: 0.7;
+      filter: blur(160px);
       transform: rotate(10deg) scaleX(-1);
 
       img {
         width: 1400px;
       }
     }
-  }
 
-  .pricing-cards-container {
-    gap: 40px;
-
-    .pricing-card {
-      .pricing-card-image {
-        top: -30px;
-        right: -25px;
-        width: 130px;
-        height: auto;
+    .pricing-cards-container {
+      width: 100%;
+      .pricing-card {
+        width: 320px;
+        .pricing-card-image {
+          top: -30px;
+          right: -25px;
+          width: 130px;
+          height: auto;
+        }
+      }
+      .sub {
+        margin-right: 10px;
       }
     }
   }

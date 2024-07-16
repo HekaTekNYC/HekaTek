@@ -21,15 +21,15 @@ const About = () => {
       <div className="about-container">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
-            <img src={AboutBkrd} alt="blue and pink blurred blob" />
+            {/* <img src={AboutBkrd} alt="blue and pink blurred blob" /> */}
           </div>
         </div>
         <div className="about-img-container">
           <div className="about-img-lg">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/daecnx7ih/image/upload/v1720369109/nyc-10_jmjui0.webp"
               alt="placeholder image"
-            />
+            /> */}
           </div>
         </div>
 

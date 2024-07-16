@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import Button from "../../components/button/Button"
 import Modal from "../../components/calendly-modal/Modal"
-import BackgroundShape from "../../assets/images/bkrnd-shape.png"
+import BackgroundShape from "../../assets/images/Bg-shape.svg"
 import PurpleCheck from "../../assets/icons/purple-check.svg"
 import CoralCheck from "../../assets/icons/coral-check.svg"
 import PeriwinkleCheck from "../../assets/icons/periwinkle-check.svg"
