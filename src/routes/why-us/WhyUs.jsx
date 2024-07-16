@@ -1,15 +1,8 @@
 import React, {useState, useEffect} from "react" // Added missing imports
-import {
-  firstRowIcons,
-  secondRowIcons,
-  thirdRowIcons,
-  fourthRowIcons,
-} from "../../data/TechData"
+
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
-import HexagonIcon from "../../components/hexagon-icon/HexagonIcon"
-
-import Circle from "../../assets/images/why-circle.png"
+import TechCircle from "../../components/tech-circle/Tech-circle"
 import WhyBkrnd from "../../assets/images/why-gradient.png"
 
 import "./why-us.scss"
@@ -36,19 +29,6 @@ const WhyUs = () => {
     window.location.href = "https://calendly.com/hekateknyc" // Redirect user to Calendly
   }
 
-  const renderIcons = icons => (
-    <>
-      {icons.map((icon, index) => (
-        <HexagonIcon
-          icon={icon}
-          key={`icon-${index}`}
-          loading="lazy"
-          decoding="async"
-        />
-      ))}
-    </>
-  )
-
   const openCalendlyPopup = () => {
     if (window.Calendly) {
       console.log("Calendly script loaded, opening popup.")
@@ -71,71 +51,14 @@ const WhyUs = () => {
           <div className="why-us-bkrnd">
             <img src={WhyBkrnd} alt="gradient blur colored blob" />
           </div>
-          <div className="why-circle-container">
-            <div className="outer-circle">
-              <div className="inner-ring">
-                <div className="inner-circle"></div>
-                <div class="sound-wave-circle"></div>
-              </div>
-            </div>
+          <div className="tech-circle">
+            <TechCircle />
           </div>
-          <div className="why-icon">
-            <img
-              src="../assets/icons/react-80.svg"
-              alt="react icon"
-              className="why-icons"
-            />
-          </div>
-          <div className="js-icon">
-            <img
-              src="../assets/icons/js.svg"
-              alt="react icon"
-              className="js-icons"
-            />
-          </div>
-          <div className="astro-icon">
-            <img
-              src="../assets/icons/Astro.svg"
-              alt="react icon"
-              className="astro-icons"
-            />
-          </div>
-          <div className="mongo-icon">
-            <img
-              src="../assets/icons/mongo-db.svg"
-              alt="react icon"
-              className="mongo-icons"
-            />
-          </div>
-          <div className="css-icon">
-            <img
-              src="../assets/icons/css-color.svg"
-              alt="react icon"
-              className="css-icons"
-            />
-          </div>
-          {/* <div className="tech-stack-container"> */}
-          {/* <div className="why-us-bkrnd">
-            <img src={WhyBkrnd} alt="gradient blur colored blob" />
-          </div> */}
-          {/* <div className="tech-icons-container"> */}
-
-          {/* <div className="tech-row-1">{renderIcons(firstRowIcons)}</div>
-            <div className="tech-row-2">{renderIcons(secondRowIcons)}</div>
-            <div className="tech-row-3">{renderIcons(thirdRowIcons)}</div>
-            <div className="tech-row-4">{renderIcons(fourthRowIcons)}</div> */}
-          {/* </div> */}
-          {/* </div> */}
         </div>
         <div className="why-info-container">
           <h2 className="why-header">
             Why <br /> HekaTek
           </h2>
-          {/* <h4 className="why-subheader">
-            We view each project as a partnership and go beyond just meeting
-            requirements.
-          </h4> */}
-
           <div className="why-info-text">
             <h4>Tired of Poor Website Experiences?</h4>
             <p className="why-p">
