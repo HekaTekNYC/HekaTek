@@ -61,7 +61,7 @@ const PricingPlans = () => {
               <div className="pricing-card-header">
                 <p className="pricing-plan-title sub">SUBSCRIPTION</p>
                 <h3 className="pricing-plan-cost">
-                  $175
+                  $150
                   <span className="pricing-plan-cost-sub">/month</span>
                 </h3>
                 <p>monthly subscription fee</p>

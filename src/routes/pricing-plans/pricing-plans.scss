@@ -10,22 +10,22 @@
 
 .pricing-background {
   position: absolute;
-  bottom: 270px;
+  bottom: 450px;
   left: 0;
   right: 0;
   height: auto;
   width: 100%;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
-  opacity: 0.8;
-  filter: blur(160px);
+  opacity: 0.7;
+  filter: blur(180px);
   z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
 
   img {
-    height: 1400px;
+    height: 500px;
     width: 1200px;
     max-width: none;
   }
@@ -236,14 +236,14 @@
       text-align: center;
     }
     .pricing-background {
-      bottom: 300px;
+      bottom: 250px;
       left: 0;
-      opacity: 0.8;
+      opacity: 0.9;
       filter: blur(130px);
-      transform: rotate(20deg) scaleX(-1);
+      transform: scaleX(-1);
 
       img {
-        width: 1000px;
+        width: 700px;
       }
     }
 
@@ -277,6 +277,15 @@
 
 /* Large (≥992px) */
 @media (min-width: 992px) {
+  .pricing-container {
+    .pricing-background {
+      bottom: 200px;
+    }
+
+    img {
+      width: 1100px;
+    }
+  }
   .pricing-cards-container {
     .pricing-card {
       height: 600px;
@@ -296,7 +305,7 @@
       transform: rotate(10deg) scaleX(-1);
 
       img {
-        width: 1400px;
+        width: 1200px;
       }
     }
 

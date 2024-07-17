@@ -2,6 +2,7 @@ import React from "react"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/wheel.png"
+// import AboutBkrd from "../../assets/images/blue-blob.svg"
 
 import "./about.scss"
 
@@ -21,15 +22,15 @@ const About = () => {
       <div className="about-container">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
-            {/* <img src={AboutBkrd} alt="blue and pink blurred blob" /> */}
+            <img src={AboutBkrd} alt="blue and pink blurred blob" />
           </div>
         </div>
         <div className="about-img-container">
           <div className="about-img-lg">
-            {/* <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1720369109/nyc-10_jmjui0.webp"
+            <img
+              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1721242970/comp-tight_ubtdor.webp"
               alt="placeholder image"
-            /> */}
+            />
           </div>
         </div>
 

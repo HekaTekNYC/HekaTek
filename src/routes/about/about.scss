@@ -4,8 +4,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px;
   z-index: 2;
 }
 
@@ -14,18 +13,7 @@
   z-index: -1;
 
   .about-bkrnd-img {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    height: auto;
-    width: 200px;
-    filter: blur(80px);
-    z-index: -1;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
+    display: none;
   }
 }
 
@@ -51,19 +39,6 @@
 
 /* Media queries */
 
-/* Larger than tablet */
-@media (min-width: 768px) {
-  .about-blob-container {
-    .about-bkrnd-img {
-      left: 0;
-      top: 225px;
-      height: auto;
-      width: 150px;
-      z-index: 1;
-    }
-  }
-}
-
 /* Larger than desktop */
 @media (min-width: 992px) {
   .about-container {
@@ -73,10 +48,20 @@
 
   .about-blob-container {
     .about-bkrnd-img {
-      left: 40px;
+      display: block;
+      position: absolute;
       top: -200px;
-      width: 400px;
-      opacity: 0.8;
+      left: 60px;
+      height: auto;
+      width: 200px;
+      transform: rotate(90deg);
+      filter: blur(120px);
+      z-index: -1;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
@@ -90,7 +75,7 @@
     z-index: 3;
 
     .about-img-lg {
-      width: 85%;
+      width: 100%;
       padding-bottom: 40px;
     }
   }
@@ -106,17 +91,12 @@
 @media (min-width: 1200px) {
   .about-blob-container {
     .about-bkrnd-img {
-      left: 0;
+      left: 50px;
       top: -200px;
-      width: 400px;
-      filter: blur(90px);
-      opacity: 0.7;
-    }
-  }
+      width: 250px;
 
-  .about-img-container {
-    .about-img-sm {
-      right: 40px;
+      filter: blur(120px);
+      opacity: 0.8;
     }
   }
 
@@ -130,23 +110,9 @@
     .about-bkrnd-img {
       left: 50px;
       top: -200px;
-      width: 400px;
-      filter: blur(90px);
+      width: 250px;
+      filter: blur(120px);
       opacity: 0.8;
-    }
-  }
-
-  //  .about-bkrnd-img {
-  //   position: absolute;
-  //   left: 0px;
-  //   top: -150px;
-  //   height: 650px;
-  //   width: 850px;
-  //   z-index: -1;
-  // }
-  .about-img-container {
-    .about-img-sm {
-      right: 60px;
     }
   }
 }
@@ -156,8 +122,8 @@
     .about-bkrnd-img {
       left: 150px;
       top: -200px;
-      width: 400px;
-      filter: blur(90px);
+      width: 250px;
+      filter: blur(120px);
       opacity: 0.8;
     }
   }

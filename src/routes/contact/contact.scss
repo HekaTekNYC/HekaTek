@@ -68,7 +68,7 @@
     margin-left: 15px;
     .contact-us-blob {
       top: 50px;
-      right: 0;
+      right: 60px;
       width: 350px;
       height: auto;
       filter: blur(80px);
@@ -104,8 +104,9 @@
   .contact-us-form-container {
     .contact-us-blob {
       transform: rotate(-40deg);
-      top: 50px;
+      top: 0;
       right: 100px;
+      opacity: 0.8;
       filter: blur(130px);
     }
   }

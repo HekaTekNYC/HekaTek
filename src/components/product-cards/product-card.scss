@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 500px;
   aspect-ratio: 685 / 514;
-  border-radius: 25px;
+  border-radius: 20px;
   margin: 10px 0;
   transition: all 0.5s ease-in-out;
   box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
@@ -14,12 +14,12 @@
 
 .product-card-bkrnd {
   position: absolute;
-  top: -30px;
-  left: -40px;
+  top: 30px;
+  left: 0;
   width: 120%;
   height: 120%;
-  opacity: 0.9;
-  filter: blur(120px);
+  opacity: 1;
+  filter: blur(10px);
   z-index: -1;
 
   .product-clr-bkrnd {
