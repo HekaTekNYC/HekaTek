@@ -1,0 +1,55 @@
+.hero-glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(16, 14, 144, 0.22) 0px 15px 12px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.427);
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  overflow: hidden; /* Hide scrollbar */
+}
+
+.hero-code pre {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.hero-code code {
+  font-size: 1rem;
+  display: block;
+  white-space: pre-wrap; /* Wrap text */
+  word-wrap: break-word; /* Break long words */
+  overflow: hidden;
+  background: none;
+}
+
+.code-keyword {
+  color: #af15e2; /* Red color for keywords like const, function */
+  font-weight: bold;
+}
+
+.code-string {
+  color: #076de0; /* Dark blue color for strings */
+}
+
+.code-variable {
+  color: #07b43e; /* Purple color for variables */
+}
+
+.code-comment {
+  color: #939fe1; /* Gray color for comments */
+  font-style: italic;
+}
+
+.code-function {
+  color: #03c500; /* Blue color for functions */
+}
+
+.code-bracket {
+  color: #460ffc; /* Red color for brackets */
+}

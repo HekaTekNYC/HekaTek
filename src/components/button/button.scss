@@ -72,3 +72,14 @@
     height: 50px;
   }
 }
+
+/* md (≥1024px) */
+@media (min-width: 1024px) {
+  .btn-solid,
+  .btn-outline {
+    height: 50px;
+    font-size: 1.2rem;
+    width: 250px;
+    max-width: 350px;
+  }
+}

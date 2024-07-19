@@ -1,3 +1,27 @@
+.hero-section {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+
+  .background-image-container {
+    position: absolute;
+    display: none;
+    top: 100px;
+    right: -250px;
+    height: 100%;
+    transform: rotate(-30deg);
+    width: 1600px;
+    filter: blur(20px);
+
+    z-index: -1;
+
+    img {
+      height: auto;
+      width: 1900px;
+    }
+  }
+}
+
 .about-section,
 .product-section,
 .services-section,
@@ -50,7 +74,12 @@
 }
 
 /* Larger than tablet portrait */
-@media (min-width: 768px) {
+@media (min-width: 820px) {
+  .hero-section {
+    .background-image-container {
+      display: block;
+    }
+  }
 }
 
 /* Larger than desktop */
@@ -65,8 +94,35 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .hero-section {
+    .background-image-container {
+      display: block;
+      top: 150px;
+    }
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .hero-section {
+    .background-image-container {
+      filter: blur(0);
+      transform: scaleX(-1) rotate(60deg);
+      width: 1900px;
+    }
+  }
+}
+
 /* Larger than Desktop HD */
 @media (min-width: 1400px) {
+  .hero-section {
+    .background-image-container {
+      filter: blur(0);
+      transform: scaleX(-1) rotate(60deg);
+      width: 1900px;
+    }
+  }
   .about-section,
   .product-section,
   .services-section,

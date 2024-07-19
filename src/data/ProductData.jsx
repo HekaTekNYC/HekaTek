@@ -37,7 +37,7 @@ export const walkAngels = {
     src: WWA,
     alt: "WWA Preview",
   },
-  info: "The United Angels Foundation's Walk With Angels 2024 is the primary fundraiser supporting over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered services to develop and optimize the website, ensuring it is fully functional and responsive for all users.",
+  info: "The United Angels Foundation's Walk With Angels 2024 was the primary fundraiser supporting over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered to develop and optimize the website, ensuring it's'functionality and responsiveness for users.",
   btn: "View Live",
   aLink: "https://walk.unitedangels.org/",
 }

@@ -11,7 +11,14 @@ import "./home.scss"
 const Home = () => {
   return (
     <>
-      <div className="hero-section hero-overlay" id="home">
+      <div className="hero-section" id="home">
+        <div className="background-image-container">
+          <img
+            src="https://res.cloudinary.com/daecnx7ih/image/upload/v1721408100/glass-violet_ungwkn.webp"
+            alt=""
+          />
+        </div>
+
         <Hero />
       </div>
       <div className="about-section" id="about">

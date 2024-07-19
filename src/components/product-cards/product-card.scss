@@ -3,9 +3,10 @@
   width: 100%;
   max-width: 500px;
   aspect-ratio: 685 / 514;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px 0;
   transition: all 0.5s ease-in-out;
+  background: rgba(144, 149, 182, 0.166);
   box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
   z-index: 1;
   overflow: hidden;
@@ -39,10 +40,10 @@
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 92%;
-  height: 98%;
-  background: rgba(255, 255, 255, 0.532);
-  border-radius: 15px 15px 0 0;
+  width: 99%;
+  height: 102%;
+  // background: rgba(255, 255, 255, 0.268);
+  border-radius: 10px 10px 0 0;
   z-index: 2;
 
   .image-container {
@@ -67,14 +68,18 @@
 /* Medium (≥768px) */
 @media (min-width: 768px) {
   .product-card-container {
-    max-width: 400px;
+    // max-width: 400px;
+    width: 440px;
+    max-width: 600px;
+    bottom: 10px;
   }
 }
 
 /* Extra large (≥1200px) */
 @media (min-width: 1200px) {
   .product-card-container {
-    width: 300px;
-    max-width: 400px;
+    width: 440px;
+    max-width: 600px;
+    bottom: 10px;
   }
 }
