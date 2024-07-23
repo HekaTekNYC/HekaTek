@@ -26,14 +26,6 @@ const Hero = () => {
     window.location.href = "https://calendly.com/hekateknyc"
   }
 
-  const bannerItems = [
-    {text: "WEBSITE DEVELOPMENT"},
-    {text: "HOSTING"},
-    {text: "RESPONSIVE DESIGN"},
-    {text: "SOFTWARE DEVELOPMENT"},
-    {text: "DEBUGGING"},
-  ]
-
   const openCalendlyPopup = () => {
     Calendly.initPopupWidget({
       url: "https://calendly.com/hekatek-hekateknyc/30min",
@@ -47,8 +39,7 @@ const Hero = () => {
         onClose={handleModalClose}
         onConfirm={handleModalConfirm}
       />
-
-      <div className="hero-banner-container">
+      <div className="hero-format">
         <div className="hero-container">
           <div className="hero-left">
             <h1>
@@ -69,38 +60,7 @@ const Hero = () => {
               width={"short"}
             />
           </div>
-          <div className="hero-right">
-            <TypeCode />
-          </div>
-          {/* <header className="hero-header">
-          <h1>HEKATEk</h1>
-
-          Software developers with a passion for bringing your visions to
-            life.
-          <h4 className="hero-subheader">
-            {" "}
-            Web Design & Development tailored for small businesses.{" "}
-          </h4>
-          <h4 className="hero-text">
-            No Wordpress, no page builders, just hand-coded websites with
-            exceptional results from $150/month.
-          </h4>
-          <Button
-            text={"Schedule A Meeting"}
-            onClick={openCalendlyPopup}
-            btnType={"solid"}
-            width={"short"}
-          />
-        </header> */}
-        </div>
-        <div className="banner-container">
-          {bannerItems.map((item, index) => (
-            <React.Fragment key={index}>
-              <div className={`ellipse ellipse-${index}`}></div>
-              <h4 className={`banner-text banner-${index}`}>{item.text}</h4>
-            </React.Fragment>
-          ))}
-          <div className="ellipse ellipse-6"></div>
+          <div className="hero-right">{/* <TypeCode /> */}</div>
         </div>
       </div>
     </>

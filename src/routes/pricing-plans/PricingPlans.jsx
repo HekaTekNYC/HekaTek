@@ -51,7 +51,7 @@ const PricingPlans = () => {
             <h2>Pricing Plans</h2>
             <p className="pricing-text">
               We offer a monthly subscription, lump sum, and e-commerce pricing.
-              Please contact us for price inuqiries on our E-Comm models.
+              Please contact us for price inquiries on our E-Comm models.
             </p>
           </div>
 

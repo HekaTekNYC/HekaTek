@@ -1,7 +1,8 @@
 import React from "react"
 import Button from "../../components/button/Button"
 
-import AboutBkrd from "../../assets/images/wheel.png"
+// import AboutBkrd from "../../assets/images/wheel.png"
+import AboutBkrd from "../../assets/images/about-bkg.svg"
 // import AboutBkrd from "../../assets/images/blue-blob.svg"
 
 import "./about.scss"

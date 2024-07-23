@@ -2,9 +2,10 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 80vh;
   width: 100%;
   padding: 20px;
+  max-width: 1300px;
   z-index: 2;
 }
 
@@ -92,11 +93,12 @@
   .about-blob-container {
     .about-bkrnd-img {
       left: 50px;
-      top: -200px;
-      width: 250px;
-
-      filter: blur(120px);
-      opacity: 0.8;
+      top: -250px;
+      width: 300px;
+      filter: blur(60px);
+      transform: rotate(200deg);
+      opacity: 1;
+      color: #95acff;
     }
   }
 

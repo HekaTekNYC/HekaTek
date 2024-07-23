@@ -1,21 +1,20 @@
-.hero-banner-container {
+.hero-format {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 70px);
   width: 100%;
-  max-height: 1400px;
+  padding: 0 35px;
 }
+
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 35px;
   text-align: center;
   width: 100%;
-  max-width: 1400px;
-  height: 100%;
+  height: calc(100vh - 145px);
+  max-height: 1400px;
+  max-width: 1300px;
 }
 
 .hero-left {
@@ -28,9 +27,8 @@
 
   h4 {
     font-size: 1.4rem;
-    // color: #9ea6df;
-    // text-transform: uppercase;
-    margin: 10px 0 20px;
+    line-height: 1.4;
+    margin: 0 0 10px;
   }
 }
 
@@ -61,43 +59,6 @@
 //   }
 // }
 
-.banner-container {
-  background-color: #f4f7ff;
-  height: 75px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
-
-  .ellipse {
-    background-color: #444d82;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-  }
-
-  .banner-text {
-    font-family: "Tanker";
-    font-weight: 400;
-    margin-top: 10px 0;
-    font-size: 1.75rem;
-    line-height: 1;
-    text-align: center;
-    margin: 0 5px;
-    color: #444d82;
-  }
-  .banner-2,
-  .banner-3,
-  .banner-4,
-  .ellipse-3,
-  .ellipse-4,
-  .ellipse-5,
-  .ellipse-6 {
-    display: none;
-  }
-}
-
 /* Media queries */
 
 /* Medium (≥430px) */
@@ -111,8 +72,13 @@
 
 /* Small (≥576px) */
 @media (min-width: 576px) {
-  .hero-container {
+  .hero-format {
     padding: 0 40px;
+  }
+  .hero-left {
+    h4 {
+      width: 77%;
+    }
   }
   .banner-container {
     .banner-2,
@@ -126,7 +92,8 @@
 @media (min-width: 768px) {
   .hero-left {
     h4 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      width: 77%;
     }
   }
   .banner-container {
@@ -139,9 +106,16 @@
 
 /* Large (≥992px) */
 @media (min-width: 992px) {
-  .hero-container {
+  .hero-format {
     padding: 0 80px;
   }
+  .hero-left {
+    h4 {
+      font-size: 1.6rem;
+      width: 70%;
+    }
+  }
+
   .banner-container {
     .banner-4,
     .ellipse-5,
@@ -158,8 +132,8 @@
 
   .hero-left {
     h4 {
-      font-size: 1.8rem;
-      width: 80%;
+      font-size: 1.6rem;
+      width: 65%;
       line-height: 1.2;
     }
   }
@@ -167,8 +141,15 @@
 
 /* Extra large (≥1200px) */
 @media (min-width: 1200px) {
-  .hero-banner-container {
+  .hero-container {
     max-height: 1000px;
+  }
+  .hero-left {
+    h4 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      width: 50%;
+    }
   }
   .hero-right {
     display: flex;
@@ -177,7 +158,13 @@
 }
 /* Extra large (≥1200px) */
 @media (min-width: 1400px) {
-  .hero-container {
+  .hero-format {
     padding: 0 100px;
+  }
+  .hero-left {
+    h4 {
+      font-size: 1.5rem;
+      width: 60%;
+    }
   }
 }
