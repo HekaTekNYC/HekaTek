@@ -223,12 +223,12 @@
     }
 
     .prod-blob4 {
-      top: 350px;
-      right: -350px;
+      top: 130px;
+      left: 0;
       filter: blur(90px);
 
       img {
-        height: 350px;
+        height: 150px;
       }
     }
 
@@ -248,12 +248,13 @@
 @media (min-width: 1200px) {
   .row1 {
     .prod-blob1 {
-      top: 200px;
-      right: -450px;
-      filter: blur(90px);
+      top: 190px;
+      right: 0;
+      opacity: 0.7;
+      filter: blur(100px);
 
       img {
-        height: 400px;
+        height: 100px;
       }
     }
     .prod-blob5 {
@@ -265,11 +266,10 @@
   .row2 {
     .prod-blob2 {
       top: 200px;
-      left: -300px;
-      filter: blur(90px);
-
-      img {
-        height: 350px;
+      left: -100px;
+      filter: blur(160px);
+      color: #ff7e34 img {
+        height: 50px;
       }
     }
   }

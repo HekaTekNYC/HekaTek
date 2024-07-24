@@ -32,7 +32,7 @@ export const walkAngels = {
   deg: 180,
   scale: "X(-1)",
   desc: "Volunteer Work",
-  blob: Blob2,
+  blob: "",
   img: {
     src: WWA,
     alt: "WWA Preview",
@@ -48,7 +48,7 @@ export const aiSumz = {
   deg: 180,
   scale: "X(-1)",
   desc: "AI Powered Article Summarizer",
-  blob: Blob3,
+  blob: "",
   img: {
     src: AISum,
     alt: "AI Sum Preview",
@@ -79,7 +79,7 @@ export const interviewIQ = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
-  blob: Blob1,
+  blob: "",
   img: {
     src: IIQcover,
     alt: "InterviewIQ Preview",
@@ -94,7 +94,7 @@ export const dangoDB = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Deno Object Document Mapper (ODM)",
-  blob: Blob4,
+  blob: "",
   img: {
     src: dangoDBP,
     alt: "Dango Preview",
