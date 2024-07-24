@@ -1,0 +1,234 @@
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 340px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(233, 230, 230, 0.188);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
+  transition: all 0.3s ease-in-out;
+
+  &.sub {
+    &:hover {
+      box-shadow: rgba(180, 111, 248, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
+
+  &.lump {
+    &:hover {
+      box-shadow: hsla(232, 97%, 72%, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
+
+  &.ecomm {
+    &:hover {
+      box-shadow: rgba(255, 126, 121, 0.184) 0px 4px 16px;
+      transform: translateY(-2px);
+    }
+  }
+
+  .pricing-card-image {
+    position: absolute;
+    top: -20px;
+    right: -18px;
+    width: 110px;
+    height: auto;
+  }
+
+  .pricing-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 8px 0 25px;
+  }
+  .pricing-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .pricing-plan-title {
+    align-self: flex-start;
+    font-size: 1.3rem;
+
+    &.sub {
+      color: #b46ff8;
+    }
+
+    &.ecomm {
+      color: #ff7d79;
+    }
+
+    &.lump {
+      color: #7285fd;
+    }
+  }
+
+  .pricing-plan-cost {
+    align-self: flex-start;
+    font-size: 2rem;
+    color: #444d82;
+    margin: 15px 0 0;
+    letter-spacing: 0.04rem;
+
+    .pricing-plan-cost-sub {
+      font-family: "Satoshi";
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  .pricing-plan-extra-fee {
+    align-self: flex-start;
+    font-size: 1.5rem;
+
+    .pricing-plan-extra-sub {
+      font-family: "Satoshi";
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+  }
+
+  .pricing-white-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.541),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.543)
+    );
+    margin: 15px 0;
+  }
+}
+
+.pricing-checklist-items {
+  display: flex;
+  flex-direction: column;
+
+  .checklist {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 7px 0;
+
+    .checkmark-icon {
+      width: 16px;
+      height: 16px;
+      font-size: 1rem;
+      margin: 3px 6px 0 0;
+    }
+  }
+}
+
+/* Extra Small */
+@media (min-width: 500px) {
+  .pricing-card {
+    flex: 1 1 280px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background: rgba(233, 230, 230, 0.188);
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing-card {
+    width: 210px;
+    max-width: 220px;
+    height: 670px;
+
+    .pricing-plan-extra-fee {
+      font-size: 1.6rem;
+      line-height: 1;
+
+      .pricing-plan-extra-sub {
+        font-size: 1rem;
+      }
+    }
+
+    .pricing-card-image {
+      top: -20px;
+      right: -18px;
+      width: 90px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  .pricing-card {
+    width: 100%;
+    max-width: 230px;
+    margin: 0 10px;
+  }
+}
+
+/* Large (≥992px) */
+@media (min-width: 912px) {
+  .pricing-card {
+    width: 260px;
+    height: 600px;
+    max-width: 300px;
+  }
+}
+/* Large (≥992px) */
+@media (min-width: 1024px) {
+  .pricing-card {
+    width: 270px;
+    max-width: 300px;
+    margin: 0;
+    padding: 25px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .pricing-card {
+    width: 350px;
+    max-width: 350px;
+    height: 590px;
+
+    .pricing-white-line {
+      margin: 20px 0;
+    }
+    .pricing-half {
+      margin: 15px 0;
+    }
+
+    .pricing-card-image {
+      top: -30px;
+      right: -25px;
+      width: 130px;
+      height: auto;
+    }
+  }
+
+  .sub {
+    margin-right: 10px;
+  }
+}

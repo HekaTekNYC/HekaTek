@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1300px;
   padding-top: 20px;
+  // outline: 1px solid aqua;
 
   .products-header {
     display: flex;
@@ -52,8 +53,12 @@
 .prod-blob5,
 .prod-blob6,
 .prod-blob7 {
-  display: none;
+  // display: none;
   opacity: 0.4;
+  outline: 1px solid rgb(79, 18, 247);
+  img {
+    outline: 1px solid aqua;
+  }
 }
 
 /* Larger than desktop */
@@ -193,11 +198,12 @@
   .row1 {
     .prod-blob1 {
       top: 150px;
-      right: -350px;
-      filter: blur(90px);
-
+      right: -50px;
+      filter: blur(140px);
+      overflow: hidden;
       img {
         height: 300px;
+        outline: 1px solid aqua;
       }
     }
     .prod-blob3 {

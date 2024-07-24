@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react" // Added missing imports
 
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
-import TechCircle from "../../components/tech-circle/Tech-circle"
+import TechCircle from "../../components/tech-circle/TechCircle"
 import WhyBkrnd from "../../assets/images/why-gradient.png"
 
 import "./why-us.scss"
