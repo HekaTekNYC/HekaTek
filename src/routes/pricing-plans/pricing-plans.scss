@@ -6,6 +6,7 @@
   width: 100%;
   height: auto;
   max-width: 1200px;
+  z-index: 1;
 }
 
 .pricing-background {
@@ -82,7 +83,7 @@
     .pricing-background {
       bottom: 200px;
       opacity: 0.8;
-      filter: blur(140px);
+      filter: blur(100px);
     }
 
     img {

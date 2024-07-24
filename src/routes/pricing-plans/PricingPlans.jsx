@@ -1,4 +1,3 @@
-import React from "react"
 import BackgroundShape from "../../assets/images/Bg-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"

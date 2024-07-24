@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react"
 import Modal from "../../components/calendly-modal/Modal"
-import TypeCode from "../../components/type-code/TypeCode"
 import Button from "../../components/button/Button"
+import VideoComponent from "../../components/video/Video"
+
 import "./hero.scss"
 
 const Hero = () => {
@@ -60,7 +61,16 @@ const Hero = () => {
               width={"short"}
             />
           </div>
-          <div className="hero-right">{/* <TypeCode /> */}</div>
+          <div className="hero-right">
+            <div className="hero-video-container">
+              <VideoComponent
+                src={
+                  "https://res.cloudinary.com/daecnx7ih/video/upload/v1721843387/AdobeStock_602341088_pmbaiv.mp4"
+                }
+                alt={"abstract purple design"}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
