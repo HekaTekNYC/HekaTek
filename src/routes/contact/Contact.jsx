@@ -21,7 +21,11 @@ const Contact = () => {
         </div>
         <div className="contact-us-form-container">
           <div className="contact-us-blob">
-            <img src={ContactBlob} alt="gradient blurred shape" />
+            <img
+              src={ContactBlob}
+              alt="gradient blurred shape"
+              loading="lazy"
+            />
           </div>
           <ContactForm />
         </div>

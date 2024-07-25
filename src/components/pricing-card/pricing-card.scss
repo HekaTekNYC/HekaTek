@@ -40,8 +40,10 @@
     position: absolute;
     top: -20px;
     right: -18px;
-    width: 110px;
-    height: auto;
+    img {
+      width: auto;
+      height: 110px;
+    }
   }
 
   .pricing-half {
@@ -172,10 +174,12 @@
     }
 
     .pricing-card-image {
-      top: -20px;
-      right: -18px;
-      width: 90px;
-      height: auto;
+      top: -25px;
+      right: -45px;
+      img {
+        width: auto;
+        height: 90px;
+      }
     }
   }
 }
@@ -209,7 +213,8 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .pricing-card {
-    width: 350px;
+    width: 100%;
+    min-width: 300px;
     max-width: 350px;
     height: 590px;
 
@@ -222,9 +227,13 @@
 
     .pricing-card-image {
       top: -30px;
-      right: -25px;
-      width: 130px;
-      height: auto;
+      right: -240px;
+      width: 100%;
+
+      img {
+        width: 130px;
+        height: auto;
+      }
     }
   }
 

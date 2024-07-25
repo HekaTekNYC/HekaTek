@@ -16,13 +16,10 @@ const VideoComponent = ({src, alt}) => {
   useEffect(() => {
     if (videoRef.current) {
       if (isVisible) {
-        console.log("Video is isVisible, playing video")
         videoRef.current.play().catch(e => {
-          // Handle the error, possibly log it or display a message
           console.error("Failed to play video:, e")
         })
       } else {
-        console.log("Video is not visible, video is paused")
         videoRef.current.pause()
       }
     }

@@ -1,9 +1,9 @@
 import React from "react"
 import Button from "../../components/button/Button"
 
-// import AboutBkrd from "../../assets/images/wheel.png"
 import AboutBkrd from "../../assets/images/about-bkg.svg"
-// import AboutBkrd from "../../assets/images/blue-blob.svg"
+import Devicewebp from "../../assets/images/device-mockup.webp"
+import Devicepng from "../../assets/images/device-mockup.png"
 
 import "./about.scss"
 
@@ -23,18 +23,39 @@ const About = () => {
       <div className="about-container">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
-            <img src={AboutBkrd} alt="blue and pink blurred blob" />
-          </div>
-        </div>
-        <div className="about-img-container">
-          <div className="about-img-lg">
             <img
-              src="https://res.cloudinary.com/daecnx7ih/image/upload/v1721242970/comp-tight_ubtdor.webp"
-              alt="placeholder image"
+              loading="lazy"
+              decoding="async"
+              src={AboutBkrd}
+              alt="bright blue and dark blue blurred blob"
             />
           </div>
         </div>
-
+        <div className="about-left">
+          <div className="about-img-container">
+            <picture>
+              <source
+                srcSet={Devicewebp}
+                type="image/webp"
+                media="(min-width: 400px)"
+              />
+              <source
+                srcSet={Devicepng}
+                type="image/png"
+                media="(min-width: 400px)"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src={Devicepng}
+                alt="mockup devices with desktop laptop tablet and phone"
+                sizes="(max-width: 750px) 100vw, 650px"
+                height="689"
+                width="1097"
+              />
+            </picture>
+          </div>
+        </div>
         <div className="about-info-container">
           <h2 className="about-header">
             About <br /> HekaTek

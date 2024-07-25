@@ -51,7 +51,15 @@ const PricingCard = ({
       <div className={`pricing-card ${className}`}>
         {gem && (
           <div className="pricing-card-image">
-            <img src={gem} alt="purple gem" />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src={gem}
+              alt="purple gem"
+              height="155"
+              width="155"
+            />
           </div>
         )}
         <div className="pricing-card-header">

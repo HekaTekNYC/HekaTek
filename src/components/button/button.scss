@@ -3,7 +3,7 @@
   white-space: nowrap;
   font-weight: 700;
   border-radius: 40px;
-  height: 45px;
+  height: 40px;
   border: none;
   cursor: pointer;
   display: flex;
@@ -60,15 +60,22 @@
 }
 
 .btn-short {
-  width: 200px;
+  width: auto;
+  min-width: 175px;
+}
+
+.btn-short,
+.btn-full {
+  /* Use display flex to center content */
+  display: inline-flex;
 }
 
 /* Media queries */
 
-/* Small (≥576px) */
-@media (min-width: 576px) {
+/* Medium (≥768px) */
+@media (min-width: 768px) {
   .btn-solid,
   .btn-outline {
-    height: 50px;
+    height: 40px;
   }
 }

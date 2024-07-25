@@ -8,7 +8,11 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className="services-background">
-        <img src={ServiceBg} alt="gradient blue and pink shape" />
+        <img
+          src={ServiceBg}
+          alt="gradient blue and orange shape"
+          loading="lazy"
+        />
       </div>
       <h2 className="services-header">SERVICES</h2>
       <p className="services-p">

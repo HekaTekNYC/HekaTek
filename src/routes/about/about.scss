@@ -17,9 +17,8 @@
   }
 }
 
-.about-img-container {
+.about-left {
   display: none;
-  max-width: 700px;
 }
 
 .about-info-container {
@@ -64,15 +63,25 @@
       }
     }
   }
-
-  .about-img-container {
-    position: relative;
+  .about-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 50%;
-    z-index: 3;
+
+    .about-img-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      z-index: 3;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
   }
 
   .about-info-container {

@@ -6,7 +6,8 @@
   "main": "./legacy.cjs",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "dev": "webpack serve --mode development"
   },
   "keywords": [],
   "author": "",

@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from "react" // Added missing imports
+import React, {useState, useEffect} from "react"
 
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
 import TechCircle from "../../components/tech-circle/TechCircle"
-import WhyBkrnd from "../../assets/images/why-gradient.png"
+import WhyPNG from "../../assets/images/why-us-img.png"
+import WhyWebp from "../../assets/images/why-us-img.webp"
 
 import "./why-us.scss"
 
@@ -14,7 +15,7 @@ const WhyUs = () => {
     const checkCookies = () => {
       document.cookie = "testcookie"
       if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true) // Show modal if cookies are disabled
+        setModalOpen(true)
       }
     }
 
@@ -26,7 +27,7 @@ const WhyUs = () => {
   }
 
   const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc" // Redirect user to Calendly
+    window.location.href = "https://calendly.com/hekateknyc"
   }
 
   const openCalendlyPopup = () => {
@@ -49,7 +50,27 @@ const WhyUs = () => {
       <div className="why-us-container">
         <div className="why-left">
           <div className="why-us-bkrnd">
-            <img src={WhyBkrnd} alt="gradient blur colored blob" />
+            <picture>
+              <source
+                srcSet={WhyWebp}
+                type="image/webp"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcSet={WhyPNG}
+                type="image/png"
+                media="(min-width: 1200px)"
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src={WhyPNG}
+                alt="abstract rainbow wheel"
+                height="636"
+                width="473"
+              />
+            </picture>
           </div>
           <div className="tech-circle">
             <TechCircle />

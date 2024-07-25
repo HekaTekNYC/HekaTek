@@ -10,19 +10,32 @@ const scrollToSection = id => {
 }
 
 const Button = ({
-  text,
-  href,
-  type,
+  text = "",
+  href = "",
+  type = "button",
   scrollToId,
   onClick,
-  btnType,
-  width,
-  active,
+  btnType = "outline",
+  width = "short",
+  active = "",
 }) => {
   const buttonClass = `btn-${
     btnType === "solid" ? "solid" : "outline"
-  } ${active}`
+  } btn-${width} ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
+
+  console.log("Button Props:", {
+    text,
+    href,
+    type,
+    scrollToId,
+    onClick,
+    btnType,
+    width,
+    active,
+  })
+  console.log("Button Class:", buttonClass)
+  console.log("Button Width Class:", btnWidth)
 
   if (scrollToId) {
     return (
@@ -57,7 +70,7 @@ const Button = ({
   return (
     <button
       type={buttonType}
-      className={`${buttonClass} ${btnWidth} btn-over`}
+      className={`${buttonClass} ${btnWidth}`}
       onClick={onClick}
     >
       {text}

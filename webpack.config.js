@@ -3,8 +3,7 @@ const path = require("path")
 const webpack = require("webpack")
 const CopyPlugin = require("copy-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); // Import CSS minimizer plugin
-
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin") // Import CSS minimizer plugin
 
 const mode =
   process.env.NODE_ENV === "production" ? "production" : "development"
@@ -21,13 +20,25 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|jpg|webp|gif|woff|woff2|eot|ttf|svg|ico|mp4)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
           {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/",
+              outputPath: "assets/fonts/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|jpg|webp|gif|svg|ico|mp4)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/images/",
             },
           },
         ],
@@ -46,9 +57,9 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader", options: { sourceMap: true } },
-          { loader: "sass-loader", options: { sourceMap: true } },
+          {loader: "style-loader"},
+          {loader: "css-loader", options: {sourceMap: true}},
+          {loader: "sass-loader", options: {sourceMap: true}},
         ],
       },
       {
@@ -59,7 +70,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
-
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -73,50 +83,48 @@ module.exports = {
           from: "src/assets",
           to: "assets",
         },
-        
       ],
     }),
 
-  new TerserPlugin({
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log'] // Example of removing console.log calls
+    new TerserPlugin({
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+          pure_funcs: ["console.log"], // Example of removing console.log calls
+        },
+        mangle: {
+          toplevel: true,
+        },
+        output: {
+          comments: false,
+          ascii_only: true,
+        },
       },
-      mangle: {
-        toplevel: true
-      },
-      output: {
-        comments: false,
-        ascii_only: true
-      }
-    }
-  }),
+    }),
 
-
-  // Add CssMinimizerPlugin to minify CSS
-  new CssMinimizerPlugin(),
-  // new FontPreloadPlugin({
-  //   extensions: ["ttf"],
-  //   crossorigin: true,
-  //   loadType: "preload",
-  //   families: [
-  //     {
-  //       family: "Be Vietnam Pro",
-  //       weights: [400],
-  //     },
-  //     {
-  //       family: "Bebas Neue",
-  //       weights: [400],
-  //     },
-  //     {
-  //       family: "Gothic A1",
-  //       weights: [400, 600, 700],
-  //     },
-  //   ],
-  // }),
-],
+    // Add CssMinimizerPlugin to minify CSS
+    new CssMinimizerPlugin(),
+    // new FontPreloadPlugin({
+    //   extensions: ["ttf"],
+    //   crossorigin: true,
+    //   loadType: "preload",
+    //   families: [
+    //     {
+    //       family: "Be Vietnam Pro",
+    //       weights: [400],
+    //     },
+    //     {
+    //       family: "Bebas Neue",
+    //       weights: [400],
+    //     },
+    //     {
+    //       family: "Gothic A1",
+    //       weights: [400, 600, 700],
+    //     },
+    //   ],
+    // }),
+  ],
 
   devServer: {
     static: {

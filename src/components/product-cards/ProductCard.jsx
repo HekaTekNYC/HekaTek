@@ -1,37 +1,56 @@
 import React from "react"
-import ProductBlur from "../../assets/images/product-clr.png"
-
+import ProductBkrndpng from "../../assets/images/product-bkrnd.png"
+import ProductBkrndwebp from "../../assets/images/product-bkrnd.webp"
 import "./product-card.scss"
 
-const ProductCard = ({img, id, deg, scale}) => {
+const ProductCard = ({img, id, deg, scale, webp}) => {
   return (
     <div className="product-card-container" key={id}>
       <div className="product-card-bkrnd">
-        <img
-          src={
-            // this looks good - more purple tone and blue
-            // "https://res.cloudinary.com/daecnx7ih/image/upload/v1721769403/AdobeStock_591405734_Preview_cryncu.jpg"
-
-            // nice
-            "https://res.cloudinary.com/daecnx7ih/image/upload/v1721771229/AdobeStock_482707154_Preview_ac6hqa.jpg"
-            // ""
-          }
-          alt="pastel abstract wheel"
-          style={{transform: `rotate(${deg}deg) scale${scale}`}}
-        />
+        <picture>
+          <source
+            srcSet={ProductBkrndwebp}
+            type="image/webp"
+            media="(min-width: 300px)"
+          />
+          <source
+            srcSet={ProductBkrndpng}
+            type="image/png"
+            media="(min-width: 300px)"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src={ProductBkrndpng}
+            alt="pastel abstract textured glass with blur"
+            style={{transform: `rotate(${deg}deg) scale${scale}`}}
+            sizes="(max-width: 650px) 100vw, 650px"
+          />
+        </picture>
       </div>
       <div className="glass-container">
         <div className="image-container">
-          <img
-            src={img.src}
-            alt={img.alt}
-            className="product-img"
-            loading="lazy"
-            decoding="async"
-            title={img.title}
-            width="100%"
-            height="auto"
-          />
+          <picture>
+            <source
+              srcSet={webp}
+              type="image/webp"
+              media="(min-width: 300px)"
+            />
+            <source
+              srcSet={img.src}
+              type="image/png"
+              media="(min-width: 300px)"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src={img.src}
+              alt={img.alt}
+              className="product-img"
+              title={img.title}
+              sizes="(max-width: 650px) 100vw, 650px"
+            />
+          </picture>
         </div>
       </div>
     </div>

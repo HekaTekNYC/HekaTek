@@ -12,6 +12,7 @@ import {
   dangoDB,
   ad3lie,
 } from "../../data/ProductData"
+
 import "./products.scss"
 
 const Products = () => {
@@ -38,7 +39,7 @@ const Products = () => {
           }
         >
           <div className={`prod-blob${product.id}`}>
-            {/* <img src={product.blob} alt={product.name} /> */}
+            <img src={product.blob} alt={product.name} />
           </div>
           {product.id % 2 !== 0 ? (
             <>

@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   max-width: 1300px;
-  height: auto;
   width: 100%;
+  height: auto;
   padding: 60px 0 100px;
   z-index: 1;
 
@@ -23,28 +23,28 @@
 
 .services-background {
   position: absolute;
-  bottom: 200px;
+  bottom: 300px;
   left: 0;
   right: 0;
-  height: auto;
   width: 100%;
+  height: auto;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
-  filter: blur(160px);
-  opacity: 0.7;
+  filter: blur(140px);
+  opacity: 0.9;
   z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
 
   img {
-    height: 500px;
-    width: 600px;
+    height: 147px;
+    width: auto;
     max-width: none;
   }
 }
 
-// Services Card
+// Services Cards
 .services-cards-container {
   display: flex;
   flex-direction: column;
@@ -69,14 +69,14 @@
   width: 100%;
   height: 275px;
   margin: 10px 0;
-  transition: all 0.3s ease;
-  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 30px rgba(30, 10, 119, 0.15);
   }
 }
+
 .services-icon-header-container {
   display: flex;
   flex-direction: column;
@@ -95,47 +95,36 @@
   }
 }
 
-/* Media queries */
+/* Media Queries */
 
-/* Extra Small */
-@media (min-width: 500px) {
-  .services-background {
-    bottom: 300px;
-    left: 0;
-    transform: rotate(80deg) translateX(-50%);
-
-    img {
-      width: 900px;
-    }
-  }
-}
-
-/* Small */
+/* Small screens */
 @media (min-width: 768px) {
   .services-container {
     padding: 80px 0;
 
     .services-background {
-      bottom: -200px;
-      left: 0;
+      bottom: 125px;
       opacity: 1;
       transform: rotate(0deg) translateY(-50%);
       filter: blur(120px);
 
       img {
         width: 600px;
-        height: 500px;
+        height: auto;
       }
     }
+
     .services-cards-container {
       flex-direction: row;
       gap: 15px;
+
       .service-card-container {
         justify-content: start;
         height: 100%;
         width: 270px;
         padding: 25px 20px;
       }
+
       .services-icon-header-container {
         .service-icon-container img {
           height: 50px;
@@ -146,29 +135,24 @@
   }
 }
 
+/* Medium screens */
 @media (min-width: 910px) {
-  .services-container {
-    .services-cards-container {
-      .service-card-container {
-        height: 270px;
-        width: 270px;
-      }
+  .services-cards-container {
+    .service-card-container {
+      height: 270px;
+      width: 270px;
     }
   }
 }
 
+/* Large screens */
 @media (min-width: 1024px) {
-  .services-container {
-    .services-background {
-      bottom: -100px;
-      left: 40px;
-      opacity: 0.8;
-      filter: blur(120px);
+  .services-background {
+    bottom: 50px;
 
-      img {
-        height: 400px;
-        width: 1000px;
-      }
+    img {
+      width: 900px;
+      height: auto;
     }
   }
 }
@@ -181,17 +165,12 @@
     gap: 25px;
     margin-top: 20px;
   }
-}
-/* Larger than Desktop HD */
-@media (min-width: 1400px) {
-  .services-container {
-    .services-background {
-      bottom: -170px;
-      filter: blur(170px);
 
-      img {
-        width: 800px;
-      }
+  .services-background {
+    filter: blur(120px);
+
+    img {
+      width: 800px;
     }
   }
 }

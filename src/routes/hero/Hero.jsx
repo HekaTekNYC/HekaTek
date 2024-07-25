@@ -43,6 +43,7 @@ const Hero = () => {
       <div className="hero-format">
         <div className="hero-container">
           <div className="hero-left">
+            <div className="test-font">This is my test font</div>
             <h1>
               ENVISION
               <br />

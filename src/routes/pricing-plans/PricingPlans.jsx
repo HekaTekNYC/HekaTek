@@ -1,4 +1,4 @@
-import BackgroundShape from "../../assets/images/Bg-shape.svg"
+import BackgroundShape from "../../assets/images/pricing-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
 import "./pricing-plans.scss"
@@ -10,7 +10,11 @@ const PricingPlans = () => {
     <>
       <div className="pricing-container">
         <div className="pricing-background">
-          <img src={BackgroundShape} alt="colored gradient shape" />
+          <img
+            src={BackgroundShape}
+            alt="colored gradient shape"
+            loading="lazy"
+          />
         </div>
         <div className="pricing-header">
           <h2>Pricing Plans</h2>
