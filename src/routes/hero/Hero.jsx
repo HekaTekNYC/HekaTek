@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, lazy, Suspense} from "react"
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
-import VideoComponent from "../../components/video/Video"
+// import VideoComponent from "../../components/video/Video"
 
 import "./hero.scss"
+
+const VideoComponent = lazy(() => import("../../components/video/Video"))
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false)
@@ -33,6 +35,7 @@ const Hero = () => {
     })
     return false
   }
+
   return (
     <>
       <Modal
@@ -63,14 +66,16 @@ const Hero = () => {
           </div>
           <div className="hero-under">
             <div className="hero-video-container">
-              <VideoComponent
-                src={
-                  "https://res.cloudinary.com/daecnx7ih/video/upload/v1721843387/AdobeStock_602341088_pmbaiv.mp4"
-                }
-                alt={"abstract purple design"}
-                width="1920"
-                height="1080"
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <VideoComponent
+                  src={
+                    "https://res.cloudinary.com/daecnx7ih/video/upload/v1721843387/AdobeStock_602341088_pmbaiv.mp4"
+                  }
+                  alt={"abstract purple design"}
+                  width="1920"
+                  height="1080"
+                />
+              </Suspense>
             </div>
           </div>
         </div>

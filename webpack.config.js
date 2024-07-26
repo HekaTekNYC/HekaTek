@@ -11,11 +11,9 @@ const mode =
 
 module.exports = {
   mode: mode,
-
   entry: path.resolve(__dirname, "./src/index.jsx"),
   output: {
     filename: "bundle.[contenthash].js",
-    // filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
@@ -31,9 +29,6 @@ module.exports = {
       overlay: false,
     },
     historyApiFallback: true,
-    // headers: {
-    //   "Cache-Control": "no-store",
-    // },
   },
   module: {
     rules: [
@@ -68,9 +63,8 @@ module.exports = {
           loader: "babel-loader",
         },
       },
-
       {
-        test: /.s?css$/,
+        test: /\.s?css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
@@ -79,24 +73,18 @@ module.exports = {
       },
     ],
   },
-
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html", // Path to your template
-      filename: "index.html", // Output filename in dist folder
-      inject: true, // Inject all assets into the template automatically
-      minify: true, // Minifies the output HTML (optional but recommended for production)
+      template: "./public/index.html",
+      filename: "index.html",
+      inject: true,
+      minify: true,
     }),
-    // new HtmlWebpackPlugin({
-
-    //   template: "./public/index.html",
-    //   title: "HekaTek Web and Software Development",
-    // }),
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css", // Ensures cache busting
+      filename: "styles.[contenthash].css",
     }),
     new CopyPlugin({
       patterns: [
