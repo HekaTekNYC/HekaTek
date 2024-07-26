@@ -10,78 +10,49 @@
     />
     <meta http-equiv="Cache-Control" content="public" />
 
+    <!-- DNS Prefetch and Preconnect -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
     <!-- <link
-      rel="preload"
-      href="assets/fonts/Tanker-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="assets/fonts/Tanker-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
     /> -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    /></noscript>
 
-    <link
-      rel="preload"
-      href="assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff"
-      as="font"
-      type="font/woff"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff"
-      as="font"
-      type="font/woff"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../src/index.scss" />
     <link rel="canonical" href="https://www.hekateknyc.com/" />
-
     <title>HekaTek Web and Software Development</title>
   </head>
   <body>
     <div id="root"></div>
 
     <!-- External Scripts -->
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-    ></script>
-
     <link
+      rel="preload"
+      href="https://assets.calendly.com/assets/external/widget.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://assets.calendly.com/assets/external/widget.css"
+    /></noscript>
+
+    <!-- <link
       href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"
     />
@@ -89,21 +60,34 @@
       src="https://assets.calendly.com/assets/external/widget.js"
       type="text/javascript"
       async
+    ></script> -->
+
+    <!-- Include EmailJS script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      async
     ></script>
 
     <script>
+      window.addEventListener("load", function () {
+        emailjs.init("3M9sCaTmKUO1g2SRA")
+      })
+    </script>
+    <!-- <script>
       ;(function () {
         emailjs.init("3M9sCaTmKUO1g2SRA")
       })()
-    </script>
+    </script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
       crossorigin
+      defer
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
       crossorigin
+      defer
     ></script>
-    <script src="/bundle.js"></script>
+    <script src="/bundle.js" defer></script>
   </body>
 </html>

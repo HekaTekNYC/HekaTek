@@ -24,19 +24,6 @@ const Button = ({
   } btn-${width} ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
 
-  console.log("Button Props:", {
-    text,
-    href,
-    type,
-    scrollToId,
-    onClick,
-    btnType,
-    width,
-    active,
-  })
-  console.log("Button Class:", buttonClass)
-  console.log("Button Width Class:", btnWidth)
-
   if (scrollToId) {
     return (
       <div className={`${buttonClass} ${btnWidth}`}>

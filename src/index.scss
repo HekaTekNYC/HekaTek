@@ -1,138 +1,11 @@
-@import url("./assets/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css");
-@import url("./assets/fonts/Tanker_Complete/Fonts/WEB/css/tanker.css");
-// @import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
-// @import url("https://api.fontshare.com/css?f[]=clash-display@400,500,600,700&display=swap");
-// @import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
+@import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-/* Tanker */
-// @font-face {
-//   font-family: "Tanker";
-//   src: url("//cdn.fontshare.com/wf/ATKS7EHYU4PKFTXRA4UFAHPY7XS75QMY/OYTCFLQCR7FVKK7FIO7TCJPY4YG22I3S/GKSURDSYOFIC3Y6F5SMWSENDSAB2YMKC.woff2")
-//       format("woff2"),
-//     url("//cdn.fontshare.com/wf/ATKS7EHYU4PKFTXRA4UFAHPY7XS75QMY/OYTCFLQCR7FVKK7FIO7TCJPY4YG22I3S/GKSURDSYOFIC3Y6F5SMWSENDSAB2YMKC.woff")
-//       format("woff"),
-//     url("//cdn.fontshare.com/wf/ATKS7EHYU4PKFTXRA4UFAHPY7XS75QMY/OYTCFLQCR7FVKK7FIO7TCJPY4YG22I3S/GKSURDSYOFIC3Y6F5SMWSENDSAB2YMKC.ttf")
-//       format("truetype");
-//   font-weight: 400;
-//   font-display: swap;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Tanker";
-//   src: url("./assets/fonts/Tanker-Regular.woff2") format("woff2"),
-//     url("./assets/fonts/Tanker-Regular.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "false";
-//   src: url("./assets/fonts/false.woff2") format("woff2"),
-//     url("./assets/fonts/false.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "false";
-//   src: url("./assets/fonts/false.woff2") format("woff2"),
-//     url("./assets/fonts/false.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-/* Tanker */
-@font-face {
-  font-family: "Tanker-Regular";
-
-  src: url("./assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.eot")
-    format("embedded-opentype");
-  src: url("./assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff2")
-      format("truetype"),
-    url("./assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff")
-      format("woff"),
-    url("./assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.ttf")
-      format("truetype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  // font-weight: 400;
-}
-
-/* Satoshi 400 */
-@font-face {
-  font-family: "Satoshi-Medium";
-  src: url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
-      format("woff2"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
-      format("woff"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf")
-      format("truetype");
-  font-weight: normal;
-  // font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-/* Satoshi 500*/
-@font-face {
-  font-family: "Satoshi-Medium";
-  src: url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
-      format("woff2"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
-      format("woff"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf")
-      format("truetype");
-  font-weight: normal;
-  // font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-/* Satoshi 600*/
-@font-face {
-  font-family: "Satoshi-Medium";
-  src: url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
-      format("woff2"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
-      format("woff"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf")
-      format("truetype");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-/* Satoshi 700*/
-@font-face {
-  font-family: "Satoshi-Medium";
-  src: url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
-      format("woff2"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
-      format("woff"),
-    url("./assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf")
-      format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-/* bebas-neue-regular - latin */
-@font-face {
-  font-family: "Bebas Neue";
-  src: url("./assets/fonts/bebas-neue.woff2") format("woff2");
-  src: url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-style: normal;
-  font-weight: 400;
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Satoshi", sans-serif !important;
+  font-family: "Satoshi", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #444d82;
@@ -160,11 +33,7 @@ html {
   box-sizing: border-box;
   // outline: 1px solid aqua;
 }
-.test-font {
-  font-family: "Bebas Neue";
-  font-size: 20px;
-  color: red;
-}
+
 h1,
 h2,
 h3,
@@ -175,7 +44,7 @@ h6 {
 }
 
 h1 {
-  font-family: "Bebas Neue" !important;
+  font-family: "Bebas Neue";
   font-size: 5.2rem;
   line-height: 0.9;
   color: #444d82;
@@ -183,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Bebas Neue" !important;
+  font-family: "Bebas Neue";
   font-size: 7rem;
   font-weight: 700;
   line-height: 5.5rem;
@@ -192,16 +61,16 @@ h2 {
 }
 
 h3 {
-  font-family: "Bebas Neue", sans-serif !important;
+  font-family: "Tanker", sans-serif;
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2.2rem;
   color: #444d82;
   margin: 0;
 }
 
 h4 {
-  font-family: "Satoshi", sans-serif !important;
+  font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.1;
   font-weight: 500;
@@ -210,7 +79,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Satoshi", sans-serif !important;
+  font-family: "Satoshi", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
   margin: 0;

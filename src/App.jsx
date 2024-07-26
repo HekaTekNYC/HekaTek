@@ -9,7 +9,6 @@ import WhyUs from "./routes/why-us/WhyUs"
 import PricingPlans from "./routes/pricing-plans/PricingPlans"
 import ContactForm from "./components/contact-form/ContactForm"
 import Footer from "./components/footer/Footer"
-import "./assets/fonts/bebas-neue.woff2"
 import "./index.scss"
 
 const App = () => {

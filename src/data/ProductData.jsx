@@ -12,8 +12,6 @@ import AISumwebp from "../assets/images/aisum.webp"
 import AISumpng from "../assets/images/aisum.png"
 import WWAwebp from "../assets/images/wwa.webp"
 import WWApng from "../assets/images/wwa.png"
-import Blob1 from "../assets/images/blue-blob.svg"
-import Blob2 from "../assets/images/peach-blob.svg"
 
 export const plantHaus = {
   id: 1,
@@ -21,7 +19,6 @@ export const plantHaus = {
   deg: 0,
   scale: "X(-1)",
   desc: "Full Stack E-commerce Plant Shop",
-  blob: Blob1,
   webp: PHwebp,
   img: {
     src: PHpng,
@@ -38,7 +35,6 @@ export const walkAngels = {
   deg: 180,
   scale: "X(-1)",
   desc: "Volunteer Work",
-  blob: "",
   webp: WWAwebp,
   img: {
     src: WWApng,
@@ -55,7 +51,6 @@ export const aiSumz = {
   deg: 180,
   scale: "X(-1)",
   desc: "AI Powered Article Summarizer",
-  blob: "",
   webp: AISumwebp,
   img: {
     src: AISumpng,
@@ -71,7 +66,6 @@ export const riversEdge = {
   deg: 0,
   scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
-  blob: Blob2,
   webp: REwebp,
   img: {
     src: REpng,
@@ -88,7 +82,6 @@ export const interviewIQ = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
-  blob: "",
   webp: IIQwebp,
   img: {
     src: IIQpng,
@@ -105,7 +98,6 @@ export const dangoDB = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Deno Object Document Mapper (ODM)",
-  blob: "",
   webp: dangoDBwebp,
   img: {
     src: dangoDBpng,
@@ -122,7 +114,6 @@ export const ad3lie = {
   deg: 0,
   scale: "Y(1)",
   desc: "D3.js Data Visualizations",
-  blob: Blob1,
   webp: Ad3liewebp,
   img: {
     src: Ad3liepng,

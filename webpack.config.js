@@ -1,22 +1,40 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const path = require("path")
-const webpack = require("webpack")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin") // Import CSS minimizer plugin
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
+const path = require("path")
+const webpack = require("webpack")
 
 const mode =
   process.env.NODE_ENV === "production" ? "production" : "development"
 
 module.exports = {
   mode: mode,
+
   entry: path.resolve(__dirname, "./src/index.jsx"),
   output: {
-    filename: "bundle.js",
+    filename: "bundle.[contenthash].js",
+    // filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
-
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    port: process.env.PORT || 3000,
+    hot: true,
+    open: true,
+    compress: true,
+    client: {
+      overlay: false,
+    },
+    historyApiFallback: true,
+    // headers: {
+    //   "Cache-Control": "no-store",
+    // },
+  },
   module: {
     rules: [
       {
@@ -50,17 +68,10 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {loader: "style-loader"},
-          {loader: "css-loader", options: {sourceMap: true}},
-          {loader: "sass-loader", options: {sourceMap: true}},
-        ],
+        test: /.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.json$/,
@@ -68,15 +79,25 @@ module.exports = {
       },
     ],
   },
+
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: "./public/index.html", // Path to your template
+      filename: "index.html", // Output filename in dist folder
+      inject: true, // Inject all assets into the template automatically
+      minify: true, // Minifies the output HTML (optional but recommended for production)
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    // new HtmlWebpackPlugin({
 
+    //   template: "./public/index.html",
+    //   title: "HekaTek Web and Software Development",
+    // }),
+    new MiniCssExtractPlugin({
+      filename: "styles.[contenthash].css", // Ensures cache busting
+    }),
     new CopyPlugin({
       patterns: [
         {
@@ -85,59 +106,21 @@ module.exports = {
         },
       ],
     }),
-
     new TerserPlugin({
       terserOptions: {
         compress: {
           drop_console: true,
           drop_debugger: true,
-          pure_funcs: ["console.log"], // Example of removing console.log calls
+          pure_funcs: ["console.log"],
         },
-        mangle: {
-          toplevel: true,
-        },
+        mangle: true,
         output: {
           comments: false,
           ascii_only: true,
         },
       },
     }),
-
-    // Add CssMinimizerPlugin to minify CSS
     new CssMinimizerPlugin(),
-    // new FontPreloadPlugin({
-    //   extensions: ["ttf"],
-    //   crossorigin: true,
-    //   loadType: "preload",
-    //   families: [
-    //     {
-    //       family: "Be Vietnam Pro",
-    //       weights: [400],
-    //     },
-    //     {
-    //       family: "Bebas Neue",
-    //       weights: [400],
-    //     },
-    //     {
-    //       family: "Gothic A1",
-    //       weights: [400, 600, 700],
-    //     },
-    //   ],
-    // }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
-
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
-    headers: {
-      "Cache-Control": "no-store",
-    },
-    hot: true,
-    open: true,
-    client: {
-      overlay: false,
-    },
-    historyApiFallback: true,
-  },
 }

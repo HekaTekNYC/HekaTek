@@ -42,8 +42,7 @@ const Hero = () => {
       />
       <div className="hero-format">
         <div className="hero-container">
-          <div className="hero-left">
-            <div className="test-font">This is my test font</div>
+          <div className="hero-top">
             <h1>
               ENVISION
               <br />
@@ -51,10 +50,10 @@ const Hero = () => {
               <br />
               Transform
             </h1>
-            <h4>
+            <p className="hero-subheader">
               Unleash the full potential of your online presence with a
               custom-coded website, tailored exclusively for your business.
-            </h4>
+            </p>
             <Button
               text={"Schedule A Meeting"}
               onClick={openCalendlyPopup}
@@ -62,13 +61,15 @@ const Hero = () => {
               width={"short"}
             />
           </div>
-          <div className="hero-right">
+          <div className="hero-under">
             <div className="hero-video-container">
               <VideoComponent
                 src={
                   "https://res.cloudinary.com/daecnx7ih/video/upload/v1721843387/AdobeStock_602341088_pmbaiv.mp4"
                 }
                 alt={"abstract purple design"}
+                width="1920"
+                height="1080"
               />
             </div>
           </div>

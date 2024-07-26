@@ -38,9 +38,6 @@ const Products = () => {
             product.id % 2 !== 0 ? "product-row row1" : "product-row-rev row2"
           }
         >
-          <div className={`prod-blob${product.id}`}>
-            <img src={product.blob} alt={product.name} />
-          </div>
           {product.id % 2 !== 0 ? (
             <>
               <div className="product-container">
