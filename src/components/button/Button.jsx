@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import "./button.scss"
 
 const scrollToSection = id => {
@@ -26,13 +26,11 @@ const Button = ({
 
   if (scrollToId) {
     return (
-      <div className={`${buttonClass} ${btnWidth}`}>
-        <Link
-          to={`/#${scrollToId}`}
-          onClick={onClick || (() => scrollToSection(scrollToId))}
-        >
-          {text}
-        </Link>
+      <div
+        className={`${buttonClass} ${btnWidth}`}
+        onClick={onClick || (() => scrollToSection(scrollToId))}
+      >
+        {text}
       </div>
     )
   }

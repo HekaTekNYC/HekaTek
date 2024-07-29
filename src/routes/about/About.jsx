@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
             <img
