@@ -8,7 +8,6 @@ import Devicepng from "../../assets/images/device-mockup.png"
 import "./about.scss"
 
 const About = () => {
-  // Function to open Calendly popup
   const openCalendlyPopup = () => {
     if (window.Calendly) {
       console.log("Calendly script loaded, opening popup.")

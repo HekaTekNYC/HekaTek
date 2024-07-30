@@ -1,7 +1,6 @@
 import React, {useState, useEffect, lazy, Suspense} from "react"
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
-// import VideoComponent from "../../components/video/Video"
 
 import "./hero.scss"
 

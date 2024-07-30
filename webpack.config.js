@@ -21,9 +21,9 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist"),
     },
-    // headers: {
-    //   "Cache-Control": "public, max-age=31536000",
-    // },
+    headers: {
+      "Cache-Control": "public, max-age=31536000",
+    },
     port: process.env.PORT || 3000,
     hot: true,
     open: true,
