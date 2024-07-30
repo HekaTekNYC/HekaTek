@@ -7,7 +7,9 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "NODE_ENV=production webpack",
-    "dev": "webpack serve --mode development"
+    "dev": "webpack serve --mode development",
+    "clean": "rm -rf node_modules/.cache && npm install",
+    "rebuild": "npm run clean && npm run build"
   },
   "keywords": [],
   "author": "",
