@@ -1,41 +1,68 @@
-import CSSLogo from "../assets/icons/css-96.svg"
-import Express from "../assets/icons/express.svg"
-import AngularLogo from "../assets/icons/Angular.svg"
-import Firebase from "../assets/icons/firebase.svg"
-import Redux from "../assets/icons/Redux-48.svg"
-import Mongo from "../assets/icons/mongodb.svg"
-import Tailwind from "../assets/icons/tailwindcss.svg"
-import ReactIcon from "../assets/icons/react3.svg"
-import JSIcon from "../assets/icons/javascriptColor.svg"
-import Typescript from "../assets/icons/typescript.svg"
-import Bootstrap from "../assets/icons/Bootstrap-128.svg"
-import Sass from "../assets/icons/sass.svg"
-import Node from "../assets/icons/node1js.svg"
-import Webpack from "../assets/icons/webpack.svg"
-import Postgresql from "../assets/icons/postgresql.svg"
-import HTML5Icon from "../assets/icons/html5.svg"
+// import CSSLogo from "../assets/icons/css-icon.svg"
+import CSSLogo from "../assets/icons/icons8-css.svg"
+import Firebase from "../assets/icons/firebase-icon.svg"
+import AstroIcon from "../assets/icons/astro-icon.svg"
+import Mongo from "../assets/icons/mongo-icon.svg"
+import ReactIcon from "../assets/icons/react-icon.svg"
+import JSIcon from "../assets/icons/js-icon.svg"
+import Typescript from "../assets/icons/ts-icon.svg"
+import Node from "../assets/icons/node-icon.svg"
+import Webpack from "../assets/icons/webpack-icon.svg"
 
-export const firstRowIcons = [
-  { src: Typescript, alt: "Typescript Logo", name: "Typescript" },
-  { src: AngularLogo, alt: "Angular Logo", name: "Angular" },
-  { src: JSIcon, alt: "JavaScript Logo", name: "JavaScript" },
-  { src: ReactIcon, alt: "React Logo", name: "React" },
-]
-export const secondRowIcons = [
-  { src: Tailwind, alt: "Tailwind Logo", name: "Tailwind" },
-  { src: Redux, alt: "Redux Logo", name: "Redux" },
-  { src: Sass, alt: "Sass Logo", name: "Sass" },
-  { src: HTML5Icon, alt: "HTML5 Logo", name: "HTML5" },
-]
-export const thirdRowIcons = [
-  { src: CSSLogo, alt: "CSS Logo", name: "CSS3" },
-  { src: Bootstrap, alt: "Bootstrap Logo", name: "Bootstrap" },
-  { src: Node, alt: "Node Logo", name: "Node.js" },
-  { src: Webpack, alt: "Webpack Logo", name: "Webpack" },
-]
-export const fourthRowIcons = [
-  { src: Mongo, alt: "Mongo Logo", name: "MDB" },
-  { src: Postgresql, alt: "Postgresql Logo", name: "PSQL" },
-  { src: Firebase, alt: "Firebase Logo", name: "Firebase" },
-  { src: Express, alt: "Express Logo", name: "Express" },
+export const techIcons = [
+  {
+    svgPath: Typescript,
+    altText: "Typescript Logo",
+    techClass: "ts-icon",
+    rail: "rail-ts",
+  },
+  {
+    svgPath: JSIcon,
+    altText: "JavaScript Logo",
+    techClass: "js-icon",
+    rail: "rail-js",
+  },
+  {
+    svgPath: AstroIcon,
+    altText: "Astro Logo",
+    techClass: "astro-icon",
+    rail: "rail-astro",
+  },
+  {
+    svgPath: ReactIcon,
+    altText: "React Logo",
+    techClass: "react-icon",
+    rail: "rail-react",
+  },
+  {
+    svgPath: CSSLogo,
+    altText: "CSS Logo",
+    techClass: "css-icon",
+    rail: "rail-css",
+  },
+  {
+    svgPath: Node,
+    altText: "Node Logo",
+    techClass: "node-icon",
+    rail: "rail-node",
+  },
+  {
+    svgPath: Webpack,
+    altText: "Webpack Logo",
+    techClass: "webpack-icon",
+    rail: "rail-webpack",
+  },
+  {
+    svgPath: Mongo,
+    altText: "Mongo Logo",
+    techClass: "mdb-icon",
+    rail: "rail-mongo",
+  },
+
+  {
+    svgPath: Firebase,
+    altText: "Firebase Logo",
+    techClass: "firebase-icon",
+    rail: "rail-firebase",
+  },
 ]

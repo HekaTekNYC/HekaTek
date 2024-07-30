@@ -4,20 +4,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1300px;
   height: auto;
 }
 
 .contact-us-form-container {
   position: relative;
+
   .contact-us-blob {
     position: absolute;
     top: 50px;
     right: 0;
-    width: 400px;
+    width: 375px;
     height: auto;
     opacity: 1;
-    filter: blur(80px);
+    filter: blur(130px);
+    overflow: hidden;
     z-index: -1;
   }
 }
@@ -32,28 +34,28 @@
   }
 }
 
-/* Media queries */
+/* Media Queries */
 
-/* Small (≥576px) */
+/* Small screens (≥576px) */
 @media (min-width: 576px) {
   .contact-us-form-container {
     .contact-us-blob {
-      top: 50px;
-      right: 100px;
+      transform: rotate(-30deg);
+      top: 0;
+      right: 0;
       width: 450px;
-      height: auto;
-      filter: blur(80px);
+      filter: blur(130px);
     }
   }
 }
 
-/* Medium (≥768px) */
+/* Medium screens (≥768px) */
 @media (min-width: 768px) {
   .contact-us-container {
-    display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   .contact-us-info {
     width: 50%;
     margin-right: 40px;
@@ -62,52 +64,39 @@
       margin-bottom: 10px;
     }
   }
+
   .contact-us-form-container {
     width: 50%;
     margin-left: 15px;
+
     .contact-us-blob {
       top: 50px;
-      right: 0;
+      right: 60px;
       width: 350px;
-      height: auto;
-      filter: blur(80px);
+      filter: blur(120px);
     }
   }
 }
 
-/* Large (≥992px) */
+/* Large screens (≥992px) */
 @media (min-width: 992px) {
   .contact-us-form-container {
     .contact-us-blob {
-      top: -50px;
+      top: 0;
       right: 0;
-      width: 500px;
-      height: auto;
-      filter: blur(90px);
+      width: 400px;
+      filter: blur(130px);
     }
   }
 }
 
-/* Extra large (≥1200px) */
+/* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
   .contact-us-form-container {
     .contact-us-blob {
-      transform: rotate(-30deg);
       width: 450px;
-      right: 50px;
-      filter: blur(90px);
-    }
-  }
-}
-
-/* Extra extra large (≥1400px) */
-@media (min-width: 1400px) {
-  .contact-us-form-container {
-    .contact-us-blob {
-      transform: rotate(-30deg);
-      width: 550px;
-      right: 50px;
-      filter: blur(90px);
+      right: 75px;
+      filter: blur(130px);
     }
   }
 }

@@ -1,15 +1,10 @@
-import React, {useState, useEffect} from "react" // Added missing imports
-import {
-  firstRowIcons,
-  secondRowIcons,
-  thirdRowIcons,
-  fourthRowIcons,
-} from "../../data/TechData"
+import React, {useState, useEffect} from "react"
+
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
-import HexagonIcon from "../../components/hexagon-icon/HexagonIcon"
-
-import WhyBkrnd from "../../assets/images/why-gradient.png"
+import TechCircle from "../../components/tech-circle/TechCircle"
+import WhyPNG from "../../assets/images/why-us-img.png"
+import WhyWebp from "../../assets/images/why-us-img.webp"
 
 import "./why-us.scss"
 
@@ -20,7 +15,7 @@ const WhyUs = () => {
     const checkCookies = () => {
       document.cookie = "testcookie"
       if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true) // Show modal if cookies are disabled
+        setModalOpen(true)
       }
     }
 
@@ -32,21 +27,8 @@ const WhyUs = () => {
   }
 
   const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc" // Redirect user to Calendly
+    window.location.href = "https://calendly.com/hekateknyc"
   }
-
-  const renderIcons = icons => (
-    <>
-      {icons.map((icon, index) => (
-        <HexagonIcon
-          icon={icon}
-          key={`icon-${index}`}
-          loading="lazy"
-          decoding="async"
-        />
-      ))}
-    </>
-  )
 
   const openCalendlyPopup = () => {
     if (window.Calendly) {
@@ -66,38 +48,61 @@ const WhyUs = () => {
       />
 
       <div className="why-us-container">
-        <div className="tech-stack-container">
+        <div className="why-left">
           <div className="why-us-bkrnd">
-            <img src={WhyBkrnd} alt="gradient blur colored blob" />
+            <picture>
+              <source
+                srcSet={WhyWebp}
+                type="image/webp"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcSet={WhyPNG}
+                type="image/png"
+                media="(min-width: 1200px)"
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src={WhyPNG}
+                alt="abstract rainbow wheel"
+                height="636"
+                width="473"
+              />
+            </picture>
           </div>
-          <div className="tech-icons-container">
-            <div className="tech-row-1">{renderIcons(firstRowIcons)}</div>
-            <div className="tech-row-2">{renderIcons(secondRowIcons)}</div>
-            <div className="tech-row-3">{renderIcons(thirdRowIcons)}</div>
-            <div className="tech-row-4">{renderIcons(fourthRowIcons)}</div>
+          <div className="tech-circle">
+            <TechCircle />
           </div>
         </div>
         <div className="why-info-container">
           <h2 className="why-header">
             Why <br /> HekaTek
           </h2>
-          <h4 className="why-subheader">
-            We view each project as a partnership and go beyond just meeting
-            requirements.
-          </h4>
-
-          <p className="why-p">
-            Understanding the reluctance of small businesses to invest heavily
-            upfront in a websites, especially considering the risk of receiving
-            subpar results, is key to our approach. We get being let down by
-            previous experiences and understand the frustration it causes.
-            That's why we've introduced a flexible pricing option starting at
-            $175 per month, ensuring affordability without compromising on
-            quality. We strive to provide a trustworthy solution where
-            businesses can feel confident in getting a website that truly
-            represents their brand, without the financial strain or uncertainty
-            of traditional models.
-          </p>
+          <div className="why-info-text">
+            <h4>Tired of Poor Website Experiences?</h4>
+            <p className="why-p">
+              Investing in a website can be daunting, especially for small
+              businesses. Many invest a significant amount upfront, only to be
+              disappointed by slow loading times, overused templates, and
+              inconsistent displays. This harms visitor experience and your
+              brand reputation.
+            </p>
+            <h4>You Deserve Better</h4>
+            <p className="why-p">
+              We’ve seen this frustration firsthand. You deserve a professional,
+              hand-coded website that truly represents your brand without
+              breaking the bank. That’s why we decided to do things differently.
+            </p>
+            <h4>Our Solution </h4>
+            <p className="why-p">
+              Get a high-quality, custom-coded website starting at $150 a month,
+              providing confidence in your investment. This gives you a fast,
+              unique, and reliable online presence. Prefer a one-time payment?
+              We offer a lump sum option as well.
+            </p>
+          </div>
 
           <Button
             text={"Schedule A Meeting"}

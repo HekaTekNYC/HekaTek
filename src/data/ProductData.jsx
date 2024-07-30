@@ -1,14 +1,17 @@
-import dangoDBP from "../assets/images/dangoCode.webp"
-import Ad3lie from "../assets/images/ad3liecode.webp"
-import IIQcover from "../assets/images/InterviewIQ.webp"
-import PHcover from "../assets/images/ph.webp"
-import RiversEdge from "../assets/images/rivers-edge.webp"
-import AISum from "../assets/images/ai-sumz.webp"
-import WWA from "../assets/images/WWA.webp"
-import Blob1 from "../assets/images/blue-blob.svg"
-import Blob2 from "../assets/images/peach-blob.svg"
-import Blob3 from "../assets/images/pink-blob.svg"
-import Blob4 from "../assets/images/purple-blob.svg"
+import dangoDBwebp from "../assets/images/dangoDB.webp"
+import dangoDBpng from "../assets/images/dangoDB.png"
+import Ad3liewebp from "../assets/images/ad3lie.webp"
+import Ad3liepng from "../assets/images/ad3lie.png"
+import IIQwebp from "../assets/images/InterviewIQ.webp"
+import IIQpng from "../assets/images/InterviewIQ.png"
+import PHwebp from "../assets/images/ph.webp"
+import PHpng from "../assets/images/ph.png"
+import REwebp from "../assets/images/riversedge.webp"
+import REpng from "../assets/images/riversedge.png"
+import AISumwebp from "../assets/images/aisum.webp"
+import AISumpng from "../assets/images/aisum.png"
+import WWAwebp from "../assets/images/wwa.webp"
+import WWApng from "../assets/images/wwa.png"
 
 export const plantHaus = {
   id: 1,
@@ -16,10 +19,10 @@ export const plantHaus = {
   deg: 0,
   scale: "X(-1)",
   desc: "Full Stack E-commerce Plant Shop",
-  blob: Blob1,
+  webp: PHwebp,
   img: {
-    src: PHcover,
-    alt: "Plant Haus Preview",
+    src: PHpng,
+    alt: "Plant Haus site preview",
   },
   info: "A dynamic e-commerce platform specializing in indoor plants, offering secure and user-friendly shopping. This app combines OAuth authentication with React, ensuring a seamless experience for plant lovers to explore and purchase.",
   btn: "View Live",
@@ -32,12 +35,12 @@ export const walkAngels = {
   deg: 180,
   scale: "X(-1)",
   desc: "Volunteer Work",
-  blob: Blob2,
+  webp: WWAwebp,
   img: {
-    src: WWA,
-    alt: "WWA Preview",
+    src: WWApng,
+    alt: "Walk with Angels site preview",
   },
-  info: "The United Angels Foundation's Walk With Angels 2024 is the primary fundraiser supporting over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered services to develop and optimize the website, ensuring it is fully functional and responsive for all users.",
+  info: "The United Angels Foundation's Walk With Angels 2024 fundraiser supported over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered to develop and optimize the website, ensuring it's functionality and responsiveness.",
   btn: "View Live",
   aLink: "https://walk.unitedangels.org/",
 }
@@ -48,9 +51,9 @@ export const aiSumz = {
   deg: 180,
   scale: "X(-1)",
   desc: "AI Powered Article Summarizer",
-  blob: Blob3,
+  webp: AISumwebp,
   img: {
-    src: AISum,
+    src: AISumpng,
     alt: "AI Sum Preview",
   },
   info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
@@ -63,9 +66,9 @@ export const riversEdge = {
   deg: 0,
   scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
-  blob: Blob1,
+  webp: REwebp,
   img: {
-    src: RiversEdge,
+    src: REpng,
     alt: "River's Edge Preview",
   },
   info: "A sleek website built using React, Redux, React DOM, and Vite showcases a curated selection of dishes and drinks. Dive into a seamless interactive experience that elevates the journey through the gourmet menu.",
@@ -79,13 +82,14 @@ export const interviewIQ = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
-  blob: Blob1,
+  webp: IIQwebp,
   img: {
-    src: IIQcover,
+    src: IIQpng,
     alt: "InterviewIQ Preview",
   },
   info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login. Users have ability to create, save and edit their own cards as well as accessing the basic cards.",
   btn: "Coming Soon",
+  aLink: "",
 }
 
 export const dangoDB = {
@@ -94,9 +98,9 @@ export const dangoDB = {
   deg: 180,
   scale: "Y(-1)",
   desc: "Deno Object Document Mapper (ODM)",
-  blob: Blob4,
+  webp: dangoDBwebp,
   img: {
-    src: dangoDBP,
+    src: dangoDBpng,
     alt: "Dango Preview",
   },
   info: "A light-weight Object Document Mapping (ODM) library built around Deno providing the core functionality and familiar look and feel of established Node-based libraries.",
@@ -110,9 +114,9 @@ export const ad3lie = {
   deg: 0,
   scale: "Y(1)",
   desc: "D3.js Data Visualizations",
-  blob: Blob1,
+  webp: Ad3liewebp,
   img: {
-    src: Ad3lie,
+    src: Ad3liepng,
     alt: "Ad3lie Github",
   },
   info: "An open-source application for crafting stunning and responsive data visualizations using React and D3. Tailor-made charts to amplify your data storytelling.",

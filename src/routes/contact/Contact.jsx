@@ -1,5 +1,5 @@
 import ContactForm from "../../components/contact-form/ContactForm"
-import ContactBlob from "../../assets/images/contact-blob.webp"
+import ContactBlob from "../../assets/images/contact-blob.svg"
 
 import "./contact.scss"
 
@@ -21,7 +21,11 @@ const Contact = () => {
         </div>
         <div className="contact-us-form-container">
           <div className="contact-us-blob">
-            <img src={ContactBlob} alt="gradient blurred shape" />
+            <img
+              src={ContactBlob}
+              alt="gradient blurred shape"
+              loading="lazy"
+            />
           </div>
           <ContactForm />
         </div>

@@ -1,64 +1,66 @@
 .product-card-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 685 / 514;
-  border-radius: 25px;
-  margin: 10px 0;
+  max-width: 700px;
+  aspect-ratio: 800 / 540;
+  border-radius: 10px;
+  padding: 5px;
   transition: all 0.5s ease-in-out;
-  box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid #fff;
   z-index: 1;
-  overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .product-card-bkrnd {
   position: absolute;
-  top: -30px;
-  left: -40px;
-  width: 120%;
-  height: 120%;
-  opacity: 0.9;
-  filter: blur(120px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  filter: blur(40px);
   z-index: -1;
 
-  .product-clr-bkrnd {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+  img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .glass-container {
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 92%;
-  height: 98%;
-  background: rgba(255, 255, 255, 0.532);
-  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 10px);
+  padding: 3px;
+  background: rgba(224, 234, 255, 0.25);
+  box-shadow: 0 2px 32px 0 rgba(45, 51, 139, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
   z-index: 2;
+}
 
-  .image-container {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 92%;
-    height: 92%;
-    z-index: 3;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
 
-    img {
-      border-radius: 10px 10px 0 0;
-      width: 100%;
-      height: 100%;
-    }
+  img {
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -67,13 +69,25 @@
 /* Medium (≥768px) */
 @media (min-width: 768px) {
   .product-card-container {
-    max-width: 400px;
+    width: 400px;
+    max-width: 600px;
+    bottom: 10px;
+  }
+}
+@media (min-width: 820px) {
+  .product-card-container {
+    padding: 8px;
+    .glass-container {
+      padding: 5px;
+    }
   }
 }
 
 /* Extra large (≥1200px) */
 @media (min-width: 1200px) {
   .product-card-container {
-    max-width: 500px;
+    width: 500px;
+    max-width: 600px;
+    bottom: 10px;
   }
 }

@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   padding-top: 20px;
 
   .products-header {
@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     max-width: 900px;
+    margin-bottom: 30px;
   }
 }
 
@@ -20,16 +21,19 @@
 .product-row-rev {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin: 15px 0;
+  height: auto;
+  margin: 15px 0 40px;
+
   .product-container {
     display: flex;
     align-items: center;
     order: 0;
+    margin-bottom: 20px;
   }
   .product-desc-container {
     order: 1;
-    margin-top: 15px;
   }
 }
 
@@ -45,16 +49,7 @@
   }
 }
 
-.prod-blob1,
-.prod-blob2,
-.prod-blob3,
-.prod-blob4,
-.prod-blob5,
-.prod-blob6,
-.prod-blob7 {
-  display: none;
-  opacity: 0.4;
-}
+/* Larger than desktop */
 
 /* Larger than desktop */
 @media (min-width: 768px) {
@@ -62,115 +57,40 @@
   .product-row-rev {
     flex-direction: row;
     align-items: center;
+    height: auto;
 
     .product-container {
       order: unset;
       width: 50%;
+      margin: 0;
     }
     .product-desc-container {
       order: unset;
-      width: 50%;
+      width: 100%;
     }
   }
 
   .product-row {
     .product-desc-container {
-      padding-left: 40px;
+      padding-left: 25px;
     }
   }
   .product-row-rev {
     .product-desc-container {
-      padding-right: 40px;
+      padding-right: 25px;
     }
   }
 }
 
-@media (min-width: 860px) {
-  .row1 {
-    position: relative;
-
-    .prod-blob1 {
-      display: block;
-      position: absolute;
-      top: 200px;
-      right: -200px;
-      z-index: -1;
-      filter: blur(80px);
-
-      img {
-        height: 200px;
-        width: auto;
-      }
-    }
-
-    .prod-blob3 {
-      display: block;
-      position: absolute;
-      top: 250px;
-      right: -300px;
-      z-index: -1;
-      filter: blur(80px);
-
-      img {
-        height: 200px;
-        width: auto;
-      }
-    }
-
-    .prod-blob5 {
-      display: block;
-      position: absolute;
-      top: 250px;
-      right: -250px;
-      z-index: -1;
-      filter: blur(80px);
-      img {
-        height: 200px;
-        width: auto;
-      }
+@media (min-width: 820px) {
+  .product-row {
+    .product-desc-container {
+      padding-left: 30px;
     }
   }
-
-  .row2 {
-    position: relative;
-
-    .prod-blob2 {
-      display: block;
-      position: absolute;
-      top: 100px;
-      left: -350px;
-      filter: blur(90px);
-      z-index: -1;
-      img {
-        height: 350px;
-        width: auto;
-      }
-    }
-
-    .prod-blob4 {
-      display: block;
-      position: absolute;
-      top: 350px;
-      right: -150px;
-      z-index: -1;
-      filter: blur(80px);
-      img {
-        height: 200px;
-        width: auto;
-      }
-    }
-
-    .prod-blob6 {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: -375px;
-      filter: blur(90px);
-      z-index: -1;
-      img {
-        height: 350px;
-        width: auto;
-      }
+  .product-row-rev {
+    .product-desc-container {
+      padding-right: 30px;
     }
   }
 }
@@ -179,7 +99,8 @@
 @media (min-width: 992px) {
   .product-row,
   .product-row-rev {
-    margin-top: 40px;
+    margin-top: 20px;
+    height: 300px;
 
     .product-container {
       width: 45%;
@@ -189,186 +110,41 @@
       width: 55%;
     }
   }
+}
 
-  .row1 {
-    .prod-blob1 {
-      top: 150px;
-      right: -350px;
-      filter: blur(90px);
-
-      img {
-        height: 300px;
-      }
+@media (min-width: 1024px) {
+  .product-row {
+    .product-desc-container {
+      padding-left: 30px;
     }
-    .prod-blob3 {
-      top: 150px;
-      right: -375px;
-      filter: blur(100px);
-
-      img {
-        height: 250px;
-      }
+  }
+  .product-row-rev {
+    .product-desc-container {
+      padding-right: 30px;
     }
   }
 
-  .row2 {
-    .prod-blob2 {
-      top: 200px;
-      left: -300px;
-      filter: blur(80px);
-
-      img {
-        height: 350px;
-      }
+  .product-row,
+  .product-row-rev {
+    .product-container {
+      width: 50%;
+      height: 100%;
     }
 
-    .prod-blob4 {
-      top: 350px;
-      right: -350px;
-      filter: blur(90px);
-
-      img {
-        height: 350px;
-      }
-    }
-
-    .prod-blob6 {
-      top: 75px;
-      left: -350px;
-      filter: blur(90px);
-
-      img {
-        height: 300px;
-        width: auto;
-      }
+    .product-desc-container {
+      width: 60%;
     }
   }
 }
-
 @media (min-width: 1200px) {
-  .row1 {
-    .prod-blob1 {
-      top: 200px;
-      right: -450px;
-      filter: blur(90px);
-
-      img {
-        height: 400px;
-      }
-    }
-    .prod-blob5 {
-      top: 150px;
-      right: -250px;
+  .product-row {
+    .product-desc-container {
+      padding-left: 40px;
     }
   }
-
-  .row2 {
-    .prod-blob2 {
-      top: 200px;
-      left: -300px;
-      filter: blur(90px);
-
-      img {
-        height: 350px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1600px) {
-  .row1 {
-    .prod-blob1 {
-      top: 0;
-      right: -350px;
-
-      img {
-        height: auto;
-        width: 350px;
-      }
-    }
-    .prod-blob3 {
-      right: -350px;
-      filter: blur(80px);
-    }
-
-    .prod-blob5 {
-      top: 200px;
-      right: -300px;
-    }
-  }
-
-  .row2 {
-    .prod-blob2 {
-      top: 150px;
-      left: -500px;
-      filter: blur(90px);
-
-      img {
-        height: 450px;
-      }
-    }
-    .prod-blob4 {
-      top: 350px;
-      right: -400px;
-      filter: blur(90px);
-    }
-    .prod-blob6 {
-      left: -300px;
-
-      img {
-        height: 250px;
-        width: auto;
-      }
-    }
-  }
-}
-
-@media (min-width: 1800px) {
-  .row1 {
-    .prod-blob1 {
-      top: 0;
-      right: -450px;
-
-      img {
-        height: auto;
-        width: 350px;
-      }
-    }
-    .prod-blob3 {
-      right: -400px;
-      filter: blur(90px);
-    }
-
-    .prod-blob5 {
-      top: 250px;
-      right: -350px;
-      filter: blur(90px);
-    }
-  }
-
-  .row2 {
-    .prod-blob2 {
-      top: 150px;
-      left: -600px;
-      filter: blur(90px);
-
-      img {
-        height: 450px;
-      }
-    }
-
-    .prod-blob4 {
-      top: 350px;
-      right: -500px;
-      filter: blur(100px);
-    }
-    .prod-blob6 {
-      left: -400px;
-
-      img {
-        height: 250px;
-        width: auto;
-      }
+  .product-row-rev {
+    .product-desc-container {
+      padding-right: 40px;
     }
   }
 }
