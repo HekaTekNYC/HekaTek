@@ -1,0 +1,69 @@
+.banner-container {
+  background-color: #f4f7ff;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+
+  .ellipse {
+    background-color: #444d82;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+
+  .banner-text {
+    font-family: "Tanker";
+    // fonst-weight: 400;
+    margin-top: 10px 0;
+    font-size: 1.75rem;
+    line-height: 1;
+    text-align: center;
+    margin: 0 5px;
+    color: #444d82;
+  }
+  .banner-2,
+  .banner-3,
+  .banner-4,
+  .ellipse-3,
+  .ellipse-4,
+  .ellipse-5,
+  .ellipse-6 {
+    display: none;
+  }
+}
+
+/* Media queries */
+
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .banner-container {
+    .banner-2,
+    .ellipse-3 {
+      display: block;
+    }
+  }
+}
+
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+  .banner-container {
+    .banner-3,
+    .ellipse-4 {
+      display: block;
+    }
+  }
+}
+
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .banner-container {
+    .banner-4,
+    .ellipse-5,
+    .ellipse-6 {
+      display: block;
+    }
+  }
+}
