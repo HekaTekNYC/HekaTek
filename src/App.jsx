@@ -11,8 +11,6 @@ import Footer from "./components/footer/Footer"
 import {updateNavigationHistory} from "./components/history/historyTracker"
 import "./index.scss"
 
-console.log("updateNavigationHistory:", updateNavigationHistory)
-
 const App = () => {
   const [history, setHistory] = useState([])
   const homeRef = useRef(null)
