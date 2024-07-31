@@ -6,7 +6,7 @@ import ProductInfo from "../../components/product-info/ProductInfo"
 import {
   plantHaus,
   walkAngels,
-  aiSumz,
+  weFund,
   riversEdge,
   interviewIQ,
   dangoDB,
@@ -19,7 +19,7 @@ const Products = () => {
   const productList = [
     plantHaus,
     walkAngels,
-    aiSumz,
+    weFund,
     riversEdge,
     interviewIQ,
     dangoDB,
@@ -31,9 +31,9 @@ const Products = () => {
       <div className="products-header">
         <h2>OUR WORK</h2>
       </div>
-      {productList.map(product => (
+      {productList.map((product, index) => (
         <div
-          key={product.id}
+          key={index}
           className={
             product.id % 2 !== 0 ? "product-row row1" : "product-row-rev row2"
           }
