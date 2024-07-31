@@ -10,7 +10,7 @@ import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
 import AISumwebp from "../assets/images/aisum.webp"
 import AISumpng from "../assets/images/aisum.png"
-import WWAwebp from "../assets/images/wwa.webp"
+import WWAwebp from "../assets/images/WWA.webp"
 import WWApng from "../assets/images/wwa.png"
 
 export const plantHaus = {
