@@ -8,8 +8,8 @@ import PHwebp from "../assets/images/ph.webp"
 import PHpng from "../assets/images/ph.png"
 import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
-import AISumwebp from "../assets/images/aisum.webp"
-import AISumpng from "../assets/images/aisum.png"
+import WeFundWebp from "../assets/images/WeFund.webp"
+import WeFundpng from "../assets/images/WeFund.png"
 import WWAwebp from "../assets/images/WWA.webp"
 import WWApng from "../assets/images/wwa.png"
 
@@ -45,21 +45,22 @@ export const walkAngels = {
   aLink: "https://walk.unitedangels.org/",
 }
 
-export const aiSumz = {
-  id: 3,
-  name: "AI Summarizer",
-  deg: 180,
+export const weFund = {
+  id: 1,
+  name: "WeFund",
+  deg: 0,
   scale: "X(-1)",
-  desc: "AI Powered Article Summarizer",
-  webp: AISumwebp,
+  desc: "",
+  webp: WeFundWebp,
   img: {
-    src: AISumpng,
-    alt: "AI Sum Preview",
+    src: WeFundpng,
+    alt: "WeFund site preview",
   },
-  info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
+  info: "WeFund is a crowdfunding platform designed to connect innovative developers with passionate investors. By offering targeted updates and support throughout the funding process, WeFund ensures that projects not only get funded but also succeed in reaching their goals.",
   btn: "View Live",
-  aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
+  aLink: "https://wefund-crowdfunding.netlify.app/",
 }
+
 export const riversEdge = {
   id: 4,
   name: "Rivers Edge",
