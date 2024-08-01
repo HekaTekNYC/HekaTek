@@ -6,12 +6,16 @@ import IIQwebp from "../assets/images/InterviewIQ.webp"
 import IIQpng from "../assets/images/InterviewIQ.png"
 import PHwebp from "../assets/images/ph.webp"
 import PHpng from "../assets/images/ph.png"
+import AISumwebp from "../assets/images/aisum.png"
+import AISumpng from "../assets/images/aisum.png"
 import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
 import WeFundWebp from "../assets/images/WeFund.webp"
 import WeFundpng from "../assets/images/WeFund.png"
 import WWAwebp from "../assets/images/WWA.webp"
 import WWApng from "../assets/images/wwa.png"
+import CLWebp from "../assets/images/CL2.webp"
+import CLPng from "../assets/images/CL2.png"
 
 export const plantHaus = {
   id: 1,
@@ -29,26 +33,10 @@ export const plantHaus = {
   aLink: "https://planthaus.netlify.app/",
 }
 
-export const walkAngels = {
-  id: 2,
-  name: "Walk with Angels",
-  deg: 180,
-  scale: "X(-1)",
-  desc: "Volunteer Work",
-  webp: WWAwebp,
-  img: {
-    src: WWApng,
-    alt: "Walk with Angels site preview",
-  },
-  info: "The United Angels Foundation's Walk With Angels 2024 fundraiser supported over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered to develop and optimize the website, ensuring it's functionality and responsiveness.",
-  btn: "View Live",
-  aLink: "https://walk.unitedangels.org/",
-}
-
 export const weFund = {
-  id: 1,
+  id: 2,
   name: "WeFund",
-  deg: 0,
+  deg: 180,
   scale: "X(-1)",
   desc: "",
   webp: WeFundWebp,
@@ -60,9 +48,55 @@ export const weFund = {
   btn: "View Live",
   aLink: "https://wefund-crowdfunding.netlify.app/",
 }
+export const creativeLoft = {
+  id: 3,
+  name: "Creative Loft",
+  deg: 1800,
+  scale: "X(-1)",
+  desc: "",
+  webp: CLWebp,
+  img: {
+    src: CLPng,
+    alt: "WeFund site preview",
+  },
+  info: "Built using the progressive Astro.js framework, the Creative Lofts website serves as a digital showcase for a modern coworking space designed to inspire and facilitate creativity and collaboration among professionals. The site highlights various workspace solutions tailored to freelancers, startups, and enterprises, integrating seamless navigation and a dynamic user interface to enhance user engagement.",
+  btn: "View Live",
+  aLink: "https://creativeloft.netlify.app/",
+}
+
+export const walkAngels = {
+  id: 4,
+  name: "Walk with Angels",
+  deg: 0,
+  scale: "X(-1)",
+  desc: "Volunteer Work",
+  webp: WWAwebp,
+  img: {
+    src: WWApng,
+    alt: "Walk with Angels site preview",
+  },
+  info: "The United Angels Foundation's Walk With Angels 2024 fundraiser supported over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered to develop and optimize the website, ensuring it's functionality and responsiveness.",
+  btn: "View Live",
+  aLink: "https://walk.unitedangels.org/",
+}
+export const aiSumz = {
+  id: 5,
+  name: "AI Summarizer",
+  deg: 180,
+  scale: "X(-1)",
+  desc: "AI Powered Article Summarizer",
+  webp: AISumwebp,
+  img: {
+    src: AISumpng,
+    alt: "AI Sum Preview",
+  },
+  info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
+  btn: "View Live",
+  aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
+}
 
 export const riversEdge = {
-  id: 4,
+  id: 5,
   name: "Rivers Edge",
   deg: 0,
   scale: "X(1)",
@@ -78,7 +112,7 @@ export const riversEdge = {
 }
 
 export const interviewIQ = {
-  id: 5,
+  id: 6,
   name: "InteviewIQ",
   deg: 180,
   scale: "Y(-1)",
@@ -94,7 +128,7 @@ export const interviewIQ = {
 }
 
 export const dangoDB = {
-  id: 6,
+  id: 7,
   name: "dangoDb",
   deg: 180,
   scale: "Y(-1)",
@@ -110,7 +144,7 @@ export const dangoDB = {
 }
 
 export const ad3lie = {
-  id: 7,
+  id: 8,
   name: "Ad3lie",
   deg: 0,
   scale: "Y(1)",
