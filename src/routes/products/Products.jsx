@@ -7,6 +7,7 @@ import {
   plantHaus,
   walkAngels,
   weFund,
+  creativeLoft,
   riversEdge,
   interviewIQ,
   dangoDB,
@@ -18,8 +19,9 @@ import "./products.scss"
 const Products = () => {
   const productList = [
     plantHaus,
-    walkAngels,
     weFund,
+    creativeLoft,
+    walkAngels,
     riversEdge,
     interviewIQ,
     dangoDB,

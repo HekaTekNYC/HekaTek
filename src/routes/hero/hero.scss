@@ -82,7 +82,6 @@
     width: 95%;
     height: auto;
     z-index: 1;
-    // background-color: pink;
 
     .hero-video-container {
       transform: scaleX(-1) rotate(30deg);
@@ -127,10 +126,9 @@
   }
 
   .hero-under {
-    top: 350px;
+    top: 100px;
     right: -300px;
     width: 100%;
-    // background-color: pink;
     .hero-video-container {
       transform: scaleX(-1) rotate(20deg);
     }
@@ -200,8 +198,8 @@
     }
   }
   .hero-under {
-    top: 200px;
-    right: -450px;
+    top: 100px;
+    right: -550px;
 
     .hero-video-container {
       transform: scaleX(-1) rotate(20deg);
