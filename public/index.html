@@ -11,10 +11,6 @@
     <meta http-equiv="Cache-Control" content="public" />
 
     <!-- DNS Prefetch and Preconnect -->
-    <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
 
     <link rel="canonical" href="https://www.hekateknyc.com/" />
     <title>HekaTek Web and Software Development</title>
@@ -23,34 +19,27 @@
     <div id="root"></div>
 
     <!-- External Scripts -->
-    <link
-      rel="preload"
-      href="https://assets.calendly.com/assets/external/widget.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://assets.calendly.com/assets/external/widget.css"
-    /></noscript>
-
-    <!-- Include EmailJS script -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+    ></script>
+
+    <!-- Place this inside your public/index.html head tag -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
       async
     ></script>
 
     <script>
-      window.addEventListener("load", function () {
-        emailjs.init("3M9sCaTmKUO1g2SRA")
-      })
-    </script>
-    <!-- <script>
       ;(function () {
         emailjs.init("3M9sCaTmKUO1g2SRA")
       })()
-    </script> -->
+    </script>
 
     <!-- <script src="bundle.js" ></script> -->
   </body>

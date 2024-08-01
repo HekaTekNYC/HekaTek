@@ -29,9 +29,13 @@ const Hero = () => {
   }
 
   const openCalendlyPopup = () => {
+    console.log("openCalendlyPopup function called")
     Calendly.initPopupWidget({
       url: "https://calendly.com/hekatek-hekateknyc/30min",
     })
+    console.log(
+      "Calendly widget initialized with URL: https://calendly.com/hekatek-hekateknyc/30min"
+    )
     return false
   }
 
