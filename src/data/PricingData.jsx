@@ -48,7 +48,7 @@ export const lumpSum = {
   cost: "$2000",
   subCost: "",
   desc: "one time fee",
-  fee: "$350",
+  fee: "$25",
   subFee: "/ monthly hosting fee",
   checkList: [
     {
