@@ -71,7 +71,7 @@ const About = () => {
               expertise needed to succeed in the digital world.
             </p>
             <Button
-              text={"Schedule A Meeting"}
+              text={"Schedule a Meeting"}
               onClick={openCalendlyPopup}
               btnType={"solid"}
               width={"short"}

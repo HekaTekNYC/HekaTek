@@ -105,7 +105,7 @@ const WhyUs = () => {
           </div>
 
           <Button
-            text={"Schedule A Meeting"}
+            text={"Schedule a Meeting"}
             onClick={openCalendlyPopup}
             btnType={"solid"}
             width={"short"}

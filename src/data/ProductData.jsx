@@ -6,8 +6,8 @@ import IIQwebp from "../assets/images/InterviewIQ.webp"
 import IIQpng from "../assets/images/InterviewIQ.png"
 import PHwebp from "../assets/images/ph.webp"
 import PHpng from "../assets/images/ph.png"
-import AISumwebp from "../assets/images/aisum.png"
-import AISumpng from "../assets/images/aisum.png"
+// import AISumwebp from "../assets/images/aisum.png"
+// import AISumpng from "../assets/images/aisum.png"
 import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
 import WeFundWebp from "../assets/images/WeFund.webp"
@@ -57,9 +57,9 @@ export const creativeLoft = {
   webp: CLWebp,
   img: {
     src: CLPng,
-    alt: "WeFund site preview",
+    alt: "Creative Loft site preview",
   },
-  info: "Built using the progressive Astro.js framework, the Creative Lofts website serves as a digital showcase for a modern coworking space designed to inspire and facilitate creativity and collaboration among professionals. The site highlights various workspace solutions tailored to freelancers, startups, and enterprises, integrating seamless navigation and a dynamic user interface to enhance user engagement.",
+  info: "Built using the progressive Astro.js framework, the Creative Loft website serves as a digital showcase for a modern coworking space designed to inspire and facilitate creativity and collaboration among professionals. The site highlights various workspace solutions tailored to freelancers, startups, and enterprises, integrating seamless navigation and a dynamic user interface to enhance user engagement.",
   btn: "View Live",
   aLink: "https://creativeloft.netlify.app/",
 }
@@ -79,25 +79,25 @@ export const walkAngels = {
   btn: "View Live",
   aLink: "https://walk.unitedangels.org/",
 }
-export const aiSumz = {
-  id: 5,
-  name: "AI Summarizer",
-  deg: 180,
-  scale: "X(-1)",
-  desc: "AI Powered Article Summarizer",
-  webp: AISumwebp,
-  img: {
-    src: AISumpng,
-    alt: "AI Sum Preview",
-  },
-  info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
-  btn: "View Live",
-  aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
-}
+// export const aiSumz = {
+//   id: 5,
+//   name: "AI Summarizer",
+//   deg: 180,
+//   scale: "X(-1)",
+//   desc: "AI Powered Article Summarizer",
+//   webp: AISumwebp,
+//   img: {
+//     src: AISumpng,
+//     alt: "AI Sum Preview",
+//   },
+//   info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
+//   btn: "View Live",
+//   aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
+// }
 
 export const riversEdge = {
   id: 5,
-  name: "Rivers Edge",
+  name: "River's Edge",
   deg: 0,
   scale: "X(1)",
   desc: "A React-Powered Gourmet Restaurant Site",
@@ -113,7 +113,7 @@ export const riversEdge = {
 
 export const interviewIQ = {
   id: 6,
-  name: "InteviewIQ",
+  name: "InterviewIQ",
   deg: 180,
   scale: "Y(-1)",
   desc: "Full Stack Flashcard Application",
@@ -122,7 +122,7 @@ export const interviewIQ = {
     src: IIQpng,
     alt: "InterviewIQ Preview",
   },
-  info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login. Users have ability to create, save and edit their own cards as well as accessing the basic cards.",
+  info: "An application based on acing coding interview questions. Created utilizing MongoDb backend with React frontend and an OAuth login. Users have the ability to create, save and edit their own cards as well as accessing the basic cards.",
   btn: "Coming Soon",
   aLink: "",
 }

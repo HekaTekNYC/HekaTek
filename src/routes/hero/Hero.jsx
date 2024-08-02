@@ -29,13 +29,9 @@ const Hero = () => {
   }
 
   const openCalendlyPopup = () => {
-    console.log("openCalendlyPopup function called")
     Calendly.initPopupWidget({
       url: "https://calendly.com/hekatek-hekateknyc/30min",
     })
-    console.log(
-      "Calendly widget initialized with URL: https://calendly.com/hekatek-hekateknyc/30min"
-    )
     return false
   }
 
@@ -61,7 +57,7 @@ const Hero = () => {
               custom-coded website, tailored exclusively for your business.
             </p>
             <Button
-              text={"Schedule A Meeting"}
+              text={"Schedule a Meeting"}
               onClick={openCalendlyPopup}
               btnType={"solid"}
               width={"short"}
