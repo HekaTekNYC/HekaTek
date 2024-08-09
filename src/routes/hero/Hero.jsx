@@ -68,7 +68,7 @@ const Hero = () => {
               <Suspense fallback={<div>Loading...</div>}>
                 <VideoComponent
                   src={
-                    "https://res.cloudinary.com/daecnx7ih/video/upload/v1721843387/AdobeStock_602341088_pmbaiv.mp4"
+                    "https://ik.imagekit.io/snjtzh7cg/Hekatek/abstract-hero-og.mp4?updatedAt=1723124823587"
                   }
                   alt={"abstract purple design"}
                   width="1920"
