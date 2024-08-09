@@ -10,6 +10,8 @@
 
 .contact-us-form-container {
   position: relative;
+  width: 100%;
+  height: 100%;
 
   .contact-us-blob {
     position: absolute;
@@ -19,7 +21,6 @@
     height: auto;
     opacity: 1;
     filter: blur(130px);
-    overflow: hidden;
     z-index: -1;
   }
 }
