@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
   padding: 0 35px;
   overflow: hidden;
   z-index: 3;
@@ -74,12 +75,17 @@
 }
 
 @media (min-width: 820px) {
+  .hero-top {
+    .hero-subheader {
+      width: 62%;
+    }
+  }
   .hero-under {
     display: block;
     position: absolute;
-    top: 300px;
+    top: 255px;
     right: -300px;
-    width: 95%;
+    width: 90%;
     height: auto;
     z-index: 1;
 
@@ -127,10 +133,10 @@
 
   .hero-under {
     top: 100px;
-    right: -300px;
+    right: -350px;
     width: 100%;
     .hero-video-container {
-      transform: scaleX(-1) rotate(20deg);
+      transform: scaleX(-1) rotate(25deg);
     }
   }
 }
@@ -176,9 +182,9 @@
     }
   }
   .hero-under {
-    top: 150px;
-    right: -375px;
-    width: 100%;
+    top: 170px;
+    right: -400px;
+    width: 90%;
     height: auto;
 
     .hero-video-container {
