@@ -65,10 +65,10 @@ const About = () => {
             </h4>
             <p className="about-p">
               With six years of experience, HekaTek is passionate about helping
-              small businesses thrive online. As a community-driven, women-owned
+              small businesses thrive online. As a community-driven, woman-owned
               business, HekaTek is dedicated to empowering fellow small business
               owners with the tools, expertise, and support they need to succeed
-              in the digital world. Let us help you build a strong online
+              in the digital world. Let HekaTek help you build a strong online
               presence and take your business to the next level!
             </p>
             <Button
