@@ -64,11 +64,12 @@ const About = () => {
               Empowering Small Businesses Through Expert Web Development
             </h4>
             <p className="about-p">
-              With ten years of collective experience, we founded our company to
-              focus on helping small businesses like ours thrive online. As a
-              community-driven, women-owned business, we take pride in
-              supporting fellow small business owners, providing the tools and
-              expertise needed to succeed in the digital world.
+              With six years of experience, HekaTek is passionate about helping
+              small businesses thrive online. As a community-driven, women-owned
+              business, HekaTek is dedicated to empowering fellow small business
+              owners with the tools, expertise, and support they need to succeed
+              in the digital world. Let us help you build a strong online
+              presence and take your business to the next level!
             </p>
             <Button
               text={"Schedule a Meeting"}
