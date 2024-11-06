@@ -7,7 +7,7 @@ import About from "./routes/about/About"
 import Services from "./routes/services/Services"
 import Products from "./routes/products/Products"
 import WhyUs from "./routes/why-us/WhyUs"
-import PricingPlans from "./routes/pricing-plans/PricingPlans"
+import PricingPage from "./routes/pricing/PricingPage"
 import ContactPage from "./routes/contact/ContactPage"
 import Footer from "./components/footer/Footer"
 import "./index.scss"
@@ -59,7 +59,7 @@ const App = () => {
               />
             }
           />
-          <Route path="/pricing" element={<PricingPlans />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
