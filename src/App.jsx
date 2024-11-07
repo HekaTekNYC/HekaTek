@@ -1,12 +1,12 @@
 import React, {useState, useRef} from "react"
-import ReactDOM from "react-dom"
+// import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navigation from "./components/navigation/Navigation"
-import Home from "./routes/home/Home"
-import About from "./routes/about/About"
-import Services from "./routes/services/Services"
-import Products from "./routes/products/Products"
-import WhyUs from "./routes/why-us/WhyUs"
+import HomePage from "./routes/home/HomePage"
+import AboutSection from "./sections/about-section/AboutSection"
+import ServicesSection from "./sections/services-section/ServicesSection"
+import ProductsSection from "./sections/products-section/ProductsSection"
+import WhyUsSection from "./sections/why-us-section/WhyUsSection"
 import PricingPage from "./routes/pricing/PricingPage"
 import ContactPage from "./routes/contact/ContactPage"
 import Footer from "./components/footer/Footer"
@@ -37,28 +37,13 @@ const App = () => {
 
   return (
     <Router>
-      <Navigation
-        onNavigate={handleNavigation}
-        refs={{
-          aboutRef,
-          servicesRef,
-          productsRef,
-        }}
-      />
+      <Navigation onNavigate={handleNavigation} />
       <main>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                refs={{
-                  aboutRef,
-                  servicesRef,
-                  productsRef,
-                }}
-              />
-            }
-          />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutSection />} />
+          <Route path="/services" element={<ServicesSection />} />
+          <Route path="/our-work" element={<ProductsSection />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

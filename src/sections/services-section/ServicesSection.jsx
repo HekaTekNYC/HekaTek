@@ -2,9 +2,9 @@ import React from "react"
 
 import {servicesData} from "../../data/ServicesData"
 import ServiceBg from "../../assets/images/services-bg.svg"
-import "./services.scss"
+import "./services-section.scss"
 
-const Services = () => {
+const ServicesSection = () => {
   return (
     <div className="services-container">
       <div className="services-background">
@@ -47,4 +47,4 @@ const Services = () => {
   )
 }
 // when Celeste comes back from lunch ask her why the css is ignoring the 1200 media query and listening to the 768px query
-export default Services
+export default ServicesSection

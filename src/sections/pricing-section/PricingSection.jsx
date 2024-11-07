@@ -1,9 +1,9 @@
 import BackgroundShape from "../../assets/images/pricing-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
-import "./pricing-plans.scss"
+import "./pricing-section.scss"
 
-const PricingPlans = () => {
+const PricingSection = () => {
   const pricingCards = [subscription, lumpSum, ecomm]
 
   return (
@@ -36,4 +36,4 @@ const PricingPlans = () => {
   )
 }
 
-export default PricingPlans
+export default PricingSection

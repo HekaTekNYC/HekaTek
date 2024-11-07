@@ -14,9 +14,9 @@ import {
   ad3lie,
 } from "../../data/ProductData"
 
-import "./products.scss"
+import "./products-section.scss"
 
-const Products = () => {
+const ProductsSection = () => {
   const productList = [
     plantHaus,
     weFund,
@@ -65,4 +65,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default ProductsSection
