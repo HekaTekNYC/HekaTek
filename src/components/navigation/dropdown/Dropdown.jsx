@@ -1,8 +1,9 @@
 import React, {useContext} from "react"
+import {Link} from "react-router-dom" // Import Link
 import {NavbarContext} from "../../../contexts/Navbar.context"
 import "./dropdown.scss"
 
-const Dropdown = ({onNavigate, refs}) => {
+const Dropdown = ({refs}) => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -11,51 +12,24 @@ const Dropdown = ({onNavigate, refs}) => {
 
   return (
     <div className={`dropdown-container ${isMobileNavOpen ? "active" : ""}`}>
-      <div
-        onClick={() => {
-          onNavigate(refs.aboutRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
-      >
+      <Link to="/" onClick={closeMobileNav} className="nav-link">
+        Home
+      </Link>
+      <Link to="/about" onClick={closeMobileNav} className="nav-link">
         About
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.servicesRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
-      >
+      </Link>
+      <Link to="/services" onClick={closeMobileNav} className="nav-link">
         Services
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.productsRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
-      >
+      </Link>
+      <Link to="/our-work" onClick={closeMobileNav} className="nav-link">
         Our Work
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.pricingPlansRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
-      >
+      </Link>
+      <Link to="/pricing" onClick={closeMobileNav} className="nav-link">
         Pricing
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.contactRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
-      >
+      </Link>
+      <Link to="/contact" onClick={closeMobileNav} className="nav-link">
         Contact
-      </div>
+      </Link>
     </div>
   )
 }

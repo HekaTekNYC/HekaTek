@@ -43,17 +43,22 @@ const Navigation = ({refs, onNavigate}) => {
 
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/#about" className="nav-links">
+            <Link to="/" className="nav-links">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-links">
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/#services" className="nav-links">
+            <Link to="/services" className="nav-links">
               Services
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/#our-work" className="nav-links">
+            <Link to="/our-work" className="nav-links">
               Our Work
             </Link>
           </li>

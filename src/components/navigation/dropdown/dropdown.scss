@@ -6,7 +6,7 @@
   width: 100%;
   background-color: white;
   height: 90vh;
-  top: 70px;
+  top: 50px;
   left: -100%;
   opacity: 1;
   transition: left 0.5s ease;
@@ -20,7 +20,11 @@
   transition: all 0.5s ease;
   z-index: 1;
 }
-
+.navbar,
+.dropdown-container {
+  margin: 0;
+  padding: 0;
+}
 .nav-link {
   color: #444d82;
   text-decoration: none;
