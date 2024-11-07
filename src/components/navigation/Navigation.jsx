@@ -1,10 +1,12 @@
 import React, {useContext, useState, useEffect} from "react"
+import ReactDOM from "react-dom"
 import {NavbarContext} from "../../contexts/Navbar.context"
+import {Link} from "react-router-dom"
 import Burger from "./burger/Burger"
 import Dropdown from "./dropdown/Dropdown"
 import "./navigation.scss"
 
-const Navigation = ({onNavigate, refs}) => {
+const Navigation = ({refs, onNavigate}) => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -24,72 +26,56 @@ const Navigation = ({onNavigate, refs}) => {
   }, [])
 
   return (
-    <>
-      <nav
-        className={`navigation-container ${
-          hasScrolledPastHero ? "glassmorphism" : ""
-        }`}
-      >
-        <div className="nav-width">
-          <div className="navbar-item">
-            <h3 onClick={() => onNavigate(refs.homeRef)}>HEKATEK</h3>
-          </div>
-          <div className="hamburger-icon">
-            <Burger toggleMobileNav={toggleMobileNav} />
-          </div>
+    <nav
+      className={`navigation-container ${
+        hasScrolledPastHero ? "glassmorphism" : ""
+      }`}
+    >
+      <Link className="nav-width">
+        <Link className="navbar-item">
+          <Link to="/">
+            <h3>Hekatek</h3>
+          </Link>
+        </Link>
+        <Link className="hamburger-icon">
+          <Burger toggleMobileNav={toggleMobileNav} />
+        </Link>
 
-          <ul className="nav-menu">
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.aboutRef)}
-                className="nav-links"
-              >
-                About
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.servicesRef)}
-                className="nav-links"
-              >
-                Services
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.productsRef)}
-                className="nav-links"
-              >
-                Our Work
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.pricingPlansRef)}
-                className="nav-links"
-              >
-                Pricing
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.contactRef)}
-                className="nav-links"
-              >
-                Contact
-              </div>
-            </li>
-          </ul>
-          {isMobileNavOpen && (
-            <Dropdown
-              closeMobileNav={closeMobileNav}
-              refs={refs}
-              onNavigate={onNavigate}
-            />
-          )}
-        </div>
-      </nav>
-    </>
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <Link to="/" className="nav-links">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-links">
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/services" className="nav-links">
+              Services
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/our-work" className="nav-links">
+              Our Work
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/pricing" className="nav-links">
+              Pricing
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className="nav-links">
+              Contact
+            </Link>
+          </li>
+        </ul>
+        {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
+      </Link>
+    </nav>
   )
 }
 

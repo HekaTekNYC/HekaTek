@@ -120,39 +120,6 @@ ul {
   padding-left: 0;
   margin: 0;
 }
-.about-section,
-.product-section,
-.services-section,
-.contact-section,
-.pricing-section,
-.why-us-section {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  padding: 0 35px;
-}
-
-.services-section,
-.why-us-section {
-  background: #f4f7ff;
-  z-index: -2;
-  overflow: hidden;
-  h2 {
-    color: #9ea6df;
-  }
-}
-
-.about-section,
-.product-section,
-.services-section,
-.pricing-section,
-.why-us-section {
-  margin: 60px 0;
-}
-
-.contact-section {
-  margin-top: 60px;
-}
 
 /* Media queries */
 @media (min-width: 430px) {
@@ -163,14 +130,6 @@ ul {
 }
 
 @media (min-width: 576px) {
-  .about-section,
-  .product-section,
-  .services-section,
-  .pricing-section,
-  .why-us-section,
-  .contact-section {
-    padding: 0 40px;
-  }
 }
 /* Larger than tablet portrait */
 @media (min-width: 768px) {
@@ -191,14 +150,6 @@ ul {
 }
 
 @media (min-width: 992px) {
-  .about-section,
-  .product-section,
-  .services-section,
-  .pricing-section,
-  .why-us-section,
-  .contact-section {
-    padding: 0 80px;
-  }
 }
 
 /* Larger than desktop */
@@ -218,17 +169,5 @@ ul {
   h2 {
     font-size: 7.3rem;
     line-height: 6rem;
-  }
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1400px) {
-  .about-section,
-  .product-section,
-  .services-section,
-  .why-us-section,
-  .pricing-section,
-  .contact-section {
-    padding: 0 100px;
   }
 }

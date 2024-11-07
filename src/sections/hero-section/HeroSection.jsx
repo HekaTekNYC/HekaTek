@@ -2,11 +2,11 @@ import React, {useState, useEffect, lazy, Suspense} from "react"
 import Modal from "../../components/calendly-modal/Modal"
 import Button from "../../components/button/Button"
 
-import "./hero.scss"
+import "./hero-section.scss"
 
 const VideoComponent = lazy(() => import("../../components/video/Video"))
 
-const Hero = () => {
+const HeroSection = () => {
   const [isModalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
@@ -83,4 +83,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection

@@ -6,9 +6,9 @@ import TechCircle from "../../components/tech-circle/TechCircle"
 import WhyPNG from "../../assets/images/why-us-img.png"
 import WhyWebp from "../../assets/images/why-us-img.webp"
 
-import "./why-us.scss"
+import "./why-us-section.scss"
 
-const WhyUs = () => {
+const WhyUsSection = () => {
   const [isModalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
@@ -116,4 +116,4 @@ const WhyUs = () => {
   )
 }
 
-export default WhyUs
+export default WhyUsSection

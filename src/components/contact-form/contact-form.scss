@@ -135,3 +135,61 @@
     }
   }
 }
+
+@media (min-width: 576px) {
+  .banner-container {
+    .banner-2,
+    .ellipse-3 {
+      display: block;
+    }
+  }
+
+  .about-section,
+  .products-section,
+  .services-section,
+  .pricing-section,
+  .why-us-section,
+  .contact-section {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-container {
+    .banner-3,
+    .ellipse-4 {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-container {
+    .banner-4,
+    .ellipse-5,
+    .ellipse-6 {
+      display: block;
+    }
+  }
+
+  .about-section,
+  .products-section,
+  .services-section,
+  .pricing-section,
+  .why-us-section,
+  .contact-section {
+    padding: 0 80px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {
+  .about-section,
+  .products-section,
+  .services-section,
+  .why-us-section,
+  .pricing-section,
+  .contact-section {
+    padding: 0 100px;
+  }
+}
