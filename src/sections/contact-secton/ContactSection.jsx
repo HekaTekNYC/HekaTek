@@ -1,9 +1,9 @@
 import ContactForm from "../../components/contact-form/ContactForm"
 import ContactBlob from "../../assets/images/contact-blob.svg"
 
-import "./contact.scss"
+import "./contact-section.scss"
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <>
       <div className="contact-us-container">
@@ -34,4 +34,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactSection

@@ -1,13 +1,12 @@
 import React from "react"
 import Button from "../../components/button/Button"
-
 import AboutBkrd from "../../assets/images/about-bkg.svg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/device-mockup.png"
 
-import "./about.scss"
+import "./about-section.scss"
 
-const About = () => {
+const AboutSection = () => {
   const openCalendlyPopup = () => {
     if (window.Calendly) {
       console.log("Calendly script loaded, opening popup.")
@@ -84,4 +83,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutSection
