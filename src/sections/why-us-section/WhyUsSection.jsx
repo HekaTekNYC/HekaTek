@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from "react"
-
-import Modal from "../../components/calendly-modal/Modal"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import Button from "../../components/button/Button"
 import TechCircle from "../../components/tech-circle/TechCircle"
 import WhyPNG from "../../assets/images/why-us-img.png"
@@ -9,44 +7,10 @@ import WhyWebp from "../../assets/images/why-us-img.webp"
 import "./why-us-section.scss"
 
 const WhyUsSection = () => {
-  const [isModalOpen, setModalOpen] = useState(false)
-
-  useEffect(() => {
-    const checkCookies = () => {
-      document.cookie = "testcookie"
-      if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true)
-      }
-    }
-
-    checkCookies()
-  }, [])
-
-  const handleModalClose = () => {
-    setModalOpen(false)
-  }
-
-  const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc"
-  }
-
-  const openCalendlyPopup = () => {
-    if (window.Calendly) {
-      console.log("Calendly script loaded, opening popup.")
-      Calendly.initPopupWidget({url: "https://calendly.com/hekateknyc"})
-    } else {
-      console.log("Calendly script not loaded yet.")
-    }
-  }
+  const openCalendlyPopup = useCalendlyPopup()
 
   return (
     <>
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleModalClose}
-        onConfirm={handleModalConfirm}
-      />
-
       <div className="why-us-container">
         <div className="why-left">
           <div className="why-us-bkrnd">

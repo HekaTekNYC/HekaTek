@@ -3,18 +3,12 @@ import Button from "../../components/button/Button"
 import AboutBkrd from "../../assets/images/about-bkg.svg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/device-mockup.png"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./about-section.scss"
 
 const AboutSection = () => {
-  const openCalendlyPopup = () => {
-    if (window.Calendly) {
-      console.log("Calendly script loaded, opening popup.")
-      Calendly.initPopupWidget({url: "https://calendly.com/hekateknyc"})
-    } else {
-      console.log("Calendly script not loaded yet.")
-    }
-  }
+  const openCalendlyPopup = useCalendlyPopup()
 
   return (
     <>

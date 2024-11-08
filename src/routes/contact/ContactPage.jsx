@@ -3,10 +3,12 @@ import ContactBlob from "../../assets/images/contact-blob.svg"
 import EmailIcon from "../../assets/icons/mail1.svg"
 import PhoneIcon from "../../assets/icons/phone.svg"
 import PinIcon from "../../assets/icons/map-pin2.svg"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./contact-page.scss"
 
 const ContactPage = () => {
+  const openCalendlyPopup = useCalendlyPopup()
   return (
     <>
       <div className="contact-page-container">
@@ -55,7 +57,15 @@ const ContactPage = () => {
               <div className="contact-details">
                 <h3 className="contact-h3">GET STARTED TODAY</h3>
                 <p className="contact-book">
-                  Click here to book a 30 minute call with our team
+                  <a
+                    href="#"
+                    onClick={e => {
+                      e.preventDefault()
+                      openCalendlyPopup()
+                    }}
+                  >
+                    Click here to book a 30-minute call with our team
+                  </a>
                 </p>
               </div>
             </div>
