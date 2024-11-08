@@ -3,10 +3,10 @@ import React, {useState, useRef} from "react"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navigation from "./components/navigation/Navigation"
 import HomePage from "./routes/home/HomePage"
-import AboutSection from "./sections/about-section/AboutSection"
-import ServicesSection from "./sections/services-section/ServicesSection"
-import ProductsSection from "./sections/products-section/ProductsSection"
+import ServicesPage from "./routes/services/ServicesPage"
+import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
+import AboutPage from "./routes/about/AboutPage"
 import ContactPage from "./routes/contact/ContactPage"
 import Footer from "./components/footer/Footer"
 import "./index.scss"
@@ -40,9 +40,9 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/services" element={<ServicesSection />} />
-          <Route path="/our-work" element={<ProductsSection />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/our-work" element={<ProductsPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
