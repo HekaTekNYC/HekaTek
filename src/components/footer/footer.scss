@@ -19,6 +19,11 @@
   max-width: 1300px;
 }
 
+.footer-format {
+  position: relative;
+  width: 100%;
+  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+}
 .footer-blob-container {
   position: relative;
   height: 0;
