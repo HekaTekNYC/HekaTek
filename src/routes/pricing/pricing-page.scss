@@ -1,0 +1,136 @@
+.pricing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.pricing-page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 100px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 35px;
+  height: auto;
+  z-index: 1;
+}
+
+.pricing-page-background {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: auto;
+  transform: rotate(90deg) translateX(-50%);
+  transform-origin: center center;
+  opacity: 0.5;
+  filter: blur(180px);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 355px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.pricing-page-text {
+  margin: 20px 0 30px;
+}
+
+.pricing-page-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* Media Queries */
+
+/* Small screens (≥768px) */
+@media (min-width: 576px) {
+  .pricing-page-container {
+    padding: 40px 0;
+  }
+}
+@media (min-width: 768px) {
+  .pricing-page-container {
+    padding: 40px 0;
+  }
+  .pricing-page-background {
+    bottom: 300px;
+    opacity: 1;
+    filter: blur(140px);
+    transform: rotate(20deg) scaleX(-1);
+
+    img {
+      height: auto;
+      width: 700px;
+    }
+  }
+
+  .pricing-page-cards-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+}
+
+/* Medium screens (≥820px) */
+@media (min-width: 820px) {
+  .pricing-page-container {
+    .pricing-page-header {
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 910px) {
+  .pricing-page {
+    padding: 0 80px;
+  }
+  .pricing-section {
+    padding: 0 80px;
+  }
+  .services-page-cards-container {
+    .service-page-card-container {
+      height: 270px;
+      width: 270px;
+    }
+  }
+}
+
+/* Extra large screens (≥1200px) */
+@media (min-width: 1200px) {
+  .pricing-page {
+    padding: 0 100px;
+  }
+  .pricing-page-background {
+    bottom: 250px;
+    opacity: 0.9;
+    filter: blur(160px);
+    transform: rotate(10deg) scaleX(-1);
+
+    img {
+      width: 1000px;
+    }
+  }
+
+  .pricing-page-cards-container {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .pricing-page {
+    padding: 0 100px;
+  }
+}

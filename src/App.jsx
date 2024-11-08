@@ -3,11 +3,13 @@ import React, {useState, useRef} from "react"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navigation from "./components/navigation/Navigation"
 import HomePage from "./routes/home/HomePage"
-import AboutSection from "./sections/about-section/AboutSection"
-import ServicesSection from "./sections/services-section/ServicesSection"
-import ProductsSection from "./sections/products-section/ProductsSection"
+import ServicesPage from "./routes/services/ServicesPage"
+import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
+import AboutPage from "./routes/about/AboutPage"
 import ContactPage from "./routes/contact/ContactPage"
+// import FaqPage from "./components/faq/FaqSection"
+import FaqSection from "./components/faq/FaqSection"
 import Footer from "./components/footer/Footer"
 import "./index.scss"
 
@@ -33,6 +35,20 @@ const App = () => {
       })
     }
   }
+  const faqs = [
+    {
+      question: "What is your return policy?",
+      answer: "You can return products within 30 days for a full refund.",
+    },
+    {
+      question: "How long does shipping take?",
+      answer: "Shipping typically takes 5-7 business days.",
+    },
+    {
+      question: "How many of these questions do we need to come up with",
+      answer: "So fucking many!",
+    },
+  ]
 
   return (
     <Router>
@@ -40,11 +56,12 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/services" element={<ServicesSection />} />
-          <Route path="/our-work" element={<ProductsSection />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/our-work" element={<ProductsPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/faq" element={<FaqSection faqs={faqs} />} />
         </Routes>
       </main>
       <Footer />
