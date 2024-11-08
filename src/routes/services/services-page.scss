@@ -161,6 +161,9 @@
 
 /* Medium screens */
 @media (min-width: 910px) {
+  .services-page-section {
+    padding: 0 80px;
+  }
   .services-section {
     padding: 0 80px;
   }
@@ -174,6 +177,9 @@
 
 /* Large screens */
 @media (min-width: 1024px) {
+  .services-page-container {
+    padding: 0 80px;
+  }
   .services-page-background {
     bottom: 50px;
 
@@ -186,6 +192,9 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+  .services-page-container {
+    padding: 0 100px;
+  }
   .services-page-cards-container {
     justify-content: space-evenly;
     padding: 0 60px;
@@ -202,7 +211,7 @@
   }
 }
 @media (min-width: 1400px) {
-  .services-section {
+  .services-page {
     padding: 0 100px;
   }
 }

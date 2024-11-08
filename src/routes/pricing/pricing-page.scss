@@ -58,6 +58,11 @@
 /* Media Queries */
 
 /* Small screens (≥768px) */
+@media (min-width: 576px) {
+  .pricing-page-container {
+    padding: 40px 0;
+  }
+}
 @media (min-width: 768px) {
   .pricing-page-container {
     padding: 40px 0;
@@ -90,6 +95,9 @@
   }
 }
 @media (min-width: 910px) {
+  .pricing-page {
+    padding: 0 80px;
+  }
   .pricing-section {
     padding: 0 80px;
   }
@@ -103,6 +111,9 @@
 
 /* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
+  .pricing-page {
+    padding: 0 100px;
+  }
   .pricing-page-background {
     bottom: 250px;
     opacity: 0.9;
@@ -119,7 +130,7 @@
   }
 }
 @media (min-width: 1400px) {
-  .pricing-section {
+  .pricing-page {
     padding: 0 100px;
   }
 }

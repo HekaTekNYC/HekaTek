@@ -4,7 +4,7 @@ import {servicesData} from "../../data/ServicesData"
 import ServiceBg from "../../assets/images/services-bg.svg"
 import "./services-page.scss"
 
-const ServicesSection = () => {
+const ServicesPage = () => {
   return (
     <div className="services-page">
       <div className="services-page-container">
@@ -49,4 +49,4 @@ const ServicesSection = () => {
   )
 }
 // when Celeste comes back from lunch ask her why the css is ignoring the 1200 media query and listening to the 768px query
-export default ServicesSection
+export default ServicesPage

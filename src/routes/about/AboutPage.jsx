@@ -6,7 +6,7 @@ import Devicepng from "../../assets/images/device-mockup.png"
 
 import "./about-page.scss"
 
-const AboutSection = () => {
+const AboutPage = () => {
   const openCalendlyPopup = () => {
     if (window.Calendly) {
       console.log("Calendly script loaded, opening popup.")
@@ -86,4 +86,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default AboutPage
