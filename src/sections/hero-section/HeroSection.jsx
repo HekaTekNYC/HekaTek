@@ -1,47 +1,16 @@
-import React, {useState, useEffect, lazy, Suspense} from "react"
-import Modal from "../../components/calendly-modal/Modal"
+import React, {lazy, Suspense} from "react"
+
 import Button from "../../components/button/Button"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./hero-section.scss"
 
 const VideoComponent = lazy(() => import("../../components/video/Video"))
 
 const HeroSection = () => {
-  const [isModalOpen, setModalOpen] = useState(false)
-
-  useEffect(() => {
-    const checkCookies = () => {
-      document.cookie = "testcookie"
-      if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true)
-      }
-    }
-
-    checkCookies()
-  }, [])
-
-  const handleModalClose = () => {
-    setModalOpen(false)
-  }
-
-  const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc"
-  }
-
-  const openCalendlyPopup = () => {
-    Calendly.initPopupWidget({
-      url: "https://calendly.com/hekatek-hekateknyc/30min",
-    })
-    return false
-  }
-
+  const openCalendlyPopup = useCalendlyPopup()
   return (
     <>
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleModalClose}
-        onConfirm={handleModalConfirm}
-      />
       <div className="hero-format">
         <div className="hero-container">
           <div className="hero-top">
