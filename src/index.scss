@@ -12,7 +12,6 @@ body,
   color: #444d82;
   background-color: #ffffffed;
   min-width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -28,11 +27,6 @@ html {
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-main {
-  flex: 1;
-  margin-top: 70px;
 }
 
 *,

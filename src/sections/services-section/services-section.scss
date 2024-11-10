@@ -6,8 +6,6 @@
   align-items: center;
   max-width: 1300px;
   width: 100%;
-  height: auto;
-  padding: 60px 0 100px;
   z-index: 1;
 
   .services-header {
@@ -121,27 +119,58 @@
 
       .service-card-container {
         justify-content: start;
-        height: 275px;
-        width: 270px;
-        padding: 25px 20px;
+        height: auto;
+        width: 100%;
+        padding: 15px 15px;
       }
 
       .services-icon-header-container {
-        .service-icon-container img {
-          height: 50px;
-          width: auto;
+        .service-icon-container {
+          margin-bottom: 5px;
+
+          img {
+            height: 30px;
+            width: auto;
+          }
         }
+
+        .service-header {
+          font-size: 1rem;
+        }
+      }
+      .service-text {
+        font-size: 1rem;
       }
     }
   }
 }
 
-/* Medium screens */
-@media (min-width: 910px) {
-  .services-cards-container {
-    .service-card-container {
-      height: 270px;
-      width: 270px;
+@media (min-width: 820px) {
+  .services-container {
+    .services-cards-container {
+      .service-card-container {
+        height: 240px;
+        width: 100%;
+        padding: 15px 15px;
+      }
+
+      .services-icon-header-container {
+        .service-icon-container {
+          margin-bottom: 7px;
+
+          img {
+            height: 40px;
+            width: auto;
+          }
+        }
+
+        .service-header {
+          font-size: 1.15rem;
+        }
+      }
+      .service-text {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -154,6 +183,35 @@
     img {
       width: 900px;
       height: auto;
+    }
+  }
+
+  .services-container {
+    padding: 0;
+    .services-cards-container {
+      .service-card-container {
+        height: 275px;
+        width: 275px;
+        padding: 25px 20px;
+      }
+
+      .services-icon-header-container {
+        .service-icon-container {
+          margin-bottom: 15px;
+
+          img {
+            height: 50px;
+            width: auto;
+          }
+        }
+
+        .service-header {
+          font-size: 1.15rem;
+        }
+      }
+      .service-text {
+        font-size: 1rem;
+      }
     }
   }
 }
