@@ -99,8 +99,6 @@
 /* Small screens */
 @media (min-width: 768px) {
   .services-container {
-    padding: 80px 0;
-
     .services-background {
       bottom: 125px;
       opacity: 1;
@@ -119,7 +117,7 @@
 
       .service-card-container {
         justify-content: start;
-        height: auto;
+        height: 230px;
         width: 100%;
         padding: 15px 15px;
       }

@@ -7,8 +7,7 @@
 .about-section,
 .products-section,
 .contact-section,
-.pricing-section,
-.why-us-section {
+.pricing-section {
   display: flex;
   justify-content: center;
   height: auto;
@@ -66,6 +65,11 @@
       display: block;
     }
   }
+
+  .services-section,
+  .why-us-section {
+    padding: 80px 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -85,7 +89,8 @@
     padding: 0 80px;
   }
 
-  .services-section {
+  .services-section,
+  .why-us-section {
     padding: 80px 80px;
   }
 }
@@ -100,7 +105,8 @@
     padding: 0 100px;
   }
 
-  .services-section {
+  .services-section,
+  .why-us-section {
     padding: 80px 100px;
   }
 }
