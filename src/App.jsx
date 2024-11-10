@@ -1,40 +1,18 @@
 import React, {useState, useRef} from "react"
 // import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Navigation from "./components/navigation/Navigation"
+import Layout from "./components/layout/Layout"
 import HomePage from "./routes/home/HomePage"
 import ServicesPage from "./routes/services/ServicesPage"
 import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
 import AboutPage from "./routes/about/AboutPage"
 import ContactPage from "./routes/contact/ContactPage"
-// import FaqPage from "./components/faq/FaqSection"
 import FaqSection from "./components/faq/FaqSection"
-import Footer from "./components/footer/Footer"
+
 import "./index.scss"
 
 const App = () => {
-  const aboutRef = useRef(null)
-  const servicesRef = useRef(null)
-  const productsRef = useRef(null)
-
-  const handleNavigation = ref => {
-    if (ref.current) {
-      const yOffset = -70
-      const y =
-        ref.current.getBoundingClientRect().top + window.scrollY + yOffset
-
-      window.scrollTo({top: y, behavior: "smooth"})
-
-      setHistory(prevHistory => {
-        const updatedHistory = updateNavigationHistory(
-          prevHistory,
-          ref.current.id
-        )
-        return updatedHistory
-      })
-    }
-  }
   const faqs = [
     {
       question: "What is your return policy?",
@@ -52,8 +30,7 @@ const App = () => {
 
   return (
     <Router>
-      <Navigation onNavigate={handleNavigation} />
-      <main>
+      <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -63,8 +40,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqSection faqs={faqs} />} />
         </Routes>
-      </main>
-      <Footer />
+      </Layout>
     </Router>
   )
 }
