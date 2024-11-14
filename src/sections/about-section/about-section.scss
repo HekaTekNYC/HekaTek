@@ -1,6 +1,7 @@
 .about-container {
   position: relative;
   display: flex;
+  // flex-direction: column;
   justify-content: center;
   height: auto;
   width: 100%;
@@ -34,6 +35,10 @@
   margin-bottom: 20px;
 }
 
+.about-our-process {
+  display: flex;
+  flex-direction: column;
+}
 /* Media queries */
 
 /* Larger than desktop */
