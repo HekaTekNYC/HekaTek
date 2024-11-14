@@ -6,10 +6,8 @@
 
 .about-section,
 .products-section,
-.services-section,
 .contact-section,
-.pricing-section,
-.why-us-section {
+.pricing-section {
   display: flex;
   justify-content: center;
   height: auto;
@@ -18,9 +16,11 @@
 
 .services-section,
 .why-us-section {
+  display: flex;
+  justify-content: center;
   background: #f4f7ff;
-  z-index: -2;
-  overflow: hidden;
+  padding: 80px 35px;
+
   h2 {
     color: #9ea6df;
   }
@@ -65,6 +65,11 @@
       display: block;
     }
   }
+
+  .services-section,
+  .why-us-section {
+    padding: 80px 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -78,11 +83,15 @@
 
   .about-section,
   .products-section,
-  .services-section,
   .pricing-section,
   .why-us-section,
   .contact-section {
     padding: 0 80px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 80px 80px;
   }
 }
 
@@ -90,10 +99,14 @@
 @media (min-width: 1400px) {
   .about-section,
   .products-section,
-  .services-section,
   .why-us-section,
   .pricing-section,
   .contact-section {
     padding: 0 100px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 80px 100px;
   }
 }

@@ -12,7 +12,6 @@ body,
   color: #444d82;
   background-color: #ffffffed;
   min-width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -25,21 +24,15 @@ body,
 
 html {
   overflow: none;
-
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-main {
-  flex: 1;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  // outline: 1px solid aqua;
 }
 
 h1,
@@ -67,6 +60,7 @@ h2 {
   color: #9ea6df;
   margin: 0;
 }
+
 .h2-heading {
   font-size: 6rem;
   line-height: 5rem;
@@ -154,7 +148,7 @@ ul {
   }
 
   .h2-heading {
-    font-size: rem;
+    font-size: 5.3rem;
     line-height: 5rem;
   }
 }

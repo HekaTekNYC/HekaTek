@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
   padding: 0 35px 30px;
   z-index: 100;
 }
@@ -22,7 +23,7 @@
 .footer-format {
   position: relative;
   width: 100%;
-  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+  margin-top: auto;
 }
 .footer-blob-container {
   position: relative;

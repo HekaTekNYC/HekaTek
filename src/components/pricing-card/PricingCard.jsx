@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import Button from "../button/Button"
-import Modal from "../../components/calendly-modal/Modal"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import "./pricing-card.scss"
 
 const PricingCard = ({
@@ -15,39 +15,9 @@ const PricingCard = ({
   checkList,
   gem,
 }) => {
-  const [isModalOpen, setModalOpen] = useState(false)
-
-  useEffect(() => {
-    const checkCookies = () => {
-      document.cookie = "testcookie"
-      if (!document.cookie.includes("testcookie")) {
-        setModalOpen(true)
-      }
-    }
-
-    checkCookies()
-  }, [])
-
-  const handleModalClose = () => {
-    setModalOpen(false)
-  }
-
-  const handleModalConfirm = () => {
-    window.location.href = "https://calendly.com/hekateknyc"
-  }
-  const openCalendlyPopup = () => {
-    Calendly.initPopupWidget({
-      url: "https://calendly.com/hekatek-hekateknyc/30min",
-    })
-    return false
-  }
+  const openCalendlyPopup = useCalendlyPopup()
   return (
     <>
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleModalClose}
-        onConfirm={handleModalConfirm}
-      />
       <div className={`pricing-card ${className}`}>
         {gem && (
           <div className="pricing-card-image">
