@@ -1,8 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
+import {motion} from "framer-motion"
 import Button from "../../components/button/Button"
 import AboutBkrd from "../../assets/images/about-bkg.svg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/device-mockup.png"
+import OurProcess from "../../components/our-process/OurProcess"
 
 import "./about-page.scss"
 
@@ -82,6 +84,15 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        className="about-our-process"
+        initial={{opacity: 0, y: 50}} // Start off-screen and faded
+        whileInView={{opacity: 1, y: 0}} // Animate into view
+        viewport={{once: true, amount: 0.3}} // Trigger when 30% is in view and animate only once
+        transition={{duration: 0.8, ease: "easeOut"}} // Control animation duration and easing
+      >
+        <OurProcess />
+      </motion.div>
     </>
   )
 }

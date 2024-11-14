@@ -10,9 +10,11 @@ import "./about-section.scss"
 const AboutSection = () => {
   const openCalendlyPopup = useCalendlyPopup()
 
+  console.log(AboutBkrd)
+
   return (
     <>
-      <div className="about-container" id="about">
+      <div className="about-page-container" id="about">
         <div className="about-blob-container">
           <div className="about-bkrnd-img">
             <img
