@@ -1,20 +1,14 @@
-.services-page {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
 .services-container {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: auto;
   width: 100%;
   max-width: 1300px;
-  padding: 0 35px;
+  padding: 20px;
   z-index: 2;
+  padding: 30px 0 100px;
 }
 
 .services-page-container {
@@ -25,8 +19,8 @@
   align-items: center;
   max-width: 1300px;
   width: 100%;
+  margin: 0 auto;
   height: auto;
-  padding: 60px 0 100px;
   z-index: 1;
 
   .services-page-header {
@@ -62,6 +56,34 @@
     max-width: none;
   }
 }
+// .services-img-page-container {
+//   width: 75%;
+//   height: auto;
+// }
+.services-page-cards-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+
+  .services-page-cards-left,
+  .services-page-cards-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1; // Equal width for both sides
+  }
+
+  .services-page-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    // max-width: 450px; // Adjust width as needed
+  }
+}
 
 // Services Cards
 .services-page-cards-container {
@@ -70,7 +92,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 10px; //i may want to remove the gap.
 }
 
 .service-page-card-container {
@@ -78,7 +100,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 1;
   background: rgba(210, 218, 245, 0.32);
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +108,7 @@
   text-align: center;
   max-width: 330px;
   width: 100%;
-  height: 275px;
+  height: 225px;
   margin: 10px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -105,23 +127,21 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     .service-page-icon {
       height: 70px;
       width: auto;
     }
   }
+  .service-page-text {
+    margin: 0;
+  }
 }
 
 /* Media Queries */
 
 /* Small screens */
-@media (min-width: 768px) {
-  .services-page-container {
-    padding: 40px 0;
-  }
-}
 @media (min-width: 768px) {
   .services-page-container {
     padding: 80px 0;
@@ -150,7 +170,7 @@
       }
 
       .services-page-icon-header-container {
-        .service-page-icon-container img {
+        .service-icon-container img {
           height: 50px;
           width: auto;
         }
@@ -161,14 +181,8 @@
 
 /* Medium screens */
 @media (min-width: 910px) {
-  .services-page-section {
-    padding: 0 80px;
-  }
-  .services-section {
-    padding: 0 80px;
-  }
-  .services-page-cards-container {
-    .service-page-card-container {
+  .services-cards-container {
+    .service-card-container {
       height: 270px;
       width: 270px;
     }
@@ -177,10 +191,7 @@
 
 /* Large screens */
 @media (min-width: 1024px) {
-  .services-page-container {
-    padding: 0 80px;
-  }
-  .services-page-background {
+  .services-background {
     bottom: 50px;
 
     img {
@@ -192,26 +203,18 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .services-page-container {
-    padding: 0 100px;
-  }
-  .services-page-cards-container {
+  .services-cards-container {
     justify-content: space-evenly;
     padding: 0 60px;
     gap: 25px;
     margin-top: 20px;
   }
 
-  .services-page-background {
+  .services-background {
     filter: blur(120px);
 
     img {
       width: 800px;
     }
-  }
-}
-@media (min-width: 1400px) {
-  .services-page {
-    padding: 0 100px;
   }
 }
