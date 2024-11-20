@@ -1,5 +1,8 @@
 import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
+import WhyUs from "../../components/why-choose-us/WhyChooseUs"
+import WhyCare from "../../components/why-we-care/WhyWeCare"
+import Process from "../../components/our-process/OurProcess"
 import {servicesData} from "../../data/ServicesData"
 import ServiceBkr from "../../assets/images/services-bkr.svg"
 // import Devicewebp from "../../assets/images/device-mockup.webp"
@@ -14,6 +17,8 @@ const ServicesPage = () => {
 
   return (
     <div className="services-page">
+      {/* Why Choose Us*/}
+      <WhyUs />
       {/* Service Cards */}
       <div className="services-container">
         <div className="services">
@@ -89,6 +94,10 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
+      {/* Why We Care*/}
+      <WhyCare />
+      {/* Our Process*/}
+      <Process />
     </div>
   )
 }
