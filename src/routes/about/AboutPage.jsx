@@ -5,8 +5,6 @@ import AboutBkrd from "../../assets/images/about-bkg.svg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/device-mockup.png"
 import OurProcess from "../../components/our-process/OurProcess"
-import WhyWeCare from "../../components/why-we-care/WhyWeCare"
-import WhyChooseUs from "../../components/why-choose-us/WhyChooseUs"
 
 import "./about-page.scss"
 
@@ -101,8 +99,6 @@ const AboutPage = () => {
       >
         <OurProcess />
       </motion.div>
-      <WhyWeCare />
-      <WhyChooseUs />
     </>
   )
 }
