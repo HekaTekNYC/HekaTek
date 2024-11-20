@@ -1,0 +1,115 @@
+.service-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  aspect-ratio: 2 / 1;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 15px 20px;
+  text-align: center;
+  max-width: 330px;
+  width: 90%;
+  height: 180px;
+  margin: 10px 0;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -2px;
+    border-radius: 20px;
+    background: linear-gradient(
+      152deg,
+      rgb(68, 77, 130) 20%,
+      rgba(68, 77, 130, 0.5) 35%,
+      rgb(255, 255, 255) 45%
+    );
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.service-icon-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+
+  .service-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    .service-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 50px;
+      height: 100%;
+      background: rgb(68, 77, 130);
+      background: linear-gradient(
+        151deg,
+        rgba(68, 77, 130, 1) 8%,
+        rgba(156, 161, 189, 1) 21%,
+        rgba(255, 255, 255, 1) 69%
+      );
+      box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.2);
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .service-card-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .service-card-text {
+    margin: 0;
+  }
+}
+
+/* Media Queries */
+
+/* Small screens */
+@media (min-width: 768px) {
+}
+
+/* Medium screens */
+@media (min-width: 910px) {
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .service-card-container {
+    aspect-ratio: 1 / 1;
+    max-width: 250px;
+    height: 210px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}

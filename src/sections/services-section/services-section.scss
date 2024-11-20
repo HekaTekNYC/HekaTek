@@ -1,4 +1,4 @@
-.services-container {
+.services-home-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,18 +8,18 @@
   width: 100%;
   z-index: 1;
 
-  .services-header {
+  .services-home-header {
     text-align: center;
   }
 
-  .services-p {
+  .services-home-p {
     margin: 20px 0 30px;
     max-width: 900px;
     text-align: center;
   }
 }
 
-.services-background {
+.services-home-background {
   position: absolute;
   bottom: 300px;
   left: 0;
@@ -43,7 +43,7 @@
 }
 
 // Services Cards
-.services-cards-container {
+.services-home-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
   gap: 10px;
 }
 
-.service-card-container {
+.service-home-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,18 +76,18 @@
   }
 }
 
-.services-icon-header-container {
+.services-home-icon-header {
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
 
-  .service-icon-container {
+  .service-home-icon {
     display: flex;
     justify-content: center;
     align-items: start;
     margin-bottom: 15px;
 
-    .service-icon {
+    img {
       height: 70px;
       width: auto;
     }
@@ -98,8 +98,8 @@
 
 /* Small screens */
 @media (min-width: 768px) {
-  .services-container {
-    .services-background {
+  .services-home-container {
+    .services-home-background {
       bottom: 125px;
       opacity: 1;
       transform: rotate(0deg) translateY(-50%);
@@ -111,19 +111,19 @@
       }
     }
 
-    .services-cards-container {
+    .services-home-cards {
       flex-direction: row;
       gap: 15px;
 
-      .service-card-container {
+      .service-home-card {
         justify-content: start;
         height: 230px;
         width: 100%;
         padding: 15px 15px;
       }
 
-      .services-icon-header-container {
-        .service-icon-container {
+      .services-home-icon-header {
+        .service-home-icon {
           margin-bottom: 5px;
 
           img {
@@ -132,11 +132,11 @@
           }
         }
 
-        .service-header {
+        .service-home-header {
           font-size: 1rem;
         }
       }
-      .service-text {
+      .service-home-text {
         font-size: 1rem;
       }
     }
@@ -144,16 +144,16 @@
 }
 
 @media (min-width: 820px) {
-  .services-container {
-    .services-cards-container {
-      .service-card-container {
+  .services-home-container {
+    .services-home-cards {
+      .service-home-card {
         height: 240px;
         width: 100%;
         padding: 15px 15px;
       }
 
-      .services-icon-header-container {
-        .service-icon-container {
+      .services-home-icon-header {
+        .service-home-icon {
           margin-bottom: 7px;
 
           img {
@@ -162,11 +162,11 @@
           }
         }
 
-        .service-header {
+        .service-home-header {
           font-size: 1.15rem;
         }
       }
-      .service-text {
+      .service-home-text {
         font-size: 1rem;
       }
     }
@@ -175,7 +175,7 @@
 
 /* Large screens */
 @media (min-width: 1024px) {
-  .services-background {
+  .services-home-background {
     bottom: 50px;
 
     img {
@@ -184,17 +184,17 @@
     }
   }
 
-  .services-container {
+  .services-home-container {
     padding: 0;
-    .services-cards-container {
-      .service-card-container {
+    .services-home-cards {
+      .service-home-card {
         height: 275px;
         width: 275px;
         padding: 25px 20px;
       }
 
-      .services-icon-header-container {
-        .service-icon-container {
+      .servicesh-home-icon-header {
+        .service-home-icon {
           margin-bottom: 15px;
 
           img {
@@ -203,11 +203,11 @@
           }
         }
 
-        .service-header {
+        .service-home-header {
           font-size: 1.15rem;
         }
       }
-      .service-text {
+      .service-home-text {
         font-size: 1rem;
       }
     }
@@ -216,14 +216,14 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .services-cards-container {
+  .services-home-cards {
     justify-content: space-evenly;
     padding: 0 60px;
     gap: 25px;
     margin-top: 20px;
   }
 
-  .services-background {
+  .services-home-background {
     filter: blur(120px);
 
     img {

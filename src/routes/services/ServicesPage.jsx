@@ -1,61 +1,57 @@
 import React from "react"
-
+import ServiceCard from "../../components/service-card/ServiceCard"
 import {servicesData} from "../../data/ServicesData"
-import ServiceBg from "../../assets/images/services-bg.svg"
-import Devicewebp from "../../assets/images/device-mockup.webp"
-import Devicepng from "../../assets/images/device-mockup.png"
+import ServiceBkr from "../../assets/images/services-bkr.svg"
+// import Devicewebp from "../../assets/images/device-mockup.webp"
+import Devicepng from "../../assets/images/shots.png"
 
 import "./services-page.scss"
 
 const ServicesPage = () => {
-  // Split the data into two equal parts
   const halfIndex = Math.ceil(servicesData.length / 2)
   const leftCards = servicesData.slice(0, halfIndex)
   const rightCards = servicesData.slice(halfIndex)
 
   return (
     <div className="services-page">
-      <div className="services-page-container">
-        <div className="services-page-background">
-          <img
-            src={ServiceBg}
-            alt="gradient blue and orange shape"
-            loading="lazy"
-          />
-        </div>
-        <h2 className="services-page-header">SERVICES</h2>
-        <p className="services-page-p">
-          We provide personalized web design and development services for small
-          businesses nationwide. By hand-coding every element, we ensure optimal
-          site performance, leading to higher customer engagement and increased
-          earnings. No Wordpress, no page builders, just custom-coded websites
-          with exceptional results from $150/month.
-        </p>
-        <div className="services-page-cards-layout">
-          <div className="services-page-cards-left">
-            {leftCards.map((service, index) => (
-              <div key={index} className="service-page-card-container">
-                <div className="services-page-icon-header-container">
-                  <div className="service-page-icon-container">
-                    <img
-                      src={service.svgPath}
-                      alt={`${service.name} icon`}
-                      height={service.height}
-                      width={service.width}
-                      loading="lazy"
-                      decoding="async"
-                      className="service-icon"
-                    />
-                  </div>
-                  <h5 className="service-page-header">{service.name}</h5>
-                </div>
-                <p className="service-page-text">{service.description}</p>
+      {/* Service Cards */}
+      <div className="services-container">
+        <div className="services">
+          <h2 className="h2-heading services-header">
+            Lorem ipsum dolor sit amet.
+          </h2>
+          <p className="services-p">
+            We provide personalized web design and development services for
+            small businesses nationwide. By hand-coding every element, we ensure
+            optimal site performance, leading to higher customer engagement and
+            increased earnings. No Wordpress, no page builders, just
+            custom-coded websites with exceptional results from $150/month.
+          </p>
+          <div className="services-cards-layout">
+            <div className="services-background">
+              <div className="services-blur">
+                <img
+                  src={ServiceBkr}
+                  alt="gradient blue and orange shape"
+                  loading="lazy"
+                />
               </div>
-            ))}
-          </div>
-          <div className="services-image-container">
-            <div className="services-page-img-container">
-              <picture>
+            </div>
+            <div className="services-cards-left">
+              {leftCards.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  name={service.name}
+                  svgPath={service.svgPath}
+                  description={service.description}
+                  height={service.height}
+                  width={service.width}
+                />
+              ))}
+            </div>
+            <div className="services-mobile-container">
+              <div className="services-mobile">
+                {/* <picture>
                 <source
                   srcSet={Devicewebp}
                   type="image/webp"
@@ -65,7 +61,7 @@ const ServicesPage = () => {
                   srcSet={Devicepng}
                   type="image/png"
                   media="(min-width: 400px)"
-                />
+                /> */}
                 <img
                   loading="lazy"
                   decoding="async"
@@ -75,29 +71,21 @@ const ServicesPage = () => {
                   height="689"
                   width="1097"
                 />
-              </picture>
-            </div>
-          </div>
-          <div className="services-page-cards-right">
-            {rightCards.map((service, index) => (
-              <div key={index} className="service-page-card-container">
-                <div className="services-page-icon-header-container">
-                  <div className="service-page-icon-container">
-                    <img
-                      src={service.svgPath}
-                      alt={`${service.name} icon`}
-                      height={service.height}
-                      width={service.width}
-                      loading="lazy"
-                      decoding="async"
-                      className="service-icon"
-                    />
-                  </div>
-                  <h5 className="service-page-header">{service.name}</h5>
-                </div>
-                <p className="service-page-text">{service.description}</p>
+                {/* </picture> */}
               </div>
-            ))}
+            </div>
+            <div className="services-cards-right">
+              {rightCards.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  name={service.name}
+                  svgPath={service.svgPath}
+                  description={service.description}
+                  height={service.height}
+                  width={service.width}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

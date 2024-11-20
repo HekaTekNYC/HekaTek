@@ -1,32 +1,32 @@
 import React from "react"
 
-import {servicesData} from "../../data/ServicesData"
+import {servicesHomeData} from "../../data/ServicesHomeData"
 import ServiceBg from "../../assets/images/services-bg.svg"
 import "./services-section.scss"
 
 const ServicesSection = () => {
   return (
-    <div className="services-container">
-      <div className="services-background">
+    <div className="services-home-container">
+      <div className="services-home-background">
         <img
           src={ServiceBg}
           alt="gradient blue and orange shape"
           loading="lazy"
         />
       </div>
-      <h2 className="services-header">SERVICES</h2>
-      <p className="services-p">
+      <h2 className="services-home-header">SERVICES</h2>
+      <p className="services-home-p">
         We provide personalized web design and development services for small
         businesses nationwide. By hand-coding every element, we ensure optimal
         site performance, leading to higher customer engagement and increased
         earnings. No Wordpress, no page builders, just custom-coded websites
         with exceptional results from $150/month.
       </p>
-      <div className="services-cards-container">
-        {servicesData.map((service, index) => (
-          <div key={index} className="service-card-container">
-            <div className="services-icon-header-container">
-              <div className="service-icon-container">
+      <div className="services-home-cards">
+        {servicesHomeData.map((service, index) => (
+          <div key={index} className="service-home-card">
+            <div className="services-home-icon-header">
+              <div className="service-home-icon">
                 <img
                   src={service.svgPath}
                   alt={`${service.name} icon`}
@@ -34,12 +34,11 @@ const ServicesSection = () => {
                   width={service.width}
                   loading="lazy"
                   decoding="async"
-                  className="service-icon"
                 />
               </div>
-              <h5 className="service-header"> {service.name}</h5>
+              <h5 className="service-home-header"> {service.name}</h5>
             </div>
-            <p className="service-text"> {service.description}</p>
+            <p className="service-home-text"> {service.description}</p>
           </div>
         ))}
       </div>
