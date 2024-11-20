@@ -72,6 +72,11 @@ const Navigation = ({refs, onNavigate}) => {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/faq" className="nav-links">
+              FAQ
+            </Link>
+          </li>
         </ul>
         {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
       </Link>
