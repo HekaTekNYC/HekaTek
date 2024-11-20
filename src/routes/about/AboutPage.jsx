@@ -62,17 +62,23 @@ const AboutPage = () => {
               About <br /> HekaTek
             </h2>
             <div className="about-page-indent">
-              <h4 className="about-page-subheader">
-                Empowering Small Businesses Through Expert Web Development
-              </h4>
               <p className="about-page-p">
-                With six years of experience, HekaTek is passionate about
-                helping small businesses thrive online. As a community-driven,
-                woman-owned business, HekaTek is dedicated to empowering fellow
-                small business owners with the tools, expertise, and support
-                they need to succeed in the digital world. Let HekaTek help you
-                build a strong online presence and take your business to the
-                next level!
+                Empowering Small Businesses With Websites That Truly Work At
+                HekaTek, we’re more than just web developers—we’re advocates for
+                small businesses. Over the past six years, we’ve seen far too
+                many small businesses struggle with outdated, poorly designed
+                websites or overpriced solutions that fail to deliver results.
+                These sites not only hurt their online presence but also limit
+                their growth.
+                <br />
+                As a community-driven, woman-owned business, we’re passionate
+                about changing that narrative. Our mission is to provide small
+                business owners with affordable, expertly crafted websites that
+                are modern, secure, and designed to help them succeed. We
+                believe every small business deserves a website they can be
+                proud of, one that drives results without breaking the bank. Let
+                us help you build a powerful online presence so your business
+                can thrive in the digital world!
               </p>
               <Button
                 text={"Schedule a Meeting"}

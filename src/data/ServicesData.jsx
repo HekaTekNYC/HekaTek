@@ -1,49 +1,49 @@
 export const servicesData = [
   {
-    name: "Optimized Code",
-    svgPath: "../../assets/icons/service-gear.svg",
+    name: "Web Design & Development",
+    svgPath: "../../assets/icons/code.svg",
     description:
-      "With 96.5% of internet traffic coming from mobile devices, we focus on optimizing your site to perform flawlessly on mobile.",
+      "Build a standout, one-of-a-kind website that showcases your brand with pride.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Mobile-First Design",
-    svgPath: "../../assets/icons/service-mobile.svg",
+    name: "Unlimited Revisions",
+    svgPath: "../../assets/icons/code.svg",
     description:
-      "Our process always begins with a mobile-first approach, followed by modifications for tablet and desktop screens.",
+      "Forget hourly fees for minor changes—updates to existing content are always included.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Fully Responsive",
-    svgPath: "../../assets/icons/service-responsive.svg",
+    name: "Fully Managed Hosting",
+    svgPath: ".../../assets/icons/code.svg",
     description:
-      "Your website will be fully responsive, seamlessly adjusting on mobile, tablets, and desktops, accessible from any device.",
+      "We host your site on our global network, guaranteeing around-the-clock reliability and performance.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Optimized Code",
-    svgPath: "../../assets/icons/service-gear.svg",
+    name: "Fast Loading Speed",
+    svgPath: "../../assets/icons/code.svg",
     description:
-      "With 96.5% of internet traffic coming from mobile devices, we focus on optimizing your site to perform flawlessly on mobile.",
+      "Quick load times are essential; our sites are optimized to keep users engaged and satisfied.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Mobile-First Design",
-    svgPath: "../../assets/icons/service-mobile.svg",
+    name: "Mobile-Optimized Design",
+    svgPath: "../../assets/icons/code.svg",
     description:
-      "Our process always begins with a mobile-first approach, followed by modifications for tablet and desktop screens.",
+      "With mobile users in mind, our websites prioritize seamless experiences for every screen size.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Fully Responsive",
-    svgPath: "../../assets/icons/service-responsive.svg",
+    name: "Google Business and Maps Integration",
+    svgPath: "../../assets/icons/code.svg",
     description:
-      "Your website will be fully responsive, seamlessly adjusting on mobile, tablets, and desktops, accessible from any device.",
+      "Boost your credibility and help users find you with an integrated Google Maps listing.",
     height: "40px",
     width: "auto",
   },
