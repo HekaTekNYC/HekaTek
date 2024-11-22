@@ -83,28 +83,45 @@ const OurProcess = () => {
   ]
 
   return (
-    <motion.section
-      className="our-process-section"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{once: true, amount: 0.3}} // Trigger when 30% of section is in view
-      variants={containerVariants}
-    >
-      <h2 className="our-process-title">Our Process</h2>
-      <motion.div className="our-process-cards-container">
-        {steps.map((step, index) => (
-          <motion.div
-            key={index}
-            className={`our-process-card ${index === 0 ? "highlight" : ""}`}
-            variants={cardVariants} // Apply individual card animation
-          >
-            <h3 className="our-process-card-title">{step.title}</h3>
-            <p className="our-process-card-description">{step.description}</p>
-            <span className="our-process-card-number">{step.number}</span>
-          </motion.div>
-        ))}
-      </motion.div>
-    </motion.section>
+    <div className="our-process-banner">
+      <motion.section
+        className="our-process-section"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.3}} // Trigger when 30% of section is in view
+        variants={containerVariants}
+      >
+        <div className="our-process-header">
+          <h2 className="h2-heading">Our Process, Your Peace of Mind</h2>
+          <p>
+            Once the contract is signed, we’ll schedule a meeting to learn more
+            about your business and what you do. With this information, we’ll
+            craft the content and design for your site. After receiving your
+            final approval, we’ll begin building. The entire process typically
+            takes 1 - 2 months, depending on the timing of your feedback and
+            approvals. This allows us to deliver a smooth, thorough, and
+            well-executed development experience.
+          </p>
+        </div>
+        <motion.div className="our-process-cards-container">
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              className={`our-process-card ${index === 0 ? "highlight" : ""}`}
+              variants={cardVariants} // Apply individual card animation
+            >
+              <div className="process-info-container">
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+              <div className="process-number-container">
+                <p className="process-number">{step.number}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.section>
+    </div>
   )
 }
 

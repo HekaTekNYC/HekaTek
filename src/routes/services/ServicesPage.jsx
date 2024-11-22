@@ -4,7 +4,7 @@ import WhyUs from "../../components/why-choose-us/WhyChooseUs"
 import WhyCare from "../../components/why-we-care/WhyWeCare"
 import Process from "../../components/our-process/OurProcess"
 import {servicesData} from "../../data/ServicesData"
-import ServiceBkr from "../../assets/images/services-bkr.svg"
+import ServiceBkr from "../../assets/images/service-blob.svg"
 // import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/shots.png"
 
@@ -23,7 +23,7 @@ const ServicesPage = () => {
       <div className="services-container">
         <div className="services">
           <h2 className="h2-heading services-header">
-            Lorem ipsum dolor sit amet.
+            How We Help Your Business
           </h2>
           <p className="services-p">
             We provide personalized web design and development services for
