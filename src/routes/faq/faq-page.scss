@@ -1,0 +1,66 @@
+.faqs-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 35px;
+  margin: 60px 0;
+
+  .faq-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+
+    .faq-page-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+/* Small screens (iPhones and small devices) */
+@media (min-width: 576px) {
+  .faqs-page {
+    padding: 0 40px;
+    margin: 40px 0;
+  }
+}
+
+/* Medium screens (iPad Mini and similar) */
+@media (min-width: 768px) {
+  .faqs-page {
+    margin: 50px 0;
+
+    .faq-page-container {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+/* Large screens (iPad Air, iPad Pro, and similar) */
+@media (min-width: 992px) {
+  .faqs-page {
+    padding: 0 80px;
+
+    .faq-page-container {
+      align-items: center;
+    }
+  }
+}
+
+/* Extra large screens (Desktop and larger tablets) */
+@media (min-width: 1200px) {
+  .faqs-page {
+    padding: 0 100px;
+  }
+}

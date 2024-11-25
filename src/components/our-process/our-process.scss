@@ -100,8 +100,10 @@
 
 /* Xtra Small screens */
 @media (min-width: 576px) {
-  .our-process-section {
-    padding: 60px 40px;
+  .our-process-banner {
+    .our-process-section {
+      padding: 60px 40px;
+    }
   }
 }
 
@@ -120,8 +122,10 @@
 }
 /* Medium screens */
 @media (min-width: 992px) {
-  .our-process-section {
-    padding: 60px 80px;
+  .our-process-banner {
+    .our-process-section {
+      padding: 60px 80px;
+    }
   }
 }
 
@@ -147,12 +151,14 @@
 
 /* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
-  .our-process-section {
-    padding: 40px 100px;
-    .our-process-cards-container {
-      gap: 15px;
-      .our-process-card {
-        padding: 20px;
+  .our-process-banner {
+    .our-process-section {
+      padding: 60px 100px 65px;
+      .our-process-cards-container {
+        gap: 15px;
+        .our-process-card {
+          padding: 20px;
+        }
       }
     }
   }
