@@ -30,6 +30,9 @@ const Dropdown = ({refs}) => {
       <Link to="/contact" onClick={closeMobileNav} className="nav-link">
         Contact
       </Link>
+      <Link to="/faq" onClick={closeMobileNav} className="nav-link">
+        FAQ
+      </Link>
     </div>
   )
 }

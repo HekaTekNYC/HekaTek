@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 1300px;
 
   .services-header {
@@ -133,33 +134,55 @@
 }
 
 /* Medium screens */
-@media (min-width: 910px) {
+@media (min-width: 992px) {
+  .services-container {
+    padding: 0 80px;
+  }
 }
 
 /* Large screens */
 @media (min-width: 1024px) {
-  .services-cards-layout {
-    position: relative;
-
-    .services-cards-left {
-      align-items: start;
-    }
-    .services-cards-right {
-      align-items: end;
-    }
-    .services-mobile-container {
-      position: absolute;
-      display: flex;
+  .services-container {
+    .services-cards-layout {
+      position: relative;
       justify-content: center;
-      align-items: center;
-      width: 463px;
 
-      .services-mobile {
-        width: 100%;
-        margin-left: 20px;
-        img {
-          width: 463px;
-          height: 800px;
+      .services-background {
+        .services-blur {
+          opacity: 1;
+          transform: rotate(0deg) translateY(50%);
+          filter: blur(120px);
+          bottom: 250px;
+          left: 0px;
+
+          img {
+            width: 800px;
+            height: auto;
+          }
+        }
+      }
+
+      .services-cards-left {
+        align-items: flex-start;
+      }
+      .services-cards-right {
+        align-items: flex-end;
+      }
+
+      .services-mobile-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 463px;
+
+        .services-mobile {
+          width: 100%;
+          margin-left: 20px;
+          img {
+            height: 800px;
+            width: 463px;
+          }
         }
       }
     }
@@ -168,11 +191,26 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .services-background {
-    filter: blur(120px);
+  .services-container {
+    padding: 0 100px;
 
-    img {
-      width: 800px;
+    .services-cards-layout {
+      margin: 100px 0 80px;
+      .services-background {
+        width: 90%;
+        .services-blur {
+          filter: blur(120px);
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .services-cards-left,
+      .services-cards-right {
+        gap: 15px;
+      }
     }
   }
 }

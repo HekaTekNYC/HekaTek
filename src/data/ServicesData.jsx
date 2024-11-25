@@ -3,47 +3,47 @@ export const servicesData = [
     name: "Web Design & Development",
     svgPath: "../../assets/icons/code.svg",
     description:
-      "Build a standout, one-of-a-kind website that showcases your brand with pride.",
+      "Your website is more than a page—it’s your digital storefront. Let’s make it unforgettable.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Unlimited Revisions",
+    name: "Update Without Limits",
     svgPath: "../../assets/icons/code.svg",
     description:
-      "Forget hourly fees for minor changes—updates to existing content are always included.",
+      "Need something changed? We’re here to keep your site updated and aligned with your needs.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Fully Managed Hosting",
+    name: "Hassle-Free Hosting",
     svgPath: ".../../assets/icons/code.svg",
     description:
-      "We host your site on our global network, guaranteeing around-the-clock reliability and performance.",
+      "Stay online without interruptions—our team ensures your site is always running smoothly.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Fast Loading Speed",
+    name: "Performance-Optimized",
     svgPath: "../../assets/icons/code.svg",
     description:
-      "Quick load times are essential; our sites are optimized to keep users engaged and satisfied.",
+      "Speed is our priority—your website will load fast and keep visitors engaged from the moment they arrive.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Mobile-Optimized Design",
+    name: "Seamless Mobile Experience",
     svgPath: "../../assets/icons/code.svg",
     description:
-      "With mobile users in mind, our websites prioritize seamless experiences for every screen size.",
+      "Putting mobile traffic first, your website will always shine on smartphones and tablets.",
     height: "40px",
     width: "auto",
   },
   {
-    name: "Google Business and Maps Integration",
+    name: "Google Business and Maps",
     svgPath: "../../assets/icons/code.svg",
     description:
-      "Boost your credibility and help users find you with an integrated Google Maps listing.",
+      "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing that improves your local search visibility.",
     height: "40px",
     width: "auto",
   },
