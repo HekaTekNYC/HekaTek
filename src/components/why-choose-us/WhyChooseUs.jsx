@@ -5,7 +5,7 @@ import Star from "../../assets/icons/trophy.svg"
 import Icon8 from "../../assets/icons/icons8-award-85.png"
 // import Star from "../../assets/icons/color-trophy.svg"
 import CoralCheckIcon from "../../assets/icons/coral-check.svg"
-import WireframeImg from "../../assets/images/code-vert.jpg"
+import CodeMd from "../../assets/images/code-vert.jpg"
 import CodeSm from "../../assets/images/code-vert-sm.png"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import "./why-choose-us.scss"
@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
       {/* Right Column */}
       <div className="choose-us-right">
         <div className="choose-us-image">
-          <img src={CodeSm} alt="Cleaning agency services" />
+          <img src={CodeMd} alt="Coding at Night" />
         </div>
 
         <div className="years-experience">
