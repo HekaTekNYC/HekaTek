@@ -1,6 +1,7 @@
 import BackgroundShape from "../../assets/images/pricing-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
+import Button from "../../components/button/Button"
 import "./pricing-page.scss"
 
 const PricingPage = () => {
@@ -18,11 +19,16 @@ const PricingPage = () => {
             />
           </div>
           <div className="pricing-page-header">
-            <h2>Pricing Plans</h2>
-            <p className="pricing-page-text">
-              We offer a monthly subscription, lump sum, and e-commerce pricing.
-              Please contact us for price inquiries on our E-Comm models.
-            </p>
+            <h2 className="h2-heading">Your Business, Your Plan</h2>
+            <div className="price-header-right">
+              <p className="pricing-page-text">
+                Our pricing options include monthly subscriptions, lump sum
+                packages, and e-commerce solutions. Enhance your plan with
+                optional add-on services tailored to your needs. Contact us for
+                details on e-commerce pricing.
+              </p>
+              <Button />
+            </div>
           </div>
 
           <div className="pricing-page-cards-container">
