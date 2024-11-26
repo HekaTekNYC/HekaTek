@@ -39,10 +39,24 @@
     max-width: none;
   }
 }
+.pricing-page-header {
+  display: flex;
 
-.pricing-page-text {
-  margin: 20px 0 30px;
+  h2 {
+    text-align: start;
+  }
+
+  .price-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
+
+// .pricing-page-text {
+//   margin: 20px 0 30px;
+// }
 
 .pricing-page-cards-container {
   display: flex;
