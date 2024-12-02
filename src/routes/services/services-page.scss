@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1100px;
 
   .services-header {
     text-align: center;
@@ -52,8 +52,8 @@
     position: absolute;
     overflow: hidden;
     border: 2px solid #f3f7ff;
-    // background-color: #f4f7ff;
-    background-color: #eef0f4;
+    background-color: #f4f7ff;
+    // background-color: #eef0f4;
     border-radius: 10px;
     height: 1000px;
     margin-top: 100px;
@@ -197,9 +197,9 @@
     .services-cards-layout {
       margin: 100px 0 80px;
       .services-background {
-        width: 90%;
+        width: 80%;
         .services-blur {
-          filter: blur(120px);
+          filter: blur(2px);
 
           img {
             width: 100%;

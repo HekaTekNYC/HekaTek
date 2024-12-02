@@ -18,7 +18,7 @@ const ServiceCard = ({name, svgPath, description, height, width}) => {
             />
           </div>
         </div>
-        <h5 className="service-card-header">{name}</h5>
+        <h3 className="service-card-header">{name}</h3>
       </div>
       <p className="service-card-text">{description}</p>
     </div>

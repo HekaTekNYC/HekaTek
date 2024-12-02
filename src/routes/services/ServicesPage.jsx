@@ -4,9 +4,9 @@ import WhyUs from "../../components/why-choose-us/WhyChooseUs"
 import WhyCare from "../../components/why-we-care/WhyWeCare"
 import Process from "../../components/our-process/OurProcess"
 import {servicesData} from "../../data/ServicesData"
-import ServiceBkr from "../../assets/images/service-blob.svg"
+import ServiceBkr from "../../assets/images/ten.png"
 // import Devicewebp from "../../assets/images/device-mockup.webp"
-import Devicepng from "../../assets/images/shots.png"
+import Devicepng from "../../assets/images/iphone1.png"
 
 import "./services-page.scss"
 

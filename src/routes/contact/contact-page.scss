@@ -5,14 +5,24 @@
   width: 100%;
   flex-grow: 1;
   padding: 0 35px;
-  margin: 60px 0;
+  margin: 40px 0 60px;
 }
+
 .contact-page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1300px;
+
+  .contact-header {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-page-subsection {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-page-info {
@@ -25,8 +35,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    .h2-heading {
+      display: none;
+    }
+
     p {
-      margin: 20px 0 30px;
+      margin: 10px 0 30px;
     }
   }
 
@@ -146,43 +161,48 @@
     margin: 40px 0;
 
     .contact-page-container {
+      .contact-header {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .contact-page-subsection {
+    .contact-page-info {
+      flex-direction: row;
       align-items: center;
+      margin-bottom: 20px;
+
+      .contact-page-header {
+        width: 50%;
+        margin-right: 10px;
+
+        h2 {
+          display: block;
+          margin-top: 10px;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
     }
-  }
 
-  .contact-page-info {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .contact-page-header {
+    .contact-list {
       width: 50%;
-      margin-right: 10px;
+      margin: 0 0 0 10px;
 
-      h2 {
-        margin-bottom: 10px;
-      }
-      p {
-        margin: 10px 0 0;
+      .contact-detail-items {
+        margin: 20px 0 0;
       }
     }
-  }
 
-  .contact-list {
-    width: 50%;
-    margin: 0 0 0 10px;
-
-    .contact-detail-items {
-      margin: 20px 0 0;
-    }
-  }
-
-  .contact-page-form-container {
-    .contact-page-blob {
-      top: 0px;
-      right: 150px;
-      width: 450px;
-      filter: blur(120px);
+    .contact-page-form-container {
+      .contact-page-blob {
+        top: 0px;
+        right: 150px;
+        width: 450px;
+        filter: blur(120px);
+      }
     }
   }
 }
@@ -191,31 +211,49 @@
 @media (min-width: 992px) {
   .contact-page {
     padding: 0 80px;
-  }
 
-  .contact-page-info {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .contact-page-header {
-      margin-right: 20px;
-
-      h2 {
-        margin-bottom: 20px;
-      }
-      p {
-        margin: 10px 0 0;
+    .contact-page-container {
+      .contact-header {
+        margin-bottom: 60px;
       }
     }
   }
-  .contact-page-form-container {
-    margin-top: 80px;
-    .contact-page-blob {
-      top: 0;
-      right: 100px;
-      width: 500px;
-      filter: blur(130px);
+
+  .contact-page-subsection {
+    flex-direction: row;
+
+    .contact-page-info {
+      flex-direction: column;
+      width: 50%;
+      margin-bottom: 20px;
+
+      .contact-page-header {
+        margin-right: 0px;
+        width: 100%;
+
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 10px 0 0;
+        }
+      }
+      .contact-list {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .contact-page-form-container {
+      width: 50%;
+      margin: 0 0 0 20px;
+
+      .contact-page-blob {
+        top: 0;
+        right: 100px;
+        width: 500px;
+        filter: blur(130px);
+      }
     }
   }
 }
@@ -224,10 +262,17 @@
 @media (min-width: 1200px) {
   .contact-page {
     padding: 0 100px;
-  }
-  .contact-page-container {
-    flex-direction: row;
 
+    .contact-page-container {
+      flex-direction: column;
+
+      .contact-header {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  .contact-page-subsection {
     .contact-page-info {
       flex-direction: column;
       width: 50%;
@@ -247,14 +292,15 @@
         margin: 0;
       }
     }
-  }
-  .contact-page-form-container {
-    width: 50%;
-    margin-top: 0;
-    .contact-page-blob {
-      width: 450px;
-      right: 75px;
-      filter: blur(130px);
+
+    .contact-page-form-container {
+      width: 50%;
+      margin-top: 0;
+      .contact-page-blob {
+        width: 450px;
+        right: 75px;
+        filter: blur(130px);
+      }
     }
   }
 }
