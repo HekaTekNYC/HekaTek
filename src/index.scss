@@ -54,20 +54,17 @@ h1 {
 
 h2 {
   font-family: "Bebas Neue";
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
-  line-height: 5.5rem;
+  line-height: 5.3rem;
   color: #9ea6df;
   margin: 0;
 }
 
-// .h2-heading {
-//   font-size: 6rem;
-//   line-height: 5rem;
-// }
 .h2-heading {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #444d82;
 }
 
 h3 {
@@ -150,11 +147,6 @@ ul {
   h3 {
     font-size: 2.1rem;
   }
-
-  .h2-heading {
-    font-size: 5.3rem;
-    line-height: 5rem;
-  }
 }
 
 /* Larger than tablet portrait */
@@ -184,5 +176,10 @@ ul {
   h2 {
     font-size: 7.3rem;
     line-height: 6rem;
+  }
+
+  .h2-heading {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
