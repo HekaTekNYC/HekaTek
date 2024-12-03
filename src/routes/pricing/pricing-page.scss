@@ -2,19 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100%;
+  flex-grow: 1;
+  padding: 0 35px;
+  margin: 40px 0 60px;
 }
+
 .pricing-page-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 60px 0 100px;
+  justify-content: center;
+  align-items: start;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 35px;
-  height: auto;
+  max-width: 1300px;
   z-index: 1;
+
+  .pricing-header {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .pricing-page-background {
@@ -46,79 +53,154 @@
     text-align: start;
   }
 
-  .price-header-right {
+
+/* Pricing Plan Section */
+.pricing-build-container {
+  .pricing-build-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 30px;
+
+    .pricing-build-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing-build-btn {
+      display: flex;
+      margin-top: 30px;
+    }
+  }
+
+  .pricing-build-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    gap: 20px;
   }
 }
 
-// .pricing-page-text {
-//   margin: 20px 0 30px;
-// }
+/* Add On Section */
+.add-on-container {
 
-.pricing-page-cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  margin: 40px 0 0;
   width: 100%;
-  height: auto;
-  margin-top: 10px;
-  gap: 10px;
+
+  .add-on-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px;
+
+    .add-on-text-container {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      p {
+        margin: 10px 0 30px;
+      }
+    }
+  }
+
+  .add-on-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 /* Media Queries */
 
-/* Small screens (≥768px) */
+/* XtraSmall screens (≥576px) */
 @media (min-width: 576px) {
-  .pricing-page-container {
-    padding: 40px 0;
+  .pricing-page {
+    padding: 0 40px;
   }
 }
+
+/* Small screens (≥768px) */
 @media (min-width: 768px) {
-  .pricing-page-container {
-    padding: 40px 0;
+  .pricing-page {
+    .pricing-header {
+      text-align: center;
+    }
   }
   .pricing-page-background {
-    bottom: 300px;
+    top: 100px;
     opacity: 1;
     filter: blur(140px);
-    transform: rotate(20deg) scaleX(-1);
+    // transform: rotate(20deg) scaleX(-1);
 
     img {
       height: auto;
       width: 700px;
     }
   }
+  .pricing-build-container {
+    .pricing-build-info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 30px 0 30px;
 
-  .pricing-page-cards-container {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
-  }
-}
-
-/* Medium screens (≥820px) */
-@media (min-width: 820px) {
-  .pricing-page-container {
-    .pricing-page-header {
-      text-align: center;
+      .pricing-build-text {
+        // display: flex;
+        // flex-direction: column;
+        justify-self: start;
+        align-items: flex-start;
+        justify-content: end;
+        width: 80%;
+      }
+      .pricing-build-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 35%;
+      }
     }
   }
 }
-@media (min-width: 910px) {
+
+/* Large screens (≥992px) */
+@media (min-width: 992px) {
   .pricing-page {
     padding: 0 80px;
   }
-  .pricing-section {
-    padding: 0 80px;
+
+  .pricing-build-container {
+    .pricing-build-info {
+      text-align: center;
+    }
+    .pricing-build-cards-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
   }
-  .services-page-cards-container {
-    .service-page-card-container {
-      height: 270px;
-      width: 270px;
+  .pricing-build-container {
+    .pricing-build-info {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 40px 0 60px;
+
+      .pricing-build-text {
+        text-align: left;
+      }
+    }
+  }
+  .add-on-container {
+    .add-on-cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0px;
     }
   }
 }
@@ -139,12 +221,14 @@
     }
   }
 
-  .pricing-page-cards-container {
+  .pricing-build-cards-container {
     width: 100%;
   }
-}
-@media (min-width: 1400px) {
-  .pricing-page {
-    padding: 0 100px;
+
+  .add-on-container {
+    margin: 70px 0;
+    .add-on-cards-container {
+      gap: 40px;
+    }
   }
 }

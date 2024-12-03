@@ -1,0 +1,97 @@
+.add-on-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(230, 230, 233, 0.188);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: rgba(26, 162, 211, 0.184) 0px 4px 16px;
+    transform: translateY(-2px);
+  }
+
+  .add-on-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.add-on-card-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .add-on-title {
+    align-self: flex-start;
+    font-size: 1.3rem;
+    color: #0e92c1;
+    // color: #1aa2d3;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+  }
+
+  .add-on-cost {
+    align-self: flex-start;
+    font-size: 2rem;
+    color: #444d82;
+    margin: 15px 0 0;
+    letter-spacing: 0.04rem;
+
+    .add-on-cost-sub {
+      font-family: "Satoshi";
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  .add-on-white-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.541),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.543)
+    );
+    margin: 15px 0;
+  }
+
+  .add-on-desc {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .add-on-card {
+    max-width: 100%;
+  }
+}
+
+/* Large (≥1024px) */
+@media (min-width: 1024px) {
+  .add-on-card {
+    margin: 0;
+    padding: 25px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .add-on-card {
+    width: 100%;
+    .add-on-white-line {
+      margin: 20px 0;
+    }
+  }
+}
