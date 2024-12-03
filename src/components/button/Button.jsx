@@ -1,4 +1,5 @@
 import React from "react"
+import {useNavigate} from "react-router-dom"
 import "./button.scss"
 
 const scrollToSection = id => {
@@ -17,22 +18,26 @@ const Button = ({
   btnType = "outline",
   width = "short",
   active = "",
+  to = "",
 }) => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick()
+    }
+
+    if (scrollToId) {
+      scrollToSection(scrollToId)
+    } else if (to) {
+      navigate(to)
+    }
+  }
+
   const buttonClass = `btn-${
     btnType === "solid" ? "solid" : "outline"
   } btn-${width} ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
-
-  if (scrollToId) {
-    return (
-      <div
-        className={`${buttonClass} ${btnWidth}`}
-        onClick={onClick || (() => scrollToSection(scrollToId))}
-      >
-        {text}
-      </div>
-    )
-  }
 
   if (href) {
     return (
@@ -49,13 +54,12 @@ const Button = ({
     )
   }
 
-  // Standard button
-  const buttonType = type || "button"
+  // Standard button or scroll/navigation button
   return (
     <button
-      type={buttonType}
+      type={type}
       className={`${buttonClass} ${btnWidth}`}
-      onClick={onClick}
+      onClick={handleClick} // Unified handler for all cases
     >
       {text}
     </button>
