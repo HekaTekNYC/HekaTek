@@ -19,11 +19,10 @@ const AddOnCard = ({id, className, title, cost, subCost, costDesc, desc}) => {
 
         <div className="add-on-btn-container">
           <Button
-            className="button-tex"
             text={"Get Started"}
             scrollToId={"contact"}
             onClick={openCalendlyPopup}
-            btnType={"outline"}
+            btnType={"reverse"}
             width={"full"}
           />
         </div>

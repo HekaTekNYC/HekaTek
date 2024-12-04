@@ -34,9 +34,7 @@ const Button = ({
     }
   }
 
-  const buttonClass = `btn-${
-    btnType === "solid" ? "solid" : "outline"
-  } btn-${width} ${active}`
+  const buttonClass = `btn-${btnType} btn-${width} ${active}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
 
   if (href) {
@@ -59,7 +57,7 @@ const Button = ({
     <button
       type={type}
       className={`${buttonClass} ${btnWidth}`}
-      onClick={handleClick} // Unified handler for all cases
+      onClick={handleClick}
     >
       {text}
     </button>
