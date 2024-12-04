@@ -16,7 +16,7 @@ import {
 
 import "./products-page.scss"
 
-const ProductsSection = () => {
+const ProductsPage = () => {
   const productList = [
     plantHaus,
     weFund,
@@ -65,4 +65,4 @@ const ProductsSection = () => {
   )
 }
 
-export default ProductsSection
+export default ProductsPage
