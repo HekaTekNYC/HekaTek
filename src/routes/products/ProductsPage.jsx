@@ -16,7 +16,7 @@ import {
 
 import "./products-page.scss"
 
-const ProductsSection = () => {
+const ProductsPage = () => {
   const productList = [
     plantHaus,
     weFund,
@@ -29,40 +29,50 @@ const ProductsSection = () => {
   ]
 
   return (
-    <div className="products-page-container">
-      <div className="products-page-header">
-        <h2>OUR WORK</h2>
-      </div>
-      {productList.map((product, index) => (
-        <div
-          key={index}
-          className={
-            product.id % 2 !== 0 ? "product-row row1" : "product-row-rev row2"
-          }
-        >
-          {product.id % 2 !== 0 ? (
-            <>
-              <div className="product-page-container">
-                <ProductCard {...product} />
-              </div>
-              <div className="product-page-desc-container">
-                <ProductInfo {...product} />
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="product-page-desc-container">
-                <ProductInfo {...product} />
-              </div>
-              <div className="product-page-container">
-                <ProductCard {...product} />
-              </div>
-            </>
-          )}
+    <div className="products-page">
+      <div className="products-page-container">
+        <div className="products-page-header">
+          <h2>OUR WORK</h2>
+          <p>
+            At the heart of our work is the belief that every website should
+            tell a story. Our work showcases designs that capture the essence of
+            each business while offering functionality built to elevate brands,
+            capture attention, and deliver measurable results. Dive into our
+            portfolio to see how we’ve brought bold ideas to life for businesses
+            across industries.
+          </p>
         </div>
-      ))}
+        {productList.map((product, index) => (
+          <div
+            key={index}
+            className={
+              product.id % 2 !== 0 ? "product-page-row" : "product-page-row-rev"
+            }
+          >
+            {product.id % 2 !== 0 ? (
+              <>
+                <div className="product-page-container">
+                  <ProductCard {...product} />
+                </div>
+                <div className="product-page-desc-container">
+                  <ProductInfo {...product} />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="product-page-desc-container">
+                  <ProductInfo {...product} />
+                </div>
+                <div className="product-page-container">
+                  <ProductCard {...product} />
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 
-export default ProductsSection
+export default ProductsPage
