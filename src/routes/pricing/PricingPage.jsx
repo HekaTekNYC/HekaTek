@@ -3,7 +3,9 @@ import PricingCard from "../../components/pricing-card/PricingCard"
 import Button from "../../components/button/Button"
 import AddOnCard from "../../components/add-on-card/AddOnCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
+
 import {blog, editsMo, clientPortal} from "../../data/AddOnData"
+
 import "./pricing-page.scss"
 
 const PricingPage = () => {
@@ -21,6 +23,7 @@ const PricingPage = () => {
               loading="lazy"
             />
           </div>
+
           <h2 className="pricing-header">Pricing</h2>
           <div className="pricing-build-container">
             <div className="pricing-build-info">
@@ -52,6 +55,7 @@ const PricingPage = () => {
                   <PricingCard {...card} />
                 </div>
               ))}
+
             </div>
           </div>
           <div className="add-on-container">
