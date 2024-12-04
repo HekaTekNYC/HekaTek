@@ -7,6 +7,7 @@ const PricingCard = ({
   id,
   className,
   title,
+
   cost,
   subCost,
   desc,
@@ -35,7 +36,8 @@ const PricingCard = ({
         <div className="pricing-card-header">
           <p className={`pricing-plan-title ${className}`}>{title}</p>
           <h3 className="pricing-plan-cost">
-            {cost} <span className="pricing-plan-cost-sub">{subCost}</span>
+            {cost}
+            <span className="pricing-plan-cost-sub">{subCost}</span>
           </h3>
           <p>{desc}</p>
           <div className="pricing-white-line"></div>

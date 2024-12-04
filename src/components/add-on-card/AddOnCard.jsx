@@ -7,7 +7,7 @@ const AddOnCard = ({id, className, title, cost, subCost, costDesc, desc}) => {
   return (
     <>
       <div className={`add-on-card ${className}`}>
-        <div className="add-on-card-header">
+        <div className="add-on-card-header header-text">
           <p className={`add-on-title ${className}`}>{title}</p>
           <h3 className="add-on-cost">
             {cost} <span className="add-on-cost-sub">{subCost}</span>
@@ -19,6 +19,7 @@ const AddOnCard = ({id, className, title, cost, subCost, costDesc, desc}) => {
 
         <div className="add-on-btn-container">
           <Button
+            className="button-tex"
             text={"Get Started"}
             scrollToId={"contact"}
             onClick={openCalendlyPopup}

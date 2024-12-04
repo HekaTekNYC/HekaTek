@@ -5,7 +5,7 @@
   width: 100%;
   flex-grow: 1;
   padding: 0 35px;
-  margin: 40px 0 60px;
+  margin: 40px 0 30px;
 }
 
 .pricing-page-container {
@@ -26,7 +26,7 @@
 
 .pricing-page-background {
   position: absolute;
-  bottom: 500px;
+  top: 1275px;
   left: 0;
   right: 0;
   width: 80%;
@@ -34,7 +34,7 @@
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
   opacity: 0.5;
-  filter: blur(180px);
+  filter: blur(140px);
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -53,15 +53,20 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 30px 0 30px;
+    margin: 5px 0 10px;
 
     .pricing-build-text {
       display: flex;
       flex-direction: column;
+
+      p {
+        margin-top: 2px;
+      }
     }
     .pricing-build-btn {
       display: flex;
-      margin-top: 30px;
+      justify-content: start;
+      margin-top: 20px;
     }
   }
 
@@ -71,7 +76,7 @@
     height: 100%;
     width: 100%;
     margin-top: 10px;
-    gap: 20px;
+    gap: 40px;
   }
 }
 
@@ -86,25 +91,24 @@
   .add-on-info {
     display: flex;
     flex-direction: column;
-    margin: 30px 0 50px;
+    margin: 30px 0 0;
 
     .add-on-text-container {
       display: flex;
       flex-direction: column;
       width: 65%;
       p {
-        margin: 10px 0 30px;
+        margin: 10px 0 10px;
       }
     }
   }
 
   .add-on-cards-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
@@ -122,38 +126,23 @@
   .pricing-page {
     .pricing-header {
       text-align: center;
+      margin: 10px 0 30px;
     }
   }
   .pricing-page-background {
-    top: 100px;
-    opacity: 1;
-    filter: blur(140px);
-    // transform: rotate(20deg) scaleX(-1);
-
     img {
-      height: auto;
-      width: 700px;
+      height: 300px;
     }
   }
   .pricing-build-container {
     .pricing-build-info {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: 30px 0 30px;
+      margin: 20px 0 30px;
 
       .pricing-build-text {
-        // display: flex;
-        // flex-direction: column;
-        justify-self: start;
-        align-items: flex-start;
-        justify-content: end;
+        justify-content: start;
         width: 80%;
       }
       .pricing-build-btn {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
         width: 35%;
       }
     }
@@ -164,12 +153,21 @@
 @media (min-width: 992px) {
   .pricing-page {
     padding: 0 80px;
+
+    .pricing-page-background {
+      top: 550px;
+      left: 70px;
+      transform: none;
+      opacity: 0.8;
+      filter: blur(140px);
+      img {
+        height: auto;
+        width: 900px;
+      }
+    }
   }
 
   .pricing-build-container {
-    .pricing-build-info {
-      text-align: center;
-    }
     .pricing-build-cards-container {
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
@@ -180,19 +178,17 @@
       display: flex;
       flex-direction: row;
       width: 100%;
-      margin: 40px 0 60px;
-
-      .pricing-build-text {
-        text-align: left;
+      margin: 40px 0 40px;
+      .pricing-build-btn {
+        justify-content: end;
+        align-items: center;
       }
     }
   }
   .add-on-container {
     .add-on-cards-container {
-      flex-direction: row;
-      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
       align-items: stretch;
-      gap: 0px;
     }
   }
 }
@@ -201,16 +197,6 @@
 @media (min-width: 1200px) {
   .pricing-page {
     padding: 0 100px;
-  }
-  .pricing-page-background {
-    bottom: 250px;
-    opacity: 0.9;
-    filter: blur(160px);
-    transform: rotate(10deg) scaleX(-1);
-
-    img {
-      width: 1000px;
-    }
   }
 
   .pricing-build-cards-container {
