@@ -68,17 +68,17 @@
     }
 
     .nav-links {
-      font-size: 1.2rem;
+      font-family: "Tanker", sans-serif;
+      font-size: 1.4rem;
       padding: 0.5rem 1rem;
-      font-weight: 500;
       color: #444d82;
       text-decoration: none;
       white-space: nowrap;
       transition: all 0.3s ease;
 
       &:hover {
-        text-shadow: 0 0 1px rgba(119, 147, 182, 0.5),
-          0 0 1px rgba(95, 146, 182, 0.7), 0 0 1px rgba(84, 154, 182, 0.9);
+        font-size: 1.4rem;
+        color: #9ea6df;
       }
     }
   }

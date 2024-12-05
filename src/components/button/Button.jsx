@@ -17,7 +17,7 @@ const Button = ({
   onClick,
   btnType = "outline",
   width = "short",
-  active = "",
+  active = false,
   to = "",
 }) => {
   const navigate = useNavigate()
@@ -33,8 +33,7 @@ const Button = ({
       navigate(to)
     }
   }
-
-  const buttonClass = `btn-${btnType} btn-${width} ${active}`
+  const buttonClass = `btn-${btnType}  ${active ? "active" : ""}`
   const btnWidth = `btn-${width === "full" ? "full" : "short"}`
 
   if (href) {
