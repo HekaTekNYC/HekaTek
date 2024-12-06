@@ -1,5 +1,5 @@
 import React, {useContext} from "react"
-import {Link} from "react-router-dom" // Import Link
+import {Link} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
 import "./dropdown.scss"
 
@@ -21,7 +21,7 @@ const Dropdown = ({refs}) => {
       <Link to="/services" onClick={closeMobileNav} className="nav-link">
         Services
       </Link>
-      <Link to="/our-work" onClick={closeMobileNav} className="nav-link">
+      <Link to="/ourWork" onClick={closeMobileNav} className="nav-link">
         Our Work
       </Link>
       <Link to="/pricing" onClick={closeMobileNav} className="nav-link">

@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1300px;
-    margin: 30px 0 100px;
+    margin: 10px 0 30px;
 
     .faq-page-header {
       display: flex;
@@ -41,8 +41,8 @@
     width: 250px;
     height: auto;
     top: 45%;
-    opacity: 0.7;
-    filter: blur(110px);
+    opacity: 0.5;
+    filter: blur(140px);
     overflow: hidden;
     z-index: -1;
   }
@@ -61,13 +61,11 @@
   .faqs-page {
     margin: 50px 0;
     .faqs-bkrnd {
-      position: absolute;
       height: auto;
       top: 30%;
       left: 50%;
       transform: translateX(-50%);
-      opacity: 0.8;
-      filter: blur(90px);
+      opacity: 0.7;
     }
     .faq-page-container {
       .faq-page-header {
@@ -78,35 +76,10 @@
 }
 /* Medium screens (iPad Mini and similar) */
 @media (min-width: 820px) {
-  .faqs-page {
-    .faqs-bkrnd {
-      position: absolute;
-      width: 200px;
-      height: auto;
-      top: 35%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 1;
-      filter: blur(100px);
-    }
-  }
 }
 
 /* Large screens (iPad Air, iPad Pro, and similar) */
 @media (min-width: 992px) {
-  .faqs-page {
-    .faqs-bkrnd {
-      position: absolute;
-      width: 250px;
-      height: auto;
-      top: 40%;
-      right: 200px;
-      transform: translateX(-50%);
-      transform: translateY(-20%);
-      opacity: 0.8;
-      filter: blur(100px);
-    }
-  }
   .faqs-page {
     padding: 0 80px;
 
@@ -118,16 +91,16 @@
 
 /* Extra large screens (Desktop and larger tablets) */
 @media (min-width: 1200px) {
-  .faqs-page {
-    .faqs-bkrnd {
-      position: absolute;
-      width: 240px;
-      height: auto;
-      top: 40%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0.8;
-      filter: blur(100px);
-    }
-  }
+  // .faqs-page {
+  // .faqs-bkrnd {
+  //   position: absolute;
+  //   width: 240px;
+  //   height: auto;
+  //   top: 40%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   opacity: 0.8;
+  //   filter: blur(100px);
+  // }
+  // }
 }

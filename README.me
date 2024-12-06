@@ -9,15 +9,14 @@ OUR WORK TASKS
 
 FAQ TASKS
 x Change the backgorund color onClick
-- Make text white onClick
+x Make text white onClick
 x Active btn highlighted when clicked onClick
-- Fix the width of the question when it opens
-x Fix the color of the caret to be white on open
-c Fix the caret to go back to moving on toggle
+c Fix the width of the question when it opens
+x Fix the color of the caret to be white on open end Fix the caret to go back to moving on toggle
 x Background needs to be added
-- On mobile tighten up the spacing with header and buttons
+x On mobile tighten up the spacing with header and buttons
 - Change iPad Air change margin from 30px 0 20px to 10px 0 20px
-- Use the Button Component
+x Use the Button Component
 x Why is it flashing teal on open?
 
 SERVICES TASKS
@@ -70,81 +69,11 @@ PRICING CARD TASKS
 NAV TASKS
 - The active route needs to remain displaying active color
 
-const FaqItem = ({question, answer}) => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => setIsOpen(!isOpen)
-
-  return (
-    <div className="faq-item">
-      <button className="faq-question" onClick={toggle}>
-        {question}
-        <span className={isOpen ? "arrow up" : "arrow down"}></span>
-      </button>
-      {isOpen && <div className="faq-answer">{answer}</div>}
-    </div>
-  )
-}
-
-export default FaqItem
-
-.faq-item {
-  margin-bottom: 1rem;
-  .faq-question {
-    width: 100%;
-    text-align: left;
-    padding: 0.8rem;
-    font-size: 1.2rem;
-    background: #f9f9f9;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 0.5rem;
-
-    &:hover {
-      background-color: #e2e2e2;
-    }
-
-    .arrow {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-
-      &.down::after {
-        content: "▼"; // Down arrow
-      }
-
-      &.up::after {
-        content: "▲"; // Up arrow
-      }
-    }
-  }
-
-  .faq-answer {
-    padding: 0.8rem;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-top: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-
-    animation: expand 0.3s ease-out forwards;
-  }
-
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; // Adjust based on content
-    }
-  }
-}
 
 
 Need to journal everyday && practicing
 Blocking through overthinking
 Quite mind more often
 Saw the color Blue then saColor Therapy
+
+

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, useRef} from "react"
 import Button from "../../components/button/Button"
 import {PricingData, WebsiteData, PlansData} from "../../data/FaqsData"
 import "./FAQ.scss"
@@ -6,24 +6,60 @@ import "./FAQ.scss"
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState("Pricing & Payments")
-  React.useEffect(() => {
+
+  const faqData = [...PricingData, ...WebsiteData, ...PlansData]
+  const categories = [...new Set(faqData.map(faq => faq.category))]
+  const filteredFaqs = faqData.filter(faq => faq.category === selectedCategory)
+
+  // Ref to detect clicks outside
+  const faqContainerRef = useRef(null)
+
+  // Toggle FAQ open/close
+  const handleToggle = index => {
+    setOpenIndex(prevIndex => (prevIndex === index ? null : index))
+  }
+
+  // Close FAQ on clicking outside
+  const handleClickOutside = event => {
+    if (
+      faqContainerRef.current &&
+      !faqContainerRef.current.contains(event.target)
+    ) {
+      setOpenIndex(null) // Close the FAQ if clicking outside
+    }
+  }
+
+  // Handle category button clicks
+  const handleCategoryChange = category => {
+    setOpenIndex(null) // Close the currently open FAQ
+    setSelectedCategory(category) // Switch to the selected category
+  }
+  //Handle Outside Clicks!!
+  const handleClickOUtside = event => {
+    if (
+      faqContainerRef.current &&
+      !faqContainerRef.current.contains(event.target)
+    ) {
+      setOpenIndex(null)
+    }
+  }
+
+  useEffect(() => {
     if (!selectedCategory && categories.length > 0) {
       setSelectedCategory(categories[0])
     }
   }, [categories, selectedCategory])
 
-  const faqData = [...PricingData, ...WebsiteData, ...PlansData]
-
-  const categories = [...new Set(faqData.map(faq => faq.category))]
-
-  const filteredFaqs = faqData.filter(faq => faq.category === selectedCategory)
-
-  const handleToggle = index => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+  // Attach and detach event listener for outside clicks
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" ref={faqContainerRef}>
       <div className="faq-categories">
         {categories.map(category => (
           <Button
@@ -31,7 +67,7 @@ const FAQ = () => {
             text={category}
             active={selectedCategory === category}
             btnType={selectedCategory === category ? "solid" : "outline"}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)} // Updated to close FAQ
           >
             {category}
           </Button>
@@ -74,4 +110,5 @@ const FAQ = () => {
     </div>
   )
 }
+
 export default FAQ
