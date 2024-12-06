@@ -46,6 +46,7 @@
     max-width: none;
   }
 }
+
 .pricing-page-header {
   display: flex;
 
@@ -152,6 +153,7 @@
         justify-content: start;
         width: 80%;
       }
+
       .pricing-build-btn {
         width: 35%;
       }
@@ -170,6 +172,7 @@
       transform: none;
       opacity: 0.8;
       filter: blur(140px);
+
       img {
         height: auto;
         width: 900px;
@@ -179,8 +182,12 @@
 
   .pricing-build-container {
     .pricing-build-cards-container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+      gap: 20px;
     }
   }
 
