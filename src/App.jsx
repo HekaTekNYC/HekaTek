@@ -1,5 +1,5 @@
 import React, {useState, useRef} from "react"
-// import ReactDOM from "react-dom"
+
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import HomePage from "./routes/home/HomePage"
@@ -9,7 +9,6 @@ import PricingPage from "./routes/pricing/PricingPage"
 import AboutPage from "./routes/about/AboutPage"
 import ContactPage from "./routes/contact/ContactPage"
 import FaqPage from "./routes/faq/FaqPage"
-
 import "./index.scss"
 
 const App = () => {
@@ -20,7 +19,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/our-work" element={<ProductsPage />} />
+          <Route path="/work" element={<ProductsPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />

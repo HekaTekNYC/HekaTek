@@ -1,29 +1,50 @@
 .faqs-page {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-grow: 1;
   padding: 0 35px;
-  margin: 60px 0;
+  z-index: 1;
 
   .faq-page-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1300px;
+    margin: 10px 0 30px;
 
     .faq-page-header {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
+      max-width: 600px;
+
+      h2 {
+        width: 100%;
+      }
 
       p {
-        margin: 30px 0;
+        margin: 10px 0 20px;
       }
     }
+  }
+
+  .faqs-bkrnd {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 45%;
+    opacity: 0.5;
+    filter: blur(140px);
+    overflow: hidden;
+    z-index: -1;
   }
 }
 
@@ -39,12 +60,22 @@
 @media (min-width: 768px) {
   .faqs-page {
     margin: 50px 0;
-
+    .faqs-bkrnd {
+      height: auto;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.7;
+    }
     .faq-page-container {
-      align-items: center;
-      text-align: center;
+      .faq-page-header {
+        text-align: center;
+      }
     }
   }
+}
+/* Medium screens (iPad Mini and similar) */
+@media (min-width: 820px) {
 }
 
 /* Large screens (iPad Air, iPad Pro, and similar) */
@@ -60,7 +91,16 @@
 
 /* Extra large screens (Desktop and larger tablets) */
 @media (min-width: 1200px) {
-  .faqs-page {
-    padding: 0 100px;
-  }
+  // .faqs-page {
+  // .faqs-bkrnd {
+  //   position: absolute;
+  //   width: 240px;
+  //   height: auto;
+  //   top: 40%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   opacity: 0.8;
+  //   filter: blur(100px);
+  // }
+  // }
 }

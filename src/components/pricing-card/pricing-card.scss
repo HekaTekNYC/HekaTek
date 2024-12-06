@@ -70,6 +70,24 @@
   flex-direction: column;
   width: 100%;
 
+  .full-price {
+    position: relative;
+    display: inline-block;
+    color: #b6bbe5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #b6bbe5;
+      transform: rotate(-20deg);
+      transform-origin: center;
+    }
+  }
+
   .pricing-plan-title {
     align-self: flex-start;
     font-size: 1.3rem;
@@ -158,10 +176,10 @@
 
     .pricing-card-image {
       top: -25px;
-      right: -45px;
+      right: -25px;
       img {
         width: auto;
-        height: 90px;
+        height: 120px;
       }
     }
 
@@ -173,11 +191,24 @@
 
 @media (min-width: 992px) {
   .pricing-card {
-    margin: 0 10px;
+    margin: 0;
 
-    .pricing-checklist-items {
-      display: grid;
-      grid-template-columns: 1fr;
+    .pricing-card-image {
+      top: -25px;
+      right: -25px;
+
+      img {
+        width: auto;
+        height: 100px;
+      }
+    }
+
+    .pricing-half {
+      margin-bottom: 20px;
+      .pricing-checklist-items {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
@@ -185,9 +216,12 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .pricing-card {
+    padding: 30px;
+
     .pricing-white-line {
       margin: 20px 0;
     }
+
     .pricing-half {
       margin: 15px 0;
     }
@@ -198,13 +232,34 @@
       width: 100%;
 
       img {
-        width: 130px;
-        height: auto;
+        width: 110px;
       }
     }
   }
 
   .sub {
     margin-right: 10px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1300px) {
+  .pricing-card {
+    .pricing-card-image {
+      top: -30px;
+      right: -270px;
+      width: 100%;
+    }
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {
+  .pricing-card {
+    .pricing-card-image {
+      top: -30px;
+      right: -320px;
+      width: 100%;
+    }
   }
 }

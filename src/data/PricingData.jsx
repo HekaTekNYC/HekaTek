@@ -7,7 +7,8 @@ export const subscription = {
   id: 1,
   className: "sub",
   title: "SUBSCRIPTION",
-  cost: "$150",
+
+  cost: "$175",
   subCost: "/month",
   desc: "Monthly Subscription Fee",
   fee: "$350",
@@ -55,7 +56,8 @@ export const lumpSum = {
   id: 2,
   className: "lump",
   title: "LUMP SUM",
-  cost: "$2000",
+
+  cost: "$2500",
   subCost: "",
   desc: "One Time Fee",
   fee: "$25",
@@ -99,6 +101,7 @@ export const ecomm = {
   id: 3,
   className: "ecomm",
   title: "E-COMMERCE",
+
   cost: "$6000",
   subCost: "/Minimum",
   desc: "Starting Price",

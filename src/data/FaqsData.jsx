@@ -51,6 +51,7 @@ export const PricingData = [
       "Refunds are provided for unused work based on our hourly rate, excluding a $350 non-refundable design fee if the designer has started work. Refunds will be processed within 15 business days of contract termination.",
   },
 ]
+
 export const WebsiteData = [
   {
     id: 1,
@@ -193,8 +194,4 @@ export const PlansData = [
     answer:
       "We work with small businesses, startups, and entrepreneurs looking for high-quality, custom-built websites.",
   },
-  // {
-  //   question: "",
-  //   answer: "",
-  // },
 ]
