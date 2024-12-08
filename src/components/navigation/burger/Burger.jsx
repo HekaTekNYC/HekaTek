@@ -1,15 +1,15 @@
-import { useContext } from "react"
-import { NavbarContext } from "../../../contexts/Navbar.context"
+import {useContext} from "react"
+import {NavbarContext} from "../../../contexts/Navbar.context"
 
 import Dropdown from "../dropdown/Dropdown"
 
 import "./burger.scss"
 
 const Burger = () => {
-  const { isMobileNavOpen, setIsMobileNavOpen } = useContext(NavbarContext)
+  const {isMobileNavOpen, setIsMobileNavOpen} = useContext(NavbarContext)
 
   const handleClick = () => {
-    setIsMobileNavOpen((prev) => !prev)
+    setIsMobileNavOpen(prev => !prev)
   }
   return (
     <div className="hamburger-container">
@@ -21,7 +21,7 @@ const Burger = () => {
       >
         <g
           stroke="#444d82"
-          strokeWidth="1"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         >

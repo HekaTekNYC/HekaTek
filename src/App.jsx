@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react"
+import React from "react"
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Layout from "./components/layout/Layout"
@@ -6,7 +6,7 @@ import HomePage from "./routes/home/HomePage"
 import ServicesPage from "./routes/services/ServicesPage"
 import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
-import AboutPage from "./routes/about/AboutPage"
+
 import ContactPage from "./routes/contact/ContactPage"
 import FaqPage from "./routes/faq/FaqPage"
 import "./index.scss"
@@ -17,7 +17,6 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/work" element={<ProductsPage />} />
           <Route path="/pricing" element={<PricingPage />} />

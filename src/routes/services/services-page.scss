@@ -5,6 +5,12 @@
   align-items: center;
   width: 100%;
   flex-grow: 1;
+  margin: 40px 0 30px;
+
+  .services-header {
+    padding: 0 35px;
+    width: 100%;
+  }
 }
 
 // Service Cards Section
@@ -32,7 +38,7 @@
   }
 
   .services-p {
-    margin: 20px 0 30px;
+    margin: 10px 0 30px;
     max-width: 900px;
     text-align: center;
   }
@@ -101,9 +107,28 @@
 }
 
 /* Media Queries */
+/* Xtra Small screens (≥576px) */
+@media (min-width: 576px) {
+  .services-page {
+    .services-header {
+      padding: 0 40px;
+    }
+  }
+  .services-container {
+    padding: 0 40px;
+  }
+}
 
 /* Small screens */
 @media (min-width: 768px) {
+  .services-page {
+    .services-header {
+      text-align: center;
+      margin: 10px 0 30px;
+      padding: 0 80px;
+    }
+  }
+
   .services-container {
     padding: 0 40px;
 

@@ -6,7 +6,7 @@ import ProductsSection from "../../sections/products-section/ProductsSection"
 import WhyUsSection from "../../sections/why-us-section/WhyUsSection"
 import PricingSection from "../../sections/pricing-section/PricingSection"
 import ContactSection from "../../sections/contact-section/ContactSection"
-import FAQ from "../../components/faq/Faq"
+
 import "./home-page.scss"
 
 const HomePage = () => {
@@ -34,7 +34,6 @@ const HomePage = () => {
       <section id="contact" className="contact-section">
         <ContactSection />
       </section>
-      <FAQ />
     </>
   )
 }

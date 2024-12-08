@@ -14,6 +14,14 @@
   padding: 0 35px;
 }
 
+.products-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
 .services-section,
 .why-us-section {
   display: flex;

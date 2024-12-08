@@ -1,12 +1,11 @@
 import React, {useContext, useState, useEffect} from "react"
-import ReactDOM from "react-dom"
 import {NavbarContext} from "../../contexts/Navbar.context"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import Burger from "./burger/Burger"
 import Dropdown from "./dropdown/Dropdown"
 import "./navigation.scss"
 
-const Navigation = ({refs, onNavigate}) => {
+const Navigation = () => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -31,125 +30,87 @@ const Navigation = ({refs, onNavigate}) => {
         hasScrolledPastHero ? "glassmorphism" : ""
       }`}
     >
-      <Link className="nav-width">
-        <Link className="navbar-item">
-          <Link to="/">
+      <div className="nav-width">
+        <div className="navbar-item">
+          <NavLink
+            to="/"
+            className={({isActive}) => (isActive ? "active" : "")}
+            end
+          >
             <h3>Hekatek</h3>
-          </Link>
-        </Link>
-        <Link className="hamburger-icon">
+          </NavLink>
+        </div>
+        <div className="hamburger-icon">
           <Burger toggleMobileNav={toggleMobileNav} />
-        </Link>
+        </div>
 
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-links">
+            <NavLink
+              to="/"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+              end
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/services" className="nav-links">
+            <NavLink
+              to="/services"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
               Services
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/work" className="nav-links">
+            <NavLink
+              to="/work"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
               Our Work
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/pricing" className="nav-links">
+            <NavLink
+              to="/pricing"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
               Pricing
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links">
+            <NavLink
+              to="/contact"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/faq" className="nav-links">
+            <NavLink
+              to="/faq"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
               FAQ
-            </Link>
+            </NavLink>
           </li>
         </ul>
         {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
-      </Link>
+      </div>
     </nav>
   )
 }
 
 export default Navigation
-
-// import React, {useContext, useState, useEffect} from "react"
-// import {Link} from "react-router-dom"
-// import {NavbarContext} from "../../contexts/Navbar.context"
-// import Burger from "./burger/Burger"
-// import Dropdown from "./dropdown/Dropdown"
-// import "./navigation.scss"
-
-// const Navigation = ({refs, onNavigate}) => {
-//   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
-
-//   const closeMobileNav = () => {
-//     toggleMobileNav()
-//   }
-
-//   const [hasScrolledPastHero, setHasScrolledPastHero] = useState(false)
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const hasScrolled = window.scrollY > 0
-//       setHasScrolledPastHero(hasScrolled)
-//     }
-
-//     window.addEventListener("scroll", handleScroll)
-//     return () => window.removeEventListener("scroll", handleScroll)
-//   }, [])
-
-//   return (
-//     <nav
-//       className={`navigation-container ${
-//         hasScrolledPastHero ? "glassmorphism" : ""
-//       }`}
-//     >
-//       <div className="nav-width">
-//         <Link to="/" className="navbar-item">
-//           <h3>Hekatek</h3>
-//         </Link>
-//         <div className="hamburger-icon">
-//           <Burger toggleMobileNav={toggleMobileNav} />
-//         </div>
-//         <ul className="nav-menu">
-//           {[
-//             "Home",
-//             "About",
-//             "Services",
-//             "Our Work",
-//             "Pricing",
-//             "Contact",
-//             "FAQ",
-//           ].map(item => (
-//             <li className="nav-item" key={item}>
-//               <Link
-//                 to={`/${item.toLowerCase()}`}
-//                 className="nav-links"
-//                 onClick={closeMobileNav}
-//               >
-//                 {item}
-//               </Link>
-//             </li>
-//           ))}
-//         </ul>
-//         {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
-//       </div>
-//     </nav>
-//   )
-// }
-
-// export default Navigation
