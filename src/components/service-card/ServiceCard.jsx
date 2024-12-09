@@ -1,10 +1,8 @@
-import ServiceBlob from "../../assets/images/contact-blob.svg"
 import "./service-card.scss"
 
 const ServiceCard = ({name, svgPath, description, height, width}) => {
   return (
     <div className="service-card-container">
-      {/* <img src={ServiceBlob} alt="blue blob" className="service-blob" /> */}
       <div className="service-icon-header">
         <div className="service-icon-container">
           <div className="service-icon">

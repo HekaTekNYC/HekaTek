@@ -4,10 +4,10 @@ import WhyUs from "../../components/why-choose-us/WhyChooseUs"
 import WhyCare from "../../components/why-we-care/WhyWeCare"
 import Process from "../../components/our-process/OurProcess"
 import {servicesData} from "../../data/ServicesData"
-import ServiceBkr from "../../assets/images/bkg-service2.jpg"
-// import ServiceBkr from "../../assets/images/ten.png"
-// import Devicewebp from "../../assets/images/device-mockup.webp"
-import Devicepng from "../../assets/images/iphone1.png"
+// import ServiceBkr from "../../assets/images/bkg-service2.jpg"
+import ServiceBkr from "../../assets/images/ten.png"
+import Devicewebp from "../../assets/images/device-mockup.webp"
+import Devicepng from "../../assets/images/sunset-iphone.png"
 
 import "./services-page.scss"
 
@@ -94,8 +94,10 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-      {/* Why We Care*/}
-      <WhyCare />
+      <div className="services-padding-container">
+        {/* Why We Care*/}
+        <WhyCare />
+      </div>
       {/* Our Process*/}
       <Process />
     </div>
