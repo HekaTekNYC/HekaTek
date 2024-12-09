@@ -1,7 +1,9 @@
+import CodeIcon from "../assets/icons/code.svg"
+
 export const servicesData = [
   {
     name: "Web Design & Development",
-    svgPath: "../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       "Your website is more than a page—it’s your digital storefront. Let’s make it unforgettable.",
     height: "40px",
@@ -9,7 +11,7 @@ export const servicesData = [
   },
   {
     name: "Update Without Limits",
-    svgPath: "../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       "Need something changed? We’re here to keep your site updated and aligned with your needs.",
     height: "40px",
@@ -17,7 +19,7 @@ export const servicesData = [
   },
   {
     name: "Hassle-Free Hosting",
-    svgPath: ".../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       "Stay online without interruptions—our team ensures your site is always running smoothly.",
     height: "40px",
@@ -25,7 +27,7 @@ export const servicesData = [
   },
   {
     name: "Performance-Optimized",
-    svgPath: "../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       "Speed is our priority—your website will load fast and keep visitors engaged from the moment they arrive.",
     height: "40px",
@@ -33,7 +35,7 @@ export const servicesData = [
   },
   {
     name: "Seamless Mobile Experience",
-    svgPath: "../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       "Putting mobile traffic first, your website will always shine on smartphones and tablets.",
     height: "40px",
@@ -41,7 +43,7 @@ export const servicesData = [
   },
   {
     name: "Google Business and Maps",
-    svgPath: "../../assets/icons/code.svg",
+    svgPath: CodeIcon,
     description:
       // "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing that improves your local search visibility.",
       "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing.",

@@ -1,9 +1,9 @@
 import React, {useContext} from "react"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
 import "./dropdown.scss"
 
-const Dropdown = ({refs}) => {
+const Dropdown = () => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -12,27 +12,53 @@ const Dropdown = ({refs}) => {
 
   return (
     <div className={`dropdown-container ${isMobileNavOpen ? "active" : ""}`}>
-      <Link to="/" onClick={closeMobileNav} className="nav-link">
+      <NavLink
+        to="/"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         Home
-      </Link>
-      <Link to="/about" onClick={closeMobileNav} className="nav-link">
-        About
-      </Link>
-      <Link to="/services" onClick={closeMobileNav} className="nav-link">
+      </NavLink>
+
+      <NavLink
+        to="/services"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         Services
-      </Link>
-      <Link to="/ourWork" onClick={closeMobileNav} className="nav-link">
+      </NavLink>
+
+      <NavLink
+        to="/ourWork"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         Our Work
-      </Link>
-      <Link to="/pricing" onClick={closeMobileNav} className="nav-link">
+      </NavLink>
+
+      <NavLink
+        to="/pricing"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         Pricing
-      </Link>
-      <Link to="/contact" onClick={closeMobileNav} className="nav-link">
+      </NavLink>
+
+      <NavLink
+        to="/contact"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         Contact
-      </Link>
-      <Link to="/faq" onClick={closeMobileNav} className="nav-link">
+      </NavLink>
+
+      <NavLink
+        to="/faq"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
         FAQ
-      </Link>
+      </NavLink>
     </div>
   )
 }

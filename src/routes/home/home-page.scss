@@ -6,12 +6,20 @@
 
 .about-section,
 .products-section,
-.contact-section,
-.pricing-section {
+.contact-section {
   display: flex;
   justify-content: center;
   height: auto;
   padding: 0 35px;
+}
+
+.pricing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 35px 80px;
+  flex-grow: 1;
 }
 
 .services-section,
