@@ -191,7 +191,7 @@
         .services-blur {
           opacity: 1;
           transform: rotate(0deg) translateY(50%);
-          filter: blur(120px);
+          filter: blur(80px);
           bottom: 250px;
           left: 0px;
 
@@ -242,8 +242,8 @@
       .services-background {
         width: 80%;
         .services-blur {
-          filter: blur(10px);
-          opacity: 0.8;
+          filter: blur(100px);
+          opacity: 0.6;
           img {
             width: 100%;
           }

@@ -1,10 +1,15 @@
 import React from "react"
-
 import {servicesHomeData} from "../../data/ServicesHomeData"
 import ServiceBg from "../../assets/images/services-bg.svg"
+import {servicesData} from "../../data/ServicesData"
+import ServiceCard from "../../components/service-card/ServiceCard"
 import "./services-section.scss"
 
 const ServicesSection = () => {
+  const halfIndex = Math.ceil(servicesData.length / 2)
+  const leftCards = servicesData.slice(0, halfIndex)
+  const rightCards = servicesData.slice(halfIndex)
+
   return (
     <div className="services-home-container">
       <div className="services-home-background">
@@ -22,28 +27,22 @@ const ServicesSection = () => {
         earnings. No Wordpress, no page builders, just custom-coded websites
         with exceptional results from $150/month.
       </p>
+      {/* Render Service Cards from servicesData */}
       <div className="services-home-cards">
-        {servicesHomeData.map((service, index) => (
-          <div key={index} className="service-home-card">
-            <div className="services-home-icon-header">
-              <div className="service-home-icon">
-                <img
-                  src={service.svgPath}
-                  alt={`${service.name} icon`}
-                  height={service.height}
-                  width={service.width}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <h5 className="service-home-header"> {service.name}</h5>
-            </div>
-            <p className="service-home-text"> {service.description}</p>
-          </div>
+        {servicesData.map((service, index) => (
+          <ServiceCard
+            key={index}
+            name={service.name}
+            svgPath={service.svgPath}
+            description={service.description}
+            height={service.height}
+            width={service.width}
+          />
         ))}
       </div>
+      <div className="services-home-details"></div>
     </div>
   )
 }
-// when Celeste comes back from lunch ask her why the css is ignoring the 1200 media query and listening to the 768px query
+
 export default ServicesSection

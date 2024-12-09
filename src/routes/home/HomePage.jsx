@@ -6,6 +6,7 @@ import ProductsSection from "../../sections/products-section/ProductsSection"
 import WhyUsSection from "../../sections/why-us-section/WhyUsSection"
 import PricingSection from "../../sections/pricing-section/PricingSection"
 import ContactSection from "../../sections/contact-section/ContactSection"
+import {servicesData} from "../../data/ServicesData"
 
 import "./home-page.scss"
 

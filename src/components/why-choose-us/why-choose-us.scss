@@ -5,105 +5,76 @@
   width: 100%;
   flex-grow: 1;
   padding: 0 35px;
-}
 
-.choose-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1300px;
-
-  /* Left Column */
-  .choose-us-info {
+  .choose-us {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1300px;
+  }
+}
 
-    h2 {
-      margin: 13px 0;
-    }
+/* Left Column */
+.choose-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  height: 100%;
+  margin-bottom: 30px;
 
-    p {
-      margin-bottom: 20px;
-    }
+  h2 {
+    margin: 13px 0;
+  }
 
-    .choose-us-benefits {
-      list-style: none;
-      padding: 0;
+  p {
+    margin-bottom: 20px;
+  }
+
+  .choose-us-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+
+    li {
+      display: flex;
+      gap: 8px;
       margin-bottom: 10px;
 
-      li {
-        display: flex;
-        gap: 8px;
-        margin-bottom: 10px;
-
-        .check-icon {
-          width: 20px;
-          height: 20px;
-          margin-top: 3px;
-        }
+      .check-icon {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
       }
     }
   }
+}
 
-  /* Right Column */
-  .choose-us-right {
+/* Right Column */
+.choose-us-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+
+  .choose-us-image {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: relative;
 
-    .choose-us-image {
+    img {
       width: 100%;
       height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-    }
-
-    .years-experience {
-      display: none;
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      align-items: center;
-      padding: 10px 15px;
-      background-color: #f0f4ff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-      .trophy-icon {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 10px;
-      }
-
-      .years-experience-text {
-        margin: 10px;
-        text-align: center;
-        color: #333;
-
-        .years {
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #0077ff;
-        }
-
-        p {
-          font-size: 0.8rem;
-          color: #666;
-          margin: 0;
-        }
-      }
+      object-fit: cover;
+      object-position: center bottom;
     }
   }
 }
@@ -121,22 +92,23 @@
 @media (min-width: 992px) {
   .choose-us-container {
     padding: 0 80px;
-  }
 
-  .choose-us {
-    flex-direction: row;
-
+    .choose-us {
+      flex-direction: row;
+      max-height: 540px;
+      align-items: stretch;
+      overflow: hidden;
+    }
     .choose-us-info {
       width: 50%;
-      margin: 0;
+      margin-bottom: 0;
     }
-  }
 
-  .choose-us-right {
-    width: 50%;
-    .choose-us-image {
-      // padding-left: 50px;
-      padding: 50px 0 50px 50px;
+    .choose-us-right {
+      width: 50%;
+      .choose-us-image {
+        padding-left: 50px;
+      }
     }
   }
 }
@@ -145,5 +117,35 @@
 @media (min-width: 1200px) {
   .choose-us-container {
     padding: 0 100px;
+    .choose-us {
+      max-height: 560px;
+    }
+  }
+
+  .choose-us-info {
+    margin-bottom: 30px;
+
+    h2 {
+      margin: 13px 0;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    .choose-us-benefits {
+      margin-bottom: 5px;
+
+      li {
+        gap: 8px;
+        margin-bottom: 17px;
+
+        .check-icon {
+          width: 20px;
+          height: 20px;
+          margin-top: 3px;
+        }
+      }
+    }
   }
 }
