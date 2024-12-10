@@ -16,7 +16,7 @@ const Burger = () => {
       <svg
         id="hamburger"
         className={`burger-svg ${isMobileNavOpen ? "active" : ""}`}
-        viewBox="0 0 45 45"
+        viewBox="9.5 9.5 26 21"
         onClick={handleClick}
       >
         <g

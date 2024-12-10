@@ -28,6 +28,7 @@
   justify-content: center;
   background: #f4f7ff;
   padding: 80px 35px;
+  overflow: hidden;
 
   h2 {
     color: #9ea6df;
@@ -36,9 +37,7 @@
 
 .about-section,
 .products-section,
-.services-section,
-.pricing-section,
-.why-us-section {
+.pricing-section {
   margin: 60px 0;
 }
 
@@ -58,11 +57,14 @@
 
   .about-section,
   .products-section,
-  .services-section,
   .pricing-section,
-  .why-us-section,
   .contact-section {
     padding: 0 40px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 70px 40px;
   }
 }
 
@@ -72,11 +74,6 @@
     .ellipse-4 {
       display: block;
     }
-  }
-
-  .services-section,
-  .why-us-section {
-    padding: 80px 40px;
   }
 }
 
@@ -92,7 +89,6 @@
   .about-section,
   .products-section,
   .pricing-section,
-  .why-us-section,
   .contact-section {
     padding: 0 80px;
   }
@@ -107,7 +103,6 @@
 @media (min-width: 1400px) {
   .about-section,
   .products-section,
-  .why-us-section,
   .pricing-section,
   .contact-section {
     padding: 0 100px;

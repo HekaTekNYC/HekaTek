@@ -11,10 +11,11 @@ import {servicesData} from "../../data/ServicesData"
 // import ServiceBkr from "../../assets/images/33.png"
 // import ServiceBkr from "../../assets/images/bk11.jpg"
 // import ServiceBkr from "../../assets/images/bk11.jpg"
-// import ServiceBkr from "../../assets/images/33.jpg"
-import ServiceBkr from "../../assets/images/bkg-service25.jpg"
+import ServiceBkr from "../../assets/images/33.png"
+// import ServiceBkr from "../../assets/images/bkg-service25.jpg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
+import ProofPage from "../../sections/proof/Proof-in-numbers"
 
 import "./services-page.scss"
 
@@ -107,6 +108,7 @@ const ServicesPage = () => {
       </div>
       {/* Our Process*/}
       <Process />
+      <ProofPage />
     </div>
   )
 }
