@@ -7,6 +7,7 @@ import WhyUsSection from "../../sections/why-us-section/WhyUsSection"
 import PricingSection from "../../sections/pricing-section/PricingSection"
 import ContactSection from "../../sections/contact-section/ContactSection"
 import {servicesData} from "../../data/ServicesData"
+import LavaLamp from "../../components/lava-lamp/LavaLamp"
 
 import "./home-page.scss"
 
@@ -34,6 +35,9 @@ const HomePage = () => {
       </section>
       <section id="contact" className="contact-section">
         <ContactSection />
+      </section>
+      <section id="404" className="lava-section">
+        <LavaLamp />
       </section>
     </>
   )

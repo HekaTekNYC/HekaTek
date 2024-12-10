@@ -6,6 +6,7 @@ import HomePage from "./routes/home/HomePage"
 import ServicesPage from "./routes/services/ServicesPage"
 import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
+import LavaLamp from "./components/lava-lamp/LavaLamp"
 
 import ContactPage from "./routes/contact/ContactPage"
 import FaqPage from "./routes/faq/FaqPage"
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/404" element={<LavaLamp />} />
         </Routes>
       </Layout>
     </Router>

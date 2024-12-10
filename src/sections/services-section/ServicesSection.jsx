@@ -1,8 +1,12 @@
 import React from "react"
-import {servicesHomeData} from "../../data/ServicesHomeData"
-import ServiceBg from "../../assets/images/services-bg.svg"
-import {servicesData} from "../../data/ServicesData"
 import ServiceCard from "../../components/service-card/ServiceCard"
+import Button from "../../components/button/Button"
+
+import {servicesHomeData} from "../../data/ServicesHomeData"
+import {servicesData} from "../../data/ServicesData"
+
+import ServiceBg from "../../assets/images/services-bg.svg"
+
 import "./services-section.scss"
 
 const ServicesSection = () => {
@@ -27,7 +31,7 @@ const ServicesSection = () => {
         earnings. No Wordpress, no page builders, just custom-coded websites
         with exceptional results from $150/month.
       </p>
-      {/* Render Service Cards from servicesData */}
+
       <div className="services-home-cards">
         {servicesData.map((service, index) => (
           <ServiceCard
@@ -40,7 +44,14 @@ const ServicesSection = () => {
           />
         ))}
       </div>
-      <div className="services-home-details"></div>
+      <div className="services-home-btn">
+        <Button
+          text={"Learn More"}
+          to={"/services"}
+          btnType={"solid"}
+          width={"short"}
+        />
+      </div>
     </div>
   )
 }
