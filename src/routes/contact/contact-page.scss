@@ -41,7 +41,7 @@
     }
 
     p {
-      margin: 10px 0 30px;
+      margin-top: 2px;
     }
   }
 
@@ -182,7 +182,7 @@
         }
 
         p {
-          margin: 10px 0 0;
+          // margin: 10px 0 0;
         }
       }
     }
@@ -231,9 +231,6 @@
         margin-right: 0px;
         width: 100%;
 
-        h2 {
-          margin-bottom: 20px;
-        }
         p {
           margin: 10px 0 0;
         }
@@ -250,9 +247,9 @@
 
       .contact-page-blob {
         top: 0;
-        right: 100px;
+        right: 10px;
         width: 500px;
-        filter: blur(130px);
+        filter: blur(140px);
       }
     }
   }
@@ -299,7 +296,7 @@
       .contact-page-blob {
         width: 450px;
         right: 75px;
-        filter: blur(130px);
+        filter: blur(140px);
       }
     }
   }

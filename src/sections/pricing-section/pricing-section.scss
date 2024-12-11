@@ -4,7 +4,6 @@
   flex-direction: column;
   width: 100%;
   max-width: 1300px;
-
   z-index: 1;
 }
 
@@ -50,13 +49,9 @@
 @media (min-width: 768px) {
   .pricing-background {
     bottom: 300px;
-    opacity: 1;
-    filter: blur(140px);
-    transform: rotate(20deg) scaleX(-1);
 
     img {
-      height: auto;
-      width: 700px;
+      height: 255px;
     }
   }
 }
@@ -75,15 +70,24 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
   }
+
+  .pricing-background {
+    bottom: 200px;
+    opacity: 0.75;
+    filter: blur(150px);
+    transform: rotate(10deg) scaleX(-1);
+
+    img {
+      width: 900px;
+    }
+  }
 }
 
 /* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
   .pricing-background {
-    bottom: 250px;
-    opacity: 0.9;
+    opacity: 0.8;
     filter: blur(160px);
-    transform: rotate(10deg) scaleX(-1);
 
     img {
       width: 1000px;

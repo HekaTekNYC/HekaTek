@@ -75,7 +75,7 @@
       top: 50px;
       right: 60px;
       width: 350px;
-      filter: blur(120px);
+      filter: blur(190px);
     }
   }
 }
@@ -87,7 +87,8 @@
       top: 0;
       right: 0;
       width: 400px;
-      filter: blur(130px);
+      filter: blur(180px);
+      opacity: 0.7;
     }
   }
 }
@@ -98,7 +99,8 @@
     .contact-us-blob {
       width: 450px;
       right: 75px;
-      filter: blur(130px);
+      opacity: 0.9;
+      filter: blur(190px);
     }
   }
 }

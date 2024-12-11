@@ -42,7 +42,7 @@ export const servicesData = [
     width: "auto",
   },
   {
-    name: "Google Business and Maps",
+    name: "Google Business & Maps",
     svgPath: CodeIcon,
     description:
       // "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing that improves your local search visibility.",

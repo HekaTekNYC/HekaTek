@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="hero-format">
         <div className="hero-container">
           <div className="hero-top">
-            <h1>
+            <h1 className="hero-section-header">
               ENVISION
               <br />
               Innovate

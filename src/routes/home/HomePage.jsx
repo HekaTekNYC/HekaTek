@@ -36,9 +36,6 @@ const HomePage = () => {
       <section id="contact" className="contact-section">
         <ContactSection />
       </section>
-      <section id="404" className="lava-section">
-        <LavaLamp />
-      </section>
     </>
   )
 }

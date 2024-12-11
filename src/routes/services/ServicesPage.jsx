@@ -11,19 +11,19 @@ import {servicesData} from "../../data/ServicesData"
 // import ServiceBkr from "../../assets/images/33.png"
 // import ServiceBkr from "../../assets/images/bk11.jpg"
 // import ServiceBkr from "../../assets/images/bk11.jpg"
-import ServiceBkr from "../../assets/images/33.png"
-// import ServiceBkr from "../../assets/images/bkg-service25.jpg"
+// import ServiceBkr from "../../assets/images/33.png"
+import ServiceBkr from "../../assets/images/bkg-service25.jpg"
+// import ServiceBkr from "../../assets/images/layer.png"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
 import ProofPage from "../../sections/proof/Proof-in-numbers"
+import ServiceBlob from "../../assets/images/services-bkr-2.svg"
 
 import "./services-page.scss"
 
 const ServicesPage = () => {
   const halfIndex = Math.ceil(servicesData.length / 2)
-  const leftCards = servicesData.slice(0, halfIndex)
-  const rightCards = servicesData.slice(halfIndex)
-
+  const allCards = servicesData
   return (
     <div className="services-page">
       <h2 className="services-header"> Our Services </h2>
@@ -32,26 +32,36 @@ const ServicesPage = () => {
       {/* Service Cards */}
       <div className="services-container">
         <div className="services">
-          <h2 className="h2-heading">How We Help Your Business</h2>
-          <p className="services-p">
-            We provide personalized web design and development services for
-            small businesses nationwide. By hand-coding every element, we ensure
-            optimal site performance, leading to higher customer engagement and
-            increased earnings. No Wordpress, no page builders, just
-            custom-coded websites with exceptional results from $150/month.
-          </p>
+          <div className="services-page-heading">
+            <h2 className="h2-heading">How We Help Your Business</h2>
+            <p className="services-p">
+              We provide personalized web design and development services for
+              small businesses nationwide. By hand-coding every element, we
+              ensure optimal site performance, leading to higher customer
+              engagement and increased earnings. No Wordpress, no page builders,
+              just custom-coded websites with exceptional results from
+              $150/month.
+            </p>
+          </div>
           <div className="services-cards-layout">
+            <div className="services-blob">
+              <img
+                src={ServiceBlob}
+                alt="gradient sunset background"
+                loading="lazy"
+              />
+            </div>
             <div className="services-background">
               <div className="services-blur">
                 <img
                   src={ServiceBkr}
-                  alt="gradient blue and orange shape"
+                  alt="gradient sunset background"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="services-cards-left">
-              {leftCards.map((service, index) => (
+            <div className="services-cards">
+              {allCards.map((service, index) => (
                 <ServiceCard
                   key={index}
                   name={service.name}
@@ -62,53 +72,25 @@ const ServicesPage = () => {
                 />
               ))}
             </div>
-            <div className="services-mobile-container">
-              <div className="services-mobile">
-                {/* <picture>
-                <source
-                  srcSet={Devicewebp}
-                  type="image/webp"
-                  media="(min-width: 400px)"
-                />
-                <source
-                  srcSet={Devicepng}
-                  type="image/png"
-                  media="(min-width: 400px)"
-                /> */}
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={Devicepng}
-                  alt="mockup devices with desktop laptop tablet and phone"
-                  sizes="(max-width: 750px) 100vw, 650px"
-                  height="689"
-                  width="1097"
-                />
-                {/* </picture> */}
-              </div>
-            </div>
-            <div className="services-cards-right">
-              {rightCards.map((service, index) => (
-                <ServiceCard
-                  key={index}
-                  name={service.name}
-                  svgPath={service.svgPath}
-                  description={service.description}
-                  height={service.height}
-                  width={service.width}
-                />
-              ))}
+            <div className="services-mobile">
+              <img
+                src={Devicepng}
+                alt="mockup devices with desktop laptop tablet and phone"
+                loading="lazy"
+                sizes="(max-width: 750px) 100vw, 650px"
+                height="625"
+                width="384"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="services-padding-container">
-        {/* Why We Care*/}
-        <WhyCare />
-      </div>
-      {/* Our Process*/}
-      <Process />
+
+      {/* Why We Care*/}
       <ProofPage />
+
+      {/* Our Process*/}
+      {/* <Process /> */}
     </div>
   )
 }
