@@ -3,7 +3,7 @@ import PricingCard from "../../components/pricing-card/PricingCard"
 import Button from "../../components/button/Button"
 import AddOnCard from "../../components/add-on-card/AddOnCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
-
+import OurProcess from "../../components/our-process/OurProcess"
 import {blog, editsMo, clientPortal} from "../../data/AddOnData"
 
 import "./pricing-page.scss"
@@ -55,7 +55,6 @@ const PricingPage = () => {
                   <PricingCard {...card} />
                 </div>
               ))}
-
             </div>
           </div>
           <div className="add-on-container">
@@ -80,6 +79,7 @@ const PricingPage = () => {
           </div>
         </div>
       </div>
+      <OurProcess />
     </>
   )
 }

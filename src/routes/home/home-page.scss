@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  height: 80vh;
+  height: calc(100vh - 145px);
   overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
 .about-section,
 .products-section,
 .pricing-section {
-  margin: 60px 0;
+  margin: 80px 0;
 }
 
 .contact-section {

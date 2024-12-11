@@ -35,7 +35,7 @@ const ProductsPage = () => {
           <h2>OUR WORK</h2>
           <p>
             At the heart of our work is the belief that every website should
-            tell a story. Our work showcases designs that capture the essence of
+            tell a story. Our work showcases designs that reflect the essence of
             each business while offering functionality built to elevate brands,
             capture attention, and deliver measurable results. Dive into our
             portfolio to see how we’ve brought bold ideas to life for businesses

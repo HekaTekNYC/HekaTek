@@ -1,6 +1,7 @@
 import BackgroundShape from "../../assets/images/pricing-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
+import OurProcess from "../../components/our-process/OurProcess"
 import "./pricing-section.scss"
 
 const PricingSection = () => {
@@ -31,6 +32,7 @@ const PricingSection = () => {
             </div>
           ))}
         </div>
+        {/* <OurProcess /> */}
       </div>
     </>
   )

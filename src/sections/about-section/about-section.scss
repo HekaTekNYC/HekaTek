@@ -12,7 +12,7 @@
   height: auto;
   width: 100%;
   max-width: 1300px;
-  padding: 0 35px;
+  padding: 0px 35px;
   z-index: 2;
 }
 .about-blob-container {
@@ -29,7 +29,6 @@
 }
 
 .about-info-container {
-  margin-bottom: 30px;
   z-index: 2;
 }
 
@@ -97,6 +96,8 @@
 
 @media (min-width: 1200px) {
   .about-bkrnd-img {
+    top: 10px;
+    left: 50px;
     width: 300px;
     transform: rotate(200deg);
   }
