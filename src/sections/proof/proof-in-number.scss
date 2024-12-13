@@ -24,17 +24,7 @@
   width: 100%;
 
   .proof-left {
-    width: 50%;
-    .proof-section {
-      padding: 10px 0;
-    }
-
-    .section-number {
-      font-family: "Tanker", sans-serif;
-      color: #f7928e;
-      font-weight: bold;
-      margin-right: 10px;
-    }
+    width: 100%;
   }
 
   p {
@@ -42,19 +32,27 @@
   }
 
   .proof-right {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    .section-number {
+      font-family: "Tanker", sans-serif;
+      color: #f7928e;
+      font-weight: bold;
+      margin-right: 10px;
+    }
 
-    .stat-item {
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
+    .stats-container {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .stat-item {
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
 
-      p {
-        font-size: 0.9rem;
+        p {
+          font-size: 0.9rem;
+        }
       }
     }
   }

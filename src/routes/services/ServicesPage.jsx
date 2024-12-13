@@ -3,22 +3,14 @@ import ServiceCard from "../../components/service-card/ServiceCard"
 import WhyUs from "../../components/why-choose-us/WhyChooseUs"
 import WhyCare from "../../components/why-we-care/WhyWeCare"
 import Process from "../../components/our-process/OurProcess"
-import {servicesData} from "../../data/ServicesData"
-// import ServiceBkr from "../../assets/images/bkg-service2.jpg"
-// import ServiceBkr from "../../assets/images/ten.png"
-// import ServiceBkr from "../../assets/images/33.png"
-// import ServiceBkr from "../../assets/images/bkg-service24.jpg"
-// import ServiceBkr from "../../assets/images/33.png"
-// import ServiceBkr from "../../assets/images/bk11.jpg"
-// import ServiceBkr from "../../assets/images/bk11.jpg"
-// import ServiceBkr from "../../assets/images/33.png"
-import ServiceBkr from "../../assets/images/bkg-service25.jpg"
-// import ServiceBkr from "../../assets/images/layer.png"
+
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
 import ProofPage from "../../sections/proof/Proof-in-numbers"
-import ServiceBlob from "../../assets/images/services-bkr-2.svg"
+import ServiceBlob from "../../assets/images/serviceBlob.svg"
+import ServiceBlobM from "../../assets/images/serviceBlobM.svg"
 
+import {servicesData} from "../../data/ServicesData"
 import "./services-page.scss"
 
 const ServicesPage = () => {
@@ -44,21 +36,11 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="services-cards-layout">
+            {/* <div className="services-blob-m">
+              <img src={ServiceBlobM} alt="gradient blob" loading="lazy" />
+            </div> */}
             <div className="services-blob">
-              <img
-                src={ServiceBlob}
-                alt="gradient sunset background"
-                loading="lazy"
-              />
-            </div>
-            <div className="services-background">
-              <div className="services-blur">
-                <img
-                  src={ServiceBkr}
-                  alt="gradient sunset background"
-                  loading="lazy"
-                />
-              </div>
+              <img src={ServiceBlob} alt="gradient blob " loading="lazy" />
             </div>
             <div className="services-cards">
               {allCards.map((service, index) => (
@@ -90,7 +72,7 @@ const ServicesPage = () => {
       <ProofPage />
 
       {/* Our Process*/}
-      {/* <Process /> */}
+      <Process />
     </div>
   )
 }

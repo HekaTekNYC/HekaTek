@@ -1,60 +1,9 @@
-import React from "react"
+import React, {useState} from "react"
 import "./our-process.scss"
-import {motion} from "framer-motion"
-
-// const containerVariants = {
-//   hidden: {opacity: 0},
-//   visible: {
-//     opacity: 1,
-//     transition: {
-//       staggerChildren: 0.2, // Increase the delay between each card to make it smoother
-//       ease: "linear", // Smooth the overall transition
-//     },
-//   },
-// }
-
-// const cardVariants = {
-//   hidden: {opacity: 0, y: 30}, // Start cards further down for a more noticeable rise effect
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       duration: 0.3, // Slightly longer duration for smoother movement
-//       ease: [0.22, 1, 0.36, 1], // Custom bezier curve for a fluid, natural scroll-up effect
-//     },
-//   },
-// }
-const containerVariants = {
-  hidden: {opacity: 0},
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2, // Delay between each card
-    },
-  },
-}
-
-const cardVariants = {
-  hidden: {opacity: 0, y: 30}, // Start cards further down for a more noticeable rise effect
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3, // Slightly longer duration for smoother movement
-      ease: [0.22, 1, 0.36, 1], // Custom bezier curve for a fluid, natural scroll-up effect
-    },
-  },
-}
-// const cardVariants = {
-//   hidden: {opacity: 0, y: 60}, // Cards start slightly below and invisible
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {duration: 0.6, ease: "easeOut"},
-//   },
-// }
 
 const OurProcess = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null)
+
   const steps = [
     {
       title: "Consultation",
@@ -84,13 +33,7 @@ const OurProcess = () => {
 
   return (
     <div className="our-process-banner">
-      <motion.section
-        className="our-process-section"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{once: true, amount: 0.3}} // Trigger when 30% of section is in view
-        variants={containerVariants}
-      >
+      <div className="our-process-section">
         <div className="our-process-header">
           <h2 className="h2-heading">Our Process, Your Peace of Mind</h2>
           <p>
@@ -103,24 +46,37 @@ const OurProcess = () => {
             well-executed development experience.
           </p>
         </div>
-        <motion.div className="our-process-cards-container">
+        <div className="our-process-cards-container">
           {steps.map((step, index) => (
-            <motion.div
+            <div
               key={index}
-              className={`our-process-card ${index === 0 ? "highlight" : ""}`}
-              variants={cardVariants} // Apply individual card animation
+              className={`our-process-card ${
+                hoveredIndex !== null && index <= hoveredIndex
+                  ? "highlight"
+                  : ""
+              }`}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="process-info-container">
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
               </div>
               <div className="process-number-container">
-                <p className="process-number">{step.number}</p>
+                <p
+                  className={`process-number ${
+                    hoveredIndex !== null && index <= hoveredIndex
+                      ? "filled"
+                      : ""
+                  }`}
+                >
+                  {step.number}
+                </p>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.section>
+        </div>
+      </div>
     </div>
   )
 }

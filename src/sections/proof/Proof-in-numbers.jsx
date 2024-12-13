@@ -1,4 +1,5 @@
 import {sections, stats} from "../../data/ProofData"
+import User from "../../assets/images/hands.png"
 
 import "./proof-in-number.scss"
 
@@ -19,6 +20,9 @@ const ProofPage = () => {
 
           <div className="proof-body-container">
             <div className="proof-left">
+              <img src={User} alt="" />
+            </div>
+            <div className="proof-right">
               {sections.map((section, index) => (
                 <div key={index} className="proof-section">
                   <h4>
@@ -28,14 +32,14 @@ const ProofPage = () => {
                   <p>{section.content}</p>
                 </div>
               ))}
-            </div>
-            <div className="proof-right">
-              {stats.map((stat, index) => (
-                <div key={index} className="stat-item">
-                  <h4>{stat.stat}</h4>
-                  <p>{stat.description}</p>
-                </div>
-              ))}
+              <div className="stats-container">
+                {stats.map((stat, index) => (
+                  <div key={index} className="stat-item">
+                    <h4>{stat.stat}</h4>
+                    <p>{stat.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
