@@ -1,12 +1,10 @@
 import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
-import WhyUs from "../../components/why-choose-us/WhyChooseUs"
-
+import Redefine from "../../sections/redefine-section/RedefineSeciton"
 import Process from "../../components/our-process/OurProcess"
-
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
-import ProofPage from "../../sections/proof/Proof-in-numbers"
+import ProofPage from "../../sections/proof-section/ProofSection"
 import ServiceBlob from "../../assets/images/serviceBlob.svg"
 import ServiceBlobM from "../../assets/images/serviceBlobM.svg"
 
@@ -20,7 +18,7 @@ const ServicesPage = () => {
     <div className="services-page">
       <h2 className="services-header"> Our Services </h2>
       {/* Why Choose Us*/}
-      <WhyUs />
+      <Redefine />
       {/* Service Cards */}
       <div className="services-container">
         <div className="services">
@@ -36,9 +34,9 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="services-cards-layout">
-            {/* <div className="services-blob-m">
+            <div className="services-blob-m">
               <img src={ServiceBlobM} alt="gradient blob" loading="lazy" />
-            </div> */}
+            </div>
             <div className="services-blob">
               <img src={ServiceBlob} alt="gradient blob " loading="lazy" />
             </div>

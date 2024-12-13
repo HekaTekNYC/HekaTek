@@ -97,7 +97,7 @@
 
           &.filled {
             color: #444d82;
-            -webkit-text-stroke: 0; //this removes outline for filled color
+            -webkit-text-stroke: 0;
             -webkit-text-fill-color: #444d82;
           }
         }
@@ -106,7 +106,7 @@
 
     .highlight {
       box-shadow: 0 8px 16px rgba(56, 99, 234, 0.3),
-        0 0 10px rgba(56, 99, 234, 0.5), inset 0 0 0 2px #444d82; /* Add border-like outline */
+        0 0 10px rgba(56, 99, 234, 0.5), inset 0 0 0 2px #444d82;
       transform: scale(1.05);
     }
   }
@@ -171,6 +171,12 @@
   .our-process-banner {
     .our-process-section {
       padding: 60px 100px 65px;
+
+      .our-process-header {
+        p {
+          width: 85%;
+        }
+      }
       .our-process-cards-container {
         gap: 15px;
         .our-process-card {

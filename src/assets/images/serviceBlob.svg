@@ -1,14 +1,1 @@
-
-
-<svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-
-    <linearGradient id="three-color-gradient" x1="0" x2="1" y1="1" y2="0">
-      <stop offset="0%" stop-color="#9A60FF"></stop>
-      <stop offset="40%" stop-color="#8BA1FF"></stop>
-      <stop offset="100%" stop-color="rgba(32.022, 73.567, 235.718, 1)"></stop>
-    </linearGradient>
-
-  </defs>
-  <path fill="url(#three-color-gradient)" d="M22.3,-35C28.4,-35.2,32.3,-28.1,30.8,-21C29.3,-14,22.3,-7,18.3,-2.3C14.3,2.3,13.2,4.7,12.8,8.3C12.3,12,12.5,16.9,10.5,20C8.4,23,4.2,24,-1.8,27.2C-7.9,30.4,-15.8,35.7,-21.6,34.9C-27.4,34.1,-31.2,27.1,-31.5,20.3C-31.9,13.4,-28.8,6.7,-25.8,1.7C-22.8,-3.3,-19.9,-6.5,-16.4,-7.8C-12.8,-9.1,-8.7,-8.5,-5.8,-10.1C-3,-11.8,-1.5,-15.7,3.3,-21.4C8.1,-27.2,16.3,-34.8,22.3,-35Z" transform="translate(50 50)" stroke-width="0"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="sw-js-blob-svg" viewBox="18.47 15 62.66 69.99">  <defs>    <linearGradient id="three-color-gradient" x1="0" x2="1" y1="1" y2="0">      <stop offset="0%" stop-color="#9A60FF"></stop>      <stop offset="40%" stop-color="#8BA1FF"></stop>      <stop offset="100%" stop-color="rgba(32.022, 73.567, 235.718, 1)"></stop>    </linearGradient>  </defs>  <path fill="url(#three-color-gradient)" d="M22.3,-35C28.4,-35.2,32.3,-28.1,30.8,-21C29.3,-14,22.3,-7,18.3,-2.3C14.3,2.3,13.2,4.7,12.8,8.3C12.3,12,12.5,16.9,10.5,20C8.4,23,4.2,24,-1.8,27.2C-7.9,30.4,-15.8,35.7,-21.6,34.9C-27.4,34.1,-31.2,27.1,-31.5,20.3C-31.9,13.4,-28.8,6.7,-25.8,1.7C-22.8,-3.3,-19.9,-6.5,-16.4,-7.8C-12.8,-9.1,-8.7,-8.5,-5.8,-10.1C-3,-11.8,-1.5,-15.7,3.3,-21.4C8.1,-27.2,16.3,-34.8,22.3,-35Z" transform="translate(50 50)" stroke-width="0"></path></svg>

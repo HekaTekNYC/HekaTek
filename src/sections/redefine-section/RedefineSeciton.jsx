@@ -1,9 +1,5 @@
-import React from "react"
-import Award from "../../assets/icons/award.svg"
 import Button from "../../components/button/Button"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
-
-import Icon8 from "../../assets/icons/icons8-award-85.png"
 import FixCode from "../../assets/images/fixcode.png"
 import CodeWideWebp from "../../assets/images/wide-code.webp"
 import CodeWidePng from "../../assets/images/wide-code.png"
@@ -13,9 +9,9 @@ import CodeRegWebp from "../../assets/images/reg-code.webp"
 import CodeRegPng from "../../assets/images/reg-code.png"
 import CoralCheckIcon from "../../assets/icons/coral-check.svg"
 
-import "./why-choose-us.scss"
+import "./redefine-section.scss"
 
-const WhyChooseUs = () => {
+const RedefineSection = () => {
   const openCalendlyPopup = useCalendlyPopup()
   return (
     <div className="choose-us-container">
@@ -98,11 +94,11 @@ const WhyChooseUs = () => {
               />
 
               {/* Desktop Image */}
-              {/* <source
+              <source
                 srcSet={CodeVertWebp}
                 type="image/webp"
                 media="(min-width: 993px)"
-              /> */}
+              />
               <source
                 srcSet={FixCode}
                 type="image/png"
@@ -126,4 +122,4 @@ const WhyChooseUs = () => {
   )
 }
 
-export default WhyChooseUs
+export default RedefineSection

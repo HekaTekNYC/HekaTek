@@ -2,9 +2,9 @@ import {sections, stats} from "../../data/ProofData"
 import WorkingPng from "../../assets/images/working.png"
 import WorkingWebp from "../../assets/images/working.webp"
 
-import "./proof-in-number.scss"
+import "./proof-section.scss"
 
-const ProofPage = () => {
+const ProofSection = () => {
   return (
     <>
       <div className="proof-page-container">
@@ -69,4 +69,4 @@ const ProofPage = () => {
   )
 }
 
-export default ProofPage
+export default ProofSection

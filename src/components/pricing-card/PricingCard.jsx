@@ -1,14 +1,16 @@
-import React, {useState, useEffect} from "react"
-import Button from "../button/Button"
+import {useLocation} from "react-router-dom"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
+
+import Button from "../button/Button"
+
 import "./pricing-card.scss"
 
 const PricingCard = ({
   id,
   className,
   title,
-
   cost,
+  sale,
   subCost,
   desc,
   fee,
@@ -17,6 +19,9 @@ const PricingCard = ({
   gem,
 }) => {
   const openCalendlyPopup = useCalendlyPopup()
+  const location = useLocation()
+
+  const isPricingPage = location.pathname === "/pricing"
   return (
     <>
       <div className={`pricing-card ${className}`}>
@@ -36,8 +41,18 @@ const PricingCard = ({
         <div className="pricing-card-header">
           <p className={`pricing-plan-title ${className}`}>{title}</p>
           <h3 className="pricing-plan-cost">
-            {cost}
-            <span className="pricing-plan-cost-sub">{subCost}</span>
+            {sale ? (
+              <>
+                {sale}
+                <span className="pricing-plan-cost-sub">{subCost}</span>
+                <span className="strike"> {cost}</span>
+              </>
+            ) : (
+              <>
+                {cost}
+                <span className="pricing-plan-cost-sub">{subCost}</span>
+              </>
+            )}
           </h3>
           <p>{desc}</p>
           <div className="pricing-white-line"></div>
@@ -46,7 +61,7 @@ const PricingCard = ({
           </h3>
         </div>
         <div className="pricing-half">
-          <ul className="pricing-checklist-items">
+          <ul className={`pricing-checklist-items ${className}`}>
             {checkList.map((item, index) => (
               <li key={index} className="checklist">
                 <img src={item.img} alt={item.alt} className="checkmark-icon" />
@@ -56,13 +71,21 @@ const PricingCard = ({
           </ul>
         </div>
         <div className="pricing-btn-container">
-          <Button
-            text={"Get Started"}
-            scrollToId={"contact"}
-            onClick={openCalendlyPopup}
-            btnType={"outline"}
-            width={"full"}
-          />
+          {isPricingPage ? (
+            <Button
+              text={"Get Started"}
+              onClick={openCalendlyPopup}
+              btnType={"outline"}
+              width={"full"}
+            />
+          ) : (
+            <Button
+              text={"View Plans"}
+              to={"/pricing"}
+              btnType={"outline"}
+              width={"full"}
+            />
+          )}
         </div>
       </div>
     </>
