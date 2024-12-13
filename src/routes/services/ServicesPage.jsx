@@ -1,7 +1,7 @@
 import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
 import WhyUs from "../../components/why-choose-us/WhyChooseUs"
-import WhyCare from "../../components/why-we-care/WhyWeCare"
+
 import Process from "../../components/our-process/OurProcess"
 
 import Devicewebp from "../../assets/images/device-mockup.webp"

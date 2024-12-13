@@ -15,21 +15,23 @@ export const sections = [
 
 export const stats = [
   {
-    stat: "0.05s",
+    stat: "88%",
     description:
-      "that's how long people spend forming an opinion about your website.",
+      "of users are unlikely to return to a website after a poor experience.",
   },
   {
     stat: "53%",
     description:
-      "of people won't wait longer than 2s for your website to load.",
+      "of users abandon a website if it takes longer than two seconds to load.",
   },
   {
-    stat: "88%",
-    description: "of people won't return to your site after a bad experience.",
+    stat: "0.05s",
+    description:
+      "how long it takes a user to form an opinion about your website.",
   },
   {
-    stat: "58.67%",
-    description: "of web traffic comes from a mobile device.",
+    stat: "61%",
+    description:
+      "of users leave if they can’t find what they need in just five seconds.",
   },
 ]

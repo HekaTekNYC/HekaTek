@@ -1,5 +1,6 @@
 import {sections, stats} from "../../data/ProofData"
-import User from "../../assets/images/hands.png"
+import WorkingPng from "../../assets/images/working.png"
+import WorkingWebp from "../../assets/images/working.webp"
 
 import "./proof-in-number.scss"
 
@@ -20,7 +21,27 @@ const ProofPage = () => {
 
           <div className="proof-body-container">
             <div className="proof-left">
-              <img src={User} alt="" />
+              <picture>
+                <source
+                  srcSet={WorkingWebp}
+                  type="image/webp"
+                  media="(min-width: 400px)"
+                />
+                <source
+                  srcSet={WorkingPng}
+                  type="image/png"
+                  media="(min-width: 400px)"
+                />
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={WorkingPng}
+                  alt="woman looking standing looking at her website on a laptop"
+                  sizes="(max-width: 750px) 100vw, 650px"
+                  height="700"
+                  width="1000"
+                />
+              </picture>
             </div>
             <div className="proof-right">
               {sections.map((section, index) => (
