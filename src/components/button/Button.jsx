@@ -1,5 +1,6 @@
 import React from "react"
 import {useNavigate} from "react-router-dom"
+
 import "./button.scss"
 
 const scrollToSection = id => {
@@ -51,7 +52,6 @@ const Button = ({
     )
   }
 
-  // Standard button or scroll/navigation button
   return (
     <button
       type={type}
