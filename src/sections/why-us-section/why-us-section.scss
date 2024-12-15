@@ -34,7 +34,7 @@
   justify-content: center;
 }
 
-/* Larger than desktop */
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .why-us-container {
     flex-direction: row;
@@ -42,6 +42,7 @@
   }
 }
 
+/* Extra Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .why-left {
     position: relative;

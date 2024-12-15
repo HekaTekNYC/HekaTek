@@ -1,0 +1,14 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0.05 1704 418">
+  <path 
+    d="M968.327 164.082C1229.45 148.056 1287.97 34.2445 1551.2 25.5603C2013.12 10.3216 1323.57 397.326 862.333 415.608C669.05 423.27 539.801 414.109 377.512 371.126C82.9697 293.115 -143.437 122.876 109.012 23.5647C368.432 -78.4889 610.212 186.061 968.327 164.082Z" 
+    fill="url(#three-color-gradient)" 
+    fill-opacity="0.6">
+  </path>
+  <defs>
+    <linearGradient id="three-color-gradient" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0%" stop-color="#9A60FF"></stop>
+      <stop offset="40%" stop-color="#8BA1FF"></stop>
+      <stop offset="100%" stop-color="rgba(32.022, 73.567, 235.718, 1)"></stop>
+    </linearGradient>
+  </defs>
+</svg>

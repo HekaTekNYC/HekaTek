@@ -59,12 +59,15 @@ const AboutSection = () => {
               Empowering Small Businesses Through Expert Web Development
             </h4>
             <p className="about-p">
-              With six years of experience, HekaTek is passionate about helping
-              small businesses thrive online. As a community-driven, woman-owned
-              business, HekaTek is dedicated to empowering fellow small business
-              owners with the tools, expertise, and support they need to succeed
-              in the digital world. Let HekaTek help you build a strong online
-              presence and take your business to the next level!
+              At HekaTek, we’re here to change the narrative for small
+              businesses stuck with overpriced, poorly designed websites that
+              fail to deliver results. Many companies charge a premium for
+              subpar solutions, leaving business owners frustrated and
+              underserved. As a community-driven, woman-owned business, we’re
+              passionate about offering affordable, expertly crafted websites
+              that are modern, secure, and built to help your business thrive.
+              Let us provide the solution you deserve—one that works and doesn’t
+              break the bank!
             </p>
             <Button
               text={"Schedule a Meeting"}

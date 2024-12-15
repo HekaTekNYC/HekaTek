@@ -1,7 +1,3 @@
-// @import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
-// @import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 body,
 #root {
   margin: 0;
@@ -129,6 +125,8 @@ ul {
 }
 
 /* Media queries */
+
+/* XtraSmall Screens (≥430px) */
 @media (min-width: 430px) {
   h1 {
     font-size: 6.3rem;
@@ -136,9 +134,7 @@ ul {
   }
 }
 
-@media (min-width: 576px) {
-}
-/* Larger than tablet portrait */
+/* Small Screens (≥768px) */
 @media (min-width: 768px) {
   h1 {
     font-size: 7rem;
@@ -149,17 +145,14 @@ ul {
   }
 }
 
-/* Larger than tablet portrait */
+/* Medium Screens (≥820px) */
 @media (min-width: 820px) {
   h1 {
     line-height: 0.8;
   }
 }
 
-@media (min-width: 992px) {
-}
-
-/* Larger than desktop */
+/* Large Screens (≥1000px) */
 @media (min-width: 1000px) {
   h2 {
     font-size: 7.3rem;
@@ -167,7 +160,7 @@ ul {
   }
 }
 
-/* Larger than Desktop HD */
+/* Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   h1 {
     font-size: 6.8rem;

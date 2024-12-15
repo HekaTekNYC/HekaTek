@@ -1,8 +1,6 @@
-import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
 import Button from "../../components/button/Button"
 
-import {servicesHomeData} from "../../data/ServicesHomeData"
 import {servicesData} from "../../data/ServicesData"
 
 import ServiceBg from "../../assets/images/services-bg.svg"
@@ -10,10 +8,6 @@ import ServiceBg from "../../assets/images/services-bg.svg"
 import "./services-section.scss"
 
 const ServicesSection = () => {
-  const halfIndex = Math.ceil(servicesData.length / 2)
-  const leftCards = servicesData.slice(0, halfIndex)
-  const rightCards = servicesData.slice(halfIndex)
-
   return (
     <div className="services-home-container">
       <div className="services-home-background">
