@@ -71,7 +71,7 @@
 
 /* Larger than desktop */
 
-/* Larger than desktop */
+/* Large Screens (≥768px) */
 @media (min-width: 768px) {
   .products-info {
     margin: 20px 0;
@@ -112,6 +112,8 @@
     }
   }
 }
+
+/* Large Screens (≥992px) */
 
 @media (min-width: 820px) {
   .product-row {

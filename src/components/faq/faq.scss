@@ -83,7 +83,9 @@
   }
 }
 
-/* Adjustments for smaller screens */
+/* Media queries */
+
+/* Medium (≥768px) */
 @media (min-width: 750px) {
   .faq-container {
     .faq-categories {

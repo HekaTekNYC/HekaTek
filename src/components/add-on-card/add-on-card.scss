@@ -71,13 +71,16 @@
   }
 }
 
+/* Media Queries */
+
+/* Small screens */
 @media (min-width: 768px) {
   .add-on-card {
     max-width: 100%;
   }
 }
 
-/* Larger than Desktop HD */
+/* Large screens */
 @media (min-width: 1200px) {
   .add-on-card {
     width: 100%;

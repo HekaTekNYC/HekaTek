@@ -1,15 +1,15 @@
 export const sections = [
   {
     number: "01",
-    title: "Custom Coded Approach",
+    title: "Built from Scratch, Designed for Success",
     content:
-      "At Test Valley Digital, we care too much. Our approach gets around the performance and accessibility issues that are introduced by other platforms. Every line of code results in a beautiful website delivered to your customers and created by a team of world-class developers.",
+      "At Hekatek, we’re passionate about creating websites that are as unique as your business. Unlike page builders that rely on bloated code and limited options, we craft every site from the ground up. This ensures unparalleled performance, accessibility, and a design that captivates your audience—coded by web experts dedicated to perfection.",
   },
   {
     number: "02",
-    title: "Unlimited Edits",
+    title: "Stress-Free Updates",
     content:
-      "No more fighting unintuitive interfaces and wasting your valuable time. You've got a business to run! We are just an email or phone call away to do the heavy lifting for you.",
+      "You’ve got a business to grow—let us handle your website. No more wasting time wrestling with complex platforms or clunky interfaces. We offer unlimited edits to keep your site updated, polished, and aligned with your vision. Simply reach out, and we’ll take care of the rest.",
   },
 ]
 

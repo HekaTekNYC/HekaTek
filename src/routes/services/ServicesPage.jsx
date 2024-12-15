@@ -1,7 +1,7 @@
 import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
 import Redefine from "../../sections/redefine-section/RedefineSeciton"
-import Process from "../../components/our-process/OurProcess"
+import ProcessSection from "../../sections/process-section/ProcessSection"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
 import ProofPage from "../../sections/proof-section/ProofSection"
@@ -12,14 +12,14 @@ import {servicesData} from "../../data/ServicesData"
 import "./services-page.scss"
 
 const ServicesPage = () => {
-  const halfIndex = Math.ceil(servicesData.length / 2)
-  const allCards = servicesData
   return (
     <div className="services-page">
       <h2 className="services-header"> Our Services </h2>
-      {/* Why Choose Us*/}
+
+      {/* Redefine Digital Section*/}
       <Redefine />
-      {/* Service Cards */}
+
+      {/* Service Cards Section*/}
       <div className="services-container">
         <div className="services">
           <div className="services-page-heading">
@@ -41,7 +41,7 @@ const ServicesPage = () => {
               <img src={ServiceBlob} alt="gradient blob " loading="lazy" />
             </div>
             <div className="services-cards">
-              {allCards.map((service, index) => (
+              {servicesData.map((service, index) => (
                 <ServiceCard
                   key={index}
                   name={service.name}
@@ -70,7 +70,7 @@ const ServicesPage = () => {
       <ProofPage />
 
       {/* Our Process*/}
-      <Process />
+      <ProcessSection />
     </div>
   )
 }

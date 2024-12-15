@@ -12,10 +12,12 @@ const ProofSection = () => {
           <div className="proof-header">
             <h2 className="h2-heading">The proof is in the numbers </h2>
             <p>
-              There are a myriad of reasons why you should care about your
-              website, as shown below. Page builders provide an elementary
-              solution to an otherwise vital asset of your business. On top of
-              that, you have to manage it yourself. Here's what we do:
+              Your website is more than just a digital storefront—it’s a vital
+              tool for building trust, engaging customers, and driving business
+              growth. Using cookie-cutter page builders might seem easy, but
+              they often fall short in delivering the performance,
+              customization, and seamless functionality your business deserves.
+              That’s where we come in:
             </p>
           </div>
 

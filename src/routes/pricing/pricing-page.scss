@@ -122,14 +122,14 @@
 
 /* Media Queries */
 
-/* XtraSmall screens (≥576px) */
+/* XtraSmall Screens (≥576px) */
 @media (min-width: 576px) {
   .pricing-page {
     padding: 0 40px;
   }
 }
 
-/* Small screens (≥768px) */
+/* Small Screens (≥768px) */
 @media (min-width: 768px) {
   .pricing-page-background {
     img {
@@ -140,19 +140,11 @@
   .pricing-build-container {
     .pricing-build-info {
       margin: 20px 0 30px;
-
-      .pricing-build-text {
-        justify-content: start;
-        width: 80%;
-      }
-      .pricing-build-btn {
-        width: 35%;
-      }
     }
   }
 }
 
-/* Large screens (≥992px) */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .pricing-page {
     padding: 0 80px;
@@ -178,6 +170,14 @@
     .pricing-build-cards-container {
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+
+      .pricing-build-text {
+        justify-content: start;
+        width: 80%;
+      }
+      .pricing-build-btn {
+        width: 35%;
+      }
     }
   }
 
@@ -203,7 +203,7 @@
   }
 }
 
-/* Extra large screens (≥1200px) */
+/* Large screens (≥1200px) */
 @media (min-width: 1200px) {
   .pricing-page {
     padding: 0 100px;

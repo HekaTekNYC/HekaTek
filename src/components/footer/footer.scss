@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-
   padding: 0 35px 30px;
   z-index: 100;
 }
@@ -113,11 +112,14 @@
   }
 }
 
+/* Large (≥992px) */
 @media (min-width: 992px) {
   .footer-format {
     padding: 0 80px 30px;
   }
 }
+
+/* X-Large (≥1400px) */
 @media (min-width: 1400px) {
   .footer-format {
     padding: 0 100px 30px;

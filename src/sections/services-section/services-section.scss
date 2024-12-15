@@ -57,7 +57,7 @@
   }
 }
 
-/* Medium Ipad >768px */
+/* Medium Screen >768px */
 @media (min-width: 768px) {
   .services-home-container {
     .services-home-cards {
@@ -79,7 +79,7 @@
   }
 }
 
-/* Adjustments for larger screens */
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .services-home-container {
     .services-home-cards {
@@ -99,7 +99,7 @@
   }
 }
 
-/* Larger than Desktop HD */
+/* Extra Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .services-home-container {
     .services-home-cards {

@@ -1,7 +1,8 @@
 import React, {useState} from "react"
-import "./our-process.scss"
+import Button from "../../components/button/Button"
+import "./process-section.scss"
 
-const OurProcess = () => {
+const ProcessSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const steps = [
@@ -35,16 +36,26 @@ const OurProcess = () => {
     <div className="our-process-banner">
       <div className="our-process-section">
         <div className="our-process-header">
-          <h2 className="h2-heading">Our Process, Your Peace of Mind</h2>
-          <p>
-            Once the contract is signed, we’ll schedule a meeting to learn more
-            about your business and what you do. With this information, we’ll
-            craft the content and design for your site. After receiving your
-            final approval, we’ll begin building. The entire process typically
-            takes 1 - 2 months, depending on the timing of your feedback and
-            approvals. This allows us to deliver a smooth, thorough, and
-            well-executed development experience.
-          </p>
+          <div className="our-process-info">
+            <h2 className="h2-heading">Our Process, Your Peace of Mind</h2>
+            <p>
+              Once the contract is signed, we’ll schedule a meeting to learn
+              more about your business and what you do. With this information,
+              we’ll craft the content and design for your site. After receiving
+              your final approval, we’ll begin building. The entire process
+              typically takes 1 - 2 months, depending on the timing of your
+              feedback and approvals. This allows us to deliver a smooth,
+              thorough, and well-executed development experience.
+            </p>
+          </div>
+          <div className="process-btn">
+            <Button
+              text={"Contact Us"}
+              to="/contact"
+              btnType={"solid"}
+              width={"short"}
+            />
+          </div>
         </div>
         <div className="our-process-cards-container">
           {steps.map((step, index) => (
@@ -81,4 +92,4 @@ const OurProcess = () => {
   )
 }
 
-export default OurProcess
+export default ProcessSection

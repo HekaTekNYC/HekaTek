@@ -11,6 +11,7 @@
     width: 100%;
   }
 }
+
 .proof-container {
   max-width: 1300px;
 }
@@ -21,7 +22,7 @@
   justify-content: space-between;
   align-items: stretch;
   flex-grow: 1;
-  margin: 40px 0 0;
+  margin: 35px 0 0;
   width: 100%;
 
   .proof-left {
@@ -30,7 +31,7 @@
     img {
       object-position: 40%;
       object-fit: cover;
-      max-height: 500px;
+      max-height: 525px;
     }
   }
 
@@ -54,7 +55,7 @@
     .stats-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin-top: 40px;
+      margin-top: 30px;
 
       .stat-item {
         text-align: center;
@@ -89,49 +90,51 @@
   }
 }
 /* Media Queries */
+
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .proof-page-container {
     padding: 60px 40px;
   }
 }
 
-/* Large screens (≥992px) */
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .proof-page-container {
     padding: 60px 80px;
   }
 }
 
-/* Extra large screens (≥1200px) */
+/* Extra Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .proof-page-container {
     padding: 60px 100px;
 
     .proof-header {
       p {
-        width: 85%;
+        width: 80%;
       }
     }
+  }
+  .proof-body-container {
+    flex-direction: row;
+    align-items: center;
 
-    .proof-body-container {
-      flex-direction: row;
+    .proof-left {
+      width: 45%;
+    }
 
-      .proof-left {
-        width: 45%;
-      }
+    .proof-right {
+      width: 55%;
+      padding: 0 0 0 40px;
 
-      .proof-right {
-        width: 55%;
-        padding: 0 0 0 40px;
+      .proof-section {
+        h4 {
+          padding-top: 0;
+        }
 
-        .proof-section {
-          h4 {
-            padding-top: 0;
-          }
-
-          p {
-            padding-bottom: 20px;
-          }
+        p {
+          padding-bottom: 20px;
         }
       }
     }
