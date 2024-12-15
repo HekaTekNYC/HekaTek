@@ -7,13 +7,10 @@
 }
 
 .faq-categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 10px 0 30px;
   gap: 7px;
-  overflow-x: auto;
 }
 
 .faq-list {
@@ -51,6 +48,7 @@
       margin-top: 10px;
       line-height: 1.6;
     }
+
     .faq-answer {
       color: #fff !important;
       margin-top: 10px;
@@ -85,14 +83,12 @@
 
 /* Media queries */
 
-/* Medium (≥768px) */
-@media (min-width: 750px) {
+/* Small Screens (≥768px) */
+@media (min-width: 768px) {
   .faq-container {
     .faq-categories {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
     }
   }
 
