@@ -1,6 +1,6 @@
 import Button from "../../components/button/Button"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
-import FixCode from "../../assets/images/fixcode.png"
+
 import CodeWideWebp from "../../assets/images/wide-code.webp"
 import CodeWidePng from "../../assets/images/wide-code.png"
 import CodeVertWebp from "../../assets/images/vert-code.webp"
@@ -80,7 +80,6 @@ const RedefineSection = () => {
                 type="image/png"
                 media="(max-width: 767px)"
               />
-
               {/* Tablet Image */}
               <source
                 srcSet={CodeWideWebp}
@@ -92,7 +91,6 @@ const RedefineSection = () => {
                 type="image/png"
                 media="(min-width: 768px) and (max-width: 992px)"
               />
-
               {/* Desktop Image */}
               <source
                 srcSet={CodeVertWebp}
@@ -100,16 +98,14 @@ const RedefineSection = () => {
                 media="(min-width: 993px)"
               />
               <source
-                srcSet={FixCode}
+                srcSet={CodeVertPng}
                 type="image/png"
                 media="(min-width: 993px)"
               />
-
-              {/* Fallback for older browsers */}
               <img
                 loading="lazy"
                 decoding="async"
-                src={FixCode}
+                src={CodeRegPng}
                 alt="desk with laptop with code on the screen"
                 width="1400"
                 height="932"

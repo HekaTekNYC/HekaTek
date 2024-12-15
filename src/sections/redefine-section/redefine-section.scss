@@ -58,9 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  height: auto;
-  min-height: 100%;
+  width: 100%;
   overflow: hidden;
 
   .choose-us-image {
@@ -72,9 +70,8 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
-      object-position: center bottom;
     }
   }
 }
@@ -88,7 +85,7 @@
   }
 }
 
-/* Large Screens (≥992px) */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .choose-us-container {
     padding: 60px 80px;
@@ -97,40 +94,47 @@
       flex-direction: row;
       max-height: 540px;
       align-items: stretch;
-      overflow: hidden;
     }
-    .choose-us-info {
-      width: 50%;
-      margin-bottom: 0;
-    }
+  }
+  .choose-us-info {
+    width: 50%;
+    margin-bottom: 0;
+  }
 
-    .choose-us-right {
-      width: 50%;
-      .choose-us-image {
-        padding-left: 50px;
+  .choose-us-right {
+    width: 50%;
+
+    .choose-us-image {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      margin-left: 50px;
+      height: 800px;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom center;
       }
     }
   }
 }
 
-/* Extra large screens (≥1100px) */
-@media (min-width: 1100px) {
-  .choose-us-right {
-    max-height: 500px;
-  }
-}
-
-/* Extra Large Screens (≥1200px) */
+/* Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .choose-us-container {
-    padding: 60px 100px 40px;
-    .choose-us {
-      max-height: 560px;
-    }
+    padding: 60px 100px;
   }
 
   .choose-us-info {
     margin-bottom: 30px;
+    padding-right: 20px;
 
     p {
       margin-bottom: 25px;
@@ -144,7 +148,8 @@
       }
     }
   }
-  .choose-us-right {
-    max-height: 520px;
+
+  .choose-us-image {
+    max-height: 500px;
   }
 }
