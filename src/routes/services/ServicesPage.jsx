@@ -1,8 +1,8 @@
 import ServiceCard from "../../components/service-card/ServiceCard"
 import Redefine from "../../sections/redefine-section/RedefineSeciton"
 import ProcessSection from "../../sections/process-section/ProcessSection"
-import Devicewebp from "../../assets/images/sunset-iphon.webp"
-import Devicepng from "../../assets/images/sunset-iphone.png"
+import IphoneWebp from "../../assets/images/sunset-iphone.webp"
+import IphonePng from "../../assets/images/sunset-iphone.png"
 import ProofPage from "../../sections/proof-section/ProofSection"
 import ServiceBlob from "../../assets/images/serviceBlob.svg"
 import ServiceBlobM from "../../assets/images/serviceBlobM.svg"
@@ -53,14 +53,26 @@ const ServicesPage = () => {
               ))}
             </div>
             <div className="services-mobile">
-              <img
-                src={Devicepng}
-                alt="mockup devices with desktop laptop tablet and phone"
-                loading="lazy"
-                sizes="(max-width: 750px) 100vw, 650px"
-                height="625"
-                width="384"
-              />
+              <picture>
+                <source
+                  srcSet={IphoneWebp}
+                  type="image/webp"
+                  media="(min-width: 400px)"
+                />
+                <source
+                  srcSet={IphonePng}
+                  type="image/png"
+                  media="(min-width: 400px)"
+                />
+                <img
+                  src={IphonePng}
+                  alt="mockup devices with desktop laptop tablet and phone"
+                  loading="lazy"
+                  sizes="(max-width: 750px) 100vw, 650px"
+                  height="625"
+                  width="384"
+                />
+              </picture>
             </div>
           </div>
         </div>

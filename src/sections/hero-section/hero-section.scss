@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: start;
   text-align: start;
+  padding-bottom: 60px;
   width: 100%;
   height: auto;
   z-index: 2;
@@ -36,7 +37,7 @@
   }
 
   .hero-subheader {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     margin: 0 0 10px;
     padding-bottom: 10px;
@@ -48,6 +49,14 @@
 }
 
 /* Media queries */
+
+/* Xtra Small Screens (≥360px) */
+@media (min-width: 360px) {
+  .hero-subheader {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+}
 
 /* Xtra Small Screens (≥430px) */
 @media (min-width: 430px) {

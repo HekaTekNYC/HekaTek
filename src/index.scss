@@ -42,7 +42,7 @@ h6 {
 
 h1 {
   font-family: "Bebas Neue";
-  font-size: 5.2rem;
+  font-size: 4.7rem;
   line-height: 0.9;
   color: #444d82;
   margin: 0;
@@ -76,7 +76,7 @@ h4 {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 700;
   color: #444d82;
   margin: 0;
 }
@@ -126,10 +126,18 @@ ul {
 
 /* Media queries */
 
+/* XtraSmall Screens (≥360px) */
+@media (min-width: 360px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 0.9;
+  }
+}
+
 /* XtraSmall Screens (≥430px) */
 @media (min-width: 430px) {
   h1 {
-    font-size: 6.3rem;
+    font-size: 6.1rem;
     line-height: 0.9;
   }
 }

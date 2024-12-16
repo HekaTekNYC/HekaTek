@@ -30,7 +30,7 @@ const Dropdown = () => {
       </NavLink>
 
       <NavLink
-        to="/ourWork"
+        to="/work"
         onClick={closeMobileNav}
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >

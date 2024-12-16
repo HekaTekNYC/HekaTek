@@ -48,10 +48,26 @@
     ></script>
 
     <!-- EmailJS Script -->
-    <script>
+    <!-- Include EmailJS Library -->
+    <script
+      src="https://cdn.emailjs.com/dist/email.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        // Ensure EmailJS is loaded
+        if (typeof emailjs !== "undefined") {
+          emailjs.init("3M9sCaTmKUO1g2SRA")
+        } else {
+          console.error("EmailJS not loaded")
+        }
+      }
+    </script>
+    <!-- <script>
       ;(function () {
         emailjs.init("3M9sCaTmKUO1g2SRA")
       })()
-    </script>
+    </script> -->
   </body>
 </html>
