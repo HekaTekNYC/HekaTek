@@ -53,7 +53,7 @@ const RedefineSection = () => {
                 src={CoralCheckIcon}
                 alt="Checkmark"
                 className="check-icon"
-              />{" "}
+              />
               Clear, transparent pricing—no hidden costs.
             </li>
           </ul>

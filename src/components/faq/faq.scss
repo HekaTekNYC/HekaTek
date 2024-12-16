@@ -6,11 +6,19 @@
   align-items: stretch;
 }
 
-.faq-categories {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 10px 0 30px;
-  gap: 7px;
+.faq-categories-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .faq-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 0 30px;
+    gap: 7px;
+    width: 100%;
+    max-width: 80%;
+  }
 }
 
 .faq-list {
@@ -89,6 +97,7 @@
     .faq-categories {
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
+      max-width: 100%;
     }
   }
 
@@ -97,6 +106,7 @@
   }
 }
 
+/* Medium Screens (≥820px) */
 @media (min-width: 820px) {
   .faq-page-container {
     .faq-page-header {
@@ -105,13 +115,14 @@
   }
 }
 
-/* Larger than desktop */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .faq-page {
     padding: 0 80px;
   }
 }
 
+/* Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .products-page {
     padding: 0 100px;

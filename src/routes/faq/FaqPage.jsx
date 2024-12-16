@@ -1,4 +1,5 @@
 import FAQ from "../../components/faq/Faq"
+
 import WhyPNG from "../../assets/images/why-us-img.png"
 import WhyWebp from "../../assets/images/why-us-img.webp"
 
@@ -6,7 +7,7 @@ import "./faq-page.scss"
 
 const FaqPage = () => {
   return (
-    <div className="faqs-page">
+    <div id="faq" className="faqs-page">
       <div className="faqs-bkrnd">
         <picture>
           <source srcSet={WhyWebp} type="image/webp" />

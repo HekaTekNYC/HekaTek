@@ -1,9 +1,9 @@
-import React from "react"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import Button from "../../components/button/Button"
+
 import AboutBkrd from "../../assets/images/about-bkg.svg"
 import Devicewebp from "../../assets/images/device-mockup.webp"
 import Devicepng from "../../assets/images/device-mockup.png"
-import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./about-section.scss"
 

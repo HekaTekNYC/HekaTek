@@ -62,15 +62,16 @@
   }
 }
 
-/* Larger than desktop */
+/* Media queries */
 
-/* Larger than desktop */
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .products-page {
     padding: 0 40px;
   }
 }
 
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .products-page-header {
     text-align: center;
@@ -106,6 +107,7 @@
   }
 }
 
+/* Medium Screens (≥820px) */
 @media (min-width: 820px) {
   .products-page-container {
     .products-page-header {
@@ -125,6 +127,7 @@
   }
 }
 
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .products-page {
     padding: 0 80px;
@@ -145,6 +148,7 @@
   }
 }
 
+/* Large Screens (≥1024px) */
 @media (min-width: 1024px) {
   .product-page-row {
     .product-page-desc-container {
@@ -171,6 +175,7 @@
   }
 }
 
+/* Large Screens (≥1px) */
 @media (min-width: 1200px) {
   .products-page {
     padding: 0 100px;

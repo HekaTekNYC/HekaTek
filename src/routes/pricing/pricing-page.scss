@@ -170,14 +170,15 @@
     .pricing-build-cards-container {
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+    }
+    .pricing-build-text {
+      justify-content: start;
+      width: 80%;
+      padding-right: 20px;
+    }
 
-      .pricing-build-text {
-        justify-content: start;
-        width: 80%;
-      }
-      .pricing-build-btn {
-        width: 35%;
-      }
+    .pricing-build-btn {
+      width: 20%;
     }
   }
 

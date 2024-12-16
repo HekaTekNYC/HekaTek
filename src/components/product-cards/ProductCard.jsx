@@ -1,6 +1,6 @@
-import React from "react"
 import ProductBkrndpng from "../../assets/images/product-bkrnd.png"
 import ProductBkrndwebp from "../../assets/images/product-bkrnd.webp"
+
 import "./product-card.scss"
 
 const ProductCard = ({img, id, deg, scale, aLink, webp}) => {

@@ -47,6 +47,7 @@
 
 /* Media queries */
 
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .banner-container {
     .banner-2,
@@ -68,6 +69,7 @@
   }
 }
 
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .banner-container {
     .banner-3,
@@ -77,6 +79,7 @@
   }
 }
 
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .banner-container {
     .banner-4,
@@ -99,7 +102,7 @@
   }
 }
 
-/* Larger than Desktop HD */
+/* Large Screens (≥1400px) */
 @media (min-width: 1400px) {
   .about-section,
   .products-section,

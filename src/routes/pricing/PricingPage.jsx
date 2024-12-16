@@ -1,9 +1,10 @@
-import BackgroundShape from "../../assets/images/pricing-shape.svg"
 import PricingCard from "../../components/pricing-card/PricingCard"
-import Button from "../../components/button/Button"
 import AddOnCard from "../../components/add-on-card/AddOnCard"
+import Button from "../../components/button/Button"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
 import {blog, editsMo, clientPortal} from "../../data/AddOnData"
+
+import BackgroundShape from "../../assets/images/pricing-shape.svg"
 
 import "./pricing-page.scss"
 
@@ -13,7 +14,7 @@ const PricingPage = () => {
 
   return (
     <>
-      <div className="pricing-page">
+      <div id="pricing" className="pricing-page">
         <div className="pricing-page-container">
           <div className="pricing-page-background">
             <img

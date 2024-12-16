@@ -1,8 +1,9 @@
-import React, {useContext, useState, useEffect} from "react"
+import {useContext, useState, useEffect} from "react"
 import {NavbarContext} from "../../contexts/Navbar.context"
 import {NavLink} from "react-router-dom"
 import Burger from "./burger/Burger"
 import Dropdown from "./dropdown/Dropdown"
+
 import "./navigation.scss"
 
 const Navigation = () => {

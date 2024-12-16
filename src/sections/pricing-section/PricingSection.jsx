@@ -15,13 +15,16 @@ const PricingSection = () => {
             src={BackgroundShape}
             alt="colored gradient shape"
             loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="pricing-header">
           <h2>Pricing Plans</h2>
           <p className="pricing-text">
-            We offer a monthly subscription, lump sum, and e-commerce pricing.
-            Please contact us for price inquiries on our E-Comm models.
+            Flexible pricing to suit your needs: choose a monthly subscription,
+            one-time payment, or tailored e-commerce plans. Add-ons like
+            unlimited edits or blogs let you customize your website to fit your
+            business perfectly—no hidden costs, just clear value.
           </p>
         </div>
 

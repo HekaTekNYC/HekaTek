@@ -1,6 +1,7 @@
-import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
-import Button from "../../components/button/Button"
 import TechCircle from "../../components/tech-circle/TechCircle"
+import Button from "../../components/button/Button"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
+
 import WhyPNG from "../../assets/images/why-us-img.png"
 import WhyWebp from "../../assets/images/why-us-img.webp"
 

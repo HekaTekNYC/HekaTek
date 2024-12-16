@@ -1,19 +1,19 @@
-import React from "react"
 import ServiceCard from "../../components/service-card/ServiceCard"
 import Redefine from "../../sections/redefine-section/RedefineSeciton"
 import ProcessSection from "../../sections/process-section/ProcessSection"
-import Devicewebp from "../../assets/images/device-mockup.webp"
+import Devicewebp from "../../assets/images/sunset-iphon.webp"
 import Devicepng from "../../assets/images/sunset-iphone.png"
 import ProofPage from "../../sections/proof-section/ProofSection"
 import ServiceBlob from "../../assets/images/serviceBlob.svg"
 import ServiceBlobM from "../../assets/images/serviceBlobM.svg"
 
 import {servicesData} from "../../data/ServicesData"
+
 import "./services-page.scss"
 
 const ServicesPage = () => {
   return (
-    <div className="services-page">
+    <div id="services" className="services-page">
       <h2 className="services-header"> Our Services </h2>
 
       {/* Redefine Digital Section*/}

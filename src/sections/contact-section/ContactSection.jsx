@@ -25,6 +25,7 @@ const ContactSection = () => {
               src={ContactBlob}
               alt="gradient blurred shape"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <ContactForm />

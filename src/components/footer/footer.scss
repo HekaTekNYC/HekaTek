@@ -87,14 +87,14 @@
 
 /* Media queries */
 
-/* Small (≥576px) */
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .footer-format {
     padding: 0 40px 30px;
   }
 }
 
-/* Medium (≥768px) */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .footer-container {
     display: flex;
@@ -112,14 +112,14 @@
   }
 }
 
-/* Large (≥992px) */
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .footer-format {
     padding: 0 80px 30px;
   }
 }
 
-/* X-Large (≥1400px) */
+/* X-Large Screens(≥1400px) */
 @media (min-width: 1400px) {
   .footer-format {
     padding: 0 100px 30px;

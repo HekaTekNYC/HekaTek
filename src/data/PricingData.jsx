@@ -58,7 +58,7 @@ export const lumpSum = {
   className: "lump",
   title: "LUMP SUM",
   sale: "$2000",
-  cost: "$2500",
+  cost: "$3000",
   subCost: "",
   desc: "One Time Fee",
   fee: "$25",

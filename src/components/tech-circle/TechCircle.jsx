@@ -1,6 +1,6 @@
-import React from "react"
-import "./tech-circle.scss"
 import {techIcons} from "../../data/TechData"
+
+import "./tech-circle.scss"
 
 const TechCircle = () => {
   return (

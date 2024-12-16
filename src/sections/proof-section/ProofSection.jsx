@@ -1,4 +1,5 @@
 import {sections, stats} from "../../data/ProofData"
+
 import WorkingPng from "../../assets/images/working.png"
 import WorkingWebp from "../../assets/images/working.webp"
 

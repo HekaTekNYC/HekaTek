@@ -50,7 +50,6 @@ export const servicesData = [
     name: "Google Business & Maps",
     svgPath: GoogleMaps,
     description:
-      // "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing that improves your local search visibility.",
       "Get noticed and make it easy for customers to find you with a Google Business profile and Maps listing.",
     height: "40px",
     width: "auto",

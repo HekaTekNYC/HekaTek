@@ -235,6 +235,7 @@
     .pricing-card-image {
       top: -30px;
       right: -240px;
+      width: 100%;
       img {
         width: 110px;
       }
@@ -249,9 +250,7 @@
 @media (min-width: 1300px) {
   .pricing-card {
     .pricing-card-image {
-      top: -30px;
       right: -270px;
-      width: 100%;
     }
   }
 }

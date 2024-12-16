@@ -1,6 +1,7 @@
-import React, {useContext} from "react"
+import {useContext} from "react"
 import {NavLink} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
+
 import "./dropdown.scss"
 
 const Dropdown = () => {

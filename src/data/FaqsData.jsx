@@ -1,5 +1,4 @@
 export const PricingData = [
-  //pricing & payments
   {
     id: 1,
     category: "Pricing & Payments",
@@ -114,7 +113,6 @@ export const WebsiteData = [
 ]
 
 export const PlansData = [
-  //Plans
   {
     id: 1,
     category: "Plans",

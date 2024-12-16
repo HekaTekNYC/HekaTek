@@ -34,6 +34,7 @@
   .hero-section-header {
     padding-bottom: 10px;
   }
+
   .hero-subheader {
     font-size: 1.4rem;
     line-height: 1.4;
@@ -47,7 +48,8 @@
 }
 
 /* Media queries */
-/* Medium (≥430px) */
+
+/* Xtra Small Screens (≥430px) */
 @media (min-width: 430px) {
   .hero-top {
     h4 {
@@ -56,7 +58,7 @@
   }
 }
 
-/* Small (≥576px) */
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .hero-format {
     padding: 0 40px;
@@ -68,7 +70,7 @@
   }
 }
 
-/* Medium (≥768px) */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .hero-top {
     .hero-subheader {
@@ -78,6 +80,7 @@
   }
 }
 
+/* Medium Screens (≥820px) */
 @media (min-width: 820px) {
   .hero-top {
     .hero-subheader {
@@ -100,7 +103,7 @@
   }
 }
 
-/* Large (≥992px) */
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .hero-format {
     padding: 0 80px;
@@ -121,6 +124,8 @@
     }
   }
 }
+
+/* Extra Large Screens (≥1024px) */
 
 @media (min-width: 1024px) {
   .background-position {
@@ -144,6 +149,8 @@
     }
   }
 }
+
+/*Extra Large Screens (≥1180px) */
 @media (min-width: 1180px) {
   .hero-under {
     top: 100px;
@@ -152,7 +159,7 @@
   }
 }
 
-/* Extra large (≥1200px) */
+/* Extra Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .hero-top {
     .hero-subheader {
@@ -171,6 +178,8 @@
     }
   }
 }
+
+/* Extra Large Screens (≥1366px) */
 @media (min-width: 1366px) {
   .hero-format {
     padding: 0 100px;
@@ -193,7 +202,7 @@
     }
   }
 }
-/* Extra large (≥1400px) */
+/* Extra Large Screens (≥1400px) */
 @media (min-width: 1400px) {
   .hero-top {
     .hero-subheader {

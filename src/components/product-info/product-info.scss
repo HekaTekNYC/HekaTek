@@ -15,6 +15,9 @@
   }
 }
 
+/* Media Queries */
+
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .product-info-container {
     .product-info-header {
@@ -28,6 +31,7 @@
   }
 }
 
+/* Large Screens (≥1024px) */
 @media (min-width: 1024px) {
   .product-info-container {
     .product-info-header {
