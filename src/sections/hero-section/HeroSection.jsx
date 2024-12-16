@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from "react"
+import {lazy, Suspense} from "react"
 
 import Button from "../../components/button/Button"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"

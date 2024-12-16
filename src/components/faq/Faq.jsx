@@ -48,23 +48,26 @@ const FAQ = () => {
 
   return (
     <div className="faq-container" ref={faqContainerRef}>
-      <div className="faq-categories">
-        {categories.map(category => {
-          const isActive = selectedCategory === category
-          return (
-            <Button
-              key={category}
-              text={category}
-              width="full"
-              active={isActive}
-              btnType={isActive ? "solid" : "outline"}
-              onClick={() => handleCategoryChange(category)}
-            >
-              {category}
-            </Button>
-          )
-        })}
+      <div className="faq-categories-container">
+        <div className="faq-categories">
+          {categories.map(category => {
+            const isActive = selectedCategory === category
+            return (
+              <Button
+                key={category}
+                text={category}
+                width="full"
+                active={isActive}
+                btnType={isActive ? "solid" : "outline"}
+                onClick={() => handleCategoryChange(category)}
+              >
+                {category}
+              </Button>
+            )
+          })}
+        </div>
       </div>
+
       <div className="faq-list">
         {filteredFaqs.map((faq, index) => (
           <div

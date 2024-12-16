@@ -6,34 +6,32 @@ import ProductsSection from "../../sections/products-section/ProductsSection"
 import WhyUsSection from "../../sections/why-us-section/WhyUsSection"
 import PricingSection from "../../sections/pricing-section/PricingSection"
 import ContactSection from "../../sections/contact-section/ContactSection"
-import {servicesData} from "../../data/ServicesData"
-import LavaLamp from "../../components/lava-lamp/LavaLamp"
 
 import "./home-page.scss"
 
 const HomePage = () => {
   return (
     <>
-      <section className="hero-section">
+      <section id="home" className="hero-section">
         <HeroSection />
       </section>
       <Banner />
-      <section id="about" className="about-section">
+      <section className="about-section">
         <AboutSection />
       </section>
-      <section id="services" className="services-section">
+      <section className="services-section">
         <ServicesSection />
       </section>
-      <section id="our-work" className="products-section">
+      <section className="products-section">
         <ProductsSection />
       </section>
-      <section id="why-us" className="why-us-section">
+      <section className="why-us-section">
         <WhyUsSection />
       </section>
-      <section id="pricing-plans" className="pricing-section">
+      <section className="pricing-section">
         <PricingSection />
       </section>
-      <section id="contact" className="contact-section">
+      <section className="contact-section">
         <ContactSection />
       </section>
     </>

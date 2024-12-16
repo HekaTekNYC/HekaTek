@@ -6,19 +6,14 @@
 
 .about-section,
 .products-section,
+.pricing-section,
 .contact-section {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  padding: 0 35px;
-}
-
-.pricing-section {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 35px 80px;
+  padding: 60px 35px;
+  height: auto;
   flex-grow: 1;
 }
 
@@ -27,7 +22,7 @@
   display: flex;
   justify-content: center;
   background: #f4f7ff;
-  padding: 80px 35px;
+  padding: 60px 35px;
   overflow: hidden;
 
   h2 {
@@ -35,18 +30,9 @@
   }
 }
 
-.about-section,
-.products-section,
-.pricing-section {
-  margin: 80px 0;
-}
-
-.contact-section {
-  margin-top: 60px;
-}
-
 /* Media queries */
 
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .banner-container {
     .banner-2,
@@ -59,15 +45,16 @@
   .products-section,
   .pricing-section,
   .contact-section {
-    padding: 0 40px;
+    padding: 60px 40px;
   }
 
   .services-section,
   .why-us-section {
-    padding: 70px 40px;
+    padding: 60px 40px;
   }
 }
 
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .banner-container {
     .banner-3,
@@ -77,6 +64,7 @@
   }
 }
 
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .banner-container {
     .banner-4,
@@ -90,22 +78,22 @@
   .products-section,
   .pricing-section,
   .contact-section {
-    padding: 0 80px;
+    padding: 60px 80px;
   }
 
   .services-section,
   .why-us-section {
-    padding: 80px 80px;
+    padding: 60px 80px;
   }
 }
 
-/* Larger than Desktop HD */
+/* Large Screens (≥1400px) */
 @media (min-width: 1400px) {
   .about-section,
   .products-section,
   .pricing-section,
   .contact-section {
-    padding: 0 100px;
+    padding: 60px 100px;
   }
 
   .services-section,

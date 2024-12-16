@@ -1,4 +1,3 @@
-import React from "react"
 import ScrollToTop from "./components/scrollToTop/ScrollToTop"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Layout from "./components/layout/Layout"
@@ -6,10 +5,9 @@ import HomePage from "./routes/home/HomePage"
 import ServicesPage from "./routes/services/ServicesPage"
 import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
-import LavaLamp from "./components/lava-lamp/Lava"
-
 import ContactPage from "./routes/contact/ContactPage"
 import FaqPage from "./routes/faq/FaqPage"
+
 import "./index.scss"
 
 const App = () => {
@@ -24,7 +22,6 @@ const App = () => {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
-          <Route path="/404" element={<LavaLamp />} />
         </Routes>
       </Layout>
     </Router>

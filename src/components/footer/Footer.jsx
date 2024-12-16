@@ -14,14 +14,14 @@ const Footer = () => {
           </div>
           <div className="footer-icons">
             <a href="mailto:hekatek@hekateknyc.com" className="email-icon">
-              <img src={EmailIcon} alt="Email icon" loading="lazy" />
+              <img src={EmailIcon} alt="Email icon" />
             </a>
             <a
               href="https://github.com/HekaTekNYC"
               target="_blank"
               className="github-icon"
             >
-              <img src={GitHubFooter} alt="Github icon" loading="lazy" />
+              <img src={GitHubFooter} alt="Github icon" />
             </a>
           </div>
         </footer>

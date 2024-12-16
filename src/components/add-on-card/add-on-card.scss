@@ -73,14 +73,14 @@
 
 /* Media Queries */
 
-/* Small screens */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .add-on-card {
     max-width: 100%;
   }
 }
 
-/* Large screens */
+/* Large Screens (≥1200px)*/
 @media (min-width: 1200px) {
   .add-on-card {
     width: 100%;

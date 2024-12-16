@@ -1,4 +1,3 @@
-import React from "react"
 import Button from "../../components/button/Button"
 import ProductCard from "../../components/product-cards/ProductCard"
 import ProductInfo from "../../components/product-info/ProductInfo"

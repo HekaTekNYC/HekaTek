@@ -1,9 +1,10 @@
 import ContactForm from "../../components/contact-form/ContactForm"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
+
 import ContactBlob from "../../assets/images/contact-blob.svg"
 import EmailIcon from "../../assets/icons/mail1.svg"
 import PhoneIcon from "../../assets/icons/phone.svg"
 import PinIcon from "../../assets/icons/map-pin2.svg"
-import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./contact-page.scss"
 
@@ -11,7 +12,7 @@ const ContactPage = () => {
   const openCalendlyPopup = useCalendlyPopup()
   return (
     <>
-      <div className="contact-page">
+      <div id="contact" className="contact-page">
         <div className="contact-page-container">
           <h2 className="contact-header">Contact Us</h2>
           <div className="contact-page-subsection">

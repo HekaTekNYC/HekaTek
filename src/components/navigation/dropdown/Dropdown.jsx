@@ -1,6 +1,7 @@
-import React, {useContext} from "react"
+import {useContext} from "react"
 import {NavLink} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
+
 import "./dropdown.scss"
 
 const Dropdown = () => {
@@ -29,7 +30,7 @@ const Dropdown = () => {
       </NavLink>
 
       <NavLink
-        to="/ourWork"
+        to="/work"
         onClick={closeMobileNav}
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >

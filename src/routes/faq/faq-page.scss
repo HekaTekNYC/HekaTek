@@ -49,7 +49,9 @@
   }
 }
 
-/* Xtra Small Screens */
+/* Media queries */
+
+/*Small Screens (≥576px)*/
 @media (min-width: 576px) {
   .faqs-page {
     padding: 0 40px;
@@ -57,7 +59,7 @@
   }
 }
 
-/* Small Screens  */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .faqs-page {
     .faqs-bkrnd {
@@ -75,7 +77,7 @@
   }
 }
 
-/* Large screens (iPad Air, iPad Pro, and similar) */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .faqs-page {
     padding: 0 80px;
@@ -86,7 +88,7 @@
   }
 }
 
-/* Extra large screens (Desktop and larger tablets) */
+/* Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .faqs-page {
     padding: 0 100px;

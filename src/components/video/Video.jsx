@@ -41,14 +41,12 @@ const VideoComponent = ({src, alt}) => {
         autoPlay={true}
         preload="none"
         playsInline
-        // poster={poster}
         aria-label={alt}
         style={{
           objectFit: "contain",
           display: "block",
           width: "100%",
           height: "100%",
-          //   ...style,
         }}
       >
         <source src={src} type="video/mp4" />

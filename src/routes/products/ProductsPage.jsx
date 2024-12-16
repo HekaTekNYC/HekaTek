@@ -1,5 +1,3 @@
-import React from "react"
-
 import ProductCard from "../../components/product-cards/ProductCard"
 import ProductInfo from "../../components/product-info/ProductInfo"
 
@@ -29,7 +27,7 @@ const ProductsPage = () => {
   ]
 
   return (
-    <div className="products-page">
+    <div id="products" className="products-page">
       <div className="products-page-container">
         <div className="products-page-header">
           <h2>OUR WORK</h2>

@@ -36,14 +36,17 @@
   max-width: 1300px;
 
   .services-page-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
     padding: 0 35px;
     width: 100%;
-  }
 
-  .services-p {
-    margin: 10px 0 20px;
-    max-width: 900px;
-    text-align: left;
+    .services-p {
+      margin: 10px 0 20px;
+      text-align: left;
+    }
   }
 }
 
@@ -110,7 +113,8 @@
 }
 
 /* Media Queries */
-/* Xtra Small screens */
+
+/* Small screens (≥576px)*/
 @media (min-width: 576px) {
   .services-page {
     .services-header {
@@ -133,7 +137,7 @@
   }
 }
 
-/* Small screens */
+/* Medium Screens (≥768px)*/
 @media (min-width: 768px) {
   /* Service Cards Section */
   .services-page-header {
@@ -178,7 +182,7 @@
   }
 }
 
-/* Medium screens */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .services-page {
     .services-header {
@@ -190,13 +194,6 @@
   /* Service Cards Section */
   .services-container {
     padding: 60px 80px;
-
-    .services-page-heading {
-      p {
-        width: 80%;
-        text-align: left;
-      }
-    }
   }
 
   .services-cards {
@@ -204,7 +201,7 @@
   }
 }
 
-/* Larger than Desktop HD */
+/*Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .services-page {
     .services-header {
@@ -213,6 +210,13 @@
   }
   .services-container {
     padding: 60px 100px;
+  }
+  .services {
+    .services-page-heading {
+      p {
+        width: 80%;
+      }
+    }
   }
 
   .services-mobile {
@@ -253,7 +257,7 @@
   }
 }
 
-/* Larger than Desktop HD */
+/* Extra Large Screens (≥1384px) */
 @media (min-width: 1384px) {
   .services-cards-layout {
     padding: 35px 0;

@@ -1,6 +1,5 @@
 import ServiceCard from "../../components/service-card/ServiceCard"
 import Button from "../../components/button/Button"
-
 import {servicesData} from "../../data/ServicesData"
 
 import ServiceBg from "../../assets/images/services-bg.svg"
