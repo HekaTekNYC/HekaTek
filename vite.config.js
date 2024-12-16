@@ -1,30 +1,44 @@
 import {defineConfig} from "vite"
-import compress from "vite-plugin-compress"
 import react from "@vitejs/plugin-react"
-import svgr from "vite-plugin-svgr"
-import path from "path"
+import {terser} from "rollup-plugin-terser"
+import htmlPurge from "vite-plugin-html-purgecss"
 
 export default defineConfig({
   plugins: [
     react(),
-    compress(),
-    svgr({
-      exportAsDefault: true,
+    htmlPurge(),
+    terser({
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
     }),
   ],
-  server: {
-    host: "0.0.0.0",
-    port: 3000,
-    open: true,
+  build: {
+    minify: "terser",
+    outDir: "build",
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].[hash].js`,
+        chunkFileNames: `assets/[name].[hash].js`,
+        assetFileNames: `assets/[name].[hash].[ext]`,
+      },
+    },
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": "/src",
     },
   },
-  build: {
-    outDir: "dist",
-    sourcemap: true,
+  server: {
+    port: 3000,
+    open: true,
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ""),
+      },
+    },
   },
-  css: {},
 })
