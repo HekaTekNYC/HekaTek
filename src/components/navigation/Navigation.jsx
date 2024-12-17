@@ -1,10 +1,12 @@
-import React, {useContext, useState, useEffect} from "react"
+import {useContext, useState, useEffect} from "react"
 import {NavbarContext} from "../../contexts/Navbar.context"
+import {NavLink} from "react-router-dom"
 import Burger from "./burger/Burger"
 import Dropdown from "./dropdown/Dropdown"
+
 import "./navigation.scss"
 
-const Navigation = ({onNavigate, refs}) => {
+const Navigation = () => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -24,72 +26,91 @@ const Navigation = ({onNavigate, refs}) => {
   }, [])
 
   return (
-    <>
-      <nav
-        className={`navigation-container ${
-          hasScrolledPastHero ? "glassmorphism" : ""
-        }`}
-      >
-        <div className="nav-width">
-          <div className="navbar-item">
-            <h3 onClick={() => onNavigate(refs.homeRef)}>HEKATEK</h3>
-          </div>
-          <div className="hamburger-icon">
-            <Burger toggleMobileNav={toggleMobileNav} />
-          </div>
-
-          <ul className="nav-menu">
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.aboutRef)}
-                className="nav-links"
-              >
-                About
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.servicesRef)}
-                className="nav-links"
-              >
-                Services
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.productsRef)}
-                className="nav-links"
-              >
-                Our Work
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.pricingPlansRef)}
-                className="nav-links"
-              >
-                Pricing
-              </div>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={() => onNavigate(refs.contactRef)}
-                className="nav-links"
-              >
-                Contact
-              </div>
-            </li>
-          </ul>
-          {isMobileNavOpen && (
-            <Dropdown
-              closeMobileNav={closeMobileNav}
-              refs={refs}
-              onNavigate={onNavigate}
-            />
-          )}
+    <nav
+      className={`navigation-container ${
+        hasScrolledPastHero ? "glassmorphism" : ""
+      }`}
+    >
+      <div className="nav-width">
+        <div className="navbar-item">
+          <NavLink
+            to="/"
+            className={({isActive}) => (isActive ? "active" : "")}
+            end
+          >
+            <h3>Hekatek</h3>
+          </NavLink>
         </div>
-      </nav>
-    </>
+        <div className="hamburger-icon">
+          <Burger toggleMobileNav={toggleMobileNav} />
+        </div>
+
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <NavLink
+              to="/"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+              end
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/services"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
+              Services
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/work"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
+              Our Work
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/pricing"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
+              Pricing
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/contact"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/faq"
+              className={({isActive}) =>
+                `nav-links ${isActive ? "active" : ""}`
+              }
+            >
+              FAQ
+            </NavLink>
+          </li>
+        </ul>
+        {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
+      </div>
+    </nav>
   )
 }
 

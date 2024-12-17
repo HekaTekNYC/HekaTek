@@ -10,18 +10,18 @@ const Footer = () => {
         <footer className="footer-container">
           <h3 className="footer-logo">HEKATEK</h3>
           <div className="copyright">
-            <p>&copy; 2024 HekaTek | All rights reserved.</p>
+            <p>&copy; 2024 Hekatek | All rights reserved.</p>
           </div>
           <div className="footer-icons">
             <a href="mailto:hekatek@hekateknyc.com" className="email-icon">
-              <img src={EmailIcon} alt="Email icon" loading="lazy" />
+              <img src={EmailIcon} alt="Email icon" />
             </a>
             <a
               href="https://github.com/HekaTekNYC"
               target="_blank"
               className="github-icon"
             >
-              <img src={GitHubFooter} alt="Github icon" loading="lazy" />
+              <img src={GitHubFooter} alt="Github icon" />
             </a>
           </div>
         </footer>

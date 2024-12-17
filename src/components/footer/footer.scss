@@ -15,11 +15,15 @@
   padding: 18px 0;
   text-align: center;
   height: auto;
-
   width: 100%;
   max-width: 1300px;
 }
 
+.footer-format {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+}
 .footer-blob-container {
   position: relative;
   height: 0;
@@ -83,14 +87,14 @@
 
 /* Media queries */
 
-/* Small (≥576px) */
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .footer-format {
     padding: 0 40px 30px;
   }
 }
 
-/* Medium (≥768px) */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .footer-container {
     display: flex;
@@ -108,11 +112,14 @@
   }
 }
 
+/* Large Screens (≥992px) */
 @media (min-width: 992px) {
   .footer-format {
     padding: 0 80px 30px;
   }
 }
+
+/* X-Large Screens(≥1400px) */
 @media (min-width: 1400px) {
   .footer-format {
     padding: 0 100px 30px;

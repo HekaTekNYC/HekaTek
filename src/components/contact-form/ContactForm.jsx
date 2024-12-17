@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, {useRef, useState} from "react"
 import emailjs from "@emailjs/browser"
 
 import Button from "../button/Button"
@@ -8,13 +8,13 @@ import "./contact-form.scss"
 const ContactForm = () => {
   const form = useRef()
   const [showModal, setShowModal] = useState(false)
-  const [modalContent, setModalContent] = useState({ title: "", message: "" })
+  const [modalContent, setModalContent] = useState({title: "", message: ""})
   const [firstNameFocused, setFirstNameFocused] = useState(false)
   const [lastNameFocused, setLastNameFocused] = useState(false)
   const [emailFocused, setEmailFocused] = useState(false)
   const [messageFocused, setMessageFocused] = useState(false)
 
-  const handleFocus = (field) => {
+  const handleFocus = field => {
     switch (field) {
       case "firstName":
         setFirstNameFocused(true)
@@ -33,7 +33,7 @@ const ContactForm = () => {
     }
   }
 
-  const handleBlur = (field) => {
+  const handleBlur = field => {
     switch (field) {
       case "firstName":
         setFirstNameFocused(false)
@@ -52,7 +52,7 @@ const ContactForm = () => {
     }
   }
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault()
 
     const firstName = form.current.from_name.value
@@ -81,7 +81,7 @@ const ContactForm = () => {
         "3M9sCaTmKUO1g2SRA"
       )
       .then(
-        (result) => {
+        result => {
           setModalContent({
             title: "Message Sent!",
             message: "We will get back to you within 48 hours.",
@@ -89,7 +89,7 @@ const ContactForm = () => {
           setShowModal(true)
           form.current.reset()
         },
-        (error) => {
+        error => {
           setModalContent({
             title: "Oops!",
             message: (
@@ -106,7 +106,7 @@ const ContactForm = () => {
       )
   }
 
-  const isValidEmail = (email) => {
+  const isValidEmail = email => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return regex.test(email)
   }
@@ -115,7 +115,7 @@ const ContactForm = () => {
     <>
       <div className="contact-form-container">
         <form ref={form} onSubmit={sendEmail} className="form">
-          <h3 className="contact-form-header">Contact Us</h3>
+          <h3 className="contact-form-header">Send a Message</h3>
           <div className="form-group contact-name">
             <div className="first-name">
               <label
@@ -184,7 +184,7 @@ const ContactForm = () => {
       </div>
       {showModal && (
         <div className="modal-background" onClick={() => setShowModal(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
             <h4>{modalContent.title}</h4>
             <p className="modal-message">
               {modalContent.message || "Default message"}

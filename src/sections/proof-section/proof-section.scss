@@ -1,0 +1,142 @@
+.proof-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 35px;
+  z-index: 1;
+
+  .proof-header {
+    width: 100%;
+  }
+}
+
+.proof-container {
+  max-width: 1300px;
+}
+
+.proof-body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  margin: 35px 0 0;
+  width: 100%;
+
+  .proof-left {
+    width: 100%;
+
+    img {
+      object-position: 40%;
+      object-fit: cover;
+      max-height: 525px;
+    }
+  }
+
+  .proof-right {
+    padding-top: 10px;
+
+    .proof-section {
+      .section-number {
+        font-family: "Tanker", sans-serif;
+        font-weight: bold;
+        color: #f7928e;
+        margin-right: 10px;
+      }
+
+      h4 {
+        font-weight: bold;
+        padding-top: 20px;
+      }
+    }
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
+
+      .stat-item {
+        text-align: center;
+        &:nth-child(1) {
+          padding: 0 20px 20px 0;
+          border-right: 1px solid #444d82;
+          border-bottom: 1px solid #444d82;
+        }
+        &:nth-child(2) {
+          padding: 0 0 20px 20px;
+          border-left: 1px solid #444d82;
+          border-bottom: 1px solid #444d82;
+        }
+        &:nth-child(3) {
+          padding: 20px 20px 0 0;
+          border-right: 1px solid #444d82;
+          border-top: 1px solid #444d82;
+        }
+        &:nth-child(4) {
+          padding: 20px 0 0 20px;
+          border-left: 1px solid #444d82;
+          border-top: 1px solid #444d82;
+        }
+
+        h4 {
+          font-size: 1.6rem;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+/* Media Queries */
+
+/* Small Screens (≥576px) */
+@media (min-width: 576px) {
+  .proof-page-container {
+    padding: 60px 40px;
+  }
+}
+
+/* Large Screens (≥992px) */
+@media (min-width: 992px) {
+  .proof-page-container {
+    padding: 60px 80px;
+  }
+}
+
+/* Extra Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  .proof-page-container {
+    padding: 60px 100px;
+
+    .proof-header {
+      p {
+        width: 80%;
+      }
+    }
+  }
+  .proof-body-container {
+    flex-direction: row;
+    align-items: center;
+
+    .proof-left {
+      width: 45%;
+    }
+
+    .proof-right {
+      width: 55%;
+      padding: 0 0 0 40px;
+
+      .proof-section {
+        h4 {
+          padding-top: 0;
+        }
+
+        p {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

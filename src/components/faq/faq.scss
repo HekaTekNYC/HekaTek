@@ -1,0 +1,136 @@
+.faq-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: stretch;
+}
+
+.faq-categories-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .faq-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 0 30px;
+    gap: 7px;
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 16px 24px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    border: 1px solid rgba(203, 209, 246, 0.969);
+  }
+
+  &.open {
+    color: #fff;
+    background: #444d82;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
+    transition: all 0.3s ease-in-out;
+
+    .faq-question {
+      color: #fff !important;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .faq-answer {
+      color: #fff !important;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #444d82;
+
+    .faq-toggle-icon {
+      display: inline-block;
+      padding-left: 10px;
+      transition: transform 0.3s ease-in-out;
+      transform-origin: 50% 50%;
+
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .faq-answer {
+    color: #444d82;
+    transition: color 0.3s ease;
+  }
+}
+
+/* Media queries */
+
+/* Small Screens (≥768px) */
+@media (min-width: 768px) {
+  .faq-container {
+    .faq-categories {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 98%;
+    }
+  }
+
+  .faq-item {
+    width: 669px;
+  }
+}
+
+/* Medium Screens (≥820px) */
+@media (min-width: 820px) {
+  .faq-page-container {
+    .faq-page-header {
+      margin: 30px 0 20px;
+    }
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .faq-page {
+    padding: 0 80px;
+  }
+}
+
+/* Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  .products-page {
+    padding: 0 100px;
+    .faq-page-container {
+      .faq-page-header {
+        margin: 30px 0 40px;
+        max-width: 1000px;
+      }
+    }
+  }
+}

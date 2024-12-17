@@ -6,8 +6,6 @@ import IIQwebp from "../assets/images/InterviewIQ.webp"
 import IIQpng from "../assets/images/InterviewIQ.png"
 import PHwebp from "../assets/images/ph.webp"
 import PHpng from "../assets/images/ph.png"
-// import AISumwebp from "../assets/images/aisum.png"
-// import AISumpng from "../assets/images/aisum.png"
 import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
 import WeFundWebp from "../assets/images/WeFund.webp"
@@ -77,23 +75,8 @@ export const walkAngels = {
   },
   info: "The United Angels Foundation's Walk With Angels 2024 fundraiser supported over 2,000 Utah families with special needs. This event celebrates individuals of all abilities, promoting advocacy, inclusion, and community. HekaTek volunteered to develop and optimize the website, ensuring it's functionality and responsiveness.",
   btn: "View Live",
-  aLink: "https://walk.unitedangels.org/",
+  aLink: "https://unitedangels.org/",
 }
-// export const aiSumz = {
-//   id: 5,
-//   name: "AI Summarizer",
-//   deg: 180,
-//   scale: "X(-1)",
-//   desc: "AI Powered Article Summarizer",
-//   webp: AISumwebp,
-//   img: {
-//     src: AISumpng,
-//     alt: "AI Sum Preview",
-//   },
-//   info: "Utilizing advanced AI, AI Sumz quickly condenses articles into core summaries, boosting your reading efficiency with a user-friendly interface powered by React, Redux, and Vite. Perfect for research or keeping up-to-date on the go.",
-//   btn: "View Live",
-//   aLink: "https://main--verdant-raindrop-719f68.netlify.app/",
-// }
 
 export const riversEdge = {
   id: 5,

@@ -16,9 +16,9 @@
 
   .banner-text {
     font-family: "Tanker";
-    // fonst-weight: 400;
     margin-top: 10px 0;
     font-size: 1.75rem;
+    font-weight: 500;
     line-height: 1;
     text-align: center;
     margin: 0 5px;
@@ -37,7 +37,7 @@
 
 /* Media queries */
 
-/* Small (≥576px) */
+/* Small Screens (≥576px) */
 @media (min-width: 576px) {
   .banner-container {
     .banner-2,
@@ -47,7 +47,7 @@
   }
 }
 
-/* Medium (≥768px) */
+/* Medium Screens (≥768px) */
 @media (min-width: 768px) {
   .banner-container {
     .banner-3,
@@ -57,7 +57,7 @@
   }
 }
 
-/* Large (≥992px) */
+/* Medium Screens (≥992px) */
 @media (min-width: 992px) {
   .banner-container {
     .banner-4,

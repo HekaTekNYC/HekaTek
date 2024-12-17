@@ -1,0 +1,229 @@
+.pricing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 35px;
+  margin: 40px 0 30px;
+}
+
+.pricing-page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1300px;
+  z-index: 1;
+
+  .pricing-header {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.pricing-page-background {
+  position: absolute;
+  top: 1275px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: auto;
+  transform: rotate(90deg) translateX(-50%);
+  transform-origin: center center;
+  opacity: 0.5;
+  filter: blur(140px);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 355px;
+    width: auto;
+    max-width: none;
+  }
+}
+.pricing-page-header {
+  display: flex;
+
+  h2 {
+    text-align: start;
+  }
+}
+
+/* Pricing Plan Section */
+.pricing-build-container {
+  .pricing-build-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0 10px;
+
+    .pricing-build-text {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-top: 2px;
+      }
+    }
+    .pricing-build-btn {
+      display: flex;
+      justify-content: start;
+      margin-top: 20px;
+    }
+  }
+
+  .pricing-build-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    gap: 40px;
+  }
+}
+
+/* Add On Section */
+.add-on-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0;
+  width: 100%;
+
+  .add-on-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0;
+
+    .add-on-text-container {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+
+      p {
+        margin: 10px 0 30px;
+      }
+    }
+  }
+
+  .add-on-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+/* Media Queries */
+
+/* XtraSmall Screens (≥576px) */
+@media (min-width: 576px) {
+  .pricing-page {
+    padding: 0 40px;
+  }
+}
+
+/* Small Screens (≥768px) */
+@media (min-width: 768px) {
+  .pricing-page-background {
+    img {
+      height: 300px;
+    }
+  }
+
+  .pricing-build-container {
+    .pricing-build-info {
+      margin: 20px 0 30px;
+    }
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .pricing-page {
+    padding: 0 80px;
+    .pricing-header {
+      text-align: center;
+      margin: 10px 0 30px;
+    }
+
+    .pricing-page-background {
+      top: 550px;
+      left: 70px;
+      transform: none;
+      opacity: 0.8;
+      filter: blur(140px);
+      img {
+        height: auto;
+        width: 900px;
+      }
+    }
+  }
+
+  .pricing-build-container {
+    .pricing-build-cards-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .pricing-build-text {
+      justify-content: start;
+      width: 80%;
+      padding-right: 20px;
+    }
+
+    .pricing-build-btn {
+      width: 20%;
+    }
+  }
+
+  .pricing-build-container {
+    .pricing-build-info {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 40px 0 40px;
+
+      .pricing-build-btn {
+        justify-content: end;
+        align-items: center;
+      }
+    }
+  }
+
+  .add-on-container {
+    .add-on-cards-container {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: stretch;
+    }
+  }
+}
+
+/* Large screens (≥1200px) */
+@media (min-width: 1200px) {
+  .pricing-page {
+    padding: 0 100px;
+    margin: 40px 0 0;
+  }
+
+  .pricing-build-cards-container {
+    width: 100%;
+  }
+
+  .add-on-container {
+    margin: 40px 0 60px;
+
+    .add-on-info {
+      margin: 20px 0 20px;
+    }
+
+    .add-on-cards-container {
+      gap: 40px;
+    }
+  }
+}

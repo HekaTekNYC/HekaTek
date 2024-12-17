@@ -1,4 +1,3 @@
-// import CSSLogo from "../assets/icons/css-icon.svg"
 import CSSLogo from "../assets/icons/icons8-css.svg"
 import Firebase from "../assets/icons/firebase-icon.svg"
 import AstroIcon from "../assets/icons/astro-icon.svg"

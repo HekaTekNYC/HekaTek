@@ -1,27 +1,27 @@
-import { useContext } from "react"
-import { NavbarContext } from "../../../contexts/Navbar.context"
+import {useContext} from "react"
+import {NavbarContext} from "../../../contexts/Navbar.context"
 
 import Dropdown from "../dropdown/Dropdown"
 
 import "./burger.scss"
 
 const Burger = () => {
-  const { isMobileNavOpen, setIsMobileNavOpen } = useContext(NavbarContext)
+  const {isMobileNavOpen, setIsMobileNavOpen} = useContext(NavbarContext)
 
   const handleClick = () => {
-    setIsMobileNavOpen((prev) => !prev)
+    setIsMobileNavOpen(prev => !prev)
   }
   return (
     <div className="hamburger-container">
       <svg
         id="hamburger"
         className={`burger-svg ${isMobileNavOpen ? "active" : ""}`}
-        viewBox="0 0 45 45"
+        viewBox="9.5 9.5 26 21"
         onClick={handleClick}
       >
         <g
           stroke="#444d82"
-          strokeWidth="1"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         >

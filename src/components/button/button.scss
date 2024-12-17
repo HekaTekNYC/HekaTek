@@ -1,7 +1,9 @@
 .btn-solid,
-.btn-outline {
+.btn-outline,
+.btn-reverse {
+  font-family: "Satoshi";
   white-space: nowrap;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 40px;
   height: 40px;
   border: none;
@@ -55,6 +57,26 @@
   }
 }
 
+.btn-reverse {
+  background-color: #ffffff;
+  color: #444d82;
+  border: 1px solid #444d82;
+
+  &:hover {
+    background-color: #9ea6df;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    a {
+      color: #ffffff !important;
+    }
+  }
+
+  a {
+    color: #444d82 !important;
+  }
+}
+
 .btn-full {
   width: 100%;
 }
@@ -62,6 +84,7 @@
 .btn-short {
   width: auto;
   min-width: 175px;
+  max-width: 210px;
 }
 
 .btn-short,
@@ -74,14 +97,16 @@
 /* Medium (≥768px) */
 @media (min-width: 768px) {
   .btn-solid,
-  .btn-outline {
+  .btn-outline,
+  .btn-reverse {
     height: 40px;
   }
 }
-
+/* Large (≥1024px) */
 @media (min-width: 1024px) {
   .btn-solid,
-  .btn-outline {
+  .btn-outline,
+  .btn-reverse {
     height: 48px;
   }
 }

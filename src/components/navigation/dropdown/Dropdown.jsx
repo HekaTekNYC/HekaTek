@@ -1,8 +1,10 @@
-import React, {useContext} from "react"
+import {useContext} from "react"
+import {NavLink} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
+
 import "./dropdown.scss"
 
-const Dropdown = ({onNavigate, refs}) => {
+const Dropdown = () => {
   const {isMobileNavOpen, toggleMobileNav} = useContext(NavbarContext)
 
   const closeMobileNav = () => {
@@ -11,51 +13,53 @@ const Dropdown = ({onNavigate, refs}) => {
 
   return (
     <div className={`dropdown-container ${isMobileNavOpen ? "active" : ""}`}>
-      <div
-        onClick={() => {
-          onNavigate(refs.aboutRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
+      <NavLink
+        to="/"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
-        About
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.servicesRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/services"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
         Services
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.productsRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
+      </NavLink>
+
+      <NavLink
+        to="/work"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
         Our Work
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.pricingPlansRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
+      </NavLink>
+
+      <NavLink
+        to="/pricing"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
         Pricing
-      </div>
-      <div
-        onClick={() => {
-          onNavigate(refs.contactRef)
-          closeMobileNav()
-        }}
-        className="nav-link"
+      </NavLink>
+
+      <NavLink
+        to="/contact"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
         Contact
-      </div>
+      </NavLink>
+
+      <NavLink
+        to="/faq"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        FAQ
+      </NavLink>
     </div>
   )
 }

@@ -1,0 +1,78 @@
+.hero-section {
+  position: relative;
+  height: calc(100vh - 145px);
+  overflow: hidden;
+}
+
+.about-section,
+.products-section,
+.pricing-section,
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 35px;
+  height: auto;
+  flex-grow: 1;
+}
+
+.services-section,
+.why-us-section {
+  display: flex;
+  justify-content: center;
+  background: #f4f7ff;
+  padding: 60px 35px;
+  overflow: hidden;
+
+  h2 {
+    color: #9ea6df;
+  }
+}
+
+/* Media queries */
+
+/* Small Screens (≥576px) */
+@media (min-width: 576px) {
+  .about-section,
+  .products-section,
+  .pricing-section,
+  .contact-section {
+    padding: 60px 40px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 60px 40px;
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .about-section,
+  .products-section,
+  .pricing-section,
+  .contact-section {
+    padding: 60px 80px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 60px 80px;
+  }
+}
+
+/* Large Screens (≥1400px) */
+@media (min-width: 1400px) {
+  .about-section,
+  .products-section,
+  .pricing-section,
+  .contact-section {
+    padding: 60px 100px;
+  }
+
+  .services-section,
+  .why-us-section {
+    padding: 80px 100px;
+  }
+}
