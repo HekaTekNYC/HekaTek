@@ -2,12 +2,12 @@ import {defineConfig} from "vite"
 import react from "@vitejs/plugin-react"
 import {terser} from "rollup-plugin-terser"
 import viteCompression from "vite-plugin-compression"
-import htmlPurge from "vite-plugin-html-purgecss"
+// import htmlPurge from "vite-plugin-html-purgecss"
 
 export default defineConfig({
   plugins: [
     react(),
-    htmlPurge(),
+    // htmlPurge(),
     viteCompression({
       verbose: true,
       disable: false,
