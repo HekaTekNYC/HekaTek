@@ -2,7 +2,7 @@ export const processSteps = [
   {
     title: "Consultation",
     description:
-      "Begin with a conversation with one of our team who will provide feedback on your current website and understand your objectives for the new one.",
+      "Discuss your digital needs with a team member. We'll review any existing site or start fresh, aligning with your goals for a new website.",
     number: "01",
   },
   {

@@ -11,22 +11,78 @@
     <meta http-equiv="Cache-Control" content="public" />
     <link rel="stylesheet" href="./index.scss" />
 
-    <!-- <link
-      href="https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap"
-      rel="stylesheet"
+    <!-- Preload Satoshi fonts -->
+    <link
+      rel="preload"
+      href="/src/assets/fonts/satoshi-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/src/assets/fonts/satoshi-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
     <link
-      href="https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap"
-      rel="stylesheet"
-    /> -->
+      rel="preload"
+      href="/src/assets/fonts/satoshi-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/satoshi-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Preload Tanker fonts -->
+    <link
+      rel="preload"
+      href="/src/assets/fonts/tanker-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/tanker-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/tanker-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/tanker-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Preload Bebas Neue font -->
+    <link
+      rel="preload"
+      href="/src/assets/fonts/bebas-neue.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
     <!-- DNS Prefetch and Preconnect -->
     <link rel="canonical" href="https://www.hekateknyc.com/" />
-    <title>HekaTek Web and Software Development</title>
+    <title>Hekatek Web and Software Development</title>
 
     <!-- Calendly Widget CSS -->
     <link
@@ -48,7 +104,6 @@
     ></script>
 
     <!-- EmailJS Script -->
-    <!-- Include EmailJS Library -->
     <script
       src="https://cdn.emailjs.com/dist/email.min.js"
       type="text/javascript"
@@ -56,7 +111,6 @@
 
     <script type="text/javascript">
       window.onload = function () {
-        // Ensure EmailJS is loaded
         if (typeof emailjs !== "undefined") {
           emailjs.init("3M9sCaTmKUO1g2SRA")
         } else {
@@ -64,10 +118,5 @@
         }
       }
     </script>
-    <!-- <script>
-      ;(function () {
-        emailjs.init("3M9sCaTmKUO1g2SRA")
-      })()
-    </script> -->
   </body>
 </html>

@@ -34,13 +34,6 @@
 
 /* Small Screens (≥576px) */
 @media (min-width: 576px) {
-  .banner-container {
-    .banner-2,
-    .ellipse-3 {
-      display: block;
-    }
-  }
-
   .about-section,
   .products-section,
   .pricing-section,
@@ -54,26 +47,8 @@
   }
 }
 
-/* Medium Screens (≥768px) */
-@media (min-width: 768px) {
-  .banner-container {
-    .banner-3,
-    .ellipse-4 {
-      display: block;
-    }
-  }
-}
-
 /* Medium Screens (≥992px) */
 @media (min-width: 992px) {
-  .banner-container {
-    .banner-4,
-    .ellipse-5,
-    .ellipse-6 {
-      display: block;
-    }
-  }
-
   .about-section,
   .products-section,
   .pricing-section,

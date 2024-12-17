@@ -38,9 +38,9 @@ const ProductsSection = () => {
           <p>
             Explore a sample of the projects we’ve designed and developed for
             businesses like yours. Each showcases our dedication to creativity,
-            functionality, and measurable results. Ready to see more? View more
-            to dive into the full scope of our work and discover how we can
-            bring your vision to life.
+            functionality, and measurable results. Ready to see more? Dive
+            deeper into the full scope of our work and discover how we can bring
+            your vision to life.
           </p>
         </div>
         <div className="products-btn">

@@ -1,6 +1,56 @@
-@import url("https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap");
-@import url("https://api.fontshare.com/css?f[]=tanker@400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tanker";
+  src: url("/src/assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/src/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global Styles */
 
 body,
 #root {
@@ -39,14 +89,14 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   margin-top: 0;
 }
 
 h1 {
   font-family: "Bebas Neue";
   font-size: 4.7rem;
+
   line-height: 0.9;
   color: #444d82;
   margin: 0;
@@ -56,6 +106,7 @@ h2 {
   font-family: "Bebas Neue";
   font-size: 6rem;
   font-weight: 700;
+  letter-spacing: 0.2rem;
   line-height: 5.3rem;
   color: #9ea6df;
   margin: 0;
@@ -64,6 +115,7 @@ h2 {
 .h2-heading {
   font-size: 3.4rem;
   line-height: 3.5rem;
+  letter-spacing: normal;
   color: #444d82;
 }
 
@@ -80,7 +132,7 @@ h4 {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 600;
   color: #444d82;
   margin: 0;
 }
@@ -89,12 +141,6 @@ h5 {
   font-family: "Satoshi", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
-  margin: 0;
-}
-
-h6 {
-  font-size: 1.1rem;
-  font-weight: 700;
   margin: 0;
 }
 
