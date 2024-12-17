@@ -3,7 +3,7 @@ import React, {useState, useEffect, useRef} from "react"
 import Button from "../../components/button/Button"
 import {PricingData, WebsiteData, PlansData} from "../../data/FaqsData"
 
-import "./FAQ.scss"
+import "./faq.scss"
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)
