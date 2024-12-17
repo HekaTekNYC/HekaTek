@@ -51,6 +51,9 @@
     margin-bottom: 20px;
   }
   .product-desc-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
     order: 1;
   }
 }
@@ -62,6 +65,7 @@
 }
 
 .product-row-rev {
+  padding-top: 30px;
   .product-container {
     justify-content: end;
   }

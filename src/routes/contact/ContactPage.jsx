@@ -21,10 +21,9 @@ const ContactPage = () => {
                 <h2 className="h2-heading">Get In Touch</h2>
                 <p>
                   Get in touch with us for a no-hassle, 100% free consultation.
-                  You don't need to have your video camera on — our goal is to
-                  make you comfortable. We can meet to discuss your pain points
-                  and address any questions you may have. Reach out today and
-                  let us help you find the best solutions for your business.
+                  We can meet to discuss your pain points and address any
+                  questions you may have. Reach out today and let us help you
+                  find the best solutions for your business.
                 </p>
               </div>
               <div className="contact-list">

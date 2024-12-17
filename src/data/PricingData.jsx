@@ -10,10 +10,10 @@ export const subscription = {
   title: "SUBSCRIPTION",
   sale: "$150",
   cost: "$175",
-  subCost: "/Month",
+  subCost: "/month",
   desc: "Monthly Subscription Fee",
   fee: "$350",
-  subFee: "/ One Time Design Fee",
+  subFee: "/ one time design fee",
   checkList: [
     {
       text: "Includes 5 Fully Responsive Pages",
@@ -62,7 +62,7 @@ export const lumpSum = {
   subCost: "",
   desc: "One Time Fee",
   fee: "$25",
-  subFee: "/ Monthly Hosting Fee",
+  subFee: "/ monthly hosting fee",
   checkList: [
     {
       text: "Includes 5 Fully Responsive Pages",
@@ -80,7 +80,7 @@ export const lumpSum = {
       alt: "Periwinkle Checkmark",
     },
     {
-      text: "12 Month Minimum Commitment",
+      text: "12-Month Minimum Commitment",
       img: PeriwinkleCheck,
       alt: "Periwinkle Checkmark",
     },
@@ -105,7 +105,7 @@ export const ecomm = {
   title: "E-COMMERCE",
   sale: "",
   cost: "$6000",
-  subCost: "/Minimum",
+  subCost: "/minimum",
   desc: "Starting Price",
   fee: "INQUIRE BELOW",
   subFee: "",

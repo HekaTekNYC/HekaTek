@@ -12,7 +12,7 @@ export const editsMo = {
   className: "add-on-edits",
   title: "UNLIMITED EDITS & SUPPORT",
   cost: "$50",
-  subCost: "/Month",
+  subCost: "/month",
   costDesc: "Montly Subscription Fee",
   desc: "Enhance your lump sum plan with the Unlimited Edits & 24/7 Support add-on. You’ll have the flexibility to request updates as needed, whether it’s fixing bugs, updating text, or refreshing images. Enjoy peace of mind with round-the-clock support, keeping your website up-to-date and supported effortlessly with this essential service.",
 }
@@ -22,7 +22,7 @@ export const clientPortal = {
   className: "add-on-client-portal",
   title: "CLIENT PORTAL CRM",
   cost: "$1000",
-  subCost: "/Minimum",
+  subCost: "/minimum",
   costDesc: "Starting Price",
   desc: "Streamline your business operations with a custom Client Portal CRM. This add-on allows clients to securely manage accounts, view updates, and interact with your services. Whether you need basic functionality or advanced features, we can design the perfect solution. Pricing depends on project scope, contact us to enhance your client experience.",
 }

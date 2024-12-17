@@ -28,6 +28,10 @@
     }
   }
 
+  &.lump {
+    z-index: 5;
+  }
+
   &.sub:hover {
     box-shadow: rgba(180, 111, 248, 0.333) 0px 4px 16px;
   }
@@ -152,7 +156,7 @@
   grid-template-columns: 1fr;
 
   &.lump .checklist:nth-last-child(-n + 2) {
-    color: #888888;
+    color: #828294;
   }
 
   .checklist {

@@ -20,7 +20,7 @@ const RedefineSection = () => {
         <div className="choose-us-info">
           <h2 className="h2-heading">Redefine Your Digital Presence</h2>
           <p>
-            At HekaTek, we create fully custom websites tailored to your
+            At Hektek, we create fully custom websites tailored to your
             business's unique needs. Built from the ground up, our sites
             prioritize speed, functionality, and a seamless user experience that
             reflects your brand’s identity. We also provide ongoing hosting and
