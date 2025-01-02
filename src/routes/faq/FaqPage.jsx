@@ -16,6 +16,7 @@ const FaqPage = () => {
             aria-hidden="true"
             loading="lazy"
             decoding="async"
+            crossorigin="anonymous"
             src={WhyPNG}
             alt="abstract rainbow wheel"
             height="636"
