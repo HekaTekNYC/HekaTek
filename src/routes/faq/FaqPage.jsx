@@ -13,7 +13,6 @@ const FaqPage = () => {
           <source srcSet={WhyWebp} type="image/webp" />
           <source srcSet={WhyPNG} type="image/png" />
           <img
-            aria-hidden="true"
             loading="lazy"
             decoding="async"
             crossorigin="anonymous"
@@ -21,6 +20,8 @@ const FaqPage = () => {
             alt="abstract rainbow wheel"
             height="636"
             width="473"
+            aria-hidden="true"
+            crossOrigin="anonymous"
           />
         </picture>
       </div>
