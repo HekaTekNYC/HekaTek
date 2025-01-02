@@ -35,10 +35,22 @@ const ServicesPage = () => {
           </div>
           <div className="services-cards-layout">
             <div className="services-blob-m">
-              <img src={ServiceBlobM} alt="gradient blob" loading="lazy" />
+              <img
+                src={ServiceBlobM}
+                alt="gradient blob"
+                loading="lazy"
+                crossOrigin="anonymous"
+                aria-hidden="true"
+              />
             </div>
             <div className="services-blob">
-              <img src={ServiceBlob} alt="gradient blob " loading="lazy" />
+              <img
+                src={ServiceBlob}
+                alt="gradient blob "
+                loading="lazy"
+                aria-hidden="true"
+                crossOrigin="anonymous"
+              />
             </div>
             <div className="services-cards">
               {servicesData.map((service, index) => (
