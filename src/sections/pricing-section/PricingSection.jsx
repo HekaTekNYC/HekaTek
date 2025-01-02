@@ -16,6 +16,8 @@ const PricingSection = () => {
             alt="colored gradient shape"
             loading="lazy"
             decoding="async"
+            aria-hidden="true"
+            crossOrigin="anonymous"
           />
         </div>
         <div className="pricing-header">

@@ -29,7 +29,7 @@ const ContactPage = () => {
               <div className="contact-list">
                 <div className="contact-detail-items">
                   <div className="contact-icon-container">
-                    <img src={PhoneIcon} alt="Phone Icon" />
+                    <img src={PhoneIcon} alt="Phone Icon" aria-hidden="true" />
                   </div>
                   <div className="contact-details">
                     <h3 className="contact-h3">PHONE</h3>
@@ -40,7 +40,7 @@ const ContactPage = () => {
                 </div>
                 <div className="contact-detail-items">
                   <div className="contact-icon-container">
-                    <img src={EmailIcon} alt="Email Icon" />
+                    <img src={EmailIcon} alt="Email Icon" aria-hidden="true" />
                   </div>
                   <div className="contact-details ">
                     <h3 className="contact-h3">EMAIL</h3>
@@ -57,6 +57,7 @@ const ContactPage = () => {
                       src={PinIcon}
                       alt="Location Icon"
                       className="contact-pin"
+                      aria-hidden="true"
                     />
                   </div>
                   <div className="contact-details">
@@ -82,6 +83,8 @@ const ContactPage = () => {
                   src={ContactBlob}
                   alt="gradient blurred shape"
                   loading="lazy"
+                  crossOrigin="anonymous"
+                  aria-hidden="true"
                 />
               </div>
               <ContactForm />
