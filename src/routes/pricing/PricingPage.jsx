@@ -21,6 +21,8 @@ const PricingPage = () => {
               src={BackgroundShape}
               alt="colored gradient shape"
               loading="lazy"
+              aria-hidden="true"
+              crossOrigin="anonymous"
             />
           </div>
 
