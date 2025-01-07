@@ -4,7 +4,7 @@ import Button from "../../components/button/Button"
 import {subscription, lumpSum, ecomm} from "../../data/PricingData"
 import {blog, editsMo, clientPortal} from "../../data/AddOnData"
 
-import BackgroundShape from "../../assets/images/pricing-shape.svg"
+import BackgroundShape from "../../assets/images/pricing-shape.svg?react"
 
 import "./pricing-page.scss"
 
@@ -17,13 +17,14 @@ const PricingPage = () => {
       <div id="pricing" className="pricing-page">
         <div className="pricing-page-container">
           <div className="pricing-page-background">
-            <img
+            {/* <img
               src={BackgroundShape}
               alt="colored gradient shape"
               loading="lazy"
               aria-hidden="true"
               crossOrigin="anonymous"
-            />
+            /> */}
+            <BackgroundShape />
           </div>
 
           <h2 className="pricing-header">Pricing</h2>
