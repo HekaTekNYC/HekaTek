@@ -17,9 +17,9 @@ const HeroSection = () => {
             <h1 className="hero-section-header">
               ENVISION
               <br />
-              Innovate
+              INNOVATE
               <br />
-              Transform
+              TRANSFORM
             </h1>
             <p className="hero-subheader">
               Unleash the full potential of your online presence with a
