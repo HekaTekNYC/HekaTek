@@ -50,7 +50,7 @@ const AboutSection = () => {
         </div>
         <div className="about-info-container">
           <h2 className="about-header">
-            About <br /> Hekatek
+            ABOUT <br /> HEKATEK
           </h2>
           <div className="about-indent">
             <h4 className="about-subheader">
