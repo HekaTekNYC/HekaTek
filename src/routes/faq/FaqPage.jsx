@@ -6,6 +6,7 @@ import WhyWebp from "../../assets/images/why-us-img.webp"
 import "./faq-page.scss"
 
 const FaqPage = () => {
+  console.log({WhyPNG, WhyWebp})
   return (
     <div id="faq" className="faqs-page">
       <div className="faqs-bkrnd">
@@ -15,13 +16,12 @@ const FaqPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            crossorigin="anonymous"
             src={WhyPNG}
             alt="abstract rainbow wheel"
             height="636"
             width="473"
             aria-hidden="true"
-            crossOrigin="anonymous"
+            // crossOrigin="anonymous"
           />
         </picture>
       </div>
