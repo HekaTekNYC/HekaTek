@@ -42,7 +42,7 @@
     width: 250px;
     height: auto;
     top: 45%;
-    opacity: 0.5;
+    opacity: 0.6;
     filter: blur(140px);
     overflow: hidden;
     z-index: -1;
@@ -51,6 +51,19 @@
 
 /* Media queries */
 
+/*Small Screens (≥300px)*/
+@media (min-width: 300px) {
+  .faqs-page {
+    .faqs-bkrnd {
+      width: 230px;
+      height: auto;
+      top: 45%;
+      opacity: 0.3;
+      filter: blur(140px);
+      overflow: visible;
+    }
+  }
+}
 /*Small Screens (≥576px)*/
 @media (min-width: 576px) {
   .faqs-page {

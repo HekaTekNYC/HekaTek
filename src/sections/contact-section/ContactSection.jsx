@@ -9,7 +9,8 @@ const ContactSection = () => {
       <div className="contact-us-container">
         <div className="contact-us-info">
           <h2>
-            Get In <br /> Touch
+            GET IN
+            <br /> TOUCH
           </h2>
           <p>
             Get in touch with us for a no-hassle, 100% free consultation. We can

@@ -14,7 +14,7 @@ import "./services-page.scss"
 const ServicesPage = () => {
   return (
     <div id="services" className="services-page">
-      <h2 className="services-header"> Our Services </h2>
+      <h2 className="services-header"> OUR SERVICES </h2>
 
       {/* Redefine Digital Section*/}
       <Redefine />
@@ -23,7 +23,7 @@ const ServicesPage = () => {
       <div className="services-container">
         <div className="services">
           <div className="services-page-heading">
-            <h2 className="h2-heading">How We Help Your Business</h2>
+            <h2 className="h2-heading">HOW WE HELP YOUR BUSINESS</h2>
             <p className="services-p">
               We provide personalized web design and development services for
               small businesses nationwide. By hand-coding every element, we
