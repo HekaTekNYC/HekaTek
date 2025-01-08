@@ -21,7 +21,7 @@ const PricingSection = () => {
           />
         </div>
         <div className="pricing-header">
-          <h2>Pricing Plans</h2>
+          <h2>PRICING PLANS</h2>
           <p className="pricing-text">
             Flexible pricing to suit your needs: choose a monthly subscription,
             one-time payment, or tailored e-commerce plans. Add-ons like

@@ -18,7 +18,7 @@ const RedefineSection = () => {
       <div className="choose-us">
         {/* Left Column */}
         <div className="choose-us-info">
-          <h2 className="h2-heading">Redefine Your Digital Presence</h2>
+          <h2 className="h2-heading">REDEFINE YOUR DIGITAL PRESENCE</h2>
           <p>
             At Hektek, we create fully custom websites tailored to your
             business's unique needs. Built from the ground up, our sites

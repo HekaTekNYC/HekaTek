@@ -11,7 +11,7 @@ const ProofSection = () => {
       <div className="proof-page-container">
         <div className="proof-container">
           <div className="proof-header">
-            <h2 className="h2-heading">The proof is in the numbers </h2>
+            <h2 className="h2-heading">THE PROOF IS IN THE NUMBERS</h2>
             <p>
               Your website is more than just a digital storefront—it’s a vital
               tool for building trust, engaging customers, and driving business

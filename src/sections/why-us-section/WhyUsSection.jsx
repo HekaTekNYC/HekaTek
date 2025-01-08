@@ -43,7 +43,7 @@ const WhyUsSection = () => {
         </div>
         <div className="why-info-container">
           <h2 className="why-header">
-            Why <br /> Hekatek
+            WHY <br /> HEKATEK
           </h2>
           <div className="why-info-text">
             <h4>Tired of Poor Website Experiences?</h4>
