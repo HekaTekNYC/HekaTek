@@ -13,7 +13,7 @@ const ProcessSection = () => {
       <div className="our-process-section">
         <div className="our-process-header">
           <div className="our-process-info">
-            <h2 className="h2-heading">Our Process, Your Peace of Mind</h2>
+            <h2 className="h2-heading">OUR PROCESS, YOUR PEACE OF MIND</h2>
             <p>
               Once the contract is signed, we’ll schedule a meeting to learn
               more about your business and what you do. With this information,

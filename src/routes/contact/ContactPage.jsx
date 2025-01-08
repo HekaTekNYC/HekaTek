@@ -14,11 +14,11 @@ const ContactPage = () => {
     <>
       <div id="contact" className="contact-page">
         <div className="contact-page-container">
-          <h2 className="contact-header">Contact Us</h2>
+          <h2 className="contact-header">CONTACT US</h2>
           <div className="contact-page-subsection">
             <div className="contact-page-info">
               <div className="contact-page-header">
-                <h2 className="h2-heading">Get In Touch</h2>
+                <h2 className="h2-heading">GET IN TOUCH</h2>
                 <p>
                   Get in touch with us for a no-hassle, 100% free consultation.
                   We can meet to discuss your pain points and address any

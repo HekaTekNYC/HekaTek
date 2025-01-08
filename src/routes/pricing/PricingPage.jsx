@@ -27,11 +27,11 @@ const PricingPage = () => {
             <BackgroundShape />
           </div>
 
-          <h2 className="pricing-header">Pricing</h2>
+          <h2 className="pricing-header">PRICING</h2>
           <div className="pricing-build-container">
             <div className="pricing-build-info">
               <div className="pricing-build-text">
-                <h2 className="h2-heading">Build Your Plan</h2>
+                <h2 className="h2-heading">BUILD YOUR PLAN</h2>
                 <p>
                   Our pricing is designed to fit your needs, offering monthly
                   subscription and one-time lump sum options, as well as
@@ -63,7 +63,7 @@ const PricingPage = () => {
           <div className="add-on-container">
             <div className="add-on-info">
               <div className="add-on-text-container">
-                <h2 className="h2-heading">Add-on Services</h2>
+                <h2 className="h2-heading">ADD-ON SERVICES</h2>
                 <p>
                   Enhance your plan with our customizable add-ons, designed to
                   support your unique business needs. From ongoing support to

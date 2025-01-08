@@ -24,10 +24,19 @@
     display: flex;
     flex-direction: column;
 
+    .h2-heading {
+      display: none;
+    }
+
+    .h2-swap {
+      margin: 3px 0;
+    }
+
     p {
       margin-top: 2px;
     }
   }
+
   .products-btn {
     display: flex;
     justify-content: start;
@@ -141,6 +150,15 @@
     .products-text {
       width: 80%;
       padding-right: 20px;
+
+      .h2-heading {
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .h2-swap {
+        display: none;
+      }
     }
 
     .products-btn {
