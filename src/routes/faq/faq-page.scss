@@ -1,6 +1,6 @@
 .faqs-page {
   position: relative;
-  display: block;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
 
   .faq-page-container {
     position: relative;
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
