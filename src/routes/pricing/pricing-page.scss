@@ -1,8 +1,6 @@
 .pricing-page {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: -webkit-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -13,10 +11,9 @@
 
 .pricing-page-container {
   position: relative;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+
+  display: -webkit-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -61,19 +58,15 @@
 /* Pricing Plan Section */
 .pricing-build-container {
   .pricing-build-info {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+    display: -webkit-flex;
+    display: flex;
     flex-direction: column;
     width: 100%;
     margin: 5px 0 10px;
 
     .pricing-build-text {
-      display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-      display: -ms-flexbox; /* TWEENER - IE 10 */
-      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-      display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+      display: -webkit-flex;
+      display: flex;
       flex-direction: column;
 
       p {
@@ -81,10 +74,8 @@
       }
     }
     .pricing-build-btn {
-      display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-      display: -ms-flexbox; /* TWEENER - IE 10 */
-      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-      display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+      display: -webkit-flex;
+      display: flex;
       justify-content: start;
       margin-top: 20px;
     }
@@ -102,28 +93,22 @@
 
 /* Add On Section */
 .add-on-container {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: -webkit-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px 0 0;
   width: 100%;
 
   .add-on-info {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+    display: -webkit-flex;
+    display: flex;
     flex-direction: column;
     margin: 30px 0 0;
 
     .add-on-text-container {
-      display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-      display: -ms-flexbox; /* TWEENER - IE 10 */
-      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-      display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+      display: -webkit-flex;
+      display: flex;
       flex-direction: column;
       width: 65%;
 

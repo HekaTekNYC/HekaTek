@@ -17,7 +17,7 @@
   transform-origin: center center;
   opacity: 0.5;
   filter: blur(100px);
-  // will-change: filter;
+  will-change: filter;
   backface-visibility: hidden;
   z-index: -1;
 
