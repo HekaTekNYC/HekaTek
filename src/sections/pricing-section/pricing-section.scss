@@ -15,11 +15,10 @@
   height: auto;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
-  // opacity: 1;
   opacity: 0.5;
   filter: blur(100px);
-  will-change: filter;
-  backface-visibility: hidden; /* Safari-specific fix */
+  // will-change: filter;
+  backface-visibility: hidden;
   z-index: -1;
 
   img {

@@ -39,6 +39,7 @@
   height: auto;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
+  will-change: filter;
   opacity: 0.5;
   filter: blur(140px);
   z-index: -1;

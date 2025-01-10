@@ -45,6 +45,7 @@
     opacity: 0.4;
     filter: blur(140px);
     overflow: visible;
+    will-change: filter;
     z-index: -1;
   }
 }
