@@ -132,6 +132,7 @@
     height: auto;
     opacity: 0.6;
     filter: blur(130px);
+    will-change: filter;
     z-index: -1;
   }
 }
