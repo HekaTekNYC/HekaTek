@@ -19,8 +19,6 @@ const FaqPage = () => {
             alt="abstract rainbow wheel"
             height="636"
             width="473"
-            aria-hidden="true"
-            crossOrigin="anonymous"
           />
         </picture>
       </div>

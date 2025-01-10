@@ -83,8 +83,6 @@ const ContactPage = () => {
                   src={ContactBlob}
                   alt="gradient blurred shape"
                   loading="lazy"
-                  crossOrigin="anonymous"
-                  aria-hidden="true"
                 />
               </div>
               <ContactForm />

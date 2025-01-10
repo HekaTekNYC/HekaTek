@@ -42,10 +42,27 @@
   font-display: swap;
 }
 
+// @font-face {
+//   font-family: "Bebas Neue";
+//   src: url("./assets/fonts/BebasNeue_Complete/BebasNeue.woff") format("woff"),
+//     url("./assets/fonts/BebasNeue_Complete/BebasNeue.woff2") format("woff2");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("./assets/fonts/BebasNeue_Complete/BebasNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Athletic";
+  src: url("./assets/fonts/AthleticCondensedBold/font.woff2") format("woff2"),
+    url("./assets/fonts/AthleticCondensedBold/font.woff") format("woff");
+
   font-style: normal;
   font-display: swap;
 }
@@ -94,20 +111,22 @@ h5 {
 }
 
 h1 {
-  font-family: "Bebas Neue";
+  // font-family: "Bebas Neue";
+  font-family: "Athletic";
+  font-stretch: "condensed";
   font-size: 4.7rem;
-
   line-height: 0.9;
   color: #444d82;
   margin: 0;
 }
 
 h2 {
-  font-family: "Bebas Neue";
+  // font-family: "Bebas Neue";
+  font-family: "Athletic";
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  line-height: 5.3rem;
+  // line-height: 5.2rem;
   color: #9ea6df;
   margin: 0;
 }
