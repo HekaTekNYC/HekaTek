@@ -1,10 +1,7 @@
 .pricing-card {
   position: relative;
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
+  display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
@@ -23,27 +20,27 @@
   transition: all 0.3s ease-in-out;
   z-index: 1;
 
-  &.sub,
-  &.lump,
-  &.ecomm {
-    &:hover {
-      border: 1px solid rgba(215, 220, 250, 0.969);
-      transform: translateY(-2px);
-    }
-  }
-
   &.lump {
     z-index: 5;
   }
 
-  &.sub:hover {
-    box-shadow: rgba(180, 111, 248, 0.333) 0px 4px 16px;
-  }
-  &.lump:hover {
-    box-shadow: rgba(114, 133, 253, 0.333) 0px 4px 16px;
-  }
-  &.ecomm:hover {
-    box-shadow: rgba(255, 126, 121, 0.333) 0px 4px 16px;
+  &.active {
+    transform: translateY(-6px);
+
+    &.sub {
+      box-shadow: rgba(180, 111, 248, 0.333) 0px 4px 13px;
+      border: 1px solid rgba(196, 161, 231, 0.4);
+    }
+
+    &.lump {
+      box-shadow: rgba(114, 133, 253, 0.333) 0px 6px 13px;
+      border: 1px solid rgba(114, 133, 253, 0.4);
+    }
+
+    &.ecomm {
+      box-shadow: rgba(255, 126, 121, 0.333) 0px 6px 13px;
+      border: 1px solid rgba(255, 126, 121, 0.4);
+    }
   }
 
   .pricing-card-image {

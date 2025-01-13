@@ -139,6 +139,8 @@
 /* Small Screens (≥768px) */
 @media (min-width: 768px) {
   .pricing-page-background {
+    top: 1500px;
+    left: -300px;
     img {
       height: 300px;
     }

@@ -1,8 +1,6 @@
 import {useLocation} from "react-router-dom"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
-
 import Button from "../button/Button"
-
 import "./pricing-card.scss"
 
 const PricingCard = ({
@@ -17,14 +15,23 @@ const PricingCard = ({
   subFee,
   checkList,
   gem,
+  isActive,
+  btnType = "outline",
+  onMouseEnter,
+  onMouseLeave,
 }) => {
   const openCalendlyPopup = useCalendlyPopup()
   const location = useLocation()
 
   const isPricingPage = location.pathname === "/pricing"
+
   return (
     <>
-      <div className={`pricing-card ${className}`}>
+      <div
+        className={`pricing-card ${className} ${isActive ? "active" : ""}`}
+        onMouseEnter={() => onMouseEnter(id)}
+        onMouseLeave={() => onMouseLeave(id)}
+      >
         {gem && (
           <div className="pricing-card-image">
             <img
@@ -75,14 +82,14 @@ const PricingCard = ({
             <Button
               text={"Get Started"}
               onClick={openCalendlyPopup}
-              btnType={"outline"}
+              btnType={isActive ? "solid" : "outline"}
               width={"full"}
             />
           ) : (
             <Button
               text={"View Plans"}
               to={"/pricing"}
-              btnType={"outline"}
+              btnType={isActive ? "solid" : "outline"}
               width={"full"}
             />
           )}
