@@ -1,3 +1,4 @@
+import {useState} from "react"
 import PricingCard from "../../components/pricing-card/PricingCard"
 import AddOnCard from "../../components/add-on-card/AddOnCard"
 import Button from "../../components/button/Button"
@@ -12,18 +13,21 @@ const PricingPage = () => {
   const pricingCards = [subscription, lumpSum, ecomm]
   const addOnCards = [blog, editsMo, clientPortal]
 
+  const [activeCard, setActiveCard] = useState(2)
+
+  const handleMouseEnter = id => {
+    setActiveCard(id)
+  }
+
+  const handleMouseLeave = () => {
+    setActiveCard(2)
+  }
+
   return (
     <>
       <div id="pricing" className="pricing-page">
         <div className="pricing-page-container">
           <div className="pricing-page-background">
-            {/* <img
-              src={BackgroundShape}
-              alt="colored gradient shape"
-              loading="lazy"
-              aria-hidden="true"
-              crossOrigin="anonymous"
-            /> */}
             <BackgroundShape />
           </div>
 
@@ -52,11 +56,19 @@ const PricingPage = () => {
                 />
               </div>
             </div>
-            <div className="pricing-build-cards-container">
+            <div
+              className="pricing-build-cards-container"
+              onMouseLeave={handleMouseLeave}
+            >
               {pricingCards.map(card => (
-                <div key={card.id}>
-                  <PricingCard {...card} />
-                </div>
+                <PricingCard
+                  key={card.id}
+                  {...card}
+                  isActive={activeCard === card.id}
+                  onMouseEnter={() => handleMouseEnter(card.id)}
+                  onMouseLeave={handleMouseLeave}
+                  btnType={activeCard === card.id ? "solid" : "outline"}
+                />
               ))}
             </div>
           </div>
