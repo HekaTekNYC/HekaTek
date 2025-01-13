@@ -86,10 +86,11 @@
 @media (min-width: 1200px) {
   .pricing-background {
     opacity: 0.8;
-    filter: blur(160px);
+    filter: blur(140px);
+    right: 120px;
 
     img {
-      width: 1000px;
+      width: 1200px;
     }
   }
 
