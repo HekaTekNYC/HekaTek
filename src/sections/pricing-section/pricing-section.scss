@@ -16,7 +16,7 @@
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
   opacity: 0.5;
-  filter: blur(100px);
+  filter: blur(130px);
   will-change: filter;
   backface-visibility: hidden;
   z-index: -1;
@@ -62,6 +62,10 @@
       text-align: center;
     }
   }
+
+  .pricing-background {
+    filter: blur(120px);
+  }
 }
 /* Medium screens (≥992px) */
 @media (min-width: 992px) {
@@ -85,11 +89,12 @@
 /* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
   .pricing-background {
-    opacity: 0.8;
+    opacity: 0.6;
     filter: blur(160px);
+    right: 120px;
 
     img {
-      width: 1000px;
+      width: 1100px;
     }
   }
 
