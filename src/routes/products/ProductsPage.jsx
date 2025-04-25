@@ -10,6 +10,7 @@ import {
   interviewIQ,
   dangoDB,
   ad3lie,
+  epicTales,
 } from "../../data/ProductData"
 
 import "./products-page.scss"
@@ -24,6 +25,7 @@ const ProductsPage = () => {
     interviewIQ,
     dangoDB,
     ad3lie,
+    epicTales,
   ]
 
   return (
