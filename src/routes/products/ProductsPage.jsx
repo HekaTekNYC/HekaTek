@@ -3,6 +3,7 @@ import ProductInfo from "../../components/product-info/ProductInfo"
 
 import {
   plantHaus,
+  epicTales,
   walkAngels,
   weFund,
   creativeLoft,
@@ -17,6 +18,7 @@ import "./products-page.scss"
 const ProductsPage = () => {
   const productList = [
     plantHaus,
+    epicTales,
     weFund,
     creativeLoft,
     walkAngels,

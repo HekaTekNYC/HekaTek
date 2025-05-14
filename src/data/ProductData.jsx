@@ -4,8 +4,8 @@ import Ad3liewebp from "../assets/images/ad3lie.webp"
 import Ad3liepng from "../assets/images/ad3lie.png"
 import IIQwebp from "../assets/images/InterviewIQ.webp"
 import IIQpng from "../assets/images/InterviewIQ.png"
-import PHwebp from "../assets/images/ph.webp"
-import PHpng from "../assets/images/ph.png"
+import PHwebp from "../assets/images/ph-updated.webp"
+import PHpng from "../assets/images/ph-updated.png"
 import REwebp from "../assets/images/riversedge.webp"
 import REpng from "../assets/images/riversedge.png"
 import WeFundWebp from "../assets/images/WeFund.webp"
@@ -14,6 +14,8 @@ import WWAwebp from "../assets/images/WWA.webp"
 import WWApng from "../assets/images/wwa.png"
 import CLWebp from "../assets/images/CL2.webp"
 import CLPng from "../assets/images/CL2.png"
+import ETwebp from "../assets/images/et.webp"
+import ETpng from "../assets/images/et.png"
 
 export const plantHaus = {
   id: 1,
@@ -30,13 +32,27 @@ export const plantHaus = {
   btn: "View Live",
   aLink: "https://planthaus.netlify.app/",
 }
-
-export const weFund = {
+export const epicTales = {
   id: 2,
+  name: "Epic Tales",
+  deg: 180,
+  scale: "X(1)",
+  desc: "AstroJS Pet Care Services Site",
+  webp: ETwebp,
+  img: {
+    src: ETpng,
+    alt: "Epic Tales site preview",
+  },
+  info: "A clean, responsive website for a professional pet care service. Built to highlight offerings like pet sitting, dog walking, and pet taxi services, the site combines playful visuals with clear service breakdowns, pricing info, and strong calls to action—perfect for building client trust and booking ease.",
+  btn: "View Live",
+  aLink: "https://epictails.netlify.app/",
+}
+export const weFund = {
+  id: 3,
   name: "WeFund",
   deg: 180,
   scale: "X(-1)",
-  desc: "",
+  desc: "Crowdfunding Platform Site",
   webp: WeFundWebp,
   img: {
     src: WeFundpng,
@@ -47,11 +63,11 @@ export const weFund = {
   aLink: "https://wefund-crowdfunding.netlify.app/",
 }
 export const creativeLoft = {
-  id: 3,
+  id: 4,
   name: "Creative Loft",
   deg: 1800,
-  scale: "X(-1)",
-  desc: "",
+  scale: "X(1)",
+  desc: "AstroJS Coworking Space Site",
   webp: CLWebp,
   img: {
     src: CLPng,
@@ -63,7 +79,7 @@ export const creativeLoft = {
 }
 
 export const walkAngels = {
-  id: 4,
+  id: 5,
   name: "Walk with Angels",
   deg: 0,
   scale: "X(-1)",
@@ -79,10 +95,10 @@ export const walkAngels = {
 }
 
 export const riversEdge = {
-  id: 5,
+  id: 6,
   name: "River's Edge",
   deg: 0,
-  scale: "X(1)",
+  scale: "X(-1)",
   desc: "A React-Powered Gourmet Restaurant Site",
   webp: REwebp,
   img: {
@@ -95,10 +111,10 @@ export const riversEdge = {
 }
 
 export const interviewIQ = {
-  id: 6,
+  id: 7,
   name: "InterviewIQ",
   deg: 180,
-  scale: "Y(-1)",
+  scale: "Y(1)",
   desc: "Full Stack Flashcard Application",
   webp: IIQwebp,
   img: {
@@ -111,7 +127,7 @@ export const interviewIQ = {
 }
 
 export const dangoDB = {
-  id: 7,
+  id: 8,
   name: "dangoDb",
   deg: 180,
   scale: "Y(-1)",
@@ -127,10 +143,10 @@ export const dangoDB = {
 }
 
 export const ad3lie = {
-  id: 8,
+  id: 9,
   name: "Ad3lie",
   deg: 0,
-  scale: "Y(1)",
+  scale: "Y(-1)",
   desc: "D3.js Data Visualizations",
   webp: Ad3liewebp,
   img: {

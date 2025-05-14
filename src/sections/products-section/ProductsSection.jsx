@@ -2,30 +2,13 @@ import Button from "../../components/button/Button"
 import ProductCard from "../../components/product-cards/ProductCard"
 import ProductInfo from "../../components/product-info/ProductInfo"
 
-import {
-  plantHaus,
-  walkAngels,
-  weFund,
-  creativeLoft,
-  riversEdge,
-  interviewIQ,
-  dangoDB,
-  ad3lie,
-} from "../../data/ProductData"
+import {plantHaus, epicTales} from "../../data/ProductData"
 
 import "./products-section.scss"
 
 const ProductsSection = () => {
-  const productList = [
-    plantHaus,
-    weFund,
-    creativeLoft,
-    walkAngels,
-    riversEdge,
-    interviewIQ,
-    dangoDB,
-    ad3lie,
-  ]
+  const productList = [plantHaus, epicTales]
+
   const limitedProductList = productList.slice(0, 2)
   return (
     <div className="products-container">

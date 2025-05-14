@@ -4,6 +4,7 @@ import ProductBkrndwebp from "../../assets/images/product-bkrnd.webp"
 import "./product-card.scss"
 
 const ProductCard = ({img, id, deg, scale, aLink, webp}) => {
+  console.log("Rendering ProductCard with id:", id)
   return (
     <div className="product-card-container" key={id}>
       <div className="product-card-bkrnd">
