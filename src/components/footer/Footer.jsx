@@ -24,13 +24,13 @@ const Footer = () => {
             >
               <img src={FacebookIcon} alt="Facebook icon" />
             </a>
-            {/* <a
-              href="https://www.linkedin.com"
+            <a
+              href="https://www.linkedin.com/company/hekatek-nyc"
               target="_blank"
               className="linkedin-icon"
             >
               <img src={LinkedInIcon} alt="LinkedIn icon" />
-            </a> */}
+            </a>
           </div>
         </footer>
       </div>
