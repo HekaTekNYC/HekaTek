@@ -6,6 +6,9 @@ import ContactBlob from "../../assets/images/contact-blob.svg"
 import EmailIcon from "../../assets/icons/mail1.svg"
 import PhoneIcon from "../../assets/icons/phone.svg"
 import PinIcon from "../../assets/icons/map-pin2.svg"
+import CalendarIcon from "../../assets/icons/calendar.svg"
+import VideoIcon from "../../assets/icons/video.svg"
+import CallIcon from "../../assets/icons/phone-wht.svg"
 
 import "./contact-page.scss"
 
@@ -13,21 +16,21 @@ const ContactPage = () => {
   const openCalendlyPopup = useCalendlyPopup()
   const contactOptions = [
     {
-      icon: "/icons/calendar.svg",
+      svgPath: CalendarIcon,
       iconAlt: "Calendar icon",
       title: "Book a Consultation",
       desc: "Start with a quick 30-minute call to explore if we’re a good fit.",
       contactCTA: "Schedule Call",
     },
     {
-      icon: "/icons/video.svg",
+      svgPath: VideoIcon,
       iconAlt: "Video icon",
       title: "Free Website Audit",
       desc: "Get a 10-minute video with actionable tips to improve your site.",
       contactCTA: "Request Audit",
     },
     {
-      icon: "/icons/tools.svg",
+      svgPath: CallIcon,
       iconAlt: "Tools icon",
       title: "Development Call",
       desc: "Already working with us? Schedule a time with the dev team.",
@@ -119,7 +122,7 @@ const ContactPage = () => {
               {contactOptions.map((item, index) => (
                 <ContactCard
                   key={index}
-                  icon={item.icon}
+                  svgPath={item.svgPath}
                   iconAlt={item.iconAlt}
                   title={item.title}
                   desc={item.desc}
