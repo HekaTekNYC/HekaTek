@@ -1,6 +1,7 @@
 import ContactForm from "../../components/contact-form/ContactForm"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
+import ContactCard from "../../components/contact-card/ContactCard"
 import ContactBlob from "../../assets/images/contact-blob.svg"
 import EmailIcon from "../../assets/icons/mail1.svg"
 import PhoneIcon from "../../assets/icons/phone.svg"
@@ -10,6 +11,29 @@ import "./contact-page.scss"
 
 const ContactPage = () => {
   const openCalendlyPopup = useCalendlyPopup()
+  const contactOptions = [
+    {
+      icon: "/icons/calendar.svg",
+      iconAlt: "Calendar icon",
+      title: "Book a Consultation",
+      desc: "Start with a quick 30-minute call to explore if we’re a good fit.",
+      contactCTA: "Schedule Call",
+    },
+    {
+      icon: "/icons/video.svg",
+      iconAlt: "Video icon",
+      title: "Free Website Audit",
+      desc: "Get a 10-minute video with actionable tips to improve your site.",
+      contactCTA: "Request Audit",
+    },
+    {
+      icon: "/icons/tools.svg",
+      iconAlt: "Tools icon",
+      title: "Development Call",
+      desc: "Already working with us? Schedule a time with the dev team.",
+      contactCTA: "Book Dev Call",
+    },
+  ]
   return (
     <>
       <div id="contact" className="contact-page">
@@ -88,6 +112,20 @@ const ContactPage = () => {
                 />
               </div>
               <ContactForm />
+            </div>
+          </div>
+          <div className="contact-options">
+            <div className="contact-options">
+              {contactOptions.map((item, index) => (
+                <ContactCard
+                  key={index}
+                  icon={item.icon}
+                  iconAlt={item.iconAlt}
+                  title={item.title}
+                  desc={item.desc}
+                  contactCTA={item.contactCTA}
+                />
+              ))}
             </div>
           </div>
         </div>
