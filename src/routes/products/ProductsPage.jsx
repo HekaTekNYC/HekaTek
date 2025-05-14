@@ -3,6 +3,7 @@ import ProductInfo from "../../components/product-info/ProductInfo"
 
 import {
   plantHaus,
+  epicTales,
   walkAngels,
   weFund,
   creativeLoft,
@@ -10,7 +11,6 @@ import {
   interviewIQ,
   dangoDB,
   ad3lie,
-  epicTales,
 } from "../../data/ProductData"
 
 import "./products-page.scss"
@@ -18,6 +18,7 @@ import "./products-page.scss"
 const ProductsPage = () => {
   const productList = [
     plantHaus,
+    epicTales,
     weFund,
     creativeLoft,
     walkAngels,
@@ -25,7 +26,6 @@ const ProductsPage = () => {
     interviewIQ,
     dangoDB,
     ad3lie,
-    epicTales,
   ]
 
   return (
