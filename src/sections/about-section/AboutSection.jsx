@@ -2,8 +2,8 @@ import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import Button from "../../components/button/Button"
 
 import AboutBkrd from "../../assets/images/about-bkg.svg"
-import Devicewebp from "../../assets/images/device-mockup.webp"
-import Devicepng from "../../assets/images/device-mockup.png"
+import Devicewebp from "../../assets/images/allDevices.webp"
+import Devicepng from "../../assets/images/allDevices.png"
 
 import "./about-section.scss"
 

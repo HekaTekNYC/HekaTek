@@ -24,6 +24,10 @@
   }
 }
 
+.nav-btn {
+  display: none;
+}
+
 .navbar-item {
   display: flex;
   cursor: pointer;
@@ -47,7 +51,7 @@
 /* Media Queries */
 /* M Screens (≥768px) */
 
-@media (min-width: 756px) {
+@media (min-width: 768px) {
   .hamburger-icon {
     display: none;
   }
@@ -78,5 +82,22 @@
       font-size: 1.4rem;
       color: #9ea6df;
     }
+  }
+}
+@media (min-width: 820px) {
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu {
+    padding-right: 10px;
+  }
+  .nav-links {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .nav-btn {
+    display: flex;
   }
 }
