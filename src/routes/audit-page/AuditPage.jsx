@@ -1,6 +1,11 @@
+import Button from "../../components/button/Button"
+import BackgroundShape from "../../assets/images/pricing-shape.svg?react"
+import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
+
 import "./audit-page.scss"
 
 const AuditPage = () => {
+  const openCalendlyPopup = useCalendlyPopup()
   return (
     <div id="audit" className="audit-page">
       <div className="audit-page-container">
@@ -8,26 +13,27 @@ const AuditPage = () => {
           <BackgroundShape />
         </div>
 
-        <h2 className="audit-header">audit</h2>
+        <h2 className="audit-header">FREE WEBSITE AUDIT</h2>
         <div className="audit-info-container">
           <div className="audit-info">
             <div className="audit-text">
-              <h2 className="h2-heading">BUILD YOUR PLAN</h2>
+              <h2 className="h2-heading">WEBSITE AUDIT VIDEO</h2>
               <p>
-                Our audit is designed to fit your needs, offering monthly
-                subscription and one-time lump sum options, as well as tailored
-                audit for e-commerce websites. You can personalize each plan
-                with add-ons, like unlimited edits or a blog, to best suit your
-                business needs. We pride ourselves on transparent audit with no
-                hidden costs, ensuring you have a clear understanding of your
-                investment. Contact us to find the best option for your
-                business.
+                We’ll record a personalized video audit of your website, walking
+                through everything from design and user experience to
+                performance, accessibility, and SEO basics. You’ll get clear,
+                actionable insights on what’s working and what could be
+                improved—no buzzwords, no fluff. Just honest, expert feedback
+                you can use right away. Whether you’re planning a full revamp or
+                just want a second opinion, this audit is a great place to
+                start. Want to skip straight to a free 30-minute consult? Just
+                click the Book a Consult button to schedule time with our team.
               </p>
             </div>
             <div className="audit-btn">
               <Button
-                text={"Contact Us"}
-                to="/contact"
+                text={"Book a Consult"}
+                onClick={openCalendlyPopup}
                 btnType={"solid"}
                 width={"short"}
               />
