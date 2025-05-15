@@ -11,7 +11,6 @@
 
 .audit-page-container {
   position: relative;
-
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -82,6 +81,14 @@
   }
 }
 
+.audit-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
 /* Media Queries */
 
 /* XtraSmall Screens (≥576px) */
@@ -93,13 +100,13 @@
 
 /* Small Screens (≥768px) */
 @media (min-width: 768px) {
-  .audit-page-background {
-    top: 1500px;
-    left: -300px;
-    img {
-      height: 300px;
-    }
-  }
+  // .audit-page-background {
+  //   top: 1500px;
+  //   left: -300px;
+  //   img {
+  //     height: 300px;
+  //   }
+  // }
 
   .audit-info-container {
     .audit-info {

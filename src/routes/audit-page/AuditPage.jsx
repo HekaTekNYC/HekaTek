@@ -1,5 +1,6 @@
 import Button from "../../components/button/Button"
 import BackgroundShape from "../../assets/images/pricing-shape.svg?react"
+import AuditForm from "../../components/audit-form/AuditForm"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
 import "./audit-page.scss"
@@ -39,6 +40,10 @@ const AuditPage = () => {
               />
             </div>
           </div>
+        </div>
+
+        <div className="audit-sign-up">
+          <AuditForm />
         </div>
       </div>
     </div>
