@@ -58,7 +58,10 @@ const WhyUsSection = () => {
             <p className="why-p">
               We’ve seen this frustration firsthand. You deserve a professional,
               hand-coded website that truly represents your brand without
-              breaking the bank. That’s why we decided to do things differently.
+              breaking the bank. That’s why we decided to do things differently
+              — starting with a free website audit to identify what your current
+              website really needs, and offering flexible, custom-coded
+              solutions that put you first.
             </p>
             <h4>Our Solution </h4>
             <p className="why-p">
@@ -70,8 +73,8 @@ const WhyUsSection = () => {
           </div>
 
           <Button
-            text={"Schedule a Meeting"}
-            onClick={openCalendlyPopup}
+            text={"Get Started"}
+            to={"/contact#contact-options"}
             btnType={"solid"}
             width={"short"}
           />

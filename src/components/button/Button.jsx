@@ -34,7 +34,12 @@ const Button = ({
     }
   }
   const buttonClass = `btn-${btnType}  ${active ? "active" : ""}`
-  const btnWidth = `btn-${width === "full" ? "full" : "short"}`
+  const btnWidth =
+    width === "full"
+      ? "btn-full"
+      : width === "shorter"
+      ? "btn-shorter"
+      : "btn-short"
 
   if (href) {
     return (
