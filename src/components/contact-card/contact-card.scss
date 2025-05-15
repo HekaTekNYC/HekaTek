@@ -66,9 +66,12 @@
   p {
     font-weight: 600;
     padding-bottom: 2px;
+    color: #fff;
+    transition: text-shadow 0.3s ease;
 
     &:hover {
       color: #e9ecff;
+      text-shadow: 0 0 4px #5c81ef, 0 0 8px #5c81ef, 0 0 12px #5c81ef;
     }
   }
 }

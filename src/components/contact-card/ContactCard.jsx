@@ -6,13 +6,46 @@ import "./contact-card.scss"
 const ContactCard = ({
   svgPath,
   iconAlt,
-  width,
-  height,
   title,
   desc,
   contactCTA,
+  linkType,
+  linkValue,
 }) => {
   const openCalendlyPopup = useCalendlyPopup()
+  const renderLink = () => {
+    switch (linkType) {
+      case "calendly":
+        return (
+          <a
+            href="#"
+            className="contact-cta"
+            onClick={e => {
+              e.preventDefault()
+              openCalendlyPopup()
+            }}
+          >
+            <img src={ArrowIcon} alt="White Arrow Icon" />
+            <p>{contactCTA}</p>
+          </a>
+        )
+      case "phone":
+        return (
+          <a href={`tel:${linkValue}`} className="contact-cta">
+            <img src={ArrowIcon} alt="White Arrow Icon" />
+            <p>{contactCTA}</p>
+          </a>
+        )
+      case "page":
+      default:
+        return (
+          <a href={linkValue} className="contact-cta">
+            <img src={ArrowIcon} alt="White Arrow Icon" />
+            <p>{contactCTA}</p>
+          </a>
+        )
+    }
+  }
   return (
     <>
       <div className="contact-card">
@@ -29,10 +62,7 @@ const ContactCard = ({
           <h3 className="contact-title">{title}</h3>
         </div>
         <p className="contact-desc">{desc}</p>
-        <div className="contact-cta">
-          <img src={ArrowIcon} alt="White Arrow Icon" />
-          <p>{contactCTA}</p>
-        </div>
+        {renderLink()}
       </div>
     </>
   )

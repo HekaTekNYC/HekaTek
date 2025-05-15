@@ -14,6 +14,7 @@ import "./contact-page.scss"
 
 const ContactPage = () => {
   const openCalendlyPopup = useCalendlyPopup()
+
   const contactOptions = [
     {
       svgPath: CalendarIcon,
@@ -21,6 +22,8 @@ const ContactPage = () => {
       title: "Book a Consult",
       desc: "We’ll review where you’re at and discuss how we can work together to achieve your goals. Free, no strings attached.",
       contactCTA: "Book Your Free Consultation",
+      linkType: "calendly",
+      linkValue: null,
     },
     {
       svgPath: VideoIcon,
@@ -28,13 +31,17 @@ const ContactPage = () => {
       title: "Free Website Audit",
       desc: "We’ll send a personalized video walking through your site with clear, actionable insights to boost design, flow, and performance.",
       contactCTA: "Request Audit",
+      linkType: "page",
+      linkValue: "/audit-request",
     },
     {
       svgPath: CallIcon,
       iconAlt: "Tools icon",
       title: "Need to Talk Dev?",
-      desc: "Already working with us? Use the link below to book time with the dev team — whether you’ve got questions or just need a quick chat.",
-      contactCTA: "Book Dev Call",
+      desc: "Already working with us? Give us a call if you’ve got questions or want to check in — we’re happy to hear from you.",
+      contactCTA: "Call the Dev Team",
+      linkType: "phone",
+      linkValue: "9174262472",
     },
   ]
   return (
@@ -42,6 +49,20 @@ const ContactPage = () => {
       <div id="contact" className="contact-page">
         <div className="contact-page-container">
           <h2 className="contact-header">CONTACT US</h2>
+          {/* <div className="contact-options">
+            {contactOptions.map((item, index) => (
+              <div className="contact-cards">
+                <ContactCard
+                  key={index}
+                  svgPath={item.svgPath}
+                  iconAlt={item.iconAlt}
+                  title={item.title}
+                  desc={item.desc}
+                  contactCTA={item.contactCTA}
+                />
+              </div>
+            ))}
+          </div> */}
           <div className="contact-page-subsection">
             <div className="contact-page-info">
               <div className="contact-page-header">
@@ -127,6 +148,8 @@ const ContactPage = () => {
                   title={item.title}
                   desc={item.desc}
                   contactCTA={item.contactCTA}
+                  linkType={item.linkType}
+                  linkValue={item.linkValue}
                 />
               </div>
             ))}
