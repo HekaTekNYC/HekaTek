@@ -1,6 +1,7 @@
 import {useContext} from "react"
 import {NavLink} from "react-router-dom"
 import {NavbarContext} from "../../../contexts/Navbar.context"
+import Button from "../../button/Button"
 
 import "./dropdown.scss"
 
@@ -60,6 +61,15 @@ const Dropdown = () => {
       >
         FAQ
       </NavLink>
+      <div className="nav-btn-drop">
+        <Button
+          text={"Free Site Audit"}
+          to={"/free-audit"}
+          btnType={"solid"}
+          width={"short"}
+          onClick={closeMobileNav}
+        />
+      </div>
     </div>
   )
 }

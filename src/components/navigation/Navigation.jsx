@@ -3,6 +3,7 @@ import {NavbarContext} from "../../contexts/Navbar.context"
 import {NavLink} from "react-router-dom"
 import Burger from "./burger/Burger"
 import Dropdown from "./dropdown/Dropdown"
+import Button from "../button/Button"
 
 import "./navigation.scss"
 
@@ -108,6 +109,14 @@ const Navigation = () => {
             </NavLink>
           </li>
         </ul>
+        <div className="nav-btn">
+          <Button
+            text={"Free Site Audit"}
+            to={"/free-audit"}
+            btnType={"solid"}
+            width={"short"}
+          />
+        </div>
         {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
       </div>
     </nav>

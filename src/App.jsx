@@ -24,7 +24,6 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/free-audit" element={<AuditPage />} />
-          <Route path="/test" element={<div>Test route works</div>} />
         </Routes>
       </Layout>
     </Router>

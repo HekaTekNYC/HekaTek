@@ -1,7 +1,10 @@
-import ContactForm from "../../components/contact-form/ContactForm"
+import {useEffect} from "react"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
+import {useLocation} from "react-router-dom"
 
+import ContactForm from "../../components/contact-form/ContactForm"
 import ContactCard from "../../components/contact-card/ContactCard"
+
 import ContactBlob from "../../assets/images/contact-blob.svg"
 import EmailIcon from "../../assets/icons/mail1.svg"
 import PhoneIcon from "../../assets/icons/phone.svg"
@@ -44,6 +47,17 @@ const ContactPage = () => {
       linkValue: "9174262472",
     },
   ]
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash)
+      if (el) {
+        el.scrollIntoView({behavior: "smooth"})
+      }
+    }
+  }, [location])
   return (
     <>
       <div id="contact" className="contact-page">
@@ -119,7 +133,7 @@ const ContactPage = () => {
               <ContactForm />
             </div>
           </div>
-          <div className="contact-options">
+          <div id="contact-options" className="contact-options">
             {contactOptions.map((item, index) => (
               <div className="contact-cards">
                 <ContactCard
