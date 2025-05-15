@@ -1,0 +1,184 @@
+.audit-page {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 35px;
+  margin: 40px 0 30px;
+}
+
+.audit-page-container {
+  position: relative;
+
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1300px;
+  z-index: 1;
+
+  .audit-header {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.audit-page-background {
+  position: absolute;
+  top: 1800px;
+  left: -400px;
+  right: 0;
+  width: 1200px;
+  height: auto;
+  transform: rotate(90deg) translateX(-50%);
+  transform-origin: center center;
+  will-change: filter;
+  opacity: 0.5;
+  filter: blur(140px);
+  z-index: -1;
+
+  img {
+    height: 355px;
+    width: auto;
+    max-width: none;
+  }
+}
+.audit-page-header {
+  display: flex;
+
+  h2 {
+    text-align: start;
+  }
+}
+
+/* audit Plan Section */
+.audit-build-container {
+  .audit-build-info {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0 10px;
+
+    .audit-build-text {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-top: 2px;
+      }
+    }
+    .audit-build-btn {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: start;
+      margin-top: 20px;
+    }
+  }
+
+  .audit-build-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    gap: 40px;
+  }
+}
+
+/* Media Queries */
+
+/* XtraSmall Screens (≥576px) */
+@media (min-width: 576px) {
+  .audit-page {
+    padding: 0 40px;
+  }
+}
+
+/* Small Screens (≥768px) */
+@media (min-width: 768px) {
+  .audit-page-background {
+    top: 1500px;
+    left: -300px;
+    img {
+      height: 300px;
+    }
+  }
+
+  .audit-build-container {
+    .audit-build-info {
+      margin: 10px 0 30px;
+    }
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .audit-page {
+    padding: 0 80px;
+    .audit-header {
+      text-align: center;
+      margin: 10px 0 30px;
+    }
+
+    .audit-page-background {
+      top: 550px;
+      left: 70px;
+      transform: none;
+      opacity: 0.5;
+      filter: blur(110px);
+      width: 800px;
+      img {
+        height: auto;
+        width: 900px;
+      }
+    }
+  }
+
+  .audit-build-container {
+    .audit-build-cards-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .audit-build-text {
+      justify-content: start;
+      width: 80%;
+      padding-right: 20px;
+    }
+
+    .audit-build-btn {
+      width: 20%;
+    }
+  }
+
+  .audit-build-container {
+    .audit-build-info {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 40px 0 40px;
+
+      .audit-build-btn {
+        justify-content: end;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* Large screens (≥1200px) */
+@media (min-width: 1200px) {
+  .audit-page {
+    padding: 0 100px;
+    margin: 40px 0 0;
+  }
+
+  .audit-build-cards-container {
+    width: 100%;
+  }
+}
