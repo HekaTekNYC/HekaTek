@@ -114,7 +114,7 @@ const Navigation = () => {
               text={"Free Site Audit"}
               to={"/free-audit"}
               btnType={"mini"}
-              width={"short"}
+              width={"shorter"}
             />
           </div>
         </div>

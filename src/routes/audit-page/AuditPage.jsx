@@ -27,13 +27,14 @@ const AuditPage = () => {
                 improved—no buzzwords, no fluff. Just honest, expert feedback
                 you can use right away. Whether you’re planning a full revamp or
                 just want a second opinion, this audit is a great place to
-                start. Want to skip straight to a free 30-minute consult? Just
-                click the Book a Consult button to schedule time with our team.
+                start. Prefer to skip the audit and talk with us directly? Just
+                click Get Started to reach out—we’d love to hear about your
+                goals.
               </p>
             </div>
             <div className="audit-btn">
               <Button
-                text={"Book a Consult"}
+                text={"Get Started"}
                 onClick={openCalendlyPopup}
                 btnType={"solid"}
                 width={"short"}

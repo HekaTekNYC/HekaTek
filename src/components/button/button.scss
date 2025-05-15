@@ -91,12 +91,19 @@
   width: 100%;
 }
 
-.btn-short {
+.btn-shorter {
   width: min-content;
 }
 
+.btn-short {
+  width: auto;
+  min-width: 175px;
+  max-width: 210px;
+}
+
 .btn-short,
-.btn-full {
+.btn-full,
+.btn-shorter {
   display: inline-flex;
 }
 
