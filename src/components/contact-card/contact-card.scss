@@ -19,55 +19,57 @@
     box-shadow: rgb(158, 166, 223) 0px 4px 16px;
     transform: translateY(-2px);
   }
-
-  .contact-btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .contact-card-header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   width: 100%;
+  padding-bottom: 10px;
 
   .contact-title {
-    align-self: flex-start;
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.01rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 0.03rem;
+    padding-left: 12px;
   }
 
-  .contact-cost {
-    align-self: flex-start;
-    font-size: 2rem;
-    margin: 15px 0 0;
-    letter-spacing: 0.04rem;
-    color: #fff;
+  .contact-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 
-    .contact-cost-sub {
-      font-family: "Satoshi";
-      font-weight: 600;
-      font-size: 1rem;
+    .contact-icon {
+      height: auto;
+      width: 25px;
+      margin: 10px;
     }
   }
+}
 
-  .contact-white-line {
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.541),
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0.543)
-    );
-    margin: 15px 0;
+.contact-cta {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  cursor: pointer;
+
+  img {
+    height: 14px;
+    width: auto;
+    padding-right: 10px;
   }
+  p {
+    font-weight: 600;
+    padding-bottom: 2px;
 
-  .contact-desc {
-    margin-bottom: 25px;
-    font-weight: 400;
+    &:hover {
+      color: #e9ecff;
+    }
   }
 }
 
@@ -75,18 +77,35 @@
 
 /* Medium Screens (≥768px) */
 @media (min-width: 768px) {
-  .contact-card {
-    max-width: 100%;
+  .contact-card-header {
+    .contact-icon-container {
+      display: none;
+    }
+    .contact-title {
+      letter-spacing: 0.03rem;
+      line-height: 1.6rem;
+      padding: 0 0 5px 0;
+    }
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .contact-card-header {
+    .contact-icon-container {
+      display: flex;
+    }
+    .contact-title {
+      letter-spacing: 0.03rem;
+      line-height: 1.6rem;
+      padding: 0 0 0 10px;
+    }
   }
 }
 
 /* Large Screens (≥1200px)*/
 @media (min-width: 1200px) {
   .contact-card {
-    width: 100%;
-    padding: 30px;
-    .contact-white-line {
-      margin: 20px 0;
-    }
+    padding: 25px;
   }
 }

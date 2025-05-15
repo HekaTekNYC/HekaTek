@@ -18,22 +18,22 @@ const ContactPage = () => {
     {
       svgPath: CalendarIcon,
       iconAlt: "Calendar icon",
-      title: "Book a Consultation",
-      desc: "Start with a quick 30-minute call to explore if we’re a good fit.",
-      contactCTA: "Schedule Call",
+      title: "Book a Consult",
+      desc: "We’ll review where you’re at and discuss how we can work together to achieve your goals. Free, no strings attached.",
+      contactCTA: "Book Your Free Consultation",
     },
     {
       svgPath: VideoIcon,
       iconAlt: "Video icon",
       title: "Free Website Audit",
-      desc: "Get a 10-minute video with actionable tips to improve your site.",
+      desc: "We’ll send a personalized video walking through your site with clear, actionable insights to boost design, flow, and performance.",
       contactCTA: "Request Audit",
     },
     {
       svgPath: CallIcon,
       iconAlt: "Tools icon",
-      title: "Development Call",
-      desc: "Already working with us? Schedule a time with the dev team.",
+      title: "Need to Talk Dev?",
+      desc: "Already working with us? Use the link below to book time with the dev team — whether you’ve got questions or just need a quick chat.",
       contactCTA: "Book Dev Call",
     },
   ]
@@ -118,8 +118,8 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="contact-options">
-            <div className="contact-options">
-              {contactOptions.map((item, index) => (
+            {contactOptions.map((item, index) => (
+              <div className="contact-cards">
                 <ContactCard
                   key={index}
                   svgPath={item.svgPath}
@@ -128,8 +128,8 @@ const ContactPage = () => {
                   desc={item.desc}
                   contactCTA={item.contactCTA}
                 />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

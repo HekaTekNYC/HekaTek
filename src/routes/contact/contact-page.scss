@@ -137,6 +137,13 @@
   }
 }
 
+.contact-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 40px;
+  gap: 2rem;
+}
+
 /* Media Queries */
 
 /* Small Screens (≥576px) */
@@ -204,6 +211,13 @@
         filter: blur(120px);
       }
     }
+  }
+
+  .contact-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 1rem;
   }
 }
 
@@ -301,5 +315,9 @@
         filter: blur(140px);
       }
     }
+  }
+  .contact-options {
+    margin-top: 80px;
+    gap: 2rem;
   }
 }
