@@ -1,6 +1,7 @@
 .btn-solid,
 .btn-outline,
-.btn-reverse {
+.btn-reverse,
+.btn-mini {
   font-family: "Satoshi";
   white-space: nowrap;
   font-weight: 600;
@@ -11,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 30px;
   text-decoration: none;
   font-size: 1rem;
   margin: 4px 0;
@@ -22,8 +22,18 @@
     cursor: pointer;
   }
 }
+.btn-solid,
+.btn-outline,
+.btn-reverse {
+  padding: 7px 30px;
+}
 
-.btn-solid {
+.btn-mini {
+  padding: 7px 20px;
+}
+
+.btn-solid,
+.btn-mini {
   background: #444d82;
   color: #fff;
 
@@ -82,9 +92,7 @@
 }
 
 .btn-short {
-  width: auto;
-  min-width: 175px;
-  max-width: 210px;
+  width: min-content;
 }
 
 .btn-short,
@@ -98,7 +106,8 @@
 @media (min-width: 768px) {
   .btn-solid,
   .btn-outline,
-  .btn-reverse {
+  .btn-reverse,
+  .btn-mini {
     height: 40px;
   }
 }

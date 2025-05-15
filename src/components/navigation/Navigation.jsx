@@ -45,77 +45,78 @@ const Navigation = () => {
         <div className="hamburger-icon">
           <Burger toggleMobileNav={toggleMobileNav} />
         </div>
-
-        <ul className="nav-menu">
-          <li className="nav-item">
-            <NavLink
-              to="/"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-              end
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/services"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-            >
-              Services
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/work"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-            >
-              Our Work
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/pricing"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-            >
-              Pricing
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/contact"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-            >
-              Contact
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/faq"
-              className={({isActive}) =>
-                `nav-links ${isActive ? "active" : ""}`
-              }
-            >
-              FAQ
-            </NavLink>
-          </li>
-        </ul>
-        <div className="nav-btn">
-          <Button
-            text={"Free Site Audit"}
-            to={"/free-audit"}
-            btnType={"solid"}
-            width={"short"}
-          />
+        <div className="nav-right">
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <NavLink
+                to="/"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+                end
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/services"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/work"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+              >
+                Our Work
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/pricing"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+              >
+                Pricing
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/contact"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/faq"
+                className={({isActive}) =>
+                  `nav-links ${isActive ? "active" : ""}`
+                }
+              >
+                FAQ
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-btn">
+            <Button
+              text={"Free Site Audit"}
+              to={"/free-audit"}
+              btnType={"mini"}
+              width={"short"}
+            />
+          </div>
         </div>
         {isMobileNavOpen && <Dropdown closeMobileNav={closeMobileNav} />}
       </div>
