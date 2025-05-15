@@ -20,7 +20,7 @@ const ContactPage = () => {
       svgPath: CalendarIcon,
       iconAlt: "Calendar icon",
       title: "Book a Consult",
-      desc: "We’ll review where you’re at and discuss how we can work together to achieve your goals. Free, no strings attached.",
+      desc: "Book a free 30-minute consultation where we’ll review where you’re at and discuss how we can work together to achieve your goals.",
       contactCTA: "Book Your Free Consultation",
       linkType: "calendly",
       linkValue: null,
@@ -49,20 +49,7 @@ const ContactPage = () => {
       <div id="contact" className="contact-page">
         <div className="contact-page-container">
           <h2 className="contact-header">CONTACT US</h2>
-          {/* <div className="contact-options">
-            {contactOptions.map((item, index) => (
-              <div className="contact-cards">
-                <ContactCard
-                  key={index}
-                  svgPath={item.svgPath}
-                  iconAlt={item.iconAlt}
-                  title={item.title}
-                  desc={item.desc}
-                  contactCTA={item.contactCTA}
-                />
-              </div>
-            ))}
-          </div> */}
+
           <div className="contact-page-subsection">
             <div className="contact-page-info">
               <div className="contact-page-header">
@@ -115,18 +102,6 @@ const ContactPage = () => {
                     <p>
                       We work with clients nationwide, no matter where you are.
                     </p>
-                    {/* <h3 className="contact-h3">GET STARTED TODAY</h3>
-                    <p className="contact-book">
-                      <a
-                        href="#"
-                        onClick={e => {
-                          e.preventDefault()
-                          openCalendlyPopup()
-                        }}
-                      >
-                        Click here to book a 30-minute call with our team
-                      </a>
-                    </p> */}
                   </div>
                 </div>
               </div>
