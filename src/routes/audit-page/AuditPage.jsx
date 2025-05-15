@@ -9,9 +9,9 @@ const AuditPage = () => {
         </div>
 
         <h2 className="audit-header">audit</h2>
-        <div className="audit-build-container">
-          <div className="audit-build-info">
-            <div className="audit-build-text">
+        <div className="audit-info-container">
+          <div className="audit-info">
+            <div className="audit-text">
               <h2 className="h2-heading">BUILD YOUR PLAN</h2>
               <p>
                 Our audit is designed to fit your needs, offering monthly
@@ -24,7 +24,7 @@ const AuditPage = () => {
                 business.
               </p>
             </div>
-            <div className="audit-build-btn">
+            <div className="audit-btn">
               <Button
                 text={"Contact Us"}
                 to="/contact"
@@ -32,41 +32,6 @@ const AuditPage = () => {
                 width={"short"}
               />
             </div>
-          </div>
-          <div
-            className="audit-build-cards-container"
-            onMouseLeave={handleMouseLeave}
-          >
-            {auditCards.map(card => (
-              <auditCard
-                key={card.id}
-                {...card}
-                isActive={activeCard === card.id}
-                onMouseEnter={() => handleMouseEnter(card.id)}
-                onMouseLeave={handleMouseLeave}
-                btnType={activeCard === card.id ? "solid" : "outline"}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="add-on-container">
-          <div className="add-on-info">
-            <div className="add-on-text-container">
-              <h2 className="h2-heading">ADD-ON SERVICES</h2>
-              <p>
-                Enhance your plan with our customizable add-ons, designed to
-                support your unique business needs. From ongoing support to
-                additional features, we can help you build the perfect package
-                for your website.
-              </p>
-            </div>
-          </div>
-          <div className="add-on-cards-container">
-            {addOnCards.map(card => (
-              <div key={card.id}>
-                <AddOnCard {...card} />
-              </div>
-            ))}
           </div>
         </div>
       </div>

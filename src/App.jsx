@@ -7,6 +7,7 @@ import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
 import ContactPage from "./routes/contact/ContactPage"
 import FaqPage from "./routes/faq/FaqPage"
+import AuditPage from "./routes/audit-page/AuditPage"
 
 import "./index.scss"
 
@@ -22,6 +23,8 @@ const App = () => {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/free-audit" element={<AuditPage />} />
+          <Route path="/test" element={<div>Test route works</div>} />
         </Routes>
       </Layout>
     </Router>

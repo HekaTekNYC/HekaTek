@@ -56,15 +56,15 @@
 }
 
 /* audit Plan Section */
-.audit-build-container {
-  .audit-build-info {
+.audit-info-container {
+  .audit-info {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 5px 0 10px;
 
-    .audit-build-text {
+    .audit-text {
       display: -webkit-flex;
       display: flex;
       flex-direction: column;
@@ -73,21 +73,12 @@
         margin-top: 2px;
       }
     }
-    .audit-build-btn {
+    .audit-btn {
       display: -webkit-flex;
       display: flex;
       justify-content: start;
       margin-top: 20px;
     }
-  }
-
-  .audit-build-cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 100%;
-    width: 100%;
-    margin-top: 10px;
-    gap: 40px;
   }
 }
 
@@ -110,8 +101,8 @@
     }
   }
 
-  .audit-build-container {
-    .audit-build-info {
+  .audit-info-container {
+    .audit-info {
       margin: 10px 0 30px;
     }
   }
@@ -140,30 +131,26 @@
     }
   }
 
-  .audit-build-container {
-    .audit-build-cards-container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
-    }
-    .audit-build-text {
+  .audit-info-container {
+    .audit-text {
       justify-content: start;
       width: 80%;
       padding-right: 20px;
     }
 
-    .audit-build-btn {
+    .audit-btn {
       width: 20%;
     }
   }
 
-  .audit-build-container {
-    .audit-build-info {
+  .audit-info-container {
+    .audit-info {
       display: flex;
       flex-direction: row;
       width: 100%;
       margin: 40px 0 40px;
 
-      .audit-build-btn {
+      .audit-btn {
         justify-content: end;
         align-items: center;
       }
@@ -176,9 +163,5 @@
   .audit-page {
     padding: 0 100px;
     margin: 40px 0 0;
-  }
-
-  .audit-build-cards-container {
-    width: 100%;
   }
 }
