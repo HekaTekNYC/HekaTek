@@ -109,7 +109,13 @@ const ContactPage = () => {
                     />
                   </div>
                   <div className="contact-details">
-                    <h3 className="contact-h3">GET STARTED TODAY</h3>
+                    <h3 className="contact-h3">
+                      Based in NYC, Serving the USA
+                    </h3>
+                    <p>
+                      We work with clients nationwide, no matter where you are.
+                    </p>
+                    {/* <h3 className="contact-h3">GET STARTED TODAY</h3>
                     <p className="contact-book">
                       <a
                         href="#"
@@ -120,7 +126,7 @@ const ContactPage = () => {
                       >
                         Click here to book a 30-minute call with our team
                       </a>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
