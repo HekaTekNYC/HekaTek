@@ -32,7 +32,7 @@ const ContactPage = () => {
       desc: "We’ll send a personalized video walking through your site with clear, actionable insights to boost design, flow, and performance.",
       contactCTA: "Request Audit",
       linkType: "page",
-      linkValue: "/audit-request",
+      linkValue: "/free-audit",
     },
     {
       svgPath: CallIcon,

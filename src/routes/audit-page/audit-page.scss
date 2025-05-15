@@ -28,16 +28,16 @@
 
 .audit-page-background {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -80px;
+  left: -150px;
   right: 0;
-  width: 1200px;
+  width: 700px;
   height: auto;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: center center;
   will-change: filter;
-  opacity: 0.5;
-  filter: blur(140px);
+  opacity: 1;
+  filter: blur(160px);
   z-index: -1;
 
   img {
@@ -100,13 +100,16 @@
 
 /* Small Screens (≥768px) */
 @media (min-width: 768px) {
-  // .audit-page-background {
-  //   top: 1500px;
-  //   left: -300px;
-  //   img {
-  //     height: 300px;
-  //   }
-  // }
+  .audit-page-background {
+    bottom: 200px;
+    left: -45px;
+    width: 820px;
+    transform: rotate(330deg) translateX(0%);
+    filter: blur(160px);
+    img {
+      height: 300px;
+    }
+  }
 
   .audit-info-container {
     .audit-info {
@@ -123,18 +126,16 @@
       text-align: center;
       margin: 10px 0 30px;
     }
+  }
 
-    .audit-page-background {
-      top: 550px;
-      left: 70px;
-      transform: none;
-      opacity: 0.5;
-      filter: blur(110px);
-      width: 800px;
-      img {
-        height: auto;
-        width: 900px;
-      }
+  .audit-page-background {
+    bottom: 200px;
+    left: -45px;
+    width: 1000px;
+    transform: rotate(330deg) translateX(0%);
+    filter: blur(160px);
+    img {
+      height: 300px;
     }
   }
 
@@ -170,5 +171,16 @@
   .audit-page {
     padding: 0 100px;
     margin: 40px 0 0;
+  }
+
+  .audit-page-background {
+    bottom: 170px;
+    left: 185px;
+    width: 1000px;
+    transform: rotate(340deg) translateX(0%);
+    filter: blur(160px);
+    img {
+      height: 300px;
+    }
   }
 }
