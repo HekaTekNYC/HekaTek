@@ -1,0 +1,114 @@
+.contact-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+  background: #444d82;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(22, 18, 120, 0.1) 0px 4px 16px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: rgb(158, 166, 223) 0px 4px 16px;
+    transform: translateY(-2px);
+  }
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 10px;
+
+  .contact-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 0.03rem;
+    padding-left: 12px;
+  }
+
+  .contact-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    .contact-icon {
+      height: auto;
+      width: 25px;
+      margin: 10px;
+    }
+  }
+}
+
+.contact-cta {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  cursor: pointer;
+
+  img {
+    height: 14px;
+    width: auto;
+    padding-right: 10px;
+  }
+  p {
+    font-weight: 600;
+    padding-bottom: 2px;
+    color: #fff;
+    transition: text-shadow 0.3s ease;
+
+    &:hover {
+      color: #e9ecff;
+      text-shadow: 0 0 4px #5c81ef, 0 0 8px #5c81ef, 0 0 12px #5c81ef;
+    }
+  }
+}
+
+/* Media Queries */
+
+/* Medium Screens (≥768px) */
+@media (min-width: 768px) {
+  .contact-card-header {
+    .contact-icon-container {
+      display: none;
+    }
+    .contact-title {
+      letter-spacing: 0.03rem;
+      line-height: 1.6rem;
+      padding: 0 0 5px 0;
+    }
+  }
+}
+
+/* Medium Screens (≥992px) */
+@media (min-width: 992px) {
+  .contact-card-header {
+    .contact-icon-container {
+      display: flex;
+    }
+    .contact-title {
+      letter-spacing: 0.03rem;
+      line-height: 1.6rem;
+      padding: 0 0 0 10px;
+    }
+  }
+}
+
+/* Large Screens (≥1200px)*/
+@media (min-width: 1200px) {
+  .contact-card {
+    padding: 25px;
+  }
+}
