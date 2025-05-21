@@ -51,20 +51,20 @@ const AuditPage = () => {
               <source
                 srcSet={LaptopWebp}
                 type="image/webp"
-                media="(min-width: 400px)"
+                media="(min-width: 300px)"
               />
               <source
                 srcSet={LaptopPng}
                 type="image/png"
-                media="(min-width: 400px)"
+                media="(min-width: 300px)"
               />
               <img
                 src={LaptopPng}
                 alt="mockup devices with desktop laptop tablet and phone"
                 loading="lazy"
-                sizes="(max-width: 750px) 100vw, 650px"
-                height="600"
-                width="400"
+                width="700"
+                height="1050"
+                sizes="(max-width: 700px) 100vw, 700px"
               />
             </picture>
           </div>

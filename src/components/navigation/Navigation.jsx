@@ -42,8 +42,10 @@ const Navigation = () => {
             <h3>Hekatek</h3>
           </NavLink>
         </div>
-        <div className="hamburger-icon">
-          <Burger toggleMobileNav={toggleMobileNav} />
+        <div className="hamburger-container">
+          <div className="hamburger-icon">
+            <Burger toggleMobileNav={toggleMobileNav} />
+          </div>
         </div>
         <div className="nav-right">
           <ul className="nav-menu">

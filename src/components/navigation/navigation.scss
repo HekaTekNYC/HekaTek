@@ -39,6 +39,9 @@
 }
 
 /* Hamburger */
+.hamburger-container {
+  margin-left: auto;
+}
 .hamburger-icon {
   display: block;
   cursor: pointer;
@@ -88,6 +91,8 @@
   .nav-right {
     display: flex;
     align-items: center;
+    gap: 1rem;
+    margin-left: auto;
   }
 
   .nav-menu {
