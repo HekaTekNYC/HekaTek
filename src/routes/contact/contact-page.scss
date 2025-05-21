@@ -273,14 +273,14 @@
 /* Large Sreens (≥1200px) */
 @media (min-width: 1200px) {
   .contact-page {
-    margin: 80px 0 40px;
+    margin: 40px 0;
     padding: 0 100px;
 
     .contact-page-container {
       flex-direction: column;
 
       .contact-header {
-        margin-bottom: 100px;
+        margin-bottom: 40px;
       }
     }
   }
