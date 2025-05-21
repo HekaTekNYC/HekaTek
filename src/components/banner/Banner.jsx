@@ -16,7 +16,7 @@ const Banner = () => {
       {bannerItems.map((item, index) => (
         <React.Fragment key={index}>
           <div className={`ellipse ellipse-${index}`}></div>
-          <h4 className={`banner-text banner-${index}`}>{item.text}</h4>
+          <p className={`banner-text banner-${index}`}>{item.text}</p>
         </React.Fragment>
       ))}
       <div className="ellipse ellipse-6"></div>

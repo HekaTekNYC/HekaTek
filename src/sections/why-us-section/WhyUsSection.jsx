@@ -46,7 +46,9 @@ const WhyUsSection = () => {
             WHY <br /> HEKATEK
           </h2>
           <div className="why-info-text">
-            <h4>Tired of Poor Website Experiences?</h4>
+            <p className="landing-subheader">
+              Tired of Poor Website Experiences?
+            </p>
             <p className="why-p">
               Investing in a website can be daunting, especially for small
               businesses. Many invest a significant amount upfront, only to be
@@ -54,7 +56,7 @@ const WhyUsSection = () => {
               inconsistent displays. This harms visitor experience and your
               brand reputation.
             </p>
-            <h4>You Deserve Better</h4>
+            <p className="landing-subheader">You Deserve Better</p>
             <p className="why-p">
               We’ve seen this frustration firsthand. You deserve a professional,
               hand-coded website that truly represents your brand without
@@ -63,7 +65,7 @@ const WhyUsSection = () => {
               website really needs, and offering flexible, custom-coded
               solutions that put you first.
             </p>
-            <h4>Our Solution </h4>
+            <p className="landing-subheader">Our Solution </p>
             <p className="why-p">
               Get a high-quality, custom-coded website starting at $150 a month,
               providing confidence in your investment. This gives you a fast,
