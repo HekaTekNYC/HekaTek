@@ -66,7 +66,6 @@
       crossorigin="anonymous"
     />
     <link
-      rel="preload"
       href="/src/assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff2"
       as="font"
       type="font/woff2"
@@ -95,10 +94,19 @@
     <title>Hekatek Web and Software Development</title>
 
     <!-- Calendly Widget CSS -->
+
     <link
-      href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"
+      href="https://assets.calendly.com/assets/external/widget.css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://assets.calendly.com/assets/external/widget.css"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
@@ -117,6 +125,7 @@
     <script
       src="https://cdn.emailjs.com/dist/email.min.js"
       type="text/javascript"
+      defer
     ></script>
 
     <script type="text/javascript">

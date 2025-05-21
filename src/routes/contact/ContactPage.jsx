@@ -1,5 +1,4 @@
 import {useEffect} from "react"
-import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 import {useLocation} from "react-router-dom"
 
 import ContactForm from "../../components/contact-form/ContactForm"
@@ -16,8 +15,6 @@ import CallIcon from "../../assets/icons/phone-wht.svg"
 import "./contact-page.scss"
 
 const ContactPage = () => {
-  const openCalendlyPopup = useCalendlyPopup()
-
   const contactOptions = [
     {
       svgPath: CalendarIcon,
@@ -63,7 +60,6 @@ const ContactPage = () => {
       <div id="contact" className="contact-page">
         <div className="contact-page-container">
           <h2 className="contact-header">CONTACT US</h2>
-
           <div className="contact-page-subsection">
             <div className="contact-page-info">
               <div className="contact-page-header">

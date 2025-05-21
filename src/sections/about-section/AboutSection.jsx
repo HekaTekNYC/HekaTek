@@ -53,9 +53,9 @@ const AboutSection = () => {
             ABOUT <br /> HEKATEK
           </h2>
           <div className="about-indent">
-            <h4 className="about-subheader">
+            <p className="landing-subheader about-subheader">
               Empowering Small Businesses Through Expert Web Development
-            </h4>
+            </p>
             <p className="about-p">
               At Hekatek, we’re here to change the narrative for small
               businesses stuck with overpriced, poorly designed websites that

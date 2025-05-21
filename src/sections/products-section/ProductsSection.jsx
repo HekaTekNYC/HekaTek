@@ -18,7 +18,7 @@ const ProductsSection = () => {
       <div className="products-info">
         <div className="products-text">
           <h2 className="h2-heading">Built For Results</h2>
-          <h4 className="h2-swap">Built For Results</h4>
+          <p className="h2-swap">Built For Results</p>
 
           <p>
             Explore a sample of the projects we’ve designed and developed for
