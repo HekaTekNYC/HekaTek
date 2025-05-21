@@ -3,6 +3,9 @@ import BackgroundShape from "../../assets/images/pricing-shape.svg?react"
 import AuditForm from "../../components/audit-form/AuditForm"
 import {useCalendlyPopup} from "../../hooks/useCalendlyPopup"
 
+import LaptopWebp from "../../assets/images/business-laptop.webp"
+import LaptopPng from "../../assets/images/business-laptop.png"
+
 import "./audit-page.scss"
 
 const AuditPage = () => {
@@ -42,9 +45,32 @@ const AuditPage = () => {
             </div>
           </div>
         </div>
-
-        <div className="audit-sign-up">
-          <AuditForm />
+        <div className="audit-sign-up-container">
+          <div className="audit-image">
+            <picture>
+              <source
+                srcSet={LaptopWebp}
+                type="image/webp"
+                media="(min-width: 400px)"
+              />
+              <source
+                srcSet={LaptopPng}
+                type="image/png"
+                media="(min-width: 400px)"
+              />
+              <img
+                src={LaptopPng}
+                alt="mockup devices with desktop laptop tablet and phone"
+                loading="lazy"
+                sizes="(max-width: 750px) 100vw, 650px"
+                height="600"
+                width="400"
+              />
+            </picture>
+          </div>
+          <div className="audit-sign-up">
+            <AuditForm />
+          </div>
         </div>
       </div>
     </div>
