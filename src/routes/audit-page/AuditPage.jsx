@@ -35,14 +35,6 @@ const AuditPage = () => {
                 goals.
               </p>
             </div>
-            <div className="audit-btn">
-              <Button
-                text={"Get Started"}
-                onClick={openCalendlyPopup}
-                btnType={"solid"}
-                width={"short"}
-              />
-            </div>
           </div>
         </div>
         <div className="audit-sign-up-container">

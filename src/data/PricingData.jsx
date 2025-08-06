@@ -8,11 +8,11 @@ export const subscription = {
   id: 1,
   className: "sub",
   title: "SUBSCRIPTION",
-  sale: "$150",
+  sale: "",
   cost: "$175",
   subCost: "/month",
   desc: "Monthly Subscription Fee",
-  fee: "$350",
+  fee: "$400",
   subFee: "/ one time design fee",
   checkList: [
     {
@@ -57,7 +57,7 @@ export const lumpSum = {
   id: 2,
   className: "lump",
   title: "LUMP SUM",
-  sale: "$2000",
+  sale: "",
   cost: "$3000",
   subCost: "",
   desc: "One Time Fee",
