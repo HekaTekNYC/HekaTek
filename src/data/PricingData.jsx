@@ -2,6 +2,7 @@ import PurpleCheck from "../assets/icons/purple-check.svg"
 import PeriwinkleCheck from "../assets/icons/periwinkle-check.svg"
 import PeriDeact from "../assets/icons/peri-deactivated.svg"
 import CoralCheck from "../assets/icons/coral-check.svg"
+import CoralDeact from "../assets/icons/coral-deactivated.svg"
 import Gem from "../assets/images/pricing-gem.png"
 
 export const subscription = {
@@ -87,12 +88,12 @@ export const lumpSum = {
     {
       text: "Unlimited Edits",
       img: PeriDeact,
-      alt: "Periwinkle Deactived",
+      alt: "Periwinkle Checkmark Deactived",
     },
     {
       text: "24/7 Support",
       img: PeriDeact,
-      alt: "Periwinkle Deactived",
+      alt: "Periwinkle Checkmark Deactived",
     },
   ],
 
@@ -104,31 +105,46 @@ export const ecomm = {
   className: "ecomm",
   title: "E-COMMERCE",
   sale: "",
-  cost: "$6000",
+  cost: "$7000",
   subCost: "/minimum",
   desc: "Starting Price",
   fee: "INQUIRE BELOW",
   subFee: "",
   checkList: [
     {
-      text: "Custom Storefront Design",
+      text: "Custom Shopify Storefront",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Seamless Payment Integration",
+      text: "Secure Payment & Shipping Integration",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Custom-built CRM to Streamline Your Business Operations",
+      text: "Full Shopify CMS Connection",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Mobile Optimized Platform",
+      text: "Curated App Selection & Integration ",
       img: CoralCheck,
       alt: "Coral Checkmark",
+    },
+    {
+      text: "Launch Support & Training",
+      img: CoralCheck,
+      alt: "Coral Checkmark",
+    },
+    {
+      text: "Unlimited Edits",
+      img: CoralDeact,
+      alt: "Coral Checkmark Deactived",
+    },
+    {
+      text: "24/7 Support",
+      img: CoralDeact,
+      alt: "Coral Checkmark Deactived",
     },
   ],
 }

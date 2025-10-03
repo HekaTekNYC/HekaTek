@@ -156,7 +156,8 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  &.lump .checklist:nth-last-child(-n + 2) {
+  &.lump .checklist:nth-last-child(-n + 2),
+  &.ecomm .checklist:nth-last-child(-n + 2) {
     color: #828294;
   }
 
