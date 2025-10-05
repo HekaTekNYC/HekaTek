@@ -23,8 +23,8 @@ const AuditPage = () => {
             <div className="audit-text">
               <h2 className="h2-heading">FIND WHAT'S NOT WORKING</h2>
               <p>
-                GGet a focused analysis that reveals the specific design, UX,
-                and performance issues holding your website back. We combine
+                Get a focused analysis that reveals the specific design, UX, and
+                performance issues holding your website back. We combine
                 technical analysis with user experience insights to pinpoint 2-3
                 of your most critical opportunities for improvement, delivered
                 in a clear, actionable report. This review is your first step
