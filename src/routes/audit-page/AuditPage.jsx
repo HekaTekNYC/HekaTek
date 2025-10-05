@@ -17,22 +17,20 @@ const AuditPage = () => {
           <BackgroundShape />
         </div>
 
-        <h2 className="audit-header">FREE WEBSITE AUDIT</h2>
+        <h2 className="audit-header">FREE WEBSITE REVIEW</h2>
         <div className="audit-info-container">
           <div className="audit-info">
             <div className="audit-text">
-              <h2 className="h2-heading">WEBSITE AUDIT VIDEO</h2>
+              <h2 className="h2-heading">FIND WHAT'S NOT WORKING</h2>
               <p>
-                We’ll record a personalized video audit of your website, walking
-                through everything from design and user experience to
-                performance, accessibility, and SEO basics. You’ll get clear,
-                actionable insights on what’s working and what could be
-                improved—no buzzwords, no fluff. Just honest, expert feedback
-                you can use right away. Whether you’re planning a full revamp or
-                just want a second opinion, this audit is a great place to
-                start. Prefer to skip the audit and talk with us directly? Just
-                click Get Started to reach out—we’d love to hear about your
-                goals.
+                GGet a focused analysis that reveals the specific design, UX,
+                and performance issues holding your website back. We combine
+                technical analysis with user experience insights to pinpoint 2-3
+                of your most critical opportunities for improvement, delivered
+                in a clear, actionable report. This review is your first step
+                toward a faster, more engaging, and higher-converting site.
+                Submit the form below to get your free review delivered straight
+                to your inbox.
               </p>
             </div>
           </div>

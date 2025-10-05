@@ -28,9 +28,9 @@ const ContactPage = () => {
     {
       svgPath: VideoIcon,
       iconAlt: "Video icon",
-      title: "Free Website Audit",
-      desc: "We’ll send a personalized video walking through your site with clear, actionable insights to boost design, flow, and performance.",
-      contactCTA: "Request Audit",
+      title: "Free Website Review",
+      desc: "Get a focused analysis of your site with a clear report that pinpoints 2-3 high-impact opportunities to improve design, UX, and performance.",
+      contactCTA: "Request Review",
       linkType: "page",
       linkValue: "/free-audit",
     },
