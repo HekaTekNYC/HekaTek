@@ -113,7 +113,7 @@ const Navigation = () => {
           </ul>
           <div className="nav-btn">
             <Button
-              text={"Free Site Audit"}
+              text={"Free Site Review"}
               to={"/free-audit"}
               btnType={"mini"}
               width={"shorter"}
