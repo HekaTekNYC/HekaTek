@@ -30,7 +30,7 @@ const ServicesPage = () => {
               ensure optimal site performance, leading to higher customer
               engagement and increased earnings. No Wordpress, no page builders,
               just custom-coded websites with exceptional results from
-              $150/month.
+              $175/month.
             </p>
           </div>
           <div className="services-cards-layout">
