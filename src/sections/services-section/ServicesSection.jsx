@@ -22,7 +22,7 @@ const ServicesSection = () => {
         businesses nationwide. By hand-coding every element, we ensure optimal
         site performance, leading to higher customer engagement and increased
         earnings. No Wordpress, no page builders, just custom-coded websites
-        with exceptional results from $150/month.
+        with exceptional results from $175/month.
       </p>
 
       <div className="services-home-cards">
