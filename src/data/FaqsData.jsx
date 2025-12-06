@@ -105,7 +105,7 @@ export const PlansData = [
     question:
       "After the 12-month minimum, do I continue paying for the subscription?",
     answer:
-      "Yes, the subscription continues on a monthly basis after the initial 12-month commitment. It typically takes us 2 years to earn what we would from a lump sum project, so we aim to work with clients for at least 5 years to make the subscription model sustainable. By that time, your website should generate far more than $150 a month in value, essentially paying for itself. We aim for our clients to recognize the value of our continued efforts and choose to keep their subscription active for the long term.",
+      "Yes, the subscription continues on a monthly basis after the initial 12-month commitment. It typically takes us 2 years to earn what we would from a lump sum project, so we aim to work with clients for at least 5 years to make the subscription model sustainable. By that time, your website should generate far more than $175 a month in value, essentially paying for itself. We aim for our clients to recognize the value of our continued efforts and choose to keep their subscription active for the long term.",
   },
   {
     id: 2,
@@ -135,7 +135,7 @@ export const PlansData = [
     category: "Plans",
     question: "Does your subscription plan include e-commerce websites?",
     answer:
-      "Currently, we don't offer e-commerce sites under the subscription plan. E-commerce setups require significantly more work and resources than standard business websites, which is why we're unable to provide them at $150 a month.",
+      "Currently, we don't offer e-commerce sites under the subscription plan. E-commerce setups require significantly more work and resources than standard business websites, which is why we're unable to provide them at $175 a month.",
   },
   {
     id: 6,
