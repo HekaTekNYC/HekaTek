@@ -16,7 +16,7 @@ try {
     routes.push(match[1])
   }
 
-  console.log("📋 Auto-detected routes:", routes)
+  console.log("Auto-detected routes:", routes)
 
   // If no routes found, use default ones
   const finalRoutes =
