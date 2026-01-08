@@ -2,12 +2,12 @@ import Button from "../../components/button/Button"
 import ProductCard from "../../components/product-cards/ProductCard"
 import ProductInfo from "../../components/product-info/ProductInfo"
 
-import {plantHaus, epicTales} from "../../data/ProductData"
+import {plantHaus, perfectView} from "../../data/ProductData"
 
 import "./products-section.scss"
 
 const ProductsSection = () => {
-  const productList = [plantHaus, epicTales]
+  const productList = [plantHaus, perfectView]
 
   const limitedProductList = productList.slice(0, 2)
   return (

@@ -16,6 +16,8 @@ import CLWebp from "../assets/images/CL2.webp"
 import CLPng from "../assets/images/CL2.png"
 import ETwebp from "../assets/images/et.webp"
 import ETpng from "../assets/images/et.png"
+import PVwebp from "../assets/images/pv.webp"
+import PVpng from "../assets/images/pv.png"
 
 export const plantHaus = {
   id: 1,
@@ -32,11 +34,27 @@ export const plantHaus = {
   btn: "View Live",
   aLink: "https://planthaus.netlify.app/",
 }
-export const epicTales = {
+
+export const perfectView = {
   id: 2,
+  name: "PerfectView",
+  deg: 0,
+  scale: "X(1)",
+  desc: "AstroJS Window Treatment Installation Site",
+  webp: PVwebp,
+  img: {
+    src: PVpng,
+    alt: "PerfectView site preview",
+  },
+  info: "A clean, responsive website for a family-owned window treatment installation company. Built to showcase custom blinds, shades, and drapery services, the site combines modern design with clear service explanations, project galleries, and consultation booking—helping Utah homeowners visualize and request professional window solutions.",
+  btn: "View Live",
+  aLink: "https://www.perfectviewutah.com",
+}
+export const epicTales = {
+  id: 3,
   name: "Epic Tales",
   deg: 180,
-  scale: "X(1)",
+  scale: "X(-1)",
   desc: "AstroJS Pet Care Services Site",
   webp: ETwebp,
   img: {
@@ -48,10 +66,10 @@ export const epicTales = {
   aLink: "https://epictails.netlify.app/",
 }
 export const weFund = {
-  id: 3,
+  id: 4,
   name: "WeFund",
   deg: 180,
-  scale: "X(-1)",
+  scale: "X(1)",
   desc: "Crowdfunding Platform Site",
   webp: WeFundWebp,
   img: {
@@ -63,10 +81,10 @@ export const weFund = {
   aLink: "https://wefund-crowdfunding.netlify.app/",
 }
 export const creativeLoft = {
-  id: 4,
+  id: 5,
   name: "Creative Loft",
   deg: 1800,
-  scale: "X(1)",
+  scale: "X(-1)",
   desc: "AstroJS Coworking Space Site",
   webp: CLWebp,
   img: {
@@ -79,10 +97,10 @@ export const creativeLoft = {
 }
 
 export const walkAngels = {
-  id: 5,
+  id: 6,
   name: "Walk with Angels",
   deg: 0,
-  scale: "X(-1)",
+  scale: "X(1)",
   desc: "Volunteer Work",
   webp: WWAwebp,
   img: {
@@ -95,7 +113,7 @@ export const walkAngels = {
 }
 
 export const riversEdge = {
-  id: 6,
+  id: 7,
   name: "River's Edge",
   deg: 0,
   scale: "X(-1)",
@@ -111,7 +129,7 @@ export const riversEdge = {
 }
 
 export const interviewIQ = {
-  id: 7,
+  id: 8,
   name: "InterviewIQ",
   deg: 180,
   scale: "Y(1)",
@@ -127,7 +145,7 @@ export const interviewIQ = {
 }
 
 export const dangoDB = {
-  id: 8,
+  id: 9,
   name: "dangoDb",
   deg: 180,
   scale: "Y(-1)",
@@ -143,7 +161,7 @@ export const dangoDB = {
 }
 
 export const ad3lie = {
-  id: 9,
+  id: 10,
   name: "Ad3lie",
   deg: 0,
   scale: "Y(-1)",
