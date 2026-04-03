@@ -132,7 +132,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-22 ✓
   - notes: DONE. src/routes/portal/ClientOnboarding.jsx. Step indicator, progress bar, auto-save, back/next/submit, completion state.
 
-- [ ] FE-24 Update client dashboard to show questionnaire status
+- [x] FE-24 Update client dashboard to show questionnaire status
   - source: 6.7
   - depends: FE-23, FE-21
   - notes: link to resume if incomplete
@@ -147,7 +147,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-25 ✓
   - notes: DONE. Built into ClientAssets. Top-of-page portal-progress bar + counter.
 
-- [ ] FE-27 Update client dashboard progress ring for asset completion
+- [x] FE-27 Update client dashboard progress ring for asset completion
   - source: 7.8
   - depends: FE-26, FE-21
   - notes: combines questionnaire + asset checklist completion
@@ -162,7 +162,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-28 ✓
   - notes: DONE. Built into ClientTimeline. Teal completed nodes with checkmarks, purple in-progress with pulse animation, connected lines. "Updated [date]" indicator.
 
-- [ ] FE-30 Update client dashboard with current phase + next milestone
+- [x] FE-30 Update client dashboard with current phase + next milestone
   - source: 8.6
   - depends: FE-29, FE-21
   - notes: simple text display
@@ -217,39 +217,39 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-37
   - notes: "No invoices found — contact Hekatek"
 
-- [ ] FE-41 Build knowledge base page — sidebar/tab nav, search, expandable accordions
+- [x] FE-41 Build knowledge base page — sidebar/tab nav, search, expandable accordions
   - source: 12.4
   - depends: BE-10, BE-11, FE-18
   - notes: renders FAQ items as expandable accordions
 
-- [ ] FE-42 Auto-filter knowledge base by client's project type — relevant section first, base FAQs always visible
+- [x] FE-42 Auto-filter knowledge base by client's project type — relevant section first, base FAQs always visible
   - source: 12.5
   - depends: FE-41
   - notes: project type from user profile determines default filter
 
 ## Feature Pages — Admin
 
-- [ ] FE-43 Build admin questionnaire view — read-only view of client responses
+- [x] FE-43 Build admin questionnaire view — read-only view of client responses
   - source: 6.6
   - depends: FE-23, FE-12
   - notes: organized by section
 
-- [ ] FE-44 Build admin asset view — per-client checklist progress, download, mark received
+- [x] FE-44 Build admin asset view — per-client checklist progress, download, mark received
   - source: 7.7
   - depends: FE-25, FE-12
   - notes: admin can download uploaded files
 
-- [ ] FE-45 Build admin phase management — edit dates, update status
+- [x] FE-45 Build admin phase management — edit dates, update status
   - source: 8.3
   - depends: INFRA-09, FE-12
   - notes: auto-records "Updated [date]" on change
 
-- [ ] FE-46 Build admin deliverable upload form — title, Figma link, assign to phase
+- [x] FE-46 Build admin deliverable upload form — title, Figma link, assign to phase
   - source: 9.2
   - depends: INFRA-10, FE-12
   - notes: creates pending deliverable for client review
 
-- [ ] FE-47 Build admin approval status view — all deliverables across projects, filter by status
+- [x] FE-47 Build admin approval status view — all deliverables across projects, filter by status
   - source: 9.6
   - depends: FE-46
   - notes: pending/approved/changes requested badges
@@ -259,7 +259,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-47, FE-15
   - notes: pulls from deliverables table
 
-- [ ] FE-49 Build admin messaging inbox — all threads, last message preview, unread indicator
+- [x] FE-49 Build admin messaging inbox — all threads, last message preview, unread indicator
   - source: 10.6
   - depends: FE-35, FE-12
   - notes: click to open thread

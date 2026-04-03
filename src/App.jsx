@@ -16,6 +16,11 @@ import LoginPage from "./routes/login/LoginPage"
 import AdminLayout from "./routes/admin/AdminLayout"
 import AdminDashboard from "./routes/admin/AdminDashboard"
 import AdminClients from "./routes/admin/AdminClients"
+import AdminMessages from "./routes/admin/AdminMessages"
+import AdminQuestionnaireView from "./routes/admin/AdminQuestionnaireView"
+import AdminAssets from "./routes/admin/AdminAssets"
+import AdminPhases from "./routes/admin/AdminPhases"
+import AdminDeliverables from "./routes/admin/AdminDeliverables"
 import ClientLayout from "./routes/portal/ClientLayout"
 import ClientDashboard from "./routes/portal/ClientDashboard"
 import ClientTimeline from "./routes/portal/ClientTimeline"
@@ -23,6 +28,7 @@ import ClientMessages from "./routes/portal/ClientMessages"
 import ClientApprovals from "./routes/portal/ClientApprovals"
 import ClientAssets from "./routes/portal/ClientAssets"
 import ClientOnboarding from "./routes/portal/ClientOnboarding"
+import ClientResources from "./routes/portal/ClientResources"
 import InviteAcceptPage from "./routes/invite/InviteAcceptPage"
 import ForgotPasswordPage from "./routes/forgot-password/ForgotPasswordPage"
 
@@ -67,7 +73,11 @@ const App = () => {
           >
             <Route index element={<AdminDashboard />} />
             <Route path="clients" element={<AdminClients />} />
-            <Route path="messages" element={<PlaceholderPage title="Messages" />} />
+            <Route path="questionnaires" element={<AdminQuestionnaireView />} />
+            <Route path="assets" element={<AdminAssets />} />
+            <Route path="phases" element={<AdminPhases />} />
+            <Route path="deliverables" element={<AdminDeliverables />} />
+            <Route path="messages" element={<AdminMessages />} />
             <Route path="billing" element={<PlaceholderPage title="Billing" />} />
           </Route>
 
@@ -89,7 +99,7 @@ const App = () => {
             <Route path="approvals" element={<ClientApprovals />} />
             <Route path="messages" element={<ClientMessages />} />
             <Route path="billing" element={<PlaceholderPage title="Billing" />} />
-            <Route path="resources" element={<PlaceholderPage title="Resources" />} />
+            <Route path="resources" element={<ClientResources />} />
           </Route>
         </Routes>
       </Router>
