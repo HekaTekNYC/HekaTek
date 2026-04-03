@@ -10,6 +10,7 @@ import FaqPage from "./routes/faq/FaqPage"
 import AuditPage from "./routes/audit-page/AuditPage"
 
 import { AuthProvider } from "./contexts/auth.context"
+import { ToastProvider } from "./components/portal/toast/Toast"
 import ProtectedRoute from "./components/portal/protected-route/ProtectedRoute"
 import RoleRoute from "./components/portal/role-route/RoleRoute"
 import LoginPage from "./routes/login/LoginPage"
@@ -43,6 +44,7 @@ function MarketingPage({ children }) {
 const App = () => {
   return (
     <AuthProvider>
+      <ToastProvider>
       <Router>
         <ScrollToTop />
         <Routes>
@@ -103,6 +105,7 @@ const App = () => {
           </Route>
         </Routes>
       </Router>
+      </ToastProvider>
     </AuthProvider>
   )
 }

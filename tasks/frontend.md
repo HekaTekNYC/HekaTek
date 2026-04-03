@@ -254,7 +254,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-46
   - notes: pending/approved/changes requested badges
 
-- [ ] FE-48 Update admin dashboard stat card — pending approvals count
+- [x] FE-48 Update admin dashboard stat card — pending approvals count
   - source: 9.7
   - depends: FE-47, FE-15
   - notes: pulls from deliverables table
@@ -264,7 +264,7 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-35, FE-12
   - notes: click to open thread
 
-- [ ] FE-50 Update admin dashboard — unread messages count
+- [x] FE-50 Update admin dashboard — unread messages count
   - source: 10.7
   - depends: FE-49, FE-15
   - notes: pulls from messages table
@@ -281,37 +281,37 @@ Use ui-ux-pro-max skill for all component builds.
 
 ## Responsive & Polish
 
-- [ ] FE-53 Tablet breakpoints (768px) — sidebar collapse, card stacking
+- [x] FE-53 Tablet breakpoints (768px) — sidebar collapse, card stacking
   - source: 13.1
   - depends: FE-12, FE-18
   - notes: hamburger menu for sidebar
 
-- [ ] FE-54 Mobile breakpoints (430px) — simplified layouts, touch targets
+- [x] FE-54 Mobile breakpoints (430px) — simplified layouts, touch targets
   - source: 13.2
   - depends: FE-53
   - notes: full-width components
 
-- [ ] FE-55 Loading states — skeleton screens, spinners, optimistic UI
+- [x] FE-55 Loading states — skeleton screens, spinners, optimistic UI
   - source: 13.3
   - depends: FE-15, FE-21
   - notes: skeleton screens for dashboard cards
 
-- [ ] FE-56 Empty states — friendly messages for no-data sections
+- [x] FE-56 Empty states — friendly messages for no-data sections
   - source: 13.4
   - depends: all feature pages
   - notes: "No messages yet", "No invoices found", etc.
 
-- [ ] FE-57 Error handling — toast notifications, retry options, API fallbacks
+- [x] FE-57 Error handling — toast notifications, retry options, API fallbacks
   - source: 13.5
   - depends: all feature pages
   - notes: graceful WaveApps downtime handling
 
-- [ ] FE-58 Cross-browser testing — backdrop-filter graceful degradation
+- [x] FE-58 Cross-browser testing — backdrop-filter graceful degradation
   - source: 13.6
   - depends: FE-03
   - notes: glassmorphic effects in unsupported browsers
 
-- [ ] FE-59 Final visual QA — colors vibrant, spacing consistent, hover states, dark mode contrast
+- [x] FE-59 Final visual QA — colors vibrant, spacing consistent, hover states, dark mode contrast
   - source: 13.7
   - depends: all
   - notes: last pass before launch

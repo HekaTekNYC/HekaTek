@@ -10,6 +10,9 @@
 @forward "portal-tokens";
 @forward "portal-mixins";
 @forward "portal-components";
+@forward "portal-states";
+@forward "portal-responsive";
+@forward "portal-fallbacks";
 
 // ---------------------------------------------------------------------------
 // Portal base styles (applied when .portal class is on a wrapper element)

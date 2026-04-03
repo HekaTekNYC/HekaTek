@@ -8,7 +8,7 @@ export default function AdminDashboard() {
     activeClients: 0,
     projectsInProgress: 0,
     pendingApprovals: 0,
-    overdueItems: 0,
+    totalMessages: 0,
   });
   const [recentClients, setRecentClients] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -20,11 +20,13 @@ export default function AdminDashboard() {
           { count: clientCount },
           { data: projects },
           { count: pendingCount },
+          { count: messageCount },
           { data: clients },
         ] = await Promise.all([
           supabase.from('profiles').select('*', { count: 'exact', head: true }).eq('role', 'client'),
           supabase.from('projects').select('status'),
           supabase.from('deliverables').select('*', { count: 'exact', head: true }).eq('status', 'pending'),
+          supabase.from('messages').select('*', { count: 'exact', head: true }),
           supabase.from('profiles').select('id, full_name, company_name, email, created_at').eq('role', 'client').order('created_at', { ascending: false }).limit(5),
         ]);
 
@@ -34,7 +36,7 @@ export default function AdminDashboard() {
           activeClients: clientCount || 0,
           projectsInProgress: activeProjects,
           pendingApprovals: pendingCount || 0,
-          overdueItems: 0,
+          totalMessages: messageCount || 0,
         });
 
         setRecentClients(clients || []);
@@ -68,7 +70,7 @@ export default function AdminDashboard() {
     { label: 'Active Clients', value: stats.activeClients, color: 'purple' },
     { label: 'Projects in Progress', value: stats.projectsInProgress, color: 'blue' },
     { label: 'Pending Approvals', value: stats.pendingApprovals, color: 'amber' },
-    { label: 'Overdue Items', value: stats.overdueItems, color: 'coral' },
+    { label: 'Messages', value: stats.totalMessages, color: 'coral' },
   ];
 
   return (

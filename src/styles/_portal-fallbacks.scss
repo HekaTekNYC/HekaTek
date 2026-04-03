@@ -1,0 +1,31 @@
+// ============================================================================
+// Portal Cross-Browser Fallbacks — FE-58
+// ============================================================================
+// Graceful degradation for browsers that don't support backdrop-filter.
+// Falls back to solid semi-transparent backgrounds.
+// ============================================================================
+
+@supports not (backdrop-filter: blur(1px)) {
+  .portal {
+    --surface-card: rgba(240, 242, 250, 0.95);
+    --surface-sidebar: rgba(240, 242, 250, 0.97);
+    --surface-topbar: rgba(240, 242, 250, 0.97);
+    --surface-input: rgba(255, 255, 255, 0.97);
+  }
+
+  .portal.dark {
+    // Dark mode already uses solid colors, no change needed
+  }
+
+  .portal-card,
+  .portal-stat-card,
+  .portal-sidebar,
+  .portal-topbar,
+  .login-card,
+  .invite-accept-card,
+  .forgot-password-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    filter: none;
+  }
+}
