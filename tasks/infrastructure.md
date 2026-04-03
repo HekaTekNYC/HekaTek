@@ -78,12 +78,12 @@ These must be completed first — backend and frontend depend on them.
 
 ## Phase E: External Integrations
 
-- [ ] INFRA-14 Set up WaveApps OAuth application
+- [x] INFRA-14 Set up WaveApps OAuth application
   - source: 11.1
   - depends: none
   - notes: register app, get client ID/secret, configure redirect
 
-- [ ] INFRA-15 Create Supabase Edge Function for WaveApps GraphQL API
+- [x] INFRA-15 Create Supabase Edge Function for WaveApps GraphQL API
   - source: 11.2
   - depends: INFRA-14
   - notes: OAuth auth, queries invoices/payments by customer email

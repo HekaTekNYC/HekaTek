@@ -22,6 +22,7 @@ import AdminQuestionnaireView from "./routes/admin/AdminQuestionnaireView"
 import AdminAssets from "./routes/admin/AdminAssets"
 import AdminPhases from "./routes/admin/AdminPhases"
 import AdminDeliverables from "./routes/admin/AdminDeliverables"
+import AdminBilling from "./routes/admin/AdminBilling"
 import ClientLayout from "./routes/portal/ClientLayout"
 import ClientDashboard from "./routes/portal/ClientDashboard"
 import ClientTimeline from "./routes/portal/ClientTimeline"
@@ -29,6 +30,7 @@ import ClientMessages from "./routes/portal/ClientMessages"
 import ClientApprovals from "./routes/portal/ClientApprovals"
 import ClientAssets from "./routes/portal/ClientAssets"
 import ClientOnboarding from "./routes/portal/ClientOnboarding"
+import ClientBilling from "./routes/portal/ClientBilling"
 import ClientResources from "./routes/portal/ClientResources"
 import InviteAcceptPage from "./routes/invite/InviteAcceptPage"
 import ForgotPasswordPage from "./routes/forgot-password/ForgotPasswordPage"
@@ -80,7 +82,7 @@ const App = () => {
             <Route path="phases" element={<AdminPhases />} />
             <Route path="deliverables" element={<AdminDeliverables />} />
             <Route path="messages" element={<AdminMessages />} />
-            <Route path="billing" element={<PlaceholderPage title="Billing" />} />
+            <Route path="billing" element={<AdminBilling />} />
           </Route>
 
           {/* Client portal routes */}
@@ -100,7 +102,7 @@ const App = () => {
             <Route path="timeline" element={<ClientTimeline />} />
             <Route path="approvals" element={<ClientApprovals />} />
             <Route path="messages" element={<ClientMessages />} />
-            <Route path="billing" element={<PlaceholderPage title="Billing" />} />
+            <Route path="billing" element={<ClientBilling />} />
             <Route path="resources" element={<ClientResources />} />
           </Route>
         </Routes>

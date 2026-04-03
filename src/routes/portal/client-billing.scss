@@ -1,0 +1,103 @@
+.client-billing {
+  h2 { font-family: var(--font-heading); font-size: var(--font-size-2xl); color: var(--text-primary); margin-bottom: var(--space-6); }
+
+  &__skeleton { display: flex; flex-direction: column; gap: var(--space-4); }
+  .skeleton-line { height: 14px; border-radius: var(--radius-sm); background: var(--border-default); animation: skeleton-pulse 1.5s ease-in-out infinite; }
+  .skeleton-line--short { width: 40%; margin-bottom: var(--space-3); }
+  .skeleton-line--wide { width: 70%; }
+
+  &__error, &__empty {
+    text-align: center; padding: var(--space-8);
+    p { color: var(--text-muted); font-size: var(--font-size-sm); }
+  }
+
+  // FE-40: No-match state
+  &__no-match {
+    text-align: center; padding: var(--space-12);
+
+    &-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; border-radius: var(--radius-circle);
+      background: var(--color-amber-muted); color: var(--color-amber);
+      font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold);
+      margin-bottom: var(--space-4);
+    }
+
+    h3 { font-family: var(--font-heading); font-size: var(--font-size-xl); color: var(--text-primary); margin-bottom: var(--space-3); }
+    p { font-size: var(--font-size-sm); color: var(--text-secondary); max-width: 360px; margin: 0 auto; line-height: var(--line-height-relaxed); }
+  }
+
+  // FE-38: Payment progress / summary
+  &__summary { margin-bottom: var(--space-6); }
+
+  &__summary-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-bottom: var(--space-5);
+
+    @media (max-width: 430px) { grid-template-columns: 1fr; }
+  }
+
+  &__summary-item { display: flex; flex-direction: column; gap: var(--space-1); }
+  &__summary-label { font-size: var(--font-size-xs); color: var(--text-muted); font-weight: var(--font-weight-medium); text-transform: uppercase; letter-spacing: 0.04em; }
+  &__summary-value {
+    font-family: var(--font-heading); font-size: var(--font-size-2xl); color: var(--text-primary); line-height: 1;
+    &--teal { color: var(--color-teal); }
+    &--amber { color: var(--color-amber); }
+  }
+
+  &__progress-section { margin-bottom: var(--space-4); }
+  &__progress-label { display: block; font-size: var(--font-size-sm); color: var(--text-muted); margin-bottom: var(--space-2); }
+  &__overdue-warning { margin-top: var(--space-3); }
+
+  // FE-37: Invoice list
+  &__section {
+    margin-bottom: var(--space-8);
+    h3 { font-family: var(--font-heading); font-size: var(--font-size-xl); color: var(--text-primary); margin-bottom: var(--space-4); }
+  }
+
+  &__invoice-list { display: flex; flex-direction: column; gap: var(--space-3); }
+
+  &__invoice { padding: var(--space-4) var(--space-5); }
+
+  &__invoice-header {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3);
+  }
+
+  &__invoice-number { font-weight: var(--font-weight-semibold); color: var(--text-primary); font-size: var(--font-size-sm); margin-right: var(--space-3); }
+  &__invoice-date { font-size: var(--font-size-xs); color: var(--text-muted); }
+
+  &__invoice-amounts {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-bottom: var(--space-3);
+
+    @media (max-width: 430px) { grid-template-columns: 1fr; }
+  }
+
+  &__invoice-amount { display: flex; flex-direction: column; gap: 2px; }
+  &__invoice-amount-label { font-size: var(--font-size-xs); color: var(--text-muted); }
+  &__invoice-amount-value { font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--text-primary); }
+
+  &__due-date {
+    display: block; font-size: var(--font-size-xs); color: var(--text-muted); margin-bottom: var(--space-2);
+    &--overdue { color: var(--color-coral); font-weight: var(--font-weight-semibold); }
+  }
+
+  &__pdf-link {
+    display: inline-block; font-size: var(--font-size-sm); color: var(--color-blue);
+    &:hover { color: var(--color-blue-hover); }
+  }
+
+  // FE-39: Payment history
+  &__history { display: flex; flex-direction: column; gap: var(--space-2); }
+
+  &__history-row {
+    display: flex; align-items: center; gap: var(--space-4); padding: var(--space-3) var(--space-4);
+    background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-md);
+
+    @media (max-width: 430px) { flex-wrap: wrap; gap: var(--space-2); }
+  }
+
+  &__history-date { font-size: var(--font-size-xs); color: var(--text-muted); min-width: 90px; }
+  &__history-desc { font-size: var(--font-size-sm); color: var(--text-secondary); flex: 1; }
+  &__history-amount { font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--text-primary); }
+}
+
+@keyframes skeleton-pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }

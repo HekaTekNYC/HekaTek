@@ -197,22 +197,22 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-35 ✓
   - notes: DONE. src/components/portal/message-input/MessageInput.jsx. Auto-growing textarea, Enter to send, Shift+Enter for newline, purple send button.
 
-- [ ] FE-37 Build client billing page — invoices list with status badges, PDF download
+- [x] FE-37 Build client billing page — invoices list with status badges, PDF download
   - source: 11.3
   - depends: INFRA-15, FE-18
   - notes: paid (teal), pending (amber), overdue (coral)
 
-- [ ] FE-38 Build payment progress component — installment plan visual
+- [x] FE-38 Build payment progress component — installment plan visual
   - source: 11.4
   - depends: FE-37
   - notes: "Payment 2 of 3 — $1,500 of $4,500 paid"
 
-- [ ] FE-39 Build payment history section
+- [x] FE-39 Build payment history section
   - source: 11.5
   - depends: FE-37
   - notes: chronological list of payments with dates and amounts
 
-- [ ] FE-40 Handle billing no-match state
+- [x] FE-40 Handle billing no-match state
   - source: 11.6
   - depends: FE-37
   - notes: "No invoices found — contact Hekatek"
@@ -269,12 +269,12 @@ Use ui-ux-pro-max skill for all component builds.
   - depends: FE-49, FE-15
   - notes: pulls from messages table
 
-- [ ] FE-51 Build admin billing overview — all clients payment status, highlight overdue
+- [x] FE-51 Build admin billing overview — all clients payment status, highlight overdue
   - source: 11.7
   - depends: INFRA-15, FE-12
   - notes: coral badge on overdue accounts
 
-- [ ] FE-52 Update admin dashboard — total outstanding and overdue count
+- [x] FE-52 Update admin dashboard — total outstanding and overdue count
   - source: 11.8
   - depends: FE-51, FE-15
   - notes: stat card update
