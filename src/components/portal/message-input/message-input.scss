@@ -1,0 +1,53 @@
+.message-input {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-top: 1px solid var(--border-default);
+  background: var(--surface-card);
+
+  &__textarea {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    background: var(--surface-input);
+    border: 1px solid var(--border-input);
+    border-radius: var(--radius-lg);
+    outline: none;
+    resize: none;
+    max-height: 120px;
+    line-height: var(--line-height-base);
+    transition: border-color var(--transition-fast);
+
+    &::placeholder { color: var(--text-muted); }
+    &:focus { border-color: var(--border-input-focus); }
+  }
+
+  &__send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: var(--color-purple);
+    color: white;
+    border: none;
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+
+    &:hover:not(:disabled) {
+      background: var(--color-purple-hover);
+      transform: scale(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+}

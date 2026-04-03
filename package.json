@@ -7,13 +7,19 @@
     "build": "vite build --base=./",
     "preview": "vite preview",
     "sitemap": "node generate-sitemap.js",
-    "prebuild": "npm run sitemap"
+    "seed": "node src/data/seed/run-seed.js",
+    "prebuild": "npm run sitemap",
+    "test:unit": "echo 'No unit test runner configured yet — install Vitest or Jest to enable'",
+    "test:integration": "echo 'No integration test runner configured yet'",
+    "lint": "echo 'No linter configured yet — install ESLint to enable'",
+    "typecheck": "echo 'No type checker configured yet — install TypeScript to enable'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
+    "@supabase/supabase-js": "^2.101.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.27.0",

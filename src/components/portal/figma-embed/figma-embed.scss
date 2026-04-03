@@ -1,0 +1,31 @@
+.figma-embed {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  background: var(--surface-card);
+
+  &__frame {
+    width: 100%;
+    height: 0;
+    padding-bottom: 62.5%; // 16:10 aspect ratio
+    border: none;
+  }
+
+  &--empty,
+  &--error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-10);
+
+    p {
+      color: var(--text-muted);
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  &--error p {
+    color: var(--color-coral);
+  }
+}

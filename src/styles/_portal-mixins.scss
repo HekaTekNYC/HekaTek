@@ -1,0 +1,193 @@
+// ============================================================================
+// Portal Mixins
+// ============================================================================
+// Reusable patterns for portal components. Import this in any portal .scss.
+// ============================================================================
+
+// --- Glassmorphic card (light mode becomes solid in dark via tokens) ---
+@mixin glass-card {
+  background: var(--surface-card);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  filter: var(--glass-saturate);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+@mixin glass-card-hover {
+  background: var(--surface-card-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+// --- Glass surface (sidebar, topbar) ---
+@mixin glass-surface {
+  background: var(--surface-sidebar);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+  filter: var(--glass-saturate);
+  border-right: 1px solid var(--border-default);
+}
+
+// --- Status badge ---
+@mixin status-badge($color-var) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-pill);
+  color: var(#{$color-var});
+  background: var(#{$color-var}-muted);
+}
+
+// --- Form input ---
+@mixin portal-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  background: var(--surface-input);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+
+  &::placeholder {
+    color: var(--text-muted);
+  }
+
+  &:focus {
+    border-color: var(--border-input-focus);
+    box-shadow: 0 0 0 3px var(--color-purple-muted);
+  }
+}
+
+// --- Portal button (primary) ---
+@mixin portal-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-inverse);
+  background: var(--color-purple);
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background var(--transition-fast), box-shadow var(--transition-base), transform var(--transition-base);
+
+  &:hover {
+    background: var(--color-purple-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// --- Portal button (secondary / outline) ---
+@mixin portal-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+
+  &:hover {
+    background: var(--surface-card);
+    border-color: var(--color-purple);
+  }
+}
+
+// --- Typography helpers ---
+@mixin portal-heading {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  line-height: var(--line-height-tight);
+}
+
+@mixin portal-body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  line-height: var(--line-height-base);
+}
+
+// --- Layout helpers ---
+@mixin portal-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-8);
+  max-width: var(--content-max-width);
+  width: 100%;
+}
+
+@mixin portal-section-title {
+  @include portal-heading;
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+}
+
+// --- Scrollbar (thin, themed) ---
+@mixin portal-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-default);
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--border-strong);
+  }
+}
+
+// --- Responsive breakpoints ---
+@mixin portal-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin portal-mobile {
+  @media (max-width: 430px) {
+    @content;
+  }
+}
+
+@mixin portal-desktop-lg {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

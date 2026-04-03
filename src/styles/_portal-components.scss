@@ -1,0 +1,336 @@
+// ============================================================================
+// Portal Component Classes
+// ============================================================================
+// Ready-made classes for common portal UI patterns.
+// These consume the tokens from _portal-tokens.scss.
+// Light mode = glassmorphic. Dark mode = solid. All automatic via tokens.
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Cards
+// ---------------------------------------------------------------------------
+.portal-card {
+  background: var(--surface-card);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  filter: var(--glass-saturate);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-6);
+  transition: box-shadow var(--transition-base), transform var(--transition-base),
+    background var(--transition-base);
+
+  &--interactive {
+    cursor: pointer;
+
+    &:hover {
+      background: var(--surface-card-hover);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+  }
+
+  &--flush {
+    padding: 0;
+  }
+}
+
+// --- Stat card (dashboard numbers) ---
+.portal-stat-card {
+  background: var(--surface-card);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  filter: var(--glass-saturate);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  .stat-label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .stat-value {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    color: var(--text-primary);
+    line-height: 1;
+  }
+
+  .stat-change {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+
+    &--up { color: var(--color-teal); }
+    &--down { color: var(--color-coral); }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Buttons
+// ---------------------------------------------------------------------------
+.portal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-semibold);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast), box-shadow var(--transition-base),
+    transform var(--transition-base);
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  // Sizes
+  &--sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-pill);
+  }
+
+  &--md {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+    border-radius: var(--radius-pill);
+  }
+
+  &--lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-md);
+    border-radius: var(--radius-pill);
+  }
+
+  // Variants
+  &--primary {
+    color: var(--text-inverse);
+    background: var(--color-purple);
+
+    &:hover:not(:disabled) {
+      background: var(--color-purple-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+  }
+
+  &--secondary {
+    color: var(--text-primary);
+    background: transparent;
+    border: 1px solid var(--border-strong);
+
+    &:hover:not(:disabled) {
+      background: var(--surface-card);
+      border-color: var(--color-purple);
+    }
+  }
+
+  &--ghost {
+    color: var(--text-secondary);
+    background: transparent;
+
+    &:hover:not(:disabled) {
+      color: var(--text-primary);
+      background: var(--surface-card);
+    }
+  }
+
+  &--danger {
+    color: var(--text-inverse);
+    background: var(--color-coral);
+
+    &:hover:not(:disabled) {
+      background: var(--color-coral-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+  }
+
+  &--success {
+    color: var(--text-inverse);
+    background: var(--color-teal);
+
+    &:hover:not(:disabled) {
+      background: var(--color-teal-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+  }
+
+  &--full { width: 100%; }
+}
+
+// ---------------------------------------------------------------------------
+// Form elements
+// ---------------------------------------------------------------------------
+.portal-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  background: var(--surface-input);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+
+  &::placeholder {
+    color: var(--text-muted);
+  }
+
+  &:focus {
+    border-color: var(--border-input-focus);
+    box-shadow: 0 0 0 3px var(--color-purple-muted);
+  }
+
+  &--error {
+    border-color: var(--color-coral);
+
+    &:focus {
+      box-shadow: 0 0 0 3px var(--color-coral-muted);
+    }
+  }
+}
+
+.portal-textarea {
+  @extend .portal-input;
+  min-height: 100px;
+  resize: vertical;
+  line-height: var(--line-height-base);
+}
+
+.portal-select {
+  @extend .portal-input;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239ea6df' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-4) center;
+  padding-right: var(--space-10);
+}
+
+.portal-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.portal-field-error {
+  font-size: var(--font-size-xs);
+  color: var(--color-coral);
+  margin-top: var(--space-1);
+}
+
+.portal-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-5);
+}
+
+// ---------------------------------------------------------------------------
+// Badges
+// ---------------------------------------------------------------------------
+.portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-pill);
+
+  &--purple {
+    color: var(--color-purple);
+    background: var(--color-purple-muted);
+  }
+
+  &--blue {
+    color: var(--color-blue);
+    background: var(--color-blue-muted);
+  }
+
+  &--teal {
+    color: var(--color-teal);
+    background: var(--color-teal-muted);
+  }
+
+  &--amber {
+    color: var(--color-amber);
+    background: var(--color-amber-muted);
+  }
+
+  &--coral {
+    color: var(--color-coral);
+    background: var(--color-coral-muted);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Progress bar
+// ---------------------------------------------------------------------------
+.portal-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--border-default);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+
+  &__fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    transition: width var(--transition-slow);
+    background: var(--color-purple);
+
+    &--teal { background: var(--color-teal); }
+    &--amber { background: var(--color-amber); }
+    &--coral { background: var(--color-coral); }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Avatar
+// ---------------------------------------------------------------------------
+.portal-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-circle);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-inverse);
+  background: var(--color-purple);
+
+  &--sm { width: 32px; height: 32px; font-size: var(--font-size-xs); }
+  &--md { width: 40px; height: 40px; font-size: var(--font-size-sm); }
+  &--lg { width: 56px; height: 56px; font-size: var(--font-size-lg); }
+}
+
+// ---------------------------------------------------------------------------
+// Divider
+// ---------------------------------------------------------------------------
+.portal-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-default);
+  margin: var(--space-4) 0;
+  border: none;
+}

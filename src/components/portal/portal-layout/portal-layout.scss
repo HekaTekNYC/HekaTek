@@ -1,0 +1,334 @@
+// ============================================================================
+// Portal Layout — sidebar + topbar + content shell
+// Glassmorphic in light mode, solid in dark mode (automatic via tokens)
+// ============================================================================
+
+.portal-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--surface-page);
+}
+
+// ---------------------------------------------------------------------------
+// Sidebar
+// ---------------------------------------------------------------------------
+.portal-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-sidebar);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+  filter: var(--glass-saturate);
+  border-right: 1px solid var(--border-default);
+  z-index: var(--z-sidebar);
+  transition: width var(--transition-base), transform var(--transition-base);
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-5) var(--space-5);
+    height: var(--topbar-height);
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  &__logo {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  &__collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color var(--transition-fast), background var(--transition-fast);
+
+    &:hover {
+      color: var(--text-primary);
+      background: var(--surface-card);
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-3);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar { width: 0; }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-fast), background var(--transition-fast);
+
+    &:hover {
+      color: var(--text-primary);
+      background: var(--surface-card);
+    }
+
+    &--active {
+      color: var(--color-purple);
+      background: var(--color-purple-muted);
+
+      &:hover {
+        color: var(--color-purple);
+        background: var(--color-purple-muted);
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &-label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__footer {
+    padding: var(--space-3);
+    border-top: 1px solid var(--border-default);
+  }
+
+  &__signout {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color var(--transition-fast), background var(--transition-fast);
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--color-coral);
+      background: var(--color-coral-muted);
+    }
+  }
+}
+
+// --- Collapsed state ---
+.portal-layout--collapsed .portal-sidebar {
+  width: var(--sidebar-collapsed);
+
+  .portal-sidebar__logo,
+  .portal-sidebar__link-label {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .portal-sidebar__header {
+    justify-content: center;
+  }
+
+  .portal-sidebar__link {
+    justify-content: center;
+    padding: var(--space-3);
+  }
+
+  .portal-sidebar__signout {
+    justify-content: center;
+    padding: var(--space-3);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Main area (topbar + content)
+// ---------------------------------------------------------------------------
+.portal-main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left var(--transition-base);
+}
+
+.portal-layout--collapsed .portal-main {
+  margin-left: var(--sidebar-collapsed);
+}
+
+// ---------------------------------------------------------------------------
+// Topbar
+// ---------------------------------------------------------------------------
+.portal-topbar {
+  position: sticky;
+  top: 0;
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 0 var(--space-6);
+  background: var(--surface-topbar);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  filter: var(--glass-saturate);
+  border-bottom: 1px solid var(--border-default);
+  z-index: var(--z-topbar);
+
+  &__hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--text-primary);
+      background: var(--surface-card);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-left: auto;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Content
+// ---------------------------------------------------------------------------
+.portal-content {
+  flex: 1;
+  padding: var(--space-8);
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+// ---------------------------------------------------------------------------
+// Mobile overlay (covers content when sidebar is open on mobile)
+// ---------------------------------------------------------------------------
+.portal-layout__overlay {
+  display: none;
+}
+
+// ---------------------------------------------------------------------------
+// Responsive — Tablet (≤768px)
+// ---------------------------------------------------------------------------
+@media (max-width: 768px) {
+  .portal-sidebar {
+    transform: translateX(-100%);
+  }
+
+  // When sidebar is open on mobile, slide in
+  .portal-layout:not(.portal-layout--collapsed) .portal-sidebar {
+    transform: translateX(0);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .portal-layout__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: var(--surface-overlay);
+    z-index: calc(var(--z-sidebar) - 1);
+  }
+
+  // Collapsed state doesn't apply on mobile
+  .portal-layout--collapsed .portal-sidebar {
+    transform: translateX(-100%);
+    width: var(--sidebar-width);
+
+    .portal-sidebar__logo,
+    .portal-sidebar__link-label {
+      opacity: 1;
+      width: auto;
+    }
+
+    .portal-sidebar__header { justify-content: space-between; }
+    .portal-sidebar__link { justify-content: flex-start; padding: var(--space-3) var(--space-4); }
+    .portal-sidebar__signout { justify-content: flex-start; padding: var(--space-3) var(--space-4); }
+  }
+
+  .portal-main {
+    margin-left: 0;
+  }
+
+  .portal-layout--collapsed .portal-main {
+    margin-left: 0;
+  }
+
+  .portal-topbar__hamburger {
+    display: flex;
+  }
+
+  .portal-content {
+    padding: var(--space-4);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive — Mobile (≤430px)
+// ---------------------------------------------------------------------------
+@media (max-width: 430px) {
+  .portal-content {
+    padding: var(--space-3);
+  }
+
+  .portal-topbar {
+    padding: 0 var(--space-4);
+  }
+}

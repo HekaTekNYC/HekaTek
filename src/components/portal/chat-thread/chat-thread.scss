@@ -1,0 +1,84 @@
+.chat-thread {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  overflow-y: auto;
+  flex: 1;
+
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 3px; }
+
+  &--empty {
+    align-items: center; justify-content: center;
+    p { color: var(--text-muted); font-size: var(--font-size-sm); }
+  }
+
+  &__date-divider {
+    display: flex; align-items: center; gap: var(--space-4);
+    margin: var(--space-4) 0 var(--space-2);
+
+    &::before, &::after {
+      content: ''; flex: 1; height: 1px; background: var(--border-default);
+    }
+
+    span {
+      font-size: var(--font-size-xs); color: var(--text-muted);
+      font-weight: var(--font-weight-medium); white-space: nowrap;
+    }
+  }
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  position: relative;
+
+  &--other {
+    align-self: flex-start;
+    background: var(--surface-card);
+    border: 1px solid var(--border-default);
+  }
+
+  &--self {
+    align-self: flex-end;
+    background: var(--color-purple);
+    border: none;
+
+    .chat-bubble__content { color: white; }
+    .chat-bubble__time { color: rgba(255, 255, 255, 0.7); }
+  }
+
+  &__sender {
+    display: block;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-purple);
+    margin-bottom: var(--space-1);
+  }
+
+  &__content {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    color: var(--text-primary);
+    word-break: break-word;
+  }
+
+  &__time {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: var(--space-1);
+    text-align: right;
+  }
+
+  &--skeleton {
+    height: 48px; background: var(--border-default); opacity: 0.4;
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+    .skeleton-line { display: none; }
+  }
+}
+
+@keyframes skeleton-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }

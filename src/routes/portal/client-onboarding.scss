@@ -1,0 +1,50 @@
+.client-onboarding {
+  h2 { font-family: var(--font-heading); font-size: var(--font-size-2xl); color: var(--text-primary); margin-bottom: var(--space-6); }
+}
+
+.onboarding-progress {
+  margin-bottom: var(--space-6);
+
+  &__label {
+    display: block; font-size: var(--font-size-sm); color: var(--text-muted);
+    font-weight: var(--font-weight-medium); margin-bottom: var(--space-2);
+  }
+}
+
+.onboarding-section {
+  &__title { font-family: var(--font-heading); font-size: var(--font-size-xl); color: var(--text-primary); margin-bottom: var(--space-2); }
+  &__desc { font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-6); }
+
+  &__actions {
+    display: flex; align-items: center; gap: var(--space-3);
+    margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--border-default);
+  }
+
+  &__spacer { flex: 1; }
+}
+
+.onboarding-complete {
+  text-align: center; padding: var(--space-10);
+
+  &__icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; border-radius: var(--radius-circle);
+    background: var(--color-teal-muted); color: var(--color-teal);
+    font-size: var(--font-size-2xl); margin-bottom: var(--space-4);
+  }
+
+  h3 { font-family: var(--font-heading); font-size: var(--font-size-xl); color: var(--text-primary); margin-bottom: var(--space-3); }
+  p { font-size: var(--font-size-sm); color: var(--text-secondary); }
+}
+
+.onboarding-empty {
+  text-align: center; padding: var(--space-10); border: 1px dashed var(--border-default);
+  p { color: var(--text-muted); font-size: var(--font-size-sm); }
+}
+
+.onboarding-skeleton { min-height: 200px; display: flex; flex-direction: column; gap: var(--space-4); }
+.skeleton-line { height: 14px; border-radius: var(--radius-sm); background: var(--border-default); animation: skeleton-pulse 1.5s ease-in-out infinite; }
+.skeleton-line--short { width: 40%; }
+.skeleton-line--wide { width: 80%; }
+
+@keyframes skeleton-pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
