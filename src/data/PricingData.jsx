@@ -1,53 +1,45 @@
 import PurpleCheck from "../assets/icons/purple-check.svg"
 import PeriwinkleCheck from "../assets/icons/periwinkle-check.svg"
-import PeriDeact from "../assets/icons/peri-deactivated.svg"
 import CoralCheck from "../assets/icons/coral-check.svg"
-import CoralDeact from "../assets/icons/coral-deactivated.svg"
-import Gem from "../assets/images/pricing-gem.png"
 
 export const subscription = {
   id: 1,
-  className: "sub",
-  title: "SUBSCRIPTION",
-  sale: "",
-  cost: "$175",
-  subCost: "/month",
-  desc: "Monthly Subscription Fee",
-  fee: "$400",
-  subFee: "/ one time design fee",
+  className: "custom",
+  title: "CUSTOM BUILD",
+  tagline: "Hand-coded from scratch. No templates, no limits.",
   checkList: [
     {
-      text: "Includes 5 Fully Responsive Pages",
+      text: "100% Hand-Coded Website",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "$100 Per Page After 5",
+      text: "Custom UI/UX Design",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "Includes Hosting ",
+      text: "Unlimited Page Structure",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "Unlimited Edits",
+      text: "Advanced Animations & Interactions",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "24/7 Support",
+      text: "Performance Optimized",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "Lifetime Updates",
+      text: "SEO Foundations",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
     {
-      text: "12 Month Minimum Contract",
+      text: "4-6 Week Turnaround",
       img: PurpleCheck,
       alt: "Purple Checkmark",
     },
@@ -56,95 +48,88 @@ export const subscription = {
 
 export const lumpSum = {
   id: 2,
-  className: "lump",
-  title: "LUMP SUM",
-  sale: "",
-  cost: "$3000",
-  subCost: "",
-  desc: "One Time Fee",
-  fee: "$25",
-  subFee: "/ monthly hosting fee",
+  className: "lite",
+  title: "E-COMM LITE",
+  tagline: "Launch your store fast with a premium Shopify theme.",
   checkList: [
     {
-      text: "Includes 5 Fully Responsive Pages",
+      text: "Premium Theme Implementation",
       img: PeriwinkleCheck,
       alt: "Periwinkle Checkmark",
     },
     {
-      text: "$100 Per Page After 5",
+      text: "Brand Customization",
       img: PeriwinkleCheck,
       alt: "Periwinkle Checkmark",
     },
     {
-      text: "Custom UI/UX Design",
+      text: "Product & Collection Setup",
       img: PeriwinkleCheck,
       alt: "Periwinkle Checkmark",
     },
     {
-      text: "12-Month Minimum Commitment",
+      text: "Payment & Shipping Integration",
       img: PeriwinkleCheck,
       alt: "Periwinkle Checkmark",
     },
     {
-      text: "Unlimited Edits",
-      img: PeriDeact,
-      alt: "Periwinkle Checkmark Deactived",
+      text: "Mobile Responsive",
+      img: PeriwinkleCheck,
+      alt: "Periwinkle Checkmark",
     },
     {
-      text: "24/7 Support",
-      img: PeriDeact,
-      alt: "Periwinkle Checkmark Deactived",
+      text: "Basic SEO Setup",
+      img: PeriwinkleCheck,
+      alt: "Periwinkle Checkmark",
+    },
+    {
+      text: "2-Week Turnaround",
+      img: PeriwinkleCheck,
+      alt: "Periwinkle Checkmark",
     },
   ],
-
-  gem: Gem,
 }
 
 export const ecomm = {
   id: 3,
   className: "ecomm",
   title: "E-COMMERCE",
-  sale: "",
-  cost: "$7000",
-  subCost: "/minimum",
-  desc: "Starting Price",
-  fee: "INQUIRE BELOW",
-  subFee: "",
+  tagline: "Fully custom storefront. Built in Liquid or React.",
   checkList: [
     {
-      text: "Custom Shopify Storefront",
+      text: "Custom Liquid Shopify Development",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Secure Payment & Shipping Integration",
+      text: "OR Custom React Storefront",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Full Shopify CMS Connection",
+      text: "Custom UI/UX Design",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Curated App Selection & Integration ",
+      text: "Product & Collection Architecture",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Launch Support & Training",
+      text: "Payment & Shipping Integration",
       img: CoralCheck,
       alt: "Coral Checkmark",
     },
     {
-      text: "Unlimited Edits",
-      img: CoralDeact,
-      alt: "Coral Checkmark Deactived",
+      text: "App Selection & Setup",
+      img: CoralCheck,
+      alt: "Coral Checkmark",
     },
     {
-      text: "24/7 Support",
-      img: CoralDeact,
-      alt: "Coral Checkmark Deactived",
+      text: "Launch Training & Support",
+      img: CoralCheck,
+      alt: "Coral Checkmark",
     },
   ],
 }

@@ -32,12 +32,11 @@ const PricingSection = () => {
           />
         </div>
         <div className="pricing-header">
-          <h2>PRICING PLANS</h2>
+          <h2>OUR SERVICES</h2>
           <p className="pricing-text">
-            Flexible pricing to suit your needs: choose a monthly subscription,
-            one-time payment, or tailored e-commerce plans. Add-ons like
-            unlimited edits or blogs let you customize your website to fit your
-            business perfectly—no hidden costs, just clear value.
+            From fast template launches to fully custom-coded websites and
+            storefronts, we offer flexible options tailored to your business.
+            Contact us to discuss what fits your needs.
           </p>
         </div>
 

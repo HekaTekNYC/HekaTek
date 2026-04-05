@@ -54,7 +54,7 @@ const RedefineSection = () => {
                 alt="Checkmark"
                 className="check-icon"
               />
-              Clear, transparent pricing—no hidden costs.
+              Flexible service plans tailored to your budget and goals.
             </li>
           </ul>
           <Button
