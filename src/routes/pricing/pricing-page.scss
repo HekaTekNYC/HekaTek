@@ -207,6 +207,25 @@
   }
 
   .add-on-container {
+    .add-on-info {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 40px 0 40px;
+
+      .add-on-text-container {
+        width: 80%;
+        padding-right: 20px;
+      }
+
+      .pricing-build-btn {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+
     .add-on-cards-container {
       grid-template-columns: repeat(3, 1fr);
       align-items: stretch;

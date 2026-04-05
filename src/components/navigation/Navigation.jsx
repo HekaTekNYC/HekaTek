@@ -87,7 +87,7 @@ const Navigation = () => {
                   `nav-links ${isActive ? "active" : ""}`
                 }
               >
-                Pricing
+                Plans
               </NavLink>
             </li>
             <li className="nav-item">

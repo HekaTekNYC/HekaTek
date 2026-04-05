@@ -20,19 +20,19 @@
   transition: all 0.3s ease-in-out;
   z-index: 1;
 
-  &.lump {
+  &.lite {
     z-index: 5;
   }
 
   &.active {
     transform: translateY(-6px);
 
-    &.sub {
+    &.custom {
       box-shadow: rgba(180, 111, 248, 0.333) 0px 4px 13px;
       border: 1px solid rgba(196, 161, 231, 0.4);
     }
 
-    &.lump {
+    &.lite {
       box-shadow: rgba(114, 133, 253, 0.333) 0px 6px 13px;
       border: 1px solid rgba(114, 133, 253, 0.4);
     }
@@ -43,28 +43,10 @@
     }
   }
 
-  .pricing-card-image {
-    position: absolute;
-    top: -20px;
-    right: -18px;
-    z-index: 10;
-
-    img {
-      width: auto;
-      height: 110px;
-    }
-  }
-
   .pricing-half {
     height: 100%;
     width: 100%;
     margin: 15px 0 0;
-  }
-
-  .pricing-btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 }
 
@@ -73,70 +55,31 @@
   flex-direction: column;
   width: 100%;
 
-  .full-price {
-    position: relative;
-    display: inline-block;
-    color: #b6bbe5;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #b6bbe5;
-      transform: rotate(-20deg);
-      transform-origin: center;
-    }
-  }
-
   .pricing-plan-title {
-    align-self: flex-start;
-    font-size: 1.3rem;
-    font-weight: 500;
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
 
-    &.sub {
+    &.custom {
       color: #b46ff8;
     }
     &.ecomm {
       color: #ff7d79;
     }
-    &.lump {
+    &.lite {
       color: #7285fd;
     }
   }
 
-  .pricing-plan-cost {
-    align-self: flex-start;
-    font-size: 2rem;
+  .pricing-tagline {
+    font-family: "Tanker", sans-serif;
+    font-size: 1rem;
     color: #444d82;
-    margin: 15px 0 0;
-    letter-spacing: 0.04rem;
-
-    .strike {
-      font-size: 1.8rem;
-      font-weight: 300;
-      color: #b5bcf3;
-      text-decoration: line-through;
-      margin-left: 4px;
-    }
-    .pricing-plan-cost-sub {
-      font-family: "Satoshi";
-      font-weight: 600;
-      font-size: 1rem;
-    }
-  }
-
-  .pricing-plan-extra-fee {
-    align-self: flex-start;
-    font-size: 1.5rem;
-
-    .pricing-plan-extra-sub {
-      font-family: "Satoshi";
-      font-weight: 500;
-      font-size: 0.8rem;
-    }
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
   .pricing-white-line {
@@ -144,22 +87,17 @@
     height: 1px;
     background: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.541),
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0.543)
+      rgba(215, 220, 250, 0.3),
+      rgba(215, 220, 250, 0.97),
+      rgba(215, 220, 250, 0.3)
     );
-    margin: 15px 0;
+    margin: 8px 0;
   }
 }
 
 .pricing-checklist-items {
   display: grid;
   grid-template-columns: 1fr;
-
-  &.lump .checklist:nth-last-child(-n + 2),
-  &.ecomm .checklist:nth-last-child(-n + 2) {
-    color: #828294;
-  }
 
   .checklist {
     display: flex;
@@ -181,22 +119,6 @@
 /* Small Screens (≥768px)*/
 @media (min-width: 768px) {
   .pricing-card {
-    .pricing-plan-extra-fee {
-      font-size: 1.6rem;
-      line-height: 1;
-      .pricing-plan-extra-sub {
-        font-size: 1rem;
-      }
-    }
-
-    .pricing-card-image {
-      top: -25px;
-      right: -25px;
-      img {
-        height: 120px;
-      }
-    }
-
     .pricing-checklist-items {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -207,14 +129,6 @@
 @media (min-width: 992px) {
   .pricing-card {
     margin: 0;
-
-    .pricing-card-image {
-      top: -25px;
-      right: -25px;
-      img {
-        height: 100px;
-      }
-    }
 
     .pricing-half {
       margin-bottom: 20px;
@@ -231,23 +145,15 @@
     padding: 30px;
 
     .pricing-white-line {
-      margin: 20px 0;
+      margin: 8px 0;
     }
 
     .pricing-half {
       margin: 15px 0;
     }
-
-    .pricing-card-image {
-      top: -30px;
-      right: -240px;
-      width: 100%;
-      img {
-        width: 110px;
-      }
-    }
   }
-  .sub {
+
+  .custom {
     margin-right: 10px;
   }
 }
@@ -256,17 +162,5 @@
 @media (min-width: 1300px) {
   .pricing-card {
     max-height: 577px;
-    .pricing-card-image {
-      right: -270px;
-    }
-  }
-}
-
-/* Extra Large Screens (≥1400px)*/
-@media (min-width: 1400px) {
-  .pricing-card {
-    .pricing-card-image {
-      right: -320px;
-    }
   }
 }
