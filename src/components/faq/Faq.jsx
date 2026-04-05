@@ -1,15 +1,15 @@
 import React, {useState, useEffect, useRef} from "react"
 
 import Button from "../../components/button/Button"
-import {PricingData, WebsiteData, PlansData} from "../../data/FaqsData"
+import {WebsiteData, PlansData} from "../../data/FaqsData"
 
 import "./faq.scss"
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)
-  const [selectedCategory, setSelectedCategory] = useState("Pricing & Payments")
+  const [selectedCategory, setSelectedCategory] = useState("Website")
 
-  const faqData = [...PricingData, ...WebsiteData, ...PlansData]
+  const faqData = [...WebsiteData, ...PlansData]
   const categories = [...new Set(faqData.map(faq => faq.category))]
   const filteredFaqs = faqData.filter(faq => faq.category === selectedCategory)
 

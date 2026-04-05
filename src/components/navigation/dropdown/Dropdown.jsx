@@ -43,7 +43,7 @@ const Dropdown = () => {
         onClick={closeMobileNav}
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
-        Pricing
+        Plans
       </NavLink>
 
       <NavLink

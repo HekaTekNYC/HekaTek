@@ -31,20 +31,18 @@ const PricingPage = () => {
             <BackgroundShape />
           </div>
 
-          <h2 className="pricing-header">PRICING</h2>
+          <h2 className="pricing-header">SERVICES</h2>
           <div className="pricing-build-container">
             <div className="pricing-build-info">
               <div className="pricing-build-text">
                 <h2 className="h2-heading">BUILD YOUR PLAN</h2>
                 <p>
-                  Our pricing is designed to fit your needs, offering monthly
-                  subscription and one-time lump sum options, as well as
-                  tailored pricing for e-commerce websites. You can personalize
-                  each plan with add-ons, like unlimited edits or a blog, to
-                  best suit your business needs. We pride ourselves on
-                  transparent pricing with no hidden costs, ensuring you have a
-                  clear understanding of your investment. Contact us to find the
-                  best option for your business.
+                  Every project is different, so we tailor our approach to fit
+                  your specific needs. Whether you need a quick template
+                  launch, a fully custom-coded website, or a complete
+                  e-commerce storefront, we'll work with you to find the right
+                  solution. Reach out and let's talk through what makes sense
+                  for your business.
                 </p>
               </div>
               <div className="pricing-build-btn">
@@ -82,6 +80,14 @@ const PricingPage = () => {
                   additional features, we can help you build the perfect package
                   for your website.
                 </p>
+              </div>
+              <div className="pricing-build-btn">
+                <Button
+                  text={"Contact Us"}
+                  to="/contact"
+                  btnType={"solid"}
+                  width={"short"}
+                />
               </div>
             </div>
             <div className="add-on-cards-container">

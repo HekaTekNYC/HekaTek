@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-grow: 1;
   width: 100%;
   height: 100%;
@@ -19,12 +18,6 @@
     box-shadow: rgb(158, 166, 223) 0px 4px 16px;
     transform: translateY(-2px);
   }
-
-  .add-on-btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .add-on-card-header {
@@ -33,24 +26,12 @@
   width: 100%;
 
   .add-on-title {
-    align-self: flex-start;
+    align-self: center;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.01rem;
-  }
-
-  .add-on-cost {
-    align-self: flex-start;
-    font-size: 2rem;
-    margin: 15px 0 0;
-    letter-spacing: 0.04rem;
-    color: #fff;
-
-    .add-on-cost-sub {
-      font-family: "Satoshi";
-      font-weight: 600;
-      font-size: 1rem;
-    }
+    text-align: center;
+    width: 100%;
   }
 
   .add-on-white-line {
@@ -66,7 +47,6 @@
   }
 
   .add-on-desc {
-    margin-bottom: 25px;
     font-weight: 400;
   }
 }
