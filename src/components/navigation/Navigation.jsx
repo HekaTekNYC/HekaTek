@@ -67,7 +67,7 @@ const Navigation = () => {
                   `nav-links ${isActive ? "active" : ""}`
                 }
               >
-                Services
+                Why Us
               </NavLink>
             </li>
             <li className="nav-item">
@@ -82,16 +82,6 @@ const Navigation = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/pricing"
-                className={({isActive}) =>
-                  `nav-links ${isActive ? "active" : ""}`
-                }
-              >
-                Plans
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
                 to="/contact"
                 className={({isActive}) =>
                   `nav-links ${isActive ? "active" : ""}`
@@ -100,21 +90,11 @@ const Navigation = () => {
                 Contact
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                to="/faq"
-                className={({isActive}) =>
-                  `nav-links ${isActive ? "active" : ""}`
-                }
-              >
-                FAQ
-              </NavLink>
-            </li>
           </ul>
           <div className="nav-btn">
             <Button
-              text={"Free Site Review"}
-              to={"/free-audit"}
+              text={"Work With Us"}
+              to={"/work-with-us"}
               btnType={"mini"}
               width={"shorter"}
             />
