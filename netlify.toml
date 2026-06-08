@@ -5,3 +5,13 @@
 [build.environment]
   NODE_VERSION = "20"
   NPM_VERSION = "10"
+
+[[redirects]]
+  from = "/pricing"
+  to = "/work-with-us"
+  status = 301
+
+[[redirects]]
+  from = "/aboutus"
+  to = "/services"
+  status = 301

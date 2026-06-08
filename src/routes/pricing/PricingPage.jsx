@@ -35,14 +35,14 @@ const PricingPage = () => {
           <div className="pricing-build-container">
             <div className="pricing-build-info">
               <div className="pricing-build-text">
-                <h2 className="h2-heading">BUILD YOUR PLAN</h2>
+                <h2 className="h2-heading">WHAT WE BUILD</h2>
                 <p>
                   Every project is different, so we tailor our approach to fit
-                  your specific needs. Whether you need a quick template
-                  launch, a fully custom-coded website, or a complete
-                  e-commerce storefront, we'll work with you to find the right
-                  solution. Reach out and let's talk through what makes sense
-                  for your business.
+                  your specific needs. Whether you need a quick template launch,
+                  a fully custom-coded website, or a complete e-commerce
+                  storefront, we'll work with you to find the right solution.
+                  Reach out and let's talk through what makes sense for your
+                  business.
                 </p>
               </div>
               <div className="pricing-build-btn">

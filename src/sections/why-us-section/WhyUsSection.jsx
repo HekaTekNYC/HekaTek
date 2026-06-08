@@ -67,10 +67,10 @@ const WhyUsSection = () => {
             </p>
             <p className="landing-subheader">Our Solution </p>
             <p className="why-p">
-              Get a high-quality, custom-coded website starting at $175 a month,
-              providing confidence in your investment. This gives you a fast,
-              unique, and reliable online presence. Prefer a one-time payment?
-              We offer a lump sum option as well.
+              We build fast, hand-coded websites scoped to what your business
+              actually needs -- no templates, no guesswork, no one-size-fits-all
+              packages. Every project starts with a conversation, and we take it
+              from there.
             </p>
           </div>
 
