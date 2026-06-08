@@ -9,7 +9,7 @@ export const editsMo = {
   id: 2,
   className: "add-on-edits",
   title: "UNLIMITED EDITS & SUPPORT",
-  desc: "Enhance your lump sum plan with the Unlimited Edits & 24/7 Support add-on. You’ll have the flexibility to request updates as needed, whether it’s fixing bugs, updating text, or refreshing images. Enjoy peace of mind with round-the-clock support, keeping your website up-to-date and supported effortlessly with this essential service.",
+  desc: "Enhance your project with the Unlimited Edits & 24/7 Support add-on. You’ll have the flexibility to request updates as needed, whether it’s fixing bugs, updating text, or refreshing images. Enjoy peace of mind with round-the-clock support, keeping your website up-to-date and supported effortlessly with this essential service.",
 }
 
 export const clientPortal = {

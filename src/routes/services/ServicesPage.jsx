@@ -14,7 +14,7 @@ import "./services-page.scss"
 const ServicesPage = () => {
   return (
     <div id="services" className="services-page">
-      <h2 className="services-header"> OUR SERVICES </h2>
+      <h2 className="services-header">OUR SERVICES</h2>
 
       {/* Redefine Digital Section*/}
       <Redefine />
@@ -29,8 +29,7 @@ const ServicesPage = () => {
               small businesses nationwide. By hand-coding every element, we
               ensure optimal site performance, leading to higher customer
               engagement and increased earnings. No Wordpress, no page builders,
-              just custom-coded websites with exceptional results from
-              $175/month.
+              just custom-coded websites with exceptional results.
             </p>
           </div>
           <div className="services-cards-layout">

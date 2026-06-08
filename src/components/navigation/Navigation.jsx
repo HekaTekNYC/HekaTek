@@ -82,32 +82,12 @@ const Navigation = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/pricing"
-                className={({isActive}) =>
-                  `nav-links ${isActive ? "active" : ""}`
-                }
-              >
-                Plans
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
                 to="/contact"
                 className={({isActive}) =>
                   `nav-links ${isActive ? "active" : ""}`
                 }
               >
                 Contact
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/faq"
-                className={({isActive}) =>
-                  `nav-links ${isActive ? "active" : ""}`
-                }
-              >
-                FAQ
               </NavLink>
             </li>
           </ul>
