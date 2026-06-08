@@ -9,9 +9,9 @@ import ServiceBlobM from "../../assets/images/serviceBlobM.svg"
 
 import {servicesData} from "../../data/ServicesData"
 
-import "./about-page.scss"
+import "./services-page.scss"
 
-const AboutPage = () => {
+const ServicesPage = () => {
   return (
     <div id="services" className="services-page">
       <h2 className="services-header"> ABOUT US </h2>
@@ -99,4 +99,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default ServicesPage
