@@ -23,7 +23,7 @@ const Dropdown = () => {
       </NavLink>
 
       <NavLink
-        to="/services"
+        to="/aboutus"
         onClick={closeMobileNav}
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
