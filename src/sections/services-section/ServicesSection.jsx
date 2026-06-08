@@ -40,7 +40,7 @@ const ServicesSection = () => {
       <div className="services-home-btn">
         <Button
           text={"Learn More"}
-          to={"/aboutus"}
+          to={"/services"}
           btnType={"solid"}
           width={"short"}
         />
