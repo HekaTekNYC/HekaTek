@@ -2,7 +2,7 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import HomePage from "./routes/home/HomePage"
-import ServicesPage from "./routes/services/ServicesPage"
+import AboutPage from "./routes/about/AboutPage"
 import ProductsPage from "./routes/products/ProductsPage"
 import PricingPage from "./routes/pricing/PricingPage"
 import ContactPage from "./routes/contact/ContactPage"
@@ -18,7 +18,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services" element={<AboutPage />} />
           <Route path="/work" element={<ProductsPage />} />
           <Route path="/work-with-us" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
