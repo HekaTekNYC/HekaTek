@@ -10,3 +10,8 @@
   from = "/pricing"
   to = "/work-with-us"
   status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/aboutus"
+  status = 301
