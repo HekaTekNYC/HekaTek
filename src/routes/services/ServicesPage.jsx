@@ -14,7 +14,7 @@ import "./services-page.scss"
 const ServicesPage = () => {
   return (
     <div id="services" className="services-page">
-      <h2 className="services-header"> ABOUT US </h2>
+      <h2 className="services-header">OUR SERVICES</h2>
 
       {/* Redefine Digital Section*/}
       <Redefine />
