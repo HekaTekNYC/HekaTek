@@ -62,12 +62,12 @@ const Navigation = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/aboutus"
+                to="/services"
                 className={({isActive}) =>
                   `nav-links ${isActive ? "active" : ""}`
                 }
               >
-                About
+                Services
               </NavLink>
             </li>
             <li className="nav-item">
@@ -78,16 +78,6 @@ const Navigation = () => {
                 }
               >
                 Our Work
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/work-with-us"
-                className={({isActive}) =>
-                  `nav-links ${isActive ? "active" : ""}`
-                }
-              >
-                Services
               </NavLink>
             </li>
             <li className="nav-item">
