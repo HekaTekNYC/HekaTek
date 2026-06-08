@@ -27,7 +27,7 @@ const Dropdown = () => {
         onClick={closeMobileNav}
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
-        Why Us
+        About
       </NavLink>
 
       <NavLink
@@ -36,6 +36,14 @@ const Dropdown = () => {
         className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
       >
         Our Work
+      </NavLink>
+
+      <NavLink
+        to="/work-with-us"
+        onClick={closeMobileNav}
+        className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        Services
       </NavLink>
 
       <NavLink
@@ -48,8 +56,8 @@ const Dropdown = () => {
 
       <div className="nav-btn-drop">
         <Button
-          text={"Work With Us"}
-          to={"/work-with-us"}
+          text={"Free Site Review"}
+          to={"/free-audit"}
           btnType={"solid"}
           width={"short"}
           onClick={closeMobileNav}
