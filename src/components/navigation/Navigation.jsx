@@ -62,7 +62,7 @@ const Navigation = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/services"
+                to="/aboutus"
                 className={({isActive}) =>
                   `nav-links ${isActive ? "active" : ""}`
                 }
